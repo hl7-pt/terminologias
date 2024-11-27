@@ -10,11 +10,6 @@ Esta publicação tal e tal
 ### Introdução
 
 tal e tal
-### Dependências
-
-{% include dependency-table.xhtml %}
-
-
 
 ### IP e Licença
 
