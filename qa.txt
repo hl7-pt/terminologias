@@ -1,0 +1,22 @@
+TerminologyPT : Validation Results
+=========================================
+
+err = 4, warn = 2, info = 3
+IG Publisher Version: 1.7.5
+Generated Thu Nov 28 16:38:24 UTC 2024. FHIR version 5.0.0 for hl7.fhir.pt.terminology#1.0.0 (canonical = http://hl7.pt/fhir)
+ Build Errors : 0 / 2 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-especialidades-medicas-cs : 4 / 0 / 3
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.terminology : 0 / 0 / 2
+</table>
+== n/a ==
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-especialidades-medicas-cs.json ==
+ERROR: CodeSystem.where(url = 'https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-medicas-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-especialidades-medicas-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/especialidades-medicas-cs) does not match the URL (https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-medicas-cs)
+INFORMATION: CodeSystem/especialidades-medicas-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/especialidades-medicas-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/especialidades-medicas-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/especialidades-medicas-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-especialidades-medicas-cs: URL Mismatch http://hl7.pt/fhir/CodeSystem/especialidades-medicas-cs vs https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-medicas-cs
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.terminology.json ==
+INFORMATION: ImplementationGuide/hl7.fhir.pt.terminology: ImplementationGuide.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
