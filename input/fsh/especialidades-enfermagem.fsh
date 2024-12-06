@@ -3,7 +3,7 @@
 // Define a local code system
 CodeSystem: EspecialidadesEnfermagemCS
 Id:         especialidades-enfermagem-cs
-Title:     "CodeSystem especilidades enfermagem"
+Title:     "Especilidades enfermagem"
 Description: "CodeSystem para as especilidades enfermagem existentes em Portugal"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-enfermagem-cs"

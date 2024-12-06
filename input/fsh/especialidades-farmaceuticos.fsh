@@ -2,7 +2,7 @@
 // Define a local code system
 CodeSystem: EspecialidadesFarmaceuticasCS
 Id:         especialidades-farmaceuticas-cs
-Title:     "CodeSystem especilidades Farmacêuticas"
+Title:     "Especilidades Farmacêuticas"
 Description: "CodeSystem para as especilidades farmacêuticas existentes em Portugal"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-farmaceuticas-cs"

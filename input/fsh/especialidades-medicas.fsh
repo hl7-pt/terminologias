@@ -2,7 +2,7 @@
 // Define a local code system
 CodeSystem: EspecialidadesMedicasCS
 Id:         especialidades-medicas-cs
-Title:     "CodeSystem especilidades médicas"
+Title:     "Especilidades médicas"
 Description: "CodeSystem para as especilidades médicas existentes em Portugal"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-medicas-cs"
