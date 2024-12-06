@@ -1,0 +1,78 @@
+TerminologyPT : Validation Results
+=========================================
+
+err = 35, warn = 4, info = 14
+IG Publisher Version: 1.7.5
+Generated Fri Dec 06 12:20:45 UTC 2024. FHIR version 5.0.0 for hl7.fhir.pt.terminology#1.0.0 (canonical = http://hl7.pt/fhir)
+ Build Errors : 0 / 3 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-cparm-routes-cs : 4 / 0 / 3
+ /github/workspace/fsh-generated/resources/CodeSystem-cparm-units-presentation-cs : 4 / 0 / 3
+ /github/workspace/fsh-generated/resources/CodeSystem-especialidades-enfermagem-cs : 4 / 0 / 3
+ /github/workspace/fsh-generated/resources/CodeSystem-especialidades-farmaceuticas-cs : 4 / 0 / 3
+ /github/workspace/fsh-generated/resources/CodeSystem-especialidades-medicas-cs : 4 / 0 / 3
+ /github/workspace/fsh-generated/resources/CodeSystem-subsistemas-saude-cs : 5 / 0 / 3
+ /github/workspace/fsh-generated/resources/ConceptMap-ctc-unit-edqm : 10 / 1 / 2
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.terminology : 0 / 0 / 2
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ConceptMap/ctc-unit-edqm.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-cparm-routes-cs.json ==
+ERROR: CodeSystem.where(url = 'https://terminologias.hl7.pt/fhir/CodeSystem/cparm-routes-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-cparm-routes-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/cparm-routes-cs) does not match the URL (https://terminologias.hl7.pt/fhir/CodeSystem/cparm-routes-cs)
+INFORMATION: CodeSystem/cparm-routes-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/cparm-routes-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/cparm-routes-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/cparm-routes-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-cparm-routes-cs: URL Mismatch http://hl7.pt/fhir/CodeSystem/cparm-routes-cs vs https://terminologias.hl7.pt/fhir/CodeSystem/cparm-routes-cs
+== fsh-generated/resources/CodeSystem-cparm-units-presentation-cs.json ==
+ERROR: CodeSystem.where(url = 'https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-cparm-units-presentation-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs) does not match the URL (https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs)
+INFORMATION: CodeSystem/cparm-units-presentation-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/cparm-units-presentation-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/cparm-units-presentation-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/cparm-units-presentation-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-cparm-units-presentation-cs: URL Mismatch http://hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs vs https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs
+== fsh-generated/resources/CodeSystem-especialidades-enfermagem-cs.json ==
+ERROR: CodeSystem.where(url = 'https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-enfermagem-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-especialidades-enfermagem-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/especialidades-enfermagem-cs) does not match the URL (https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-enfermagem-cs)
+INFORMATION: CodeSystem/especialidades-enfermagem-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/especialidades-enfermagem-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/especialidades-enfermagem-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/especialidades-enfermagem-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-especialidades-enfermagem-cs: URL Mismatch http://hl7.pt/fhir/CodeSystem/especialidades-enfermagem-cs vs https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-enfermagem-cs
+== fsh-generated/resources/CodeSystem-especialidades-farmaceuticas-cs.json ==
+ERROR: CodeSystem.where(url = 'https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-farmaceuticas-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-especialidades-farmaceuticas-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/especialidades-farmaceuticas-cs) does not match the URL (https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-farmaceuticas-cs)
+INFORMATION: CodeSystem/especialidades-farmaceuticas-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/especialidades-farmaceuticas-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/especialidades-farmaceuticas-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/especialidades-farmaceuticas-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-especialidades-farmaceuticas-cs: URL Mismatch http://hl7.pt/fhir/CodeSystem/especialidades-farmaceuticas-cs vs https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-farmaceuticas-cs
+== fsh-generated/resources/CodeSystem-especialidades-medicas-cs.json ==
+ERROR: CodeSystem.where(url = 'https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-medicas-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-especialidades-medicas-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/especialidades-medicas-cs) does not match the URL (https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-medicas-cs)
+INFORMATION: CodeSystem/especialidades-medicas-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/especialidades-medicas-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/especialidades-medicas-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/especialidades-medicas-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-especialidades-medicas-cs: URL Mismatch http://hl7.pt/fhir/CodeSystem/especialidades-medicas-cs vs https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-medicas-cs
+== fsh-generated/resources/CodeSystem-subsistemas-saude-cs.json ==
+ERROR: CodeSystem.where(url = 'https://terminologias.hl7.pt/fhir/CodeSystem/subsistemas-saude-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-subsistemas-saude-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/subsistemas-saude-cs) does not match the URL (https://terminologias.hl7.pt/fhir/CodeSystem/subsistemas-saude-cs)
+INFORMATION: CodeSystem/subsistemas-saude-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/subsistemas-saude-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/subsistemas-saude-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/subsistemas-saude-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: CodeSystem/subsistemas-saude-cs: CodeSystem.concept[0].property[0]: The property 'tipo' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-subsistemas-saude-cs: URL Mismatch http://hl7.pt/fhir/CodeSystem/subsistemas-saude-cs vs https://terminologias.hl7.pt/fhir/CodeSystem/subsistemas-saude-cs
+== fsh-generated/resources/ConceptMap-ctc-unit-edqm.json ==
+ERROR: ConceptMap.where(url = 'https://hl7.pt/fhir/Terminologias/ConceptMap/ctc-unit-edqm'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-ctc-unit-edqm.json - the canonical URL (http://hl7.pt/fhir/ConceptMap/ctc-unit-edqm) does not match the URL (https://hl7.pt/fhir/Terminologias/ConceptMap/ctc-unit-edqm)
+ERROR: ConceptMap.where(url = 'https://hl7.pt/fhir/Terminologias/ConceptMap/ctc-unit-edqm'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-ctc-unit-edqm.json - the canonical URL (http://hl7.pt/fhir/ConceptMap/ctc-unit-edqm) does not match the URL (https://hl7.pt/fhir/Terminologias/ConceptMap/ctc-unit-edqm)
+INFORMATION: ConceptMap/ctc-unit-edqm: ConceptMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].target: The Target Code System https://www.edqm.eu/en/ is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[15].code: The source code '−' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[18].code: The source code '−' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[21].code: The source code '−' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[28].code: The source code '−' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[29].code: The source code '−' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[31].code: The source code '−' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap: Concept maps published by HL7 SHALL conform to the ShareableConceptMap profile, which says that the element ConceptMap.description is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ConceptMap-ctc-unit-edqm: URL Mismatch http://hl7.pt/fhir/ConceptMap/ctc-unit-edqm vs https://hl7.pt/fhir/Terminologias/ConceptMap/ctc-unit-edqm
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.terminology.json ==
+INFORMATION: ImplementationGuide/hl7.fhir.pt.terminology: ImplementationGuide.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0

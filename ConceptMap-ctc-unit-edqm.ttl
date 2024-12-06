@@ -1,0 +1,432 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ConceptMap/ctc-unit-edqm> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ctc-unit-edqm"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap ctc-unit-edqm</b></p><a name=\"ctc-unit-edqm\"> </a><a name=\"hcctc-unit-edqm\"> </a><a name=\"ctc-unit-edqm-pt-PT\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-cparm-units-presentation-cs.html\">Unidades de apresentação</a> to <code>https://www.edqm.eu/en/</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>15001000 (Aplicação)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15001000</td></tr><tr><td>15002000 (Ampola)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15002000</td></tr><tr><td>15004000 (Aplicador)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15004000</td></tr><tr><td>15005000 (Saco)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15005000</td></tr><tr><td>15006000 (Barrica)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15006000</td></tr><tr><td>15007000 (Blister)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15007000</td></tr><tr><td>15008000 (Bloco)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15008000</td></tr><tr><td>15009000 (Frasco)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15009000</td></tr><tr><td>15011000 (Hóstia)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15011000</td></tr><tr><td>15012000 (Cápsula)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15012000</td></tr><tr><td>15013000 (Cartucho)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15013000</td></tr><tr><td>15024000 (Goma para mascar)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15024000</td></tr><tr><td>15016000 (Recipiente)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15016000</td></tr><tr><td>15017000 (Copo-medida)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15017000</td></tr><tr><td>15018000 (Cilindro)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15018000</td></tr><tr><td>−</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>−</td></tr><tr><td>15021000 (Penso)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15021000</td></tr><tr><td>15022000 (Gota)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15022000</td></tr><tr><td>−</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>−</td></tr><tr><td>15025000 (Implante)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15025000</td></tr><tr><td>15026000 (Inalador)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15026000</td></tr><tr><td>−</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>−</td></tr><tr><td>15029000 (Pastilha)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15029000</td></tr><tr><td>15036000 (Adesivo)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15036000</td></tr><tr><td>15037000 (Caneta)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15037000</td></tr><tr><td>15039000 (Óvulo)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15039000</td></tr><tr><td>15041000 (Pipeta)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15041000</td></tr><tr><td>15042000 (Emplastro)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15042000</td></tr><tr><td>−</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>−</td></tr><tr><td>−</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>−</td></tr><tr><td>15045000 (Saqueta)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15045000</td></tr><tr><td>−</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>−</td></tr><tr><td>15051000 (Supositório)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15051000</td></tr><tr><td>15054000 (Comprimido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15054000</td></tr><tr><td>15056000 (Tampão)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15056000</td></tr><tr><td>15058000 (Bisnaga)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15058000</td></tr><tr><td>15015000 (Coleira)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15015000</td></tr><tr><td>15019000 (Dardo)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15019000</td></tr><tr><td>15023000 (Película)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15023000</td></tr><tr><td>15027000 (Inserto)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15027000</td></tr><tr><td>15028000 (Boião)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15028000</td></tr><tr><td>15030000 (Liofilizado)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15030000</td></tr><tr><td>15031000 (Matriz)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15031000</td></tr><tr><td>15034000 (Papel)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15034000</td></tr><tr><td>15035000 (Pastilha mole)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15035000</td></tr><tr><td>15038000 (Berloque)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15038000</td></tr><tr><td>15040000 (Grânulo)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15040000</td></tr><tr><td>15043000 (Suporte)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15043000</td></tr><tr><td>15044000 (Bolsa)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15044000</td></tr><tr><td>15046000 (Esponja)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15046000</td></tr><tr><td>15047000 (Colher-medida)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15047000</td></tr><tr><td>15048000 (Lápis)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15048000</td></tr><tr><td>15049000 (Palhinha)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15049000</td></tr><tr><td>15050000 (Fita)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15050000</td></tr><tr><td>15052000 (Seringa)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15052000</td></tr><tr><td>15053000 (Sistema)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15053000</td></tr><tr><td>15055000 (Brinco)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15055000</td></tr><tr><td>15057000 (Fio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15057000</td></tr><tr><td>15060000 (Frasco para injetáveis)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15060000</td></tr><tr><td>15033000 (Tampão)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15033000</td></tr><tr><td>15062000 (Zaragatoa)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15062000</td></tr><tr><td>15059000 (Recipiente)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15059000</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ConceptMap/ctc-unit-edqm"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CTCUnitEDQM"] ; # 
+  fhir:title [ fhir:v "Mapeamento de códigos CTC para unidades de apresentação para EDQM"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2014-12-11"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:group ( [
+     fhir:source [
+       fhir:v "https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs"^^xsd:anyURI ;
+       fhir:link <https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs>
+     ] ;
+     fhir:target [
+       fhir:v "https://www.edqm.eu/en/"^^xsd:anyURI ;
+       fhir:link <https://www.edqm.eu/en/>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "15001000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15001000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15002000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15002000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15004000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15004000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15005000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15005000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15006000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15006000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15007000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15007000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15008000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15008000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15009000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15009000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15011000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15011000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15012000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15012000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15013000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15013000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15024000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15024000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15016000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15016000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15017000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15017000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15018000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15018000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "−" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "−" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15021000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15021000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15022000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15022000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "−" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "−" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15025000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15025000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15026000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15026000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "−" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "−" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15029000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15029000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15036000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15036000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15037000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15037000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15039000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15039000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15041000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15041000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15042000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15042000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "−" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "−" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "−" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "−" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15045000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15045000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "−" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "−" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15051000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15051000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15054000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15054000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15056000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15056000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15058000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15058000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15015000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15015000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15019000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15019000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15023000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15023000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15027000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15027000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15028000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15028000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15030000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15030000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15031000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15031000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15034000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15034000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15035000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15035000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15038000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15038000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15040000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15040000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15043000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15043000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15044000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15044000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15046000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15046000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15047000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15047000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15048000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15048000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15049000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15049000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15050000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15050000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15052000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15052000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15053000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15053000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15055000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15055000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15057000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15057000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15060000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15060000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15033000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15033000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15062000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15062000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15059000" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "15059000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
