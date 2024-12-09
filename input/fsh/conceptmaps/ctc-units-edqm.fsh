@@ -11,7 +11,7 @@ Usage: #definition
 * date = "2014-12-11"
 * publisher = "CTC / HL7 Portugal"
 
-* group.source = "https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs"
+* group.source = "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs"
 * group.target = "https://www.edqm.eu/en/"
 
 * group.element[+].code = #15001000
