@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="esp-farm-snomed"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap esp-farm-snomed</b></p><a name="esp-farm-snomed"> </a><a name="hcesp-farm-snomed"> </a><a name="esp-farm-snomed-pt-PT"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href="CodeSystem-especialidades-farmaceuticas-cs.html">Especialidades Farmacêuticas</a> to <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-snomed-CT.html">SNOMED CT International Edition</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>1 (Análises Clínicas)</td><td colspan="2" style="background-color: #efefef">(not mapped)</td></tr><tr><td>2 (Assuntos Regulamentares)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>1255514008 (Regulatory affairs pharmacist (occupation))</td></tr><tr><td>3 (Distribuição Farmacêutica)</td><td colspan="2" style="background-color: #efefef">(not mapped)</td></tr><tr><td>4 (Farmácia Hospitalar)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>159010009 (Hospital pharmacist)</td></tr><tr><td>5 (Genética Humana)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>1255515009 (Pharmacogenomics pharmacist (occupation))</td></tr><tr><td>6 (Indústria Farmacêutica)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>159012001 (Industrial pharmacist)</td></tr><tr><td>7 (Farmácia Comunitária)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>159011008 (Retail pharmacist)</td></tr></table></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ConceptMap/esp-farm-snomed"/>
+  <version value="1.0.0"/>
+  <name value="ESP-FARM-SNOMED"/>
+  <title value="Mapeamento de códigos de especialidades farmacêuticas para códigos SNOMEDCT"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-12-11"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <group>
+    <source value="https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-farmaceuticas-cs"/>
+    <target value="http://snomed.info/sct"/>
+    <element>
+      <code value="1"/>
+      <noMap value="true"/>
+    </element>
+    <element>
+      <code value="2"/>
+      <target>
+        <code value="1255514008"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="3"/>
+      <noMap value="true"/>
+    </element>
+    <element>
+      <code value="4"/>
+      <target>
+        <code value="159010009"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="5"/>
+      <target>
+        <code value="1255515009"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="6"/>
+      <target>
+        <code value="159012001"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="7"/>
+      <target>
+        <code value="159011008"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

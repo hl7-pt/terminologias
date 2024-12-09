@@ -1,0 +1,759 @@
+TerminologyPT : Validation Results
+=========================================
+
+err = 401, warn = 298, info = 25
+$--
+Generated $--. FHIR version $-- for hl7.fhir.pt.terminology#$-- (canonical = http://hl7.pt/fhir)
+ Build Errors : 0 / 6 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-cparm-routes-cs : 4 / 0 / 3
+ /github/workspace/fsh-generated/resources/CodeSystem-cparm-units-presentation-cs : 4 / 0 / 3
+ /github/workspace/fsh-generated/resources/CodeSystem-especialidades-enfermagem-cs : 4 / 0 / 3
+ /github/workspace/fsh-generated/resources/CodeSystem-especialidades-farmaceuticas-cs : 4 / 0 / 3
+ /github/workspace/fsh-generated/resources/CodeSystem-especialidades-medicas-cs : 4 / 0 / 3
+ /github/workspace/fsh-generated/resources/CodeSystem-mcdts-analiticos-cs : 4 / 254 / 5
+ /github/workspace/fsh-generated/resources/CodeSystem-mcdts-radiologia-cs : 4 / 32 / 5
+ /github/workspace/fsh-generated/resources/CodeSystem-subsistemas-saude-cs : 5 / 0 / 3
+ /github/workspace/fsh-generated/resources/ConceptMap-ctc-unit-edqm : 66 / 1 / 2
+ /github/workspace/fsh-generated/resources/ConceptMap-esp-enfer-snomed : 4 / 2 / 2
+ /github/workspace/fsh-generated/resources/ConceptMap-esp-farm-snomed : 4 / 2 / 2
+ /github/workspace/fsh-generated/resources/ConceptMap-mcdts-analiticos-sns-conv : 294 / 1 / 2
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.terminology : 0 / 0 / 2
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ConceptMap/ctc-unit-edqm.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ConceptMap/mcdts-analiticos-sns-conv.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ConceptMap/esp-enfer-snomed.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ConceptMap/esp-farm-snomed.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-cparm-routes-cs.json ==
+ERROR: CodeSystem.where(url = 'https://terminologias.hl7.pt/fhir/CodeSystem/cparm-routes-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-cparm-routes-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/cparm-routes-cs) does not match the URL (https://terminologias.hl7.pt/fhir/CodeSystem/cparm-routes-cs)
+INFORMATION: CodeSystem/cparm-routes-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/cparm-routes-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/cparm-routes-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/cparm-routes-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-cparm-routes-cs: URL Mismatch http://hl7.pt/fhir/CodeSystem/cparm-routes-cs vs https://terminologias.hl7.pt/fhir/CodeSystem/cparm-routes-cs
+== fsh-generated/resources/CodeSystem-cparm-units-presentation-cs.json ==
+ERROR: CodeSystem.where(url = 'https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-cparm-units-presentation-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs) does not match the URL (https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs)
+INFORMATION: CodeSystem/cparm-units-presentation-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/cparm-units-presentation-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/cparm-units-presentation-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/cparm-units-presentation-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-cparm-units-presentation-cs: URL Mismatch http://hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs vs https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs
+== fsh-generated/resources/CodeSystem-especialidades-enfermagem-cs.json ==
+ERROR: CodeSystem.where(url = 'https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-enfermagem-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-especialidades-enfermagem-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/especialidades-enfermagem-cs) does not match the URL (https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-enfermagem-cs)
+INFORMATION: CodeSystem/especialidades-enfermagem-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/especialidades-enfermagem-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/especialidades-enfermagem-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/especialidades-enfermagem-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-especialidades-enfermagem-cs: URL Mismatch http://hl7.pt/fhir/CodeSystem/especialidades-enfermagem-cs vs https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-enfermagem-cs
+== fsh-generated/resources/CodeSystem-especialidades-farmaceuticas-cs.json ==
+ERROR: CodeSystem.where(url = 'https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-farmaceuticas-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-especialidades-farmaceuticas-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/especialidades-farmaceuticas-cs) does not match the URL (https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-farmaceuticas-cs)
+INFORMATION: CodeSystem/especialidades-farmaceuticas-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/especialidades-farmaceuticas-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/especialidades-farmaceuticas-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/especialidades-farmaceuticas-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-especialidades-farmaceuticas-cs: URL Mismatch http://hl7.pt/fhir/CodeSystem/especialidades-farmaceuticas-cs vs https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-farmaceuticas-cs
+== fsh-generated/resources/CodeSystem-especialidades-medicas-cs.json ==
+ERROR: CodeSystem.where(url = 'https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-medicas-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-especialidades-medicas-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/especialidades-medicas-cs) does not match the URL (https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-medicas-cs)
+INFORMATION: CodeSystem/especialidades-medicas-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/especialidades-medicas-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/especialidades-medicas-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/especialidades-medicas-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-especialidades-medicas-cs: URL Mismatch http://hl7.pt/fhir/CodeSystem/especialidades-medicas-cs vs https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-medicas-cs
+== fsh-generated/resources/CodeSystem-mcdts-analiticos-cs.json ==
+ERROR: CodeSystem.where(url = 'https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-mcdts-analiticos-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs) does not match the URL (https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs)
+INFORMATION: CodeSystem/mcdts-analiticos-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[0].display: value should not start or finish with whitespace '17 alfa-hidroxiprogesterona, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[0].definition: value should not start or finish with whitespace '17 alfa-hidroxiprogesterona, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[1].display: value should not start or finish with whitespace '17-cetosteróides, u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[1].definition: value should not start or finish with whitespace '17-cetosteróides, u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[2].display: value should not start or finish with whitespace '17-hidroxicorticosteróides (17-OHCS), u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[2].definition: value should not start or finish with whitespace '17-hidroxicorticosteróides (17-OHCS), u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[3].display: value should not start or finish with whitespace '5'-nucleotidase, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[3].definition: value should not start or finish with whitespace '5'-nucleotidase, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[5].display: value should not start or finish with whitespace 'Ácido úrico, s/u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[5].definition: value should not start or finish with whitespace 'Ácido úrico, s/u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[6].display: value should not start or finish with whitespace 'Ácido vanilmandélico (VMA), u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[6].definition: value should not start or finish with whitespace 'Ácido vanilmandélico (VMA), u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[8].display: value should not start or finish with whitespace 'Albumina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[8].definition: value should not start or finish with whitespace 'Albumina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[9].display: value should not start or finish with whitespace 'Aldolase, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[9].definition: value should not start or finish with whitespace 'Aldolase, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[10].display: value should not start or finish with whitespace 'Aldosterona, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[10].definition: value should not start or finish with whitespace 'Aldosterona, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[12].display: value should not start or finish with whitespace 'Alfa1-quimotripsina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[12].definition: value should not start or finish with whitespace 'Alfa1-quimotripsina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[13].display: value should not start or finish with whitespace 'Alfa-fetoproteína, s/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[13].definition: value should not start or finish with whitespace 'Alfa-fetoproteína, s/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[14].display: value should not start or finish with whitespace 'Alumínio, s/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[14].definition: value should not start or finish with whitespace 'Alumínio, s/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[15].display: value should not start or finish with whitespace 'Amilase, s/u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[15].definition: value should not start or finish with whitespace 'Amilase, s/u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[16].display: value should not start or finish with whitespace 'Aminotransferase da alanina (ALT), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[16].definition: value should not start or finish with whitespace 'Aminotransferase da alanina (ALT), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[17].display: value should not start or finish with whitespace 'Aminotransferase do aspartato (AST), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[17].definition: value should not start or finish with whitespace 'Aminotransferase do aspartato (AST), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[18].display: value should not start or finish with whitespace 'Amónia, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[18].definition: value should not start or finish with whitespace 'Amónia, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[19].display: value should not start or finish with whitespace 'Angiotensina I, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[19].definition: value should not start or finish with whitespace 'Angiotensina I, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[20].display: value should not start or finish with whitespace 'Angiotensina II, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[20].definition: value should not start or finish with whitespace 'Angiotensina II, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[21].display: value should not start or finish with whitespace 'Antigénio carcinembrionário (CEA), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[21].definition: value should not start or finish with whitespace 'Antigénio carcinembrionário (CEA), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[23].display: value should not start or finish with whitespace 'Antigénio específico da próstata (PSA) total, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[23].definition: value should not start or finish with whitespace 'Antigénio específico da próstata (PSA) total, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[24].display: value should not start or finish with whitespace 'Apolipoproteínas A1 e B, cada, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[24].definition: value should not start or finish with whitespace 'Apolipoproteínas A1 e B, cada, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[25].display: value should not start or finish with whitespace 'Apolipoproteínas C2 e C3, cada, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[25].definition: value should not start or finish with whitespace 'Apolipoproteínas C2 e C3, cada, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[31].display: value should not start or finish with whitespace 'CA 125 '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[31].definition: value should not start or finish with whitespace 'CA 125 '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[32].display: value should not start or finish with whitespace 'CA 15-3 '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[32].definition: value should not start or finish with whitespace 'CA 15-3 '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[33].display: value should not start or finish with whitespace 'CA 19-9 '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[33].definition: value should not start or finish with whitespace 'CA 19-9 '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[34].display: value should not start or finish with whitespace 'Cálcio ionizado, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[34].definition: value should not start or finish with whitespace 'Cálcio ionizado, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[35].display: value should not start or finish with whitespace 'Cálcio total, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[35].definition: value should not start or finish with whitespace 'Cálcio total, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[36].display: value should not start or finish with whitespace 'Calcitonina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[36].definition: value should not start or finish with whitespace 'Calcitonina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[37].display: value should not start or finish with whitespace 'Cálculo, exame químico '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[37].definition: value should not start or finish with whitespace 'Cálculo, exame químico '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[38].display: value should not start or finish with whitespace 'Carbamazepina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[38].definition: value should not start or finish with whitespace 'Carbamazepina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[40].display: value should not start or finish with whitespace 'Catecolaminas, total, u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[40].definition: value should not start or finish with whitespace 'Catecolaminas, total, u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[43].display: value should not start or finish with whitespace 'Cloretos, estimulação por pilocarpina, suor '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[43].definition: value should not start or finish with whitespace 'Cloretos, estimulação por pilocarpina, suor '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[44].display: value should not start or finish with whitespace 'Cloretos, s/u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[44].definition: value should not start or finish with whitespace 'Cloretos, s/u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[45].display: value should not start or finish with whitespace 'Cobre, doseamento químico '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[45].definition: value should not start or finish with whitespace 'Cobre, doseamento químico '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[46].display: value should not start or finish with whitespace 'Colesterol da fração HDL, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[46].definition: value should not start or finish with whitespace 'Colesterol da fração HDL, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[47].display: value should not start or finish with whitespace 'Colesterol da fração LDL, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[47].definition: value should not start or finish with whitespace 'Colesterol da fração LDL, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[48].display: value should not start or finish with whitespace 'Colesterol total, s/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[48].definition: value should not start or finish with whitespace 'Colesterol total, s/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[51].display: value should not start or finish with whitespace 'Creatinaquinase (CK), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[51].definition: value should not start or finish with whitespace 'Creatinaquinase (CK), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[52].display: value should not start or finish with whitespace 'Creatinina, prova de depuração '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[52].definition: value should not start or finish with whitespace 'Creatinina, prova de depuração '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[53].display: value should not start or finish with whitespace 'Creatinina, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[53].definition: value should not start or finish with whitespace 'Creatinina, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[54].display: value should not start or finish with whitespace 'Delta4-androstenediona, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[54].definition: value should not start or finish with whitespace 'Delta4-androstenediona, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[55].display: value should not start or finish with whitespace 'Desidrogenase láctica (LDH), s/u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[55].definition: value should not start or finish with whitespace 'Desidrogenase láctica (LDH), s/u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[56].display: value should not start or finish with whitespace 'DHEA, Dehidroepiandrosterona, s/u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[56].definition: value should not start or finish with whitespace 'DHEA, Dehidroepiandrosterona, s/u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[57].display: value should not start or finish with whitespace 'DHEA-S, Dehidroepiandrosterona sulfato, s/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[57].definition: value should not start or finish with whitespace 'DHEA-S, Dehidroepiandrosterona sulfato, s/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[58].display: value should not start or finish with whitespace 'Digoxina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[58].definition: value should not start or finish with whitespace 'Digoxina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[62].display: value should not start or finish with whitespace 'Eritropoietina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[62].definition: value should not start or finish with whitespace 'Eritropoietina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[63].display: value should not start or finish with whitespace 'Estradiol (17ß), E2, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[63].definition: value should not start or finish with whitespace 'Estradiol (17ß), E2, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[64].display: value should not start or finish with whitespace 'Fenitoína, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[64].definition: value should not start or finish with whitespace 'Fenitoína, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[65].display: value should not start or finish with whitespace 'Ferritina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[65].definition: value should not start or finish with whitespace 'Ferritina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[66].display: value should not start or finish with whitespace 'Ferro, capacidade de fixação, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[66].definition: value should not start or finish with whitespace 'Ferro, capacidade de fixação, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[67].display: value should not start or finish with whitespace 'Ferro, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[67].definition: value should not start or finish with whitespace 'Ferro, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[69].display: value should not start or finish with whitespace 'Fosfatase ácida total, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[69].definition: value should not start or finish with whitespace 'Fosfatase ácida total, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[71].display: value should not start or finish with whitespace 'Fosfatase alcalina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[71].definition: value should not start or finish with whitespace 'Fosfatase alcalina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[72].display: value should not start or finish with whitespace 'Fosfato, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[72].definition: value should not start or finish with whitespace 'Fosfato, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[74].display: value should not start or finish with whitespace 'Gasimetria (pH, pCO2, pO2, SatO2, CO2, ...), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[74].definition: value should not start or finish with whitespace 'Gasimetria (pH, pCO2, pO2, SatO2, CO2, ...), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[75].display: value should not start or finish with whitespace 'Glucose, doseamento, s/u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[75].definition: value should not start or finish with whitespace 'Glucose, doseamento, s/u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[76].display: value should not start or finish with whitespace 'Gonadotrofina coriónica (HCG), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[76].definition: value should not start or finish with whitespace 'Gonadotrofina coriónica (HCG), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[77].display: value should not start or finish with whitespace 'Gonadotrofina coriónica (teste imunológico de gravidez), u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[77].definition: value should not start or finish with whitespace 'Gonadotrofina coriónica (teste imunológico de gravidez), u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[78].display: value should not start or finish with whitespace 'Gonadotrofina coriónica, subunidade Beta, fração livre (Fß HCG), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[78].definition: value should not start or finish with whitespace 'Gonadotrofina coriónica, subunidade Beta, fração livre (Fß HCG), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[79].display: value should not start or finish with whitespace 'Grau de digestão de alimentos, fezes '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[79].definition: value should not start or finish with whitespace 'Grau de digestão de alimentos, fezes '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[82].display: value should not start or finish with whitespace 'Hemoglobina, pesquisa, u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[82].definition: value should not start or finish with whitespace 'Hemoglobina, pesquisa, u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[84].display: value should not start or finish with whitespace 'Hormona adrenocorticotrópica (ACTH), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[84].definition: value should not start or finish with whitespace 'Hormona adrenocorticotrópica (ACTH), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[85].display: value should not start or finish with whitespace 'Hormona antidiurética (ADH), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[85].definition: value should not start or finish with whitespace 'Hormona antidiurética (ADH), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[86].display: value should not start or finish with whitespace 'Hormona do crescimento (HGH), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[86].definition: value should not start or finish with whitespace 'Hormona do crescimento (HGH), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[87].display: value should not start or finish with whitespace 'Hormona folículo-estimulante (FSH), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[87].definition: value should not start or finish with whitespace 'Hormona folículo-estimulante (FSH), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[88].display: value should not start or finish with whitespace 'Hormona luteínica (LH), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[88].definition: value should not start or finish with whitespace 'Hormona luteínica (LH), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[89].display: value should not start or finish with whitespace 'Hormona paratiroideia (PTH), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[89].definition: value should not start or finish with whitespace 'Hormona paratiroideia (PTH), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[90].display: value should not start or finish with whitespace 'Hormona tirostimulante (TSH), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[90].definition: value should not start or finish with whitespace 'Hormona tirostimulante (TSH), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[91].display: value should not start or finish with whitespace 'Insulina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[91].definition: value should not start or finish with whitespace 'Insulina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[93].display: value should not start or finish with whitespace 'Lactato (ácido láctico), s/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[93].definition: value should not start or finish with whitespace 'Lactato (ácido láctico), s/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[94].display: value should not start or finish with whitespace 'Lipase, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[94].definition: value should not start or finish with whitespace 'Lipase, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[95].display: value should not start or finish with whitespace 'Lipoproteínas (eletroforese), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[95].definition: value should not start or finish with whitespace 'Lipoproteínas (eletroforese), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[97].display: value should not start or finish with whitespace 'Lítio, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[97].definition: value should not start or finish with whitespace 'Lítio, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[98].display: value should not start or finish with whitespace 'Magnésio, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[98].definition: value should not start or finish with whitespace 'Magnésio, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[99].display: value should not start or finish with whitespace 'Mercúrio, doseamento, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[99].definition: value should not start or finish with whitespace 'Mercúrio, doseamento, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[100].display: value should not start or finish with whitespace 'Metanefrinas (total), s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[100].definition: value should not start or finish with whitespace 'Metanefrinas (total), s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[101].display: value should not start or finish with whitespace 'Metanefrinas fraccionadas, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[101].definition: value should not start or finish with whitespace 'Metanefrinas fraccionadas, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[102].display: value should not start or finish with whitespace 'Mioglobina, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[102].definition: value should not start or finish with whitespace 'Mioglobina, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[104].display: value should not start or finish with whitespace 'Osmolalidade, s/u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[104].definition: value should not start or finish with whitespace 'Osmolalidade, s/u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[105].display: value should not start or finish with whitespace 'Peptídeo C, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[105].definition: value should not start or finish with whitespace 'Peptídeo C, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[107].display: value should not start or finish with whitespace 'Porfobilinogénio, doseamento, s/u/fezes '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[107].definition: value should not start or finish with whitespace 'Porfobilinogénio, doseamento, s/u/fezes '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[108].display: value should not start or finish with whitespace 'Potássio, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[108].definition: value should not start or finish with whitespace 'Potássio, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[109].display: value should not start or finish with whitespace 'Progesterona (PRG), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[109].definition: value should not start or finish with whitespace 'Progesterona (PRG), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[110].display: value should not start or finish with whitespace 'Prolactina (PRL), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[110].definition: value should not start or finish with whitespace 'Prolactina (PRL), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[114].display: value should not start or finish with whitespace 'Proteína de transporte das hormonas sexuais (SHBG), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[114].definition: value should not start or finish with whitespace 'Proteína de transporte das hormonas sexuais (SHBG), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[115].display: value should not start or finish with whitespace 'Proteínas (total) e eletroforese, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[115].definition: value should not start or finish with whitespace 'Proteínas (total) e eletroforese, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[116].display: value should not start or finish with whitespace 'Proteínas (total) e electroforese após concentração, u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[116].definition: value should not start or finish with whitespace 'Proteínas (total) e electroforese após concentração, u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[117].display: value should not start or finish with whitespace 'Proteínas (total), s/u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[117].definition: value should not start or finish with whitespace 'Proteínas (total), s/u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[118].display: value should not start or finish with whitespace 'Prova de D - Xilose, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[118].definition: value should not start or finish with whitespace 'Prova de D - Xilose, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[119].display: value should not start or finish with whitespace 'Prova de sobrecarga glucídica, cada doseamento de glucose e de HGH '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[119].definition: value should not start or finish with whitespace 'Prova de sobrecarga glucídica, cada doseamento de glucose e de HGH '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[121].display: value should not start or finish with whitespace 'Prova tolerância à glucose, cada doseamento '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[121].definition: value should not start or finish with whitespace 'Prova tolerância à glucose, cada doseamento '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[122].display: value should not start or finish with whitespace 'Renina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[122].definition: value should not start or finish with whitespace 'Renina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[124].display: value should not start or finish with whitespace 'Sódio, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[124].definition: value should not start or finish with whitespace 'Sódio, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[126].display: value should not start or finish with whitespace 'Teofilina/aminofilina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[126].definition: value should not start or finish with whitespace 'Teofilina/aminofilina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[127].display: value should not start or finish with whitespace 'Testosterona livre, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[127].definition: value should not start or finish with whitespace 'Testosterona livre, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[128].display: value should not start or finish with whitespace 'Testosterona total, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[128].definition: value should not start or finish with whitespace 'Testosterona total, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[129].display: value should not start or finish with whitespace 'Tiroglobulina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[129].definition: value should not start or finish with whitespace 'Tiroglobulina, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[130].display: value should not start or finish with whitespace 'Tiroxina livre (FT4), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[130].definition: value should not start or finish with whitespace 'Tiroxina livre (FT4), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[131].display: value should not start or finish with whitespace 'Tiroxina total (T4), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[131].definition: value should not start or finish with whitespace 'Tiroxina total (T4), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[133].display: value should not start or finish with whitespace 'Triglicéridos, s/u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[133].definition: value should not start or finish with whitespace 'Triglicéridos, s/u/l '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[134].display: value should not start or finish with whitespace 'Triiodotironina livre (FT3), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[134].definition: value should not start or finish with whitespace 'Triiodotironina livre (FT3), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[135].display: value should not start or finish with whitespace 'Triiodotironina total (T3), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[135].definition: value should not start or finish with whitespace 'Triiodotironina total (T3), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[137].display: value should not start or finish with whitespace 'Ureia, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[137].definition: value should not start or finish with whitespace 'Ureia, s/u '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[138].display: value should not start or finish with whitespace 'Urina, análise quantitativa do sedimento (contagem por minuto) '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[138].definition: value should not start or finish with whitespace 'Urina, análise quantitativa do sedimento (contagem por minuto) '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[140].display: value should not start or finish with whitespace 'Valproato, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[140].definition: value should not start or finish with whitespace 'Valproato, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[145].display: value should not start or finish with whitespace 'Fragilidade osmótica dos eritrócitos, após incubação, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[145].definition: value should not start or finish with whitespace 'Fragilidade osmótica dos eritrócitos, após incubação, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[146].display: value should not start or finish with whitespace 'Fragilidade osmótica dos eritrócitos, imediata, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[146].definition: value should not start or finish with whitespace 'Fragilidade osmótica dos eritrócitos, imediata, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[147].display: value should not start or finish with whitespace 'Glucose-6-fosfato-desidrogenase (G6PD), eritrócitos, doseamento, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[147].definition: value should not start or finish with whitespace 'Glucose-6-fosfato-desidrogenase (G6PD), eritrócitos, doseamento, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[149].display: value should not start or finish with whitespace 'Hemoglobina F, doseamento, outros métodos, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[149].definition: value should not start or finish with whitespace 'Hemoglobina F, doseamento, outros métodos, s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[152].display: value should not start or finish with whitespace 'Hemoglobinas, separação e doseamento (Cromatografia LPLC/HPLC), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[152].definition: value should not start or finish with whitespace 'Hemoglobinas, separação e doseamento (Cromatografia LPLC/HPLC), s '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[179].display: value should not start or finish with whitespace 'Anticorpos anti-mitocôndrias (AMA) (imunofluorescência) '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[179].definition: value should not start or finish with whitespace 'Anticorpos anti-mitocôndrias (AMA) (imunofluorescência) '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[181].display: value should not start or finish with whitespace 'Anticorpos anti-nucleares e citoplasmáticos (ANA) (imunofluorescência) '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[181].definition: value should not start or finish with whitespace 'Anticorpos anti-nucleares e citoplasmáticos (ANA) (imunofluorescência) '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[182].display: value should not start or finish with whitespace 'Anticorpos anti-nucleares e citoplasmáticos (anti-Sm, RNP, SSA/Ro52, SSA/Ro60, SSB/La, Jo1, Scl70), identificação, todos '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[182].definition: value should not start or finish with whitespace 'Anticorpos anti-nucleares e citoplasmáticos (anti-Sm, RNP, SSA/Ro52, SSA/Ro60, SSB/La, Jo1, Scl70), identificação, todos '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[198].display: value should not start or finish with whitespace 'Fator reumatóide (nefelometria / turbidimetria) '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[198].definition: value should not start or finish with whitespace 'Fator reumatóide (nefelometria / turbidimetria) '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[203].display: value should not start or finish with whitespace 'Imunoglobulinas (A/G/M), baixa concentração, cada '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[203].definition: value should not start or finish with whitespace 'Imunoglobulinas (A/G/M), baixa concentração, cada '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[229].display: value should not start or finish with whitespace 'Anticorpos para Treponema pallidum, FTA-ABs (I.F.) '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[229].definition: value should not start or finish with whitespace 'Anticorpos para Treponema pallidum, FTA-ABs (I.F.) '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[231].display: value should not start or finish with whitespace 'Anticorpos para vírus Hepatite A IgG '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[231].definition: value should not start or finish with whitespace 'Anticorpos para vírus Hepatite A IgG '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[232].display: value should not start or finish with whitespace 'Anticorpos para vírus Hepatite A IgM '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[232].definition: value should not start or finish with whitespace 'Anticorpos para vírus Hepatite A IgM '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[233].display: value should not start or finish with whitespace 'Anticorpos para vírus Hepatite B - anti HBc IgG ou total '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[233].definition: value should not start or finish with whitespace 'Anticorpos para vírus Hepatite B - anti HBc IgG ou total '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[238].display: value should not start or finish with whitespace 'Anticorpos para vírus Hepatite C - anti HCV confirmatório '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[238].definition: value should not start or finish with whitespace 'Anticorpos para vírus Hepatite C - anti HCV confirmatório '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[246].display: value should not start or finish with whitespace 'Título de anti-estreptolisina O '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[246].definition: value should not start or finish with whitespace 'Título de anti-estreptolisina O '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[257].display: value should not start or finish with whitespace 'Exsudado conjuntival - exame cultural, identificação e TSA '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[257].definition: value should not start or finish with whitespace 'Exsudado conjuntival - exame cultural, identificação e TSA '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[258].display: value should not start or finish with whitespace 'Exsudado endocervical - pesquisa de Neisseria gonorrhoeae, exame cultural, identificação e TSA '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[258].definition: value should not start or finish with whitespace 'Exsudado endocervical - pesquisa de Neisseria gonorrhoeae, exame cultural, identificação e TSA '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[265].display: value should not start or finish with whitespace 'Exsudado purulento (colheita por aspiração) - exame direto, cultural em aerobiose, identificação e TSA '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[265].definition: value should not start or finish with whitespace 'Exsudado purulento (colheita por aspiração) - exame direto, cultural em aerobiose, identificação e TSA '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[267].display: value should not start or finish with whitespace 'Exsudado uretral - exame bacteriológico, micológico e parasitológico, identificação e TSA '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[267].definition: value should not start or finish with whitespace 'Exsudado uretral - exame bacteriológico, micológico e parasitológico, identificação e TSA '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[269].display: value should not start or finish with whitespace 'Fezes - pesquisa de Salmonella, Shigella e Campylobacter, exame cultural, identificação e TSA '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[269].definition: value should not start or finish with whitespace 'Fezes - pesquisa de Salmonella, Shigella e Campylobacter, exame cultural, identificação e TSA '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[273].display: value should not start or finish with whitespace 'Líquidos de cavidades naturais - exame direto, cultural, identificação e TSA '
+WARNING: CodeSystem/mcdts-analiticos-cs: CodeSystem.concept[273].definition: value should not start or finish with whitespace 'Líquidos de cavidades naturais - exame direto, cultural, identificação e TSA '
+INFORMATION: CodeSystem/mcdts-analiticos-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/mcdts-analiticos-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/mcdts-analiticos-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+INFORMATION: CodeSystem/mcdts-analiticos-cs: CodeSystem.property[0]: This property has only a code ('preco') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+INFORMATION: CodeSystem/mcdts-analiticos-cs: CodeSystem.property[1]: This property has only a code ('taxa') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-mcdts-analiticos-cs: URL Mismatch http://hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs vs https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs
+== fsh-generated/resources/CodeSystem-mcdts-radiologia-cs.json ==
+ERROR: CodeSystem.where(url = 'https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-radiologia-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-mcdts-radiologia-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/mcdts-radiologia-cs) does not match the URL (https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-radiologia-cs)
+INFORMATION: CodeSystem/mcdts-radiologia-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[44].display: value should not start or finish with whitespace 'Radiografia da Coluna, filme extralongo, uma incidência '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[44].definition: value should not start or finish with whitespace 'Radiografia da Coluna, filme extralongo, uma incidência '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[87].display: value should not start or finish with whitespace 'Idade óssea (mão e punho) '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[87].definition: value should not start or finish with whitespace 'Idade óssea (mão e punho) '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[103].display: value should not start or finish with whitespace 'Pé, duas incidências '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[103].definition: value should not start or finish with whitespace 'Pé, duas incidências '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[104].display: value should not start or finish with whitespace 'Pé em carga, duas incidências '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[104].definition: value should not start or finish with whitespace 'Pé em carga, duas incidências '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[106].display: value should not start or finish with whitespace 'Dedos do pé, duas incidências '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[106].definition: value should not start or finish with whitespace 'Dedos do pé, duas incidências '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[108].display: value should not start or finish with whitespace 'Radiografia dos membros inferiores em filme extralongo '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[108].definition: value should not start or finish with whitespace 'Radiografia dos membros inferiores em filme extralongo '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[109].display: value should not start or finish with whitespace 'Radiometria dos membros inferiores por segmentos articulares '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[109].definition: value should not start or finish with whitespace 'Radiometria dos membros inferiores por segmentos articulares '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[141].display: value should not start or finish with whitespace 'TC do crânio '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[141].definition: value should not start or finish with whitespace 'TC do crânio '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[142].display: value should not start or finish with whitespace 'TC maxilo-facial '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[142].definition: value should not start or finish with whitespace 'TC maxilo-facial '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[144].display: value should not start or finish with whitespace 'TC da sela turca '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[144].definition: value should not start or finish with whitespace 'TC da sela turca '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[145].display: value should not start or finish with whitespace 'TC das órbitas '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[145].definition: value should not start or finish with whitespace 'TC das órbitas '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[147].display: value should not start or finish with whitespace 'TC dos ouvidos '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[147].definition: value should not start or finish with whitespace 'TC dos ouvidos '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[148].display: value should not start or finish with whitespace 'TC da faringe '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[148].definition: value should not start or finish with whitespace 'TC da faringe '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[154].display: value should not start or finish with whitespace 'TC do tórax '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[154].definition: value should not start or finish with whitespace 'TC do tórax '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[155].display: value should not start or finish with whitespace 'TC do abdómen superior '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[155].definition: value should not start or finish with whitespace 'TC do abdómen superior '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[169].display: value should not start or finish with whitespace 'Punção aspirativa para citologia guiada por técnica de imagem '
+WARNING: CodeSystem/mcdts-radiologia-cs: CodeSystem.concept[169].definition: value should not start or finish with whitespace 'Punção aspirativa para citologia guiada por técnica de imagem '
+INFORMATION: CodeSystem/mcdts-radiologia-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/mcdts-radiologia-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/mcdts-radiologia-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+INFORMATION: CodeSystem/mcdts-radiologia-cs: CodeSystem.property[0]: This property has only a code ('preco') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+INFORMATION: CodeSystem/mcdts-radiologia-cs: CodeSystem.property[1]: This property has only a code ('taxa') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-mcdts-radiologia-cs: URL Mismatch http://hl7.pt/fhir/CodeSystem/mcdts-radiologia-cs vs https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-radiologia-cs
+== fsh-generated/resources/CodeSystem-subsistemas-saude-cs.json ==
+ERROR: CodeSystem.where(url = 'https://terminologias.hl7.pt/fhir/CodeSystem/subsistemas-saude-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-subsistemas-saude-cs.json - the canonical URL (http://hl7.pt/fhir/CodeSystem/subsistemas-saude-cs) does not match the URL (https://terminologias.hl7.pt/fhir/CodeSystem/subsistemas-saude-cs)
+INFORMATION: CodeSystem/subsistemas-saude-cs: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: CodeSystem/subsistemas-saude-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: CodeSystem/subsistemas-saude-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: CodeSystem/subsistemas-saude-cs: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: CodeSystem/subsistemas-saude-cs: CodeSystem.concept[0].property[0]: The property 'tipo' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-subsistemas-saude-cs: URL Mismatch http://hl7.pt/fhir/CodeSystem/subsistemas-saude-cs vs https://terminologias.hl7.pt/fhir/CodeSystem/subsistemas-saude-cs
+== fsh-generated/resources/ConceptMap-ctc-unit-edqm.json ==
+ERROR: ConceptMap.where(url = 'https://hl7.pt/fhir/Terminologias/ConceptMap/ctc-unit-edqm'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-ctc-unit-edqm.json - the canonical URL (http://hl7.pt/fhir/ConceptMap/ctc-unit-edqm) does not match the URL (https://hl7.pt/fhir/Terminologias/ConceptMap/ctc-unit-edqm)
+ERROR: ConceptMap.where(url = 'https://hl7.pt/fhir/Terminologias/ConceptMap/ctc-unit-edqm'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-ctc-unit-edqm.json - the canonical URL (http://hl7.pt/fhir/ConceptMap/ctc-unit-edqm) does not match the URL (https://hl7.pt/fhir/Terminologias/ConceptMap/ctc-unit-edqm)
+INFORMATION: ConceptMap/ctc-unit-edqm: ConceptMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].target: The Target Code System https://www.edqm.eu/en/ is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[0].code: The source code '15001000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[1].code: The source code '15002000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[2].code: The source code '15004000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[3].code: The source code '15005000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[4].code: The source code '15006000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[5].code: The source code '15007000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[6].code: The source code '15008000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[7].code: The source code '15009000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[8].code: The source code '15011000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[9].code: The source code '15012000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[10].code: The source code '15013000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[11].code: The source code '15024000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[12].code: The source code '15016000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[13].code: The source code '15017000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[14].code: The source code '15018000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[15].code: The source code '−' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[16].code: The source code '15021000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[17].code: The source code '15022000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[18].code: The source code '−' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[19].code: The source code '15025000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[20].code: The source code '15026000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[21].code: The source code '−' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[22].code: The source code '15029000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[23].code: The source code '15036000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[24].code: The source code '15037000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[25].code: The source code '15039000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[26].code: The source code '15041000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[27].code: The source code '15042000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[28].code: The source code '−' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[29].code: The source code '−' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[30].code: The source code '15045000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[31].code: The source code '−' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[32].code: The source code '15051000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[33].code: The source code '15054000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[34].code: The source code '15056000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[35].code: The source code '15058000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[36].code: The source code '15015000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[37].code: The source code '15019000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[38].code: The source code '15023000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[39].code: The source code '15027000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[40].code: The source code '15028000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[41].code: The source code '15030000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[42].code: The source code '15031000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[43].code: The source code '15034000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[44].code: The source code '15035000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[45].code: The source code '15038000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[46].code: The source code '15040000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[47].code: The source code '15043000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[48].code: The source code '15044000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[49].code: The source code '15046000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[50].code: The source code '15047000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[51].code: The source code '15048000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[52].code: The source code '15049000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[53].code: The source code '15050000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[54].code: The source code '15052000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[55].code: The source code '15053000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[56].code: The source code '15055000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[57].code: The source code '15057000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[58].code: The source code '15060000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[59].code: The source code '15033000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[60].code: The source code '15062000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap.group[0].element[61].code: The source code '15059000' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs|1.0.0
+ERROR: ConceptMap/ctc-unit-edqm: ConceptMap: Concept maps published by HL7 SHALL conform to the ShareableConceptMap profile, which says that the element ConceptMap.description is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ConceptMap-ctc-unit-edqm: URL Mismatch http://hl7.pt/fhir/ConceptMap/ctc-unit-edqm vs https://hl7.pt/fhir/Terminologias/ConceptMap/ctc-unit-edqm
+== fsh-generated/resources/ConceptMap-esp-enfer-snomed.json ==
+ERROR: ConceptMap.where(url = 'https://hl7.pt/fhir/Terminologias/ConceptMap/esp-enfer-snomed'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-esp-enfer-snomed.json - the canonical URL (http://hl7.pt/fhir/ConceptMap/esp-enfer-snomed) does not match the URL (https://hl7.pt/fhir/Terminologias/ConceptMap/esp-enfer-snomed)
+ERROR: ConceptMap.where(url = 'https://hl7.pt/fhir/Terminologias/ConceptMap/esp-enfer-snomed'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-esp-enfer-snomed.json - the canonical URL (http://hl7.pt/fhir/ConceptMap/esp-enfer-snomed) does not match the URL (https://hl7.pt/fhir/Terminologias/ConceptMap/esp-enfer-snomed)
+INFORMATION: ConceptMap/esp-enfer-snomed: ConceptMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: ConceptMap/esp-enfer-snomed: ConceptMap: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/ConceptMap)
+WARNING: ConceptMap/esp-enfer-snomed: ConceptMap.group[0].target: The Target Code System http://snomed.info/sct is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
+ERROR: ConceptMap/esp-enfer-snomed: ConceptMap: Concept maps published by HL7 SHALL conform to the ShareableConceptMap profile, which says that the element ConceptMap.description is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ConceptMap-esp-enfer-snomed: URL Mismatch http://hl7.pt/fhir/ConceptMap/esp-enfer-snomed vs https://hl7.pt/fhir/Terminologias/ConceptMap/esp-enfer-snomed
+== fsh-generated/resources/ConceptMap-esp-farm-snomed.json ==
+ERROR: ConceptMap.where(url = 'https://hl7.pt/fhir/Terminologias/ConceptMap/esp-farm-snomed'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-esp-farm-snomed.json - the canonical URL (http://hl7.pt/fhir/ConceptMap/esp-farm-snomed) does not match the URL (https://hl7.pt/fhir/Terminologias/ConceptMap/esp-farm-snomed)
+ERROR: ConceptMap.where(url = 'https://hl7.pt/fhir/Terminologias/ConceptMap/esp-farm-snomed'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-esp-farm-snomed.json - the canonical URL (http://hl7.pt/fhir/ConceptMap/esp-farm-snomed) does not match the URL (https://hl7.pt/fhir/Terminologias/ConceptMap/esp-farm-snomed)
+INFORMATION: ConceptMap/esp-farm-snomed: ConceptMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: ConceptMap/esp-farm-snomed: ConceptMap: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/ConceptMap)
+WARNING: ConceptMap/esp-farm-snomed: ConceptMap.group[0].target: The Target Code System http://snomed.info/sct is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
+ERROR: ConceptMap/esp-farm-snomed: ConceptMap: Concept maps published by HL7 SHALL conform to the ShareableConceptMap profile, which says that the element ConceptMap.description is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ConceptMap-esp-farm-snomed: URL Mismatch http://hl7.pt/fhir/ConceptMap/esp-farm-snomed vs https://hl7.pt/fhir/Terminologias/ConceptMap/esp-farm-snomed
+== fsh-generated/resources/ConceptMap-mcdts-analiticos-sns-conv.json ==
+ERROR: ConceptMap.where(url = 'https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-analiticos-sns-conv'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-mcdts-analiticos-sns-conv.json - the canonical URL (http://hl7.pt/fhir/ConceptMap/mcdts-analiticos-sns-conv) does not match the URL (https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-analiticos-sns-conv)
+ERROR: ConceptMap.where(url = 'https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-analiticos-sns-conv'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-mcdts-analiticos-sns-conv.json - the canonical URL (http://hl7.pt/fhir/ConceptMap/mcdts-analiticos-sns-conv) does not match the URL (https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-analiticos-sns-conv)
+INFORMATION: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].target: The Target Code System https://www.edqm.eu/en/ is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[0].code: The source code '21175' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[1].code: The source code '21443' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[2].code: The source code '22187' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[3].code: The source code '22511' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[4].code: The source code '21086' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[5].code: The source code '21101' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[6].code: The source code '21107' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[7].code: The source code '21141' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[8].code: The source code '21140' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[9].code: The source code '21156' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[10].code: The source code '21161' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[11].code: The source code '21162' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[12].code: The source code '21178' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[13].code: The source code '21169' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[14].code: The source code '21186' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[15].code: The source code '21196' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[16].code: The source code '21217' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[17].code: The source code '21220' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[18].code: The source code '21230' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[19].code: The source code '21242' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[20].code: The source code '21243' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[21].code: The source code '21258' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[22].code: The source code '21262' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[23].code: The source code '21261' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[24].code: The source code '21264' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[25].code: The source code '21263' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[26].code: The source code '21272' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[27].code: The source code '21280' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[28].code: The source code '21321' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[29].code: The source code '21344' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[30].code: The source code '21340' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[31].code: The source code '21372' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[32].code: The source code '21369' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[33].code: The source code '21370' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[34].code: The source code '21393' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[35].code: The source code '21396' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[36].code: The source code '21401' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[37].code: The source code '21412' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[38].code: The source code '21425' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[39].code: The source code '21435' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[40].code: The source code '21438' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[41].code: The source code '21448' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[42].code: The source code '21482' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[43].code: The source code '21516' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[44].code: The source code '21513' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[45].code: The source code '21529' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[46].code: The source code '21539' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[47].code: The source code '21545' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[48].code: The source code '21554' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[49].code: The source code '21589' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[50].code: The source code '21587' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[51].code: The source code '21609' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[52].code: The source code '21623' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[53].code: The source code '21620' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[54].code: The source code '21646' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[55].code: The source code '21665' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[56].code: The source code '21638' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[57].code: The source code '21641' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[58].code: The source code '21724' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[59].code: The source code '21775' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[60].code: The source code '21777' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[61].code: The source code '21240' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[62].code: The source code '21794' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[63].code: The source code '21809' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[64].code: The source code '21875' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[65].code: The source code '21895' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[66].code: The source code '21906' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[67].code: The source code '21900' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[68].code: The source code '21074' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[69].code: The source code '21932' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[70].code: The source code '21929' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[71].code: The source code '21935' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[72].code: The source code '21976' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[73].code: The source code '22035' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[74].code: The source code '21789' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[75].code: The source code '22076' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[76].code: The source code '22116' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[77].code: The source code '22114' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[78].code: The source code '22121' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[79].code: The source code '22125' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[80].code: The source code '22140' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[81].code: The source code '22151' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[82].code: The source code '22154' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[83].code: The source code '22213' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[84].code: The source code '22220' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[85].code: The source code '22223' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[86].code: The source code '22226' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[87].code: The source code '22238' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[88].code: The source code '22244' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[89].code: The source code '22250' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[90].code: The source code '22253' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[91].code: The source code '22280' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[92].code: The source code '22271' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[93].code: The source code '22298' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[94].code: The source code '22329' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[95].code: The source code '22340' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[96].code: The source code '21835' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[97].code: The source code '22347' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[98].code: The source code '22357' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[99].code: The source code '22400' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[100].code: The source code '22413' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[101].code: The source code '22410' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[102].code: The source code '22461' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[103].code: The source code '22508' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[104].code: The source code '22521' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[105].code: The source code '22581' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[106].code: The source code '22608' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[107].code: The source code '22612' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[108].code: The source code '22617' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[109].code: The source code '22642' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[110].code: The source code '22647' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[111].code: The source code '22606' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[112].code: The source code '22671' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[113].code: The source code '22669' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[114].code: The source code '22673' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[115].code: The source code '22682' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[116].code: The source code '22685' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[117].code: The source code '22679' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[118].code: The source code '22999' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[119].code: The source code '22715' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[120].code: The source code '22718' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[121].code: The source code '22085' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[122].code: The source code '22752' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[123].code: The source code '22768' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[124].code: The source code '22793' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[125].code: The source code '22795' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[126].code: The source code '22823' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[127].code: The source code '22836' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[128].code: The source code '22839' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[129].code: The source code '22879' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[130].code: The source code '22897' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[131].code: The source code '22900' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[132].code: The source code '22907' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[133].code: The source code '22920' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[134].code: The source code '22925' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[135].code: The source code '22928' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[136].code: The source code '22946' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[137].code: The source code '22949' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[138].code: The source code '22960' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[139].code: The source code '22954' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[140].code: The source code '21104' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[141].code: The source code '21458' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[142].code: The source code '22992' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[143].code: The source code '24337' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[144].code: The source code '24410' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[145].code: The source code '24145' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[146].code: The source code '24142' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[147].code: The source code '24163' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[148].code: The source code '24184' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[149].code: The source code '24187' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[150].code: The source code '24390' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[151].code: The source code '24197' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[152].code: The source code '24201' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[153].code: The source code '24209' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[154].code: The source code '24415' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[155].code: The source code '24316' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[156].code: The source code '24030' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[157].code: The source code '24380' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[158].code: The source code '24011' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[159].code: The source code '24023' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[160].code: The source code '24055' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[161].code: The source code '24043' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[162].code: The source code '24077' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[163].code: The source code '24101' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[164].code: The source code '24092' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[165].code: The source code '24260' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[166].code: The source code '24295' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[167].code: The source code '24297' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[168].code: The source code '24298' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[169].code: The source code '24347' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[170].code: The source code '24359' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[171].code: The source code '25023' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[172].code: The source code '25424' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[173].code: The source code '25017' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[174].code: The source code '25019' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[175].code: The source code '25357' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[176].code: The source code '25033' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[177].code: The source code '25041' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[178].code: The source code '25050' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[179].code: The source code '25048' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[180].code: The source code '25054' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[181].code: The source code '25057' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[182].code: The source code '25520' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[183].code: The source code '25440' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[184].code: The source code '25550' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[185].code: The source code '25071' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[186].code: The source code '25070' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[187].code: The source code '25075' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[188].code: The source code '25207' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[189].code: The source code '25206' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[190].code: The source code '25083' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[191].code: The source code '25247' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[192].code: The source code '25250' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[193].code: The source code '25096' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[194].code: The source code '25119' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[195].code: The source code '25120' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[196].code: The source code '25571' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[197].code: The source code '25137' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[198].code: The source code '25185' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[199].code: The source code '25270' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[200].code: The source code '25258' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[201].code: The source code '25271' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[202].code: The source code '25272' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[203].code: The source code '25262' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[204].code: The source code '25263' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[205].code: The source code '25265' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[206].code: The source code '25275' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[207].code: The source code '25701' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[208].code: The source code '25702' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[209].code: The source code '25704' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[210].code: The source code '25312' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[211].code: The source code '26041' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[212].code: The source code '26045' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[213].code: The source code '26047' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[214].code: The source code '26076' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[215].code: The source code '26074' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[216].code: The source code '26075' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[217].code: The source code '26429' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[218].code: The source code '26431' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[219].code: The source code '26433' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[220].code: The source code '26479' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[221].code: The source code '26481' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[222].code: The source code '26483' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[223].code: The source code '26485' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[224].code: The source code '26486' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[225].code: The source code '26489' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[226].code: The source code '26491' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[227].code: The source code '26487' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[228].code: The source code '26170' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[229].code: The source code '26040' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[230].code: The source code '26006' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[231].code: The source code '26019' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[232].code: The source code '26022' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[233].code: The source code '26010' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[234].code: The source code '26012' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[235].code: The source code '26013' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[236].code: The source code '26025' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[237].code: The source code '26031' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[238].code: The source code '26033' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[239].code: The source code '26032' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[240].code: The source code '26059' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[241].code: The source code '26005' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[242].code: The source code '26271' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[243].code: The source code '26265' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[244].code: The source code '26268' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[245].code: The source code '26276' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[246].code: The source code '26298' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[247].code: The source code '26252' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[248].code: The source code '26223' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[249].code: The source code '26066' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[250].code: The source code '26069' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[251].code: The source code '26507' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[252].code: The source code '26508' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[253].code: The source code '26179' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[254].code: The source code '26183' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[255].code: The source code '26307' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[256].code: The source code '26110' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[257].code: The source code '26513' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[258].code: The source code '26125' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[259].code: The source code '26136' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[260].code: The source code '26111' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[261].code: The source code '26135' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[262].code: The source code '26134' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[263].code: The source code '26133' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[264].code: The source code '26511' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[265].code: The source code '26519' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[266].code: The source code '26120' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[267].code: The source code '26127' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[268].code: The source code '26124' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[269].code: The source code '26095' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[270].code: The source code '26269' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[271].code: The source code '26172' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[272].code: The source code '26516' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[273].code: The source code '26108' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[274].code: The source code '26514' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[275].code: The source code '26177' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[276].code: The source code '26498' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[277].code: The source code '26145' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[278].code: The source code '26139' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[279].code: The source code '26274' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[280].code: The source code '26153' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[281].code: The source code '26151' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[282].code: The source code '26152' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[283].code: The source code '26165' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[284].code: The source code '55057' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[285].code: The source code '55137' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[286].code: The source code '55020' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[287].code: The source code '55015' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[288].code: The source code '55045' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap.group[0].element[289].code: The source code '55010' is not valid in the code system https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs|1.0.0
+ERROR: ConceptMap/mcdts-analiticos-sns-conv: ConceptMap: Concept maps published by HL7 SHALL conform to the ShareableConceptMap profile, which says that the element ConceptMap.description is mandatory, but it is not present
+ERROR: /github/workspace/fsh-generated/resources/ConceptMap-mcdts-analiticos-sns-conv: URL Mismatch http://hl7.pt/fhir/ConceptMap/mcdts-analiticos-sns-conv vs https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-analiticos-sns-conv
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.terminology.json ==
+INFORMATION: ImplementationGuide/hl7.fhir.pt.terminology: ImplementationGuide.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
