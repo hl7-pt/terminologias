@@ -1,0 +1,138 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ConceptMap/mcdts-b-anatomia-sns-conv> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mcdts-b-anatomia-sns-conv"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap mcdts-b-anatomia-sns-conv</b></p><a name=\"mcdts-b-anatomia-sns-conv\"> </a><a name=\"hcmcdts-b-anatomia-sns-conv\"> </a><a name=\"mcdts-b-anatomia-sns-conv-pt-PT\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-mcdts-b-anatomia-cs.html\">MCDTS Tabela Da Área B - Anatomia Patológica</a> to <code>https://www.acss.pt</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>30510 (Exame citológico cervico-vaginal)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>008.6</td></tr><tr><td>30517 (Exame de citologia esfoliativa não cervico-vaginal)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>009.4</td></tr><tr><td>30597 (Aspiração com agulha fina guiada por palpação com preparação de esfregaços e exame citológico do produto obtido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>010.8</td></tr><tr><td>30630 (Processamento e exame citológico de aspirado de agulha fina)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>011.6</td></tr><tr><td>30650 (Exame citológico cervico-vaginal com processamento automatizado em camada fina)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>012.4</td></tr><tr><td>30677 (Exame citológico não cervico-vaginal, com processamento automatizado em camada fina)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>013.2</td></tr><tr><td>31037 (Exame histológico, fragmentos de biópsia com processamento rápido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>014.0</td></tr><tr><td>31057 (Exame macroscópico e histológico de produto de biópsia incisional ou excisional, raspagem, curetagem ou de eliminação espontânea)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>015.9</td></tr><tr><td>31077 (Exame macroscópico e histológico de peça de ressecção cirúrgica ou de feto com 11 semanas ou menos)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>016.7</td></tr><tr><td>31097 (Exame macroscópico e histológico de peça de ressecção cirúrgica com dissecção ganglionar e/ou avaliação da margem circunferencial e/ou mapeamento)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>017.5</td></tr><tr><td>31107 (Exame extemporâneo)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>005.1</td></tr><tr><td>31565 (Imunocito(histo)química, cada anticorpo)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>007.8</td></tr><tr><td>31590 (Exame por microscopia eletrónica)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>006.0</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-b-anatomia-sns-conv"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "MCDTS-b-anatomia-SNS-CONV"] ; # 
+  fhir:title [ fhir:v "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área B - Anatomia Patológica "] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-12-11"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:group ( [
+     fhir:source [
+       fhir:v "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-b-anatomia-cs"^^xsd:anyURI ;
+       fhir:link <https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-b-anatomia-cs>
+     ] ;
+     fhir:target [
+       fhir:v "https://www.acss.pt"^^xsd:anyURI ;
+       fhir:link <https://www.acss.pt>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "30510" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "008.6" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "30517" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "009.4" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "30597" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "010.8" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "30630" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "011.6" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "30650" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "012.4" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "30677" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "013.2" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "31037" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "014.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "31057" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "015.9" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "31077" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "016.7" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "31097" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "017.5" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "31107" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "005.1" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "31565" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "007.8" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "31590" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "006.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

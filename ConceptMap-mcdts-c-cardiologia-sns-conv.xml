@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="mcdts-c-cardiologia-sns-conv"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap mcdts-c-cardiologia-sns-conv</b></p><a name="mcdts-c-cardiologia-sns-conv"> </a><a name="hcmcdts-c-cardiologia-sns-conv"> </a><a name="mcdts-c-cardiologia-sns-conv-pt-PT"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href="CodeSystem-mcdts-c-cardiologia-cs.html">MCDTS Tabela Da Área C - Cardiologia</a> to <code>https://www.acss.pt</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>40301 (ECG simples de 12 derivações)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>002.7</td></tr><tr><td>40315 (Prova de esforço em bicicleta ergométrica ou em tapete rolante com monitorização eletrocardiográfica contínua, registo de ECG em cada estadio)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>003.5</td></tr><tr><td>40405 (Registo de Holter até 24 horas com análise interativa do perfil rítmico e do segmento ST, podendo incluir variabilidade da frequência cardíaca)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>006.0</td></tr><tr><td>40560 (Ecocardiograma transtorácico bidimensional)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>1530.4</td></tr><tr><td>41020 (Análise electrónica e programação de sistema pacemaker permanente)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>025.6</td></tr></table></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-c-cardiologia-sns-conv"/>
+  <version value="1.0.0"/>
+  <name value="MCDTS-c-cardiologia-SNS-CONV"/>
+  <title value="Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área C - Cardiologia "/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-12-11"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <group>
+    <source value="https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-c-cardiologia-cs"/>
+    <target value="https://www.acss.pt"/>
+    <element>
+      <code value="40301"/>
+      <target>
+        <code value="002.7"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="40315"/>
+      <target>
+        <code value="003.5"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="40405"/>
+      <target>
+        <code value="006.0"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="40560"/>
+      <target>
+        <code value="1530.4"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="41020"/>
+      <target>
+        <code value="025.6"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

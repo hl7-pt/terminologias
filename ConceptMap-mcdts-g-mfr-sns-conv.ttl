@@ -1,0 +1,420 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ConceptMap/mcdts-g-mfr-sns-conv> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mcdts-g-mfr-sns-conv"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap mcdts-g-mfr-sns-conv</b></p><a name=\"mcdts-g-mfr-sns-conv\"> </a><a name=\"hcmcdts-g-mfr-sns-conv\"> </a><a name=\"mcdts-g-mfr-sns-conv-pt-PT\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-mcdts-g-mfr-cs.html\">MCDTS Tabela Da Área G - Medicina Fisica E De Reabilitação</a> to <code>https://www.acss.pt</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>60181 (Estudo da marcha com plataforma elétrica e registo)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1535.5</td></tr><tr><td>60200 (Exame muscular com registo gráfico)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>201.1</td></tr><tr><td>60301 (Goniometria elétrica)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>202.0</td></tr><tr><td>60310 (Raquimetria)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>011.6</td></tr><tr><td>60792 (Iontoforese)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>028.0</td></tr><tr><td>60800 (Corrente continua)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>026.4</td></tr><tr><td>60801 (Corrente de baixa frequência)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>204.6</td></tr><tr><td>60802 (Corrente de média frequência)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>205.4</td></tr><tr><td>60644 (Corrente de alta frequência (micro-ondas))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>029.9</td></tr><tr><td>60624 (Corrente de alta frequência (ondas curtas))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>030.2</td></tr><tr><td>60771 (Estimulação elétrica neuro-muscular, por grupo muscular)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>023.0</td></tr><tr><td>60666 (Magnetoterapia)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>034.5</td></tr><tr><td>60750 (Ultrassonoterapia)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>206.2</td></tr><tr><td>60708 (Radiações infravermelhas)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>040.0</td></tr><tr><td>60729 (Radiações ultravioletas)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>041.8</td></tr><tr><td>60550 (Crioterapia)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>047.7</td></tr><tr><td>60555 (Terapia por calor húmido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>045.0</td></tr><tr><td>60583 (Parafinoterapia)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>049.3</td></tr><tr><td>60584 (Parafangoterapia)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>048.5</td></tr><tr><td>60962 (Hidrocinesiterapia individual em piscina)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>056.6</td></tr><tr><td>60961 (Hidrocinesiterapia coletiva em piscina)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>061.2</td></tr><tr><td>60930 (Hidromassagem)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>057.4</td></tr><tr><td>60887 (Banho de contraste)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>073.6</td></tr><tr><td>60929 (Banho de turbilhão)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>077.9</td></tr><tr><td>60910 (Banhos especiais)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>208.9</td></tr><tr><td>60908 (Duches)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>209.7</td></tr><tr><td>60982 (Hidrocinesiterapia individual em tanque)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>062.0</td></tr><tr><td>60985 (Treino em tanque de marcha)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>063.9</td></tr><tr><td>60222 (Massagem manual de uma região)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>108.2</td></tr><tr><td>60233 (Massagem manual de mais de uma região)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>107.4</td></tr><tr><td>60940 (Massagem subaquática)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>059.0</td></tr><tr><td>61175 (Vibromassagem)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>211.9</td></tr><tr><td>60430 (Cinesiterapia respiratória)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1528.2</td></tr><tr><td>60375 (Cinesiterapia vertebral)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>102.3</td></tr><tr><td>60380 (Cinesiterapia corretiva postural)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>099.0</td></tr><tr><td>61090 (Cinesiterapia pré e pós parto, em grupo)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>100.7</td></tr><tr><td>61102 (Fortalecimento muscular manual)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>213.5</td></tr><tr><td>60290 (Mobilização articular manual)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>109.0</td></tr><tr><td>60377 (Técnicas especiais de Cinesiterapia)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>113.9</td></tr><tr><td>60404 (Treino de equilíbrio e marcha)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>114.7</td></tr><tr><td>60376 (Cinesiterapia em grupo)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>110.4</td></tr><tr><td>60401 (Reeducação funcional de cada membro)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>111.2</td></tr><tr><td>60435 (Drenagem postural)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>103.1</td></tr><tr><td>60438 (Aerossóis)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1524.0</td></tr><tr><td>60437 (Aerossóis ultra-sónicos)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1525.8</td></tr><tr><td>61137 (Mobilização de secreções com flutter)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1526.6</td></tr><tr><td>99030 (Oxigenoterapia)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1537.1</td></tr><tr><td>60845 (Tração vertebral mecânica)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>122.8</td></tr><tr><td>60866 (Tração vertebral motorizada)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>120.1</td></tr><tr><td>60824 (Pressões intermitentes)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>125.2</td></tr><tr><td>60825 (Pressões intermitentes sequenciais)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>222.4</td></tr><tr><td>61104 (Fortalecimento muscular/ mobilização articular)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>218.6</td></tr><tr><td>61002 (Treino de utilização de prótese do membro inferior)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>220.8</td></tr><tr><td>61004 (Treino de utilização de prótese do membro superior)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>221.6</td></tr><tr><td>61024 (Treino de utilização de ortótese)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>115.5</td></tr><tr><td>61087 (Treino em atividades de vida diária)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>130.9</td></tr><tr><td>61061 (Terapia da fala)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1518.5</td></tr><tr><td>61062 (Qualquer dos códigos de terapia da fala quando em grupo)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1519.3</td></tr><tr><td>61066 (Terapia ocupacional)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>131.7</td></tr><tr><td>60349 (Manipulação)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>106.6</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-g-mfr-sns-conv"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "MCDTS-g-mfr-SNS-CONV"] ; # 
+  fhir:title [ fhir:v "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área G - Medicina Fisica E De Reabilitação "] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-12-11"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:group ( [
+     fhir:source [
+       fhir:v "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-g-mfr-cs"^^xsd:anyURI ;
+       fhir:link <https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-g-mfr-cs>
+     ] ;
+     fhir:target [
+       fhir:v "https://www.acss.pt"^^xsd:anyURI ;
+       fhir:link <https://www.acss.pt>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "60181" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "1535.5" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60200" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "201.1" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60301" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "202.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60310" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "011.6" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60792" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "028.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60800" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "026.4" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60801" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "204.6" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60802" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "205.4" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60644" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "029.9" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60624" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "030.2" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60771" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "023.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60666" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "034.5" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60750" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "206.2" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60708" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "040.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60729" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "041.8" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60550" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "047.7" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60555" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "045.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60583" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "049.3" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60584" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "048.5" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60962" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "056.6" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60961" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "061.2" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60930" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "057.4" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60887" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "073.6" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60929" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "077.9" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60910" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "208.9" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60908" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "209.7" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60982" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "062.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60985" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "063.9" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60222" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "108.2" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60233" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "107.4" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60940" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "059.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "61175" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "211.9" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60430" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "1528.2" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60375" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "102.3" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60380" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "099.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "61090" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "100.7" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "61102" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "213.5" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60290" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "109.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60377" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "113.9" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60404" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "114.7" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60376" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "110.4" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60401" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "111.2" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60435" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "103.1" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60438" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "1524.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60437" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "1525.8" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "61137" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "1526.6" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "99030" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "1537.1" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60845" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "122.8" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60866" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "120.1" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60824" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "125.2" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60825" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "222.4" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "61104" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "218.6" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "61002" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "220.8" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "61004" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "221.6" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "61024" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "115.5" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "61087" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "130.9" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "61061" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "1518.5" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "61062" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "1519.3" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "61066" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "131.7" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "60349" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "106.6" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

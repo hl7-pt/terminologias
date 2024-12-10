@@ -1,0 +1,258 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ConceptMap/mcdts-h-orl-sns-conv> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mcdts-h-orl-sns-conv"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap mcdts-h-orl-sns-conv</b></p><a name=\"mcdts-h-orl-sns-conv\"> </a><a name=\"hcmcdts-h-orl-sns-conv\"> </a><a name=\"mcdts-h-orl-sns-conv-pt-PT\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-mcdts-h-orl-cs.html\">MCDTS Tabela Da Área H - Otorrinolaringologia</a> to <code>https://www.acss.pt</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>78005 (Audiograma tonal simples)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>001.9</td></tr><tr><td>78010 (Audiograma vocal)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>004.3</td></tr><tr><td>78028 (Acufenometria)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>137.6</td></tr><tr><td>78024 (Audiometria tonal até 5 anos de idade)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>103.1</td></tr><tr><td>78026 (Audiometria vocal até 10 anos de idade)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>104.0</td></tr><tr><td>78030 (Timpanograma)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>012.4</td></tr><tr><td>78035 (Pesquisa de reflexos acústicos ipsi-laterais ou contra-laterais)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>013.2</td></tr><tr><td>78036 (Pesquisa do &quot;Decay&quot; do reflexo bilateral)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>014.0</td></tr><tr><td>78037 (Pesquisa de reflexos não acústicos)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>015.9</td></tr><tr><td>78038 (Estudo timpanométrico do funcionamento da trompa auditiva)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>017.5</td></tr><tr><td>78039 (Estudo impedanciométrico completo (incluí os códigos 012.4, 013.2, 014.0 e outras provas suplementares))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>019.1</td></tr><tr><td>78045 (Eletrococleografia (Ecog))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>030.2</td></tr><tr><td>78050 (Respostas de tronco cerebral (PEA))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>031.0</td></tr><tr><td>78052 (Respostas semi-precoces)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>032.9</td></tr><tr><td>78029 (Otimização de ganho auditivo (performance eletroacústica das próteses auditivas &quot;in situ&quot;))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>073.6</td></tr><tr><td>78090 (Testes calóricos vestibulares)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>064.7</td></tr><tr><td>78108 (Exame vestibular completo por ENG ou VNG computorizada (inclui nistagmo espontâneo e posicional, provas calóricas, optocinéticas, rotatórias e de perseguição))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>062.0</td></tr><tr><td>78125 (Endoscopia nasal)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>097.3</td></tr><tr><td>78130 (Sinusoscopia)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>098.1</td></tr><tr><td>78175 (Nasofaringolaringoscopia)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>099.0</td></tr><tr><td>78185 (Estroboscopia (inclui laringoscopia))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>090.6</td></tr><tr><td>78200 (Análise computorizada da voz)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>051.5</td></tr><tr><td>78230 (Rinometria computorizada)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>126.0</td></tr><tr><td>78231 (Rinometria computorizada com provas de provocação nasal)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>127.9</td></tr><tr><td>78235 (Eletroneuronografia computorizada (três avaliações sucessivas))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>128.7</td></tr><tr><td>78240 (Eletrogustometria)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>070.1</td></tr><tr><td>78312 (Biópsia ganglionar)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>130.9</td></tr><tr><td>78313 (Biópsia com pinça ou agulha, gengival)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>131.7</td></tr><tr><td>78314 (Biópsia de tecidos moles)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>132.5</td></tr><tr><td>78316 (Biópsia com pinça ou agulha, orofaringe)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>133.3</td></tr><tr><td>78317 (Biópsia com pinça ou agulha, nasofaringe)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>134.1</td></tr><tr><td>78318 (Biópsia com pinça ou agulha, laringe)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>135.0</td></tr><tr><td>78319 (Biópsia com pinça ou agulha, nariz)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>136.8</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-h-orl-sns-conv"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "MCDTS-h-orl-SNS-CONV"] ; # 
+  fhir:title [ fhir:v "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área H - Otorrinolaringologia "] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-12-11"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:group ( [
+     fhir:source [
+       fhir:v "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-h-orl-cs"^^xsd:anyURI ;
+       fhir:link <https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-h-orl-cs>
+     ] ;
+     fhir:target [
+       fhir:v "https://www.acss.pt"^^xsd:anyURI ;
+       fhir:link <https://www.acss.pt>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "78005" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "001.9" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78010" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "004.3" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78028" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "137.6" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78024" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "103.1" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78026" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "104.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78030" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "012.4" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78035" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "013.2" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78036" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "014.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78037" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "015.9" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78038" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "017.5" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78039" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "019.1" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78045" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "030.2" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78050" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "031.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78052" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "032.9" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78029" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "073.6" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78090" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "064.7" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78108" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "062.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78125" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "097.3" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78130" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "098.1" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78175" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "099.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78185" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "090.6" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78200" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "051.5" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78230" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "126.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78231" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "127.9" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78235" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "128.7" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78240" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "070.1" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78312" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "130.9" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78313" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "131.7" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78314" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "132.5" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78316" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "133.3" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78317" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "134.1" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78318" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "135.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "78319" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "136.8" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

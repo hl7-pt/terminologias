@@ -1,0 +1,74 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "mcdts-e-eeg-sns-conv",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap mcdts-e-eeg-sns-conv</b></p><a name=\"mcdts-e-eeg-sns-conv\"> </a><a name=\"hcmcdts-e-eeg-sns-conv\"> </a><a name=\"mcdts-e-eeg-sns-conv-pt-PT\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-mcdts-e-eeg-cs.html\">MCDTS Tabela Da Área E - Electroencefalografia</a> to <code>https://www.acss.pt</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>63010 (EEG de rotina (inclui canal de ECG, prova de Hiperpneia e ELI))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>019.1</td></tr><tr><td>63011 (EEG de rotina, fora do laboratório)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>005.1</td></tr><tr><td>63017 (Cartografia de EEG (adicional ao registo))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>022.1</td></tr><tr><td>63020 (EEG de rotina com prova de Sono)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>002.7</td></tr></table></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-e-eeg-sns-conv",
+  "version" : "1.0.0",
+  "name" : "MCDTS-e-eeg-SNS-CONV",
+  "title" : "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área E - Electroencefalografia ",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-11",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "group" : [{
+    "source" : "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-e-eeg-cs",
+    "target" : "https://www.acss.pt",
+    "element" : [{
+      "code" : "63010",
+      "target" : [{
+        "code" : "019.1",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "63011",
+      "target" : [{
+        "code" : "005.1",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "63017",
+      "target" : [{
+        "code" : "022.1",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "63020",
+      "target" : [{
+        "code" : "002.7",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}
