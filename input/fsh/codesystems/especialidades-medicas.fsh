@@ -3,7 +3,7 @@
 CodeSystem: EspecialidadesMedicasCS
 Id:         especialidades-medicas-cs
 Title:     "Especialidades Médicas"
-Description: "CodeSystem para as Especialidades médicas existentes em Portugal"
+Description: "Especialidades médicas existentes em Portugal"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-medicas-cs"
 * ^version = "1.0"

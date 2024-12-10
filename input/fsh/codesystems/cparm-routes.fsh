@@ -3,7 +3,7 @@
 CodeSystem: CPARMRoutesCS
 Id:         cparm-routes-cs
 Title:     "Vias de Administração"
-Description: "CodeSystem para codificar vias de Administração de medicamentos"
+Description: "Vias de Administração de medicamentos"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/cparm-routes-cs"
 * ^version = "1.0"

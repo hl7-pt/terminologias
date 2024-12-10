@@ -2,7 +2,7 @@
 CodeSystem: CPARMUnitsPresentationCS
 Id:         cparm-units-presentation-cs
 Title:     "Unidades de apresentação"
-Description: "CodeSystem para codificar Unidades de apresentação de medicamentos"
+Description: "Unidades de apresentação de medicamentos"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs"
 * ^version = "1.0"

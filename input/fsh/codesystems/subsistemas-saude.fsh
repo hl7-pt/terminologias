@@ -3,7 +3,7 @@
 CodeSystem: SubsistemasSaudeCS
 Id:         subsistemas-saude-cs
 Title:     "Subsistemas de saúde"
-Description: "CodeSystem para subsistemas de saúde existentes em Portugal"
+Description: "Subsistemas de saúde existentes em Portugal"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/subsistemas-saude-cs"
 * ^version = "1.0"
@@ -12,8 +12,8 @@ Description: "CodeSystem para subsistemas de saúde existentes em Portugal"
 * #ADSE
     "ADSE"
     "Assistência na Doença dos Servidores do Estado"
-  * ^property.code = #tipo
-  * ^property.valueCode = #publico
+//  * ^property.code = #tipo
+//  * ^property.valueCode = #publico
 * #ADM
     "ADM"
     "Assistência na Doença aos Militares das forças armadas"
