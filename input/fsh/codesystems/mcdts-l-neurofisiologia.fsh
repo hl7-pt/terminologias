@@ -5,7 +5,7 @@ Title:     "CodeSystem MCDTS l-neurofisiologia"
 Description: "CodeSystem l-neurofisiologia"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-l-neurofisiologia-cs"
-* ^version = "1.0"
+* ^version = "5.9.2024"
 * ^author.name = "ACSS"
 
 

@@ -5,7 +5,7 @@ Title:     "CodeSystem MCDTS j-urologia"
 Description: "CodeSystem j-urologia"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-j-urologia-cs"
-* ^version = "1.0"
+* ^version = "5.9.2024"
 * ^author.name = "ACSS"
 
 

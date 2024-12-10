@@ -5,7 +5,7 @@ Title:     "CodeSystem MCDTS h-orl"
 Description: "CodeSystem h-orl"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-h-orl-cs"
-* ^version = "1.0"
+* ^version = "5.9.2024"
 * ^author.name = "ACSS"
 
 

@@ -5,7 +5,7 @@ Title:     "CodeSystem MCDTS g-mfr"
 Description: "CodeSystem g-mfr"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-g-mfr-cs"
-* ^version = "1.0"
+* ^version = "5.9.2024"
 * ^author.name = "ACSS"
 
 

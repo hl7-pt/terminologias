@@ -5,7 +5,7 @@ Title:     "CodeSystem MCDTS i-pneumologia-imunoalergologia"
 Description: "CodeSystem i-pneumologia-imunoalergologia"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-i-pneumologia-imunoalergologia-cs"
-* ^version = "1.0"
+* ^version = "5.9.2024"
 * ^author.name = "ACSS"
 
 

@@ -5,7 +5,7 @@ Title:     "CodeSystem MCDTS f-gastrenterologia"
 Description: "CodeSystem f-gastrenterologia"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-f-gastrenterologia-cs"
-* ^version = "1.0"
+* ^version = "5.9.2024"
 * ^author.name = "ACSS"
 
 

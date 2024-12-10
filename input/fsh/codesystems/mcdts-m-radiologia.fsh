@@ -5,7 +5,7 @@ Title:     "CodeSystem MCDTS m-radiologia"
 Description: "CodeSystem m-radiologia"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-m-radiologia-cs"
-* ^version = "1.0"
+* ^version = "5.9.2024"
 * ^author.name = "ACSS"
 
 

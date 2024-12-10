@@ -5,7 +5,7 @@ Title:     "CodeSystem MCDTS d-m-nuclear"
 Description: "CodeSystem d-m-nuclear"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-d-m-nuclear-cs"
-* ^version = "1.0"
+* ^version = "5.9.2024"
 * ^author.name = "ACSS"
 
 

@@ -3,7 +3,7 @@ Instance: mcdts-i-pneumologia-imunoalergologia-sns-conv
 InstanceOf: ConceptMap
 Usage: #definition
 
-* version = "1.0.0"
+* version = "5.9.2024"
 * name = "MCDTS-i-pneumologia-imunoalergologia-SNS-CONV"
 * title = "Mapeamento de códigos SNS para códigos convencionados para a área i-pneumologia-imunoalergologia "
 

@@ -5,7 +5,7 @@ Title:     "CodeSystem MCDTS c-cardiologia"
 Description: "CodeSystem c-cardiologia"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-c-cardiologia-cs"
-* ^version = "1.0"
+* ^version = "5.9.2024"
 * ^author.name = "ACSS"
 
 

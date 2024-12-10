@@ -5,7 +5,7 @@ Title:     "CodeSystem MCDTS b-anatomia"
 Description: "CodeSystem b-anatomia"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-b-anatomia-cs"
-* ^version = "1.0"
+* ^version = "5.9.2024"
 * ^author.name = "ACSS"
 
 

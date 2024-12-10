@@ -3,7 +3,7 @@ Instance: mcdts-g-mfr-sns-conv
 InstanceOf: ConceptMap
 Usage: #definition
 
-* version = "1.0.0"
+* version = "5.9.2024"
 * name = "MCDTS-g-mfr-SNS-CONV"
 * title = "Mapeamento de códigos SNS para códigos convencionados para a área g-mfr "
 

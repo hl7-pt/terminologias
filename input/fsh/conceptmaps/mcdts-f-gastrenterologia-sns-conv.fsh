@@ -3,7 +3,7 @@ Instance: mcdts-f-gastrenterologia-sns-conv
 InstanceOf: ConceptMap
 Usage: #definition
 
-* version = "1.0.0"
+* version = "5.9.2024"
 * name = "MCDTS-f-gastrenterologia-SNS-CONV"
 * title = "Mapeamento de códigos SNS para códigos convencionados para a área f-gastrenterologia "
 
