@@ -1,8 +1,8 @@
 // Define a local code system
 CodeSystem: MCDTSL_NeurofisiologiaCS
 Id:         mcdts-l-neurofisiologia-cs
-Title:     "CodeSystem MCDTS l-neurofisiologia"
-Description: "CodeSystem l-neurofisiologia"
+Title:     "MCDTS Tabela Da Área L - Neurofisiologia"
+Description: "Tabela Da Área L - Neurofisiologia"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-l-neurofisiologia-cs"
 * ^version = "5.9.2024"

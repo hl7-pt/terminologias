@@ -1,8 +1,8 @@
 // Define a local code system
 CodeSystem: MCDTSC_CardiologiaCS
 Id:         mcdts-c-cardiologia-cs
-Title:     "CodeSystem MCDTS c-cardiologia"
-Description: "CodeSystem c-cardiologia"
+Title:     "MCDTS Tabela Da Área C - Cardiologia"
+Description: "Tabela Da Área C - Cardiologia"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-c-cardiologia-cs"
 * ^version = "5.9.2024"
@@ -17,8 +17,8 @@ Description: "CodeSystem c-cardiologia"
 * ^property[=].type = #decimal
 
 * #40301
-    "ECG simples de 12 derivações "
-    "ECG simples de 12 derivações "
+    "ECG simples de 12 derivações"
+    "ECG simples de 12 derivações"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 3.87
   * ^property[+].code = #taxa

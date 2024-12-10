@@ -1,8 +1,8 @@
 // Define a local code system
 CodeSystem: MCDTSJ_UrologiaCS
 Id:         mcdts-j-urologia-cs
-Title:     "CodeSystem MCDTS j-urologia"
-Description: "CodeSystem j-urologia"
+Title:     "MCDTS Tabela Da Área J - Urologia"
+Description: "Tabela Da Área J - Urologia"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-j-urologia-cs"
 * ^version = "5.9.2024"

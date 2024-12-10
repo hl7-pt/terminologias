@@ -1,8 +1,8 @@
 // Define a local code system
 CodeSystem: MCDTSA_AnalisesCS
 Id:         mcdts-a-analises-cs
-Title:     "CodeSystem MCDTS a-analises"
-Description: "CodeSystem a-analises"
+Title:     "MCDTS Tabela Da Área A - Análises Clínicas"
+Description: "Tabela Da Área A - Análises Clínicas"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-a-analises-cs"
 * ^version = "5.9.2024"
@@ -17,29 +17,29 @@ Description: "CodeSystem a-analises"
 * ^property[=].type = #decimal
 
 * #21175
-    "17 alfa-hidroxiprogesterona, s "
-    "17 alfa-hidroxiprogesterona, s "
+    "17 alfa-hidroxiprogesterona, s"
+    "17 alfa-hidroxiprogesterona, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 7.4
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.4
 * #21443
-    "17-cetosteróides, u "
-    "17-cetosteróides, u "
+    "17-cetosteróides, u"
+    "17-cetosteróides, u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 6.9
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.5
 * #22187
-    "17-hidroxicorticosteróides (17-OHCS), u "
-    "17-hidroxicorticosteróides (17-OHCS), u "
+    "17-hidroxicorticosteróides (17-OHCS), u"
+    "17-hidroxicorticosteróides (17-OHCS), u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 6.31
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.5
 * #22511
-    "5'-nucleotidase, s "
-    "5'-nucleotidase, s "
+    "5'-nucleotidase, s"
+    "5'-nucleotidase, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 3.1
   * ^property[+].code = #taxa
@@ -52,15 +52,15 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 2
 * #21101
-    "Ácido úrico, s/u/l "
-    "Ácido úrico, s/u/l "
+    "Ácido úrico, s/u/l"
+    "Ácido úrico, s/u/l"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.4
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #21107
-    "Ácido vanilmandélico (VMA), u "
-    "Ácido vanilmandélico (VMA), u "
+    "Ácido vanilmandélico (VMA), u"
+    "Ácido vanilmandélico (VMA), u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 14.8
   * ^property[+].code = #taxa
@@ -73,22 +73,22 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.2
 * #21140
-    "Albumina, s "
-    "Albumina, s "
+    "Albumina, s"
+    "Albumina, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.27
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #21156
-    "Aldolase, s "
-    "Aldolase, s "
+    "Aldolase, s"
+    "Aldolase, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.8
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #21161
-    "Aldosterona, s "
-    "Aldosterona, s "
+    "Aldosterona, s"
+    "Aldosterona, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 8.2
   * ^property[+].code = #taxa
@@ -101,71 +101,71 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.6
 * #21178
-    "Alfa1-quimotripsina, s "
-    "Alfa1-quimotripsina, s "
+    "Alfa1-quimotripsina, s"
+    "Alfa1-quimotripsina, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 6.26
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.3
 * #21169
-    "Alfa-fetoproteína, s/l "
-    "Alfa-fetoproteína, s/l "
+    "Alfa-fetoproteína, s/l"
+    "Alfa-fetoproteína, s/l"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 7.8
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.5
 * #21186
-    "Alumínio, s/l "
-    "Alumínio, s/l "
+    "Alumínio, s/l"
+    "Alumínio, s/l"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 12
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.8
 * #21196
-    "Amilase, s/u/l "
-    "Amilase, s/u/l "
+    "Amilase, s/u/l"
+    "Amilase, s/u/l"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.9
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.5
 * #21217
-    "Aminotransferase da alanina (ALT), s "
-    "Aminotransferase da alanina (ALT), s "
+    "Aminotransferase da alanina (ALT), s"
+    "Aminotransferase da alanina (ALT), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.4
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #21220
-    "Aminotransferase do aspartato (AST), s "
-    "Aminotransferase do aspartato (AST), s "
+    "Aminotransferase do aspartato (AST), s"
+    "Aminotransferase do aspartato (AST), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.4
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #21230
-    "Amónia, s "
-    "Amónia, s "
+    "Amónia, s"
+    "Amónia, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 5.47
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.3
 * #21242
-    "Angiotensina I, s "
-    "Angiotensina I, s "
+    "Angiotensina I, s"
+    "Angiotensina I, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 8.8
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.6
 * #21243
-    "Angiotensina II, s "
-    "Angiotensina II, s "
+    "Angiotensina II, s"
+    "Angiotensina II, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 8.8
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.6
 * #21258
-    "Antigénio carcinembrionário (CEA), s "
-    "Antigénio carcinembrionário (CEA), s "
+    "Antigénio carcinembrionário (CEA), s"
+    "Antigénio carcinembrionário (CEA), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 8.9
   * ^property[+].code = #taxa
@@ -178,22 +178,22 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.5
 * #21261
-    "Antigénio específico da próstata (PSA) total, s "
-    "Antigénio específico da próstata (PSA) total, s "
+    "Antigénio específico da próstata (PSA) total, s"
+    "Antigénio específico da próstata (PSA) total, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 9.5
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.4
 * #21264
-    "Apolipoproteínas A1 e B, cada, s "
-    "Apolipoproteínas A1 e B, cada, s "
+    "Apolipoproteínas A1 e B, cada, s"
+    "Apolipoproteínas A1 e B, cada, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 4.8
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.9
 * #21263
-    "Apolipoproteínas C2 e C3, cada, s "
-    "Apolipoproteínas C2 e C3, cada, s "
+    "Apolipoproteínas C2 e C3, cada, s"
+    "Apolipoproteínas C2 e C3, cada, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 4.8
   * ^property[+].code = #taxa
@@ -226,57 +226,57 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #21372
-    "CA 125 "
-    "CA 125 "
+    "CA 125"
+    "CA 125"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 10.7
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.8
 * #21369
-    "CA 15-3 "
-    "CA 15-3 "
+    "CA 15-3"
+    "CA 15-3"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 10.9
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.8
 * #21370
-    "CA 19-9 "
-    "CA 19-9 "
+    "CA 19-9"
+    "CA 19-9"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 10.7
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.8
 * #21393
-    "Cálcio ionizado, s "
-    "Cálcio ionizado, s "
+    "Cálcio ionizado, s"
+    "Cálcio ionizado, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 9.99
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.8
 * #21396
-    "Cálcio total, s/u "
-    "Cálcio total, s/u "
+    "Cálcio total, s/u"
+    "Cálcio total, s/u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.4
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #21401
-    "Calcitonina, s "
-    "Calcitonina, s "
+    "Calcitonina, s"
+    "Calcitonina, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 12.9
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 2
 * #21412
-    "Cálculo, exame químico "
-    "Cálculo, exame químico "
+    "Cálculo, exame químico"
+    "Cálculo, exame químico"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 4.31
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.3
 * #21425
-    "Carbamazepina, s "
-    "Carbamazepina, s "
+    "Carbamazepina, s"
+    "Carbamazepina, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 11
   * ^property[+].code = #taxa
@@ -289,8 +289,8 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 3
 * #21438
-    "Catecolaminas, total, u "
-    "Catecolaminas, total, u "
+    "Catecolaminas, total, u"
+    "Catecolaminas, total, u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 14.6
   * ^property[+].code = #taxa
@@ -306,43 +306,43 @@ Description: "CodeSystem a-analises"
     "Citrato, u"
     "Citrato, u"
 * #21516
-    "Cloretos, estimulação por pilocarpina, suor "
-    "Cloretos, estimulação por pilocarpina, suor "
+    "Cloretos, estimulação por pilocarpina, suor"
+    "Cloretos, estimulação por pilocarpina, suor"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 10.84
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 4
 * #21513
-    "Cloretos, s/u/l "
-    "Cloretos, s/u/l "
+    "Cloretos, s/u/l"
+    "Cloretos, s/u/l"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.3
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #21529
-    "Cobre, doseamento químico "
-    "Cobre, doseamento químico "
+    "Cobre, doseamento químico"
+    "Cobre, doseamento químico"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 3.41
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.9
 * #21539
-    "Colesterol da fração HDL, s "
-    "Colesterol da fração HDL, s "
+    "Colesterol da fração HDL, s"
+    "Colesterol da fração HDL, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.9
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.5
 * #21545
-    "Colesterol da fração LDL, s "
-    "Colesterol da fração LDL, s "
+    "Colesterol da fração LDL, s"
+    "Colesterol da fração LDL, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 3
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.65
 * #21554
-    "Colesterol total, s/l "
-    "Colesterol total, s/l "
+    "Colesterol total, s/l"
+    "Colesterol total, s/l"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.4
   * ^property[+].code = #taxa
@@ -362,57 +362,57 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.6
 * #21609
-    "Creatinaquinase (CK), s "
-    "Creatinaquinase (CK), s "
+    "Creatinaquinase (CK), s"
+    "Creatinaquinase (CK), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.8
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.5
 * #21623
-    "Creatinina, prova de depuração "
-    "Creatinina, prova de depuração "
+    "Creatinina, prova de depuração"
+    "Creatinina, prova de depuração"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 4.2
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1
 * #21620
-    "Creatinina, s/u "
-    "Creatinina, s/u "
+    "Creatinina, s/u"
+    "Creatinina, s/u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.3
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #21646
-    "Delta4-androstenediona, s "
-    "Delta4-androstenediona, s "
+    "Delta4-androstenediona, s"
+    "Delta4-androstenediona, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 9.24
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.6
 * #21665
-    "Desidrogenase láctica (LDH), s/u/l "
-    "Desidrogenase láctica (LDH), s/u/l "
+    "Desidrogenase láctica (LDH), s/u/l"
+    "Desidrogenase láctica (LDH), s/u/l"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.4
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #21638
-    "DHEA, Dehidroepiandrosterona, s/u/l "
-    "DHEA, Dehidroepiandrosterona, s/u/l "
+    "DHEA, Dehidroepiandrosterona, s/u/l"
+    "DHEA, Dehidroepiandrosterona, s/u/l"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 6.95
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.4
 * #21641
-    "DHEA-S, Dehidroepiandrosterona sulfato, s/l "
-    "DHEA-S, Dehidroepiandrosterona sulfato, s/l "
+    "DHEA-S, Dehidroepiandrosterona sulfato, s/l"
+    "DHEA-S, Dehidroepiandrosterona sulfato, s/l"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 9.24
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.5
 * #21724
-    "Digoxina, s "
-    "Digoxina, s "
+    "Digoxina, s"
+    "Digoxina, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 11.4
   * ^property[+].code = #taxa
@@ -439,43 +439,43 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.5
 * #21794
-    "Eritropoietina, s "
-    "Eritropoietina, s "
+    "Eritropoietina, s"
+    "Eritropoietina, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 6.2
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.3
 * #21809
-    "Estradiol (17ß), E2, s "
-    "Estradiol (17ß), E2, s "
+    "Estradiol (17ß), E2, s"
+    "Estradiol (17ß), E2, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 6
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.1
 * #21875
-    "Fenitoína, s "
-    "Fenitoína, s "
+    "Fenitoína, s"
+    "Fenitoína, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 12.5
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 2
 * #21895
-    "Ferritina, s "
-    "Ferritina, s "
+    "Ferritina, s"
+    "Ferritina, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 6.5
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.2
 * #21906
-    "Ferro, capacidade de fixação, s "
-    "Ferro, capacidade de fixação, s "
+    "Ferro, capacidade de fixação, s"
+    "Ferro, capacidade de fixação, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.9
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #21900
-    "Ferro, s "
-    "Ferro, s "
+    "Ferro, s"
+    "Ferro, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.9
   * ^property[+].code = #taxa
@@ -488,8 +488,8 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.3
 * #21932
-    "Fosfatase ácida total, s "
-    "Fosfatase ácida total, s "
+    "Fosfatase ácida total, s"
+    "Fosfatase ácida total, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 2.47
   * ^property[+].code = #taxa
@@ -502,15 +502,15 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.4
 * #21935
-    "Fosfatase alcalina, s "
-    "Fosfatase alcalina, s "
+    "Fosfatase alcalina, s"
+    "Fosfatase alcalina, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.5
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #21976
-    "Fosfato, s/u "
-    "Fosfato, s/u "
+    "Fosfato, s/u"
+    "Fosfato, s/u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.7
   * ^property[+].code = #taxa
@@ -523,39 +523,39 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.5
 * #21789
-    "Gasimetria (pH, pCO2, pO2, SatO2, CO2, ...), s "
-    "Gasimetria (pH, pCO2, pO2, SatO2, CO2, ...), s "
+    "Gasimetria (pH, pCO2, pO2, SatO2, CO2, ...), s"
+    "Gasimetria (pH, pCO2, pO2, SatO2, CO2, ...), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 13.2
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 2
 * #22076
-    "Glucose, doseamento, s/u/l "
-    "Glucose, doseamento, s/u/l "
+    "Glucose, doseamento, s/u/l"
+    "Glucose, doseamento, s/u/l"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.2
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #22116
-    "Gonadotrofina coriónica (HCG), s "
-    "Gonadotrofina coriónica (HCG), s "
+    "Gonadotrofina coriónica (HCG), s"
+    "Gonadotrofina coriónica (HCG), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 7.6
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.4
 * #22114
-    "Gonadotrofina coriónica (teste imunológico de gravidez), u "
-    "Gonadotrofina coriónica (teste imunológico de gravidez), u "
+    "Gonadotrofina coriónica (teste imunológico de gravidez), u"
+    "Gonadotrofina coriónica (teste imunológico de gravidez), u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 2.86
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.65
 * #22121
-    "Gonadotrofina coriónica, subunidade Beta, fração livre (Fß HCG), s "
-    "Gonadotrofina coriónica, subunidade Beta, fração livre (Fß HCG), s "
+    "Gonadotrofina coriónica, subunidade Beta, fração livre (Fß HCG), s"
+    "Gonadotrofina coriónica, subunidade Beta, fração livre (Fß HCG), s"
 * #22125
-    "Grau de digestão de alimentos, fezes "
-    "Grau de digestão de alimentos, fezes "
+    "Grau de digestão de alimentos, fezes"
+    "Grau de digestão de alimentos, fezes"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 2.86
   * ^property[+].code = #taxa
@@ -575,8 +575,8 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.5
 * #22154
-    "Hemoglobina, pesquisa, u "
-    "Hemoglobina, pesquisa, u "
+    "Hemoglobina, pesquisa, u"
+    "Hemoglobina, pesquisa, u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 0.87
   * ^property[+].code = #taxa
@@ -585,57 +585,57 @@ Description: "CodeSystem a-analises"
     "Homocisteína, s"
     "Homocisteína, s"
 * #22220
-    "Hormona adrenocorticotrópica (ACTH), s "
-    "Hormona adrenocorticotrópica (ACTH), s "
+    "Hormona adrenocorticotrópica (ACTH), s"
+    "Hormona adrenocorticotrópica (ACTH), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 8.1
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.4
 * #22223
-    "Hormona antidiurética (ADH), s "
-    "Hormona antidiurética (ADH), s "
+    "Hormona antidiurética (ADH), s"
+    "Hormona antidiurética (ADH), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 27.1
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 4
 * #22226
-    "Hormona do crescimento (HGH), s "
-    "Hormona do crescimento (HGH), s "
+    "Hormona do crescimento (HGH), s"
+    "Hormona do crescimento (HGH), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 8.4
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.5
 * #22238
-    "Hormona folículo-estimulante (FSH), s "
-    "Hormona folículo-estimulante (FSH), s "
+    "Hormona folículo-estimulante (FSH), s"
+    "Hormona folículo-estimulante (FSH), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 6
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.1
 * #22244
-    "Hormona luteínica (LH), s "
-    "Hormona luteínica (LH), s "
+    "Hormona luteínica (LH), s"
+    "Hormona luteínica (LH), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 6
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.1
 * #22250
-    "Hormona paratiroideia (PTH), s "
-    "Hormona paratiroideia (PTH), s "
+    "Hormona paratiroideia (PTH), s"
+    "Hormona paratiroideia (PTH), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 8.5
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.5
 * #22253
-    "Hormona tirostimulante (TSH), s "
-    "Hormona tirostimulante (TSH), s "
+    "Hormona tirostimulante (TSH), s"
+    "Hormona tirostimulante (TSH), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 5
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1
 * #22280
-    "Insulina, s "
-    "Insulina, s "
+    "Insulina, s"
+    "Insulina, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 6.4
   * ^property[+].code = #taxa
@@ -648,22 +648,22 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.5
 * #22298
-    "Lactato (ácido láctico), s/l "
-    "Lactato (ácido láctico), s/l "
+    "Lactato (ácido láctico), s/l"
+    "Lactato (ácido láctico), s/l"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 5.31
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.3
 * #22329
-    "Lipase, s/u "
-    "Lipase, s/u "
+    "Lipase, s/u"
+    "Lipase, s/u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 2.9
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.65
 * #22340
-    "Lipoproteínas (eletroforese), s "
-    "Lipoproteínas (eletroforese), s "
+    "Lipoproteínas (eletroforese), s"
+    "Lipoproteínas (eletroforese), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 4.2
   * ^property[+].code = #taxa
@@ -676,43 +676,43 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1
 * #22347
-    "Lítio, s "
-    "Lítio, s "
+    "Lítio, s"
+    "Lítio, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 3.41
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1
 * #22357
-    "Magnésio, s/u "
-    "Magnésio, s/u "
+    "Magnésio, s/u"
+    "Magnésio, s/u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 2.1
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.5
 * #22400
-    "Mercúrio, doseamento, s/u "
-    "Mercúrio, doseamento, s/u "
+    "Mercúrio, doseamento, s/u"
+    "Mercúrio, doseamento, s/u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 19.97
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.8
 * #22413
-    "Metanefrinas (total), s/u "
-    "Metanefrinas (total), s/u "
+    "Metanefrinas (total), s/u"
+    "Metanefrinas (total), s/u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 14.5
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 2.5
 * #22410
-    "Metanefrinas fraccionadas, s/u "
-    "Metanefrinas fraccionadas, s/u "
+    "Metanefrinas fraccionadas, s/u"
+    "Metanefrinas fraccionadas, s/u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 25.3
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 4
 * #22461
-    "Mioglobina, s/u "
-    "Mioglobina, s/u "
+    "Mioglobina, s/u"
+    "Mioglobina, s/u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.87
   * ^property[+].code = #taxa
@@ -721,15 +721,15 @@ Description: "CodeSystem a-analises"
     "NSE (Neuro enolase específica), s/l"
     "NSE (Neuro enolase específica), s/l"
 * #22521
-    "Osmolalidade, s/u/l "
-    "Osmolalidade, s/u/l "
+    "Osmolalidade, s/u/l"
+    "Osmolalidade, s/u/l"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 5.31
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.5
 * #22581
-    "Peptídeo C, s/u "
-    "Peptídeo C, s/u "
+    "Peptídeo C, s/u"
+    "Peptídeo C, s/u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 7.6
   * ^property[+].code = #taxa
@@ -742,29 +742,29 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 4
 * #22612
-    "Porfobilinogénio, doseamento, s/u/fezes "
-    "Porfobilinogénio, doseamento, s/u/fezes "
+    "Porfobilinogénio, doseamento, s/u/fezes"
+    "Porfobilinogénio, doseamento, s/u/fezes"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 8.3
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.5
 * #22617
-    "Potássio, s/u "
-    "Potássio, s/u "
+    "Potássio, s/u"
+    "Potássio, s/u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.2
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #22642
-    "Progesterona (PRG), s "
-    "Progesterona (PRG), s "
+    "Progesterona (PRG), s"
+    "Progesterona (PRG), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 7.4
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.4
 * #22647
-    "Prolactina (PRL), s "
-    "Prolactina (PRL), s "
+    "Prolactina (PRL), s"
+    "Prolactina (PRL), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 6
   * ^property[+].code = #taxa
@@ -787,43 +787,43 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.9
 * #22673
-    "Proteína de transporte das hormonas sexuais (SHBG), s "
-    "Proteína de transporte das hormonas sexuais (SHBG), s "
+    "Proteína de transporte das hormonas sexuais (SHBG), s"
+    "Proteína de transporte das hormonas sexuais (SHBG), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 6.3
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.3
 * #22682
-    "Proteínas (total) e eletroforese, s "
-    "Proteínas (total) e eletroforese, s "
+    "Proteínas (total) e eletroforese, s"
+    "Proteínas (total) e eletroforese, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 4.8
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.2
 * #22685
-    "Proteínas (total) e electroforese após concentração, u/l "
-    "Proteínas (total) e electroforese após concentração, u/l "
+    "Proteínas (total) e electroforese após concentração, u/l"
+    "Proteínas (total) e electroforese após concentração, u/l"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 7.75
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.5
 * #22679
-    "Proteínas (total), s/u/l "
-    "Proteínas (total), s/u/l "
+    "Proteínas (total), s/u/l"
+    "Proteínas (total), s/u/l"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.43
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #22999
-    "Prova de D - Xilose, s/u "
-    "Prova de D - Xilose, s/u "
+    "Prova de D - Xilose, s/u"
+    "Prova de D - Xilose, s/u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 10.2
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 2
 * #22715
-    "Prova de sobrecarga glucídica, cada doseamento de glucose e de HGH "
-    "Prova de sobrecarga glucídica, cada doseamento de glucose e de HGH "
+    "Prova de sobrecarga glucídica, cada doseamento de glucose e de HGH"
+    "Prova de sobrecarga glucídica, cada doseamento de glucose e de HGH"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 13.34
   * ^property[+].code = #taxa
@@ -836,15 +836,15 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #22085
-    "Prova tolerância à glucose, cada doseamento "
-    "Prova tolerância à glucose, cada doseamento "
+    "Prova tolerância à glucose, cada doseamento"
+    "Prova tolerância à glucose, cada doseamento"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.2
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #22752
-    "Renina, s "
-    "Renina, s "
+    "Renina, s"
+    "Renina, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 15.08
   * ^property[+].code = #taxa
@@ -857,8 +857,8 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.9
 * #22793
-    "Sódio, s/u "
-    "Sódio, s/u "
+    "Sódio, s/u"
+    "Sódio, s/u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.3
   * ^property[+].code = #taxa
@@ -871,43 +871,43 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 3.5
 * #22823
-    "Teofilina/aminofilina, s "
-    "Teofilina/aminofilina, s "
+    "Teofilina/aminofilina, s"
+    "Teofilina/aminofilina, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 11.4
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 2
 * #22836
-    "Testosterona livre, s "
-    "Testosterona livre, s "
+    "Testosterona livre, s"
+    "Testosterona livre, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 10.2
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.8
 * #22839
-    "Testosterona total, s "
-    "Testosterona total, s "
+    "Testosterona total, s"
+    "Testosterona total, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 7.1
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.4
 * #22879
-    "Tiroglobulina, s "
-    "Tiroglobulina, s "
+    "Tiroglobulina, s"
+    "Tiroglobulina, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 8.4
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.5
 * #22897
-    "Tiroxina livre (FT4), s "
-    "Tiroxina livre (FT4), s "
+    "Tiroxina livre (FT4), s"
+    "Tiroxina livre (FT4), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 5.9
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.2
 * #22900
-    "Tiroxina total (T4), s "
-    "Tiroxina total (T4), s "
+    "Tiroxina total (T4), s"
+    "Tiroxina total (T4), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 5
   * ^property[+].code = #taxa
@@ -920,22 +920,22 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.9
 * #22920
-    "Triglicéridos, s/u/l "
-    "Triglicéridos, s/u/l "
+    "Triglicéridos, s/u/l"
+    "Triglicéridos, s/u/l"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.9
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.5
 * #22925
-    "Triiodotironina livre (FT3), s "
-    "Triiodotironina livre (FT3), s "
+    "Triiodotironina livre (FT3), s"
+    "Triiodotironina livre (FT3), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 5.9
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.2
 * #22928
-    "Triiodotironina total (T3), s "
-    "Triiodotironina total (T3), s "
+    "Triiodotironina total (T3), s"
+    "Triiodotironina total (T3), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 4.75
   * ^property[+].code = #taxa
@@ -944,15 +944,15 @@ Description: "CodeSystem a-analises"
     "Troponina T, I, s, cada"
     "Troponina T, I, s, cada"
 * #22949
-    "Ureia, s/u "
-    "Ureia, s/u "
+    "Ureia, s/u"
+    "Ureia, s/u"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 1.3
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #22960
-    "Urina, análise quantitativa do sedimento (contagem por minuto) "
-    "Urina, análise quantitativa do sedimento (contagem por minuto) "
+    "Urina, análise quantitativa do sedimento (contagem por minuto)"
+    "Urina, análise quantitativa do sedimento (contagem por minuto)"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 2.74
   * ^property[+].code = #taxa
@@ -965,8 +965,8 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1
 * #21104
-    "Valproato, s "
-    "Valproato, s "
+    "Valproato, s"
+    "Valproato, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 11
   * ^property[+].code = #taxa
@@ -1000,22 +1000,22 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.2
 * #24145
-    "Fragilidade osmótica dos eritrócitos, após incubação, s "
-    "Fragilidade osmótica dos eritrócitos, após incubação, s "
+    "Fragilidade osmótica dos eritrócitos, após incubação, s"
+    "Fragilidade osmótica dos eritrócitos, após incubação, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 3.36
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 2.5
 * #24142
-    "Fragilidade osmótica dos eritrócitos, imediata, s "
-    "Fragilidade osmótica dos eritrócitos, imediata, s "
+    "Fragilidade osmótica dos eritrócitos, imediata, s"
+    "Fragilidade osmótica dos eritrócitos, imediata, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 3.01
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 2.5
 * #24163
-    "Glucose-6-fosfato-desidrogenase (G6PD), eritrócitos, doseamento, s "
-    "Glucose-6-fosfato-desidrogenase (G6PD), eritrócitos, doseamento, s "
+    "Glucose-6-fosfato-desidrogenase (G6PD), eritrócitos, doseamento, s"
+    "Glucose-6-fosfato-desidrogenase (G6PD), eritrócitos, doseamento, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 10.2
   * ^property[+].code = #taxa
@@ -1028,8 +1028,8 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 3
 * #24187
-    "Hemoglobina F, doseamento, outros métodos, s "
-    "Hemoglobina F, doseamento, outros métodos, s "
+    "Hemoglobina F, doseamento, outros métodos, s"
+    "Hemoglobina F, doseamento, outros métodos, s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 5.56
   * ^property[+].code = #taxa
@@ -1049,8 +1049,8 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 2.5
 * #24201
-    "Hemoglobinas, separação e doseamento (Cromatografia LPLC/HPLC), s "
-    "Hemoglobinas, separação e doseamento (Cromatografia LPLC/HPLC), s "
+    "Hemoglobinas, separação e doseamento (Cromatografia LPLC/HPLC), s"
+    "Hemoglobinas, separação e doseamento (Cromatografia LPLC/HPLC), s"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 10.2
   * ^property[+].code = #taxa
@@ -1214,8 +1214,8 @@ Description: "CodeSystem a-analises"
     "Anticorpos anti-LKM (imunofluorescência)"
     "Anticorpos anti-LKM (imunofluorescência)"
 * #25048
-    "Anticorpos anti-mitocôndrias (AMA) (imunofluorescência) "
-    "Anticorpos anti-mitocôndrias (AMA) (imunofluorescência) "
+    "Anticorpos anti-mitocôndrias (AMA) (imunofluorescência)"
+    "Anticorpos anti-mitocôndrias (AMA) (imunofluorescência)"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 9.59
   * ^property[+].code = #taxa
@@ -1228,15 +1228,15 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 2.5
 * #25057
-    "Anticorpos anti-nucleares e citoplasmáticos (ANA) (imunofluorescência) "
-    "Anticorpos anti-nucleares e citoplasmáticos (ANA) (imunofluorescência) "
+    "Anticorpos anti-nucleares e citoplasmáticos (ANA) (imunofluorescência)"
+    "Anticorpos anti-nucleares e citoplasmáticos (ANA) (imunofluorescência)"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 13.17
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 2.5
 * #25520
-    "Anticorpos anti-nucleares e citoplasmáticos (anti-Sm, RNP, SSA/Ro52, SSA/Ro60, SSB/La, Jo1, Scl70), identificação, todos "
-    "Anticorpos anti-nucleares e citoplasmáticos (anti-Sm, RNP, SSA/Ro52, SSA/Ro60, SSB/La, Jo1, Scl70), identificação, todos "
+    "Anticorpos anti-nucleares e citoplasmáticos (anti-Sm, RNP, SSA/Ro52, SSA/Ro60, SSB/La, Jo1, Scl70), identificação, todos"
+    "Anticorpos anti-nucleares e citoplasmáticos (anti-Sm, RNP, SSA/Ro52, SSA/Ro60, SSB/La, Jo1, Scl70), identificação, todos"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 11.34
   * ^property[+].code = #taxa
@@ -1343,8 +1343,8 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 4
 * #25185
-    "Fator reumatóide (nefelometria / turbidimetria) "
-    "Fator reumatóide (nefelometria / turbidimetria) "
+    "Fator reumatóide (nefelometria / turbidimetria)"
+    "Fator reumatóide (nefelometria / turbidimetria)"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 2.32
   * ^property[+].code = #taxa
@@ -1378,8 +1378,8 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.1
 * #25262
-    "Imunoglobulinas (A/G/M), baixa concentração, cada "
-    "Imunoglobulinas (A/G/M), baixa concentração, cada "
+    "Imunoglobulinas (A/G/M), baixa concentração, cada"
+    "Imunoglobulinas (A/G/M), baixa concentração, cada"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 12.4
   * ^property[+].code = #taxa
@@ -1540,8 +1540,8 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.9
 * #26040
-    "Anticorpos para Treponema pallidum, FTA-ABs (I.F.) "
-    "Anticorpos para Treponema pallidum, FTA-ABs (I.F.) "
+    "Anticorpos para Treponema pallidum, FTA-ABs (I.F.)"
+    "Anticorpos para Treponema pallidum, FTA-ABs (I.F.)"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 20.31
   * ^property[+].code = #taxa
@@ -1554,22 +1554,22 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 3.5
 * #26019
-    "Anticorpos para vírus Hepatite A IgG "
-    "Anticorpos para vírus Hepatite A IgG "
+    "Anticorpos para vírus Hepatite A IgG"
+    "Anticorpos para vírus Hepatite A IgG"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 10.92
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 2.5
 * #26022
-    "Anticorpos para vírus Hepatite A IgM "
-    "Anticorpos para vírus Hepatite A IgM "
+    "Anticorpos para vírus Hepatite A IgM"
+    "Anticorpos para vírus Hepatite A IgM"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 13.58
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 3
 * #26010
-    "Anticorpos para vírus Hepatite B - anti HBc IgG ou total "
-    "Anticorpos para vírus Hepatite B - anti HBc IgG ou total "
+    "Anticorpos para vírus Hepatite B - anti HBc IgG ou total"
+    "Anticorpos para vírus Hepatite B - anti HBc IgG ou total"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 11.2
   * ^property[+].code = #taxa
@@ -1603,8 +1603,8 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 3
 * #26033
-    "Anticorpos para vírus Hepatite C - anti HCV confirmatório "
-    "Anticorpos para vírus Hepatite C - anti HCV confirmatório "
+    "Anticorpos para vírus Hepatite C - anti HCV confirmatório"
+    "Anticorpos para vírus Hepatite C - anti HCV confirmatório"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 51.45
   * ^property[+].code = #taxa
@@ -1659,8 +1659,8 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0.35
 * #26298
-    "Título de anti-estreptolisina O "
-    "Título de anti-estreptolisina O "
+    "Título de anti-estreptolisina O"
+    "Título de anti-estreptolisina O"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 4.34
   * ^property[+].code = #taxa
@@ -1728,15 +1728,15 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 2
 * #26513
-    "Exsudado conjuntival - exame cultural, identificação e TSA "
-    "Exsudado conjuntival - exame cultural, identificação e TSA "
+    "Exsudado conjuntival - exame cultural, identificação e TSA"
+    "Exsudado conjuntival - exame cultural, identificação e TSA"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 9.31
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.3
 * #26125
-    "Exsudado endocervical - pesquisa de Neisseria gonorrhoeae, exame cultural, identificação e TSA "
-    "Exsudado endocervical - pesquisa de Neisseria gonorrhoeae, exame cultural, identificação e TSA "
+    "Exsudado endocervical - pesquisa de Neisseria gonorrhoeae, exame cultural, identificação e TSA"
+    "Exsudado endocervical - pesquisa de Neisseria gonorrhoeae, exame cultural, identificação e TSA"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 9.65
   * ^property[+].code = #taxa
@@ -1780,8 +1780,8 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.6
 * #26519
-    "Exsudado purulento (colheita por aspiração) - exame direto, cultural em aerobiose, identificação e TSA "
-    "Exsudado purulento (colheita por aspiração) - exame direto, cultural em aerobiose, identificação e TSA "
+    "Exsudado purulento (colheita por aspiração) - exame direto, cultural em aerobiose, identificação e TSA"
+    "Exsudado purulento (colheita por aspiração) - exame direto, cultural em aerobiose, identificação e TSA"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 15.68
   * ^property[+].code = #taxa
@@ -1794,8 +1794,8 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 2
 * #26127
-    "Exsudado uretral - exame bacteriológico, micológico e parasitológico, identificação e TSA "
-    "Exsudado uretral - exame bacteriológico, micológico e parasitológico, identificação e TSA "
+    "Exsudado uretral - exame bacteriológico, micológico e parasitológico, identificação e TSA"
+    "Exsudado uretral - exame bacteriológico, micológico e parasitológico, identificação e TSA"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 20.09
   * ^property[+].code = #taxa
@@ -1808,8 +1808,8 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 3
 * #26095
-    "Fezes - pesquisa de Salmonella, Shigella e Campylobacter, exame cultural, identificação e TSA "
-    "Fezes - pesquisa de Salmonella, Shigella e Campylobacter, exame cultural, identificação e TSA "
+    "Fezes - pesquisa de Salmonella, Shigella e Campylobacter, exame cultural, identificação e TSA"
+    "Fezes - pesquisa de Salmonella, Shigella e Campylobacter, exame cultural, identificação e TSA"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 21.84
   * ^property[+].code = #taxa
@@ -1832,8 +1832,8 @@ Description: "CodeSystem a-analises"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.8
 * #26108
-    "Líquidos de cavidades naturais - exame direto, cultural, identificação e TSA "
-    "Líquidos de cavidades naturais - exame direto, cultural, identificação e TSA "
+    "Líquidos de cavidades naturais - exame direto, cultural, identificação e TSA"
+    "Líquidos de cavidades naturais - exame direto, cultural, identificação e TSA"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 15.1
   * ^property[+].code = #taxa

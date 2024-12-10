@@ -5,7 +5,7 @@ Usage: #definition
 
 * version = "5.9.2024"
 * name = "MCDTS-g-mfr-SNS-CONV"
-* title = "Mapeamento de códigos SNS para códigos convencionados para a área g-mfr "
+* title = "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área G - Medicina Fisica E De Reabilitação "
 
 * status = #draft
 * experimental = true

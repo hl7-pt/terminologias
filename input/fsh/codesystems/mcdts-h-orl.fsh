@@ -1,8 +1,8 @@
 // Define a local code system
 CodeSystem: MCDTSH_ORLCS
 Id:         mcdts-h-orl-cs
-Title:     "CodeSystem MCDTS h-orl"
-Description: "CodeSystem h-orl"
+Title:     "MCDTS Tabela Da Área H - Otorrinolaringologia"
+Description: "Tabela Da Área H - Otorrinolaringologia"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-h-orl-cs"
 * ^version = "5.9.2024"

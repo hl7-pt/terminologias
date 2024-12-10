@@ -5,7 +5,7 @@ Usage: #definition
 
 * version = "5.9.2024"
 * name = "MCDTS-e-eeg-SNS-CONV"
-* title = "Mapeamento de códigos SNS para códigos convencionados para a área e-eeg "
+* title = "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área E - Electroencefalografia "
 
 * status = #draft
 * experimental = true

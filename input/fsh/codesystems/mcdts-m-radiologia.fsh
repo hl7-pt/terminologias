@@ -1,8 +1,8 @@
 // Define a local code system
 CodeSystem: MCDTSM_RadiologiaCS
 Id:         mcdts-m-radiologia-cs
-Title:     "CodeSystem MCDTS m-radiologia"
-Description: "CodeSystem m-radiologia"
+Title:     "MCDTS Tabela Da Área M - Tabela De Radiologia "
+Description: "Tabela Da Área M - Tabela De Radiologia "
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-m-radiologia-cs"
 * ^version = "5.9.2024"
@@ -325,8 +325,8 @@ Description: "CodeSystem m-radiologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.3
 * #10584
-    "Radiografia da Coluna, filme extralongo, uma incidência "
-    "Radiografia da Coluna, filme extralongo, uma incidência "
+    "Radiografia da Coluna, filme extralongo, uma incidência"
+    "Radiografia da Coluna, filme extralongo, uma incidência"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 9.1
   * ^property[+].code = #taxa
@@ -614,8 +614,8 @@ Description: "CodeSystem m-radiologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.1
 * #10790
-    "Idade óssea (mão e punho) "
-    "Idade óssea (mão e punho) "
+    "Idade óssea (mão e punho)"
+    "Idade óssea (mão e punho)"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 5.5
   * ^property[+].code = #taxa
@@ -726,15 +726,15 @@ Description: "CodeSystem m-radiologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.3
 * #10865
-    "Pé, duas incidências "
-    "Pé, duas incidências "
+    "Pé, duas incidências"
+    "Pé, duas incidências"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 4
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.1
 * #10870
-    "Pé em carga, duas incidências "
-    "Pé em carga, duas incidências "
+    "Pé em carga, duas incidências"
+    "Pé em carga, duas incidências"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 5.5
   * ^property[+].code = #taxa
@@ -747,8 +747,8 @@ Description: "CodeSystem m-radiologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.1
 * #10880
-    "Dedos do pé, duas incidências "
-    "Dedos do pé, duas incidências "
+    "Dedos do pé, duas incidências"
+    "Dedos do pé, duas incidências"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 2
   * ^property[+].code = #taxa
@@ -761,15 +761,15 @@ Description: "CodeSystem m-radiologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.8
 * #10890
-    "Radiografia dos membros inferiores em filme extralongo "
-    "Radiografia dos membros inferiores em filme extralongo "
+    "Radiografia dos membros inferiores em filme extralongo"
+    "Radiografia dos membros inferiores em filme extralongo"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 10
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 2
 * #10895
-    "Radiometria dos membros inferiores por segmentos articulares "
-    "Radiometria dos membros inferiores por segmentos articulares "
+    "Radiometria dos membros inferiores por segmentos articulares"
+    "Radiometria dos membros inferiores por segmentos articulares"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 8.98
   * ^property[+].code = #taxa
@@ -972,15 +972,15 @@ Description: "CodeSystem m-radiologia"
     "Ecografia, apoio a gestos de intervenção"
     "Ecografia, apoio a gestos de intervenção"
 * #16010
-    "TC do crânio "
-    "TC do crânio "
+    "TC do crânio"
+    "TC do crânio"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 74.18
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 13
 * #16020
-    "TC maxilo-facial "
-    "TC maxilo-facial "
+    "TC maxilo-facial"
+    "TC maxilo-facial"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 72.78
   * ^property[+].code = #taxa
@@ -993,15 +993,15 @@ Description: "CodeSystem m-radiologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 13
 * #16210
-    "TC da sela turca "
-    "TC da sela turca "
+    "TC da sela turca"
+    "TC da sela turca"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 67.59
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 13
 * #16220
-    "TC das órbitas "
-    "TC das órbitas "
+    "TC das órbitas"
+    "TC das órbitas"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 70.79
   * ^property[+].code = #taxa
@@ -1014,15 +1014,15 @@ Description: "CodeSystem m-radiologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 13
 * #16240
-    "TC dos ouvidos "
-    "TC dos ouvidos "
+    "TC dos ouvidos"
+    "TC dos ouvidos"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 69.98
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 12
 * #16270
-    "TC da faringe "
-    "TC da faringe "
+    "TC da faringe"
+    "TC da faringe"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 69.29
   * ^property[+].code = #taxa
@@ -1063,15 +1063,15 @@ Description: "CodeSystem m-radiologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 12
 * #16060
-    "TC do tórax "
-    "TC do tórax "
+    "TC do tórax"
+    "TC do tórax"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 80.86
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 14
 * #16070
-    "TC do abdómen superior "
-    "TC do abdómen superior "
+    "TC do abdómen superior"
+    "TC do abdómen superior"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 90
   * ^property[+].code = #taxa
@@ -1144,8 +1144,8 @@ Description: "CodeSystem m-radiologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 4
 * #15813
-    "Punção aspirativa para citologia guiada por técnica de imagem "
-    "Punção aspirativa para citologia guiada por técnica de imagem "
+    "Punção aspirativa para citologia guiada por técnica de imagem"
+    "Punção aspirativa para citologia guiada por técnica de imagem"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 20
   * ^property[+].code = #taxa

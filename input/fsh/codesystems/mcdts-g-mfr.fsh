@@ -1,8 +1,8 @@
 // Define a local code system
 CodeSystem: MCDTSG_MFRCS
 Id:         mcdts-g-mfr-cs
-Title:     "CodeSystem MCDTS g-mfr"
-Description: "CodeSystem g-mfr"
+Title:     "MCDTS Tabela Da Área G - Medicina Fisica E De Reabilitação"
+Description: "Tabela Da Área G - Medicina Fisica E De Reabilitação"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-g-mfr-cs"
 * ^version = "5.9.2024"
@@ -241,8 +241,8 @@ Description: "CodeSystem g-mfr"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.1
 * #60430
-    "Cinesiterapia respiratória "
-    "Cinesiterapia respiratória "
+    "Cinesiterapia respiratória"
+    "Cinesiterapia respiratória"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 2.17
   * ^property[+].code = #taxa
@@ -332,8 +332,8 @@ Description: "CodeSystem g-mfr"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.4
 * #61137
-    "Mobilização de secreções com flutter "
-    "Mobilização de secreções com flutter "
+    "Mobilização de secreções com flutter"
+    "Mobilização de secreções com flutter"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 3.5
   * ^property[+].code = #taxa

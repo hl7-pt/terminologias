@@ -5,7 +5,7 @@ Usage: #definition
 
 * version = "5.9.2024"
 * name = "MCDTS-j-urologia-SNS-CONV"
-* title = "Mapeamento de códigos SNS para códigos convencionados para a área j-urologia "
+* title = "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área J - Urologia "
 
 * status = #draft
 * experimental = true

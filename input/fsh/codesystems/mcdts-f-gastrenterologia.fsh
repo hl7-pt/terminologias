@@ -1,8 +1,8 @@
 // Define a local code system
 CodeSystem: MCDTSF_GastrenterologiaCS
 Id:         mcdts-f-gastrenterologia-cs
-Title:     "CodeSystem MCDTS f-gastrenterologia"
-Description: "CodeSystem f-gastrenterologia"
+Title:     "MCDTS Tabela Da Área F - Endoscopia Gastrenterológica"
+Description: "Tabela Da Área F - Endoscopia Gastrenterológica"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-f-gastrenterologia-cs"
 * ^version = "5.9.2024"
@@ -24,8 +24,8 @@ Description: "CodeSystem f-gastrenterologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 5
 * #52071
-    "Pesquisa de Helicobacter pylori na biópsia (Teste de Urease) "
-    "Pesquisa de Helicobacter pylori na biópsia (Teste de Urease) "
+    "Pesquisa de Helicobacter pylori na biópsia (Teste de Urease)"
+    "Pesquisa de Helicobacter pylori na biópsia (Teste de Urease)"
 * #50115
     "Sedação efectuada por Gastrenterologista"
     "Sedação efectuada por Gastrenterologista"
@@ -33,8 +33,8 @@ Description: "CodeSystem f-gastrenterologia"
     "Tatuagem cólica"
     "Tatuagem cólica"
 * #52155
-    "Aplicação de \"clips\" (cada sessão) "
-    "Aplicação de \"clips\" (cada sessão) "
+    "Aplicação de \"clips\" (cada sessão)"
+    "Aplicação de \"clips\" (cada sessão)"
 * #52210
     "Injecção endoscópica de fármacos"
     "Injecção endoscópica de fármacos"
@@ -56,15 +56,15 @@ Description: "CodeSystem f-gastrenterologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 3
 * #52125
-    "Endoscopia alta "
-    "Endoscopia alta "
+    "Endoscopia alta"
+    "Endoscopia alta"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 42.28
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 12
 * #52130
-    "Rectoscopia rígida "
-    "Rectoscopia rígida "
+    "Rectoscopia rígida"
+    "Rectoscopia rígida"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 13.86
   * ^property[+].code = #taxa

@@ -1,8 +1,8 @@
 // Define a local code system
 CodeSystem: MCDTSI_Pneumologia_ImunoalergologiaCS
 Id:         mcdts-i-pneumologia-imunoalergologia-cs
-Title:     "CodeSystem MCDTS i-pneumologia-imunoalergologia"
-Description: "CodeSystem i-pneumologia-imunoalergologia"
+Title:     "MCDTS Tabela Da Área I - Tabela De Pneumologia E Tabela De Imunoalergologia"
+Description: "Tabela Da Área I - Tabela De Pneumologia E Tabela De Imunoalergologia"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-i-pneumologia-imunoalergologia-cs"
 * ^version = "5.9.2024"
@@ -45,8 +45,8 @@ Description: "CodeSystem i-pneumologia-imunoalergologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 6
 * #80115
-    "Prova de broncoconstrição com água destilada/soluto hipertónico (acresce à prova basal) "
-    "Prova de broncoconstrição com água destilada/soluto hipertónico (acresce à prova basal) "
+    "Prova de broncoconstrição com água destilada/soluto hipertónico (acresce à prova basal)"
+    "Prova de broncoconstrição com água destilada/soluto hipertónico (acresce à prova basal)"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 25.96
   * ^property[+].code = #taxa
@@ -94,8 +94,8 @@ Description: "CodeSystem i-pneumologia-imunoalergologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 14
 * #81261
-    "Ventilação com pressão positiva contínua (CPAP), por cada dia (inclui oximetria) "
-    "Ventilação com pressão positiva contínua (CPAP), por cada dia (inclui oximetria) "
+    "Ventilação com pressão positiva contínua (CPAP), por cada dia (inclui oximetria)"
+    "Ventilação com pressão positiva contínua (CPAP), por cada dia (inclui oximetria)"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 6
   * ^property[+].code = #taxa
@@ -108,22 +108,22 @@ Description: "CodeSystem i-pneumologia-imunoalergologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 10
 * #81263
-    "Adaptação e aferição a ventilação com pressão positiva contínua (CPAP) (incluí oximetria e gasimetria) "
-    "Adaptação e aferição a ventilação com pressão positiva contínua (CPAP) (incluí oximetria e gasimetria) "
+    "Adaptação e aferição a ventilação com pressão positiva contínua (CPAP) (incluí oximetria e gasimetria)"
+    "Adaptação e aferição a ventilação com pressão positiva contínua (CPAP) (incluí oximetria e gasimetria)"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 5
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 5
 * #81264
-    "Adaptação e aferição a ventilação com pressão positiva contínua (Binível ou outra modalidade) (incluí oximetria e gasimetria) "
-    "Adaptação e aferição a ventilação com pressão positiva contínua (Binível ou outra modalidade) (incluí oximetria e gasimetria) "
+    "Adaptação e aferição a ventilação com pressão positiva contínua (Binível ou outra modalidade) (incluí oximetria e gasimetria)"
+    "Adaptação e aferição a ventilação com pressão positiva contínua (Binível ou outra modalidade) (incluí oximetria e gasimetria)"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 12
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 12
 * #81920
-    "Broncoscopia rígida "
-    "Broncoscopia rígida "
+    "Broncoscopia rígida"
+    "Broncoscopia rígida"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 24.92
   * ^property[+].code = #taxa
@@ -227,8 +227,8 @@ Description: "CodeSystem i-pneumologia-imunoalergologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 2.5
 * #81976
-    "Lavagem pleural "
-    "Lavagem pleural "
+    "Lavagem pleural"
+    "Lavagem pleural"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 15
   * ^property[+].code = #taxa
@@ -248,8 +248,8 @@ Description: "CodeSystem i-pneumologia-imunoalergologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 4
 * #95015
-    "Testes por picada (Prick) - reação de hipersensibilidade imediata, método Prick-Prick, alimentos frescos, incluindo controlo positivo e diluente "
-    "Testes por picada (Prick) - reação de hipersensibilidade imediata, método Prick-Prick, alimentos frescos, incluindo controlo positivo e diluente "
+    "Testes por picada (Prick) - reação de hipersensibilidade imediata, método Prick-Prick, alimentos frescos, incluindo controlo positivo e diluente"
+    "Testes por picada (Prick) - reação de hipersensibilidade imediata, método Prick-Prick, alimentos frescos, incluindo controlo positivo e diluente"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 6.22
   * ^property[+].code = #taxa
@@ -269,8 +269,8 @@ Description: "CodeSystem i-pneumologia-imunoalergologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 4
 * #95030
-    "Testes por picada (Prick) - reação de hipersensibilidade imediata, produtos biológicos ou outros medicamentos, incluindo controlo positivo e diluente "
-    "Testes por picada (Prick) - reação de hipersensibilidade imediata, produtos biológicos ou outros medicamentos, incluindo controlo positivo e diluente "
+    "Testes por picada (Prick) - reação de hipersensibilidade imediata, produtos biológicos ou outros medicamentos, incluindo controlo positivo e diluente"
+    "Testes por picada (Prick) - reação de hipersensibilidade imediata, produtos biológicos ou outros medicamentos, incluindo controlo positivo e diluente"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 6.22
   * ^property[+].code = #taxa
@@ -297,8 +297,8 @@ Description: "CodeSystem i-pneumologia-imunoalergologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 4
 * #95050
-    "Testes intradérmicos - reação de hipersensibilidade imediata, com extratos alergénicos, cada série de 8 alergenos incluindo controlo positivo e diluente "
-    "Testes intradérmicos - reação de hipersensibilidade imediata, com extratos alergénicos, cada série de 8 alergenos incluindo controlo positivo e diluente "
+    "Testes intradérmicos - reação de hipersensibilidade imediata, com extratos alergénicos, cada série de 8 alergenos incluindo controlo positivo e diluente"
+    "Testes intradérmicos - reação de hipersensibilidade imediata, com extratos alergénicos, cada série de 8 alergenos incluindo controlo positivo e diluente"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 4.14
   * ^property[+].code = #taxa
@@ -318,8 +318,8 @@ Description: "CodeSystem i-pneumologia-imunoalergologia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.6
 * #95505
-    "Aplicação de duas ou mais injeções de extratos alergénicos "
-    "Aplicação de duas ou mais injeções de extratos alergénicos "
+    "Aplicação de duas ou mais injeções de extratos alergénicos"
+    "Aplicação de duas ou mais injeções de extratos alergénicos"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 3
   * ^property[+].code = #taxa

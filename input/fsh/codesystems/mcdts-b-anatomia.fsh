@@ -1,8 +1,8 @@
 // Define a local code system
 CodeSystem: MCDTSB_AnatomiaCS
 Id:         mcdts-b-anatomia-cs
-Title:     "CodeSystem MCDTS b-anatomia"
-Description: "CodeSystem b-anatomia"
+Title:     "MCDTS Tabela Da Área B - Anatomia Patológica"
+Description: "Tabela Da Área B - Anatomia Patológica"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-b-anatomia-cs"
 * ^version = "5.9.2024"
@@ -38,8 +38,8 @@ Description: "CodeSystem b-anatomia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0
 * #30630
-    "Processamento e exame citológico de aspirado de agulha fina "
-    "Processamento e exame citológico de aspirado de agulha fina "
+    "Processamento e exame citológico de aspirado de agulha fina"
+    "Processamento e exame citológico de aspirado de agulha fina"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 0
   * ^property[+].code = #taxa
@@ -66,22 +66,22 @@ Description: "CodeSystem b-anatomia"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 11.9
 * #31057
-    "Exame macroscópico e histológico de produto de biópsia incisional ou excisional, raspagem, curetagem ou de eliminação espontânea "
-    "Exame macroscópico e histológico de produto de biópsia incisional ou excisional, raspagem, curetagem ou de eliminação espontânea "
+    "Exame macroscópico e histológico de produto de biópsia incisional ou excisional, raspagem, curetagem ou de eliminação espontânea"
+    "Exame macroscópico e histológico de produto de biópsia incisional ou excisional, raspagem, curetagem ou de eliminação espontânea"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 12.75
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 12.75
 * #31077
-    "Exame macroscópico e histológico de peça de ressecção cirúrgica ou de feto com 11 semanas ou menos "
-    "Exame macroscópico e histológico de peça de ressecção cirúrgica ou de feto com 11 semanas ou menos "
+    "Exame macroscópico e histológico de peça de ressecção cirúrgica ou de feto com 11 semanas ou menos"
+    "Exame macroscópico e histológico de peça de ressecção cirúrgica ou de feto com 11 semanas ou menos"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 0
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 0
 * #31097
-    "Exame macroscópico e histológico de peça de ressecção cirúrgica com dissecção ganglionar e/ou avaliação da margem circunferencial e/ou mapeamento "
-    "Exame macroscópico e histológico de peça de ressecção cirúrgica com dissecção ganglionar e/ou avaliação da margem circunferencial e/ou mapeamento "
+    "Exame macroscópico e histológico de peça de ressecção cirúrgica com dissecção ganglionar e/ou avaliação da margem circunferencial e/ou mapeamento"
+    "Exame macroscópico e histológico de peça de ressecção cirúrgica com dissecção ganglionar e/ou avaliação da margem circunferencial e/ou mapeamento"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 0
   * ^property[+].code = #taxa

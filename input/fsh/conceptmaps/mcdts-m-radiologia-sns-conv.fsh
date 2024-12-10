@@ -5,7 +5,7 @@ Usage: #definition
 
 * version = "5.9.2024"
 * name = "MCDTS-m-radiologia-SNS-CONV"
-* title = "Mapeamento de códigos SNS para códigos convencionados para a área m-radiologia "
+* title = "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área M - Tabela De Radiologia  "
 
 * status = #draft
 * experimental = true

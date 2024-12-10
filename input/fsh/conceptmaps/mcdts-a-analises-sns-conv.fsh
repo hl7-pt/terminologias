@@ -5,7 +5,7 @@ Usage: #definition
 
 * version = "5.9.2024"
 * name = "MCDTS-a-analises-SNS-CONV"
-* title = "Mapeamento de códigos SNS para códigos convencionados para a área a-analises "
+* title = "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área A - Análises Clínicas "
 
 * status = #draft
 * experimental = true

@@ -1,8 +1,8 @@
 // Define a local code system
 CodeSystem: MCDTSE_EEGCS
 Id:         mcdts-e-eeg-cs
-Title:     "CodeSystem MCDTS e-eeg"
-Description: "CodeSystem e-eeg"
+Title:     "MCDTS Tabela Da Área E - Electroencefalografia"
+Description: "Tabela Da Área E - Electroencefalografia"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-e-eeg-cs"
 * ^version = "5.9.2024"

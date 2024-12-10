@@ -1,8 +1,8 @@
 // Define a local code system
 CodeSystem: MCDTSD_MNuclearCS
 Id:         mcdts-d-m-nuclear-cs
-Title:     "CodeSystem MCDTS d-m-nuclear"
-Description: "CodeSystem d-m-nuclear"
+Title:     "MCDTS Tabela Da Área D - Medicina Nuclear"
+Description: "Tabela Da Área D - Medicina Nuclear"
 
 * ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-d-m-nuclear-cs"
 * ^version = "5.9.2024"
@@ -66,8 +66,8 @@ Description: "CodeSystem d-m-nuclear"
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 20
 * #58125
-    "Cintigrafia hepática com glóbulos vermelhos marcados "
-    "Cintigrafia hepática com glóbulos vermelhos marcados "
+    "Cintigrafia hepática com glóbulos vermelhos marcados"
+    "Cintigrafia hepática com glóbulos vermelhos marcados"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 66.08
   * ^property[+].code = #taxa
@@ -97,8 +97,8 @@ Description: "CodeSystem d-m-nuclear"
     "Cintigrafia pulmonar ventilação/inalação (a)"
     "Cintigrafia pulmonar ventilação/inalação (a)"
 * #58260
-    "Cintigrafia da tiroideia "
-    "Cintigrafia da tiroideia "
+    "Cintigrafia da tiroideia"
+    "Cintigrafia da tiroideia"
   * ^property[+].code = #preco
   * ^property[=].valueDecimal = 26.89
   * ^property[+].code = #taxa

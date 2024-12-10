@@ -5,7 +5,7 @@ Usage: #definition
 
 * version = "5.9.2024"
 * name = "MCDTS-i-pneumologia-imunoalergologia-SNS-CONV"
-* title = "Mapeamento de códigos SNS para códigos convencionados para a área i-pneumologia-imunoalergologia "
+* title = "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área I - Tabela De Pneumologia E Tabela De Imunoalergologia "
 
 * status = #draft
 * experimental = true

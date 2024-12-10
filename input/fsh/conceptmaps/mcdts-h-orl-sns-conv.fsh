@@ -5,7 +5,7 @@ Usage: #definition
 
 * version = "5.9.2024"
 * name = "MCDTS-h-orl-SNS-CONV"
-* title = "Mapeamento de códigos SNS para códigos convencionados para a área h-orl "
+* title = "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área H - Otorrinolaringologia "
 
 * status = #draft
 * experimental = true
