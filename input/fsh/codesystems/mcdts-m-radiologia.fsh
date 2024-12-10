@@ -1,14 +1,12 @@
-
-
 // Define a local code system
-CodeSystem: MCDTSRadiologiasCS
-Id:         mcdts-radiologia-cs
-Title:     "CodeSystem MCDTS Radiologia"
-Description: "CodeSystem TABELA DA ÁREA M - Radiologia"
+CodeSystem: MCDTSM_RadiologiaCS
+Id:         mcdts-m-radiologia-cs
+Title:     "CodeSystem MCDTS m-radiologia"
+Description: "CodeSystem m-radiologia"
 
-* ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-radiologia-cs"
+* ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-m-radiologia-cs"
 * ^version = "1.0"
-* ^author.name = "Centro de Terminologias Clínicas"
+* ^author.name = "ACSS"
 
 
 * ^property[+].code = #preco
@@ -17,7 +15,6 @@ Description: "CodeSystem TABELA DA ÁREA M - Radiologia"
 * ^property[+].code = #taxa
 * ^property[=].description = "Taxa Moderadora"
 * ^property[=].type = #decimal
-
 
 * #10004
     "Crânio, uma incidência"
@@ -1170,7 +1167,6 @@ Description: "CodeSystem TABELA DA ÁREA M - Radiologia"
   * ^property[=].valueDecimal = 50
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 10
-
 * #10920
     "Osteodensitometria da coluna lombar"
     "Osteodensitometria da coluna lombar"
@@ -1220,4 +1216,3 @@ Description: "CodeSystem TABELA DA ÁREA M - Radiologia"
   * ^property[=].valueDecimal = 35
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 25
-

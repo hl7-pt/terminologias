@@ -3,7 +3,7 @@ InstanceOf: ConceptMap
 Usage: #definition
 
 * version = "1.0.0"
-* name = "ESPENFerm-SNOMED"
+* name = "ESP-Enferm-SNOMED"
 * title = "Mapeamento de códigos de especialidade de enfermagem para códigos SNOMEDCT"
 
 * status = #draft

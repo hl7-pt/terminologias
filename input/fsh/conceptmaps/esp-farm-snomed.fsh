@@ -15,8 +15,6 @@ Usage: #definition
 * group.target = $sct
 
 
-
-
 * group.element[+].code = #1
 * group.element[=].noMap = true
 

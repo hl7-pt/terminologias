@@ -1,12 +1,12 @@
 // Define a local code system
-CodeSystem: MCDTSAnaliticosCS
-Id:         mcdts-analiticos-cs
-Title:     "CodeSystem MCDTS ANÁLISES CLÍNICAS"
-Description: "CodeSystem TABELA DA ÁREA A - ANÁLISES CLÍNICAS"
+CodeSystem: MCDTSA_AnalisesCS
+Id:         mcdts-a-analises-cs
+Title:     "CodeSystem MCDTS a-analises"
+Description: "CodeSystem a-analises"
 
-* ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-analiticos-cs"
+* ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-a-analises-cs"
 * ^version = "1.0"
-* ^author.name = "Centro de Terminologias Clínicas"
+* ^author.name = "ACSS"
 
 
 * ^property[+].code = #preco
@@ -1946,4 +1946,3 @@ Description: "CodeSystem TABELA DA ÁREA A - ANÁLISES CLÍNICAS"
   * ^property[=].valueDecimal = 5.27
   * ^property[+].code = #taxa
   * ^property[=].valueDecimal = 1.6
-

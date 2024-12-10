@@ -1,20 +1,20 @@
-Instance: mcdts-analiticos-sns-conv
+
+Instance: mcdts-a-analises-sns-conv
 InstanceOf: ConceptMap
 Usage: #definition
 
 * version = "1.0.0"
-* name = "CTCUnitEDQM"
-* title = "Mapeamento de códigos SNS para códigos convencionados"
+* name = "MCDTS-a-analises-SNS-CONV"
+* title = "Mapeamento de códigos SNS para códigos convencionados para a área a-analises "
 
 * status = #draft
 * experimental = true
-* date = "2014-12-11"
-* publisher = "CTC / HL7 Portugal"
+* date = "2024-12-11"
+* publisher = "ACSS / HL7 Portugal"
 
-* group.source = "https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs"
-* group.target = "https://www.edqm.eu/en/"
-
-
+* group.source = "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-a-analises-cs"
+* group.target = "https://www.acss.pt"
+                       
 * group.element[+].code = #21175
 * group.element[=].target.code = #684.0
 * group.element[=].target.relationship = #equivalent
