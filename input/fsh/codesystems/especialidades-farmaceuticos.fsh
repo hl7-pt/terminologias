@@ -5,8 +5,8 @@ Id:         especialidades-farmaceuticas-cs
 Title:     "Especialidades Farmacêuticas"
 Description: "Especialidades farmacêuticas existentes em Portugal"
 
-* ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-farmaceuticas-cs"
-* ^version = "1.0"
+* ^url =  "https://hl7-pt.github.io/terminologias/CodeSystem-especialidades-farmaceuticas"
+* ^version = "1.0.0"
 * ^author.name = "Ordem dos Farmacêuticos"
 
 * #1

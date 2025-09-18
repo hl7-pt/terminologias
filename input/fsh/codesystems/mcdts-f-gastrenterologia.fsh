@@ -4,7 +4,7 @@ Id:         mcdts-f-gastrenterologia-cs
 Title:     "MCDTS Tabela Da Área F - Endoscopia Gastrenterológica"
 Description: "Tabela Da Área F - Endoscopia Gastrenterológica"
 
-* ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-f-gastrenterologia-cs"
+* ^url =  "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-f-gastrenterologia"
 * ^version = "5.9.2024"
 * ^author.name = "ACSS"
 

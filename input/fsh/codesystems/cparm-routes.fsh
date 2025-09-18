@@ -5,8 +5,8 @@ Id:         cparm-routes-cs
 Title:     "Vias de Administração"
 Description: "Vias de Administração de medicamentos"
 
-* ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/cparm-routes-cs"
-* ^version = "1.0"
+* ^url =  "https://hl7-pt.github.io/terminologias/CodeSystem-cparm-routes"
+* ^version = "1.0.0"
 * ^author.name = "Centro de Terminologias Clínicas"
 
 

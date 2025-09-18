@@ -4,7 +4,7 @@ Id:         mcdts-l-neurofisiologia-cs
 Title:     "MCDTS Tabela Da Área L - Neurofisiologia"
 Description: "Tabela Da Área L - Neurofisiologia"
 
-* ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-l-neurofisiologia-cs"
+* ^url =  "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-l-neurofisiologia"
 * ^version = "5.9.2024"
 * ^author.name = "ACSS"
 

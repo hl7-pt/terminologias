@@ -4,7 +4,7 @@ Id:         mcdts-m-radiologia-cs
 Title:     "MCDTS Tabela Da Área M - Tabela De Radiologia "
 Description: "Tabela Da Área M - Tabela De Radiologia "
 
-* ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-m-radiologia-cs"
+* ^url =  "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-m-radiologia"
 * ^version = "5.9.2024"
 * ^author.name = "ACSS"
 

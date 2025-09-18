@@ -4,7 +4,7 @@ Id:         mcdts-b-anatomia-cs
 Title:     "MCDTS Tabela Da Área B - Anatomia Patológica"
 Description: "Tabela Da Área B - Anatomia Patológica"
 
-* ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-b-anatomia-cs"
+* ^url =  "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-b-anatomia"
 * ^version = "5.9.2024"
 * ^author.name = "ACSS"
 

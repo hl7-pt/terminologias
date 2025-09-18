@@ -4,7 +4,7 @@ Id:         mcdts-h-orl-cs
 Title:     "MCDTS Tabela Da Área H - Otorrinolaringologia"
 Description: "Tabela Da Área H - Otorrinolaringologia"
 
-* ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-h-orl-cs"
+* ^url =  "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-h-orl"
 * ^version = "5.9.2024"
 * ^author.name = "ACSS"
 

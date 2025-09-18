@@ -4,8 +4,8 @@ Id:         cparm-units-presentation-cs
 Title:     "Unidades de apresentação"
 Description: "Unidades de apresentação de medicamentos"
 
-* ^url =  "https://terminologias.hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs"
-* ^version = "1.0"
+* ^url =  "https://hl7-pt.github.io/terminologias/CodeSystem-cparm-units-presentation"
+* ^version = "1.0.0"
 * ^author.name = "Centro de Terminologias Clínicas"
 
 
