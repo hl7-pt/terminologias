@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home Page - HL7 PT FHIR Implementation Guide: Terminologias v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Terminologias</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="spec.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home Page</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Terminologias, publicado por HL7 Portugal. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 1.0.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/hl7-pt/terminologias/tree/master'>https://github.com/hl7-pt/terminologias/tree/master</a> e muda regularmente. Veja o <a href='http://hl7.pt/fhir/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+<!--PlainLangHeader--><div id="plain-lang-box">Plain Language Summary goes here</div><script src="https://hl7.org/fhir/plain-lang.js"></script><script type="application/javascript" src="https://hl7.org/fhir/history-cm.js"> </script><script>showPlainLanguage('hl7.fhir.pt.terminology', '1.0.0', '51f6acac-7775-4903-9007-73db70426f1b');</script><!--EndPlainLangHeader-->
+  <h2>Home Page</h2>
+  
+
+
+
+
+
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.terminology<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.terminology"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.terminology|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2024-11-27
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">TerminologyPT</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#âmbito" id="markdown-toc-âmbito">Âmbito</a></li>
+  <li><a href="#introdução" id="markdown-toc-introdução">Introdução</a></li>
+  <li><a href="#ip-e-licença" id="markdown-toc-ip-e-licença">IP e Licença</a></li>
+  <li><a href="#autores-e-contribuidores" id="markdown-toc-autores-e-contribuidores">Autores e contribuidores</a></li>
+</ul>
+
+</div>
+<blockquote class="stu-note">
+    <p>A especificação aqui documentada é, por enquanto, uma especificação de prova de conceito e não pode ser usada para fins de implementação. 
+    Nenhuma responsabilidade pode ser inferida do uso ou mau uso desta especificação, ou de suas consequências.</p>
+  </blockquote>
+
+<h3 id="âmbito">Âmbito</h3>
+
+<p>Esta publicação tal e tal</p>
+
+<h3 id="introdução">Introdução</h3>
+
+<p>tal e tal</p>
+
+<h3 id="ip-e-licença">IP e Licença</h3>
+
+<p>Este publication inclui o IP abrangido pelas seguintes declarações.</p>
+<ul>
+<li>ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: <a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a><div id="ipp_1" onclick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_1" style="display: none">
+<ul>
+<li><a href="http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>: <a href="CodeSystem-cparm-routes-cs.html">CPARMRoutesCS</a>, <a href="CodeSystem-cparm-units-presentation-cs.html">CPARMUnitsPresentationCS</a><span id="ips_1" onclick="document.getElementById('ips_1').innerHTML = document.getElementById('ips2_1').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 32 more</span></span><span id="ips2_1" style="display: none">, <a href="ConceptMap-ctc-unit-edqm.html">CTCUnitEDQM</a>, <a href="ConceptMap-esp-enfer-snomed.html">ESP-Enferm-SNOMED</a>, <a href="ConceptMap-esp-farm-snomed.html">ESP-FARM-SNOMED</a>, <a href="CodeSystem-especialidades-enfermagem-cs.html">EspecialidadesEnfermagemCS</a>, <a href="CodeSystem-especialidades-farmaceuticas-cs.html">EspecialidadesFarmaceuticasCS</a>, <a href="CodeSystem-especialidades-medicas-cs.html">EspecialidadesMedicasCS</a>, <a href="ConceptMap-mcdts-a-analises-sns-conv.html">MCDTS-a-analises-SNS-CONV</a>, <a href="ConceptMap-mcdts-b-anatomia-sns-conv.html">MCDTS-b-anatomia-SNS-CONV</a>, <a href="ConceptMap-mcdts-c-cardiologia-sns-conv.html">MCDTS-c-cardiologia-SNS-CONV</a>, <a href="ConceptMap-mcdts-d-m-nuclear-sns-conv.html">MCDTS-d-m-nuclear-SNS-CONV</a>, <a href="ConceptMap-mcdts-e-eeg-sns-conv.html">MCDTS-e-eeg-SNS-CONV</a>, <a href="ConceptMap-mcdts-f-gastrenterologia-sns-conv.html">MCDTS-f-gastrenterologia-SNS-CONV</a>, <a href="ConceptMap-mcdts-g-mfr-sns-conv.html">MCDTS-g-mfr-SNS-CONV</a>, <a href="ConceptMap-mcdts-h-orl-sns-conv.html">MCDTS-h-orl-SNS-CONV</a>, <a href="ConceptMap-mcdts-i-pneumologia-imunoalergologia-sns-conv.html">MCDTS-i-pneumologia-imunoalergologia-SNS-CONV</a>, <a href="ConceptMap-mcdts-j-urologia-sns-conv.html">MCDTS-j-urologia-SNS-CONV</a>, <a href="ConceptMap-mcdts-l-neurofisiologia-sns-conv.html">MCDTS-l-neurofisiologia-SNS-CONV</a>, <a href="ConceptMap-mcdts-m-radiologia-sns-conv.html">MCDTS-m-radiologia-SNS-CONV</a>, <a href="CodeSystem-mcdts-a-analises-cs.html">MCDTSA_AnalisesCS</a>, <a href="CodeSystem-mcdts-b-anatomia-cs.html">MCDTSB_AnatomiaCS</a>, <a href="CodeSystem-mcdts-c-cardiologia-cs.html">MCDTSC_CardiologiaCS</a>, <a href="CodeSystem-mcdts-d-m-nuclear-cs.html">MCDTSD_MNuclearCS</a>, <a href="CodeSystem-mcdts-e-eeg-cs.html">MCDTSE_EEGCS</a>, <a href="CodeSystem-mcdts-f-gastrenterologia-cs.html">MCDTSF_GastrenterologiaCS</a>, <a href="CodeSystem-mcdts-g-mfr-cs.html">MCDTSG_MFRCS</a>, <a href="CodeSystem-mcdts-h-orl-cs.html">MCDTSH_ORLCS</a>, <a href="CodeSystem-mcdts-i-pneumologia-imunoalergologia-cs.html">MCDTSI_Pneumologia_ImunoalergologiaCS</a>, <a href="CodeSystem-mcdts-j-urologia-cs.html">MCDTSJ_UrologiaCS</a>, <a href="CodeSystem-mcdts-l-neurofisiologia-cs.html">MCDTSL_NeurofisiologiaCS</a>, <a href="CodeSystem-mcdts-m-radiologia-cs.html">MCDTSM_RadiologiaCS</a>, <a href="CodeSystem-subsistemas-saude-cs.html">SubsistemasSaudeCS</a> and <a href="index.html">TerminologyPT</a></span></li>
+</ul>
+</div></li>
+</ul>
+<!--$$1$$-->
+
+<h3 id="autores-e-contribuidores">Autores e contribuidores</h3>
+
+<table>
+<thead>
+<tr class="header">
+<th>Papel</th>
+<th>Nome</th>
+<th>Organização</th>
+<th>Contacto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Autor</td>
+<td>zzz</td>
+<td>xxxx</td>
+<td>yyyy</td>
+</tr><tr class="even">
+<td>Autor</td>
+<td>xxx</td>
+<td></td>
+<td>dssd</td>
+</tr><tr class="odd">
+<td>Autor</td>
+<td>asdasd</td>
+<td>asdasd</td>
+<td>asdas</td>
+</tr><tr class="even">
+<td>Autor</td>
+<td>asdasd</td>
+<td></td>
+<td>dasda</td>
+</tr></tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Sep 18, 2025 10:36+0000">2025-09-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

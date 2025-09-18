@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="mcdts-f-gastrenterologia-sns-conv"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ConceptMap mcdts-f-gastrenterologia-sns-conv</b></p><a name="mcdts-f-gastrenterologia-sns-conv"> </a><a name="hcmcdts-f-gastrenterologia-sns-conv"> </a><p>Mapeamento de (não especificado) para (não especificado)</p><br/><p><b>Grupo 1 </b>Mapeamento de <code>https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-f-gastrenterologia-cs</code> to <code>https://www.acss.pt</code></p><table class="grid"><tr><td><b>Código fonte</b></td><td><b>Relacionamento</b></td><td><b>Código de destino</b></td></tr><tr><td>52175</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>030.2</td></tr><tr><td>52071</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>novo</td></tr><tr><td>50115</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>novo</td></tr><tr><td>51120</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>novo</td></tr><tr><td>52155</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>novo</td></tr><tr><td>52210</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>novo</td></tr><tr><td>52220</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>028.0</td></tr><tr><td>52230</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>novo</td></tr><tr><td>51280</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>009.4</td></tr><tr><td>52125</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>002.7</td></tr><tr><td>52130</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>008.6</td></tr><tr><td>52270</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>007.8</td></tr></table></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-f-gastrenterologia-sns-conv"/>
+  <version value="1.0.0"/>
+  <name value="MCDTS-f-gastrenterologia-SNS-CONV"/>
+  <title value="Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área F - Endoscopia Gastrenterológica "/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-12-11"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <group>
+    <source value="https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-f-gastrenterologia-cs"/>
+    <target value="https://www.acss.pt"/>
+    <element>
+      <code value="52175"/>
+      <target>
+        <code value="030.2"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="52071"/>
+      <target>
+        <code value="novo"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="50115"/>
+      <target>
+        <code value="novo"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="51120"/>
+      <target>
+        <code value="novo"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="52155"/>
+      <target>
+        <code value="novo"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="52210"/>
+      <target>
+        <code value="novo"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="52220"/>
+      <target>
+        <code value="028.0"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="52230"/>
+      <target>
+        <code value="novo"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="51280"/>
+      <target>
+        <code value="009.4"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="52125"/>
+      <target>
+        <code value="002.7"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="52130"/>
+      <target>
+        <code value="008.6"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="52270"/>
+      <target>
+        <code value="007.8"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>
