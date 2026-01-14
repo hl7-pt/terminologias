@@ -7,6 +7,7 @@ FOLDER = "fsh-generated/resources"
 
 
 SERVER = "https://terminologias.hl7.pt/fhir"
+# SERVER = "http://localhost:8000/fhir"
 
 
 h = {"Cache-Control": "no-cache", "Pragma": "no-cache"}
@@ -18,8 +19,8 @@ for file in listdir(FOLDER):
         data = json.load(f)
         id_ = data["id"]
 
-        x = requests.put(SERVER + "/" + res + "/" + id_, json=data, headers=h)
+        x = requests.post(SERVER + "/" + res, json=data, headers=h)
         print(x.status_code)
-        if x.status_code == 400:
+        if x.status_code in [400, 404, 422]:
             print(res)
             print(x.text)
