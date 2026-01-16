@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="especialidades-enfermagem-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem especialidades-enfermagem-cs</b></p><a name="especialidades-enfermagem-cs"> </a><a name="hcespecialidades-enfermagem-cs"> </a><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-especialidades-enfermagem</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">1<a name="especialidades-enfermagem-cs-1"> </a></td><td>Comunitária</td><td>Comunitária</td></tr><tr><td style="white-space:nowrap">2<a name="especialidades-enfermagem-cs-2"> </a></td><td>Enfermagem Médico-Cirúrgica</td><td>Enfermagem Médico-Cirúrgica</td></tr><tr><td style="white-space:nowrap">3<a name="especialidades-enfermagem-cs-3"> </a></td><td>Enfermagem de Reabilitação</td><td>Enfermagem de Reabilitação</td></tr><tr><td style="white-space:nowrap">4<a name="especialidades-enfermagem-cs-4"> </a></td><td>Enfermagem de Saúde Infantil e Pediátrica</td><td>Enfermagem de Saúde Infantil e Pediátrica</td></tr><tr><td style="white-space:nowrap">5<a name="especialidades-enfermagem-cs-5"> </a></td><td>Enfermagem de Saúde Materna e Obstétrica</td><td>Enfermagem de Saúde Materna e Obstétrica</td></tr><tr><td style="white-space:nowrap">6<a name="especialidades-enfermagem-cs-6"> </a></td><td>Enfermagem de Saúde Mental e Psiquiátrica</td><td>Enfermagem de Saúde Mental e Psiquiátrica</td></tr><tr><td style="white-space:nowrap">7<a name="especialidades-enfermagem-cs-7"> </a></td><td>Enfermagem de Saúde Comunitária e de Saúde Pública</td><td>Enfermagem de Saúde Comunitária e de Saúde Pública</td></tr><tr><td style="white-space:nowrap">8<a name="especialidades-enfermagem-cs-8"> </a></td><td>Enfermagem de Saúde Familiar</td><td>Enfermagem de Saúde Familiar</td></tr><tr><td style="white-space:nowrap">9<a name="especialidades-enfermagem-cs-9"> </a></td><td>Enfermagem à Pessoa em Situação Crítica</td><td>Enfermagem à Pessoa em Situação Crítica</td></tr><tr><td style="white-space:nowrap">10<a name="especialidades-enfermagem-cs-10"> </a></td><td>Enfermagem à Pessoa em Situação Crónica</td><td>Enfermagem à Pessoa em Situação Crónica</td></tr><tr><td style="white-space:nowrap">11<a name="especialidades-enfermagem-cs-11"> </a></td><td>Enfermagem à Pessoa em Situação Paliativa</td><td>Enfermagem à Pessoa em Situação Paliativa</td></tr><tr><td style="white-space:nowrap">12<a name="especialidades-enfermagem-cs-12"> </a></td><td>Enfermagem à Pessoa em Situação Perioperatória</td><td>Enfermagem à Pessoa em Situação Perioperatória</td></tr></table></div>
+  </text>
+  <url value="https://hl7-pt.github.io/terminologias/CodeSystem-especialidades-enfermagem"/>
+  <version value="1.0.0"/>
+  <name value="EspecialidadesEnfermagemCS"/>
+  <title value="Especialidades Enfermagem"/>
+  <status value="active"/>
+  <date value="2026-01-16T11:04:17+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Especialidades enfermagem existentes em Portugal"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Ordem dos Enfermeiros"/>
+  </author>
+  <content value="complete"/>
+  <count value="12"/>
+  <concept>
+    <code value="1"/>
+    <display value="Comunitária"/>
+    <definition value="Comunitária"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Enfermagem Médico-Cirúrgica"/>
+    <definition value="Enfermagem Médico-Cirúrgica"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Enfermagem de Reabilitação"/>
+    <definition value="Enfermagem de Reabilitação"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Enfermagem de Saúde Infantil e Pediátrica"/>
+    <definition value="Enfermagem de Saúde Infantil e Pediátrica"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Enfermagem de Saúde Materna e Obstétrica"/>
+    <definition value="Enfermagem de Saúde Materna e Obstétrica"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="Enfermagem de Saúde Mental e Psiquiátrica"/>
+    <definition value="Enfermagem de Saúde Mental e Psiquiátrica"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="Enfermagem de Saúde Comunitária e de Saúde Pública"/>
+    <definition value="Enfermagem de Saúde Comunitária e de Saúde Pública"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="Enfermagem de Saúde Familiar"/>
+    <definition value="Enfermagem de Saúde Familiar"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="Enfermagem à Pessoa em Situação Crítica"/>
+    <definition value="Enfermagem à Pessoa em Situação Crítica"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="Enfermagem à Pessoa em Situação Crónica"/>
+    <definition value="Enfermagem à Pessoa em Situação Crónica"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="Enfermagem à Pessoa em Situação Paliativa"/>
+    <definition value="Enfermagem à Pessoa em Situação Paliativa"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="Enfermagem à Pessoa em Situação Perioperatória"/>
+    <definition value="Enfermagem à Pessoa em Situação Perioperatória"/>
+  </concept>
+</CodeSystem>

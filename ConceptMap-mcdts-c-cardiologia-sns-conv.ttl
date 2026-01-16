@@ -1,0 +1,97 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ConceptMap/mcdts-c-cardiologia-sns-conv> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mcdts-c-cardiologia-sns-conv"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ConceptMap mcdts-c-cardiologia-sns-conv</b></p><a name=\"mcdts-c-cardiologia-sns-conv\"> </a><a name=\"hcmcdts-c-cardiologia-sns-conv\"> </a><p>Mapeamento de (não especificado) para (não especificado)</p><br/><p><b>Grupo 1 </b>Mapeamento de <code>https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-c-cardiologia-cs</code> to <code>https://www.acss.pt</code></p><table class=\"grid\"><tr><td><b>Código fonte</b></td><td><b>Relacionamento</b></td><td><b>Código de destino</b></td></tr><tr><td>40301</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>002.7</td></tr><tr><td>40315</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>003.5</td></tr><tr><td>40405</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>006.0</td></tr><tr><td>40560</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1530.4</td></tr><tr><td>41020</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>025.6</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-c-cardiologia-sns-conv"^^xsd:anyURI ;
+     fhir:l <https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-c-cardiologia-sns-conv>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "MCDTS-c-cardiologia-SNS-CONV"] ; # 
+  fhir:title [ fhir:v "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área C - Cardiologia "] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2024-12-11"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:group ( [
+     fhir:source [
+       fhir:v "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-c-cardiologia-cs"^^xsd:anyURI ;
+       fhir:l <https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-c-cardiologia-cs>
+     ] ;
+     fhir:target [
+       fhir:v "https://www.acss.pt"^^xsd:anyURI ;
+       fhir:l <https://www.acss.pt>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "40301" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "002.7" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "40315" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "003.5" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "40405" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "006.0" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "40560" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "1530.4" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "41020" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "025.6" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

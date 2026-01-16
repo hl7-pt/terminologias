@@ -1,0 +1,632 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/CodeSystem/mcdts-h-orl-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mcdts-h-orl-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem mcdts-h-orl-cs</b></p><a name=\"mcdts-h-orl-cs\"> </a><a name=\"hcmcdts-h-orl-cs\"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class=\"grid\"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>preco</td><td>preco</td><td>decimal</td><td>Preço do MCDT</td></tr><tr><td>taxa</td><td>taxa</td><td>decimal</td><td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-h-orl</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr><tr><td style=\"white-space:nowrap\">78005<a name=\"mcdts-h-orl-cs-78005\"> </a></td><td>Audiograma tonal simples</td><td>Audiograma tonal simples</td><td>4.35</td><td>2.5</td></tr><tr><td style=\"white-space:nowrap\">78010<a name=\"mcdts-h-orl-cs-78010\"> </a></td><td>Audiograma vocal</td><td>Audiograma vocal</td><td>4.35</td><td>2.5</td></tr><tr><td style=\"white-space:nowrap\">78028<a name=\"mcdts-h-orl-cs-78028\"> </a></td><td>Acufenometria</td><td>Acufenometria</td><td>4.35</td><td>1.8</td></tr><tr><td style=\"white-space:nowrap\">78024<a name=\"mcdts-h-orl-cs-78024\"> </a></td><td>Audiometria tonal até 5 anos de idade</td><td>Audiometria tonal até 5 anos de idade</td><td>6</td><td>5</td></tr><tr><td style=\"white-space:nowrap\">78026<a name=\"mcdts-h-orl-cs-78026\"> </a></td><td>Audiometria vocal até 10 anos de idade</td><td>Audiometria vocal até 10 anos de idade</td><td>7</td><td>3</td></tr><tr><td style=\"white-space:nowrap\">78030<a name=\"mcdts-h-orl-cs-78030\"> </a></td><td>Timpanograma</td><td>Timpanograma</td><td>4.35</td><td>1.6</td></tr><tr><td style=\"white-space:nowrap\">78035<a name=\"mcdts-h-orl-cs-78035\"> </a></td><td>Pesquisa de reflexos acústicos ipsi-laterais ou contra-laterais</td><td>Pesquisa de reflexos acústicos ipsi-laterais ou contra-laterais</td><td>3.42</td><td>1.6</td></tr><tr><td style=\"white-space:nowrap\">78036<a name=\"mcdts-h-orl-cs-78036\"> </a></td><td>Pesquisa do \"Decay\" do reflexo bilateral</td><td>Pesquisa do \"Decay\" do reflexo bilateral</td><td>4.35</td><td>1.6</td></tr><tr><td style=\"white-space:nowrap\">78037<a name=\"mcdts-h-orl-cs-78037\"> </a></td><td>Pesquisa de reflexos não acústicos</td><td>Pesquisa de reflexos não acústicos</td><td>4.35</td><td>1.6</td></tr><tr><td style=\"white-space:nowrap\">78038<a name=\"mcdts-h-orl-cs-78038\"> </a></td><td>Estudo timpanométrico do funcionamento da trompa auditiva</td><td>Estudo timpanométrico do funcionamento da trompa auditiva</td><td>4.35</td><td>1.6</td></tr><tr><td style=\"white-space:nowrap\">78039<a name=\"mcdts-h-orl-cs-78039\"> </a></td><td>Estudo impedanciométrico completo (incluí os códigos 012.4, 013.2, 014.0 e outras provas suplementares)</td><td>Estudo impedanciométrico completo (incluí os códigos 012.4, 013.2, 014.0 e outras provas suplementares)</td><td>11.97</td><td>3</td></tr><tr><td style=\"white-space:nowrap\">78045<a name=\"mcdts-h-orl-cs-78045\"> </a></td><td>Eletrococleografia (Ecog)</td><td>Eletrococleografia (Ecog)</td><td>64.9</td><td>5</td></tr><tr><td style=\"white-space:nowrap\">78050<a name=\"mcdts-h-orl-cs-78050\"> </a></td><td>Respostas de tronco cerebral (PEA)</td><td>Respostas de tronco cerebral (PEA)</td><td>56.45</td><td>5</td></tr><tr><td style=\"white-space:nowrap\">78052<a name=\"mcdts-h-orl-cs-78052\"> </a></td><td>Respostas semi-precoces</td><td>Respostas semi-precoces</td><td>56.45</td><td>5</td></tr><tr><td style=\"white-space:nowrap\">78029<a name=\"mcdts-h-orl-cs-78029\"> </a></td><td>Otimização de ganho auditivo (performance eletroacústica das próteses auditivas \"in situ\")</td><td>Otimização de ganho auditivo (performance eletroacústica das próteses auditivas \"in situ\")</td><td>6.56</td><td>4</td></tr><tr><td style=\"white-space:nowrap\">78090<a name=\"mcdts-h-orl-cs-78090\"> </a></td><td>Testes calóricos vestibulares</td><td>Testes calóricos vestibulares</td><td>6.56</td><td>6</td></tr><tr><td style=\"white-space:nowrap\">78108<a name=\"mcdts-h-orl-cs-78108\"> </a></td><td>Exame vestibular completo por ENG ou VNG computorizada (inclui nistagmo espontâneo e posicional, provas calóricas, optocinéticas, rotatórias e de perseguição)</td><td>Exame vestibular completo por ENG ou VNG computorizada (inclui nistagmo espontâneo e posicional, provas calóricas, optocinéticas, rotatórias e de perseguição)</td><td>17.11</td><td>12</td></tr><tr><td style=\"white-space:nowrap\">78125<a name=\"mcdts-h-orl-cs-78125\"> </a></td><td>Endoscopia nasal</td><td>Endoscopia nasal</td><td>8.55</td><td>3.5</td></tr><tr><td style=\"white-space:nowrap\">78130<a name=\"mcdts-h-orl-cs-78130\"> </a></td><td>Sinusoscopia</td><td>Sinusoscopia</td><td>9.3</td><td>6</td></tr><tr><td style=\"white-space:nowrap\">78175<a name=\"mcdts-h-orl-cs-78175\"> </a></td><td>Nasofaringolaringoscopia</td><td>Nasofaringolaringoscopia</td><td>12.46</td><td>3.5</td></tr><tr><td style=\"white-space:nowrap\">78185<a name=\"mcdts-h-orl-cs-78185\"> </a></td><td>Estroboscopia (inclui laringoscopia)</td><td>Estroboscopia (inclui laringoscopia)</td><td>5</td><td>5</td></tr><tr><td style=\"white-space:nowrap\">78200<a name=\"mcdts-h-orl-cs-78200\"> </a></td><td>Análise computorizada da voz</td><td>Análise computorizada da voz</td><td>5.39</td><td>3.5</td></tr><tr><td style=\"white-space:nowrap\">78230<a name=\"mcdts-h-orl-cs-78230\"> </a></td><td>Rinometria computorizada</td><td>Rinometria computorizada</td><td>8.09</td><td>2.5</td></tr><tr><td style=\"white-space:nowrap\">78231<a name=\"mcdts-h-orl-cs-78231\"> </a></td><td>Rinometria computorizada com provas de provocação nasal</td><td>Rinometria computorizada com provas de provocação nasal</td><td>8.09</td><td>3.5</td></tr><tr><td style=\"white-space:nowrap\">78235<a name=\"mcdts-h-orl-cs-78235\"> </a></td><td>Eletroneuronografia computorizada (três avaliações sucessivas)</td><td>Eletroneuronografia computorizada (três avaliações sucessivas)</td><td>29.37</td><td>7</td></tr><tr><td style=\"white-space:nowrap\">78240<a name=\"mcdts-h-orl-cs-78240\"> </a></td><td>Eletrogustometria</td><td>Eletrogustometria</td><td>6.56</td><td>3</td></tr><tr><td style=\"white-space:nowrap\">78312<a name=\"mcdts-h-orl-cs-78312\"> </a></td><td>Biópsia ganglionar</td><td>Biópsia ganglionar</td><td>3</td><td>3</td></tr><tr><td style=\"white-space:nowrap\">78313<a name=\"mcdts-h-orl-cs-78313\"> </a></td><td>Biópsia com pinça ou agulha, gengival</td><td>Biópsia com pinça ou agulha, gengival</td><td>3</td><td>3</td></tr><tr><td style=\"white-space:nowrap\">78314<a name=\"mcdts-h-orl-cs-78314\"> </a></td><td>Biópsia de tecidos moles</td><td>Biópsia de tecidos moles</td><td>4.5</td><td>4.5</td></tr><tr><td style=\"white-space:nowrap\">78316<a name=\"mcdts-h-orl-cs-78316\"> </a></td><td>Biópsia com pinça ou agulha, orofaringe</td><td>Biópsia com pinça ou agulha, orofaringe</td><td>4.15</td><td>3.5</td></tr><tr><td style=\"white-space:nowrap\">78317<a name=\"mcdts-h-orl-cs-78317\"> </a></td><td>Biópsia com pinça ou agulha, nasofaringe</td><td>Biópsia com pinça ou agulha, nasofaringe</td><td>5</td><td>5</td></tr><tr><td style=\"white-space:nowrap\">78318<a name=\"mcdts-h-orl-cs-78318\"> </a></td><td>Biópsia com pinça ou agulha, laringe</td><td>Biópsia com pinça ou agulha, laringe</td><td>5.18</td><td>3.5</td></tr><tr><td style=\"white-space:nowrap\">78319<a name=\"mcdts-h-orl-cs-78319\"> </a></td><td>Biópsia com pinça ou agulha, nariz</td><td>Biópsia com pinça ou agulha, nariz</td><td>3</td><td>3</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-h-orl"^^xsd:anyURI ;
+     fhir:l <https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-h-orl>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "MCDTSH_ORLCS"] ; # 
+  fhir:title [ fhir:v "MCDTS Tabela Da Área H - Otorrinolaringologia"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-16T11:04:17+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tabela Da Área H - Otorrinolaringologia"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "ACSS" ]
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "33"^^xsd:nonNegativeInteger] ; # 
+  fhir:property ( [
+     fhir:code [ fhir:v "preco" ] ;
+     fhir:description [ fhir:v "Preço do MCDT" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] [
+     fhir:code [ fhir:v "taxa" ] ;
+     fhir:description [ fhir:v "Taxa Moderadora" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "78005" ] ;
+     fhir:display [ fhir:v "Audiograma tonal simples" ] ;
+     fhir:definition [ fhir:v "Audiograma tonal simples" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.35
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 2.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78010" ] ;
+     fhir:display [ fhir:v "Audiograma vocal" ] ;
+     fhir:definition [ fhir:v "Audiograma vocal" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.35
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 2.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78028" ] ;
+     fhir:display [ fhir:v "Acufenometria" ] ;
+     fhir:definition [ fhir:v "Acufenometria" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.35
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.8
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78024" ] ;
+     fhir:display [ fhir:v "Audiometria tonal até 5 anos de idade" ] ;
+     fhir:definition [ fhir:v "Audiometria tonal até 5 anos de idade" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "6"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78026" ] ;
+     fhir:display [ fhir:v "Audiometria vocal até 10 anos de idade" ] ;
+     fhir:definition [ fhir:v "Audiometria vocal até 10 anos de idade" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "7"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78030" ] ;
+     fhir:display [ fhir:v "Timpanograma" ] ;
+     fhir:definition [ fhir:v "Timpanograma" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.35
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.6
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78035" ] ;
+     fhir:display [ fhir:v "Pesquisa de reflexos acústicos ipsi-laterais ou contra-laterais" ] ;
+     fhir:definition [ fhir:v "Pesquisa de reflexos acústicos ipsi-laterais ou contra-laterais" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.42
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.6
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78036" ] ;
+     fhir:display [ fhir:v "Pesquisa do \"Decay\" do reflexo bilateral" ] ;
+     fhir:definition [ fhir:v "Pesquisa do \"Decay\" do reflexo bilateral" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.35
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.6
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78037" ] ;
+     fhir:display [ fhir:v "Pesquisa de reflexos não acústicos" ] ;
+     fhir:definition [ fhir:v "Pesquisa de reflexos não acústicos" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.35
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.6
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78038" ] ;
+     fhir:display [ fhir:v "Estudo timpanométrico do funcionamento da trompa auditiva" ] ;
+     fhir:definition [ fhir:v "Estudo timpanométrico do funcionamento da trompa auditiva" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.35
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.6
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78039" ] ;
+     fhir:display [ fhir:v "Estudo impedanciométrico completo (incluí os códigos 012.4, 013.2, 014.0 e outras provas suplementares)" ] ;
+     fhir:definition [ fhir:v "Estudo impedanciométrico completo (incluí os códigos 012.4, 013.2, 014.0 e outras provas suplementares)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 11.97
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78045" ] ;
+     fhir:display [ fhir:v "Eletrococleografia (Ecog)" ] ;
+     fhir:definition [ fhir:v "Eletrococleografia (Ecog)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 64.9
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78050" ] ;
+     fhir:display [ fhir:v "Respostas de tronco cerebral (PEA)" ] ;
+     fhir:definition [ fhir:v "Respostas de tronco cerebral (PEA)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 56.45
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78052" ] ;
+     fhir:display [ fhir:v "Respostas semi-precoces" ] ;
+     fhir:definition [ fhir:v "Respostas semi-precoces" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 56.45
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78029" ] ;
+     fhir:display [ fhir:v "Otimização de ganho auditivo (performance eletroacústica das próteses auditivas \"in situ\")" ] ;
+     fhir:definition [ fhir:v "Otimização de ganho auditivo (performance eletroacústica das próteses auditivas \"in situ\")" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 6.56
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78090" ] ;
+     fhir:display [ fhir:v "Testes calóricos vestibulares" ] ;
+     fhir:definition [ fhir:v "Testes calóricos vestibulares" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 6.56
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "6"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78108" ] ;
+     fhir:display [ fhir:v "Exame vestibular completo por ENG ou VNG computorizada (inclui nistagmo espontâneo e posicional, provas calóricas, optocinéticas, rotatórias e de perseguição)" ] ;
+     fhir:definition [ fhir:v "Exame vestibular completo por ENG ou VNG computorizada (inclui nistagmo espontâneo e posicional, provas calóricas, optocinéticas, rotatórias e de perseguição)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 17.11
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "12"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78125" ] ;
+     fhir:display [ fhir:v "Endoscopia nasal" ] ;
+     fhir:definition [ fhir:v "Endoscopia nasal" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 8.55
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78130" ] ;
+     fhir:display [ fhir:v "Sinusoscopia" ] ;
+     fhir:definition [ fhir:v "Sinusoscopia" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 9.3
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "6"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78175" ] ;
+     fhir:display [ fhir:v "Nasofaringolaringoscopia" ] ;
+     fhir:definition [ fhir:v "Nasofaringolaringoscopia" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 12.46
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78185" ] ;
+     fhir:display [ fhir:v "Estroboscopia (inclui laringoscopia)" ] ;
+     fhir:definition [ fhir:v "Estroboscopia (inclui laringoscopia)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78200" ] ;
+     fhir:display [ fhir:v "Análise computorizada da voz" ] ;
+     fhir:definition [ fhir:v "Análise computorizada da voz" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 5.39
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78230" ] ;
+     fhir:display [ fhir:v "Rinometria computorizada" ] ;
+     fhir:definition [ fhir:v "Rinometria computorizada" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 8.09
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 2.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78231" ] ;
+     fhir:display [ fhir:v "Rinometria computorizada com provas de provocação nasal" ] ;
+     fhir:definition [ fhir:v "Rinometria computorizada com provas de provocação nasal" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 8.09
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78235" ] ;
+     fhir:display [ fhir:v "Eletroneuronografia computorizada (três avaliações sucessivas)" ] ;
+     fhir:definition [ fhir:v "Eletroneuronografia computorizada (três avaliações sucessivas)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 29.37
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "7"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78240" ] ;
+     fhir:display [ fhir:v "Eletrogustometria" ] ;
+     fhir:definition [ fhir:v "Eletrogustometria" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 6.56
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78312" ] ;
+     fhir:display [ fhir:v "Biópsia ganglionar" ] ;
+     fhir:definition [ fhir:v "Biópsia ganglionar" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78313" ] ;
+     fhir:display [ fhir:v "Biópsia com pinça ou agulha, gengival" ] ;
+     fhir:definition [ fhir:v "Biópsia com pinça ou agulha, gengival" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78314" ] ;
+     fhir:display [ fhir:v "Biópsia de tecidos moles" ] ;
+     fhir:definition [ fhir:v "Biópsia de tecidos moles" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78316" ] ;
+     fhir:display [ fhir:v "Biópsia com pinça ou agulha, orofaringe" ] ;
+     fhir:definition [ fhir:v "Biópsia com pinça ou agulha, orofaringe" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.15
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78317" ] ;
+     fhir:display [ fhir:v "Biópsia com pinça ou agulha, nasofaringe" ] ;
+     fhir:definition [ fhir:v "Biópsia com pinça ou agulha, nasofaringe" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78318" ] ;
+     fhir:display [ fhir:v "Biópsia com pinça ou agulha, laringe" ] ;
+     fhir:definition [ fhir:v "Biópsia com pinça ou agulha, laringe" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 5.18
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "78319" ] ;
+     fhir:display [ fhir:v "Biópsia com pinça ou agulha, nariz" ] ;
+     fhir:definition [ fhir:v "Biópsia com pinça ou agulha, nariz" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

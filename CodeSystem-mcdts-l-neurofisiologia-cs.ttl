@@ -1,0 +1,241 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/CodeSystem/mcdts-l-neurofisiologia-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mcdts-l-neurofisiologia-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem mcdts-l-neurofisiologia-cs</b></p><a name=\"mcdts-l-neurofisiologia-cs\"> </a><a name=\"hcmcdts-l-neurofisiologia-cs\"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class=\"grid\"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>preco</td><td>preco</td><td>decimal</td><td>Preço do MCDT</td></tr><tr><td>taxa</td><td>taxa</td><td>decimal</td><td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-l-neurofisiologia</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr><tr><td style=\"white-space:nowrap\">63285<a name=\"mcdts-l-neurofisiologia-cs-63285\"> </a></td><td>Potenciais evocados somatossensitivos, dos membros superiores e dos membros inferiores, no laboratório</td><td>Potenciais evocados somatossensitivos, dos membros superiores e dos membros inferiores, no laboratório</td><td>62.1</td><td>15</td></tr><tr><td style=\"white-space:nowrap\">63305<a name=\"mcdts-l-neurofisiologia-cs-63305\"> </a></td><td>Potenciais evocados auditivos do tronco cerebral adultos</td><td>Potenciais evocados auditivos do tronco cerebral adultos</td><td>56.45</td><td>13</td></tr><tr><td style=\"white-space:nowrap\">63307<a name=\"mcdts-l-neurofisiologia-cs-63307\"> </a></td><td>Potenciais evocados auditivos em crianças</td><td>Potenciais evocados auditivos em crianças</td><td>62.1</td><td>14</td></tr><tr><td style=\"white-space:nowrap\">63310<a name=\"mcdts-l-neurofisiologia-cs-63310\"> </a></td><td>Potenciais evocados visuais (\"flash\" ou padrão)</td><td>Potenciais evocados visuais (\"flash\" ou padrão)</td><td>56.45</td><td>14</td></tr><tr><td style=\"white-space:nowrap\">63315<a name=\"mcdts-l-neurofisiologia-cs-63315\"> </a></td><td>Potenciais evocados visuais, em crianças</td><td>Potenciais evocados visuais, em crianças</td><td>62.1</td><td>13</td></tr><tr><td style=\"white-space:nowrap\">63330<a name=\"mcdts-l-neurofisiologia-cs-63330\"> </a></td><td>Potenciais de longa latência (P 300 ou outros)</td><td>Potenciais de longa latência (P 300 ou outros)</td><td>56.45</td><td>15</td></tr><tr><td style=\"white-space:nowrap\">63340<a name=\"mcdts-l-neurofisiologia-cs-63340\"> </a></td><td>Potenciais evocados, com cartografia</td><td>Potenciais evocados, com cartografia</td><td>79.2</td><td>17.5</td></tr><tr><td style=\"white-space:nowrap\">63401<a name=\"mcdts-l-neurofisiologia-cs-63401\"> </a></td><td>Estudo electromiográfico dos membros superiores ou dos membros inferiores ou de um território específico (inclui estimulação repetitiva), no laboratório</td><td>Estudo electromiográfico dos membros superiores ou dos membros inferiores ou de um território específico (inclui estimulação repetitiva), no laboratório</td><td>21.27</td><td>15</td></tr><tr><td style=\"white-space:nowrap\">63403<a name=\"mcdts-l-neurofisiologia-cs-63403\"> </a></td><td>Estudo electromiográfico dos membros superiores e dos membros inferiores, no laboratório</td><td>Estudo electromiográfico dos membros superiores e dos membros inferiores, no laboratório</td><td>21.27</td><td>17.5</td></tr><tr><td style=\"white-space:nowrap\">63472<a name=\"mcdts-l-neurofisiologia-cs-63472\"> </a></td><td>Monitorização neurofisiológica intra-operatória, com electroencefalografia</td><td>Monitorização neurofisiológica intra-operatória, com electroencefalografia</td><td>8.09</td><td>0</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-l-neurofisiologia"^^xsd:anyURI ;
+     fhir:l <https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-l-neurofisiologia>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "MCDTSL_NeurofisiologiaCS"] ; # 
+  fhir:title [ fhir:v "MCDTS Tabela Da Área L - Neurofisiologia"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-16T11:04:17+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tabela Da Área L - Neurofisiologia"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "ACSS" ]
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:property ( [
+     fhir:code [ fhir:v "preco" ] ;
+     fhir:description [ fhir:v "Preço do MCDT" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] [
+     fhir:code [ fhir:v "taxa" ] ;
+     fhir:description [ fhir:v "Taxa Moderadora" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "63285" ] ;
+     fhir:display [ fhir:v "Potenciais evocados somatossensitivos, dos membros superiores e dos membros inferiores, no laboratório" ] ;
+     fhir:definition [ fhir:v "Potenciais evocados somatossensitivos, dos membros superiores e dos membros inferiores, no laboratório" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 62.1
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "15"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "63305" ] ;
+     fhir:display [ fhir:v "Potenciais evocados auditivos do tronco cerebral adultos" ] ;
+     fhir:definition [ fhir:v "Potenciais evocados auditivos do tronco cerebral adultos" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 56.45
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "13"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "63307" ] ;
+     fhir:display [ fhir:v "Potenciais evocados auditivos em crianças" ] ;
+     fhir:definition [ fhir:v "Potenciais evocados auditivos em crianças" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 62.1
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "14"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "63310" ] ;
+     fhir:display [ fhir:v "Potenciais evocados visuais (\"flash\" ou padrão)" ] ;
+     fhir:definition [ fhir:v "Potenciais evocados visuais (\"flash\" ou padrão)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 56.45
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "14"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "63315" ] ;
+     fhir:display [ fhir:v "Potenciais evocados visuais, em crianças" ] ;
+     fhir:definition [ fhir:v "Potenciais evocados visuais, em crianças" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 62.1
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "13"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "63330" ] ;
+     fhir:display [ fhir:v "Potenciais de longa latência (P 300 ou outros)" ] ;
+     fhir:definition [ fhir:v "Potenciais de longa latência (P 300 ou outros)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 56.45
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "15"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "63340" ] ;
+     fhir:display [ fhir:v "Potenciais evocados, com cartografia" ] ;
+     fhir:definition [ fhir:v "Potenciais evocados, com cartografia" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 79.2
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 17.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "63401" ] ;
+     fhir:display [ fhir:v "Estudo electromiográfico dos membros superiores ou dos membros inferiores ou de um território específico (inclui estimulação repetitiva), no laboratório" ] ;
+     fhir:definition [ fhir:v "Estudo electromiográfico dos membros superiores ou dos membros inferiores ou de um território específico (inclui estimulação repetitiva), no laboratório" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 21.27
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "15"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "63403" ] ;
+     fhir:display [ fhir:v "Estudo electromiográfico dos membros superiores e dos membros inferiores, no laboratório" ] ;
+     fhir:definition [ fhir:v "Estudo electromiográfico dos membros superiores e dos membros inferiores, no laboratório" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 21.27
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 17.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "63472" ] ;
+     fhir:display [ fhir:v "Monitorização neurofisiológica intra-operatória, com electroencefalografia" ] ;
+     fhir:definition [ fhir:v "Monitorização neurofisiológica intra-operatória, com electroencefalografia" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 8.09
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "0"^^xsd:decimal
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

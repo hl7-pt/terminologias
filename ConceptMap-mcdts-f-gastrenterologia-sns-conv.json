@@ -1,0 +1,130 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "mcdts-f-gastrenterologia-sns-conv",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ConceptMap mcdts-f-gastrenterologia-sns-conv</b></p><a name=\"mcdts-f-gastrenterologia-sns-conv\"> </a><a name=\"hcmcdts-f-gastrenterologia-sns-conv\"> </a><p>Mapeamento de (não especificado) para (não especificado)</p><br/><p><b>Grupo 1 </b>Mapeamento de <code>https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-f-gastrenterologia-cs</code> to <code>https://www.acss.pt</code></p><table class=\"grid\"><tr><td><b>Código fonte</b></td><td><b>Relacionamento</b></td><td><b>Código de destino</b></td></tr><tr><td>52175</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>030.2</td></tr><tr><td>52071</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>novo</td></tr><tr><td>50115</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>novo</td></tr><tr><td>51120</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>novo</td></tr><tr><td>52155</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>novo</td></tr><tr><td>52210</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>novo</td></tr><tr><td>52220</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>028.0</td></tr><tr><td>52230</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>novo</td></tr><tr><td>51280</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>009.4</td></tr><tr><td>52125</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>002.7</td></tr><tr><td>52130</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>008.6</td></tr><tr><td>52270</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>007.8</td></tr></table></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-f-gastrenterologia-sns-conv",
+  "version" : "1.0.0",
+  "name" : "MCDTS-f-gastrenterologia-SNS-CONV",
+  "title" : "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área F - Endoscopia Gastrenterológica ",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-11",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "group" : [{
+    "source" : "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-f-gastrenterologia-cs",
+    "target" : "https://www.acss.pt",
+    "element" : [{
+      "code" : "52175",
+      "target" : [{
+        "code" : "030.2",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "52071",
+      "target" : [{
+        "code" : "novo",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "50115",
+      "target" : [{
+        "code" : "novo",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "51120",
+      "target" : [{
+        "code" : "novo",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "52155",
+      "target" : [{
+        "code" : "novo",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "52210",
+      "target" : [{
+        "code" : "novo",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "52220",
+      "target" : [{
+        "code" : "028.0",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "52230",
+      "target" : [{
+        "code" : "novo",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "51280",
+      "target" : [{
+        "code" : "009.4",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "52125",
+      "target" : [{
+        "code" : "002.7",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "52130",
+      "target" : [{
+        "code" : "008.6",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "52270",
+      "target" : [{
+        "code" : "007.8",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,488 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MCDTS Tabela Da Área L - Neurofisiologia - JSON Representation - HL7 PT FHIR Implementation Guide: Terminologias v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.14"}
+    h3,h4,h5,h6{--heading-prefix:"6.14"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Terminologias</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="spec.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MCDTS Tabela Da Área L - Neurofisiologia</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Terminologias, publicado por HL7 Portugal. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 1.0.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/hl7-pt/terminologias/tree/master'>https://github.com/hl7-pt/terminologias/tree/master</a> e muda regularmente. Veja o <a href='http://hl7.pt/fhir/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-mcdts-l-neurofisiologia-cs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-mcdts-l-neurofisiologia-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mcdts-l-neurofisiologia-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: MCDTS Tabela Da Área L - Neurofisiologia - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2026-01-16
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-mcdts-l-neurofisiologia-cs.json" no-download="true">Raw json</a> | <a href="CodeSystem-mcdts-l-neurofisiologia-cs.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R5/resource.html#XCodeSystem.id">id</a>" : "mcdts-l-neurofisiologia-cs",
+  "<a href="http://hl7.org/fhir/R5/domainresource.html#XCodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narrativa gerada: CodeSystem mcdts-l-neurofisiologia-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;mcdts-l-neurofisiologia-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcmcdts-l-neurofisiologia-cs\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Propriedades&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Este sistema de códigos define as seguintes propriedades para os seus conceitos&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Nome&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Descrição&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;preco&lt;/td&gt;&lt;td&gt;preco&lt;/td&gt;&lt;td&gt;decimal&lt;/td&gt;&lt;td&gt;Preço do MCDT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;taxa&lt;/td&gt;&lt;td&gt;taxa&lt;/td&gt;&lt;td&gt;decimal&lt;/td&gt;&lt;td&gt;Taxa Moderadora&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Conceitos&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Este  sistema de código &lt;code&gt;https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-l-neurofisiologia&lt;/code&gt; define o seguinte códigos:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definição&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;preco&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;taxa&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;63285&lt;a name=\&quot;mcdts-l-neurofisiologia-cs-63285\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Potenciais evocados somatossensitivos, dos membros superiores e dos membros inferiores, no laboratório&lt;/td&gt;&lt;td&gt;Potenciais evocados somatossensitivos, dos membros superiores e dos membros inferiores, no laboratório&lt;/td&gt;&lt;td&gt;62.1&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;63305&lt;a name=\&quot;mcdts-l-neurofisiologia-cs-63305\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Potenciais evocados auditivos do tronco cerebral adultos&lt;/td&gt;&lt;td&gt;Potenciais evocados auditivos do tronco cerebral adultos&lt;/td&gt;&lt;td&gt;56.45&lt;/td&gt;&lt;td&gt;13&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;63307&lt;a name=\&quot;mcdts-l-neurofisiologia-cs-63307\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Potenciais evocados auditivos em crianças&lt;/td&gt;&lt;td&gt;Potenciais evocados auditivos em crianças&lt;/td&gt;&lt;td&gt;62.1&lt;/td&gt;&lt;td&gt;14&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;63310&lt;a name=\&quot;mcdts-l-neurofisiologia-cs-63310\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Potenciais evocados visuais (&amp;quot;flash&amp;quot; ou padrão)&lt;/td&gt;&lt;td&gt;Potenciais evocados visuais (&amp;quot;flash&amp;quot; ou padrão)&lt;/td&gt;&lt;td&gt;56.45&lt;/td&gt;&lt;td&gt;14&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;63315&lt;a name=\&quot;mcdts-l-neurofisiologia-cs-63315\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Potenciais evocados visuais, em crianças&lt;/td&gt;&lt;td&gt;Potenciais evocados visuais, em crianças&lt;/td&gt;&lt;td&gt;62.1&lt;/td&gt;&lt;td&gt;13&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;63330&lt;a name=\&quot;mcdts-l-neurofisiologia-cs-63330\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Potenciais de longa latência (P 300 ou outros)&lt;/td&gt;&lt;td&gt;Potenciais de longa latência (P 300 ou outros)&lt;/td&gt;&lt;td&gt;56.45&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;63340&lt;a name=\&quot;mcdts-l-neurofisiologia-cs-63340\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Potenciais evocados, com cartografia&lt;/td&gt;&lt;td&gt;Potenciais evocados, com cartografia&lt;/td&gt;&lt;td&gt;79.2&lt;/td&gt;&lt;td&gt;17.5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;63401&lt;a name=\&quot;mcdts-l-neurofisiologia-cs-63401\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Estudo electromiográfico dos membros superiores ou dos membros inferiores ou de um território específico (inclui estimulação repetitiva), no laboratório&lt;/td&gt;&lt;td&gt;Estudo electromiográfico dos membros superiores ou dos membros inferiores ou de um território específico (inclui estimulação repetitiva), no laboratório&lt;/td&gt;&lt;td&gt;21.27&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;63403&lt;a name=\&quot;mcdts-l-neurofisiologia-cs-63403\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Estudo electromiográfico dos membros superiores e dos membros inferiores, no laboratório&lt;/td&gt;&lt;td&gt;Estudo electromiográfico dos membros superiores e dos membros inferiores, no laboratório&lt;/td&gt;&lt;td&gt;21.27&lt;/td&gt;&lt;td&gt;17.5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;63472&lt;a name=\&quot;mcdts-l-neurofisiologia-cs-63472\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Monitorização neurofisiológica intra-operatória, com electroencefalografia&lt;/td&gt;&lt;td&gt;Monitorização neurofisiológica intra-operatória, com electroencefalografia&lt;/td&gt;&lt;td&gt;8.09&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.url">url</a>" : "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-l-neurofisiologia",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.version">version</a>" : "1.0.0",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.name">name</a>" : "MCDTSL_NeurofisiologiaCS",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.title">title</a>" : "MCDTS Tabela Da Área L - Neurofisiologia",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.date">date</a>" : "2026-01-16T11:04:17+00:00",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.publisher">publisher</a>" : "HL7 Portugal",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "HL7 Portugal",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "http://hl7.pt"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "info@hl7.pt"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "HL7 Portugal",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "geral@hl7.pt",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.use">use</a>" : "work"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.description">description</a>" : "Tabela Da Área L - Neurofisiologia",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "PT",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Portugal"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.author">author</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "ACSS"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.count">count</a>" : 10,
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property">property</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property.code">code</a>" : "preco",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property.description">description</a>" : "Preço do MCDT",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property.type">type</a>" : "decimal"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property.code">code</a>" : "taxa",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property.description">description</a>" : "Taxa Moderadora",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property.type">type</a>" : "decimal"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "63285",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Potenciais evocados somatossensitivos, dos membros superiores e dos membros inferiores, no laboratório",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Potenciais evocados somatossensitivos, dos membros superiores e dos membros inferiores, no laboratório",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 62.1
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 15
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "63305",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Potenciais evocados auditivos do tronco cerebral adultos",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Potenciais evocados auditivos do tronco cerebral adultos",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 56.45
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 13
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "63307",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Potenciais evocados auditivos em crianças",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Potenciais evocados auditivos em crianças",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 62.1
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 14
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "63310",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Potenciais evocados visuais (\&quot;flash\&quot; ou padrão)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Potenciais evocados visuais (\&quot;flash\&quot; ou padrão)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 56.45
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 14
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "63315",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Potenciais evocados visuais, em crianças",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Potenciais evocados visuais, em crianças",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 62.1
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 13
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "63330",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Potenciais de longa latência (P 300 ou outros)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Potenciais de longa latência (P 300 ou outros)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 56.45
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 15
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "63340",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Potenciais evocados, com cartografia",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Potenciais evocados, com cartografia",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 79.2
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 17.5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "63401",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Estudo electromiográfico dos membros superiores ou dos membros inferiores ou de um território específico (inclui estimulação repetitiva), no laboratório",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Estudo electromiográfico dos membros superiores ou dos membros inferiores ou de um território específico (inclui estimulação repetitiva), no laboratório",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 21.27
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 15
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "63403",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Estudo electromiográfico dos membros superiores e dos membros inferiores, no laboratório",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Estudo electromiográfico dos membros superiores e dos membros inferiores, no laboratório",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 21.27
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 17.5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "63472",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Monitorização neurofisiológica intra-operatória, com electroencefalografia",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Monitorização neurofisiológica intra-operatória, com electroencefalografia",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 8.09
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 0
+        }
+      ]
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Jan 16, 2026 11:04+0000">2026-01-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

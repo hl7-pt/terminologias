@@ -1,0 +1,470 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/CodeSystem/cparm-routes-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cparm-routes-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem cparm-routes-cs</b></p><a name=\"cparm-routes-cs\"> </a><a name=\"hccparm-routes-cs\"> </a><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-cparm-routes</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">20001000<a name=\"cparm-routes-cs-20001000\"> </a></td><td>Uso auricular</td><td>Administração de um fármaco no ouvido</td></tr><tr><td style=\"white-space:nowrap\">20002000<a name=\"cparm-routes-cs-20002000\"> </a></td><td>Uso aculear</td><td>Administração de um fármaco veterinário por imersão do bico das aves numa solução aquosa do fármaco</td></tr><tr><td style=\"white-space:nowrap\">20002500<a name=\"cparm-routes-cs-20002500\"> </a></td><td>Uso bucal</td><td>Administração de um fármaco na cavidade oral para obter um efeito sistémico</td></tr><tr><td style=\"white-space:nowrap\">20003000<a name=\"cparm-routes-cs-20003000\"> </a></td><td>Uso cutâneo</td><td>Administração de um fármaco à pele e/ou feridas e/ou unhas e/ou pêlos, para obter um efeito local</td></tr><tr><td style=\"white-space:nowrap\">20004000<a name=\"cparm-routes-cs-20004000\"> </a></td><td>Uso dental</td><td>Administração de um fármaco aos dentes e/ou em redor dos nervos, que inervam os dentes</td></tr><tr><td style=\"white-space:nowrap\">20005000<a name=\"cparm-routes-cs-20005000\"> </a></td><td>Banho medicamentoso</td><td>Administração de um fármaco veterinário por imersão do animal numa banheira ou piscina de imersão que contém o fármaco</td></tr><tr><td style=\"white-space:nowrap\">20006000<a name=\"cparm-routes-cs-20006000\"> </a></td><td>Via endocervical</td><td>Administração de um fármaco ao colo uterino</td></tr><tr><td style=\"white-space:nowrap\">20007000<a name=\"cparm-routes-cs-20007000\"> </a></td><td>Uso endossinusal</td><td>Administração de um fármaco aos seios perinasais para obter um efeito local</td></tr><tr><td style=\"white-space:nowrap\">20008000<a name=\"cparm-routes-cs-20008000\"> </a></td><td>Via endotraqueobrônquica</td><td>Administração de um fármaco à traqueia e/ou brônquios para instilação (preparações para a inalação são excluídas; ver via inalatória)</td></tr><tr><td style=\"white-space:nowrap\">20009000<a name=\"cparm-routes-cs-20009000\"> </a></td><td>Via epidural</td><td>Injeção de um fármaco no espaço epidural</td></tr><tr><td style=\"white-space:nowrap\">20010000<a name=\"cparm-routes-cs-20010000\"> </a></td><td>Uso epilesional</td><td>Administração de um fármaco numa lesão</td></tr><tr><td style=\"white-space:nowrap\">20011000<a name=\"cparm-routes-cs-20011000\"> </a></td><td>Via extra-amniótica</td><td>Injeção de um fármaco entre as membranas coriónica e amniótica</td></tr><tr><td style=\"white-space:nowrap\">20011500<a name=\"cparm-routes-cs-20011500\"> </a></td><td>Uso extracorpóreo</td><td>Uso de um fármaco fora do organismo</td></tr><tr><td style=\"white-space:nowrap\">20012000<a name=\"cparm-routes-cs-20012000\"> </a></td><td>Uso intrapodal</td><td>Administração de um fármaco veterinário na pata das aves</td></tr><tr><td style=\"white-space:nowrap\">20013000<a name=\"cparm-routes-cs-20013000\"> </a></td><td>Via gastroentérica</td><td>Administração de um fármaco no estômago ou duodeno, através de um dispositivo apropriado. Para usar apenas quando a via gástrica e intestinal não se aplicam</td></tr><tr><td style=\"white-space:nowrap\">20013500<a name=\"cparm-routes-cs-20013500\"> </a></td><td>Via gástrica</td><td>Administração de um fármaco no estômago através de um dispositivo apropriado</td></tr><tr><td style=\"white-space:nowrap\">20014000<a name=\"cparm-routes-cs-20014000\"> </a></td><td>Uso gengival</td><td>Administração de um fármaco nas gengivas</td></tr><tr><td style=\"white-space:nowrap\">20015000<a name=\"cparm-routes-cs-20015000\"> </a></td><td>Hemodiálise</td><td>Depuração do sangue através de uma membrana semipermeável</td></tr><tr><td style=\"white-space:nowrap\">20015500<a name=\"cparm-routes-cs-20015500\"> </a></td><td>Implantação</td><td>Inserção de um implante ou tecido vivo equivalente, num tecido vivo</td></tr><tr><td style=\"white-space:nowrap\">20015700<a name=\"cparm-routes-cs-20015700\"> </a></td><td>Administração na água de bebida</td><td>Administração de um fármaco veterinário por incorporação na água de beber do animal</td></tr><tr><td style=\"white-space:nowrap\">20016000<a name=\"cparm-routes-cs-20016000\"> </a></td><td>Alimento medicamentoso líquido</td><td>Administração de um fármaco veterinário por incorporação na água de beber do animal, leite ou derivado do leite</td></tr><tr><td style=\"white-space:nowrap\">20017000<a name=\"cparm-routes-cs-20017000\"> </a></td><td>Via transcoriónica</td><td>Administração de um fármaco veterinário através da casca de um ovo embrionado</td></tr><tr><td style=\"white-space:nowrap\">20018000<a name=\"cparm-routes-cs-20018000\"> </a></td><td>Alimento medicamentoso sólido</td><td>Administração de um fármaco veterinário por incorporação na ração animal</td></tr><tr><td style=\"white-space:nowrap\">20019000<a name=\"cparm-routes-cs-20019000\"> </a></td><td>Aplicação apícola</td><td>Administração de um fármaco veterinário por colocação ou aspersão sobre uma colmeia</td></tr><tr><td style=\"white-space:nowrap\">20019500<a name=\"cparm-routes-cs-20019500\"> </a></td><td>Infiltração</td><td>Método de administração, geralmente por injeção, através do qual um fluido passa para um tecido alvo (ex. infiltração anestésica)</td></tr><tr><td style=\"white-space:nowrap\">20020000<a name=\"cparm-routes-cs-20020000\"> </a></td><td>Via inalatoria</td><td>Administração de um fármaco ao aparelho respiratório por inalação, para obter um efeito sistémico ou local, no aparelho respiratório inferior. As vias nasal e endotraqueopulmonar, são excluídas</td></tr><tr><td style=\"white-space:nowrap\">20021000<a name=\"cparm-routes-cs-20021000\"> </a></td><td>Via intestinal</td><td>Administração de um fármaco ao duodeno, jejuno íleon e colon através de um dispositivo apropriado. O uso gastroentérico é excluído</td></tr><tr><td style=\"white-space:nowrap\">20022000<a name=\"cparm-routes-cs-20022000\"> </a></td><td>Via intra-amniótica</td><td>Injeção de um fármaco no líquido amniótico</td></tr><tr><td style=\"white-space:nowrap\">20023000<a name=\"cparm-routes-cs-20023000\"> </a></td><td>Via intra-arterial</td><td>Injeção de um fármaco numa artéria</td></tr><tr><td style=\"white-space:nowrap\">20024000<a name=\"cparm-routes-cs-20024000\"> </a></td><td>Via intra-articular</td><td>Injeção de um fármaco numa cavidade articular</td></tr><tr><td style=\"white-space:nowrap\">20025000<a name=\"cparm-routes-cs-20025000\"> </a></td><td>Via intrassinovial</td><td>Injeção de um fármaco entre as bursas e tendões</td></tr><tr><td style=\"white-space:nowrap\">20025500<a name=\"cparm-routes-cs-20025500\"> </a></td><td>Via intracameral</td><td>Administração de um fármaco diretamente na câmara anterior do olho</td></tr><tr><td style=\"white-space:nowrap\">20026000<a name=\"cparm-routes-cs-20026000\"> </a></td><td>Via intracardíaca</td><td>Injeção de um fármaco no miocárdio ou numa cavidade cardíaca</td></tr><tr><td style=\"white-space:nowrap\">20026500<a name=\"cparm-routes-cs-20026500\"> </a></td><td>Via intracartilaginosa</td><td>Administração de um fármaco na cartilagem</td></tr><tr><td style=\"white-space:nowrap\">20027000<a name=\"cparm-routes-cs-20027000\"> </a></td><td>Via intracavernosa</td><td>Injeção de um fármaco no corpo cavernoso</td></tr><tr><td style=\"white-space:nowrap\">20027010<a name=\"cparm-routes-cs-20027010\"> </a></td><td>Via intracerebral</td><td>Administração de um fármaco diretamente no tecido cerebral</td></tr><tr><td style=\"white-space:nowrap\">20028000<a name=\"cparm-routes-cs-20028000\"> </a></td><td>Via intracervical</td><td>Injeção de um fármaco no cólo do útero</td></tr><tr><td style=\"white-space:nowrap\">20028300<a name=\"cparm-routes-cs-20028300\"> </a></td><td>Via intracolangiopancreática</td><td>Injeção de um fármaco no ducto biliar e pancreático, por exemplo através de uma cânula introduzida na ampola de Vater, geralmente para administração de um meio de contraste para técnicas como a colangiopancreaticografia retrógrada endoscópica (CPRE)</td></tr><tr><td style=\"white-space:nowrap\">20028500<a name=\"cparm-routes-cs-20028500\"> </a></td><td>Via intracisternal</td><td>Administração de um fármaco dentro da cisterna magna</td></tr><tr><td style=\"white-space:nowrap\">20029000<a name=\"cparm-routes-cs-20029000\"> </a></td><td>Via intracoronária</td><td>Injeção de um fármaco na artéria coronária</td></tr><tr><td style=\"white-space:nowrap\">20030000<a name=\"cparm-routes-cs-20030000\"> </a></td><td>Via intradérmica</td><td>Injeção de um fármaco na derme</td></tr><tr><td style=\"white-space:nowrap\">20031000<a name=\"cparm-routes-cs-20031000\"> </a></td><td>Via intradiscal</td><td>Injeção de um fármaco no núcleo polposo de um disco intervertebral</td></tr><tr><td style=\"white-space:nowrap\">20031500<a name=\"cparm-routes-cs-20031500\"> </a></td><td>Via intraepidérmica</td><td>Administração de um fármaco na epiderme</td></tr><tr><td style=\"white-space:nowrap\">20031700<a name=\"cparm-routes-cs-20031700\"> </a></td><td>Via intraglandular</td><td>Administração de um fármaco diretamente numa glândula, geralmente por injeção. A ser usado apenas em casos em que os termos mais específicos, como \"intramamário ou intraprostático\", não se aplicam</td></tr><tr><td style=\"white-space:nowrap\">20032000<a name=\"cparm-routes-cs-20032000\"> </a></td><td>Uso intralesional</td><td>Administração de um fármaco por injeção ou quaisquer outros meios, diretamente numa lesão</td></tr><tr><td style=\"white-space:nowrap\">20033000<a name=\"cparm-routes-cs-20033000\"> </a></td><td>Via intralinfática</td><td>Injeção de um fármaco num vaso linfático</td></tr><tr><td style=\"white-space:nowrap\">20034000<a name=\"cparm-routes-cs-20034000\"> </a></td><td>Via intramamária</td><td>Administração de um fármaco veterinário na glândula mamária</td></tr><tr><td style=\"white-space:nowrap\">20035000<a name=\"cparm-routes-cs-20035000\"> </a></td><td>Via intramuscular</td><td>Injeção de um fármaco no tecido muscular</td></tr><tr><td style=\"white-space:nowrap\">20036000<a name=\"cparm-routes-cs-20036000\"> </a></td><td>Uso intraocular</td><td>Administração de um fármaco no olho. O termo 'uso intraocular' é apenas para utlizar quando um termo mais específico (ex.\"'uso intracameral\", \"uso intravítreo\") não se aplica. O uso ocular e subconjuntival são excluídos</td></tr><tr><td style=\"white-space:nowrap\">20036500<a name=\"cparm-routes-cs-20036500\"> </a></td><td>Uso intraósseo</td><td>Administração de um fármacona medula óssea. A utilização intraesternal é excluída</td></tr><tr><td style=\"white-space:nowrap\">20037000<a name=\"cparm-routes-cs-20037000\"> </a></td><td>Via intrapericárdica</td><td>Injeção de um fármaco no pericárdio</td></tr><tr><td style=\"white-space:nowrap\">20038000<a name=\"cparm-routes-cs-20038000\"> </a></td><td>Via intraperitoneal</td><td>Injeção de um fármaco na cavidade peritoneal</td></tr><tr><td style=\"white-space:nowrap\">20039000<a name=\"cparm-routes-cs-20039000\"> </a></td><td>Via intrapleural</td><td>Injeção de um fármaco na cavidade pleural</td></tr><tr><td style=\"white-space:nowrap\">20039200<a name=\"cparm-routes-cs-20039200\"> </a></td><td>Uso intraportal</td><td>Injeção/infusão de um fármaco na veia porta para atingir o fígado</td></tr><tr><td style=\"white-space:nowrap\">20039500<a name=\"cparm-routes-cs-20039500\"> </a></td><td>Via intraprostática</td><td>Administração de um fármaco na próstata</td></tr><tr><td style=\"white-space:nowrap\">20039800<a name=\"cparm-routes-cs-20039800\"> </a></td><td>Via intrapulmonar</td><td>Administração de um fármaco no pulmão, geralmente por injeção. Excluem-se 'uso por inalação' e 'via endotraqueobrônquica'</td></tr><tr><td style=\"white-space:nowrap\">20086000<a name=\"cparm-routes-cs-20086000\"> </a></td><td>Via intraputaminal</td><td>Administração de um fármaco em um ou ambos os putâmens do cérebro</td></tr><tr><td style=\"white-space:nowrap\">20040000<a name=\"cparm-routes-cs-20040000\"> </a></td><td>Via intrarruminal</td><td>Administração de um fármaco veterinário no rúmen</td></tr><tr><td style=\"white-space:nowrap\">20041000<a name=\"cparm-routes-cs-20041000\"> </a></td><td>Via intraesternal</td><td>Injeção de um fármaco na medula óssea do esterno</td></tr><tr><td style=\"white-space:nowrap\">20042000<a name=\"cparm-routes-cs-20042000\"> </a></td><td>Via intratecal</td><td>Injeção de um fármaco no espaço subaracnoideu através da dura</td></tr><tr><td style=\"white-space:nowrap\">20043000<a name=\"cparm-routes-cs-20043000\"> </a></td><td>Via intratumoral</td><td>Injeção de um fármaco num tumor</td></tr><tr><td style=\"white-space:nowrap\">20044000<a name=\"cparm-routes-cs-20044000\"> </a></td><td>Via intrauterina</td><td>Administração de um fármaco na cavidade uterina</td></tr><tr><td style=\"white-space:nowrap\">20045000<a name=\"cparm-routes-cs-20045000\"> </a></td><td>Via intravenosa</td><td>Injeção de um fármaco numa veia</td></tr><tr><td style=\"white-space:nowrap\">20046000<a name=\"cparm-routes-cs-20046000\"> </a></td><td>Via intravesical</td><td>Administração de um fármaco na bexiga</td></tr><tr><td style=\"white-space:nowrap\">20047000<a name=\"cparm-routes-cs-20047000\"> </a></td><td>Uso intravítreo</td><td>Administração de um fármaco na câmara posterior do olho</td></tr><tr><td style=\"white-space:nowrap\">20047500<a name=\"cparm-routes-cs-20047500\"> </a></td><td>Iontoforese</td><td>Introdução de uma substância ionisada através de pele intacta, por aplicação de uma corrente elétrica direta</td></tr><tr><td style=\"white-space:nowrap\">20048000<a name=\"cparm-routes-cs-20048000\"> </a></td><td>Uso laringofaríngeo</td><td>Administração de um fármaco à laringofaringe, para obter um efeito local (anestésico)</td></tr><tr><td style=\"white-space:nowrap\">20049000<a name=\"cparm-routes-cs-20049000\"> </a></td><td>Via nasal</td><td>Administração de um fármaco ao nariz para obter um efeito local ou sistémico. A terapêutica inalatória pretendida para o aparelho respiratório inferior é excluída; ver a \"via inalatória\"</td></tr><tr><td style=\"white-space:nowrap\">20050000<a name=\"cparm-routes-cs-20050000\"> </a></td><td>Nebulização</td><td>Administração de um fármaco veterinário convertido em aerossol para medicação em massa, por exemplo de aves</td></tr><tr><td style=\"white-space:nowrap\">20051000<a name=\"cparm-routes-cs-20051000\"> </a></td><td>Uso oftálmico</td><td>Administração de um fármaco no globo ocular e/ou conjuntiva</td></tr><tr><td style=\"white-space:nowrap\">20052000<a name=\"cparm-routes-cs-20052000\"> </a></td><td>Via oculonasal</td><td>Administração de um fármaco veterinário por instilação (gota a gota) nos olhos e narinas de animais individuais (geralmente aves) ou pulverização nos animais para obter o mesmo efeito</td></tr><tr><td style=\"white-space:nowrap\">20053000<a name=\"cparm-routes-cs-20053000\"> </a></td><td>Via oral</td><td>Ingerir um fármaco através da deglutição</td></tr><tr><td style=\"white-space:nowrap\">20054000<a name=\"cparm-routes-cs-20054000\"> </a></td><td>Via bucal</td><td>Administração de um fármaco na cavidade oral para obter quer um efeito sistémico, quer local. O termo \"bucal\"  é para ser utlizado quando um termo mais específico (ex. oral, gengival, sublingual...) não se aplica. A via oral é excluída</td></tr><tr><td style=\"white-space:nowrap\">20055000<a name=\"cparm-routes-cs-20055000\"> </a></td><td>Uso orofaríngeo</td><td>Administração de um fármaco na orofaringe para obter um efeito local</td></tr><tr><td style=\"white-space:nowrap\">20056000<a name=\"cparm-routes-cs-20056000\"> </a></td><td>Via paravertebral</td><td>Injeção de um fármaco veterinário ao longo da coluna vertebral de animais</td></tr><tr><td style=\"white-space:nowrap\">20057000<a name=\"cparm-routes-cs-20057000\"> </a></td><td>Via periarticular</td><td>Injeção de um fármaco em redor de uma articulação</td></tr><tr><td style=\"white-space:nowrap\">20058000<a name=\"cparm-routes-cs-20058000\"> </a></td><td>Via perineural</td><td>Injeção de um fármaco na vizinhança imediata de um ou mais nervos</td></tr><tr><td style=\"white-space:nowrap\">20059000<a name=\"cparm-routes-cs-20059000\"> </a></td><td>Uso periodontal</td><td>Administração na bolsa entre os dentes e as gengivas</td></tr><tr><td style=\"white-space:nowrap\">20059300<a name=\"cparm-routes-cs-20059300\"> </a></td><td>Via perióssea</td><td>Administração de um fármaco em redor de um osso</td></tr><tr><td style=\"white-space:nowrap\">20059400<a name=\"cparm-routes-cs-20059400\"> </a></td><td>Via peritumoral</td><td>Administração de um fármaco, diretamente na região vizinha de um tumor</td></tr><tr><td style=\"white-space:nowrap\">20059500<a name=\"cparm-routes-cs-20059500\"> </a></td><td>Via justa-escleral posterior</td><td>Administração de um fármaco sob a membrana sub-tendinosa da esclera (i.e. no espaço episclera), adjacente à mácula</td></tr><tr><td style=\"white-space:nowrap\">20060000<a name=\"cparm-routes-cs-20060000\"> </a></td><td>Unção contínua</td><td>Administração de um fármaco veterinário por injeção na linha média dorsal do animal ou no topo da cabeça e à volta da base dos cornos</td></tr><tr><td style=\"white-space:nowrap\">20061000<a name=\"cparm-routes-cs-20061000\"> </a></td><td>Via retal</td><td>Administração de um fármaco ao reto, para obter um efeito local ou sistémico</td></tr><tr><td style=\"white-space:nowrap\">20061500<a name=\"cparm-routes-cs-20061500\"> </a></td><td>Via retrobulbar</td><td>Administração de um fármaco por trás do globo ocular</td></tr><tr><td style=\"white-space:nowrap\">20062000<a name=\"cparm-routes-cs-20062000\"> </a></td><td>Via de administração não especificada</td><td>Aplica-se a fármacos que não entrem diretamente em contacto com o organismo de um doente, ou administração a vários locais anatómicos não especificados</td></tr><tr><td style=\"white-space:nowrap\">20063000<a name=\"cparm-routes-cs-20063000\"> </a></td><td>Escarificação</td><td>Administração de um fármaco, riscando a pele</td></tr><tr><td style=\"white-space:nowrap\">20064000<a name=\"cparm-routes-cs-20064000\"> </a></td><td>Unção punctiforme</td><td>Administração de um fármaco veterinário num único local nas costas do animal ou na base da nuca</td></tr><tr><td style=\"white-space:nowrap\">20065000<a name=\"cparm-routes-cs-20065000\"> </a></td><td>Via subconjuntival</td><td>Injeção de um fármaco sob a conjuntiva</td></tr><tr><td style=\"white-space:nowrap\">20066000<a name=\"cparm-routes-cs-20066000\"> </a></td><td>Via subcutânea</td><td>Injeção de um fármaco diretamente sob a pele, i.e. subdérmico</td></tr><tr><td style=\"white-space:nowrap\">20067000<a name=\"cparm-routes-cs-20067000\"> </a></td><td>Via sublingual</td><td>Administração de um fármaco sob a língua, para obter um efeito sistémico</td></tr><tr><td style=\"white-space:nowrap\">20067500<a name=\"cparm-routes-cs-20067500\"> </a></td><td>Via submucosa</td><td>Injeção de um fármaco diretamente sob uma mucosa</td></tr><tr><td style=\"white-space:nowrap\">20068000<a name=\"cparm-routes-cs-20068000\"> </a></td><td>Uso mamário externo</td><td>Administração de um fármaco veterinário na superfície da(s) teta(s). A imersão da teta está incluída</td></tr><tr><td style=\"white-space:nowrap\">20069000<a name=\"cparm-routes-cs-20069000\"> </a></td><td>Dispersão superficial no alimento</td><td>Administração de um fármaco veterinário por aplicação na superfície do alimento imediatamente antes da alimentação</td></tr><tr><td style=\"white-space:nowrap\">20070000<a name=\"cparm-routes-cs-20070000\"> </a></td><td>Via transdérmica</td><td>Administração de um fármaco à pele para obter um efeito sistémico, ultrapassando a barreira cutânea</td></tr><tr><td style=\"white-space:nowrap\">20071000<a name=\"cparm-routes-cs-20071000\"> </a></td><td>Via uretral</td><td>Administração de um fármaco à uretra</td></tr><tr><td style=\"white-space:nowrap\">20072000<a name=\"cparm-routes-cs-20072000\"> </a></td><td>Uso vaginal</td><td>Administração de um fármaco à vagina</td></tr><tr><td style=\"white-space:nowrap\">20080000<a name=\"cparm-routes-cs-20080000\"> </a></td><td>Via intracerebroventricular</td><td>Administração de um fármaco aos ventrículos cerebrais (sistema ventricular) do cérebro</td></tr><tr><td style=\"white-space:nowrap\">20084000<a name=\"cparm-routes-cs-20084000\"> </a></td><td>Via intracorneal</td><td>Administração de um fármaco à córnea</td></tr><tr><td style=\"white-space:nowrap\">20081000<a name=\"cparm-routes-cs-20081000\"> </a></td><td>Via subretiniana</td><td>Administração de um fármaco entre a retina sensorial (retina neural) e o epitélio pigmentar da retina do olho</td></tr><tr><td style=\"white-space:nowrap\">20073000<a name=\"cparm-routes-cs-20073000\"> </a></td><td>Uso no meio aquático</td><td>Administração de um fármaco veterinário a espécies aquáticas (marinhas ou de água doce) por medicação do meio aquático</td></tr><tr><td style=\"white-space:nowrap\">20074000<a name=\"cparm-routes-cs-20074000\"> </a></td><td>Inoculação alar</td><td>Administração de um fármaco veterinário na asa de uma ave</td></tr><tr><td style=\"white-space:nowrap\">20087000<a name=\"cparm-routes-cs-20087000\"> </a></td><td>Via extrapleural</td><td>Injecção de um fármaco directamente fora da cavidade pleural, entre a pleura parietal e a fáscia endotorácica.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7-pt.github.io/terminologias/CodeSystem-cparm-routes"^^xsd:anyURI ;
+     fhir:l <https://hl7-pt.github.io/terminologias/CodeSystem-cparm-routes>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPARMRoutesCS"] ; # 
+  fhir:title [ fhir:v "Vias de Administração"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-16T11:04:17+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Vias de Administração de medicamentos"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "102"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "20001000" ] ;
+     fhir:display [ fhir:v "Uso auricular" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco no ouvido" ]
+  ] [
+     fhir:code [ fhir:v "20002000" ] ;
+     fhir:display [ fhir:v "Uso aculear" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco veterinário por imersão do bico das aves numa solução aquosa do fármaco" ]
+  ] [
+     fhir:code [ fhir:v "20002500" ] ;
+     fhir:display [ fhir:v "Uso bucal" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco na cavidade oral para obter um efeito sistémico" ]
+  ] [
+     fhir:code [ fhir:v "20003000" ] ;
+     fhir:display [ fhir:v "Uso cutâneo" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco à pele e/ou feridas e/ou unhas e/ou pêlos, para obter um efeito local" ]
+  ] [
+     fhir:code [ fhir:v "20004000" ] ;
+     fhir:display [ fhir:v "Uso dental" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco aos dentes e/ou em redor dos nervos, que inervam os dentes" ]
+  ] [
+     fhir:code [ fhir:v "20005000" ] ;
+     fhir:display [ fhir:v "Banho medicamentoso" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco veterinário por imersão do animal numa banheira ou piscina de imersão que contém o fármaco" ]
+  ] [
+     fhir:code [ fhir:v "20006000" ] ;
+     fhir:display [ fhir:v "Via endocervical" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco ao colo uterino" ]
+  ] [
+     fhir:code [ fhir:v "20007000" ] ;
+     fhir:display [ fhir:v "Uso endossinusal" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco aos seios perinasais para obter um efeito local" ]
+  ] [
+     fhir:code [ fhir:v "20008000" ] ;
+     fhir:display [ fhir:v "Via endotraqueobrônquica" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco à traqueia e/ou brônquios para instilação (preparações para a inalação são excluídas; ver via inalatória)" ]
+  ] [
+     fhir:code [ fhir:v "20009000" ] ;
+     fhir:display [ fhir:v "Via epidural" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco no espaço epidural" ]
+  ] [
+     fhir:code [ fhir:v "20010000" ] ;
+     fhir:display [ fhir:v "Uso epilesional" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco numa lesão" ]
+  ] [
+     fhir:code [ fhir:v "20011000" ] ;
+     fhir:display [ fhir:v "Via extra-amniótica" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco entre as membranas coriónica e amniótica" ]
+  ] [
+     fhir:code [ fhir:v "20011500" ] ;
+     fhir:display [ fhir:v "Uso extracorpóreo" ] ;
+     fhir:definition [ fhir:v "Uso de um fármaco fora do organismo" ]
+  ] [
+     fhir:code [ fhir:v "20012000" ] ;
+     fhir:display [ fhir:v "Uso intrapodal" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco veterinário na pata das aves" ]
+  ] [
+     fhir:code [ fhir:v "20013000" ] ;
+     fhir:display [ fhir:v "Via gastroentérica" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco no estômago ou duodeno, através de um dispositivo apropriado. Para usar apenas quando a via gástrica e intestinal não se aplicam" ]
+  ] [
+     fhir:code [ fhir:v "20013500" ] ;
+     fhir:display [ fhir:v "Via gástrica" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco no estômago através de um dispositivo apropriado" ]
+  ] [
+     fhir:code [ fhir:v "20014000" ] ;
+     fhir:display [ fhir:v "Uso gengival" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco nas gengivas" ]
+  ] [
+     fhir:code [ fhir:v "20015000" ] ;
+     fhir:display [ fhir:v "Hemodiálise" ] ;
+     fhir:definition [ fhir:v "Depuração do sangue através de uma membrana semipermeável" ]
+  ] [
+     fhir:code [ fhir:v "20015500" ] ;
+     fhir:display [ fhir:v "Implantação" ] ;
+     fhir:definition [ fhir:v "Inserção de um implante ou tecido vivo equivalente, num tecido vivo" ]
+  ] [
+     fhir:code [ fhir:v "20015700" ] ;
+     fhir:display [ fhir:v "Administração na água de bebida" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco veterinário por incorporação na água de beber do animal" ]
+  ] [
+     fhir:code [ fhir:v "20016000" ] ;
+     fhir:display [ fhir:v "Alimento medicamentoso líquido" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco veterinário por incorporação na água de beber do animal, leite ou derivado do leite" ]
+  ] [
+     fhir:code [ fhir:v "20017000" ] ;
+     fhir:display [ fhir:v "Via transcoriónica" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco veterinário através da casca de um ovo embrionado" ]
+  ] [
+     fhir:code [ fhir:v "20018000" ] ;
+     fhir:display [ fhir:v "Alimento medicamentoso sólido" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco veterinário por incorporação na ração animal" ]
+  ] [
+     fhir:code [ fhir:v "20019000" ] ;
+     fhir:display [ fhir:v "Aplicação apícola" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco veterinário por colocação ou aspersão sobre uma colmeia" ]
+  ] [
+     fhir:code [ fhir:v "20019500" ] ;
+     fhir:display [ fhir:v "Infiltração" ] ;
+     fhir:definition [ fhir:v "Método de administração, geralmente por injeção, através do qual um fluido passa para um tecido alvo (ex. infiltração anestésica)" ]
+  ] [
+     fhir:code [ fhir:v "20020000" ] ;
+     fhir:display [ fhir:v "Via inalatoria" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco ao aparelho respiratório por inalação, para obter um efeito sistémico ou local, no aparelho respiratório inferior. As vias nasal e endotraqueopulmonar, são excluídas" ]
+  ] [
+     fhir:code [ fhir:v "20021000" ] ;
+     fhir:display [ fhir:v "Via intestinal" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco ao duodeno, jejuno íleon e colon através de um dispositivo apropriado. O uso gastroentérico é excluído" ]
+  ] [
+     fhir:code [ fhir:v "20022000" ] ;
+     fhir:display [ fhir:v "Via intra-amniótica" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco no líquido amniótico" ]
+  ] [
+     fhir:code [ fhir:v "20023000" ] ;
+     fhir:display [ fhir:v "Via intra-arterial" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco numa artéria" ]
+  ] [
+     fhir:code [ fhir:v "20024000" ] ;
+     fhir:display [ fhir:v "Via intra-articular" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco numa cavidade articular" ]
+  ] [
+     fhir:code [ fhir:v "20025000" ] ;
+     fhir:display [ fhir:v "Via intrassinovial" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco entre as bursas e tendões" ]
+  ] [
+     fhir:code [ fhir:v "20025500" ] ;
+     fhir:display [ fhir:v "Via intracameral" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco diretamente na câmara anterior do olho" ]
+  ] [
+     fhir:code [ fhir:v "20026000" ] ;
+     fhir:display [ fhir:v "Via intracardíaca" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco no miocárdio ou numa cavidade cardíaca" ]
+  ] [
+     fhir:code [ fhir:v "20026500" ] ;
+     fhir:display [ fhir:v "Via intracartilaginosa" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco na cartilagem" ]
+  ] [
+     fhir:code [ fhir:v "20027000" ] ;
+     fhir:display [ fhir:v "Via intracavernosa" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco no corpo cavernoso" ]
+  ] [
+     fhir:code [ fhir:v "20027010" ] ;
+     fhir:display [ fhir:v "Via intracerebral" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco diretamente no tecido cerebral" ]
+  ] [
+     fhir:code [ fhir:v "20028000" ] ;
+     fhir:display [ fhir:v "Via intracervical" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco no cólo do útero" ]
+  ] [
+     fhir:code [ fhir:v "20028300" ] ;
+     fhir:display [ fhir:v "Via intracolangiopancreática" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco no ducto biliar e pancreático, por exemplo através de uma cânula introduzida na ampola de Vater, geralmente para administração de um meio de contraste para técnicas como a colangiopancreaticografia retrógrada endoscópica (CPRE)" ]
+  ] [
+     fhir:code [ fhir:v "20028500" ] ;
+     fhir:display [ fhir:v "Via intracisternal" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco dentro da cisterna magna" ]
+  ] [
+     fhir:code [ fhir:v "20029000" ] ;
+     fhir:display [ fhir:v "Via intracoronária" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco na artéria coronária" ]
+  ] [
+     fhir:code [ fhir:v "20030000" ] ;
+     fhir:display [ fhir:v "Via intradérmica" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco na derme" ]
+  ] [
+     fhir:code [ fhir:v "20031000" ] ;
+     fhir:display [ fhir:v "Via intradiscal" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco no núcleo polposo de um disco intervertebral" ]
+  ] [
+     fhir:code [ fhir:v "20031500" ] ;
+     fhir:display [ fhir:v "Via intraepidérmica" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco na epiderme" ]
+  ] [
+     fhir:code [ fhir:v "20031700" ] ;
+     fhir:display [ fhir:v "Via intraglandular" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco diretamente numa glândula, geralmente por injeção. A ser usado apenas em casos em que os termos mais específicos, como \"intramamário ou intraprostático\", não se aplicam" ]
+  ] [
+     fhir:code [ fhir:v "20032000" ] ;
+     fhir:display [ fhir:v "Uso intralesional" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco por injeção ou quaisquer outros meios, diretamente numa lesão" ]
+  ] [
+     fhir:code [ fhir:v "20033000" ] ;
+     fhir:display [ fhir:v "Via intralinfática" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco num vaso linfático" ]
+  ] [
+     fhir:code [ fhir:v "20034000" ] ;
+     fhir:display [ fhir:v "Via intramamária" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco veterinário na glândula mamária" ]
+  ] [
+     fhir:code [ fhir:v "20035000" ] ;
+     fhir:display [ fhir:v "Via intramuscular" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco no tecido muscular" ]
+  ] [
+     fhir:code [ fhir:v "20036000" ] ;
+     fhir:display [ fhir:v "Uso intraocular" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco no olho. O termo 'uso intraocular' é apenas para utlizar quando um termo mais específico (ex.\"'uso intracameral\", \"uso intravítreo\") não se aplica. O uso ocular e subconjuntival são excluídos" ]
+  ] [
+     fhir:code [ fhir:v "20036500" ] ;
+     fhir:display [ fhir:v "Uso intraósseo" ] ;
+     fhir:definition [ fhir:v "Administração de um fármacona medula óssea. A utilização intraesternal é excluída" ]
+  ] [
+     fhir:code [ fhir:v "20037000" ] ;
+     fhir:display [ fhir:v "Via intrapericárdica" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco no pericárdio" ]
+  ] [
+     fhir:code [ fhir:v "20038000" ] ;
+     fhir:display [ fhir:v "Via intraperitoneal" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco na cavidade peritoneal" ]
+  ] [
+     fhir:code [ fhir:v "20039000" ] ;
+     fhir:display [ fhir:v "Via intrapleural" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco na cavidade pleural" ]
+  ] [
+     fhir:code [ fhir:v "20039200" ] ;
+     fhir:display [ fhir:v "Uso intraportal" ] ;
+     fhir:definition [ fhir:v "Injeção/infusão de um fármaco na veia porta para atingir o fígado" ]
+  ] [
+     fhir:code [ fhir:v "20039500" ] ;
+     fhir:display [ fhir:v "Via intraprostática" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco na próstata" ]
+  ] [
+     fhir:code [ fhir:v "20039800" ] ;
+     fhir:display [ fhir:v "Via intrapulmonar" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco no pulmão, geralmente por injeção. Excluem-se 'uso por inalação' e 'via endotraqueobrônquica'" ]
+  ] [
+     fhir:code [ fhir:v "20086000" ] ;
+     fhir:display [ fhir:v "Via intraputaminal" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco em um ou ambos os putâmens do cérebro" ]
+  ] [
+     fhir:code [ fhir:v "20040000" ] ;
+     fhir:display [ fhir:v "Via intrarruminal" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco veterinário no rúmen" ]
+  ] [
+     fhir:code [ fhir:v "20041000" ] ;
+     fhir:display [ fhir:v "Via intraesternal" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco na medula óssea do esterno" ]
+  ] [
+     fhir:code [ fhir:v "20042000" ] ;
+     fhir:display [ fhir:v "Via intratecal" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco no espaço subaracnoideu através da dura" ]
+  ] [
+     fhir:code [ fhir:v "20043000" ] ;
+     fhir:display [ fhir:v "Via intratumoral" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco num tumor" ]
+  ] [
+     fhir:code [ fhir:v "20044000" ] ;
+     fhir:display [ fhir:v "Via intrauterina" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco na cavidade uterina" ]
+  ] [
+     fhir:code [ fhir:v "20045000" ] ;
+     fhir:display [ fhir:v "Via intravenosa" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco numa veia" ]
+  ] [
+     fhir:code [ fhir:v "20046000" ] ;
+     fhir:display [ fhir:v "Via intravesical" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco na bexiga" ]
+  ] [
+     fhir:code [ fhir:v "20047000" ] ;
+     fhir:display [ fhir:v "Uso intravítreo" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco na câmara posterior do olho" ]
+  ] [
+     fhir:code [ fhir:v "20047500" ] ;
+     fhir:display [ fhir:v "Iontoforese" ] ;
+     fhir:definition [ fhir:v "Introdução de uma substância ionisada através de pele intacta, por aplicação de uma corrente elétrica direta" ]
+  ] [
+     fhir:code [ fhir:v "20048000" ] ;
+     fhir:display [ fhir:v "Uso laringofaríngeo" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco à laringofaringe, para obter um efeito local (anestésico)" ]
+  ] [
+     fhir:code [ fhir:v "20049000" ] ;
+     fhir:display [ fhir:v "Via nasal" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco ao nariz para obter um efeito local ou sistémico. A terapêutica inalatória pretendida para o aparelho respiratório inferior é excluída; ver a \"via inalatória\"" ]
+  ] [
+     fhir:code [ fhir:v "20050000" ] ;
+     fhir:display [ fhir:v "Nebulização" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco veterinário convertido em aerossol para medicação em massa, por exemplo de aves" ]
+  ] [
+     fhir:code [ fhir:v "20051000" ] ;
+     fhir:display [ fhir:v "Uso oftálmico" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco no globo ocular e/ou conjuntiva" ]
+  ] [
+     fhir:code [ fhir:v "20052000" ] ;
+     fhir:display [ fhir:v "Via oculonasal" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco veterinário por instilação (gota a gota) nos olhos e narinas de animais individuais (geralmente aves) ou pulverização nos animais para obter o mesmo efeito" ]
+  ] [
+     fhir:code [ fhir:v "20053000" ] ;
+     fhir:display [ fhir:v "Via oral" ] ;
+     fhir:definition [ fhir:v "Ingerir um fármaco através da deglutição" ]
+  ] [
+     fhir:code [ fhir:v "20054000" ] ;
+     fhir:display [ fhir:v "Via bucal" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco na cavidade oral para obter quer um efeito sistémico, quer local. O termo \"bucal\"  é para ser utlizado quando um termo mais específico (ex. oral, gengival, sublingual...) não se aplica. A via oral é excluída" ]
+  ] [
+     fhir:code [ fhir:v "20055000" ] ;
+     fhir:display [ fhir:v "Uso orofaríngeo" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco na orofaringe para obter um efeito local" ]
+  ] [
+     fhir:code [ fhir:v "20056000" ] ;
+     fhir:display [ fhir:v "Via paravertebral" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco veterinário ao longo da coluna vertebral de animais" ]
+  ] [
+     fhir:code [ fhir:v "20057000" ] ;
+     fhir:display [ fhir:v "Via periarticular" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco em redor de uma articulação" ]
+  ] [
+     fhir:code [ fhir:v "20058000" ] ;
+     fhir:display [ fhir:v "Via perineural" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco na vizinhança imediata de um ou mais nervos" ]
+  ] [
+     fhir:code [ fhir:v "20059000" ] ;
+     fhir:display [ fhir:v "Uso periodontal" ] ;
+     fhir:definition [ fhir:v "Administração na bolsa entre os dentes e as gengivas" ]
+  ] [
+     fhir:code [ fhir:v "20059300" ] ;
+     fhir:display [ fhir:v "Via perióssea" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco em redor de um osso" ]
+  ] [
+     fhir:code [ fhir:v "20059400" ] ;
+     fhir:display [ fhir:v "Via peritumoral" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco, diretamente na região vizinha de um tumor" ]
+  ] [
+     fhir:code [ fhir:v "20059500" ] ;
+     fhir:display [ fhir:v "Via justa-escleral posterior" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco sob a membrana sub-tendinosa da esclera (i.e. no espaço episclera), adjacente à mácula" ]
+  ] [
+     fhir:code [ fhir:v "20060000" ] ;
+     fhir:display [ fhir:v "Unção contínua" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco veterinário por injeção na linha média dorsal do animal ou no topo da cabeça e à volta da base dos cornos" ]
+  ] [
+     fhir:code [ fhir:v "20061000" ] ;
+     fhir:display [ fhir:v "Via retal" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco ao reto, para obter um efeito local ou sistémico" ]
+  ] [
+     fhir:code [ fhir:v "20061500" ] ;
+     fhir:display [ fhir:v "Via retrobulbar" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco por trás do globo ocular" ]
+  ] [
+     fhir:code [ fhir:v "20062000" ] ;
+     fhir:display [ fhir:v "Via de administração não especificada" ] ;
+     fhir:definition [ fhir:v "Aplica-se a fármacos que não entrem diretamente em contacto com o organismo de um doente, ou administração a vários locais anatómicos não especificados" ]
+  ] [
+     fhir:code [ fhir:v "20063000" ] ;
+     fhir:display [ fhir:v "Escarificação" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco, riscando a pele" ]
+  ] [
+     fhir:code [ fhir:v "20064000" ] ;
+     fhir:display [ fhir:v "Unção punctiforme" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco veterinário num único local nas costas do animal ou na base da nuca" ]
+  ] [
+     fhir:code [ fhir:v "20065000" ] ;
+     fhir:display [ fhir:v "Via subconjuntival" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco sob a conjuntiva" ]
+  ] [
+     fhir:code [ fhir:v "20066000" ] ;
+     fhir:display [ fhir:v "Via subcutânea" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco diretamente sob a pele, i.e. subdérmico" ]
+  ] [
+     fhir:code [ fhir:v "20067000" ] ;
+     fhir:display [ fhir:v "Via sublingual" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco sob a língua, para obter um efeito sistémico" ]
+  ] [
+     fhir:code [ fhir:v "20067500" ] ;
+     fhir:display [ fhir:v "Via submucosa" ] ;
+     fhir:definition [ fhir:v "Injeção de um fármaco diretamente sob uma mucosa" ]
+  ] [
+     fhir:code [ fhir:v "20068000" ] ;
+     fhir:display [ fhir:v "Uso mamário externo" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco veterinário na superfície da(s) teta(s). A imersão da teta está incluída" ]
+  ] [
+     fhir:code [ fhir:v "20069000" ] ;
+     fhir:display [ fhir:v "Dispersão superficial no alimento" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco veterinário por aplicação na superfície do alimento imediatamente antes da alimentação" ]
+  ] [
+     fhir:code [ fhir:v "20070000" ] ;
+     fhir:display [ fhir:v "Via transdérmica" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco à pele para obter um efeito sistémico, ultrapassando a barreira cutânea" ]
+  ] [
+     fhir:code [ fhir:v "20071000" ] ;
+     fhir:display [ fhir:v "Via uretral" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco à uretra" ]
+  ] [
+     fhir:code [ fhir:v "20072000" ] ;
+     fhir:display [ fhir:v "Uso vaginal" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco à vagina" ]
+  ] [
+     fhir:code [ fhir:v "20080000" ] ;
+     fhir:display [ fhir:v "Via intracerebroventricular" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco aos ventrículos cerebrais (sistema ventricular) do cérebro" ]
+  ] [
+     fhir:code [ fhir:v "20084000" ] ;
+     fhir:display [ fhir:v "Via intracorneal" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco à córnea" ]
+  ] [
+     fhir:code [ fhir:v "20081000" ] ;
+     fhir:display [ fhir:v "Via subretiniana" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco entre a retina sensorial (retina neural) e o epitélio pigmentar da retina do olho" ]
+  ] [
+     fhir:code [ fhir:v "20073000" ] ;
+     fhir:display [ fhir:v "Uso no meio aquático" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco veterinário a espécies aquáticas (marinhas ou de água doce) por medicação do meio aquático" ]
+  ] [
+     fhir:code [ fhir:v "20074000" ] ;
+     fhir:display [ fhir:v "Inoculação alar" ] ;
+     fhir:definition [ fhir:v "Administração de um fármaco veterinário na asa de uma ave" ]
+  ] [
+     fhir:code [ fhir:v "20087000" ] ;
+     fhir:display [ fhir:v "Via extrapleural" ] ;
+     fhir:definition [ fhir:v "Injecção de um fármaco directamente fora da cavidade pleural, entre a pleura parietal e a fáscia endotorácica." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

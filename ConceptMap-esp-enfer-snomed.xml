@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="esp-enfer-snomed"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ConceptMap esp-enfer-snomed</b></p><a name="esp-enfer-snomed"> </a><a name="hcesp-enfer-snomed"> </a><p>Mapeamento de (não especificado) para (não especificado)</p><br/><p><b>Grupo 1 </b>Mapeamento de <code>https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-enfermagem-cs</code> to <code>http://snomed.info/sct</code> (SNOMED CT)</p><table class="grid"><tr><td><b>Código fonte</b></td><td><b>Relacionamento</b></td><td><b>Código de destino</b></td></tr><tr><td>1</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>224540001 (Community nurse)</td></tr><tr><td>2</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>1254982001 (Medical surgical nurse)</td></tr><tr><td>3</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>1254984000 (Rehabilitation nurse (occupation))</td></tr><tr><td>4</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>224562001 (Paediatric nurse)</td></tr><tr><td>5</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>224540001 (Community nurse)</td></tr><tr><td>6</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>310186002 (Nurse psychotherapist)</td></tr><tr><td>7</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>26369006 (Public health nurse)</td></tr><tr><td>8</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>224544005 (Family planning nurse)</td></tr><tr><td>9</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>224547003 (Intensive therapy nurse)</td></tr><tr><td>10</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>1254983006 (Chronic care nurse (occupation))</td></tr><tr><td>11</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>224556006 (Palliative care nurse)</td></tr><tr><td>12</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>415075003 (Perioperative nurse (occupation))</td></tr></table></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ConceptMap/esp-enfer-snomed"/>
+  <version value="1.0.0"/>
+  <name value="ESP-Enferm-SNOMED"/>
+  <title value="Mapeamento de códigos de especialidade de enfermagem para códigos SNOMEDCT"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-12-11"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <group>
+    <source value="https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-enfermagem-cs"/>
+    <target value="http://snomed.info/sct"/>
+    <element>
+      <code value="1"/>
+      <target>
+        <code value="224540001"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="2"/>
+      <target>
+        <code value="1254982001"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="3"/>
+      <target>
+        <code value="1254984000"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="4"/>
+      <target>
+        <code value="224562001"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="5"/>
+      <target>
+        <code value="224540001"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="6"/>
+      <target>
+        <code value="310186002"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="7"/>
+      <target>
+        <code value="26369006"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="8"/>
+      <target>
+        <code value="224544005"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="9"/>
+      <target>
+        <code value="224547003"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="10"/>
+      <target>
+        <code value="1254983006"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="11"/>
+      <target>
+        <code value="224556006"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="12"/>
+      <target>
+        <code value="415075003"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

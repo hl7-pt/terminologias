@@ -1,0 +1,26 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://hl7.pt/fhir/CodeSystem/sonho-admission-causes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "SONHO_AdmissionCausesCS",
+      "title" : "SONHO - Causas de admissão (2024)",
+      "description" : "Tabela de causas de admissão (SONHO), com equivalentes SNOMED CT quando existentes.",
+      "uses" : {
+      },
+      "ConceptMap-sonho-admission-causes-to-snomed.html" : "Mapeamento SONHO (Causas de admissão) para SNOMED CT"
+    },
+    {
+      "url" : "https://hl7.pt/fhir/CodeSystem/sonho-discharge-destination",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "SONHO_DischargeDestinationCS",
+      "title" : "SONHO - Destinos de alta (2024)",
+      "description" : "Tabela de destinos de alta (SONHO), com equivalentes SNOMED CT quando existentes.",
+      "uses" : {
+      },
+      "ConceptMap-sonho-discharge-destination-to-snomed.html" : "Mapeamento SONHO (Destinos de alta) para SNOMED CT"
+    }
+  ]
+}

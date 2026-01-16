@@ -1,0 +1,110 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/CodeSystem/especialidades-enfermagem-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "especialidades-enfermagem-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem especialidades-enfermagem-cs</b></p><a name=\"especialidades-enfermagem-cs\"> </a><a name=\"hcespecialidades-enfermagem-cs\"> </a><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-especialidades-enfermagem</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"especialidades-enfermagem-cs-1\"> </a></td><td>Comunitária</td><td>Comunitária</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"especialidades-enfermagem-cs-2\"> </a></td><td>Enfermagem Médico-Cirúrgica</td><td>Enfermagem Médico-Cirúrgica</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"especialidades-enfermagem-cs-3\"> </a></td><td>Enfermagem de Reabilitação</td><td>Enfermagem de Reabilitação</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"especialidades-enfermagem-cs-4\"> </a></td><td>Enfermagem de Saúde Infantil e Pediátrica</td><td>Enfermagem de Saúde Infantil e Pediátrica</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"especialidades-enfermagem-cs-5\"> </a></td><td>Enfermagem de Saúde Materna e Obstétrica</td><td>Enfermagem de Saúde Materna e Obstétrica</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"especialidades-enfermagem-cs-6\"> </a></td><td>Enfermagem de Saúde Mental e Psiquiátrica</td><td>Enfermagem de Saúde Mental e Psiquiátrica</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"especialidades-enfermagem-cs-7\"> </a></td><td>Enfermagem de Saúde Comunitária e de Saúde Pública</td><td>Enfermagem de Saúde Comunitária e de Saúde Pública</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"especialidades-enfermagem-cs-8\"> </a></td><td>Enfermagem de Saúde Familiar</td><td>Enfermagem de Saúde Familiar</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"especialidades-enfermagem-cs-9\"> </a></td><td>Enfermagem à Pessoa em Situação Crítica</td><td>Enfermagem à Pessoa em Situação Crítica</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"especialidades-enfermagem-cs-10\"> </a></td><td>Enfermagem à Pessoa em Situação Crónica</td><td>Enfermagem à Pessoa em Situação Crónica</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"especialidades-enfermagem-cs-11\"> </a></td><td>Enfermagem à Pessoa em Situação Paliativa</td><td>Enfermagem à Pessoa em Situação Paliativa</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"especialidades-enfermagem-cs-12\"> </a></td><td>Enfermagem à Pessoa em Situação Perioperatória</td><td>Enfermagem à Pessoa em Situação Perioperatória</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7-pt.github.io/terminologias/CodeSystem-especialidades-enfermagem"^^xsd:anyURI ;
+     fhir:l <https://hl7-pt.github.io/terminologias/CodeSystem-especialidades-enfermagem>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "EspecialidadesEnfermagemCS"] ; # 
+  fhir:title [ fhir:v "Especialidades Enfermagem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-16T11:04:17+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Especialidades enfermagem existentes em Portugal"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Ordem dos Enfermeiros" ]
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "12"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "Comunitária" ] ;
+     fhir:definition [ fhir:v "Comunitária" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "Enfermagem Médico-Cirúrgica" ] ;
+     fhir:definition [ fhir:v "Enfermagem Médico-Cirúrgica" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "Enfermagem de Reabilitação" ] ;
+     fhir:definition [ fhir:v "Enfermagem de Reabilitação" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "Enfermagem de Saúde Infantil e Pediátrica" ] ;
+     fhir:definition [ fhir:v "Enfermagem de Saúde Infantil e Pediátrica" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "Enfermagem de Saúde Materna e Obstétrica" ] ;
+     fhir:definition [ fhir:v "Enfermagem de Saúde Materna e Obstétrica" ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "Enfermagem de Saúde Mental e Psiquiátrica" ] ;
+     fhir:definition [ fhir:v "Enfermagem de Saúde Mental e Psiquiátrica" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "Enfermagem de Saúde Comunitária e de Saúde Pública" ] ;
+     fhir:definition [ fhir:v "Enfermagem de Saúde Comunitária e de Saúde Pública" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "Enfermagem de Saúde Familiar" ] ;
+     fhir:definition [ fhir:v "Enfermagem de Saúde Familiar" ]
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "Enfermagem à Pessoa em Situação Crítica" ] ;
+     fhir:definition [ fhir:v "Enfermagem à Pessoa em Situação Crítica" ]
+  ] [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "Enfermagem à Pessoa em Situação Crónica" ] ;
+     fhir:definition [ fhir:v "Enfermagem à Pessoa em Situação Crónica" ]
+  ] [
+     fhir:code [ fhir:v "11" ] ;
+     fhir:display [ fhir:v "Enfermagem à Pessoa em Situação Paliativa" ] ;
+     fhir:definition [ fhir:v "Enfermagem à Pessoa em Situação Paliativa" ]
+  ] [
+     fhir:code [ fhir:v "12" ] ;
+     fhir:display [ fhir:v "Enfermagem à Pessoa em Situação Perioperatória" ] ;
+     fhir:definition [ fhir:v "Enfermagem à Pessoa em Situação Perioperatória" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

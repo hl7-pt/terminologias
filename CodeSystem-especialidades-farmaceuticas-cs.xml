@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="especialidades-farmaceuticas-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem especialidades-farmaceuticas-cs</b></p><a name="especialidades-farmaceuticas-cs"> </a><a name="hcespecialidades-farmaceuticas-cs"> </a><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-especialidades-farmaceuticas</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">1<a name="especialidades-farmaceuticas-cs-1"> </a></td><td>Análises Clínicas</td><td>Análises Clínicas</td></tr><tr><td style="white-space:nowrap">2<a name="especialidades-farmaceuticas-cs-2"> </a></td><td>Assuntos Regulamentares</td><td>Assuntos Regulamentares</td></tr><tr><td style="white-space:nowrap">3<a name="especialidades-farmaceuticas-cs-3"> </a></td><td>Distribuição Farmacêutica</td><td>Distribuição Farmacêutica</td></tr><tr><td style="white-space:nowrap">4<a name="especialidades-farmaceuticas-cs-4"> </a></td><td>Farmácia Hospitalar</td><td>Farmácia Hospitalar</td></tr><tr><td style="white-space:nowrap">5<a name="especialidades-farmaceuticas-cs-5"> </a></td><td>Genética Humana</td><td>Genética Humana</td></tr><tr><td style="white-space:nowrap">6<a name="especialidades-farmaceuticas-cs-6"> </a></td><td>Indústria Farmacêutica</td><td>Indústria Farmacêutica</td></tr><tr><td style="white-space:nowrap">7<a name="especialidades-farmaceuticas-cs-7"> </a></td><td>Farmácia Comunitária</td><td>Farmácia Comunitária</td></tr></table></div>
+  </text>
+  <url value="https://hl7-pt.github.io/terminologias/CodeSystem-especialidades-farmaceuticas"/>
+  <version value="1.0.0"/>
+  <name value="EspecialidadesFarmaceuticasCS"/>
+  <title value="Especialidades Farmacêuticas"/>
+  <status value="active"/>
+  <date value="2026-01-16T11:04:17+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Especialidades farmacêuticas existentes em Portugal"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Ordem dos Farmacêuticos"/>
+  </author>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="1"/>
+    <display value="Análises Clínicas"/>
+    <definition value="Análises Clínicas"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Assuntos Regulamentares"/>
+    <definition value="Assuntos Regulamentares"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Distribuição Farmacêutica"/>
+    <definition value="Distribuição Farmacêutica"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Farmácia Hospitalar"/>
+    <definition value="Farmácia Hospitalar"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Genética Humana"/>
+    <definition value="Genética Humana"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="Indústria Farmacêutica"/>
+    <definition value="Indústria Farmacêutica"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="Farmácia Comunitária"/>
+    <definition value="Farmácia Comunitária"/>
+  </concept>
+</CodeSystem>

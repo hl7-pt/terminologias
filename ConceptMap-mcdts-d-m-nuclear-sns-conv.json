@@ -1,0 +1,165 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "mcdts-d-m-nuclear-sns-conv",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ConceptMap mcdts-d-m-nuclear-sns-conv</b></p><a name=\"mcdts-d-m-nuclear-sns-conv\"> </a><a name=\"hcmcdts-d-m-nuclear-sns-conv\"> </a><p>Mapeamento de (não especificado) para (não especificado)</p><br/><p><b>Grupo 1 </b>Mapeamento de <code>https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-d-m-nuclear-cs</code> to <code>https://www.acss.pt</code></p><table class=\"grid\"><tr><td><b>Código fonte</b></td><td><b>Relacionamento</b></td><td><b>Código de destino</b></td></tr><tr><td>58015</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>039.6</td></tr><tr><td>58020</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>040.0</td></tr><tr><td>58050</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>018.3</td></tr><tr><td>58100</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>025.6</td></tr><tr><td>58105</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>005.1</td></tr><tr><td>58115</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>006.0</td></tr><tr><td>58120</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>007.8</td></tr><tr><td>58125</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>033.7</td></tr><tr><td>58130</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>024.8</td></tr><tr><td>58150</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>009.4</td></tr><tr><td>58200</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>011.6</td></tr><tr><td>58205</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>novo</td></tr><tr><td>58260</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>012.4</td></tr><tr><td>58305</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>027.2</td></tr><tr><td>58319</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>028.0</td></tr><tr><td>58324</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>029.9</td></tr><tr><td>58330</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>novo</td></tr></table></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-d-m-nuclear-sns-conv",
+  "version" : "1.0.0",
+  "name" : "MCDTS-d-m-nuclear-SNS-CONV",
+  "title" : "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área D - Medicina Nuclear ",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-11",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "group" : [{
+    "source" : "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-d-m-nuclear-cs",
+    "target" : "https://www.acss.pt",
+    "element" : [{
+      "code" : "58015",
+      "target" : [{
+        "code" : "039.6",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "58020",
+      "target" : [{
+        "code" : "040.0",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "58050",
+      "target" : [{
+        "code" : "018.3",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "58100",
+      "target" : [{
+        "code" : "025.6",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "58105",
+      "target" : [{
+        "code" : "005.1",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "58115",
+      "target" : [{
+        "code" : "006.0",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "58120",
+      "target" : [{
+        "code" : "007.8",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "58125",
+      "target" : [{
+        "code" : "033.7",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "58130",
+      "target" : [{
+        "code" : "024.8",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "58150",
+      "target" : [{
+        "code" : "009.4",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "58200",
+      "target" : [{
+        "code" : "011.6",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "58205",
+      "target" : [{
+        "code" : "novo",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "58260",
+      "target" : [{
+        "code" : "012.4",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "58305",
+      "target" : [{
+        "code" : "027.2",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "58319",
+      "target" : [{
+        "code" : "028.0",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "58324",
+      "target" : [{
+        "code" : "029.9",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "58330",
+      "target" : [{
+        "code" : "novo",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,165 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mcdts-f-gastrenterologia-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem mcdts-f-gastrenterologia-cs</b></p><a name=\"mcdts-f-gastrenterologia-cs\"> </a><a name=\"hcmcdts-f-gastrenterologia-cs\"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class=\"grid\"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>preco</td><td>preco</td><td>decimal</td><td>Preço do MCDT</td></tr><tr><td>taxa</td><td>taxa</td><td>decimal</td><td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-f-gastrenterologia</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr><tr><td style=\"white-space:nowrap\">52175<a name=\"mcdts-f-gastrenterologia-cs-52175\"> </a></td><td>Biopsias transendoscópicas (acresce ao valor da endoscopia)</td><td>Biopsias transendoscópicas (acresce ao valor da endoscopia)</td><td>7.5</td><td>5</td></tr><tr><td style=\"white-space:nowrap\">52071<a name=\"mcdts-f-gastrenterologia-cs-52071\"> </a></td><td>Pesquisa de Helicobacter pylori na biópsia (Teste de Urease)</td><td>Pesquisa de Helicobacter pylori na biópsia (Teste de Urease)</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">50115<a name=\"mcdts-f-gastrenterologia-cs-50115\"> </a></td><td>Sedação efectuada por Gastrenterologista</td><td>Sedação efectuada por Gastrenterologista</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">51120<a name=\"mcdts-f-gastrenterologia-cs-51120\"> </a></td><td>Tatuagem cólica</td><td>Tatuagem cólica</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">52155<a name=\"mcdts-f-gastrenterologia-cs-52155\"> </a></td><td>Aplicação de &quot;clips&quot; (cada sessão)</td><td>Aplicação de &quot;clips&quot; (cada sessão)</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">52210<a name=\"mcdts-f-gastrenterologia-cs-52210\"> </a></td><td>Injecção endoscópica de fármacos</td><td>Injecção endoscópica de fármacos</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">52220<a name=\"mcdts-f-gastrenterologia-cs-52220\"> </a></td><td>Polipectomia, por sessão (a adicionar ao exame endoscópico)</td><td>Polipectomia, por sessão (a adicionar ao exame endoscópico)</td><td>32.27</td><td>12</td></tr><tr><td style=\"white-space:nowrap\">52230<a name=\"mcdts-f-gastrenterologia-cs-52230\"> </a></td><td>Terapêutica por Argon Plasma</td><td>Terapêutica por Argon Plasma</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">51280<a name=\"mcdts-f-gastrenterologia-cs-51280\"> </a></td><td>Anuscopia</td><td>Anuscopia</td><td>5.09</td><td>3</td></tr><tr><td style=\"white-space:nowrap\">52125<a name=\"mcdts-f-gastrenterologia-cs-52125\"> </a></td><td>Endoscopia alta</td><td>Endoscopia alta</td><td>42.28</td><td>12</td></tr><tr><td style=\"white-space:nowrap\">52130<a name=\"mcdts-f-gastrenterologia-cs-52130\"> </a></td><td>Rectoscopia rígida</td><td>Rectoscopia rígida</td><td>13.86</td><td>4.5</td></tr><tr><td style=\"white-space:nowrap\">52270<a name=\"mcdts-f-gastrenterologia-cs-52270\"> </a></td><td>Rectosigmoidoscopia flexível</td><td>Rectosigmoidoscopia flexível</td><td>33.96</td><td>10</td></tr></table></div>"
+  },
+  "url" : "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-f-gastrenterologia",
+  "version" : "1.0.0",
+  "name" : "MCDTSF_GastrenterologiaCS",
+  "title" : "MCDTS Tabela Da Área F - Endoscopia Gastrenterológica",
+  "status" : "active",
+  "date" : "2026-01-16T11:04:17+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Tabela Da Área F - Endoscopia Gastrenterológica",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "ACSS"
+  }],
+  "content" : "complete",
+  "count" : 12,
+  "property" : [{
+    "code" : "preco",
+    "description" : "Preço do MCDT",
+    "type" : "decimal"
+  },
+  {
+    "code" : "taxa",
+    "description" : "Taxa Moderadora",
+    "type" : "decimal"
+  }],
+  "concept" : [{
+    "code" : "52175",
+    "display" : "Biopsias transendoscópicas (acresce ao valor da endoscopia)",
+    "definition" : "Biopsias transendoscópicas (acresce ao valor da endoscopia)",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 7.5
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 5
+    }]
+  },
+  {
+    "code" : "52071",
+    "display" : "Pesquisa de Helicobacter pylori na biópsia (Teste de Urease)",
+    "definition" : "Pesquisa de Helicobacter pylori na biópsia (Teste de Urease)"
+  },
+  {
+    "code" : "50115",
+    "display" : "Sedação efectuada por Gastrenterologista",
+    "definition" : "Sedação efectuada por Gastrenterologista"
+  },
+  {
+    "code" : "51120",
+    "display" : "Tatuagem cólica",
+    "definition" : "Tatuagem cólica"
+  },
+  {
+    "code" : "52155",
+    "display" : "Aplicação de \"clips\" (cada sessão)",
+    "definition" : "Aplicação de \"clips\" (cada sessão)"
+  },
+  {
+    "code" : "52210",
+    "display" : "Injecção endoscópica de fármacos",
+    "definition" : "Injecção endoscópica de fármacos"
+  },
+  {
+    "code" : "52220",
+    "display" : "Polipectomia, por sessão (a adicionar ao exame endoscópico)",
+    "definition" : "Polipectomia, por sessão (a adicionar ao exame endoscópico)",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 32.27
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 12
+    }]
+  },
+  {
+    "code" : "52230",
+    "display" : "Terapêutica por Argon Plasma",
+    "definition" : "Terapêutica por Argon Plasma"
+  },
+  {
+    "code" : "51280",
+    "display" : "Anuscopia",
+    "definition" : "Anuscopia",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 5.09
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 3
+    }]
+  },
+  {
+    "code" : "52125",
+    "display" : "Endoscopia alta",
+    "definition" : "Endoscopia alta",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 42.28
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 12
+    }]
+  },
+  {
+    "code" : "52130",
+    "display" : "Rectoscopia rígida",
+    "definition" : "Rectoscopia rígida",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 13.86
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 4.5
+    }]
+  },
+  {
+    "code" : "52270",
+    "display" : "Rectosigmoidoscopia flexível",
+    "definition" : "Rectosigmoidoscopia flexível",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 33.96
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 10
+    }]
+  }]
+}

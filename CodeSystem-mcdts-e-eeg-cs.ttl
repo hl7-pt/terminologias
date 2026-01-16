@@ -1,0 +1,139 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/CodeSystem/mcdts-e-eeg-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mcdts-e-eeg-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem mcdts-e-eeg-cs</b></p><a name=\"mcdts-e-eeg-cs\"> </a><a name=\"hcmcdts-e-eeg-cs\"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class=\"grid\"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>preco</td><td>preco</td><td>decimal</td><td>Preço do MCDT</td></tr><tr><td>taxa</td><td>taxa</td><td>decimal</td><td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-e-eeg</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr><tr><td style=\"white-space:nowrap\">63010<a name=\"mcdts-e-eeg-cs-63010\"> </a></td><td>EEG de rotina (inclui canal de ECG, prova de Hiperpneia e ELI)</td><td>EEG de rotina (inclui canal de ECG, prova de Hiperpneia e ELI)</td><td>26.98</td><td>11</td></tr><tr><td style=\"white-space:nowrap\">63011<a name=\"mcdts-e-eeg-cs-63011\"> </a></td><td>EEG de rotina, fora do laboratório</td><td>EEG de rotina, fora do laboratório</td><td>59.89</td><td>12</td></tr><tr><td style=\"white-space:nowrap\">63017<a name=\"mcdts-e-eeg-cs-63017\"> </a></td><td>Cartografia de EEG (adicional ao registo)</td><td>Cartografia de EEG (adicional ao registo)</td><td>72</td><td>5</td></tr><tr><td style=\"white-space:nowrap\">63020<a name=\"mcdts-e-eeg-cs-63020\"> </a></td><td>EEG de rotina com prova de Sono</td><td>EEG de rotina com prova de Sono</td><td>29.3</td><td>15</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-e-eeg"^^xsd:anyURI ;
+     fhir:l <https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-e-eeg>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "MCDTSE_EEGCS"] ; # 
+  fhir:title [ fhir:v "MCDTS Tabela Da Área E - Electroencefalografia"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-16T11:04:17+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tabela Da Área E - Electroencefalografia"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "ACSS" ]
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:property ( [
+     fhir:code [ fhir:v "preco" ] ;
+     fhir:description [ fhir:v "Preço do MCDT" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] [
+     fhir:code [ fhir:v "taxa" ] ;
+     fhir:description [ fhir:v "Taxa Moderadora" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "63010" ] ;
+     fhir:display [ fhir:v "EEG de rotina (inclui canal de ECG, prova de Hiperpneia e ELI)" ] ;
+     fhir:definition [ fhir:v "EEG de rotina (inclui canal de ECG, prova de Hiperpneia e ELI)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 26.98
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "11"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "63011" ] ;
+     fhir:display [ fhir:v "EEG de rotina, fora do laboratório" ] ;
+     fhir:definition [ fhir:v "EEG de rotina, fora do laboratório" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 59.89
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "12"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "63017" ] ;
+     fhir:display [ fhir:v "Cartografia de EEG (adicional ao registo)" ] ;
+     fhir:definition [ fhir:v "Cartografia de EEG (adicional ao registo)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "72"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "63020" ] ;
+     fhir:display [ fhir:v "EEG de rotina com prova de Sono" ] ;
+     fhir:definition [ fhir:v "EEG de rotina com prova de Sono" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 29.3
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "15"^^xsd:decimal
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

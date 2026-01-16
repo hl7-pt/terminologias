@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MCDTS Tabela Da Área G - Medicina Fisica E De Reabilitação - HL7 PT FHIR Implementation Guide: Terminologias v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.10"}
+    h3,h4,h5,h6{--heading-prefix:"6.10"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Terminologias</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="spec.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MCDTS Tabela Da Área G - Medicina Fisica E De Reabilitação</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Terminologias, publicado por HL7 Portugal. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 1.0.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/hl7-pt/terminologias/tree/master'>https://github.com/hl7-pt/terminologias/tree/master</a> e muda regularmente. Veja o <a href='http://hl7.pt/fhir/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-mcdts-g-mfr-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mcdts-g-mfr-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mcdts-g-mfr-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: MCDTS Tabela Da Área G - Medicina Fisica E De Reabilitação
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-g-mfr<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-g-mfr"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-g-mfr|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-01-16
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">MCDTSG_MFRCS</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Tabela Da Área G - Medicina Fisica E De Reabilitação</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul><li>Este CodeSystem não é utilizado aqui; pode ser utilizado noutro local (por exemplo, em especificações e/ou implementações que utilizem este conteúdo)</li></ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="mcdts-g-mfr-cs"> </a><a name="hcmcdts-g-mfr-cs"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p>
+<table class="grid" data-fhir="generated"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr>
+<tr><td>preco</td>
+<td>preco</td>
+<td>decimal</td>
+<td>Preço do MCDT</td></tr>
+<tr><td>taxa</td>
+<td>taxa</td>
+<td>decimal</td>
+<td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-g-mfr</code> define o seguinte códigos:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr>
+<tr><td style="white-space:nowrap">60181<a name="mcdts-g-mfr-cs-60181"> </a></td>
+<td>Estudo da marcha com plataforma elétrica e registo</td>
+<td>Estudo da marcha com plataforma elétrica e registo</td>
+<td>10.85</td>
+<td>4</td></tr>
+<tr><td style="white-space:nowrap">60200<a name="mcdts-g-mfr-cs-60200"> </a></td>
+<td>Exame muscular com registo gráfico</td>
+<td>Exame muscular com registo gráfico</td>
+<td>5.4</td>
+<td>4</td></tr>
+<tr><td style="white-space:nowrap">60301<a name="mcdts-g-mfr-cs-60301"> </a></td>
+<td>Goniometria elétrica</td>
+<td>Goniometria elétrica</td>
+<td>4.91</td>
+<td>1.6</td></tr>
+<tr><td style="white-space:nowrap">60310<a name="mcdts-g-mfr-cs-60310"> </a></td>
+<td>Raquimetria</td>
+<td>Raquimetria</td>
+<td>4</td>
+<td>4</td></tr>
+<tr><td style="white-space:nowrap">60792<a name="mcdts-g-mfr-cs-60792"> </a></td>
+<td>Iontoforese</td>
+<td>Iontoforese</td>
+<td>1.5</td>
+<td>1.4</td></tr>
+<tr><td style="white-space:nowrap">60800<a name="mcdts-g-mfr-cs-60800"> </a></td>
+<td>Corrente continua</td>
+<td>Corrente continua</td>
+<td>1.5</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">60801<a name="mcdts-g-mfr-cs-60801"> </a></td>
+<td>Corrente de baixa frequência</td>
+<td>Corrente de baixa frequência</td>
+<td>1.5</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">60802<a name="mcdts-g-mfr-cs-60802"> </a></td>
+<td>Corrente de média frequência</td>
+<td>Corrente de média frequência</td>
+<td>1.5</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">60644<a name="mcdts-g-mfr-cs-60644"> </a></td>
+<td>Corrente de alta frequência (micro-ondas)</td>
+<td>Corrente de alta frequência (micro-ondas)</td>
+<td>1.4</td>
+<td>1.4</td></tr>
+<tr><td style="white-space:nowrap">60624<a name="mcdts-g-mfr-cs-60624"> </a></td>
+<td>Corrente de alta frequência (ondas curtas)</td>
+<td>Corrente de alta frequência (ondas curtas)</td>
+<td>1.8</td>
+<td>1.4</td></tr>
+<tr><td style="white-space:nowrap">60771<a name="mcdts-g-mfr-cs-60771"> </a></td>
+<td>Estimulação elétrica neuro-muscular, por grupo muscular</td>
+<td>Estimulação elétrica neuro-muscular, por grupo muscular</td>
+<td>1.6</td>
+<td>1.6</td></tr>
+<tr><td style="white-space:nowrap">60666<a name="mcdts-g-mfr-cs-60666"> </a></td>
+<td>Magnetoterapia</td>
+<td>Magnetoterapia</td>
+<td>1.3</td>
+<td>1.2</td></tr>
+<tr><td style="white-space:nowrap">60750<a name="mcdts-g-mfr-cs-60750"> </a></td>
+<td>Ultrassonoterapia</td>
+<td>Ultrassonoterapia</td>
+<td>1.3</td>
+<td>1.2</td></tr>
+<tr><td style="white-space:nowrap">60708<a name="mcdts-g-mfr-cs-60708"> </a></td>
+<td>Radiações infravermelhas</td>
+<td>Radiações infravermelhas</td>
+<td>1.21</td>
+<td>0.9</td></tr>
+<tr><td style="white-space:nowrap">60729<a name="mcdts-g-mfr-cs-60729"> </a></td>
+<td>Radiações ultravioletas</td>
+<td>Radiações ultravioletas</td>
+<td>1.21</td>
+<td>0.9</td></tr>
+<tr><td style="white-space:nowrap">60550<a name="mcdts-g-mfr-cs-60550"> </a></td>
+<td>Crioterapia</td>
+<td>Crioterapia</td>
+<td>1.21</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">60555<a name="mcdts-g-mfr-cs-60555"> </a></td>
+<td>Terapia por calor húmido</td>
+<td>Terapia por calor húmido</td>
+<td>1.21</td>
+<td>1</td></tr>
+<tr><td style="white-space:nowrap">60583<a name="mcdts-g-mfr-cs-60583"> </a></td>
+<td>Parafinoterapia</td>
+<td>Parafinoterapia</td>
+<td>1.63</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">60584<a name="mcdts-g-mfr-cs-60584"> </a></td>
+<td>Parafangoterapia</td>
+<td>Parafangoterapia</td>
+<td>1.63</td>
+<td>1.4</td></tr>
+<tr><td style="white-space:nowrap">60962<a name="mcdts-g-mfr-cs-60962"> </a></td>
+<td>Hidrocinesiterapia individual em piscina</td>
+<td>Hidrocinesiterapia individual em piscina</td>
+<td>2</td>
+<td>2</td></tr>
+<tr><td style="white-space:nowrap">60961<a name="mcdts-g-mfr-cs-60961"> </a></td>
+<td>Hidrocinesiterapia coletiva em piscina</td>
+<td>Hidrocinesiterapia coletiva em piscina</td>
+<td>1.63</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">60930<a name="mcdts-g-mfr-cs-60930"> </a></td>
+<td>Hidromassagem</td>
+<td>Hidromassagem</td>
+<td>1.63</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">60887<a name="mcdts-g-mfr-cs-60887"> </a></td>
+<td>Banho de contraste</td>
+<td>Banho de contraste</td>
+<td>1.4</td>
+<td>1</td></tr>
+<tr><td style="white-space:nowrap">60929<a name="mcdts-g-mfr-cs-60929"> </a></td>
+<td>Banho de turbilhão</td>
+<td>Banho de turbilhão</td>
+<td>1.63</td>
+<td>1</td></tr>
+<tr><td style="white-space:nowrap">60910<a name="mcdts-g-mfr-cs-60910"> </a></td>
+<td>Banhos especiais</td>
+<td>Banhos especiais</td>
+<td>2.17</td>
+<td>1.2</td></tr>
+<tr><td style="white-space:nowrap">60908<a name="mcdts-g-mfr-cs-60908"> </a></td>
+<td>Duches</td>
+<td>Duches</td>
+<td>1.55</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">60982<a name="mcdts-g-mfr-cs-60982"> </a></td>
+<td>Hidrocinesiterapia individual em tanque</td>
+<td>Hidrocinesiterapia individual em tanque</td>
+<td>2.5</td>
+<td>2.5</td></tr>
+<tr><td style="white-space:nowrap">60985<a name="mcdts-g-mfr-cs-60985"> </a></td>
+<td>Treino em tanque de marcha</td>
+<td>Treino em tanque de marcha</td>
+<td>1.63</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">60222<a name="mcdts-g-mfr-cs-60222"> </a></td>
+<td>Massagem manual de uma região</td>
+<td>Massagem manual de uma região</td>
+<td>1.3</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">60233<a name="mcdts-g-mfr-cs-60233"> </a></td>
+<td>Massagem manual de mais de uma região</td>
+<td>Massagem manual de mais de uma região</td>
+<td>1.8</td>
+<td>1.6</td></tr>
+<tr><td style="white-space:nowrap">60940<a name="mcdts-g-mfr-cs-60940"> </a></td>
+<td>Massagem subaquática</td>
+<td>Massagem subaquática</td>
+<td>1.6</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">61175<a name="mcdts-g-mfr-cs-61175"> </a></td>
+<td>Vibromassagem</td>
+<td>Vibromassagem</td>
+<td>1.3</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">60430<a name="mcdts-g-mfr-cs-60430"> </a></td>
+<td>Cinesiterapia respiratória</td>
+<td>Cinesiterapia respiratória</td>
+<td>2.17</td>
+<td>1.6</td></tr>
+<tr><td style="white-space:nowrap">60375<a name="mcdts-g-mfr-cs-60375"> </a></td>
+<td>Cinesiterapia vertebral</td>
+<td>Cinesiterapia vertebral</td>
+<td>2.17</td>
+<td>1.4</td></tr>
+<tr><td style="white-space:nowrap">60380<a name="mcdts-g-mfr-cs-60380"> </a></td>
+<td>Cinesiterapia corretiva postural</td>
+<td>Cinesiterapia corretiva postural</td>
+<td>2.17</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">61090<a name="mcdts-g-mfr-cs-61090"> </a></td>
+<td>Cinesiterapia pré e pós parto, em grupo</td>
+<td>Cinesiterapia pré e pós parto, em grupo</td>
+<td>2.17</td>
+<td>1.8</td></tr>
+<tr><td style="white-space:nowrap">61102<a name="mcdts-g-mfr-cs-61102"> </a></td>
+<td>Fortalecimento muscular manual</td>
+<td>Fortalecimento muscular manual</td>
+<td>2</td>
+<td>1.2</td></tr>
+<tr><td style="white-space:nowrap">60290<a name="mcdts-g-mfr-cs-60290"> </a></td>
+<td>Mobilização articular manual</td>
+<td>Mobilização articular manual</td>
+<td>1.5</td>
+<td>1.2</td></tr>
+<tr><td style="white-space:nowrap">60377<a name="mcdts-g-mfr-cs-60377"> </a></td>
+<td>Técnicas especiais de Cinesiterapia</td>
+<td>Técnicas especiais de Cinesiterapia</td>
+<td>2.71</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">60404<a name="mcdts-g-mfr-cs-60404"> </a></td>
+<td>Treino de equilíbrio e marcha</td>
+<td>Treino de equilíbrio e marcha</td>
+<td>1.4</td>
+<td>1.4</td></tr>
+<tr><td style="white-space:nowrap">60376<a name="mcdts-g-mfr-cs-60376"> </a></td>
+<td>Cinesiterapia em grupo</td>
+<td>Cinesiterapia em grupo</td>
+<td>1.21</td>
+<td>0.9</td></tr>
+<tr><td style="white-space:nowrap">60401<a name="mcdts-g-mfr-cs-60401"> </a></td>
+<td>Reeducação funcional de cada membro</td>
+<td>Reeducação funcional de cada membro</td>
+<td>1.8</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">60435<a name="mcdts-g-mfr-cs-60435"> </a></td>
+<td>Drenagem postural</td>
+<td>Drenagem postural</td>
+<td>3</td>
+<td>3</td></tr>
+<tr><td style="white-space:nowrap">60438<a name="mcdts-g-mfr-cs-60438"> </a></td>
+<td>Aerossóis</td>
+<td>Aerossóis</td>
+<td>1.5</td>
+<td>1.4</td></tr>
+<tr><td style="white-space:nowrap">60437<a name="mcdts-g-mfr-cs-60437"> </a></td>
+<td>Aerossóis ultra-sónicos</td>
+<td>Aerossóis ultra-sónicos</td>
+<td>1.5</td>
+<td>1.4</td></tr>
+<tr><td style="white-space:nowrap">61137<a name="mcdts-g-mfr-cs-61137"> </a></td>
+<td>Mobilização de secreções com flutter</td>
+<td>Mobilização de secreções com flutter</td>
+<td>3.5</td>
+<td>3.5</td></tr>
+<tr><td style="white-space:nowrap">99030<a name="mcdts-g-mfr-cs-99030"> </a></td>
+<td>Oxigenoterapia</td>
+<td>Oxigenoterapia</td>
+<td>1.84</td>
+<td>1.6</td></tr>
+<tr><td style="white-space:nowrap">60845<a name="mcdts-g-mfr-cs-60845"> </a></td>
+<td>Tração vertebral mecânica</td>
+<td>Tração vertebral mecânica</td>
+<td>1.6</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">60866<a name="mcdts-g-mfr-cs-60866"> </a></td>
+<td>Tração vertebral motorizada</td>
+<td>Tração vertebral motorizada</td>
+<td>2</td>
+<td>1.4</td></tr>
+<tr><td style="white-space:nowrap">60824<a name="mcdts-g-mfr-cs-60824"> </a></td>
+<td>Pressões intermitentes</td>
+<td>Pressões intermitentes</td>
+<td>1.35</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">60825<a name="mcdts-g-mfr-cs-60825"> </a></td>
+<td>Pressões intermitentes sequenciais</td>
+<td>Pressões intermitentes sequenciais</td>
+<td>4.34</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">61104<a name="mcdts-g-mfr-cs-61104"> </a></td>
+<td>Fortalecimento muscular/ mobilização articular</td>
+<td>Fortalecimento muscular/ mobilização articular</td>
+<td>2</td>
+<td>1</td></tr>
+<tr><td style="white-space:nowrap">61002<a name="mcdts-g-mfr-cs-61002"> </a></td>
+<td>Treino de utilização de prótese do membro inferior</td>
+<td>Treino de utilização de prótese do membro inferior</td>
+<td>2</td>
+<td>1.8</td></tr>
+<tr><td style="white-space:nowrap">61004<a name="mcdts-g-mfr-cs-61004"> </a></td>
+<td>Treino de utilização de prótese do membro superior</td>
+<td>Treino de utilização de prótese do membro superior</td>
+<td>2</td>
+<td>1.6</td></tr>
+<tr><td style="white-space:nowrap">61024<a name="mcdts-g-mfr-cs-61024"> </a></td>
+<td>Treino de utilização de ortótese</td>
+<td>Treino de utilização de ortótese</td>
+<td>1.35</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">61087<a name="mcdts-g-mfr-cs-61087"> </a></td>
+<td>Treino em atividades de vida diária</td>
+<td>Treino em atividades de vida diária</td>
+<td>4</td>
+<td>4</td></tr>
+<tr><td style="white-space:nowrap">61061<a name="mcdts-g-mfr-cs-61061"> </a></td>
+<td>Terapia da fala</td>
+<td>Terapia da fala</td>
+<td>3.97</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">61062<a name="mcdts-g-mfr-cs-61062"> </a></td>
+<td>Qualquer dos códigos de terapia da fala quando em grupo</td>
+<td>Qualquer dos códigos de terapia da fala quando em grupo</td>
+<td>3.61</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">61066<a name="mcdts-g-mfr-cs-61066"> </a></td>
+<td>Terapia ocupacional</td>
+<td>Terapia ocupacional</td>
+<td>4</td>
+<td>4</td></tr>
+<tr><td style="white-space:nowrap">60349<a name="mcdts-g-mfr-cs-60349"> </a></td>
+<td>Manipulação</td>
+<td>Manipulação</td>
+<td>4</td>
+<td>4</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Jan 16, 2026 11:04+0000">2026-01-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

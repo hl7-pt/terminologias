@@ -1,0 +1,636 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Unidades de apresentação - JSON Representation - HL7 PT FHIR Implementation Guide: Terminologias v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.19"}
+    h3,h4,h5,h6{--heading-prefix:"6.19"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Terminologias</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="spec.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Unidades de apresentação</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Terminologias, publicado por HL7 Portugal. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 1.0.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/hl7-pt/terminologias/tree/master'>https://github.com/hl7-pt/terminologias/tree/master</a> e muda regularmente. Veja o <a href='http://hl7.pt/fhir/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-cparm-units-presentation-cs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-cparm-units-presentation-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-cparm-units-presentation-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Unidades de apresentação - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2026-01-16
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-cparm-units-presentation-cs.json" no-download="true">Raw json</a> | <a href="CodeSystem-cparm-units-presentation-cs.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R5/resource.html#XCodeSystem.id">id</a>" : "cparm-units-presentation-cs",
+  "<a href="http://hl7.org/fhir/R5/domainresource.html#XCodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narrativa gerada: CodeSystem cparm-units-presentation-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cparm-units-presentation-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccparm-units-presentation-cs\&quot;&gt; &lt;/a&gt;&lt;p&gt;Este  sistema de código &lt;code&gt;https://hl7-pt.github.io/terminologias/CodeSystem-cparm-units-presentation&lt;/code&gt; define o seguinte códigos:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definição&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15001000&lt;a name=\&quot;cparm-units-presentation-cs-15001000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aplicação&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é administrada após uma única operação de uma bomba doseadora, válvula ou outro mecanismo de dosagem equivalente.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15002000&lt;a name=\&quot;cparm-units-presentation-cs-15002000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ampola&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente de ampola.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15004000&lt;a name=\&quot;cparm-units-presentation-cs-15004000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aplicador&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único aplicador.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15005000&lt;a name=\&quot;cparm-units-presentation-cs-15005000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Saco&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único contêiner de bolsa.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15006000&lt;a name=\&quot;cparm-units-presentation-cs-15006000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Barrica&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente de barril.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15007000&lt;a name=\&quot;cparm-units-presentation-cs-15007000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blister&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único blister ou num blister de dose unitária.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15008000&lt;a name=\&quot;cparm-units-presentation-cs-15008000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bloco&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de bloco.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15009000&lt;a name=\&quot;cparm-units-presentation-cs-15009000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Frasco&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único recipiente de garrafa.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15011000&lt;a name=\&quot;cparm-units-presentation-cs-15011000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hóstia&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de hóstia.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15012000&lt;a name=\&quot;cparm-units-presentation-cs-15012000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cápsula&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de cápsula.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15013000&lt;a name=\&quot;cparm-units-presentation-cs-15013000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cartucho&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único recipiente de cartucho.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15024000&lt;a name=\&quot;cparm-units-presentation-cs-15024000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Goma para mascar&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de goma para mascar medicamentosa.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15016000&lt;a name=\&quot;cparm-units-presentation-cs-15016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Recipiente&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente, onde um termo de recipiente mais específico não é aplicável.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15017000&lt;a name=\&quot;cparm-units-presentation-cs-15017000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Copo-medida&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é administrada pelo enchimento de um único dispositivo de administração de copo.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15018000&lt;a name=\&quot;cparm-units-presentation-cs-15018000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cilindro&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único recipiente do tipo cilindro.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DISCO&lt;a name=\&quot;cparm-units-presentation-cs-DISCO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disco&lt;/td&gt;&lt;td&gt;−&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15021000&lt;a name=\&quot;cparm-units-presentation-cs-15021000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Penso&lt;/td&gt;&lt;td&gt;Unidade de apresentação utilizada para representar a quantidade de produto que se encontra numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de curativo.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15022000&lt;a name=\&quot;cparm-units-presentation-cs-15022000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gota&lt;/td&gt;&lt;td&gt;Unidade de apresentação utilizada para representar a quantidade de produto que é administrada numa única gota dispensada num conta-gotas ou dispositivo de administração equivalente.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ENEMA&lt;a name=\&quot;cparm-units-presentation-cs-ENEMA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Enema&lt;/td&gt;&lt;td&gt;−&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15025000&lt;a name=\&quot;cparm-units-presentation-cs-15025000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Implante&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de implante.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15026000&lt;a name=\&quot;cparm-units-presentation-cs-15026000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inalador&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único recipiente de inalador.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;KIT&lt;a name=\&quot;cparm-units-presentation-cs-KIT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kit&lt;/td&gt;&lt;td&gt;−&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15029000&lt;a name=\&quot;cparm-units-presentation-cs-15029000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pastilha&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de pastilha.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15036000&lt;a name=\&quot;cparm-units-presentation-cs-15036000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adesivo&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de adesivo.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15037000&lt;a name=\&quot;cparm-units-presentation-cs-15037000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Caneta&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único recipiente de canetas.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15039000&lt;a name=\&quot;cparm-units-presentation-cs-15039000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Óvulo&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de óvulo.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15041000&lt;a name=\&quot;cparm-units-presentation-cs-15041000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pipeta&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único dispositivo de administração de pipeta.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15042000&lt;a name=\&quot;cparm-units-presentation-cs-15042000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emplastro&lt;/td&gt;&lt;td&gt;Unidade de apresentação utilizada para representar a quantidade de produto que se encontra numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de emplastro.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SERINPRE&lt;a name=\&quot;cparm-units-presentation-cs-SERINPRE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Seringa pré-cheia&lt;/td&gt;&lt;td&gt;−&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PUFF&lt;a name=\&quot;cparm-units-presentation-cs-PUFF\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Puff&lt;/td&gt;&lt;td&gt;−&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15045000&lt;a name=\&quot;cparm-units-presentation-cs-15045000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Saqueta&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente em saqueta.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;VARETA&lt;a name=\&quot;cparm-units-presentation-cs-VARETA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vareta&lt;/td&gt;&lt;td&gt;−&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15051000&lt;a name=\&quot;cparm-units-presentation-cs-15051000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Supositório&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de supositório.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15054000&lt;a name=\&quot;cparm-units-presentation-cs-15054000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Comprimido&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de comprimido.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15056000&lt;a name=\&quot;cparm-units-presentation-cs-15056000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tampão&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de tampão.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15058000&lt;a name=\&quot;cparm-units-presentation-cs-15058000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bisnaga&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único recipiente de bisnaga.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15015000&lt;a name=\&quot;cparm-units-presentation-cs-15015000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Coleira&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de coleira.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15019000&lt;a name=\&quot;cparm-units-presentation-cs-15019000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dardo&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único recipiente de dardo.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15023000&lt;a name=\&quot;cparm-units-presentation-cs-15023000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Película&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de película.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15027000&lt;a name=\&quot;cparm-units-presentation-cs-15027000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inserto&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de inserto.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15028000&lt;a name=\&quot;cparm-units-presentation-cs-15028000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Boião&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único frasco.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15030000&lt;a name=\&quot;cparm-units-presentation-cs-15030000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Liofilizado&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de liofilizado.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15031000&lt;a name=\&quot;cparm-units-presentation-cs-15031000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Matriz&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de matriz.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15034000&lt;a name=\&quot;cparm-units-presentation-cs-15034000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Papel&lt;/td&gt;&lt;td&gt;Unidade de apresentação utilizada para representar a quantidade de produto que se encontra numa única entidade discreta em que a forma de dosagem farmacêutica é um tipo de papel.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15035000&lt;a name=\&quot;cparm-units-presentation-cs-15035000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pastilha mole&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de pastilha mole.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15038000&lt;a name=\&quot;cparm-units-presentation-cs-15038000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Berloque&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de berloque.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15040000&lt;a name=\&quot;cparm-units-presentation-cs-15040000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Grânulo&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de grânulo.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15043000&lt;a name=\&quot;cparm-units-presentation-cs-15043000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Suporte&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de suporte.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15044000&lt;a name=\&quot;cparm-units-presentation-cs-15044000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bolsa&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica ou recipiente é um tipo de bolsa.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15046000&lt;a name=\&quot;cparm-units-presentation-cs-15046000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Esponja&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de esponja.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15047000&lt;a name=\&quot;cparm-units-presentation-cs-15047000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Colher-medida&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é administrada pelo enchimento de um dispositivo de administração de uma única colher.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15048000&lt;a name=\&quot;cparm-units-presentation-cs-15048000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lápis&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de lápis.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15049000&lt;a name=\&quot;cparm-units-presentation-cs-15049000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Palhinha&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente de palhinha.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15050000&lt;a name=\&quot;cparm-units-presentation-cs-15050000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fita&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de fita.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15052000&lt;a name=\&quot;cparm-units-presentation-cs-15052000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Seringa&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único recipiente de seringa.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15053000&lt;a name=\&quot;cparm-units-presentation-cs-15053000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sistema&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de sistema.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15055000&lt;a name=\&quot;cparm-units-presentation-cs-15055000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Brinco&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de brinco.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15057000&lt;a name=\&quot;cparm-units-presentation-cs-15057000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fio&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de fio.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15060000&lt;a name=\&quot;cparm-units-presentation-cs-15060000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Frasco para injetáveis&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único frasco.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15033000&lt;a name=\&quot;cparm-units-presentation-cs-15033000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tampão&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que se encontra numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de tampão.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15062000&lt;a name=\&quot;cparm-units-presentation-cs-15062000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zaragatoa&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que se encontra numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de zaragatoa.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;15059000&lt;a name=\&quot;cparm-units-presentation-cs-15059000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Recipiente&lt;/td&gt;&lt;td&gt;Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.url">url</a>" : "https://hl7-pt.github.io/terminologias/CodeSystem-cparm-units-presentation",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.version">version</a>" : "1.0.0",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.name">name</a>" : "CPARMUnitsPresentationCS",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.title">title</a>" : "Unidades de apresentação",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.date">date</a>" : "2026-01-16T11:04:17+00:00",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.publisher">publisher</a>" : "HL7 Portugal",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "HL7 Portugal",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "http://hl7.pt"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "info@hl7.pt"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "HL7 Portugal",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "geral@hl7.pt",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.use">use</a>" : "work"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.description">description</a>" : "Unidades de apresentação de medicamentos",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "PT",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Portugal"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.author">author</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "Centro de Terminologias Clínicas"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.count">count</a>" : 62,
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15001000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Aplicação",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é administrada após uma única operação de uma bomba doseadora, válvula ou outro mecanismo de dosagem equivalente."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15002000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Ampola",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente de ampola."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15004000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Aplicador",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único aplicador."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15005000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Saco",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único contêiner de bolsa."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15006000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Barrica",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente de barril."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15007000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Blister",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único blister ou num blister de dose unitária."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15008000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Bloco",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de bloco."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15009000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Frasco",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único recipiente de garrafa."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15011000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Hóstia",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de hóstia."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15012000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Cápsula",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de cápsula."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15013000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Cartucho",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único recipiente de cartucho."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15024000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Goma para mascar",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de goma para mascar medicamentosa."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15016000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Recipiente",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente, onde um termo de recipiente mais específico não é aplicável."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15017000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Copo-medida",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é administrada pelo enchimento de um único dispositivo de administração de copo."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15018000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Cilindro",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único recipiente do tipo cilindro."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "DISCO",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Disco",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "−"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15021000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Penso",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Unidade de apresentação utilizada para representar a quantidade de produto que se encontra numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de curativo."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15022000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Gota",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Unidade de apresentação utilizada para representar a quantidade de produto que é administrada numa única gota dispensada num conta-gotas ou dispositivo de administração equivalente."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "ENEMA",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Enema",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "−"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15025000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Implante",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de implante."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15026000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Inalador",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único recipiente de inalador."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "KIT",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Kit",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "−"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15029000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Pastilha",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de pastilha."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15036000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Adesivo",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de adesivo."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15037000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Caneta",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único recipiente de canetas."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15039000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Óvulo",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de óvulo."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15041000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Pipeta",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único dispositivo de administração de pipeta."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15042000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Emplastro",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Unidade de apresentação utilizada para representar a quantidade de produto que se encontra numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de emplastro."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "SERINPRE",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Seringa pré-cheia",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "−"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "PUFF",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Puff",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "−"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15045000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Saqueta",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente em saqueta."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "VARETA",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Vareta",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "−"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15051000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Supositório",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de supositório."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15054000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Comprimido",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de comprimido."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15056000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Tampão",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de tampão."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15058000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Bisnaga",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único recipiente de bisnaga."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15015000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Coleira",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de coleira."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15019000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Dardo",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único recipiente de dardo."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15023000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Película",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de película."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15027000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Inserto",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de inserto."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15028000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Boião",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único frasco."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15030000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Liofilizado",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de liofilizado."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15031000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Matriz",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de matriz."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15034000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Papel",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Unidade de apresentação utilizada para representar a quantidade de produto que se encontra numa única entidade discreta em que a forma de dosagem farmacêutica é um tipo de papel."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15035000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Pastilha mole",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de pastilha mole."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15038000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Berloque",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de berloque."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15040000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Grânulo",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de grânulo."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15043000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Suporte",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de suporte."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15044000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Bolsa",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica ou recipiente é um tipo de bolsa."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15046000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Esponja",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de esponja."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15047000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Colher-medida",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é administrada pelo enchimento de um dispositivo de administração de uma única colher."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15048000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Lápis",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de lápis."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15049000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Palhinha",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente de palhinha."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15050000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Fita",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de fita."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15052000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Seringa",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único recipiente de seringa."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15053000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Sistema",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de sistema."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15055000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Brinco",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de brinco."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15057000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Fio",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de fio."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15060000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Frasco para injetáveis",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único frasco."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15033000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Tampão",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de tampão."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15062000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Zaragatoa",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de zaragatoa."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "15059000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Recipiente",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Jan 16, 2026 11:04+0000">2026-01-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

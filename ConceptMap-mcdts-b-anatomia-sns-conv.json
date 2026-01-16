@@ -1,0 +1,137 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "mcdts-b-anatomia-sns-conv",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ConceptMap mcdts-b-anatomia-sns-conv</b></p><a name=\"mcdts-b-anatomia-sns-conv\"> </a><a name=\"hcmcdts-b-anatomia-sns-conv\"> </a><p>Mapeamento de (não especificado) para (não especificado)</p><br/><p><b>Grupo 1 </b>Mapeamento de <code>https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-b-anatomia-cs</code> to <code>https://www.acss.pt</code></p><table class=\"grid\"><tr><td><b>Código fonte</b></td><td><b>Relacionamento</b></td><td><b>Código de destino</b></td></tr><tr><td>30510</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>008.6</td></tr><tr><td>30517</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>009.4</td></tr><tr><td>30597</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>010.8</td></tr><tr><td>30630</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>011.6</td></tr><tr><td>30650</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>012.4</td></tr><tr><td>30677</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>013.2</td></tr><tr><td>31037</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>014.0</td></tr><tr><td>31057</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>015.9</td></tr><tr><td>31077</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>016.7</td></tr><tr><td>31097</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>017.5</td></tr><tr><td>31107</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>005.1</td></tr><tr><td>31565</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>007.8</td></tr><tr><td>31590</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>006.0</td></tr></table></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-b-anatomia-sns-conv",
+  "version" : "1.0.0",
+  "name" : "MCDTS-b-anatomia-SNS-CONV",
+  "title" : "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área B - Anatomia Patológica ",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-11",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "group" : [{
+    "source" : "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-b-anatomia-cs",
+    "target" : "https://www.acss.pt",
+    "element" : [{
+      "code" : "30510",
+      "target" : [{
+        "code" : "008.6",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "30517",
+      "target" : [{
+        "code" : "009.4",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "30597",
+      "target" : [{
+        "code" : "010.8",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "30630",
+      "target" : [{
+        "code" : "011.6",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "30650",
+      "target" : [{
+        "code" : "012.4",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "30677",
+      "target" : [{
+        "code" : "013.2",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "31037",
+      "target" : [{
+        "code" : "014.0",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "31057",
+      "target" : [{
+        "code" : "015.9",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "31077",
+      "target" : [{
+        "code" : "016.7",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "31097",
+      "target" : [{
+        "code" : "017.5",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "31107",
+      "target" : [{
+        "code" : "005.1",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "31565",
+      "target" : [{
+        "code" : "007.8",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "31590",
+      "target" : [{
+        "code" : "006.0",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

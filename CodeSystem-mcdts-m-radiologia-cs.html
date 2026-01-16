@@ -1,0 +1,1208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MCDTS Tabela Da Área M - Tabela De Radiologia  - HL7 PT FHIR Implementation Guide: Terminologias v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.15"}
+    h3,h4,h5,h6{--heading-prefix:"6.15"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Terminologias</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="spec.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MCDTS Tabela Da Área M - Tabela De Radiologia </b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Terminologias, publicado por HL7 Portugal. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 1.0.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/hl7-pt/terminologias/tree/master'>https://github.com/hl7-pt/terminologias/tree/master</a> e muda regularmente. Veja o <a href='http://hl7.pt/fhir/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-mcdts-m-radiologia-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mcdts-m-radiologia-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mcdts-m-radiologia-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: MCDTS Tabela Da Área M - Tabela De Radiologia 
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-m-radiologia<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-m-radiologia"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-m-radiologia|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-01-16
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">MCDTSM_RadiologiaCS</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Tabela Da Área M - Tabela De Radiologia</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul><li>Este CodeSystem não é utilizado aqui; pode ser utilizado noutro local (por exemplo, em especificações e/ou implementações que utilizem este conteúdo)</li></ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="mcdts-m-radiologia-cs"> </a><a name="hcmcdts-m-radiologia-cs"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p>
+<table class="grid" data-fhir="generated"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr>
+<tr><td>preco</td>
+<td>preco</td>
+<td>decimal</td>
+<td>Preço do MCDT</td></tr>
+<tr><td>taxa</td>
+<td>taxa</td>
+<td>decimal</td>
+<td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-m-radiologia</code> define o seguinte códigos:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr>
+<tr><td style="white-space:nowrap">10004<a name="mcdts-m-radiologia-cs-10004"> </a></td>
+<td>Crânio, uma incidência</td>
+<td>Crânio, uma incidência</td>
+<td>5.5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10005<a name="mcdts-m-radiologia-cs-10005"> </a></td>
+<td>Crânio, duas incidências</td>
+<td>Crânio, duas incidências</td>
+<td>6</td>
+<td>1.4</td></tr>
+<tr><td style="white-space:nowrap">10010<a name="mcdts-m-radiologia-cs-10010"> </a></td>
+<td>Sela turca</td>
+<td>Sela turca</td>
+<td>3</td>
+<td>0.9</td></tr>
+<tr><td style="white-space:nowrap">10024<a name="mcdts-m-radiologia-cs-10024"> </a></td>
+<td>Mastóides, uma incidência</td>
+<td>Mastóides, uma incidência</td>
+<td>4.7</td>
+<td>1.2</td></tr>
+<tr><td style="white-space:nowrap">10025<a name="mcdts-m-radiologia-cs-10025"> </a></td>
+<td>Mastóides, duas incidências</td>
+<td>Mastóides, duas incidências</td>
+<td>7.84</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">10060<a name="mcdts-m-radiologia-cs-10060"> </a></td>
+<td>Buracos ópticos</td>
+<td>Buracos ópticos</td>
+<td>5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10070<a name="mcdts-m-radiologia-cs-10070"> </a></td>
+<td>Órbita, duas incidências</td>
+<td>Órbita, duas incidências</td>
+<td>5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10075<a name="mcdts-m-radiologia-cs-10075"> </a></td>
+<td>Globo ocular, deteção de corpo estranho</td>
+<td>Globo ocular, deteção de corpo estranho</td>
+<td>8</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">10103<a name="mcdts-m-radiologia-cs-10103"> </a></td>
+<td>Seios perinasais, uma incidência</td>
+<td>Seios perinasais, uma incidência</td>
+<td>5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10100<a name="mcdts-m-radiologia-cs-10100"> </a></td>
+<td>Seios perinasais, duas incidências</td>
+<td>Seios perinasais, duas incidências</td>
+<td>5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10111<a name="mcdts-m-radiologia-cs-10111"> </a></td>
+<td>Ossos da face, duas incidências</td>
+<td>Ossos da face, duas incidências</td>
+<td>7</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">10123<a name="mcdts-m-radiologia-cs-10123"> </a></td>
+<td>Arcadas zigomáticas, uma incidência unilateral</td>
+<td>Arcadas zigomáticas, uma incidência unilateral</td>
+<td>7</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">10120<a name="mcdts-m-radiologia-cs-10120"> </a></td>
+<td>Arcadas zigomáticas, uma incidência bilateral simultânea</td>
+<td>Arcadas zigomáticas, uma incidência bilateral simultânea</td>
+<td>7</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">10130<a name="mcdts-m-radiologia-cs-10130"> </a></td>
+<td>Ossos próprios do nariz</td>
+<td>Ossos próprios do nariz</td>
+<td>3</td>
+<td>0.9</td></tr>
+<tr><td style="white-space:nowrap">10135<a name="mcdts-m-radiologia-cs-10135"> </a></td>
+<td>Articulações temporo-maxilares boca aberta e fechada, unilateral</td>
+<td>Articulações temporo-maxilares boca aberta e fechada, unilateral</td>
+<td>8</td>
+<td>1.6</td></tr>
+<tr><td style="white-space:nowrap">10140<a name="mcdts-m-radiologia-cs-10140"> </a></td>
+<td>Articulações temporo-maxilares boca aberta e fechada bilateral</td>
+<td>Articulações temporo-maxilares boca aberta e fechada bilateral</td>
+<td>9.1</td>
+<td>1.8</td></tr>
+<tr><td style="white-space:nowrap">10150<a name="mcdts-m-radiologia-cs-10150"> </a></td>
+<td>Mandíbula, uma incidência</td>
+<td>Mandíbula, uma incidência</td>
+<td>3</td>
+<td>0.9</td></tr>
+<tr><td style="white-space:nowrap">10151<a name="mcdts-m-radiologia-cs-10151"> </a></td>
+<td>Mandíbula, duas incidências</td>
+<td>Mandíbula, duas incidências</td>
+<td>5.16</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10170<a name="mcdts-m-radiologia-cs-10170"> </a></td>
+<td>Ortopantomografia</td>
+<td>Ortopantomografia</td>
+<td>11</td>
+<td>2</td></tr>
+<tr><td style="white-space:nowrap">10190<a name="mcdts-m-radiologia-cs-10190"> </a></td>
+<td>Glândulas salivares para deteção de cálculos, uma incidência</td>
+<td>Glândulas salivares para deteção de cálculos, uma incidência</td>
+<td>5.5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10220<a name="mcdts-m-radiologia-cs-10220"> </a></td>
+<td>Cavum faríngeo, uma incidência</td>
+<td>Cavum faríngeo, uma incidência</td>
+<td>4</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">10225<a name="mcdts-m-radiologia-cs-10225"> </a></td>
+<td>Pescoço, partes moles, uma incidência</td>
+<td>Pescoço, partes moles, uma incidência</td>
+<td>4</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">10230<a name="mcdts-m-radiologia-cs-10230"> </a></td>
+<td>Pescoço, partes moles, duas incidências</td>
+<td>Pescoço, partes moles, duas incidências</td>
+<td>7</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">10270<a name="mcdts-m-radiologia-cs-10270"> </a></td>
+<td>Exames de cabeça e pescoço, cada incidência a mais</td>
+<td>Exames de cabeça e pescoço, cada incidência a mais</td>
+<td>2.5</td>
+<td>0.8</td></tr>
+<tr><td style="white-space:nowrap">10090<a name="mcdts-m-radiologia-cs-10090"> </a></td>
+<td>Dacriocistografia</td>
+<td>Dacriocistografia</td>
+<td>50</td>
+<td>10</td></tr>
+<tr><td style="white-space:nowrap">10203<a name="mcdts-m-radiologia-cs-10203"> </a></td>
+<td>Sialografia, cada glândula</td>
+<td>Sialografia, cada glândula</td>
+<td>50</td>
+<td>10</td></tr>
+<tr><td style="white-space:nowrap">10505<a name="mcdts-m-radiologia-cs-10505"> </a></td>
+<td>Charneira crânio-vertebral, duas incidências</td>
+<td>Charneira crânio-vertebral, duas incidências</td>
+<td>7.53</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">10520<a name="mcdts-m-radiologia-cs-10520"> </a></td>
+<td>Coluna cervical, duas incidências</td>
+<td>Coluna cervical, duas incidências</td>
+<td>6</td>
+<td>1.4</td></tr>
+<tr><td style="white-space:nowrap">10521<a name="mcdts-m-radiologia-cs-10521"> </a></td>
+<td>Coluna cervical, quatro incidências</td>
+<td>Coluna cervical, quatro incidências</td>
+<td>10.5</td>
+<td>2</td></tr>
+<tr><td style="white-space:nowrap">10523<a name="mcdts-m-radiologia-cs-10523"> </a></td>
+<td>Coluna cervical, inclinações laterais</td>
+<td>Coluna cervical, inclinações laterais</td>
+<td>5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10524<a name="mcdts-m-radiologia-cs-10524"> </a></td>
+<td>Coluna cervical, hiperflexão e hiperextensão</td>
+<td>Coluna cervical, hiperflexão e hiperextensão</td>
+<td>5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10525<a name="mcdts-m-radiologia-cs-10525"> </a></td>
+<td>Transição cervico-torácica, duas incidências</td>
+<td>Transição cervico-torácica, duas incidências</td>
+<td>4.8</td>
+<td>1.2</td></tr>
+<tr><td style="white-space:nowrap">10535<a name="mcdts-m-radiologia-cs-10535"> </a></td>
+<td>Coluna dorsal, duas incidências</td>
+<td>Coluna dorsal, duas incidências</td>
+<td>8</td>
+<td>1.6</td></tr>
+<tr><td style="white-space:nowrap">10545<a name="mcdts-m-radiologia-cs-10545"> </a></td>
+<td>Coluna lombar, duas incidências</td>
+<td>Coluna lombar, duas incidências</td>
+<td>7</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">10546<a name="mcdts-m-radiologia-cs-10546"> </a></td>
+<td>Coluna lombar, quatro incidências</td>
+<td>Coluna lombar, quatro incidências</td>
+<td>9</td>
+<td>1.8</td></tr>
+<tr><td style="white-space:nowrap">10550<a name="mcdts-m-radiologia-cs-10550"> </a></td>
+<td>Charneira lombo-sagrada, duas incidências</td>
+<td>Charneira lombo-sagrada, duas incidências</td>
+<td>7</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">10552<a name="mcdts-m-radiologia-cs-10552"> </a></td>
+<td>Coluna lombo-sagrada, inclinações laterais</td>
+<td>Coluna lombo-sagrada, inclinações laterais</td>
+<td>5.04</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10553<a name="mcdts-m-radiologia-cs-10553"> </a></td>
+<td>Coluna lombo-sagrada, hiperflexão e hiperextensão</td>
+<td>Coluna lombo-sagrada, hiperflexão e hiperextensão</td>
+<td>5.04</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10555<a name="mcdts-m-radiologia-cs-10555"> </a></td>
+<td>Coluna lombo-sagrada em carga, duas incidências</td>
+<td>Coluna lombo-sagrada em carga, duas incidências</td>
+<td>6</td>
+<td>1.4</td></tr>
+<tr><td style="white-space:nowrap">10600<a name="mcdts-m-radiologia-cs-10600"> </a></td>
+<td>Bacia</td>
+<td>Bacia</td>
+<td>5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10602<a name="mcdts-m-radiologia-cs-10602"> </a></td>
+<td>Bacia em carga</td>
+<td>Bacia em carga</td>
+<td>5.5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10592<a name="mcdts-m-radiologia-cs-10592"> </a></td>
+<td>Articulações sacro-ilíacas, uma incidência unilateral</td>
+<td>Articulações sacro-ilíacas, uma incidência unilateral</td>
+<td>3.5</td>
+<td>1</td></tr>
+<tr><td style="white-space:nowrap">10589<a name="mcdts-m-radiologia-cs-10589"> </a></td>
+<td>Articulações sacro-ilíacas, uma incidência bilateral</td>
+<td>Articulações sacro-ilíacas, uma incidência bilateral</td>
+<td>5.2</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10570<a name="mcdts-m-radiologia-cs-10570"> </a></td>
+<td>Sacro e cóccix, duas incidências</td>
+<td>Sacro e cóccix, duas incidências</td>
+<td>5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10584<a name="mcdts-m-radiologia-cs-10584"> </a></td>
+<td>Radiografia da Coluna, filme extralongo, uma incidência</td>
+<td>Radiografia da Coluna, filme extralongo, uma incidência</td>
+<td>9.1</td>
+<td>1.8</td></tr>
+<tr><td style="white-space:nowrap">10585<a name="mcdts-m-radiologia-cs-10585"> </a></td>
+<td>Radiografia da Coluna, filme extralongo, duas incidências</td>
+<td>Radiografia da Coluna, filme extralongo, duas incidências</td>
+<td>10.9</td>
+<td>2</td></tr>
+<tr><td style="white-space:nowrap">10599<a name="mcdts-m-radiologia-cs-10599"> </a></td>
+<td>Exames de coluna, cada incidência a mais</td>
+<td>Exames de coluna, cada incidência a mais</td>
+<td>4</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">10405<a name="mcdts-m-radiologia-cs-10405"> </a></td>
+<td>Tórax, uma incidência</td>
+<td>Tórax, uma incidência</td>
+<td>5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10406<a name="mcdts-m-radiologia-cs-10406"> </a></td>
+<td>Tórax, duas incidências</td>
+<td>Tórax, duas incidências</td>
+<td>9</td>
+<td>1.8</td></tr>
+<tr><td style="white-space:nowrap">10425<a name="mcdts-m-radiologia-cs-10425"> </a></td>
+<td>Grelha costal, uma incidência</td>
+<td>Grelha costal, uma incidência</td>
+<td>5.5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10430<a name="mcdts-m-radiologia-cs-10430"> </a></td>
+<td>Grelha costal, duas incidências</td>
+<td>Grelha costal, duas incidências</td>
+<td>7.5</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">10442<a name="mcdts-m-radiologia-cs-10442"> </a></td>
+<td>Esterno, uma incidência</td>
+<td>Esterno, uma incidência</td>
+<td>4</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">10440<a name="mcdts-m-radiologia-cs-10440"> </a></td>
+<td>Esterno, duas incidências</td>
+<td>Esterno, duas incidências</td>
+<td>6</td>
+<td>1.4</td></tr>
+<tr><td style="white-space:nowrap">10450<a name="mcdts-m-radiologia-cs-10450"> </a></td>
+<td>Articulações esterno-claviculares, duas incidências</td>
+<td>Articulações esterno-claviculares, duas incidências</td>
+<td>7</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">10470<a name="mcdts-m-radiologia-cs-10470"> </a></td>
+<td>Exames de tórax, cada incidência a mais (incidências complementares aos exames deste capítulo)</td>
+<td>Exames de tórax, cada incidência a mais (incidências complementares aos exames deste capítulo)</td>
+<td>3.4</td>
+<td>0.9</td></tr>
+<tr><td style="white-space:nowrap">13100<a name="mcdts-m-radiologia-cs-13100"> </a></td>
+<td>Mamografia bilateral, duas incidências por mama</td>
+<td>Mamografia bilateral, duas incidências por mama</td>
+<td>20.5</td>
+<td>4</td></tr>
+<tr><td style="white-space:nowrap">13105<a name="mcdts-m-radiologia-cs-13105"> </a></td>
+<td>Mamografia unilateral, duas incidências</td>
+<td>Mamografia unilateral, duas incidências</td>
+<td>20.9</td>
+<td>4</td></tr>
+<tr><td style="white-space:nowrap">13110<a name="mcdts-m-radiologia-cs-13110"> </a></td>
+<td>Mamografia, cada incidência a mais</td>
+<td>Mamografia, cada incidência a mais</td>
+<td>3</td>
+<td>0.9</td></tr>
+<tr><td style="white-space:nowrap">13120<a name="mcdts-m-radiologia-cs-13120"> </a></td>
+<td>Galactografia</td>
+<td>Galactografia</td>
+<td>38.03</td>
+<td>7</td></tr>
+<tr><td style="white-space:nowrap">13127<a name="mcdts-m-radiologia-cs-13127"> </a></td>
+<td>Estereotaxia, apoio a gestos de intervenção</td>
+<td>Estereotaxia, apoio a gestos de intervenção</td>
+<td></td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">11010<a name="mcdts-m-radiologia-cs-11010"> </a></td>
+<td>Abdómen simples, uma incidência</td>
+<td>Abdómen simples, uma incidência</td>
+<td>5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">11015<a name="mcdts-m-radiologia-cs-11015"> </a></td>
+<td>Abdómen simples, cada incidência mais</td>
+<td>Abdómen simples, cada incidência mais</td>
+<td>3.5</td>
+<td>1</td></tr>
+<tr><td style="white-space:nowrap">11110<a name="mcdts-m-radiologia-cs-11110"> </a></td>
+<td>Faringografia</td>
+<td>Faringografia</td>
+<td>6</td>
+<td>1.4</td></tr>
+<tr><td style="white-space:nowrap">11130<a name="mcdts-m-radiologia-cs-11130"> </a></td>
+<td>Trânsito esofágico</td>
+<td>Trânsito esofágico</td>
+<td>14</td>
+<td>2.5</td></tr>
+<tr><td style="white-space:nowrap">11140<a name="mcdts-m-radiologia-cs-11140"> </a></td>
+<td>Trânsito gastro-duodenal monocontraste (com ou sem pesquisa de hérnia do hiato)</td>
+<td>Trânsito gastro-duodenal monocontraste (com ou sem pesquisa de hérnia do hiato)</td>
+<td>18.5</td>
+<td>3.5</td></tr>
+<tr><td style="white-space:nowrap">11150<a name="mcdts-m-radiologia-cs-11150"> </a></td>
+<td>Trânsito gastro-duodenal duplo contraste (com ou sem pesquisa de hérnia do hiato)</td>
+<td>Trânsito gastro-duodenal duplo contraste (com ou sem pesquisa de hérnia do hiato)</td>
+<td>29.5</td>
+<td>5</td></tr>
+<tr><td style="white-space:nowrap">11170<a name="mcdts-m-radiologia-cs-11170"> </a></td>
+<td>Trânsito do intestino delgado (por ingestão)</td>
+<td>Trânsito do intestino delgado (por ingestão)</td>
+<td>37.49</td>
+<td>7</td></tr>
+<tr><td style="white-space:nowrap">11200<a name="mcdts-m-radiologia-cs-11200"> </a></td>
+<td>Clister opaco</td>
+<td>Clister opaco</td>
+<td>23</td>
+<td>4.5</td></tr>
+<tr><td style="white-space:nowrap">11210<a name="mcdts-m-radiologia-cs-11210"> </a></td>
+<td>Clister com duplo contraste</td>
+<td>Clister com duplo contraste</td>
+<td>37.76</td>
+<td>7</td></tr>
+<tr><td style="white-space:nowrap">11213<a name="mcdts-m-radiologia-cs-11213"> </a></td>
+<td>Clister por estoma cutâneo</td>
+<td>Clister por estoma cutâneo</td>
+<td></td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">11410<a name="mcdts-m-radiologia-cs-11410"> </a></td>
+<td>Radiografia simples da pélvis</td>
+<td>Radiografia simples da pélvis</td>
+<td>3</td>
+<td>0.9</td></tr>
+<tr><td style="white-space:nowrap">11495<a name="mcdts-m-radiologia-cs-11495"> </a></td>
+<td>Uretrocistografia ascendente com estudo pos-miccional (inclui contraste)</td>
+<td>Uretrocistografia ascendente com estudo pos-miccional (inclui contraste)</td>
+<td>42.02</td>
+<td>8</td></tr>
+<tr><td style="white-space:nowrap">11500<a name="mcdts-m-radiologia-cs-11500"> </a></td>
+<td>Cistografia retrógrada com estudo de refluxo vesico-ureteral e estudo per-miccional (inclui contraste)</td>
+<td>Cistografia retrógrada com estudo de refluxo vesico-ureteral e estudo per-miccional (inclui contraste)</td>
+<td></td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">10705<a name="mcdts-m-radiologia-cs-10705"> </a></td>
+<td>Clavícula, uma incidência</td>
+<td>Clavícula, uma incidência</td>
+<td>4</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">10706<a name="mcdts-m-radiologia-cs-10706"> </a></td>
+<td>Clavícula, duas incidências</td>
+<td>Clavícula, duas incidências</td>
+<td>7.29</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">10711<a name="mcdts-m-radiologia-cs-10711"> </a></td>
+<td>Omoplata, duas incidências</td>
+<td>Omoplata, duas incidências</td>
+<td>6.84</td>
+<td>1.4</td></tr>
+<tr><td style="white-space:nowrap">10720<a name="mcdts-m-radiologia-cs-10720"> </a></td>
+<td>Ombro, uma incidência</td>
+<td>Ombro, uma incidência</td>
+<td>3.8</td>
+<td>1</td></tr>
+<tr><td style="white-space:nowrap">10721<a name="mcdts-m-radiologia-cs-10721"> </a></td>
+<td>Ombro, duas incidências</td>
+<td>Ombro, duas incidências</td>
+<td>6.84</td>
+<td>1.4</td></tr>
+<tr><td style="white-space:nowrap">10730<a name="mcdts-m-radiologia-cs-10730"> </a></td>
+<td>Articulação acromio-clavicular, cada incidência</td>
+<td>Articulação acromio-clavicular, cada incidência</td>
+<td>3.42</td>
+<td>0.9</td></tr>
+<tr><td style="white-space:nowrap">10731<a name="mcdts-m-radiologia-cs-10731"> </a></td>
+<td>Articulação acromio-clavicular, bilateral</td>
+<td>Articulação acromio-clavicular, bilateral</td>
+<td>6.84</td>
+<td>1.4</td></tr>
+<tr><td style="white-space:nowrap">10740<a name="mcdts-m-radiologia-cs-10740"> </a></td>
+<td>Braço, duas incidências</td>
+<td>Braço, duas incidências</td>
+<td>4.5</td>
+<td>1.2</td></tr>
+<tr><td style="white-space:nowrap">10745<a name="mcdts-m-radiologia-cs-10745"> </a></td>
+<td>Cotovelo, duas incidências</td>
+<td>Cotovelo, duas incidências</td>
+<td>3.5</td>
+<td>1</td></tr>
+<tr><td style="white-space:nowrap">10760<a name="mcdts-m-radiologia-cs-10760"> </a></td>
+<td>Antebraço, duas incidências</td>
+<td>Antebraço, duas incidências</td>
+<td>4.5</td>
+<td>1.2</td></tr>
+<tr><td style="white-space:nowrap">10765<a name="mcdts-m-radiologia-cs-10765"> </a></td>
+<td>Punho, duas incidências</td>
+<td>Punho, duas incidências</td>
+<td>3.7</td>
+<td>1</td></tr>
+<tr><td style="white-space:nowrap">10781<a name="mcdts-m-radiologia-cs-10781"> </a></td>
+<td>Mão, duas incidências</td>
+<td>Mão, duas incidências</td>
+<td>4</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">10785<a name="mcdts-m-radiologia-cs-10785"> </a></td>
+<td>Dedos da mão, duas incidências</td>
+<td>Dedos da mão, duas incidências</td>
+<td>2</td>
+<td>0.65</td></tr>
+<tr><td style="white-space:nowrap">10787<a name="mcdts-m-radiologia-cs-10787"> </a></td>
+<td>Membro superior de criança, mínimo duas incidências</td>
+<td>Membro superior de criança, mínimo duas incidências</td>
+<td>4.02</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">10790<a name="mcdts-m-radiologia-cs-10790"> </a></td>
+<td>Idade óssea (mão e punho)</td>
+<td>Idade óssea (mão e punho)</td>
+<td>5.5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10795<a name="mcdts-m-radiologia-cs-10795"> </a></td>
+<td>Membros superiores, cada incidência a mais</td>
+<td>Membros superiores, cada incidência a mais</td>
+<td>2.5</td>
+<td>0.8</td></tr>
+<tr><td style="white-space:nowrap">10805<a name="mcdts-m-radiologia-cs-10805"> </a></td>
+<td>Anca unilateral, uma incidência</td>
+<td>Anca unilateral, uma incidência</td>
+<td>4</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">10806<a name="mcdts-m-radiologia-cs-10806"> </a></td>
+<td>Anca unilateral, duas incidências</td>
+<td>Anca unilateral, duas incidências</td>
+<td>7.5</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">10808<a name="mcdts-m-radiologia-cs-10808"> </a></td>
+<td>Anca unilateral em carga, uma incidência</td>
+<td>Anca unilateral em carga, uma incidência</td>
+<td>5.5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10810<a name="mcdts-m-radiologia-cs-10810"> </a></td>
+<td>Anca bilateral, uma incidência</td>
+<td>Anca bilateral, uma incidência</td>
+<td>3.66</td>
+<td>1</td></tr>
+<tr><td style="white-space:nowrap">10811<a name="mcdts-m-radiologia-cs-10811"> </a></td>
+<td>Anca bilateral, duas incidências</td>
+<td>Anca bilateral, duas incidências</td>
+<td>7.58</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">10813<a name="mcdts-m-radiologia-cs-10813"> </a></td>
+<td>Anca bilateral em carga, uma incidência</td>
+<td>Anca bilateral em carga, uma incidência</td>
+<td>5.5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10825<a name="mcdts-m-radiologia-cs-10825"> </a></td>
+<td>Coxa, duas incidências</td>
+<td>Coxa, duas incidências</td>
+<td>7</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">10830<a name="mcdts-m-radiologia-cs-10830"> </a></td>
+<td>Joelho, duas incidências</td>
+<td>Joelho, duas incidências</td>
+<td>4</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">10838<a name="mcdts-m-radiologia-cs-10838"> </a></td>
+<td>Radiografia dos joelhos em carga, duas incidências</td>
+<td>Radiografia dos joelhos em carga, duas incidências</td>
+<td>7.84</td>
+<td>1.5</td></tr>
+<tr><td style="white-space:nowrap">10840<a name="mcdts-m-radiologia-cs-10840"> </a></td>
+<td>Estudo axial da rótula, uma incidência</td>
+<td>Estudo axial da rótula, uma incidência</td>
+<td>3</td>
+<td>0.9</td></tr>
+<tr><td style="white-space:nowrap">10841<a name="mcdts-m-radiologia-cs-10841"> </a></td>
+<td>Estudo axial da rótula, três incidências</td>
+<td>Estudo axial da rótula, três incidências</td>
+<td>4.66</td>
+<td>1.2</td></tr>
+<tr><td style="white-space:nowrap">10850<a name="mcdts-m-radiologia-cs-10850"> </a></td>
+<td>Perna, duas incidências</td>
+<td>Perna, duas incidências</td>
+<td>6</td>
+<td>1.4</td></tr>
+<tr><td style="white-space:nowrap">10855<a name="mcdts-m-radiologia-cs-10855"> </a></td>
+<td>Tornozelo, duas incidências</td>
+<td>Tornozelo, duas incidências</td>
+<td>4</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">10857<a name="mcdts-m-radiologia-cs-10857"> </a></td>
+<td>Tornozelo em carga, duas incidências</td>
+<td>Tornozelo em carga, duas incidências</td>
+<td>5.5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10865<a name="mcdts-m-radiologia-cs-10865"> </a></td>
+<td>Pé, duas incidências</td>
+<td>Pé, duas incidências</td>
+<td>4</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">10870<a name="mcdts-m-radiologia-cs-10870"> </a></td>
+<td>Pé em carga, duas incidências</td>
+<td>Pé em carga, duas incidências</td>
+<td>5.5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10875<a name="mcdts-m-radiologia-cs-10875"> </a></td>
+<td>Calcâneo, duas incidências</td>
+<td>Calcâneo, duas incidências</td>
+<td>4</td>
+<td>1.1</td></tr>
+<tr><td style="white-space:nowrap">10880<a name="mcdts-m-radiologia-cs-10880"> </a></td>
+<td>Dedos do pé, duas incidências</td>
+<td>Dedos do pé, duas incidências</td>
+<td>2</td>
+<td>0.65</td></tr>
+<tr><td style="white-space:nowrap">10886<a name="mcdts-m-radiologia-cs-10886"> </a></td>
+<td>Membros inferiores de criança, duas incidências</td>
+<td>Membros inferiores de criança, duas incidências</td>
+<td>9.1</td>
+<td>1.8</td></tr>
+<tr><td style="white-space:nowrap">10890<a name="mcdts-m-radiologia-cs-10890"> </a></td>
+<td>Radiografia dos membros inferiores em filme extralongo</td>
+<td>Radiografia dos membros inferiores em filme extralongo</td>
+<td>10</td>
+<td>2</td></tr>
+<tr><td style="white-space:nowrap">10895<a name="mcdts-m-radiologia-cs-10895"> </a></td>
+<td>Radiometria dos membros inferiores por segmentos articulares</td>
+<td>Radiometria dos membros inferiores por segmentos articulares</td>
+<td>8.98</td>
+<td>1.6</td></tr>
+<tr><td style="white-space:nowrap">10900<a name="mcdts-m-radiologia-cs-10900"> </a></td>
+<td>Membros inferiores, cada incidência a mais</td>
+<td>Membros inferiores, cada incidência a mais</td>
+<td>3</td>
+<td>0.9</td></tr>
+<tr><td style="white-space:nowrap">10909<a name="mcdts-m-radiologia-cs-10909"> </a></td>
+<td>Esqueleto (criança)</td>
+<td>Esqueleto (criança)</td>
+<td>5.5</td>
+<td>1.3</td></tr>
+<tr><td style="white-space:nowrap">10913<a name="mcdts-m-radiologia-cs-10913"> </a></td>
+<td>Esqueleto (adulto) (considera as seguintes incidências indicativas: crânio, coluna cervical, dorsal e lombar - duas incidências; bacia, braços, antebraços, mãos, fémures, pernas e pés - uma incidência)</td>
+<td>Esqueleto (adulto) (considera as seguintes incidências indicativas: crânio, coluna cervical, dorsal e lombar - duas incidências; bacia, braços, antebraços, mãos, fémures, pernas e pés - uma incidência)</td>
+<td>23</td>
+<td>4.5</td></tr>
+<tr><td style="white-space:nowrap">10725<a name="mcdts-m-radiologia-cs-10725"> </a></td>
+<td>Artrografia do ombro</td>
+<td>Artrografia do ombro</td>
+<td>37.26</td>
+<td>7</td></tr>
+<tr><td style="white-space:nowrap">12001<a name="mcdts-m-radiologia-cs-12001"> </a></td>
+<td>Tomografia, cada plano</td>
+<td>Tomografia, cada plano</td>
+<td>8.87</td>
+<td>1.6</td></tr>
+<tr><td style="white-space:nowrap">17040<a name="mcdts-m-radiologia-cs-17040"> </a></td>
+<td>Ecografia da tiróide</td>
+<td>Ecografia da tiróide</td>
+<td>14.3</td>
+<td>4.5</td></tr>
+<tr><td style="white-space:nowrap">17060<a name="mcdts-m-radiologia-cs-17060"> </a></td>
+<td>Ecografia cervical (partes moles)</td>
+<td>Ecografia cervical (partes moles)</td>
+<td>14.3</td>
+<td>2.5</td></tr>
+<tr><td style="white-space:nowrap">17050<a name="mcdts-m-radiologia-cs-17050"> </a></td>
+<td>Ecografia das glândulas salivares</td>
+<td>Ecografia das glândulas salivares</td>
+<td>9.44</td>
+<td>1.8</td></tr>
+<tr><td style="white-space:nowrap">17105<a name="mcdts-m-radiologia-cs-17105"> </a></td>
+<td>Ecografia mamária</td>
+<td>Ecografia mamária</td>
+<td>14.5</td>
+<td>2.5</td></tr>
+<tr><td style="white-space:nowrap">17130<a name="mcdts-m-radiologia-cs-17130"> </a></td>
+<td>Ecografia do abdómen superior</td>
+<td>Ecografia do abdómen superior</td>
+<td>20.12</td>
+<td>4</td></tr>
+<tr><td style="white-space:nowrap">17135<a name="mcdts-m-radiologia-cs-17135"> </a></td>
+<td>Ecografia renal e supra-renal</td>
+<td>Ecografia renal e supra-renal</td>
+<td>20.16</td>
+<td>4</td></tr>
+<tr><td style="white-space:nowrap">17281<a name="mcdts-m-radiologia-cs-17281"> </a></td>
+<td>Ecografia ginecológica por via endocavitária (inclui avaliação pélvica via suprapúbica)</td>
+<td>Ecografia ginecológica por via endocavitária (inclui avaliação pélvica via suprapúbica)</td>
+<td>19.31</td>
+<td>3.5</td></tr>
+<tr><td style="white-space:nowrap">17150<a name="mcdts-m-radiologia-cs-17150"> </a></td>
+<td>Ecografia prostática e das vesículas seminais, por via endocavitária</td>
+<td>Ecografia prostática e das vesículas seminais, por via endocavitária</td>
+<td>23.47</td>
+<td>4.5</td></tr>
+<tr><td style="white-space:nowrap">17170<a name="mcdts-m-radiologia-cs-17170"> </a></td>
+<td>Ecografia vesical via supra púbica</td>
+<td>Ecografia vesical via supra púbica</td>
+<td>13.85</td>
+<td>2.5</td></tr>
+<tr><td style="white-space:nowrap">17165<a name="mcdts-m-radiologia-cs-17165"> </a></td>
+<td>Ecografia pós-miccional com cálculo do resíduo urinário</td>
+<td>Ecografia pós-miccional com cálculo do resíduo urinário</td>
+<td></td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">17155<a name="mcdts-m-radiologia-cs-17155"> </a></td>
+<td>Ecografia pélvica por via supra púbica</td>
+<td>Ecografia pélvica por via supra púbica</td>
+<td>19.31</td>
+<td>3.5</td></tr>
+<tr><td style="white-space:nowrap">17211<a name="mcdts-m-radiologia-cs-17211"> </a></td>
+<td>Ecografia escrotal</td>
+<td>Ecografia escrotal</td>
+<td>12.82</td>
+<td>2.5</td></tr>
+<tr><td style="white-space:nowrap">17143<a name="mcdts-m-radiologia-cs-17143"> </a></td>
+<td>Ecografia peniana</td>
+<td>Ecografia peniana</td>
+<td></td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">17190<a name="mcdts-m-radiologia-cs-17190"> </a></td>
+<td>Ecografia obstétrica 1º trimestre (idealmente realizada entre as 11 e as 13 semanas e seis dias)</td>
+<td>Ecografia obstétrica 1º trimestre (idealmente realizada entre as 11 e as 13 semanas e seis dias)</td>
+<td>70</td>
+<td>5</td></tr>
+<tr><td style="white-space:nowrap">17193<a name="mcdts-m-radiologia-cs-17193"> </a></td>
+<td>Ecografia obstétrica 1º trimestre, via endovaginal</td>
+<td>Ecografia obstétrica 1º trimestre, via endovaginal</td>
+<td></td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">17195<a name="mcdts-m-radiologia-cs-17195"> </a></td>
+<td>Ecografia obstétrica 2º trimestre, morfológica (idealmente realizada entre as 20 e as 22 semanas)</td>
+<td>Ecografia obstétrica 2º trimestre, morfológica (idealmente realizada entre as 20 e as 22 semanas)</td>
+<td>120</td>
+<td>14</td></tr>
+<tr><td style="white-space:nowrap">17197<a name="mcdts-m-radiologia-cs-17197"> </a></td>
+<td>Ecografia obstétrica 3º trimestre (idealmente realizada entre as 30 e as 32 semanas)</td>
+<td>Ecografia obstétrica 3º trimestre (idealmente realizada entre as 30 e as 32 semanas)</td>
+<td>70</td>
+<td>5</td></tr>
+<tr><td style="white-space:nowrap">17185<a name="mcdts-m-radiologia-cs-17185"> </a></td>
+<td>Ecografia de partes moles</td>
+<td>Ecografia de partes moles</td>
+<td>9.29</td>
+<td>1.8</td></tr>
+<tr><td style="white-space:nowrap">17230<a name="mcdts-m-radiologia-cs-17230"> </a></td>
+<td>Ecografia articular</td>
+<td>Ecografia articular</td>
+<td></td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">17290<a name="mcdts-m-radiologia-cs-17290"> </a></td>
+<td>Doppler dos vasos do pescoço</td>
+<td>Doppler dos vasos do pescoço</td>
+<td>23.17</td>
+<td>4.5</td></tr>
+<tr><td style="white-space:nowrap">17200<a name="mcdts-m-radiologia-cs-17200"> </a></td>
+<td>Doppler das veias sub-clávias</td>
+<td>Doppler das veias sub-clávias</td>
+<td>23.17</td>
+<td>4.5</td></tr>
+<tr><td style="white-space:nowrap">17205<a name="mcdts-m-radiologia-cs-17205"> </a></td>
+<td>Doppler abdominal, cada víscera ou território vascular</td>
+<td>Doppler abdominal, cada víscera ou território vascular</td>
+<td>23.17</td>
+<td>4.5</td></tr>
+<tr><td style="white-space:nowrap">17294<a name="mcdts-m-radiologia-cs-17294"> </a></td>
+<td>Doppler do sector arterial dos membros inferiores, cada membro</td>
+<td>Doppler do sector arterial dos membros inferiores, cada membro</td>
+<td>23.17</td>
+<td>4.5</td></tr>
+<tr><td style="white-space:nowrap">17298<a name="mcdts-m-radiologia-cs-17298"> </a></td>
+<td>Doppler do sector venoso dos membros inferiores, cada membro</td>
+<td>Doppler do sector venoso dos membros inferiores, cada membro</td>
+<td>23.87</td>
+<td>4.5</td></tr>
+<tr><td style="white-space:nowrap">17299<a name="mcdts-m-radiologia-cs-17299"> </a></td>
+<td>Doppler (adicional a qualquer dos exames de ecografia)</td>
+<td>Doppler (adicional a qualquer dos exames de ecografia)</td>
+<td>20.93</td>
+<td>4</td></tr>
+<tr><td style="white-space:nowrap">17405<a name="mcdts-m-radiologia-cs-17405"> </a></td>
+<td>Ecografia, apoio a gestos de intervenção</td>
+<td>Ecografia, apoio a gestos de intervenção</td>
+<td></td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">16010<a name="mcdts-m-radiologia-cs-16010"> </a></td>
+<td>TC do crânio</td>
+<td>TC do crânio</td>
+<td>74.18</td>
+<td>13</td></tr>
+<tr><td style="white-space:nowrap">16020<a name="mcdts-m-radiologia-cs-16020"> </a></td>
+<td>TC maxilo-facial</td>
+<td>TC maxilo-facial</td>
+<td>72.78</td>
+<td>13</td></tr>
+<tr><td style="white-space:nowrap">16030<a name="mcdts-m-radiologia-cs-16030"> </a></td>
+<td>TC do pescoço (partes moles)</td>
+<td>TC do pescoço (partes moles)</td>
+<td>74.88</td>
+<td>13</td></tr>
+<tr><td style="white-space:nowrap">16210<a name="mcdts-m-radiologia-cs-16210"> </a></td>
+<td>TC da sela turca</td>
+<td>TC da sela turca</td>
+<td>67.59</td>
+<td>13</td></tr>
+<tr><td style="white-space:nowrap">16220<a name="mcdts-m-radiologia-cs-16220"> </a></td>
+<td>TC das órbitas</td>
+<td>TC das órbitas</td>
+<td>70.79</td>
+<td>14</td></tr>
+<tr><td style="white-space:nowrap">16230<a name="mcdts-m-radiologia-cs-16230"> </a></td>
+<td>TC dos seios perinasais</td>
+<td>TC dos seios perinasais</td>
+<td>71.08</td>
+<td>13</td></tr>
+<tr><td style="white-space:nowrap">16240<a name="mcdts-m-radiologia-cs-16240"> </a></td>
+<td>TC dos ouvidos</td>
+<td>TC dos ouvidos</td>
+<td>69.98</td>
+<td>12</td></tr>
+<tr><td style="white-space:nowrap">16270<a name="mcdts-m-radiologia-cs-16270"> </a></td>
+<td>TC da faringe</td>
+<td>TC da faringe</td>
+<td>69.29</td>
+<td>12</td></tr>
+<tr><td style="white-space:nowrap">16041<a name="mcdts-m-radiologia-cs-16041"> </a></td>
+<td>TC da coluna cervical</td>
+<td>TC da coluna cervical</td>
+<td>77.67</td>
+<td>14</td></tr>
+<tr><td style="white-space:nowrap">16042<a name="mcdts-m-radiologia-cs-16042"> </a></td>
+<td>TC da coluna dorsal</td>
+<td>TC da coluna dorsal</td>
+<td>77.67</td>
+<td>14</td></tr>
+<tr><td style="white-space:nowrap">16043<a name="mcdts-m-radiologia-cs-16043"> </a></td>
+<td>TC da coluna lombar</td>
+<td>TC da coluna lombar</td>
+<td>77.67</td>
+<td>14</td></tr>
+<tr><td style="white-space:nowrap">16044<a name="mcdts-m-radiologia-cs-16044"> </a></td>
+<td>TC da coluna sacro-coccígea</td>
+<td>TC da coluna sacro-coccígea</td>
+<td>77.67</td>
+<td>14</td></tr>
+<tr><td style="white-space:nowrap">16045<a name="mcdts-m-radiologia-cs-16045"> </a></td>
+<td>TC da bacia</td>
+<td>TC da bacia</td>
+<td>77.67</td>
+<td>12</td></tr>
+<tr><td style="white-space:nowrap">16060<a name="mcdts-m-radiologia-cs-16060"> </a></td>
+<td>TC do tórax</td>
+<td>TC do tórax</td>
+<td>80.86</td>
+<td>14</td></tr>
+<tr><td style="white-space:nowrap">16070<a name="mcdts-m-radiologia-cs-16070"> </a></td>
+<td>TC do abdómen superior</td>
+<td>TC do abdómen superior</td>
+<td>90</td>
+<td>15</td></tr>
+<tr><td style="white-space:nowrap">16080<a name="mcdts-m-radiologia-cs-16080"> </a></td>
+<td>TC pélvica</td>
+<td>TC pélvica</td>
+<td>61.59</td>
+<td>12</td></tr>
+<tr><td style="white-space:nowrap">16085<a name="mcdts-m-radiologia-cs-16085"> </a></td>
+<td>TC, Colonografia (colonoscopia virtual)</td>
+<td>TC, Colonografia (colonoscopia virtual)</td>
+<td></td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">16101<a name="mcdts-m-radiologia-cs-16101"> </a></td>
+<td>TC do membro superior (cada segmento anatómico)</td>
+<td>TC do membro superior (cada segmento anatómico)</td>
+<td>65</td>
+<td>13</td></tr>
+<tr><td style="white-space:nowrap">16102<a name="mcdts-m-radiologia-cs-16102"> </a></td>
+<td>TC dos membros inferiores (cada segmento anatómico)</td>
+<td>TC dos membros inferiores (cada segmento anatómico)</td>
+<td>65</td>
+<td>13</td></tr>
+<tr><td style="white-space:nowrap">16110<a name="mcdts-m-radiologia-cs-16110"> </a></td>
+<td>TC articular, cada articulação</td>
+<td>TC articular, cada articulação</td>
+<td></td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">16325<a name="mcdts-m-radiologia-cs-16325"> </a></td>
+<td>TC, suplemento de contraste endovenoso</td>
+<td>TC, suplemento de contraste endovenoso</td>
+<td>12</td>
+<td>2</td></tr>
+<tr><td style="white-space:nowrap">16330<a name="mcdts-m-radiologia-cs-16330"> </a></td>
+<td>TC, contraste oral</td>
+<td>TC, contraste oral</td>
+<td>1.3</td>
+<td>0.35</td></tr>
+<tr><td style="white-space:nowrap">16340<a name="mcdts-m-radiologia-cs-16340"> </a></td>
+<td>TC, contraste rectal</td>
+<td>TC, contraste rectal</td>
+<td>3</td>
+<td>0.9</td></tr>
+<tr><td style="white-space:nowrap">16350<a name="mcdts-m-radiologia-cs-16350"> </a></td>
+<td>TC, adicional de Angio TC</td>
+<td>TC, adicional de Angio TC</td>
+<td></td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">16351<a name="mcdts-m-radiologia-cs-16351"> </a></td>
+<td>TC, adicional de estudo de perfusão</td>
+<td>TC, adicional de estudo de perfusão</td>
+<td></td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">16352<a name="mcdts-m-radiologia-cs-16352"> </a></td>
+<td>TC, adicional de injeção intra-tecal (mielo-TC)</td>
+<td>TC, adicional de injeção intra-tecal (mielo-TC)</td>
+<td></td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">16353<a name="mcdts-m-radiologia-cs-16353"> </a></td>
+<td>TC, adicional de artrografia (artro-TC)</td>
+<td>TC, adicional de artrografia (artro-TC)</td>
+<td></td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">15812<a name="mcdts-m-radiologia-cs-15812"> </a></td>
+<td>Biópsia percutânea guiada por técnica de imagem</td>
+<td>Biópsia percutânea guiada por técnica de imagem</td>
+<td>20</td>
+<td>4</td></tr>
+<tr><td style="white-space:nowrap">15813<a name="mcdts-m-radiologia-cs-15813"> </a></td>
+<td>Punção aspirativa para citologia guiada por técnica de imagem</td>
+<td>Punção aspirativa para citologia guiada por técnica de imagem</td>
+<td>20</td>
+<td>4</td></tr>
+<tr><td style="white-space:nowrap">15814<a name="mcdts-m-radiologia-cs-15814"> </a></td>
+<td>Drenagem de coleção ou abcesso guiada por técnica de imagem</td>
+<td>Drenagem de coleção ou abcesso guiada por técnica de imagem</td>
+<td></td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">15161<a name="mcdts-m-radiologia-cs-15161"> </a></td>
+<td>Punção para citologia</td>
+<td>Punção para citologia</td>
+<td>20</td>
+<td>4</td></tr>
+<tr><td style="white-space:nowrap">15171<a name="mcdts-m-radiologia-cs-15171"> </a></td>
+<td>Punção para histologia</td>
+<td>Punção para histologia</td>
+<td>50</td>
+<td>10</td></tr>
+<tr><td style="white-space:nowrap">10920<a name="mcdts-m-radiologia-cs-10920"> </a></td>
+<td>Osteodensitometria da coluna lombar</td>
+<td>Osteodensitometria da coluna lombar</td>
+<td>21.51</td>
+<td>4</td></tr>
+<tr><td style="white-space:nowrap">10930<a name="mcdts-m-radiologia-cs-10930"> </a></td>
+<td>Osteodensitometria do colo femoral</td>
+<td>Osteodensitometria do colo femoral</td>
+<td>19.17</td>
+<td>3.5</td></tr>
+<tr><td style="white-space:nowrap">10935<a name="mcdts-m-radiologia-cs-10935"> </a></td>
+<td>Osteodensitometria do punho</td>
+<td>Osteodensitometria do punho</td>
+<td>19.17</td>
+<td>3.5</td></tr>
+<tr><td style="white-space:nowrap">10955<a name="mcdts-m-radiologia-cs-10955"> </a></td>
+<td>Osteodensitometria da coluna lombar e do colo femoral</td>
+<td>Osteodensitometria da coluna lombar e do colo femoral</td>
+<td>23.22</td>
+<td>4.5</td></tr>
+<tr><td style="white-space:nowrap">32070<a name="mcdts-m-radiologia-cs-32070"> </a></td>
+<td>Anestesiar sem qualquer fator de risco</td>
+<td>Anestesiar sem qualquer fator de risco</td>
+<td>25</td>
+<td>25</td></tr>
+<tr><td style="white-space:nowrap">32080<a name="mcdts-m-radiologia-cs-32080"> </a></td>
+<td>Anestesiar com 1 fator de risco</td>
+<td>Anestesiar com 1 fator de risco</td>
+<td>35</td>
+<td>25</td></tr>
+<tr><td style="white-space:nowrap">32090<a name="mcdts-m-radiologia-cs-32090"> </a></td>
+<td>Anestesiar com 2 ou mais fatores de risco</td>
+<td>Anestesiar com 2 ou mais fatores de risco</td>
+<td>35</td>
+<td>25</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Jan 16, 2026 11:04+0000">2026-01-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

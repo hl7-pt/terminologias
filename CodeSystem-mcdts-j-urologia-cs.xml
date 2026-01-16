@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mcdts-j-urologia-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem mcdts-j-urologia-cs</b></p><a name="mcdts-j-urologia-cs"> </a><a name="hcmcdts-j-urologia-cs"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class="grid"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>preco</td><td>preco</td><td>decimal</td><td>Preço do MCDT</td></tr><tr><td>taxa</td><td>taxa</td><td>decimal</td><td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-j-urologia</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr><tr><td style="white-space:nowrap">90113<a name="mcdts-j-urologia-cs-90113"> </a></td><td>Colocação endoscópica retrógrada de tutor/cateter ureteral (unilateral)</td><td>Colocação endoscópica retrógrada de tutor/cateter ureteral (unilateral)</td><td>130.62</td><td>20</td></tr><tr><td style="white-space:nowrap">90403<a name="mcdts-j-urologia-cs-90403"> </a></td><td>Uretrocistoscopia</td><td>Uretrocistoscopia</td><td>60.48</td><td>13</td></tr><tr><td style="white-space:nowrap">90900<a name="mcdts-j-urologia-cs-90900"> </a></td><td>Cistometria</td><td>Cistometria</td><td>62.65</td><td>15</td></tr><tr><td style="white-space:nowrap">90967<a name="mcdts-j-urologia-cs-90967"> </a></td><td>Perfilometria uretral</td><td>Perfilometria uretral</td><td>52.99</td><td>13</td></tr><tr><td style="white-space:nowrap">90985<a name="mcdts-j-urologia-cs-90985"> </a></td><td>Urofluxometria</td><td>Urofluxometria</td><td>19.25</td><td>5</td></tr></table></div>
+  </text>
+  <url value="https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-j-urologia"/>
+  <version value="1.0.0"/>
+  <name value="MCDTSJ_UrologiaCS"/>
+  <title value="MCDTS Tabela Da Área J - Urologia"/>
+  <status value="active"/>
+  <date value="2026-01-16T11:04:17+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Tabela Da Área J - Urologia"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="ACSS"/>
+  </author>
+  <content value="complete"/>
+  <count value="5"/>
+  <property>
+    <code value="preco"/>
+    <description value="Preço do MCDT"/>
+    <type value="decimal"/>
+  </property>
+  <property>
+    <code value="taxa"/>
+    <description value="Taxa Moderadora"/>
+    <type value="decimal"/>
+  </property>
+  <concept>
+    <code value="90113"/>
+    <display value="Colocação endoscópica retrógrada de tutor/cateter ureteral (unilateral)"/>
+    <definition value="Colocação endoscópica retrógrada de tutor/cateter ureteral (unilateral)"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="130.62"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="20"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="90403"/>
+    <display value="Uretrocistoscopia"/>
+    <definition value="Uretrocistoscopia"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="60.48"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="13"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="90900"/>
+    <display value="Cistometria"/>
+    <definition value="Cistometria"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="62.65"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="15"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="90967"/>
+    <display value="Perfilometria uretral"/>
+    <definition value="Perfilometria uretral"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="52.99"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="13"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="90985"/>
+    <display value="Urofluxometria"/>
+    <definition value="Urofluxometria"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="19.25"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="5"/>
+    </property>
+  </concept>
+</CodeSystem>

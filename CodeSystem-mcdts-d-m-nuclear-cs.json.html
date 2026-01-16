@@ -1,0 +1,573 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MCDTS Tabela Da Área D - Medicina Nuclear - JSON Representation - HL7 PT FHIR Implementation Guide: Terminologias v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.7"}
+    h3,h4,h5,h6{--heading-prefix:"6.7"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Terminologias</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="spec.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MCDTS Tabela Da Área D - Medicina Nuclear</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Terminologias, publicado por HL7 Portugal. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 1.0.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/hl7-pt/terminologias/tree/master'>https://github.com/hl7-pt/terminologias/tree/master</a> e muda regularmente. Veja o <a href='http://hl7.pt/fhir/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-mcdts-d-m-nuclear-cs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-mcdts-d-m-nuclear-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mcdts-d-m-nuclear-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: MCDTS Tabela Da Área D - Medicina Nuclear - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2026-01-16
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-mcdts-d-m-nuclear-cs.json" no-download="true">Raw json</a> | <a href="CodeSystem-mcdts-d-m-nuclear-cs.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R5/resource.html#XCodeSystem.id">id</a>" : "mcdts-d-m-nuclear-cs",
+  "<a href="http://hl7.org/fhir/R5/domainresource.html#XCodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narrativa gerada: CodeSystem mcdts-d-m-nuclear-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;mcdts-d-m-nuclear-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcmcdts-d-m-nuclear-cs\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Propriedades&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Este sistema de códigos define as seguintes propriedades para os seus conceitos&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Nome&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Descrição&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;preco&lt;/td&gt;&lt;td&gt;preco&lt;/td&gt;&lt;td&gt;decimal&lt;/td&gt;&lt;td&gt;Preço do MCDT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;taxa&lt;/td&gt;&lt;td&gt;taxa&lt;/td&gt;&lt;td&gt;decimal&lt;/td&gt;&lt;td&gt;Taxa Moderadora&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Conceitos&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Este  sistema de código &lt;code&gt;https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-d-m-nuclear&lt;/code&gt; define o seguinte códigos:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definição&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;preco&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;taxa&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;58015&lt;a name=\&quot;mcdts-d-m-nuclear-cs-58015\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cintigrafia miocárdica de perfusão em esforço/stress farmacológico&lt;/td&gt;&lt;td&gt;Cintigrafia miocárdica de perfusão em esforço/stress farmacológico&lt;/td&gt;&lt;td&gt;148.54&lt;/td&gt;&lt;td&gt;27.5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;58020&lt;a name=\&quot;mcdts-d-m-nuclear-cs-58020\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cintigrafia miocárdica de perfusão em repouso&lt;/td&gt;&lt;td&gt;Cintigrafia miocárdica de perfusão em repouso&lt;/td&gt;&lt;td&gt;101.33&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;58050&lt;a name=\&quot;mcdts-d-m-nuclear-cs-58050\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tomografia cerebral com 99mTc-HMPAO&lt;/td&gt;&lt;td&gt;Tomografia cerebral com 99mTc-HMPAO&lt;/td&gt;&lt;td&gt;175&lt;/td&gt;&lt;td&gt;27.5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;58100&lt;a name=\&quot;mcdts-d-m-nuclear-cs-58100\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pesquisa de hemorragia digestiva&lt;/td&gt;&lt;td&gt;Pesquisa de hemorragia digestiva&lt;/td&gt;&lt;td&gt;70&lt;/td&gt;&lt;td&gt;17.5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;58105&lt;a name=\&quot;mcdts-d-m-nuclear-cs-58105\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cintigrafia das glândulas salivares&lt;/td&gt;&lt;td&gt;Cintigrafia das glândulas salivares&lt;/td&gt;&lt;td&gt;41.51&lt;/td&gt;&lt;td&gt;11&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;58115&lt;a name=\&quot;mcdts-d-m-nuclear-cs-58115\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cintigrafia hepatobiliar&lt;/td&gt;&lt;td&gt;Cintigrafia hepatobiliar&lt;/td&gt;&lt;td&gt;57.96&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;58120&lt;a name=\&quot;mcdts-d-m-nuclear-cs-58120\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cintigrafia hepatobiliar com estimulação vesicular&lt;/td&gt;&lt;td&gt;Cintigrafia hepatobiliar com estimulação vesicular&lt;/td&gt;&lt;td&gt;98.32&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;58125&lt;a name=\&quot;mcdts-d-m-nuclear-cs-58125\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cintigrafia hepática com glóbulos vermelhos marcados&lt;/td&gt;&lt;td&gt;Cintigrafia hepática com glóbulos vermelhos marcados&lt;/td&gt;&lt;td&gt;66.08&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;58130&lt;a name=\&quot;mcdts-d-m-nuclear-cs-58130\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pesquisa de divertículo Meckel&lt;/td&gt;&lt;td&gt;Pesquisa de divertículo Meckel&lt;/td&gt;&lt;td&gt;35&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;58150&lt;a name=\&quot;mcdts-d-m-nuclear-cs-58150\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cintigrafia óssea corpo inteiro&lt;/td&gt;&lt;td&gt;Cintigrafia óssea corpo inteiro&lt;/td&gt;&lt;td&gt;63&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;58200&lt;a name=\&quot;mcdts-d-m-nuclear-cs-58200\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cintigrafia pulmonar de perfusão&lt;/td&gt;&lt;td&gt;Cintigrafia pulmonar de perfusão&lt;/td&gt;&lt;td&gt;46.24&lt;/td&gt;&lt;td&gt;13&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;58205&lt;a name=\&quot;mcdts-d-m-nuclear-cs-58205\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cintigrafia pulmonar ventilação/inalação (a)&lt;/td&gt;&lt;td&gt;Cintigrafia pulmonar ventilação/inalação (a)&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;58260&lt;a name=\&quot;mcdts-d-m-nuclear-cs-58260\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cintigrafia da tiroideia&lt;/td&gt;&lt;td&gt;Cintigrafia da tiroideia&lt;/td&gt;&lt;td&gt;26.89&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;58305&lt;a name=\&quot;mcdts-d-m-nuclear-cs-58305\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Renograma&lt;/td&gt;&lt;td&gt;Renograma&lt;/td&gt;&lt;td&gt;43.82&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;58319&lt;a name=\&quot;mcdts-d-m-nuclear-cs-58319\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intervenção farmacológica - prova diurética (acresce ao Renograma)&lt;/td&gt;&lt;td&gt;Intervenção farmacológica - prova diurética (acresce ao Renograma)&lt;/td&gt;&lt;td&gt;7.56&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;58324&lt;a name=\&quot;mcdts-d-m-nuclear-cs-58324\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intervenção farmacológica - prova de captopril (acresce ao Renograma)&lt;/td&gt;&lt;td&gt;Intervenção farmacológica - prova de captopril (acresce ao Renograma)&lt;/td&gt;&lt;td&gt;28.77&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;58330&lt;a name=\&quot;mcdts-d-m-nuclear-cs-58330\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cistocintigrafia direta (a)&lt;/td&gt;&lt;td&gt;Cistocintigrafia direta (a)&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.url">url</a>" : "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-d-m-nuclear",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.version">version</a>" : "1.0.0",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.name">name</a>" : "MCDTSD_MNuclearCS",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.title">title</a>" : "MCDTS Tabela Da Área D - Medicina Nuclear",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.date">date</a>" : "2026-01-16T11:04:17+00:00",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.publisher">publisher</a>" : "HL7 Portugal",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "HL7 Portugal",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "http://hl7.pt"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "info@hl7.pt"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "HL7 Portugal",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "geral@hl7.pt",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.use">use</a>" : "work"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.description">description</a>" : "Tabela Da Área D - Medicina Nuclear",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "PT",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Portugal"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.author">author</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "ACSS"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.count">count</a>" : 17,
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property">property</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property.code">code</a>" : "preco",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property.description">description</a>" : "Preço do MCDT",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property.type">type</a>" : "decimal"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property.code">code</a>" : "taxa",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property.description">description</a>" : "Taxa Moderadora",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property.type">type</a>" : "decimal"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "58015",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Cintigrafia miocárdica de perfusão em esforço/stress farmacológico",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Cintigrafia miocárdica de perfusão em esforço/stress farmacológico",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 148.54
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 27.5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "58020",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Cintigrafia miocárdica de perfusão em repouso",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Cintigrafia miocárdica de perfusão em repouso",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 101.33
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 20
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "58050",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Tomografia cerebral com 99mTc-HMPAO",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Tomografia cerebral com 99mTc-HMPAO",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 175
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 27.5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "58100",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Pesquisa de hemorragia digestiva",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Pesquisa de hemorragia digestiva",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 70
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 17.5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "58105",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Cintigrafia das glândulas salivares",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Cintigrafia das glândulas salivares",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 41.51
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 11
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "58115",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Cintigrafia hepatobiliar",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Cintigrafia hepatobiliar",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 57.96
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 15
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "58120",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Cintigrafia hepatobiliar com estimulação vesicular",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Cintigrafia hepatobiliar com estimulação vesicular",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 98.32
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 20
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "58125",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Cintigrafia hepática com glóbulos vermelhos marcados",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Cintigrafia hepática com glóbulos vermelhos marcados",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 66.08
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 15
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "58130",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Pesquisa de divertículo Meckel",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Pesquisa de divertículo Meckel",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 35
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 10
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "58150",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Cintigrafia óssea corpo inteiro",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Cintigrafia óssea corpo inteiro",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 63
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 15
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "58200",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Cintigrafia pulmonar de perfusão",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Cintigrafia pulmonar de perfusão",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 46.24
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 13
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "58205",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Cintigrafia pulmonar ventilação/inalação (a)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Cintigrafia pulmonar ventilação/inalação (a)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "58260",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Cintigrafia da tiroideia",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Cintigrafia da tiroideia",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 26.89
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 7
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "58305",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Renograma",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Renograma",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 43.82
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 10
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "58319",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Intervenção farmacológica - prova diurética (acresce ao Renograma)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Intervenção farmacológica - prova diurética (acresce ao Renograma)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 7.56
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 2
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "58324",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Intervenção farmacológica - prova de captopril (acresce ao Renograma)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Intervenção farmacológica - prova de captopril (acresce ao Renograma)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 28.77
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 8
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "58330",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Cistocintigrafia direta (a)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Cistocintigrafia direta (a)"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Jan 16, 2026 11:04+0000">2026-01-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

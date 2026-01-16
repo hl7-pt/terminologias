@@ -1,0 +1,2936 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/CodeSystem/mcdts-m-radiologia-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mcdts-m-radiologia-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem mcdts-m-radiologia-cs</b></p><a name=\"mcdts-m-radiologia-cs\"> </a><a name=\"hcmcdts-m-radiologia-cs\"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class=\"grid\"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>preco</td><td>preco</td><td>decimal</td><td>Preço do MCDT</td></tr><tr><td>taxa</td><td>taxa</td><td>decimal</td><td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-m-radiologia</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr><tr><td style=\"white-space:nowrap\">10004<a name=\"mcdts-m-radiologia-cs-10004\"> </a></td><td>Crânio, uma incidência</td><td>Crânio, uma incidência</td><td>5.5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10005<a name=\"mcdts-m-radiologia-cs-10005\"> </a></td><td>Crânio, duas incidências</td><td>Crânio, duas incidências</td><td>6</td><td>1.4</td></tr><tr><td style=\"white-space:nowrap\">10010<a name=\"mcdts-m-radiologia-cs-10010\"> </a></td><td>Sela turca</td><td>Sela turca</td><td>3</td><td>0.9</td></tr><tr><td style=\"white-space:nowrap\">10024<a name=\"mcdts-m-radiologia-cs-10024\"> </a></td><td>Mastóides, uma incidência</td><td>Mastóides, uma incidência</td><td>4.7</td><td>1.2</td></tr><tr><td style=\"white-space:nowrap\">10025<a name=\"mcdts-m-radiologia-cs-10025\"> </a></td><td>Mastóides, duas incidências</td><td>Mastóides, duas incidências</td><td>7.84</td><td>1.5</td></tr><tr><td style=\"white-space:nowrap\">10060<a name=\"mcdts-m-radiologia-cs-10060\"> </a></td><td>Buracos ópticos</td><td>Buracos ópticos</td><td>5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10070<a name=\"mcdts-m-radiologia-cs-10070\"> </a></td><td>Órbita, duas incidências</td><td>Órbita, duas incidências</td><td>5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10075<a name=\"mcdts-m-radiologia-cs-10075\"> </a></td><td>Globo ocular, deteção de corpo estranho</td><td>Globo ocular, deteção de corpo estranho</td><td>8</td><td>1.5</td></tr><tr><td style=\"white-space:nowrap\">10103<a name=\"mcdts-m-radiologia-cs-10103\"> </a></td><td>Seios perinasais, uma incidência</td><td>Seios perinasais, uma incidência</td><td>5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10100<a name=\"mcdts-m-radiologia-cs-10100\"> </a></td><td>Seios perinasais, duas incidências</td><td>Seios perinasais, duas incidências</td><td>5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10111<a name=\"mcdts-m-radiologia-cs-10111\"> </a></td><td>Ossos da face, duas incidências</td><td>Ossos da face, duas incidências</td><td>7</td><td>1.5</td></tr><tr><td style=\"white-space:nowrap\">10123<a name=\"mcdts-m-radiologia-cs-10123\"> </a></td><td>Arcadas zigomáticas, uma incidência unilateral</td><td>Arcadas zigomáticas, uma incidência unilateral</td><td>7</td><td>1.5</td></tr><tr><td style=\"white-space:nowrap\">10120<a name=\"mcdts-m-radiologia-cs-10120\"> </a></td><td>Arcadas zigomáticas, uma incidência bilateral simultânea</td><td>Arcadas zigomáticas, uma incidência bilateral simultânea</td><td>7</td><td>1.5</td></tr><tr><td style=\"white-space:nowrap\">10130<a name=\"mcdts-m-radiologia-cs-10130\"> </a></td><td>Ossos próprios do nariz</td><td>Ossos próprios do nariz</td><td>3</td><td>0.9</td></tr><tr><td style=\"white-space:nowrap\">10135<a name=\"mcdts-m-radiologia-cs-10135\"> </a></td><td>Articulações temporo-maxilares boca aberta e fechada, unilateral</td><td>Articulações temporo-maxilares boca aberta e fechada, unilateral</td><td>8</td><td>1.6</td></tr><tr><td style=\"white-space:nowrap\">10140<a name=\"mcdts-m-radiologia-cs-10140\"> </a></td><td>Articulações temporo-maxilares boca aberta e fechada bilateral</td><td>Articulações temporo-maxilares boca aberta e fechada bilateral</td><td>9.1</td><td>1.8</td></tr><tr><td style=\"white-space:nowrap\">10150<a name=\"mcdts-m-radiologia-cs-10150\"> </a></td><td>Mandíbula, uma incidência</td><td>Mandíbula, uma incidência</td><td>3</td><td>0.9</td></tr><tr><td style=\"white-space:nowrap\">10151<a name=\"mcdts-m-radiologia-cs-10151\"> </a></td><td>Mandíbula, duas incidências</td><td>Mandíbula, duas incidências</td><td>5.16</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10170<a name=\"mcdts-m-radiologia-cs-10170\"> </a></td><td>Ortopantomografia</td><td>Ortopantomografia</td><td>11</td><td>2</td></tr><tr><td style=\"white-space:nowrap\">10190<a name=\"mcdts-m-radiologia-cs-10190\"> </a></td><td>Glândulas salivares para deteção de cálculos, uma incidência</td><td>Glândulas salivares para deteção de cálculos, uma incidência</td><td>5.5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10220<a name=\"mcdts-m-radiologia-cs-10220\"> </a></td><td>Cavum faríngeo, uma incidência</td><td>Cavum faríngeo, uma incidência</td><td>4</td><td>1.1</td></tr><tr><td style=\"white-space:nowrap\">10225<a name=\"mcdts-m-radiologia-cs-10225\"> </a></td><td>Pescoço, partes moles, uma incidência</td><td>Pescoço, partes moles, uma incidência</td><td>4</td><td>1.1</td></tr><tr><td style=\"white-space:nowrap\">10230<a name=\"mcdts-m-radiologia-cs-10230\"> </a></td><td>Pescoço, partes moles, duas incidências</td><td>Pescoço, partes moles, duas incidências</td><td>7</td><td>1.5</td></tr><tr><td style=\"white-space:nowrap\">10270<a name=\"mcdts-m-radiologia-cs-10270\"> </a></td><td>Exames de cabeça e pescoço, cada incidência a mais</td><td>Exames de cabeça e pescoço, cada incidência a mais</td><td>2.5</td><td>0.8</td></tr><tr><td style=\"white-space:nowrap\">10090<a name=\"mcdts-m-radiologia-cs-10090\"> </a></td><td>Dacriocistografia</td><td>Dacriocistografia</td><td>50</td><td>10</td></tr><tr><td style=\"white-space:nowrap\">10203<a name=\"mcdts-m-radiologia-cs-10203\"> </a></td><td>Sialografia, cada glândula</td><td>Sialografia, cada glândula</td><td>50</td><td>10</td></tr><tr><td style=\"white-space:nowrap\">10505<a name=\"mcdts-m-radiologia-cs-10505\"> </a></td><td>Charneira crânio-vertebral, duas incidências</td><td>Charneira crânio-vertebral, duas incidências</td><td>7.53</td><td>1.5</td></tr><tr><td style=\"white-space:nowrap\">10520<a name=\"mcdts-m-radiologia-cs-10520\"> </a></td><td>Coluna cervical, duas incidências</td><td>Coluna cervical, duas incidências</td><td>6</td><td>1.4</td></tr><tr><td style=\"white-space:nowrap\">10521<a name=\"mcdts-m-radiologia-cs-10521\"> </a></td><td>Coluna cervical, quatro incidências</td><td>Coluna cervical, quatro incidências</td><td>10.5</td><td>2</td></tr><tr><td style=\"white-space:nowrap\">10523<a name=\"mcdts-m-radiologia-cs-10523\"> </a></td><td>Coluna cervical, inclinações laterais</td><td>Coluna cervical, inclinações laterais</td><td>5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10524<a name=\"mcdts-m-radiologia-cs-10524\"> </a></td><td>Coluna cervical, hiperflexão e hiperextensão</td><td>Coluna cervical, hiperflexão e hiperextensão</td><td>5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10525<a name=\"mcdts-m-radiologia-cs-10525\"> </a></td><td>Transição cervico-torácica, duas incidências</td><td>Transição cervico-torácica, duas incidências</td><td>4.8</td><td>1.2</td></tr><tr><td style=\"white-space:nowrap\">10535<a name=\"mcdts-m-radiologia-cs-10535\"> </a></td><td>Coluna dorsal, duas incidências</td><td>Coluna dorsal, duas incidências</td><td>8</td><td>1.6</td></tr><tr><td style=\"white-space:nowrap\">10545<a name=\"mcdts-m-radiologia-cs-10545\"> </a></td><td>Coluna lombar, duas incidências</td><td>Coluna lombar, duas incidências</td><td>7</td><td>1.5</td></tr><tr><td style=\"white-space:nowrap\">10546<a name=\"mcdts-m-radiologia-cs-10546\"> </a></td><td>Coluna lombar, quatro incidências</td><td>Coluna lombar, quatro incidências</td><td>9</td><td>1.8</td></tr><tr><td style=\"white-space:nowrap\">10550<a name=\"mcdts-m-radiologia-cs-10550\"> </a></td><td>Charneira lombo-sagrada, duas incidências</td><td>Charneira lombo-sagrada, duas incidências</td><td>7</td><td>1.5</td></tr><tr><td style=\"white-space:nowrap\">10552<a name=\"mcdts-m-radiologia-cs-10552\"> </a></td><td>Coluna lombo-sagrada, inclinações laterais</td><td>Coluna lombo-sagrada, inclinações laterais</td><td>5.04</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10553<a name=\"mcdts-m-radiologia-cs-10553\"> </a></td><td>Coluna lombo-sagrada, hiperflexão e hiperextensão</td><td>Coluna lombo-sagrada, hiperflexão e hiperextensão</td><td>5.04</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10555<a name=\"mcdts-m-radiologia-cs-10555\"> </a></td><td>Coluna lombo-sagrada em carga, duas incidências</td><td>Coluna lombo-sagrada em carga, duas incidências</td><td>6</td><td>1.4</td></tr><tr><td style=\"white-space:nowrap\">10600<a name=\"mcdts-m-radiologia-cs-10600\"> </a></td><td>Bacia</td><td>Bacia</td><td>5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10602<a name=\"mcdts-m-radiologia-cs-10602\"> </a></td><td>Bacia em carga</td><td>Bacia em carga</td><td>5.5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10592<a name=\"mcdts-m-radiologia-cs-10592\"> </a></td><td>Articulações sacro-ilíacas, uma incidência unilateral</td><td>Articulações sacro-ilíacas, uma incidência unilateral</td><td>3.5</td><td>1</td></tr><tr><td style=\"white-space:nowrap\">10589<a name=\"mcdts-m-radiologia-cs-10589\"> </a></td><td>Articulações sacro-ilíacas, uma incidência bilateral</td><td>Articulações sacro-ilíacas, uma incidência bilateral</td><td>5.2</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10570<a name=\"mcdts-m-radiologia-cs-10570\"> </a></td><td>Sacro e cóccix, duas incidências</td><td>Sacro e cóccix, duas incidências</td><td>5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10584<a name=\"mcdts-m-radiologia-cs-10584\"> </a></td><td>Radiografia da Coluna, filme extralongo, uma incidência</td><td>Radiografia da Coluna, filme extralongo, uma incidência</td><td>9.1</td><td>1.8</td></tr><tr><td style=\"white-space:nowrap\">10585<a name=\"mcdts-m-radiologia-cs-10585\"> </a></td><td>Radiografia da Coluna, filme extralongo, duas incidências</td><td>Radiografia da Coluna, filme extralongo, duas incidências</td><td>10.9</td><td>2</td></tr><tr><td style=\"white-space:nowrap\">10599<a name=\"mcdts-m-radiologia-cs-10599\"> </a></td><td>Exames de coluna, cada incidência a mais</td><td>Exames de coluna, cada incidência a mais</td><td>4</td><td>1.1</td></tr><tr><td style=\"white-space:nowrap\">10405<a name=\"mcdts-m-radiologia-cs-10405\"> </a></td><td>Tórax, uma incidência</td><td>Tórax, uma incidência</td><td>5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10406<a name=\"mcdts-m-radiologia-cs-10406\"> </a></td><td>Tórax, duas incidências</td><td>Tórax, duas incidências</td><td>9</td><td>1.8</td></tr><tr><td style=\"white-space:nowrap\">10425<a name=\"mcdts-m-radiologia-cs-10425\"> </a></td><td>Grelha costal, uma incidência</td><td>Grelha costal, uma incidência</td><td>5.5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10430<a name=\"mcdts-m-radiologia-cs-10430\"> </a></td><td>Grelha costal, duas incidências</td><td>Grelha costal, duas incidências</td><td>7.5</td><td>1.5</td></tr><tr><td style=\"white-space:nowrap\">10442<a name=\"mcdts-m-radiologia-cs-10442\"> </a></td><td>Esterno, uma incidência</td><td>Esterno, uma incidência</td><td>4</td><td>1.1</td></tr><tr><td style=\"white-space:nowrap\">10440<a name=\"mcdts-m-radiologia-cs-10440\"> </a></td><td>Esterno, duas incidências</td><td>Esterno, duas incidências</td><td>6</td><td>1.4</td></tr><tr><td style=\"white-space:nowrap\">10450<a name=\"mcdts-m-radiologia-cs-10450\"> </a></td><td>Articulações esterno-claviculares, duas incidências</td><td>Articulações esterno-claviculares, duas incidências</td><td>7</td><td>1.5</td></tr><tr><td style=\"white-space:nowrap\">10470<a name=\"mcdts-m-radiologia-cs-10470\"> </a></td><td>Exames de tórax, cada incidência a mais (incidências complementares aos exames deste capítulo)</td><td>Exames de tórax, cada incidência a mais (incidências complementares aos exames deste capítulo)</td><td>3.4</td><td>0.9</td></tr><tr><td style=\"white-space:nowrap\">13100<a name=\"mcdts-m-radiologia-cs-13100\"> </a></td><td>Mamografia bilateral, duas incidências por mama</td><td>Mamografia bilateral, duas incidências por mama</td><td>20.5</td><td>4</td></tr><tr><td style=\"white-space:nowrap\">13105<a name=\"mcdts-m-radiologia-cs-13105\"> </a></td><td>Mamografia unilateral, duas incidências</td><td>Mamografia unilateral, duas incidências</td><td>20.9</td><td>4</td></tr><tr><td style=\"white-space:nowrap\">13110<a name=\"mcdts-m-radiologia-cs-13110\"> </a></td><td>Mamografia, cada incidência a mais</td><td>Mamografia, cada incidência a mais</td><td>3</td><td>0.9</td></tr><tr><td style=\"white-space:nowrap\">13120<a name=\"mcdts-m-radiologia-cs-13120\"> </a></td><td>Galactografia</td><td>Galactografia</td><td>38.03</td><td>7</td></tr><tr><td style=\"white-space:nowrap\">13127<a name=\"mcdts-m-radiologia-cs-13127\"> </a></td><td>Estereotaxia, apoio a gestos de intervenção</td><td>Estereotaxia, apoio a gestos de intervenção</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">11010<a name=\"mcdts-m-radiologia-cs-11010\"> </a></td><td>Abdómen simples, uma incidência</td><td>Abdómen simples, uma incidência</td><td>5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">11015<a name=\"mcdts-m-radiologia-cs-11015\"> </a></td><td>Abdómen simples, cada incidência mais</td><td>Abdómen simples, cada incidência mais</td><td>3.5</td><td>1</td></tr><tr><td style=\"white-space:nowrap\">11110<a name=\"mcdts-m-radiologia-cs-11110\"> </a></td><td>Faringografia</td><td>Faringografia</td><td>6</td><td>1.4</td></tr><tr><td style=\"white-space:nowrap\">11130<a name=\"mcdts-m-radiologia-cs-11130\"> </a></td><td>Trânsito esofágico</td><td>Trânsito esofágico</td><td>14</td><td>2.5</td></tr><tr><td style=\"white-space:nowrap\">11140<a name=\"mcdts-m-radiologia-cs-11140\"> </a></td><td>Trânsito gastro-duodenal monocontraste (com ou sem pesquisa de hérnia do hiato)</td><td>Trânsito gastro-duodenal monocontraste (com ou sem pesquisa de hérnia do hiato)</td><td>18.5</td><td>3.5</td></tr><tr><td style=\"white-space:nowrap\">11150<a name=\"mcdts-m-radiologia-cs-11150\"> </a></td><td>Trânsito gastro-duodenal duplo contraste (com ou sem pesquisa de hérnia do hiato)</td><td>Trânsito gastro-duodenal duplo contraste (com ou sem pesquisa de hérnia do hiato)</td><td>29.5</td><td>5</td></tr><tr><td style=\"white-space:nowrap\">11170<a name=\"mcdts-m-radiologia-cs-11170\"> </a></td><td>Trânsito do intestino delgado (por ingestão)</td><td>Trânsito do intestino delgado (por ingestão)</td><td>37.49</td><td>7</td></tr><tr><td style=\"white-space:nowrap\">11200<a name=\"mcdts-m-radiologia-cs-11200\"> </a></td><td>Clister opaco</td><td>Clister opaco</td><td>23</td><td>4.5</td></tr><tr><td style=\"white-space:nowrap\">11210<a name=\"mcdts-m-radiologia-cs-11210\"> </a></td><td>Clister com duplo contraste</td><td>Clister com duplo contraste</td><td>37.76</td><td>7</td></tr><tr><td style=\"white-space:nowrap\">11213<a name=\"mcdts-m-radiologia-cs-11213\"> </a></td><td>Clister por estoma cutâneo</td><td>Clister por estoma cutâneo</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">11410<a name=\"mcdts-m-radiologia-cs-11410\"> </a></td><td>Radiografia simples da pélvis</td><td>Radiografia simples da pélvis</td><td>3</td><td>0.9</td></tr><tr><td style=\"white-space:nowrap\">11495<a name=\"mcdts-m-radiologia-cs-11495\"> </a></td><td>Uretrocistografia ascendente com estudo pos-miccional (inclui contraste)</td><td>Uretrocistografia ascendente com estudo pos-miccional (inclui contraste)</td><td>42.02</td><td>8</td></tr><tr><td style=\"white-space:nowrap\">11500<a name=\"mcdts-m-radiologia-cs-11500\"> </a></td><td>Cistografia retrógrada com estudo de refluxo vesico-ureteral e estudo per-miccional (inclui contraste)</td><td>Cistografia retrógrada com estudo de refluxo vesico-ureteral e estudo per-miccional (inclui contraste)</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">10705<a name=\"mcdts-m-radiologia-cs-10705\"> </a></td><td>Clavícula, uma incidência</td><td>Clavícula, uma incidência</td><td>4</td><td>1.1</td></tr><tr><td style=\"white-space:nowrap\">10706<a name=\"mcdts-m-radiologia-cs-10706\"> </a></td><td>Clavícula, duas incidências</td><td>Clavícula, duas incidências</td><td>7.29</td><td>1.5</td></tr><tr><td style=\"white-space:nowrap\">10711<a name=\"mcdts-m-radiologia-cs-10711\"> </a></td><td>Omoplata, duas incidências</td><td>Omoplata, duas incidências</td><td>6.84</td><td>1.4</td></tr><tr><td style=\"white-space:nowrap\">10720<a name=\"mcdts-m-radiologia-cs-10720\"> </a></td><td>Ombro, uma incidência</td><td>Ombro, uma incidência</td><td>3.8</td><td>1</td></tr><tr><td style=\"white-space:nowrap\">10721<a name=\"mcdts-m-radiologia-cs-10721\"> </a></td><td>Ombro, duas incidências</td><td>Ombro, duas incidências</td><td>6.84</td><td>1.4</td></tr><tr><td style=\"white-space:nowrap\">10730<a name=\"mcdts-m-radiologia-cs-10730\"> </a></td><td>Articulação acromio-clavicular, cada incidência</td><td>Articulação acromio-clavicular, cada incidência</td><td>3.42</td><td>0.9</td></tr><tr><td style=\"white-space:nowrap\">10731<a name=\"mcdts-m-radiologia-cs-10731\"> </a></td><td>Articulação acromio-clavicular, bilateral</td><td>Articulação acromio-clavicular, bilateral</td><td>6.84</td><td>1.4</td></tr><tr><td style=\"white-space:nowrap\">10740<a name=\"mcdts-m-radiologia-cs-10740\"> </a></td><td>Braço, duas incidências</td><td>Braço, duas incidências</td><td>4.5</td><td>1.2</td></tr><tr><td style=\"white-space:nowrap\">10745<a name=\"mcdts-m-radiologia-cs-10745\"> </a></td><td>Cotovelo, duas incidências</td><td>Cotovelo, duas incidências</td><td>3.5</td><td>1</td></tr><tr><td style=\"white-space:nowrap\">10760<a name=\"mcdts-m-radiologia-cs-10760\"> </a></td><td>Antebraço, duas incidências</td><td>Antebraço, duas incidências</td><td>4.5</td><td>1.2</td></tr><tr><td style=\"white-space:nowrap\">10765<a name=\"mcdts-m-radiologia-cs-10765\"> </a></td><td>Punho, duas incidências</td><td>Punho, duas incidências</td><td>3.7</td><td>1</td></tr><tr><td style=\"white-space:nowrap\">10781<a name=\"mcdts-m-radiologia-cs-10781\"> </a></td><td>Mão, duas incidências</td><td>Mão, duas incidências</td><td>4</td><td>1.1</td></tr><tr><td style=\"white-space:nowrap\">10785<a name=\"mcdts-m-radiologia-cs-10785\"> </a></td><td>Dedos da mão, duas incidências</td><td>Dedos da mão, duas incidências</td><td>2</td><td>0.65</td></tr><tr><td style=\"white-space:nowrap\">10787<a name=\"mcdts-m-radiologia-cs-10787\"> </a></td><td>Membro superior de criança, mínimo duas incidências</td><td>Membro superior de criança, mínimo duas incidências</td><td>4.02</td><td>1.1</td></tr><tr><td style=\"white-space:nowrap\">10790<a name=\"mcdts-m-radiologia-cs-10790\"> </a></td><td>Idade óssea (mão e punho)</td><td>Idade óssea (mão e punho)</td><td>5.5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10795<a name=\"mcdts-m-radiologia-cs-10795\"> </a></td><td>Membros superiores, cada incidência a mais</td><td>Membros superiores, cada incidência a mais</td><td>2.5</td><td>0.8</td></tr><tr><td style=\"white-space:nowrap\">10805<a name=\"mcdts-m-radiologia-cs-10805\"> </a></td><td>Anca unilateral, uma incidência</td><td>Anca unilateral, uma incidência</td><td>4</td><td>1.1</td></tr><tr><td style=\"white-space:nowrap\">10806<a name=\"mcdts-m-radiologia-cs-10806\"> </a></td><td>Anca unilateral, duas incidências</td><td>Anca unilateral, duas incidências</td><td>7.5</td><td>1.5</td></tr><tr><td style=\"white-space:nowrap\">10808<a name=\"mcdts-m-radiologia-cs-10808\"> </a></td><td>Anca unilateral em carga, uma incidência</td><td>Anca unilateral em carga, uma incidência</td><td>5.5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10810<a name=\"mcdts-m-radiologia-cs-10810\"> </a></td><td>Anca bilateral, uma incidência</td><td>Anca bilateral, uma incidência</td><td>3.66</td><td>1</td></tr><tr><td style=\"white-space:nowrap\">10811<a name=\"mcdts-m-radiologia-cs-10811\"> </a></td><td>Anca bilateral, duas incidências</td><td>Anca bilateral, duas incidências</td><td>7.58</td><td>1.5</td></tr><tr><td style=\"white-space:nowrap\">10813<a name=\"mcdts-m-radiologia-cs-10813\"> </a></td><td>Anca bilateral em carga, uma incidência</td><td>Anca bilateral em carga, uma incidência</td><td>5.5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10825<a name=\"mcdts-m-radiologia-cs-10825\"> </a></td><td>Coxa, duas incidências</td><td>Coxa, duas incidências</td><td>7</td><td>1.5</td></tr><tr><td style=\"white-space:nowrap\">10830<a name=\"mcdts-m-radiologia-cs-10830\"> </a></td><td>Joelho, duas incidências</td><td>Joelho, duas incidências</td><td>4</td><td>1.1</td></tr><tr><td style=\"white-space:nowrap\">10838<a name=\"mcdts-m-radiologia-cs-10838\"> </a></td><td>Radiografia dos joelhos em carga, duas incidências</td><td>Radiografia dos joelhos em carga, duas incidências</td><td>7.84</td><td>1.5</td></tr><tr><td style=\"white-space:nowrap\">10840<a name=\"mcdts-m-radiologia-cs-10840\"> </a></td><td>Estudo axial da rótula, uma incidência</td><td>Estudo axial da rótula, uma incidência</td><td>3</td><td>0.9</td></tr><tr><td style=\"white-space:nowrap\">10841<a name=\"mcdts-m-radiologia-cs-10841\"> </a></td><td>Estudo axial da rótula, três incidências</td><td>Estudo axial da rótula, três incidências</td><td>4.66</td><td>1.2</td></tr><tr><td style=\"white-space:nowrap\">10850<a name=\"mcdts-m-radiologia-cs-10850\"> </a></td><td>Perna, duas incidências</td><td>Perna, duas incidências</td><td>6</td><td>1.4</td></tr><tr><td style=\"white-space:nowrap\">10855<a name=\"mcdts-m-radiologia-cs-10855\"> </a></td><td>Tornozelo, duas incidências</td><td>Tornozelo, duas incidências</td><td>4</td><td>1.1</td></tr><tr><td style=\"white-space:nowrap\">10857<a name=\"mcdts-m-radiologia-cs-10857\"> </a></td><td>Tornozelo em carga, duas incidências</td><td>Tornozelo em carga, duas incidências</td><td>5.5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10865<a name=\"mcdts-m-radiologia-cs-10865\"> </a></td><td>Pé, duas incidências</td><td>Pé, duas incidências</td><td>4</td><td>1.1</td></tr><tr><td style=\"white-space:nowrap\">10870<a name=\"mcdts-m-radiologia-cs-10870\"> </a></td><td>Pé em carga, duas incidências</td><td>Pé em carga, duas incidências</td><td>5.5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10875<a name=\"mcdts-m-radiologia-cs-10875\"> </a></td><td>Calcâneo, duas incidências</td><td>Calcâneo, duas incidências</td><td>4</td><td>1.1</td></tr><tr><td style=\"white-space:nowrap\">10880<a name=\"mcdts-m-radiologia-cs-10880\"> </a></td><td>Dedos do pé, duas incidências</td><td>Dedos do pé, duas incidências</td><td>2</td><td>0.65</td></tr><tr><td style=\"white-space:nowrap\">10886<a name=\"mcdts-m-radiologia-cs-10886\"> </a></td><td>Membros inferiores de criança, duas incidências</td><td>Membros inferiores de criança, duas incidências</td><td>9.1</td><td>1.8</td></tr><tr><td style=\"white-space:nowrap\">10890<a name=\"mcdts-m-radiologia-cs-10890\"> </a></td><td>Radiografia dos membros inferiores em filme extralongo</td><td>Radiografia dos membros inferiores em filme extralongo</td><td>10</td><td>2</td></tr><tr><td style=\"white-space:nowrap\">10895<a name=\"mcdts-m-radiologia-cs-10895\"> </a></td><td>Radiometria dos membros inferiores por segmentos articulares</td><td>Radiometria dos membros inferiores por segmentos articulares</td><td>8.98</td><td>1.6</td></tr><tr><td style=\"white-space:nowrap\">10900<a name=\"mcdts-m-radiologia-cs-10900\"> </a></td><td>Membros inferiores, cada incidência a mais</td><td>Membros inferiores, cada incidência a mais</td><td>3</td><td>0.9</td></tr><tr><td style=\"white-space:nowrap\">10909<a name=\"mcdts-m-radiologia-cs-10909\"> </a></td><td>Esqueleto (criança)</td><td>Esqueleto (criança)</td><td>5.5</td><td>1.3</td></tr><tr><td style=\"white-space:nowrap\">10913<a name=\"mcdts-m-radiologia-cs-10913\"> </a></td><td>Esqueleto (adulto) (considera as seguintes incidências indicativas: crânio, coluna cervical, dorsal e lombar - duas incidências; bacia, braços, antebraços, mãos, fémures, pernas e pés - uma incidência)</td><td>Esqueleto (adulto) (considera as seguintes incidências indicativas: crânio, coluna cervical, dorsal e lombar - duas incidências; bacia, braços, antebraços, mãos, fémures, pernas e pés - uma incidência)</td><td>23</td><td>4.5</td></tr><tr><td style=\"white-space:nowrap\">10725<a name=\"mcdts-m-radiologia-cs-10725\"> </a></td><td>Artrografia do ombro</td><td>Artrografia do ombro</td><td>37.26</td><td>7</td></tr><tr><td style=\"white-space:nowrap\">12001<a name=\"mcdts-m-radiologia-cs-12001\"> </a></td><td>Tomografia, cada plano</td><td>Tomografia, cada plano</td><td>8.87</td><td>1.6</td></tr><tr><td style=\"white-space:nowrap\">17040<a name=\"mcdts-m-radiologia-cs-17040\"> </a></td><td>Ecografia da tiróide</td><td>Ecografia da tiróide</td><td>14.3</td><td>4.5</td></tr><tr><td style=\"white-space:nowrap\">17060<a name=\"mcdts-m-radiologia-cs-17060\"> </a></td><td>Ecografia cervical (partes moles)</td><td>Ecografia cervical (partes moles)</td><td>14.3</td><td>2.5</td></tr><tr><td style=\"white-space:nowrap\">17050<a name=\"mcdts-m-radiologia-cs-17050\"> </a></td><td>Ecografia das glândulas salivares</td><td>Ecografia das glândulas salivares</td><td>9.44</td><td>1.8</td></tr><tr><td style=\"white-space:nowrap\">17105<a name=\"mcdts-m-radiologia-cs-17105\"> </a></td><td>Ecografia mamária</td><td>Ecografia mamária</td><td>14.5</td><td>2.5</td></tr><tr><td style=\"white-space:nowrap\">17130<a name=\"mcdts-m-radiologia-cs-17130\"> </a></td><td>Ecografia do abdómen superior</td><td>Ecografia do abdómen superior</td><td>20.12</td><td>4</td></tr><tr><td style=\"white-space:nowrap\">17135<a name=\"mcdts-m-radiologia-cs-17135\"> </a></td><td>Ecografia renal e supra-renal</td><td>Ecografia renal e supra-renal</td><td>20.16</td><td>4</td></tr><tr><td style=\"white-space:nowrap\">17281<a name=\"mcdts-m-radiologia-cs-17281\"> </a></td><td>Ecografia ginecológica por via endocavitária (inclui avaliação pélvica via suprapúbica)</td><td>Ecografia ginecológica por via endocavitária (inclui avaliação pélvica via suprapúbica)</td><td>19.31</td><td>3.5</td></tr><tr><td style=\"white-space:nowrap\">17150<a name=\"mcdts-m-radiologia-cs-17150\"> </a></td><td>Ecografia prostática e das vesículas seminais, por via endocavitária</td><td>Ecografia prostática e das vesículas seminais, por via endocavitária</td><td>23.47</td><td>4.5</td></tr><tr><td style=\"white-space:nowrap\">17170<a name=\"mcdts-m-radiologia-cs-17170\"> </a></td><td>Ecografia vesical via supra púbica</td><td>Ecografia vesical via supra púbica</td><td>13.85</td><td>2.5</td></tr><tr><td style=\"white-space:nowrap\">17165<a name=\"mcdts-m-radiologia-cs-17165\"> </a></td><td>Ecografia pós-miccional com cálculo do resíduo urinário</td><td>Ecografia pós-miccional com cálculo do resíduo urinário</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">17155<a name=\"mcdts-m-radiologia-cs-17155\"> </a></td><td>Ecografia pélvica por via supra púbica</td><td>Ecografia pélvica por via supra púbica</td><td>19.31</td><td>3.5</td></tr><tr><td style=\"white-space:nowrap\">17211<a name=\"mcdts-m-radiologia-cs-17211\"> </a></td><td>Ecografia escrotal</td><td>Ecografia escrotal</td><td>12.82</td><td>2.5</td></tr><tr><td style=\"white-space:nowrap\">17143<a name=\"mcdts-m-radiologia-cs-17143\"> </a></td><td>Ecografia peniana</td><td>Ecografia peniana</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">17190<a name=\"mcdts-m-radiologia-cs-17190\"> </a></td><td>Ecografia obstétrica 1º trimestre (idealmente realizada entre as 11 e as 13 semanas e seis dias)</td><td>Ecografia obstétrica 1º trimestre (idealmente realizada entre as 11 e as 13 semanas e seis dias)</td><td>70</td><td>5</td></tr><tr><td style=\"white-space:nowrap\">17193<a name=\"mcdts-m-radiologia-cs-17193\"> </a></td><td>Ecografia obstétrica 1º trimestre, via endovaginal</td><td>Ecografia obstétrica 1º trimestre, via endovaginal</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">17195<a name=\"mcdts-m-radiologia-cs-17195\"> </a></td><td>Ecografia obstétrica 2º trimestre, morfológica (idealmente realizada entre as 20 e as 22 semanas)</td><td>Ecografia obstétrica 2º trimestre, morfológica (idealmente realizada entre as 20 e as 22 semanas)</td><td>120</td><td>14</td></tr><tr><td style=\"white-space:nowrap\">17197<a name=\"mcdts-m-radiologia-cs-17197\"> </a></td><td>Ecografia obstétrica 3º trimestre (idealmente realizada entre as 30 e as 32 semanas)</td><td>Ecografia obstétrica 3º trimestre (idealmente realizada entre as 30 e as 32 semanas)</td><td>70</td><td>5</td></tr><tr><td style=\"white-space:nowrap\">17185<a name=\"mcdts-m-radiologia-cs-17185\"> </a></td><td>Ecografia de partes moles</td><td>Ecografia de partes moles</td><td>9.29</td><td>1.8</td></tr><tr><td style=\"white-space:nowrap\">17230<a name=\"mcdts-m-radiologia-cs-17230\"> </a></td><td>Ecografia articular</td><td>Ecografia articular</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">17290<a name=\"mcdts-m-radiologia-cs-17290\"> </a></td><td>Doppler dos vasos do pescoço</td><td>Doppler dos vasos do pescoço</td><td>23.17</td><td>4.5</td></tr><tr><td style=\"white-space:nowrap\">17200<a name=\"mcdts-m-radiologia-cs-17200\"> </a></td><td>Doppler das veias sub-clávias</td><td>Doppler das veias sub-clávias</td><td>23.17</td><td>4.5</td></tr><tr><td style=\"white-space:nowrap\">17205<a name=\"mcdts-m-radiologia-cs-17205\"> </a></td><td>Doppler abdominal, cada víscera ou território vascular</td><td>Doppler abdominal, cada víscera ou território vascular</td><td>23.17</td><td>4.5</td></tr><tr><td style=\"white-space:nowrap\">17294<a name=\"mcdts-m-radiologia-cs-17294\"> </a></td><td>Doppler do sector arterial dos membros inferiores, cada membro</td><td>Doppler do sector arterial dos membros inferiores, cada membro</td><td>23.17</td><td>4.5</td></tr><tr><td style=\"white-space:nowrap\">17298<a name=\"mcdts-m-radiologia-cs-17298\"> </a></td><td>Doppler do sector venoso dos membros inferiores, cada membro</td><td>Doppler do sector venoso dos membros inferiores, cada membro</td><td>23.87</td><td>4.5</td></tr><tr><td style=\"white-space:nowrap\">17299<a name=\"mcdts-m-radiologia-cs-17299\"> </a></td><td>Doppler (adicional a qualquer dos exames de ecografia)</td><td>Doppler (adicional a qualquer dos exames de ecografia)</td><td>20.93</td><td>4</td></tr><tr><td style=\"white-space:nowrap\">17405<a name=\"mcdts-m-radiologia-cs-17405\"> </a></td><td>Ecografia, apoio a gestos de intervenção</td><td>Ecografia, apoio a gestos de intervenção</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">16010<a name=\"mcdts-m-radiologia-cs-16010\"> </a></td><td>TC do crânio</td><td>TC do crânio</td><td>74.18</td><td>13</td></tr><tr><td style=\"white-space:nowrap\">16020<a name=\"mcdts-m-radiologia-cs-16020\"> </a></td><td>TC maxilo-facial</td><td>TC maxilo-facial</td><td>72.78</td><td>13</td></tr><tr><td style=\"white-space:nowrap\">16030<a name=\"mcdts-m-radiologia-cs-16030\"> </a></td><td>TC do pescoço (partes moles)</td><td>TC do pescoço (partes moles)</td><td>74.88</td><td>13</td></tr><tr><td style=\"white-space:nowrap\">16210<a name=\"mcdts-m-radiologia-cs-16210\"> </a></td><td>TC da sela turca</td><td>TC da sela turca</td><td>67.59</td><td>13</td></tr><tr><td style=\"white-space:nowrap\">16220<a name=\"mcdts-m-radiologia-cs-16220\"> </a></td><td>TC das órbitas</td><td>TC das órbitas</td><td>70.79</td><td>14</td></tr><tr><td style=\"white-space:nowrap\">16230<a name=\"mcdts-m-radiologia-cs-16230\"> </a></td><td>TC dos seios perinasais</td><td>TC dos seios perinasais</td><td>71.08</td><td>13</td></tr><tr><td style=\"white-space:nowrap\">16240<a name=\"mcdts-m-radiologia-cs-16240\"> </a></td><td>TC dos ouvidos</td><td>TC dos ouvidos</td><td>69.98</td><td>12</td></tr><tr><td style=\"white-space:nowrap\">16270<a name=\"mcdts-m-radiologia-cs-16270\"> </a></td><td>TC da faringe</td><td>TC da faringe</td><td>69.29</td><td>12</td></tr><tr><td style=\"white-space:nowrap\">16041<a name=\"mcdts-m-radiologia-cs-16041\"> </a></td><td>TC da coluna cervical</td><td>TC da coluna cervical</td><td>77.67</td><td>14</td></tr><tr><td style=\"white-space:nowrap\">16042<a name=\"mcdts-m-radiologia-cs-16042\"> </a></td><td>TC da coluna dorsal</td><td>TC da coluna dorsal</td><td>77.67</td><td>14</td></tr><tr><td style=\"white-space:nowrap\">16043<a name=\"mcdts-m-radiologia-cs-16043\"> </a></td><td>TC da coluna lombar</td><td>TC da coluna lombar</td><td>77.67</td><td>14</td></tr><tr><td style=\"white-space:nowrap\">16044<a name=\"mcdts-m-radiologia-cs-16044\"> </a></td><td>TC da coluna sacro-coccígea</td><td>TC da coluna sacro-coccígea</td><td>77.67</td><td>14</td></tr><tr><td style=\"white-space:nowrap\">16045<a name=\"mcdts-m-radiologia-cs-16045\"> </a></td><td>TC da bacia</td><td>TC da bacia</td><td>77.67</td><td>12</td></tr><tr><td style=\"white-space:nowrap\">16060<a name=\"mcdts-m-radiologia-cs-16060\"> </a></td><td>TC do tórax</td><td>TC do tórax</td><td>80.86</td><td>14</td></tr><tr><td style=\"white-space:nowrap\">16070<a name=\"mcdts-m-radiologia-cs-16070\"> </a></td><td>TC do abdómen superior</td><td>TC do abdómen superior</td><td>90</td><td>15</td></tr><tr><td style=\"white-space:nowrap\">16080<a name=\"mcdts-m-radiologia-cs-16080\"> </a></td><td>TC pélvica</td><td>TC pélvica</td><td>61.59</td><td>12</td></tr><tr><td style=\"white-space:nowrap\">16085<a name=\"mcdts-m-radiologia-cs-16085\"> </a></td><td>TC, Colonografia (colonoscopia virtual)</td><td>TC, Colonografia (colonoscopia virtual)</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">16101<a name=\"mcdts-m-radiologia-cs-16101\"> </a></td><td>TC do membro superior (cada segmento anatómico)</td><td>TC do membro superior (cada segmento anatómico)</td><td>65</td><td>13</td></tr><tr><td style=\"white-space:nowrap\">16102<a name=\"mcdts-m-radiologia-cs-16102\"> </a></td><td>TC dos membros inferiores (cada segmento anatómico)</td><td>TC dos membros inferiores (cada segmento anatómico)</td><td>65</td><td>13</td></tr><tr><td style=\"white-space:nowrap\">16110<a name=\"mcdts-m-radiologia-cs-16110\"> </a></td><td>TC articular, cada articulação</td><td>TC articular, cada articulação</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">16325<a name=\"mcdts-m-radiologia-cs-16325\"> </a></td><td>TC, suplemento de contraste endovenoso</td><td>TC, suplemento de contraste endovenoso</td><td>12</td><td>2</td></tr><tr><td style=\"white-space:nowrap\">16330<a name=\"mcdts-m-radiologia-cs-16330\"> </a></td><td>TC, contraste oral</td><td>TC, contraste oral</td><td>1.3</td><td>0.35</td></tr><tr><td style=\"white-space:nowrap\">16340<a name=\"mcdts-m-radiologia-cs-16340\"> </a></td><td>TC, contraste rectal</td><td>TC, contraste rectal</td><td>3</td><td>0.9</td></tr><tr><td style=\"white-space:nowrap\">16350<a name=\"mcdts-m-radiologia-cs-16350\"> </a></td><td>TC, adicional de Angio TC</td><td>TC, adicional de Angio TC</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">16351<a name=\"mcdts-m-radiologia-cs-16351\"> </a></td><td>TC, adicional de estudo de perfusão</td><td>TC, adicional de estudo de perfusão</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">16352<a name=\"mcdts-m-radiologia-cs-16352\"> </a></td><td>TC, adicional de injeção intra-tecal (mielo-TC)</td><td>TC, adicional de injeção intra-tecal (mielo-TC)</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">16353<a name=\"mcdts-m-radiologia-cs-16353\"> </a></td><td>TC, adicional de artrografia (artro-TC)</td><td>TC, adicional de artrografia (artro-TC)</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">15812<a name=\"mcdts-m-radiologia-cs-15812\"> </a></td><td>Biópsia percutânea guiada por técnica de imagem</td><td>Biópsia percutânea guiada por técnica de imagem</td><td>20</td><td>4</td></tr><tr><td style=\"white-space:nowrap\">15813<a name=\"mcdts-m-radiologia-cs-15813\"> </a></td><td>Punção aspirativa para citologia guiada por técnica de imagem</td><td>Punção aspirativa para citologia guiada por técnica de imagem</td><td>20</td><td>4</td></tr><tr><td style=\"white-space:nowrap\">15814<a name=\"mcdts-m-radiologia-cs-15814\"> </a></td><td>Drenagem de coleção ou abcesso guiada por técnica de imagem</td><td>Drenagem de coleção ou abcesso guiada por técnica de imagem</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">15161<a name=\"mcdts-m-radiologia-cs-15161\"> </a></td><td>Punção para citologia</td><td>Punção para citologia</td><td>20</td><td>4</td></tr><tr><td style=\"white-space:nowrap\">15171<a name=\"mcdts-m-radiologia-cs-15171\"> </a></td><td>Punção para histologia</td><td>Punção para histologia</td><td>50</td><td>10</td></tr><tr><td style=\"white-space:nowrap\">10920<a name=\"mcdts-m-radiologia-cs-10920\"> </a></td><td>Osteodensitometria da coluna lombar</td><td>Osteodensitometria da coluna lombar</td><td>21.51</td><td>4</td></tr><tr><td style=\"white-space:nowrap\">10930<a name=\"mcdts-m-radiologia-cs-10930\"> </a></td><td>Osteodensitometria do colo femoral</td><td>Osteodensitometria do colo femoral</td><td>19.17</td><td>3.5</td></tr><tr><td style=\"white-space:nowrap\">10935<a name=\"mcdts-m-radiologia-cs-10935\"> </a></td><td>Osteodensitometria do punho</td><td>Osteodensitometria do punho</td><td>19.17</td><td>3.5</td></tr><tr><td style=\"white-space:nowrap\">10955<a name=\"mcdts-m-radiologia-cs-10955\"> </a></td><td>Osteodensitometria da coluna lombar e do colo femoral</td><td>Osteodensitometria da coluna lombar e do colo femoral</td><td>23.22</td><td>4.5</td></tr><tr><td style=\"white-space:nowrap\">32070<a name=\"mcdts-m-radiologia-cs-32070\"> </a></td><td>Anestesiar sem qualquer fator de risco</td><td>Anestesiar sem qualquer fator de risco</td><td>25</td><td>25</td></tr><tr><td style=\"white-space:nowrap\">32080<a name=\"mcdts-m-radiologia-cs-32080\"> </a></td><td>Anestesiar com 1 fator de risco</td><td>Anestesiar com 1 fator de risco</td><td>35</td><td>25</td></tr><tr><td style=\"white-space:nowrap\">32090<a name=\"mcdts-m-radiologia-cs-32090\"> </a></td><td>Anestesiar com 2 ou mais fatores de risco</td><td>Anestesiar com 2 ou mais fatores de risco</td><td>35</td><td>25</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-m-radiologia"^^xsd:anyURI ;
+     fhir:l <https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-m-radiologia>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "MCDTSM_RadiologiaCS"] ; # 
+  fhir:title [ fhir:v "MCDTS Tabela Da Área M - Tabela De Radiologia "] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-16T11:04:17+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tabela Da Área M - Tabela De Radiologia "] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "ACSS" ]
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "180"^^xsd:nonNegativeInteger] ; # 
+  fhir:property ( [
+     fhir:code [ fhir:v "preco" ] ;
+     fhir:description [ fhir:v "Preço do MCDT" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] [
+     fhir:code [ fhir:v "taxa" ] ;
+     fhir:description [ fhir:v "Taxa Moderadora" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "10004" ] ;
+     fhir:display [ fhir:v "Crânio, uma incidência" ] ;
+     fhir:definition [ fhir:v "Crânio, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 5.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10005" ] ;
+     fhir:display [ fhir:v "Crânio, duas incidências" ] ;
+     fhir:definition [ fhir:v "Crânio, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "6"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.4
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10010" ] ;
+     fhir:display [ fhir:v "Sela turca" ] ;
+     fhir:definition [ fhir:v "Sela turca" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 0.9
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10024" ] ;
+     fhir:display [ fhir:v "Mastóides, uma incidência" ] ;
+     fhir:definition [ fhir:v "Mastóides, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.7
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.2
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10025" ] ;
+     fhir:display [ fhir:v "Mastóides, duas incidências" ] ;
+     fhir:definition [ fhir:v "Mastóides, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 7.84
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10060" ] ;
+     fhir:display [ fhir:v "Buracos ópticos" ] ;
+     fhir:definition [ fhir:v "Buracos ópticos" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10070" ] ;
+     fhir:display [ fhir:v "Órbita, duas incidências" ] ;
+     fhir:definition [ fhir:v "Órbita, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10075" ] ;
+     fhir:display [ fhir:v "Globo ocular, deteção de corpo estranho" ] ;
+     fhir:definition [ fhir:v "Globo ocular, deteção de corpo estranho" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "8"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10103" ] ;
+     fhir:display [ fhir:v "Seios perinasais, uma incidência" ] ;
+     fhir:definition [ fhir:v "Seios perinasais, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10100" ] ;
+     fhir:display [ fhir:v "Seios perinasais, duas incidências" ] ;
+     fhir:definition [ fhir:v "Seios perinasais, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10111" ] ;
+     fhir:display [ fhir:v "Ossos da face, duas incidências" ] ;
+     fhir:definition [ fhir:v "Ossos da face, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "7"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10123" ] ;
+     fhir:display [ fhir:v "Arcadas zigomáticas, uma incidência unilateral" ] ;
+     fhir:definition [ fhir:v "Arcadas zigomáticas, uma incidência unilateral" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "7"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10120" ] ;
+     fhir:display [ fhir:v "Arcadas zigomáticas, uma incidência bilateral simultânea" ] ;
+     fhir:definition [ fhir:v "Arcadas zigomáticas, uma incidência bilateral simultânea" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "7"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10130" ] ;
+     fhir:display [ fhir:v "Ossos próprios do nariz" ] ;
+     fhir:definition [ fhir:v "Ossos próprios do nariz" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 0.9
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10135" ] ;
+     fhir:display [ fhir:v "Articulações temporo-maxilares boca aberta e fechada, unilateral" ] ;
+     fhir:definition [ fhir:v "Articulações temporo-maxilares boca aberta e fechada, unilateral" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "8"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.6
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10140" ] ;
+     fhir:display [ fhir:v "Articulações temporo-maxilares boca aberta e fechada bilateral" ] ;
+     fhir:definition [ fhir:v "Articulações temporo-maxilares boca aberta e fechada bilateral" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 9.1
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.8
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10150" ] ;
+     fhir:display [ fhir:v "Mandíbula, uma incidência" ] ;
+     fhir:definition [ fhir:v "Mandíbula, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 0.9
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10151" ] ;
+     fhir:display [ fhir:v "Mandíbula, duas incidências" ] ;
+     fhir:definition [ fhir:v "Mandíbula, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 5.16
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10170" ] ;
+     fhir:display [ fhir:v "Ortopantomografia" ] ;
+     fhir:definition [ fhir:v "Ortopantomografia" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "11"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "2"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10190" ] ;
+     fhir:display [ fhir:v "Glândulas salivares para deteção de cálculos, uma incidência" ] ;
+     fhir:definition [ fhir:v "Glândulas salivares para deteção de cálculos, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 5.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10220" ] ;
+     fhir:display [ fhir:v "Cavum faríngeo, uma incidência" ] ;
+     fhir:definition [ fhir:v "Cavum faríngeo, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.1
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10225" ] ;
+     fhir:display [ fhir:v "Pescoço, partes moles, uma incidência" ] ;
+     fhir:definition [ fhir:v "Pescoço, partes moles, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.1
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10230" ] ;
+     fhir:display [ fhir:v "Pescoço, partes moles, duas incidências" ] ;
+     fhir:definition [ fhir:v "Pescoço, partes moles, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "7"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10270" ] ;
+     fhir:display [ fhir:v "Exames de cabeça e pescoço, cada incidência a mais" ] ;
+     fhir:definition [ fhir:v "Exames de cabeça e pescoço, cada incidência a mais" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 2.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 0.8
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10090" ] ;
+     fhir:display [ fhir:v "Dacriocistografia" ] ;
+     fhir:definition [ fhir:v "Dacriocistografia" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "50"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "10"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10203" ] ;
+     fhir:display [ fhir:v "Sialografia, cada glândula" ] ;
+     fhir:definition [ fhir:v "Sialografia, cada glândula" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "50"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "10"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10505" ] ;
+     fhir:display [ fhir:v "Charneira crânio-vertebral, duas incidências" ] ;
+     fhir:definition [ fhir:v "Charneira crânio-vertebral, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 7.53
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10520" ] ;
+     fhir:display [ fhir:v "Coluna cervical, duas incidências" ] ;
+     fhir:definition [ fhir:v "Coluna cervical, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "6"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.4
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10521" ] ;
+     fhir:display [ fhir:v "Coluna cervical, quatro incidências" ] ;
+     fhir:definition [ fhir:v "Coluna cervical, quatro incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 10.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "2"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10523" ] ;
+     fhir:display [ fhir:v "Coluna cervical, inclinações laterais" ] ;
+     fhir:definition [ fhir:v "Coluna cervical, inclinações laterais" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10524" ] ;
+     fhir:display [ fhir:v "Coluna cervical, hiperflexão e hiperextensão" ] ;
+     fhir:definition [ fhir:v "Coluna cervical, hiperflexão e hiperextensão" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10525" ] ;
+     fhir:display [ fhir:v "Transição cervico-torácica, duas incidências" ] ;
+     fhir:definition [ fhir:v "Transição cervico-torácica, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.8
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.2
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10535" ] ;
+     fhir:display [ fhir:v "Coluna dorsal, duas incidências" ] ;
+     fhir:definition [ fhir:v "Coluna dorsal, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "8"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.6
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10545" ] ;
+     fhir:display [ fhir:v "Coluna lombar, duas incidências" ] ;
+     fhir:definition [ fhir:v "Coluna lombar, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "7"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10546" ] ;
+     fhir:display [ fhir:v "Coluna lombar, quatro incidências" ] ;
+     fhir:definition [ fhir:v "Coluna lombar, quatro incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "9"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.8
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10550" ] ;
+     fhir:display [ fhir:v "Charneira lombo-sagrada, duas incidências" ] ;
+     fhir:definition [ fhir:v "Charneira lombo-sagrada, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "7"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10552" ] ;
+     fhir:display [ fhir:v "Coluna lombo-sagrada, inclinações laterais" ] ;
+     fhir:definition [ fhir:v "Coluna lombo-sagrada, inclinações laterais" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 5.04
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10553" ] ;
+     fhir:display [ fhir:v "Coluna lombo-sagrada, hiperflexão e hiperextensão" ] ;
+     fhir:definition [ fhir:v "Coluna lombo-sagrada, hiperflexão e hiperextensão" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 5.04
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10555" ] ;
+     fhir:display [ fhir:v "Coluna lombo-sagrada em carga, duas incidências" ] ;
+     fhir:definition [ fhir:v "Coluna lombo-sagrada em carga, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "6"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.4
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10600" ] ;
+     fhir:display [ fhir:v "Bacia" ] ;
+     fhir:definition [ fhir:v "Bacia" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10602" ] ;
+     fhir:display [ fhir:v "Bacia em carga" ] ;
+     fhir:definition [ fhir:v "Bacia em carga" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 5.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10592" ] ;
+     fhir:display [ fhir:v "Articulações sacro-ilíacas, uma incidência unilateral" ] ;
+     fhir:definition [ fhir:v "Articulações sacro-ilíacas, uma incidência unilateral" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "1"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10589" ] ;
+     fhir:display [ fhir:v "Articulações sacro-ilíacas, uma incidência bilateral" ] ;
+     fhir:definition [ fhir:v "Articulações sacro-ilíacas, uma incidência bilateral" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 5.2
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10570" ] ;
+     fhir:display [ fhir:v "Sacro e cóccix, duas incidências" ] ;
+     fhir:definition [ fhir:v "Sacro e cóccix, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10584" ] ;
+     fhir:display [ fhir:v "Radiografia da Coluna, filme extralongo, uma incidência" ] ;
+     fhir:definition [ fhir:v "Radiografia da Coluna, filme extralongo, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 9.1
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.8
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10585" ] ;
+     fhir:display [ fhir:v "Radiografia da Coluna, filme extralongo, duas incidências" ] ;
+     fhir:definition [ fhir:v "Radiografia da Coluna, filme extralongo, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 10.9
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "2"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10599" ] ;
+     fhir:display [ fhir:v "Exames de coluna, cada incidência a mais" ] ;
+     fhir:definition [ fhir:v "Exames de coluna, cada incidência a mais" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.1
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10405" ] ;
+     fhir:display [ fhir:v "Tórax, uma incidência" ] ;
+     fhir:definition [ fhir:v "Tórax, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10406" ] ;
+     fhir:display [ fhir:v "Tórax, duas incidências" ] ;
+     fhir:definition [ fhir:v "Tórax, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "9"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.8
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10425" ] ;
+     fhir:display [ fhir:v "Grelha costal, uma incidência" ] ;
+     fhir:definition [ fhir:v "Grelha costal, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 5.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10430" ] ;
+     fhir:display [ fhir:v "Grelha costal, duas incidências" ] ;
+     fhir:definition [ fhir:v "Grelha costal, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 7.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10442" ] ;
+     fhir:display [ fhir:v "Esterno, uma incidência" ] ;
+     fhir:definition [ fhir:v "Esterno, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.1
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10440" ] ;
+     fhir:display [ fhir:v "Esterno, duas incidências" ] ;
+     fhir:definition [ fhir:v "Esterno, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "6"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.4
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10450" ] ;
+     fhir:display [ fhir:v "Articulações esterno-claviculares, duas incidências" ] ;
+     fhir:definition [ fhir:v "Articulações esterno-claviculares, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "7"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10470" ] ;
+     fhir:display [ fhir:v "Exames de tórax, cada incidência a mais (incidências complementares aos exames deste capítulo)" ] ;
+     fhir:definition [ fhir:v "Exames de tórax, cada incidência a mais (incidências complementares aos exames deste capítulo)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.4
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 0.9
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "13100" ] ;
+     fhir:display [ fhir:v "Mamografia bilateral, duas incidências por mama" ] ;
+     fhir:definition [ fhir:v "Mamografia bilateral, duas incidências por mama" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 20.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "13105" ] ;
+     fhir:display [ fhir:v "Mamografia unilateral, duas incidências" ] ;
+     fhir:definition [ fhir:v "Mamografia unilateral, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 20.9
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "13110" ] ;
+     fhir:display [ fhir:v "Mamografia, cada incidência a mais" ] ;
+     fhir:definition [ fhir:v "Mamografia, cada incidência a mais" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 0.9
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "13120" ] ;
+     fhir:display [ fhir:v "Galactografia" ] ;
+     fhir:definition [ fhir:v "Galactografia" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 38.03
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "7"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "13127" ] ;
+     fhir:display [ fhir:v "Estereotaxia, apoio a gestos de intervenção" ] ;
+     fhir:definition [ fhir:v "Estereotaxia, apoio a gestos de intervenção" ]
+  ] [
+     fhir:code [ fhir:v "11010" ] ;
+     fhir:display [ fhir:v "Abdómen simples, uma incidência" ] ;
+     fhir:definition [ fhir:v "Abdómen simples, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "11015" ] ;
+     fhir:display [ fhir:v "Abdómen simples, cada incidência mais" ] ;
+     fhir:definition [ fhir:v "Abdómen simples, cada incidência mais" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "1"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "11110" ] ;
+     fhir:display [ fhir:v "Faringografia" ] ;
+     fhir:definition [ fhir:v "Faringografia" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "6"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.4
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "11130" ] ;
+     fhir:display [ fhir:v "Trânsito esofágico" ] ;
+     fhir:definition [ fhir:v "Trânsito esofágico" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "14"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 2.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "11140" ] ;
+     fhir:display [ fhir:v "Trânsito gastro-duodenal monocontraste (com ou sem pesquisa de hérnia do hiato)" ] ;
+     fhir:definition [ fhir:v "Trânsito gastro-duodenal monocontraste (com ou sem pesquisa de hérnia do hiato)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 18.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "11150" ] ;
+     fhir:display [ fhir:v "Trânsito gastro-duodenal duplo contraste (com ou sem pesquisa de hérnia do hiato)" ] ;
+     fhir:definition [ fhir:v "Trânsito gastro-duodenal duplo contraste (com ou sem pesquisa de hérnia do hiato)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 29.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "11170" ] ;
+     fhir:display [ fhir:v "Trânsito do intestino delgado (por ingestão)" ] ;
+     fhir:definition [ fhir:v "Trânsito do intestino delgado (por ingestão)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 37.49
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "7"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "11200" ] ;
+     fhir:display [ fhir:v "Clister opaco" ] ;
+     fhir:definition [ fhir:v "Clister opaco" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "23"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "11210" ] ;
+     fhir:display [ fhir:v "Clister com duplo contraste" ] ;
+     fhir:definition [ fhir:v "Clister com duplo contraste" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 37.76
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "7"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "11213" ] ;
+     fhir:display [ fhir:v "Clister por estoma cutâneo" ] ;
+     fhir:definition [ fhir:v "Clister por estoma cutâneo" ]
+  ] [
+     fhir:code [ fhir:v "11410" ] ;
+     fhir:display [ fhir:v "Radiografia simples da pélvis" ] ;
+     fhir:definition [ fhir:v "Radiografia simples da pélvis" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 0.9
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "11495" ] ;
+     fhir:display [ fhir:v "Uretrocistografia ascendente com estudo pos-miccional (inclui contraste)" ] ;
+     fhir:definition [ fhir:v "Uretrocistografia ascendente com estudo pos-miccional (inclui contraste)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 42.02
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "8"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "11500" ] ;
+     fhir:display [ fhir:v "Cistografia retrógrada com estudo de refluxo vesico-ureteral e estudo per-miccional (inclui contraste)" ] ;
+     fhir:definition [ fhir:v "Cistografia retrógrada com estudo de refluxo vesico-ureteral e estudo per-miccional (inclui contraste)" ]
+  ] [
+     fhir:code [ fhir:v "10705" ] ;
+     fhir:display [ fhir:v "Clavícula, uma incidência" ] ;
+     fhir:definition [ fhir:v "Clavícula, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.1
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10706" ] ;
+     fhir:display [ fhir:v "Clavícula, duas incidências" ] ;
+     fhir:definition [ fhir:v "Clavícula, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 7.29
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10711" ] ;
+     fhir:display [ fhir:v "Omoplata, duas incidências" ] ;
+     fhir:definition [ fhir:v "Omoplata, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 6.84
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.4
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10720" ] ;
+     fhir:display [ fhir:v "Ombro, uma incidência" ] ;
+     fhir:definition [ fhir:v "Ombro, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.8
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "1"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10721" ] ;
+     fhir:display [ fhir:v "Ombro, duas incidências" ] ;
+     fhir:definition [ fhir:v "Ombro, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 6.84
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.4
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10730" ] ;
+     fhir:display [ fhir:v "Articulação acromio-clavicular, cada incidência" ] ;
+     fhir:definition [ fhir:v "Articulação acromio-clavicular, cada incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.42
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 0.9
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10731" ] ;
+     fhir:display [ fhir:v "Articulação acromio-clavicular, bilateral" ] ;
+     fhir:definition [ fhir:v "Articulação acromio-clavicular, bilateral" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 6.84
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.4
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10740" ] ;
+     fhir:display [ fhir:v "Braço, duas incidências" ] ;
+     fhir:definition [ fhir:v "Braço, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.2
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10745" ] ;
+     fhir:display [ fhir:v "Cotovelo, duas incidências" ] ;
+     fhir:definition [ fhir:v "Cotovelo, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "1"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10760" ] ;
+     fhir:display [ fhir:v "Antebraço, duas incidências" ] ;
+     fhir:definition [ fhir:v "Antebraço, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.2
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10765" ] ;
+     fhir:display [ fhir:v "Punho, duas incidências" ] ;
+     fhir:definition [ fhir:v "Punho, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.7
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "1"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10781" ] ;
+     fhir:display [ fhir:v "Mão, duas incidências" ] ;
+     fhir:definition [ fhir:v "Mão, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.1
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10785" ] ;
+     fhir:display [ fhir:v "Dedos da mão, duas incidências" ] ;
+     fhir:definition [ fhir:v "Dedos da mão, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "2"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 0.65
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10787" ] ;
+     fhir:display [ fhir:v "Membro superior de criança, mínimo duas incidências" ] ;
+     fhir:definition [ fhir:v "Membro superior de criança, mínimo duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.02
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.1
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10790" ] ;
+     fhir:display [ fhir:v "Idade óssea (mão e punho)" ] ;
+     fhir:definition [ fhir:v "Idade óssea (mão e punho)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 5.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10795" ] ;
+     fhir:display [ fhir:v "Membros superiores, cada incidência a mais" ] ;
+     fhir:definition [ fhir:v "Membros superiores, cada incidência a mais" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 2.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 0.8
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10805" ] ;
+     fhir:display [ fhir:v "Anca unilateral, uma incidência" ] ;
+     fhir:definition [ fhir:v "Anca unilateral, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.1
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10806" ] ;
+     fhir:display [ fhir:v "Anca unilateral, duas incidências" ] ;
+     fhir:definition [ fhir:v "Anca unilateral, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 7.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10808" ] ;
+     fhir:display [ fhir:v "Anca unilateral em carga, uma incidência" ] ;
+     fhir:definition [ fhir:v "Anca unilateral em carga, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 5.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10810" ] ;
+     fhir:display [ fhir:v "Anca bilateral, uma incidência" ] ;
+     fhir:definition [ fhir:v "Anca bilateral, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.66
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "1"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10811" ] ;
+     fhir:display [ fhir:v "Anca bilateral, duas incidências" ] ;
+     fhir:definition [ fhir:v "Anca bilateral, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 7.58
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10813" ] ;
+     fhir:display [ fhir:v "Anca bilateral em carga, uma incidência" ] ;
+     fhir:definition [ fhir:v "Anca bilateral em carga, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 5.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10825" ] ;
+     fhir:display [ fhir:v "Coxa, duas incidências" ] ;
+     fhir:definition [ fhir:v "Coxa, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "7"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10830" ] ;
+     fhir:display [ fhir:v "Joelho, duas incidências" ] ;
+     fhir:definition [ fhir:v "Joelho, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.1
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10838" ] ;
+     fhir:display [ fhir:v "Radiografia dos joelhos em carga, duas incidências" ] ;
+     fhir:definition [ fhir:v "Radiografia dos joelhos em carga, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 7.84
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10840" ] ;
+     fhir:display [ fhir:v "Estudo axial da rótula, uma incidência" ] ;
+     fhir:definition [ fhir:v "Estudo axial da rótula, uma incidência" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 0.9
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10841" ] ;
+     fhir:display [ fhir:v "Estudo axial da rótula, três incidências" ] ;
+     fhir:definition [ fhir:v "Estudo axial da rótula, três incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.66
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.2
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10850" ] ;
+     fhir:display [ fhir:v "Perna, duas incidências" ] ;
+     fhir:definition [ fhir:v "Perna, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "6"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.4
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10855" ] ;
+     fhir:display [ fhir:v "Tornozelo, duas incidências" ] ;
+     fhir:definition [ fhir:v "Tornozelo, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.1
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10857" ] ;
+     fhir:display [ fhir:v "Tornozelo em carga, duas incidências" ] ;
+     fhir:definition [ fhir:v "Tornozelo em carga, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 5.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10865" ] ;
+     fhir:display [ fhir:v "Pé, duas incidências" ] ;
+     fhir:definition [ fhir:v "Pé, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.1
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10870" ] ;
+     fhir:display [ fhir:v "Pé em carga, duas incidências" ] ;
+     fhir:definition [ fhir:v "Pé em carga, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 5.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10875" ] ;
+     fhir:display [ fhir:v "Calcâneo, duas incidências" ] ;
+     fhir:definition [ fhir:v "Calcâneo, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.1
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10880" ] ;
+     fhir:display [ fhir:v "Dedos do pé, duas incidências" ] ;
+     fhir:definition [ fhir:v "Dedos do pé, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "2"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 0.65
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10886" ] ;
+     fhir:display [ fhir:v "Membros inferiores de criança, duas incidências" ] ;
+     fhir:definition [ fhir:v "Membros inferiores de criança, duas incidências" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 9.1
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.8
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10890" ] ;
+     fhir:display [ fhir:v "Radiografia dos membros inferiores em filme extralongo" ] ;
+     fhir:definition [ fhir:v "Radiografia dos membros inferiores em filme extralongo" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "10"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "2"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10895" ] ;
+     fhir:display [ fhir:v "Radiometria dos membros inferiores por segmentos articulares" ] ;
+     fhir:definition [ fhir:v "Radiometria dos membros inferiores por segmentos articulares" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 8.98
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.6
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10900" ] ;
+     fhir:display [ fhir:v "Membros inferiores, cada incidência a mais" ] ;
+     fhir:definition [ fhir:v "Membros inferiores, cada incidência a mais" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 0.9
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10909" ] ;
+     fhir:display [ fhir:v "Esqueleto (criança)" ] ;
+     fhir:definition [ fhir:v "Esqueleto (criança)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 5.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10913" ] ;
+     fhir:display [ fhir:v "Esqueleto (adulto) (considera as seguintes incidências indicativas: crânio, coluna cervical, dorsal e lombar - duas incidências; bacia, braços, antebraços, mãos, fémures, pernas e pés - uma incidência)" ] ;
+     fhir:definition [ fhir:v "Esqueleto (adulto) (considera as seguintes incidências indicativas: crânio, coluna cervical, dorsal e lombar - duas incidências; bacia, braços, antebraços, mãos, fémures, pernas e pés - uma incidência)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "23"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10725" ] ;
+     fhir:display [ fhir:v "Artrografia do ombro" ] ;
+     fhir:definition [ fhir:v "Artrografia do ombro" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 37.26
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "7"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "12001" ] ;
+     fhir:display [ fhir:v "Tomografia, cada plano" ] ;
+     fhir:definition [ fhir:v "Tomografia, cada plano" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 8.87
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.6
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17040" ] ;
+     fhir:display [ fhir:v "Ecografia da tiróide" ] ;
+     fhir:definition [ fhir:v "Ecografia da tiróide" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 14.3
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17060" ] ;
+     fhir:display [ fhir:v "Ecografia cervical (partes moles)" ] ;
+     fhir:definition [ fhir:v "Ecografia cervical (partes moles)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 14.3
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 2.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17050" ] ;
+     fhir:display [ fhir:v "Ecografia das glândulas salivares" ] ;
+     fhir:definition [ fhir:v "Ecografia das glândulas salivares" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 9.44
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.8
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17105" ] ;
+     fhir:display [ fhir:v "Ecografia mamária" ] ;
+     fhir:definition [ fhir:v "Ecografia mamária" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 14.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 2.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17130" ] ;
+     fhir:display [ fhir:v "Ecografia do abdómen superior" ] ;
+     fhir:definition [ fhir:v "Ecografia do abdómen superior" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 20.12
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17135" ] ;
+     fhir:display [ fhir:v "Ecografia renal e supra-renal" ] ;
+     fhir:definition [ fhir:v "Ecografia renal e supra-renal" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 20.16
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17281" ] ;
+     fhir:display [ fhir:v "Ecografia ginecológica por via endocavitária (inclui avaliação pélvica via suprapúbica)" ] ;
+     fhir:definition [ fhir:v "Ecografia ginecológica por via endocavitária (inclui avaliação pélvica via suprapúbica)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 19.31
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17150" ] ;
+     fhir:display [ fhir:v "Ecografia prostática e das vesículas seminais, por via endocavitária" ] ;
+     fhir:definition [ fhir:v "Ecografia prostática e das vesículas seminais, por via endocavitária" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 23.47
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17170" ] ;
+     fhir:display [ fhir:v "Ecografia vesical via supra púbica" ] ;
+     fhir:definition [ fhir:v "Ecografia vesical via supra púbica" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 13.85
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 2.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17165" ] ;
+     fhir:display [ fhir:v "Ecografia pós-miccional com cálculo do resíduo urinário" ] ;
+     fhir:definition [ fhir:v "Ecografia pós-miccional com cálculo do resíduo urinário" ]
+  ] [
+     fhir:code [ fhir:v "17155" ] ;
+     fhir:display [ fhir:v "Ecografia pélvica por via supra púbica" ] ;
+     fhir:definition [ fhir:v "Ecografia pélvica por via supra púbica" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 19.31
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17211" ] ;
+     fhir:display [ fhir:v "Ecografia escrotal" ] ;
+     fhir:definition [ fhir:v "Ecografia escrotal" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 12.82
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 2.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17143" ] ;
+     fhir:display [ fhir:v "Ecografia peniana" ] ;
+     fhir:definition [ fhir:v "Ecografia peniana" ]
+  ] [
+     fhir:code [ fhir:v "17190" ] ;
+     fhir:display [ fhir:v "Ecografia obstétrica 1º trimestre (idealmente realizada entre as 11 e as 13 semanas e seis dias)" ] ;
+     fhir:definition [ fhir:v "Ecografia obstétrica 1º trimestre (idealmente realizada entre as 11 e as 13 semanas e seis dias)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "70"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17193" ] ;
+     fhir:display [ fhir:v "Ecografia obstétrica 1º trimestre, via endovaginal" ] ;
+     fhir:definition [ fhir:v "Ecografia obstétrica 1º trimestre, via endovaginal" ]
+  ] [
+     fhir:code [ fhir:v "17195" ] ;
+     fhir:display [ fhir:v "Ecografia obstétrica 2º trimestre, morfológica (idealmente realizada entre as 20 e as 22 semanas)" ] ;
+     fhir:definition [ fhir:v "Ecografia obstétrica 2º trimestre, morfológica (idealmente realizada entre as 20 e as 22 semanas)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "120"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "14"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17197" ] ;
+     fhir:display [ fhir:v "Ecografia obstétrica 3º trimestre (idealmente realizada entre as 30 e as 32 semanas)" ] ;
+     fhir:definition [ fhir:v "Ecografia obstétrica 3º trimestre (idealmente realizada entre as 30 e as 32 semanas)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "70"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17185" ] ;
+     fhir:display [ fhir:v "Ecografia de partes moles" ] ;
+     fhir:definition [ fhir:v "Ecografia de partes moles" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 9.29
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.8
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17230" ] ;
+     fhir:display [ fhir:v "Ecografia articular" ] ;
+     fhir:definition [ fhir:v "Ecografia articular" ]
+  ] [
+     fhir:code [ fhir:v "17290" ] ;
+     fhir:display [ fhir:v "Doppler dos vasos do pescoço" ] ;
+     fhir:definition [ fhir:v "Doppler dos vasos do pescoço" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 23.17
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17200" ] ;
+     fhir:display [ fhir:v "Doppler das veias sub-clávias" ] ;
+     fhir:definition [ fhir:v "Doppler das veias sub-clávias" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 23.17
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17205" ] ;
+     fhir:display [ fhir:v "Doppler abdominal, cada víscera ou território vascular" ] ;
+     fhir:definition [ fhir:v "Doppler abdominal, cada víscera ou território vascular" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 23.17
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17294" ] ;
+     fhir:display [ fhir:v "Doppler do sector arterial dos membros inferiores, cada membro" ] ;
+     fhir:definition [ fhir:v "Doppler do sector arterial dos membros inferiores, cada membro" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 23.17
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17298" ] ;
+     fhir:display [ fhir:v "Doppler do sector venoso dos membros inferiores, cada membro" ] ;
+     fhir:definition [ fhir:v "Doppler do sector venoso dos membros inferiores, cada membro" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 23.87
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17299" ] ;
+     fhir:display [ fhir:v "Doppler (adicional a qualquer dos exames de ecografia)" ] ;
+     fhir:definition [ fhir:v "Doppler (adicional a qualquer dos exames de ecografia)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 20.93
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17405" ] ;
+     fhir:display [ fhir:v "Ecografia, apoio a gestos de intervenção" ] ;
+     fhir:definition [ fhir:v "Ecografia, apoio a gestos de intervenção" ]
+  ] [
+     fhir:code [ fhir:v "16010" ] ;
+     fhir:display [ fhir:v "TC do crânio" ] ;
+     fhir:definition [ fhir:v "TC do crânio" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 74.18
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "13"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16020" ] ;
+     fhir:display [ fhir:v "TC maxilo-facial" ] ;
+     fhir:definition [ fhir:v "TC maxilo-facial" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 72.78
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "13"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16030" ] ;
+     fhir:display [ fhir:v "TC do pescoço (partes moles)" ] ;
+     fhir:definition [ fhir:v "TC do pescoço (partes moles)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 74.88
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "13"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16210" ] ;
+     fhir:display [ fhir:v "TC da sela turca" ] ;
+     fhir:definition [ fhir:v "TC da sela turca" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 67.59
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "13"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16220" ] ;
+     fhir:display [ fhir:v "TC das órbitas" ] ;
+     fhir:definition [ fhir:v "TC das órbitas" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 70.79
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "14"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16230" ] ;
+     fhir:display [ fhir:v "TC dos seios perinasais" ] ;
+     fhir:definition [ fhir:v "TC dos seios perinasais" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 71.08
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "13"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16240" ] ;
+     fhir:display [ fhir:v "TC dos ouvidos" ] ;
+     fhir:definition [ fhir:v "TC dos ouvidos" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 69.98
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "12"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16270" ] ;
+     fhir:display [ fhir:v "TC da faringe" ] ;
+     fhir:definition [ fhir:v "TC da faringe" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 69.29
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "12"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16041" ] ;
+     fhir:display [ fhir:v "TC da coluna cervical" ] ;
+     fhir:definition [ fhir:v "TC da coluna cervical" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 77.67
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "14"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16042" ] ;
+     fhir:display [ fhir:v "TC da coluna dorsal" ] ;
+     fhir:definition [ fhir:v "TC da coluna dorsal" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 77.67
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "14"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16043" ] ;
+     fhir:display [ fhir:v "TC da coluna lombar" ] ;
+     fhir:definition [ fhir:v "TC da coluna lombar" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 77.67
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "14"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16044" ] ;
+     fhir:display [ fhir:v "TC da coluna sacro-coccígea" ] ;
+     fhir:definition [ fhir:v "TC da coluna sacro-coccígea" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 77.67
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "14"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16045" ] ;
+     fhir:display [ fhir:v "TC da bacia" ] ;
+     fhir:definition [ fhir:v "TC da bacia" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 77.67
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "12"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16060" ] ;
+     fhir:display [ fhir:v "TC do tórax" ] ;
+     fhir:definition [ fhir:v "TC do tórax" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 80.86
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "14"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16070" ] ;
+     fhir:display [ fhir:v "TC do abdómen superior" ] ;
+     fhir:definition [ fhir:v "TC do abdómen superior" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "90"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "15"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16080" ] ;
+     fhir:display [ fhir:v "TC pélvica" ] ;
+     fhir:definition [ fhir:v "TC pélvica" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 61.59
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "12"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16085" ] ;
+     fhir:display [ fhir:v "TC, Colonografia (colonoscopia virtual)" ] ;
+     fhir:definition [ fhir:v "TC, Colonografia (colonoscopia virtual)" ]
+  ] [
+     fhir:code [ fhir:v "16101" ] ;
+     fhir:display [ fhir:v "TC do membro superior (cada segmento anatómico)" ] ;
+     fhir:definition [ fhir:v "TC do membro superior (cada segmento anatómico)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "65"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "13"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16102" ] ;
+     fhir:display [ fhir:v "TC dos membros inferiores (cada segmento anatómico)" ] ;
+     fhir:definition [ fhir:v "TC dos membros inferiores (cada segmento anatómico)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "65"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "13"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16110" ] ;
+     fhir:display [ fhir:v "TC articular, cada articulação" ] ;
+     fhir:definition [ fhir:v "TC articular, cada articulação" ]
+  ] [
+     fhir:code [ fhir:v "16325" ] ;
+     fhir:display [ fhir:v "TC, suplemento de contraste endovenoso" ] ;
+     fhir:definition [ fhir:v "TC, suplemento de contraste endovenoso" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "12"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "2"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16330" ] ;
+     fhir:display [ fhir:v "TC, contraste oral" ] ;
+     fhir:definition [ fhir:v "TC, contraste oral" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.3
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 0.35
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16340" ] ;
+     fhir:display [ fhir:v "TC, contraste rectal" ] ;
+     fhir:definition [ fhir:v "TC, contraste rectal" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 0.9
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16350" ] ;
+     fhir:display [ fhir:v "TC, adicional de Angio TC" ] ;
+     fhir:definition [ fhir:v "TC, adicional de Angio TC" ]
+  ] [
+     fhir:code [ fhir:v "16351" ] ;
+     fhir:display [ fhir:v "TC, adicional de estudo de perfusão" ] ;
+     fhir:definition [ fhir:v "TC, adicional de estudo de perfusão" ]
+  ] [
+     fhir:code [ fhir:v "16352" ] ;
+     fhir:display [ fhir:v "TC, adicional de injeção intra-tecal (mielo-TC)" ] ;
+     fhir:definition [ fhir:v "TC, adicional de injeção intra-tecal (mielo-TC)" ]
+  ] [
+     fhir:code [ fhir:v "16353" ] ;
+     fhir:display [ fhir:v "TC, adicional de artrografia (artro-TC)" ] ;
+     fhir:definition [ fhir:v "TC, adicional de artrografia (artro-TC)" ]
+  ] [
+     fhir:code [ fhir:v "15812" ] ;
+     fhir:display [ fhir:v "Biópsia percutânea guiada por técnica de imagem" ] ;
+     fhir:definition [ fhir:v "Biópsia percutânea guiada por técnica de imagem" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "20"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "15813" ] ;
+     fhir:display [ fhir:v "Punção aspirativa para citologia guiada por técnica de imagem" ] ;
+     fhir:definition [ fhir:v "Punção aspirativa para citologia guiada por técnica de imagem" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "20"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "15814" ] ;
+     fhir:display [ fhir:v "Drenagem de coleção ou abcesso guiada por técnica de imagem" ] ;
+     fhir:definition [ fhir:v "Drenagem de coleção ou abcesso guiada por técnica de imagem" ]
+  ] [
+     fhir:code [ fhir:v "15161" ] ;
+     fhir:display [ fhir:v "Punção para citologia" ] ;
+     fhir:definition [ fhir:v "Punção para citologia" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "20"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "15171" ] ;
+     fhir:display [ fhir:v "Punção para histologia" ] ;
+     fhir:definition [ fhir:v "Punção para histologia" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "50"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "10"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10920" ] ;
+     fhir:display [ fhir:v "Osteodensitometria da coluna lombar" ] ;
+     fhir:definition [ fhir:v "Osteodensitometria da coluna lombar" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 21.51
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "4"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10930" ] ;
+     fhir:display [ fhir:v "Osteodensitometria do colo femoral" ] ;
+     fhir:definition [ fhir:v "Osteodensitometria do colo femoral" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 19.17
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10935" ] ;
+     fhir:display [ fhir:v "Osteodensitometria do punho" ] ;
+     fhir:definition [ fhir:v "Osteodensitometria do punho" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 19.17
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10955" ] ;
+     fhir:display [ fhir:v "Osteodensitometria da coluna lombar e do colo femoral" ] ;
+     fhir:definition [ fhir:v "Osteodensitometria da coluna lombar e do colo femoral" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 23.22
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "32070" ] ;
+     fhir:display [ fhir:v "Anestesiar sem qualquer fator de risco" ] ;
+     fhir:definition [ fhir:v "Anestesiar sem qualquer fator de risco" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "25"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "25"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "32080" ] ;
+     fhir:display [ fhir:v "Anestesiar com 1 fator de risco" ] ;
+     fhir:definition [ fhir:v "Anestesiar com 1 fator de risco" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "35"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "25"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "32090" ] ;
+     fhir:display [ fhir:v "Anestesiar com 2 ou mais fatores de risco" ] ;
+     fhir:definition [ fhir:v "Anestesiar com 2 ou mais fatores de risco" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "35"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "25"^^xsd:decimal
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

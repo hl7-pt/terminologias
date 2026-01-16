@@ -1,0 +1,833 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MCDTS Tabela Da Área H - Otorrinolaringologia - JSON Representation - HL7 PT FHIR Implementation Guide: Terminologias v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.11"}
+    h3,h4,h5,h6{--heading-prefix:"6.11"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Terminologias</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="spec.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>MCDTS Tabela Da Área H - Otorrinolaringologia</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Terminologias, publicado por HL7 Portugal. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 1.0.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/hl7-pt/terminologias/tree/master'>https://github.com/hl7-pt/terminologias/tree/master</a> e muda regularmente. Veja o <a href='http://hl7.pt/fhir/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-mcdts-h-orl-cs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-mcdts-h-orl-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-mcdts-h-orl-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: MCDTS Tabela Da Área H - Otorrinolaringologia - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2026-01-16
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-mcdts-h-orl-cs.json" no-download="true">Raw json</a> | <a href="CodeSystem-mcdts-h-orl-cs.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R5/resource.html#XCodeSystem.id">id</a>" : "mcdts-h-orl-cs",
+  "<a href="http://hl7.org/fhir/R5/domainresource.html#XCodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narrativa gerada: CodeSystem mcdts-h-orl-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;mcdts-h-orl-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcmcdts-h-orl-cs\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Propriedades&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Este sistema de códigos define as seguintes propriedades para os seus conceitos&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Nome&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Descrição&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;preco&lt;/td&gt;&lt;td&gt;preco&lt;/td&gt;&lt;td&gt;decimal&lt;/td&gt;&lt;td&gt;Preço do MCDT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;taxa&lt;/td&gt;&lt;td&gt;taxa&lt;/td&gt;&lt;td&gt;decimal&lt;/td&gt;&lt;td&gt;Taxa Moderadora&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Conceitos&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Este  sistema de código &lt;code&gt;https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-h-orl&lt;/code&gt; define o seguinte códigos:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definição&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;preco&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;taxa&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78005&lt;a name=\&quot;mcdts-h-orl-cs-78005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Audiograma tonal simples&lt;/td&gt;&lt;td&gt;Audiograma tonal simples&lt;/td&gt;&lt;td&gt;4.35&lt;/td&gt;&lt;td&gt;2.5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78010&lt;a name=\&quot;mcdts-h-orl-cs-78010\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Audiograma vocal&lt;/td&gt;&lt;td&gt;Audiograma vocal&lt;/td&gt;&lt;td&gt;4.35&lt;/td&gt;&lt;td&gt;2.5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78028&lt;a name=\&quot;mcdts-h-orl-cs-78028\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acufenometria&lt;/td&gt;&lt;td&gt;Acufenometria&lt;/td&gt;&lt;td&gt;4.35&lt;/td&gt;&lt;td&gt;1.8&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78024&lt;a name=\&quot;mcdts-h-orl-cs-78024\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Audiometria tonal até 5 anos de idade&lt;/td&gt;&lt;td&gt;Audiometria tonal até 5 anos de idade&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78026&lt;a name=\&quot;mcdts-h-orl-cs-78026\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Audiometria vocal até 10 anos de idade&lt;/td&gt;&lt;td&gt;Audiometria vocal até 10 anos de idade&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78030&lt;a name=\&quot;mcdts-h-orl-cs-78030\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Timpanograma&lt;/td&gt;&lt;td&gt;Timpanograma&lt;/td&gt;&lt;td&gt;4.35&lt;/td&gt;&lt;td&gt;1.6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78035&lt;a name=\&quot;mcdts-h-orl-cs-78035\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pesquisa de reflexos acústicos ipsi-laterais ou contra-laterais&lt;/td&gt;&lt;td&gt;Pesquisa de reflexos acústicos ipsi-laterais ou contra-laterais&lt;/td&gt;&lt;td&gt;3.42&lt;/td&gt;&lt;td&gt;1.6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78036&lt;a name=\&quot;mcdts-h-orl-cs-78036\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pesquisa do &amp;quot;Decay&amp;quot; do reflexo bilateral&lt;/td&gt;&lt;td&gt;Pesquisa do &amp;quot;Decay&amp;quot; do reflexo bilateral&lt;/td&gt;&lt;td&gt;4.35&lt;/td&gt;&lt;td&gt;1.6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78037&lt;a name=\&quot;mcdts-h-orl-cs-78037\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pesquisa de reflexos não acústicos&lt;/td&gt;&lt;td&gt;Pesquisa de reflexos não acústicos&lt;/td&gt;&lt;td&gt;4.35&lt;/td&gt;&lt;td&gt;1.6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78038&lt;a name=\&quot;mcdts-h-orl-cs-78038\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Estudo timpanométrico do funcionamento da trompa auditiva&lt;/td&gt;&lt;td&gt;Estudo timpanométrico do funcionamento da trompa auditiva&lt;/td&gt;&lt;td&gt;4.35&lt;/td&gt;&lt;td&gt;1.6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78039&lt;a name=\&quot;mcdts-h-orl-cs-78039\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Estudo impedanciométrico completo (incluí os códigos 012.4, 013.2, 014.0 e outras provas suplementares)&lt;/td&gt;&lt;td&gt;Estudo impedanciométrico completo (incluí os códigos 012.4, 013.2, 014.0 e outras provas suplementares)&lt;/td&gt;&lt;td&gt;11.97&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78045&lt;a name=\&quot;mcdts-h-orl-cs-78045\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eletrococleografia (Ecog)&lt;/td&gt;&lt;td&gt;Eletrococleografia (Ecog)&lt;/td&gt;&lt;td&gt;64.9&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78050&lt;a name=\&quot;mcdts-h-orl-cs-78050\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Respostas de tronco cerebral (PEA)&lt;/td&gt;&lt;td&gt;Respostas de tronco cerebral (PEA)&lt;/td&gt;&lt;td&gt;56.45&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78052&lt;a name=\&quot;mcdts-h-orl-cs-78052\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Respostas semi-precoces&lt;/td&gt;&lt;td&gt;Respostas semi-precoces&lt;/td&gt;&lt;td&gt;56.45&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78029&lt;a name=\&quot;mcdts-h-orl-cs-78029\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Otimização de ganho auditivo (performance eletroacústica das próteses auditivas &amp;quot;in situ&amp;quot;)&lt;/td&gt;&lt;td&gt;Otimização de ganho auditivo (performance eletroacústica das próteses auditivas &amp;quot;in situ&amp;quot;)&lt;/td&gt;&lt;td&gt;6.56&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78090&lt;a name=\&quot;mcdts-h-orl-cs-78090\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Testes calóricos vestibulares&lt;/td&gt;&lt;td&gt;Testes calóricos vestibulares&lt;/td&gt;&lt;td&gt;6.56&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78108&lt;a name=\&quot;mcdts-h-orl-cs-78108\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Exame vestibular completo por ENG ou VNG computorizada (inclui nistagmo espontâneo e posicional, provas calóricas, optocinéticas, rotatórias e de perseguição)&lt;/td&gt;&lt;td&gt;Exame vestibular completo por ENG ou VNG computorizada (inclui nistagmo espontâneo e posicional, provas calóricas, optocinéticas, rotatórias e de perseguição)&lt;/td&gt;&lt;td&gt;17.11&lt;/td&gt;&lt;td&gt;12&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78125&lt;a name=\&quot;mcdts-h-orl-cs-78125\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Endoscopia nasal&lt;/td&gt;&lt;td&gt;Endoscopia nasal&lt;/td&gt;&lt;td&gt;8.55&lt;/td&gt;&lt;td&gt;3.5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78130&lt;a name=\&quot;mcdts-h-orl-cs-78130\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sinusoscopia&lt;/td&gt;&lt;td&gt;Sinusoscopia&lt;/td&gt;&lt;td&gt;9.3&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78175&lt;a name=\&quot;mcdts-h-orl-cs-78175\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nasofaringolaringoscopia&lt;/td&gt;&lt;td&gt;Nasofaringolaringoscopia&lt;/td&gt;&lt;td&gt;12.46&lt;/td&gt;&lt;td&gt;3.5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78185&lt;a name=\&quot;mcdts-h-orl-cs-78185\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Estroboscopia (inclui laringoscopia)&lt;/td&gt;&lt;td&gt;Estroboscopia (inclui laringoscopia)&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78200&lt;a name=\&quot;mcdts-h-orl-cs-78200\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Análise computorizada da voz&lt;/td&gt;&lt;td&gt;Análise computorizada da voz&lt;/td&gt;&lt;td&gt;5.39&lt;/td&gt;&lt;td&gt;3.5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78230&lt;a name=\&quot;mcdts-h-orl-cs-78230\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rinometria computorizada&lt;/td&gt;&lt;td&gt;Rinometria computorizada&lt;/td&gt;&lt;td&gt;8.09&lt;/td&gt;&lt;td&gt;2.5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78231&lt;a name=\&quot;mcdts-h-orl-cs-78231\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rinometria computorizada com provas de provocação nasal&lt;/td&gt;&lt;td&gt;Rinometria computorizada com provas de provocação nasal&lt;/td&gt;&lt;td&gt;8.09&lt;/td&gt;&lt;td&gt;3.5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78235&lt;a name=\&quot;mcdts-h-orl-cs-78235\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eletroneuronografia computorizada (três avaliações sucessivas)&lt;/td&gt;&lt;td&gt;Eletroneuronografia computorizada (três avaliações sucessivas)&lt;/td&gt;&lt;td&gt;29.37&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78240&lt;a name=\&quot;mcdts-h-orl-cs-78240\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eletrogustometria&lt;/td&gt;&lt;td&gt;Eletrogustometria&lt;/td&gt;&lt;td&gt;6.56&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78312&lt;a name=\&quot;mcdts-h-orl-cs-78312\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Biópsia ganglionar&lt;/td&gt;&lt;td&gt;Biópsia ganglionar&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78313&lt;a name=\&quot;mcdts-h-orl-cs-78313\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Biópsia com pinça ou agulha, gengival&lt;/td&gt;&lt;td&gt;Biópsia com pinça ou agulha, gengival&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78314&lt;a name=\&quot;mcdts-h-orl-cs-78314\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Biópsia de tecidos moles&lt;/td&gt;&lt;td&gt;Biópsia de tecidos moles&lt;/td&gt;&lt;td&gt;4.5&lt;/td&gt;&lt;td&gt;4.5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78316&lt;a name=\&quot;mcdts-h-orl-cs-78316\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Biópsia com pinça ou agulha, orofaringe&lt;/td&gt;&lt;td&gt;Biópsia com pinça ou agulha, orofaringe&lt;/td&gt;&lt;td&gt;4.15&lt;/td&gt;&lt;td&gt;3.5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78317&lt;a name=\&quot;mcdts-h-orl-cs-78317\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Biópsia com pinça ou agulha, nasofaringe&lt;/td&gt;&lt;td&gt;Biópsia com pinça ou agulha, nasofaringe&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78318&lt;a name=\&quot;mcdts-h-orl-cs-78318\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Biópsia com pinça ou agulha, laringe&lt;/td&gt;&lt;td&gt;Biópsia com pinça ou agulha, laringe&lt;/td&gt;&lt;td&gt;5.18&lt;/td&gt;&lt;td&gt;3.5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;78319&lt;a name=\&quot;mcdts-h-orl-cs-78319\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Biópsia com pinça ou agulha, nariz&lt;/td&gt;&lt;td&gt;Biópsia com pinça ou agulha, nariz&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.url">url</a>" : "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-h-orl",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.version">version</a>" : "1.0.0",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.name">name</a>" : "MCDTSH_ORLCS",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.title">title</a>" : "MCDTS Tabela Da Área H - Otorrinolaringologia",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.date">date</a>" : "2026-01-16T11:04:17+00:00",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.publisher">publisher</a>" : "HL7 Portugal",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "HL7 Portugal",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "http://hl7.pt"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "info@hl7.pt"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "HL7 Portugal",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "geral@hl7.pt",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.use">use</a>" : "work"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.description">description</a>" : "Tabela Da Área H - Otorrinolaringologia",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "PT",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Portugal"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.author">author</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "ACSS"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.count">count</a>" : 33,
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property">property</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property.code">code</a>" : "preco",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property.description">description</a>" : "Preço do MCDT",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property.type">type</a>" : "decimal"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property.code">code</a>" : "taxa",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property.description">description</a>" : "Taxa Moderadora",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.property.type">type</a>" : "decimal"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78005",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Audiograma tonal simples",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Audiograma tonal simples",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 4.35
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 2.5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78010",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Audiograma vocal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Audiograma vocal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 4.35
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 2.5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78028",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Acufenometria",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Acufenometria",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 4.35
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 1.8
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78024",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Audiometria tonal até 5 anos de idade",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Audiometria tonal até 5 anos de idade",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 6
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78026",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Audiometria vocal até 10 anos de idade",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Audiometria vocal até 10 anos de idade",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 7
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 3
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78030",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Timpanograma",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Timpanograma",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 4.35
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 1.6
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78035",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Pesquisa de reflexos acústicos ipsi-laterais ou contra-laterais",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Pesquisa de reflexos acústicos ipsi-laterais ou contra-laterais",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 3.42
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 1.6
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78036",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Pesquisa do \&quot;Decay\&quot; do reflexo bilateral",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Pesquisa do \&quot;Decay\&quot; do reflexo bilateral",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 4.35
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 1.6
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78037",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Pesquisa de reflexos não acústicos",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Pesquisa de reflexos não acústicos",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 4.35
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 1.6
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78038",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Estudo timpanométrico do funcionamento da trompa auditiva",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Estudo timpanométrico do funcionamento da trompa auditiva",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 4.35
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 1.6
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78039",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Estudo impedanciométrico completo (incluí os códigos 012.4, 013.2, 014.0 e outras provas suplementares)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Estudo impedanciométrico completo (incluí os códigos 012.4, 013.2, 014.0 e outras provas suplementares)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 11.97
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 3
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78045",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Eletrococleografia (Ecog)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Eletrococleografia (Ecog)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 64.9
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78050",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Respostas de tronco cerebral (PEA)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Respostas de tronco cerebral (PEA)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 56.45
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78052",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Respostas semi-precoces",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Respostas semi-precoces",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 56.45
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78029",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Otimização de ganho auditivo (performance eletroacústica das próteses auditivas \&quot;in situ\&quot;)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Otimização de ganho auditivo (performance eletroacústica das próteses auditivas \&quot;in situ\&quot;)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 6.56
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 4
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78090",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Testes calóricos vestibulares",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Testes calóricos vestibulares",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 6.56
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 6
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78108",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Exame vestibular completo por ENG ou VNG computorizada (inclui nistagmo espontâneo e posicional, provas calóricas, optocinéticas, rotatórias e de perseguição)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Exame vestibular completo por ENG ou VNG computorizada (inclui nistagmo espontâneo e posicional, provas calóricas, optocinéticas, rotatórias e de perseguição)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 17.11
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 12
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78125",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Endoscopia nasal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Endoscopia nasal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 8.55
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 3.5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78130",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Sinusoscopia",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Sinusoscopia",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 9.3
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 6
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78175",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Nasofaringolaringoscopia",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Nasofaringolaringoscopia",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 12.46
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 3.5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78185",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Estroboscopia (inclui laringoscopia)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Estroboscopia (inclui laringoscopia)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 5
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78200",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Análise computorizada da voz",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Análise computorizada da voz",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 5.39
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 3.5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78230",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Rinometria computorizada",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Rinometria computorizada",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 8.09
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 2.5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78231",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Rinometria computorizada com provas de provocação nasal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Rinometria computorizada com provas de provocação nasal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 8.09
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 3.5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78235",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Eletroneuronografia computorizada (três avaliações sucessivas)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Eletroneuronografia computorizada (três avaliações sucessivas)",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 29.37
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 7
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78240",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Eletrogustometria",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Eletrogustometria",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 6.56
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 3
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78312",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Biópsia ganglionar",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Biópsia ganglionar",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 3
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 3
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78313",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Biópsia com pinça ou agulha, gengival",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Biópsia com pinça ou agulha, gengival",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 3
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 3
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78314",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Biópsia de tecidos moles",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Biópsia de tecidos moles",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 4.5
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 4.5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78316",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Biópsia com pinça ou agulha, orofaringe",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Biópsia com pinça ou agulha, orofaringe",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 4.15
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 3.5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78317",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Biópsia com pinça ou agulha, nasofaringe",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Biópsia com pinça ou agulha, nasofaringe",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 5
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78318",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Biópsia com pinça ou agulha, laringe",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Biópsia com pinça ou agulha, laringe",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 5.18
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 3.5
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "78319",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Biópsia com pinça ou agulha, nariz",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Biópsia com pinça ou agulha, nariz",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "preco",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 3
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.code">code</a>" : "taxa",
+          "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.property.value_x_">valueDecimal</a>" : 3
+        }
+      ]
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Jan 16, 2026 11:04+0000">2026-01-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

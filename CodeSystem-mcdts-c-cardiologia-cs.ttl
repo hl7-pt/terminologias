@@ -1,0 +1,156 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/CodeSystem/mcdts-c-cardiologia-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mcdts-c-cardiologia-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem mcdts-c-cardiologia-cs</b></p><a name=\"mcdts-c-cardiologia-cs\"> </a><a name=\"hcmcdts-c-cardiologia-cs\"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class=\"grid\"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>preco</td><td>preco</td><td>decimal</td><td>Preço do MCDT</td></tr><tr><td>taxa</td><td>taxa</td><td>decimal</td><td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-c-cardiologia</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr><tr><td style=\"white-space:nowrap\">40301<a name=\"mcdts-c-cardiologia-cs-40301\"> </a></td><td>ECG simples de 12 derivações</td><td>ECG simples de 12 derivações</td><td>3.87</td><td>1.4</td></tr><tr><td style=\"white-space:nowrap\">40315<a name=\"mcdts-c-cardiologia-cs-40315\"> </a></td><td>Prova de esforço em bicicleta ergométrica ou em tapete rolante com monitorização eletrocardiográfica contínua, registo de ECG em cada estadio</td><td>Prova de esforço em bicicleta ergométrica ou em tapete rolante com monitorização eletrocardiográfica contínua, registo de ECG em cada estadio</td><td>27.55</td><td>6</td></tr><tr><td style=\"white-space:nowrap\">40405<a name=\"mcdts-c-cardiologia-cs-40405\"> </a></td><td>Registo de Holter até 24 horas com análise interativa do perfil rítmico e do segmento ST, podendo incluir variabilidade da frequência cardíaca</td><td>Registo de Holter até 24 horas com análise interativa do perfil rítmico e do segmento ST, podendo incluir variabilidade da frequência cardíaca</td><td>34.65</td><td>8</td></tr><tr><td style=\"white-space:nowrap\">40560<a name=\"mcdts-c-cardiologia-cs-40560\"> </a></td><td>Ecocardiograma transtorácico bidimensional</td><td>Ecocardiograma transtorácico bidimensional</td><td>40.7</td><td>7</td></tr><tr><td style=\"white-space:nowrap\">41020<a name=\"mcdts-c-cardiologia-cs-41020\"> </a></td><td>Análise electrónica e programação de sistema pacemaker permanente</td><td>Análise electrónica e programação de sistema pacemaker permanente</td><td>6</td><td>6</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-c-cardiologia"^^xsd:anyURI ;
+     fhir:l <https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-c-cardiologia>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "MCDTSC_CardiologiaCS"] ; # 
+  fhir:title [ fhir:v "MCDTS Tabela Da Área C - Cardiologia"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-16T11:04:17+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tabela Da Área C - Cardiologia"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "ACSS" ]
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:property ( [
+     fhir:code [ fhir:v "preco" ] ;
+     fhir:description [ fhir:v "Preço do MCDT" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] [
+     fhir:code [ fhir:v "taxa" ] ;
+     fhir:description [ fhir:v "Taxa Moderadora" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "40301" ] ;
+     fhir:display [ fhir:v "ECG simples de 12 derivações" ] ;
+     fhir:definition [ fhir:v "ECG simples de 12 derivações" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 3.87
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 1.4
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "40315" ] ;
+     fhir:display [ fhir:v "Prova de esforço em bicicleta ergométrica ou em tapete rolante com monitorização eletrocardiográfica contínua, registo de ECG em cada estadio" ] ;
+     fhir:definition [ fhir:v "Prova de esforço em bicicleta ergométrica ou em tapete rolante com monitorização eletrocardiográfica contínua, registo de ECG em cada estadio" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 27.55
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "6"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "40405" ] ;
+     fhir:display [ fhir:v "Registo de Holter até 24 horas com análise interativa do perfil rítmico e do segmento ST, podendo incluir variabilidade da frequência cardíaca" ] ;
+     fhir:definition [ fhir:v "Registo de Holter até 24 horas com análise interativa do perfil rítmico e do segmento ST, podendo incluir variabilidade da frequência cardíaca" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 34.65
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "8"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "40560" ] ;
+     fhir:display [ fhir:v "Ecocardiograma transtorácico bidimensional" ] ;
+     fhir:definition [ fhir:v "Ecocardiograma transtorácico bidimensional" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 40.7
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "7"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "41020" ] ;
+     fhir:display [ fhir:v "Análise electrónica e programação de sistema pacemaker permanente" ] ;
+     fhir:definition [ fhir:v "Análise electrónica e programação de sistema pacemaker permanente" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "6"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "6"^^xsd:decimal
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

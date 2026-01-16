@@ -1,0 +1,82 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "subsistemas-saude-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem subsistemas-saude-cs</b></p><a name=\"subsistemas-saude-cs\"> </a><a name=\"hcsubsistemas-saude-cs\"> </a><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-subsistemas-saude</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">ADSE<a name=\"subsistemas-saude-cs-ADSE\"> </a></td><td>ADSE</td><td>Assistência na Doença dos Servidores do Estado</td></tr><tr><td style=\"white-space:nowrap\">ADM<a name=\"subsistemas-saude-cs-ADM\"> </a></td><td>ADM</td><td>Assistência na Doença aos Militares das forças armadas</td></tr><tr><td style=\"white-space:nowrap\">SAMS<a name=\"subsistemas-saude-cs-SAMS\"> </a></td><td>SAMS</td><td>Serviço de Assistência Médico-Social</td></tr><tr><td style=\"white-space:nowrap\">PTACS<a name=\"subsistemas-saude-cs-PTACS\"> </a></td><td>PT-ACS</td><td>Portugal Telecom - Associação de Cuidados de Saúde</td></tr><tr><td style=\"white-space:nowrap\">SADGNR<a name=\"subsistemas-saude-cs-SADGNR\"> </a></td><td>SAD/GNR</td><td>Serviços de Assistência na Doença - Guarda Nacional Republicana</td></tr><tr><td style=\"white-space:nowrap\">SADPSP<a name=\"subsistemas-saude-cs-SADPSP\"> </a></td><td>SAD/PSP</td><td>Serviços de Assistência na Doença - Polícia Segurança Pública</td></tr><tr><td style=\"white-space:nowrap\">SSMJ<a name=\"subsistemas-saude-cs-SSMJ\"> </a></td><td>SSMJ</td><td>Serviços Sociais do Ministério da Justiça</td></tr></table></div>"
+  },
+  "url" : "https://hl7-pt.github.io/terminologias/CodeSystem-subsistemas-saude",
+  "version" : "1.0.0",
+  "name" : "SubsistemasSaudeCS",
+  "title" : "Subsistemas de saúde",
+  "status" : "active",
+  "date" : "2026-01-16T11:04:17+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Subsistemas de saúde existentes em Portugal",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Estado Português"
+  }],
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "ADSE",
+    "display" : "ADSE",
+    "definition" : "Assistência na Doença dos Servidores do Estado"
+  },
+  {
+    "code" : "ADM",
+    "display" : "ADM",
+    "definition" : "Assistência na Doença aos Militares das forças armadas"
+  },
+  {
+    "code" : "SAMS",
+    "display" : "SAMS",
+    "definition" : "Serviço de Assistência Médico-Social"
+  },
+  {
+    "code" : "PTACS",
+    "display" : "PT-ACS",
+    "definition" : "Portugal Telecom - Associação de Cuidados de Saúde"
+  },
+  {
+    "code" : "SADGNR",
+    "display" : "SAD/GNR",
+    "definition" : "Serviços de Assistência na Doença - Guarda Nacional Republicana"
+  },
+  {
+    "code" : "SADPSP",
+    "display" : "SAD/PSP",
+    "definition" : "Serviços de Assistência na Doença - Polícia Segurança Pública"
+  },
+  {
+    "code" : "SSMJ",
+    "display" : "SSMJ",
+    "definition" : "Serviços Sociais do Ministério da Justiça"
+  }]
+}

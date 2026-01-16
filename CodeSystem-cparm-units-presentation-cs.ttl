@@ -1,0 +1,310 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cparm-units-presentation-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem cparm-units-presentation-cs</b></p><a name=\"cparm-units-presentation-cs\"> </a><a name=\"hccparm-units-presentation-cs\"> </a><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-cparm-units-presentation</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">15001000<a name=\"cparm-units-presentation-cs-15001000\"> </a></td><td>Aplicação</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é administrada após uma única operação de uma bomba doseadora, válvula ou outro mecanismo de dosagem equivalente.</td></tr><tr><td style=\"white-space:nowrap\">15002000<a name=\"cparm-units-presentation-cs-15002000\"> </a></td><td>Ampola</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente de ampola.</td></tr><tr><td style=\"white-space:nowrap\">15004000<a name=\"cparm-units-presentation-cs-15004000\"> </a></td><td>Aplicador</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único aplicador.</td></tr><tr><td style=\"white-space:nowrap\">15005000<a name=\"cparm-units-presentation-cs-15005000\"> </a></td><td>Saco</td><td>Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único contêiner de bolsa.</td></tr><tr><td style=\"white-space:nowrap\">15006000<a name=\"cparm-units-presentation-cs-15006000\"> </a></td><td>Barrica</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente de barril.</td></tr><tr><td style=\"white-space:nowrap\">15007000<a name=\"cparm-units-presentation-cs-15007000\"> </a></td><td>Blister</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único blister ou num blister de dose unitária.</td></tr><tr><td style=\"white-space:nowrap\">15008000<a name=\"cparm-units-presentation-cs-15008000\"> </a></td><td>Bloco</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de bloco.</td></tr><tr><td style=\"white-space:nowrap\">15009000<a name=\"cparm-units-presentation-cs-15009000\"> </a></td><td>Frasco</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único recipiente de garrafa.</td></tr><tr><td style=\"white-space:nowrap\">15011000<a name=\"cparm-units-presentation-cs-15011000\"> </a></td><td>Hóstia</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de hóstia.</td></tr><tr><td style=\"white-space:nowrap\">15012000<a name=\"cparm-units-presentation-cs-15012000\"> </a></td><td>Cápsula</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de cápsula.</td></tr><tr><td style=\"white-space:nowrap\">15013000<a name=\"cparm-units-presentation-cs-15013000\"> </a></td><td>Cartucho</td><td>Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único recipiente de cartucho.</td></tr><tr><td style=\"white-space:nowrap\">15024000<a name=\"cparm-units-presentation-cs-15024000\"> </a></td><td>Goma para mascar</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de goma para mascar medicamentosa.</td></tr><tr><td style=\"white-space:nowrap\">15016000<a name=\"cparm-units-presentation-cs-15016000\"> </a></td><td>Recipiente</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente, onde um termo de recipiente mais específico não é aplicável.</td></tr><tr><td style=\"white-space:nowrap\">15017000<a name=\"cparm-units-presentation-cs-15017000\"> </a></td><td>Copo-medida</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é administrada pelo enchimento de um único dispositivo de administração de copo.</td></tr><tr><td style=\"white-space:nowrap\">15018000<a name=\"cparm-units-presentation-cs-15018000\"> </a></td><td>Cilindro</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único recipiente do tipo cilindro.</td></tr><tr><td style=\"white-space:nowrap\">DISCO<a name=\"cparm-units-presentation-cs-DISCO\"> </a></td><td>Disco</td><td>−</td></tr><tr><td style=\"white-space:nowrap\">15021000<a name=\"cparm-units-presentation-cs-15021000\"> </a></td><td>Penso</td><td>Unidade de apresentação utilizada para representar a quantidade de produto que se encontra numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de curativo.</td></tr><tr><td style=\"white-space:nowrap\">15022000<a name=\"cparm-units-presentation-cs-15022000\"> </a></td><td>Gota</td><td>Unidade de apresentação utilizada para representar a quantidade de produto que é administrada numa única gota dispensada num conta-gotas ou dispositivo de administração equivalente.</td></tr><tr><td style=\"white-space:nowrap\">ENEMA<a name=\"cparm-units-presentation-cs-ENEMA\"> </a></td><td>Enema</td><td>−</td></tr><tr><td style=\"white-space:nowrap\">15025000<a name=\"cparm-units-presentation-cs-15025000\"> </a></td><td>Implante</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de implante.</td></tr><tr><td style=\"white-space:nowrap\">15026000<a name=\"cparm-units-presentation-cs-15026000\"> </a></td><td>Inalador</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único recipiente de inalador.</td></tr><tr><td style=\"white-space:nowrap\">KIT<a name=\"cparm-units-presentation-cs-KIT\"> </a></td><td>Kit</td><td>−</td></tr><tr><td style=\"white-space:nowrap\">15029000<a name=\"cparm-units-presentation-cs-15029000\"> </a></td><td>Pastilha</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de pastilha.</td></tr><tr><td style=\"white-space:nowrap\">15036000<a name=\"cparm-units-presentation-cs-15036000\"> </a></td><td>Adesivo</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de adesivo.</td></tr><tr><td style=\"white-space:nowrap\">15037000<a name=\"cparm-units-presentation-cs-15037000\"> </a></td><td>Caneta</td><td>Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único recipiente de canetas.</td></tr><tr><td style=\"white-space:nowrap\">15039000<a name=\"cparm-units-presentation-cs-15039000\"> </a></td><td>Óvulo</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de óvulo.</td></tr><tr><td style=\"white-space:nowrap\">15041000<a name=\"cparm-units-presentation-cs-15041000\"> </a></td><td>Pipeta</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único dispositivo de administração de pipeta.</td></tr><tr><td style=\"white-space:nowrap\">15042000<a name=\"cparm-units-presentation-cs-15042000\"> </a></td><td>Emplastro</td><td>Unidade de apresentação utilizada para representar a quantidade de produto que se encontra numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de emplastro.</td></tr><tr><td style=\"white-space:nowrap\">SERINPRE<a name=\"cparm-units-presentation-cs-SERINPRE\"> </a></td><td>Seringa pré-cheia</td><td>−</td></tr><tr><td style=\"white-space:nowrap\">PUFF<a name=\"cparm-units-presentation-cs-PUFF\"> </a></td><td>Puff</td><td>−</td></tr><tr><td style=\"white-space:nowrap\">15045000<a name=\"cparm-units-presentation-cs-15045000\"> </a></td><td>Saqueta</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente em saqueta.</td></tr><tr><td style=\"white-space:nowrap\">VARETA<a name=\"cparm-units-presentation-cs-VARETA\"> </a></td><td>Vareta</td><td>−</td></tr><tr><td style=\"white-space:nowrap\">15051000<a name=\"cparm-units-presentation-cs-15051000\"> </a></td><td>Supositório</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de supositório.</td></tr><tr><td style=\"white-space:nowrap\">15054000<a name=\"cparm-units-presentation-cs-15054000\"> </a></td><td>Comprimido</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de comprimido.</td></tr><tr><td style=\"white-space:nowrap\">15056000<a name=\"cparm-units-presentation-cs-15056000\"> </a></td><td>Tampão</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de tampão.</td></tr><tr><td style=\"white-space:nowrap\">15058000<a name=\"cparm-units-presentation-cs-15058000\"> </a></td><td>Bisnaga</td><td>Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único recipiente de bisnaga.</td></tr><tr><td style=\"white-space:nowrap\">15015000<a name=\"cparm-units-presentation-cs-15015000\"> </a></td><td>Coleira</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de coleira.</td></tr><tr><td style=\"white-space:nowrap\">15019000<a name=\"cparm-units-presentation-cs-15019000\"> </a></td><td>Dardo</td><td>Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único recipiente de dardo.</td></tr><tr><td style=\"white-space:nowrap\">15023000<a name=\"cparm-units-presentation-cs-15023000\"> </a></td><td>Película</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de película.</td></tr><tr><td style=\"white-space:nowrap\">15027000<a name=\"cparm-units-presentation-cs-15027000\"> </a></td><td>Inserto</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de inserto.</td></tr><tr><td style=\"white-space:nowrap\">15028000<a name=\"cparm-units-presentation-cs-15028000\"> </a></td><td>Boião</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único frasco.</td></tr><tr><td style=\"white-space:nowrap\">15030000<a name=\"cparm-units-presentation-cs-15030000\"> </a></td><td>Liofilizado</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de liofilizado.</td></tr><tr><td style=\"white-space:nowrap\">15031000<a name=\"cparm-units-presentation-cs-15031000\"> </a></td><td>Matriz</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de matriz.</td></tr><tr><td style=\"white-space:nowrap\">15034000<a name=\"cparm-units-presentation-cs-15034000\"> </a></td><td>Papel</td><td>Unidade de apresentação utilizada para representar a quantidade de produto que se encontra numa única entidade discreta em que a forma de dosagem farmacêutica é um tipo de papel.</td></tr><tr><td style=\"white-space:nowrap\">15035000<a name=\"cparm-units-presentation-cs-15035000\"> </a></td><td>Pastilha mole</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de pastilha mole.</td></tr><tr><td style=\"white-space:nowrap\">15038000<a name=\"cparm-units-presentation-cs-15038000\"> </a></td><td>Berloque</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de berloque.</td></tr><tr><td style=\"white-space:nowrap\">15040000<a name=\"cparm-units-presentation-cs-15040000\"> </a></td><td>Grânulo</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de grânulo.</td></tr><tr><td style=\"white-space:nowrap\">15043000<a name=\"cparm-units-presentation-cs-15043000\"> </a></td><td>Suporte</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de suporte.</td></tr><tr><td style=\"white-space:nowrap\">15044000<a name=\"cparm-units-presentation-cs-15044000\"> </a></td><td>Bolsa</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica ou recipiente é um tipo de bolsa.</td></tr><tr><td style=\"white-space:nowrap\">15046000<a name=\"cparm-units-presentation-cs-15046000\"> </a></td><td>Esponja</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de esponja.</td></tr><tr><td style=\"white-space:nowrap\">15047000<a name=\"cparm-units-presentation-cs-15047000\"> </a></td><td>Colher-medida</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é administrada pelo enchimento de um dispositivo de administração de uma única colher.</td></tr><tr><td style=\"white-space:nowrap\">15048000<a name=\"cparm-units-presentation-cs-15048000\"> </a></td><td>Lápis</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de lápis.</td></tr><tr><td style=\"white-space:nowrap\">15049000<a name=\"cparm-units-presentation-cs-15049000\"> </a></td><td>Palhinha</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente de palhinha.</td></tr><tr><td style=\"white-space:nowrap\">15050000<a name=\"cparm-units-presentation-cs-15050000\"> </a></td><td>Fita</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de fita.</td></tr><tr><td style=\"white-space:nowrap\">15052000<a name=\"cparm-units-presentation-cs-15052000\"> </a></td><td>Seringa</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único recipiente de seringa.</td></tr><tr><td style=\"white-space:nowrap\">15053000<a name=\"cparm-units-presentation-cs-15053000\"> </a></td><td>Sistema</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de sistema.</td></tr><tr><td style=\"white-space:nowrap\">15055000<a name=\"cparm-units-presentation-cs-15055000\"> </a></td><td>Brinco</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de brinco.</td></tr><tr><td style=\"white-space:nowrap\">15057000<a name=\"cparm-units-presentation-cs-15057000\"> </a></td><td>Fio</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de fio.</td></tr><tr><td style=\"white-space:nowrap\">15060000<a name=\"cparm-units-presentation-cs-15060000\"> </a></td><td>Frasco para injetáveis</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único frasco.</td></tr><tr><td style=\"white-space:nowrap\">15033000<a name=\"cparm-units-presentation-cs-15033000\"> </a></td><td>Tampão</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que se encontra numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de tampão.</td></tr><tr><td style=\"white-space:nowrap\">15062000<a name=\"cparm-units-presentation-cs-15062000\"> </a></td><td>Zaragatoa</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que se encontra numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de zaragatoa.</td></tr><tr><td style=\"white-space:nowrap\">15059000<a name=\"cparm-units-presentation-cs-15059000\"> </a></td><td>Recipiente</td><td>Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7-pt.github.io/terminologias/CodeSystem-cparm-units-presentation"^^xsd:anyURI ;
+     fhir:l <https://hl7-pt.github.io/terminologias/CodeSystem-cparm-units-presentation>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPARMUnitsPresentationCS"] ; # 
+  fhir:title [ fhir:v "Unidades de apresentação"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-16T11:04:17+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Unidades de apresentação de medicamentos"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "62"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "15001000" ] ;
+     fhir:display [ fhir:v "Aplicação" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é administrada após uma única operação de uma bomba doseadora, válvula ou outro mecanismo de dosagem equivalente." ]
+  ] [
+     fhir:code [ fhir:v "15002000" ] ;
+     fhir:display [ fhir:v "Ampola" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente de ampola." ]
+  ] [
+     fhir:code [ fhir:v "15004000" ] ;
+     fhir:display [ fhir:v "Aplicador" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único aplicador." ]
+  ] [
+     fhir:code [ fhir:v "15005000" ] ;
+     fhir:display [ fhir:v "Saco" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único contêiner de bolsa." ]
+  ] [
+     fhir:code [ fhir:v "15006000" ] ;
+     fhir:display [ fhir:v "Barrica" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente de barril." ]
+  ] [
+     fhir:code [ fhir:v "15007000" ] ;
+     fhir:display [ fhir:v "Blister" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único blister ou num blister de dose unitária." ]
+  ] [
+     fhir:code [ fhir:v "15008000" ] ;
+     fhir:display [ fhir:v "Bloco" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de bloco." ]
+  ] [
+     fhir:code [ fhir:v "15009000" ] ;
+     fhir:display [ fhir:v "Frasco" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único recipiente de garrafa." ]
+  ] [
+     fhir:code [ fhir:v "15011000" ] ;
+     fhir:display [ fhir:v "Hóstia" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de hóstia." ]
+  ] [
+     fhir:code [ fhir:v "15012000" ] ;
+     fhir:display [ fhir:v "Cápsula" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de cápsula." ]
+  ] [
+     fhir:code [ fhir:v "15013000" ] ;
+     fhir:display [ fhir:v "Cartucho" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único recipiente de cartucho." ]
+  ] [
+     fhir:code [ fhir:v "15024000" ] ;
+     fhir:display [ fhir:v "Goma para mascar" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de goma para mascar medicamentosa." ]
+  ] [
+     fhir:code [ fhir:v "15016000" ] ;
+     fhir:display [ fhir:v "Recipiente" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente, onde um termo de recipiente mais específico não é aplicável." ]
+  ] [
+     fhir:code [ fhir:v "15017000" ] ;
+     fhir:display [ fhir:v "Copo-medida" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é administrada pelo enchimento de um único dispositivo de administração de copo." ]
+  ] [
+     fhir:code [ fhir:v "15018000" ] ;
+     fhir:display [ fhir:v "Cilindro" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único recipiente do tipo cilindro." ]
+  ] [
+     fhir:code [ fhir:v "DISCO" ] ;
+     fhir:display [ fhir:v "Disco" ] ;
+     fhir:definition [ fhir:v "−" ]
+  ] [
+     fhir:code [ fhir:v "15021000" ] ;
+     fhir:display [ fhir:v "Penso" ] ;
+     fhir:definition [ fhir:v "Unidade de apresentação utilizada para representar a quantidade de produto que se encontra numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de curativo." ]
+  ] [
+     fhir:code [ fhir:v "15022000" ] ;
+     fhir:display [ fhir:v "Gota" ] ;
+     fhir:definition [ fhir:v "Unidade de apresentação utilizada para representar a quantidade de produto que é administrada numa única gota dispensada num conta-gotas ou dispositivo de administração equivalente." ]
+  ] [
+     fhir:code [ fhir:v "ENEMA" ] ;
+     fhir:display [ fhir:v "Enema" ] ;
+     fhir:definition [ fhir:v "−" ]
+  ] [
+     fhir:code [ fhir:v "15025000" ] ;
+     fhir:display [ fhir:v "Implante" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de implante." ]
+  ] [
+     fhir:code [ fhir:v "15026000" ] ;
+     fhir:display [ fhir:v "Inalador" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único recipiente de inalador." ]
+  ] [
+     fhir:code [ fhir:v "KIT" ] ;
+     fhir:display [ fhir:v "Kit" ] ;
+     fhir:definition [ fhir:v "−" ]
+  ] [
+     fhir:code [ fhir:v "15029000" ] ;
+     fhir:display [ fhir:v "Pastilha" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de pastilha." ]
+  ] [
+     fhir:code [ fhir:v "15036000" ] ;
+     fhir:display [ fhir:v "Adesivo" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de adesivo." ]
+  ] [
+     fhir:code [ fhir:v "15037000" ] ;
+     fhir:display [ fhir:v "Caneta" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único recipiente de canetas." ]
+  ] [
+     fhir:code [ fhir:v "15039000" ] ;
+     fhir:display [ fhir:v "Óvulo" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de óvulo." ]
+  ] [
+     fhir:code [ fhir:v "15041000" ] ;
+     fhir:display [ fhir:v "Pipeta" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único dispositivo de administração de pipeta." ]
+  ] [
+     fhir:code [ fhir:v "15042000" ] ;
+     fhir:display [ fhir:v "Emplastro" ] ;
+     fhir:definition [ fhir:v "Unidade de apresentação utilizada para representar a quantidade de produto que se encontra numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de emplastro." ]
+  ] [
+     fhir:code [ fhir:v "SERINPRE" ] ;
+     fhir:display [ fhir:v "Seringa pré-cheia" ] ;
+     fhir:definition [ fhir:v "−" ]
+  ] [
+     fhir:code [ fhir:v "PUFF" ] ;
+     fhir:display [ fhir:v "Puff" ] ;
+     fhir:definition [ fhir:v "−" ]
+  ] [
+     fhir:code [ fhir:v "15045000" ] ;
+     fhir:display [ fhir:v "Saqueta" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente em saqueta." ]
+  ] [
+     fhir:code [ fhir:v "VARETA" ] ;
+     fhir:display [ fhir:v "Vareta" ] ;
+     fhir:definition [ fhir:v "−" ]
+  ] [
+     fhir:code [ fhir:v "15051000" ] ;
+     fhir:display [ fhir:v "Supositório" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de supositório." ]
+  ] [
+     fhir:code [ fhir:v "15054000" ] ;
+     fhir:display [ fhir:v "Comprimido" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de comprimido." ]
+  ] [
+     fhir:code [ fhir:v "15056000" ] ;
+     fhir:display [ fhir:v "Tampão" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de tampão." ]
+  ] [
+     fhir:code [ fhir:v "15058000" ] ;
+     fhir:display [ fhir:v "Bisnaga" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único recipiente de bisnaga." ]
+  ] [
+     fhir:code [ fhir:v "15015000" ] ;
+     fhir:display [ fhir:v "Coleira" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de coleira." ]
+  ] [
+     fhir:code [ fhir:v "15019000" ] ;
+     fhir:display [ fhir:v "Dardo" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto encontrada num único recipiente de dardo." ]
+  ] [
+     fhir:code [ fhir:v "15023000" ] ;
+     fhir:display [ fhir:v "Película" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de película." ]
+  ] [
+     fhir:code [ fhir:v "15027000" ] ;
+     fhir:display [ fhir:v "Inserto" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de inserto." ]
+  ] [
+     fhir:code [ fhir:v "15028000" ] ;
+     fhir:display [ fhir:v "Boião" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único frasco." ]
+  ] [
+     fhir:code [ fhir:v "15030000" ] ;
+     fhir:display [ fhir:v "Liofilizado" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de liofilizado." ]
+  ] [
+     fhir:code [ fhir:v "15031000" ] ;
+     fhir:display [ fhir:v "Matriz" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de matriz." ]
+  ] [
+     fhir:code [ fhir:v "15034000" ] ;
+     fhir:display [ fhir:v "Papel" ] ;
+     fhir:definition [ fhir:v "Unidade de apresentação utilizada para representar a quantidade de produto que se encontra numa única entidade discreta em que a forma de dosagem farmacêutica é um tipo de papel." ]
+  ] [
+     fhir:code [ fhir:v "15035000" ] ;
+     fhir:display [ fhir:v "Pastilha mole" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de pastilha mole." ]
+  ] [
+     fhir:code [ fhir:v "15038000" ] ;
+     fhir:display [ fhir:v "Berloque" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de berloque." ]
+  ] [
+     fhir:code [ fhir:v "15040000" ] ;
+     fhir:display [ fhir:v "Grânulo" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de grânulo." ]
+  ] [
+     fhir:code [ fhir:v "15043000" ] ;
+     fhir:display [ fhir:v "Suporte" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de suporte." ]
+  ] [
+     fhir:code [ fhir:v "15044000" ] ;
+     fhir:display [ fhir:v "Bolsa" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica ou recipiente é um tipo de bolsa." ]
+  ] [
+     fhir:code [ fhir:v "15046000" ] ;
+     fhir:display [ fhir:v "Esponja" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de esponja." ]
+  ] [
+     fhir:code [ fhir:v "15047000" ] ;
+     fhir:display [ fhir:v "Colher-medida" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é administrada pelo enchimento de um dispositivo de administração de uma única colher." ]
+  ] [
+     fhir:code [ fhir:v "15048000" ] ;
+     fhir:display [ fhir:v "Lápis" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de lápis." ]
+  ] [
+     fhir:code [ fhir:v "15049000" ] ;
+     fhir:display [ fhir:v "Palhinha" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente de palhinha." ]
+  ] [
+     fhir:code [ fhir:v "15050000" ] ;
+     fhir:display [ fhir:v "Fita" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de fita." ]
+  ] [
+     fhir:code [ fhir:v "15052000" ] ;
+     fhir:display [ fhir:v "Seringa" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada num único recipiente de seringa." ]
+  ] [
+     fhir:code [ fhir:v "15053000" ] ;
+     fhir:display [ fhir:v "Sistema" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de sistema." ]
+  ] [
+     fhir:code [ fhir:v "15055000" ] ;
+     fhir:display [ fhir:v "Brinco" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de brinco." ]
+  ] [
+     fhir:code [ fhir:v "15057000" ] ;
+     fhir:display [ fhir:v "Fio" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que é encontrada numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de fio." ]
+  ] [
+     fhir:code [ fhir:v "15060000" ] ;
+     fhir:display [ fhir:v "Frasco para injetáveis" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único frasco." ]
+  ] [
+     fhir:code [ fhir:v "15033000" ] ;
+     fhir:display [ fhir:v "Tampão" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de tampão." ]
+  ] [
+     fhir:code [ fhir:v "15062000" ] ;
+     fhir:display [ fhir:v "Zaragatoa" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra numa única entidade discreta onde a forma de dosagem farmacêutica é um tipo de zaragatoa." ]
+  ] [
+     fhir:code [ fhir:v "15059000" ] ;
+     fhir:display [ fhir:v "Recipiente" ] ;
+     fhir:definition [ fhir:v "Uma unidade de apresentação usada para representar a quantidade de produto que se encontra num único recipiente" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

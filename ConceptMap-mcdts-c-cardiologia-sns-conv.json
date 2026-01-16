@@ -1,0 +1,81 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "mcdts-c-cardiologia-sns-conv",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ConceptMap mcdts-c-cardiologia-sns-conv</b></p><a name=\"mcdts-c-cardiologia-sns-conv\"> </a><a name=\"hcmcdts-c-cardiologia-sns-conv\"> </a><p>Mapeamento de (não especificado) para (não especificado)</p><br/><p><b>Grupo 1 </b>Mapeamento de <code>https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-c-cardiologia-cs</code> to <code>https://www.acss.pt</code></p><table class=\"grid\"><tr><td><b>Código fonte</b></td><td><b>Relacionamento</b></td><td><b>Código de destino</b></td></tr><tr><td>40301</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>002.7</td></tr><tr><td>40315</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>003.5</td></tr><tr><td>40405</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>006.0</td></tr><tr><td>40560</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1530.4</td></tr><tr><td>41020</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>025.6</td></tr></table></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-c-cardiologia-sns-conv",
+  "version" : "1.0.0",
+  "name" : "MCDTS-c-cardiologia-SNS-CONV",
+  "title" : "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área C - Cardiologia ",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-11",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "group" : [{
+    "source" : "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-c-cardiologia-cs",
+    "target" : "https://www.acss.pt",
+    "element" : [{
+      "code" : "40301",
+      "target" : [{
+        "code" : "002.7",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "40315",
+      "target" : [{
+        "code" : "003.5",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "40405",
+      "target" : [{
+        "code" : "006.0",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "40560",
+      "target" : [{
+        "code" : "1530.4",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "41020",
+      "target" : [{
+        "code" : "025.6",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

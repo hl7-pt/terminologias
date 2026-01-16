@@ -1,0 +1,122 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mcdts-c-cardiologia-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem mcdts-c-cardiologia-cs</b></p><a name=\"mcdts-c-cardiologia-cs\"> </a><a name=\"hcmcdts-c-cardiologia-cs\"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class=\"grid\"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>preco</td><td>preco</td><td>decimal</td><td>Preço do MCDT</td></tr><tr><td>taxa</td><td>taxa</td><td>decimal</td><td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-c-cardiologia</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr><tr><td style=\"white-space:nowrap\">40301<a name=\"mcdts-c-cardiologia-cs-40301\"> </a></td><td>ECG simples de 12 derivações</td><td>ECG simples de 12 derivações</td><td>3.87</td><td>1.4</td></tr><tr><td style=\"white-space:nowrap\">40315<a name=\"mcdts-c-cardiologia-cs-40315\"> </a></td><td>Prova de esforço em bicicleta ergométrica ou em tapete rolante com monitorização eletrocardiográfica contínua, registo de ECG em cada estadio</td><td>Prova de esforço em bicicleta ergométrica ou em tapete rolante com monitorização eletrocardiográfica contínua, registo de ECG em cada estadio</td><td>27.55</td><td>6</td></tr><tr><td style=\"white-space:nowrap\">40405<a name=\"mcdts-c-cardiologia-cs-40405\"> </a></td><td>Registo de Holter até 24 horas com análise interativa do perfil rítmico e do segmento ST, podendo incluir variabilidade da frequência cardíaca</td><td>Registo de Holter até 24 horas com análise interativa do perfil rítmico e do segmento ST, podendo incluir variabilidade da frequência cardíaca</td><td>34.65</td><td>8</td></tr><tr><td style=\"white-space:nowrap\">40560<a name=\"mcdts-c-cardiologia-cs-40560\"> </a></td><td>Ecocardiograma transtorácico bidimensional</td><td>Ecocardiograma transtorácico bidimensional</td><td>40.7</td><td>7</td></tr><tr><td style=\"white-space:nowrap\">41020<a name=\"mcdts-c-cardiologia-cs-41020\"> </a></td><td>Análise electrónica e programação de sistema pacemaker permanente</td><td>Análise electrónica e programação de sistema pacemaker permanente</td><td>6</td><td>6</td></tr></table></div>"
+  },
+  "url" : "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-c-cardiologia",
+  "version" : "1.0.0",
+  "name" : "MCDTSC_CardiologiaCS",
+  "title" : "MCDTS Tabela Da Área C - Cardiologia",
+  "status" : "active",
+  "date" : "2026-01-16T11:04:17+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Tabela Da Área C - Cardiologia",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "ACSS"
+  }],
+  "content" : "complete",
+  "count" : 5,
+  "property" : [{
+    "code" : "preco",
+    "description" : "Preço do MCDT",
+    "type" : "decimal"
+  },
+  {
+    "code" : "taxa",
+    "description" : "Taxa Moderadora",
+    "type" : "decimal"
+  }],
+  "concept" : [{
+    "code" : "40301",
+    "display" : "ECG simples de 12 derivações",
+    "definition" : "ECG simples de 12 derivações",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 3.87
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 1.4
+    }]
+  },
+  {
+    "code" : "40315",
+    "display" : "Prova de esforço em bicicleta ergométrica ou em tapete rolante com monitorização eletrocardiográfica contínua, registo de ECG em cada estadio",
+    "definition" : "Prova de esforço em bicicleta ergométrica ou em tapete rolante com monitorização eletrocardiográfica contínua, registo de ECG em cada estadio",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 27.55
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 6
+    }]
+  },
+  {
+    "code" : "40405",
+    "display" : "Registo de Holter até 24 horas com análise interativa do perfil rítmico e do segmento ST, podendo incluir variabilidade da frequência cardíaca",
+    "definition" : "Registo de Holter até 24 horas com análise interativa do perfil rítmico e do segmento ST, podendo incluir variabilidade da frequência cardíaca",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 34.65
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 8
+    }]
+  },
+  {
+    "code" : "40560",
+    "display" : "Ecocardiograma transtorácico bidimensional",
+    "definition" : "Ecocardiograma transtorácico bidimensional",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 40.7
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 7
+    }]
+  },
+  {
+    "code" : "41020",
+    "display" : "Análise electrónica e programação de sistema pacemaker permanente",
+    "definition" : "Análise electrónica e programação de sistema pacemaker permanente",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 6
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 6
+    }]
+  }]
+}

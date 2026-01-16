@@ -1,0 +1,81 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "mcdts-j-urologia-sns-conv",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ConceptMap mcdts-j-urologia-sns-conv</b></p><a name=\"mcdts-j-urologia-sns-conv\"> </a><a name=\"hcmcdts-j-urologia-sns-conv\"> </a><p>Mapeamento de (não especificado) para (não especificado)</p><br/><p><b>Grupo 1 </b>Mapeamento de <code>https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-j-urologia-cs</code> to <code>https://www.acss.pt</code></p><table class=\"grid\"><tr><td><b>Código fonte</b></td><td><b>Relacionamento</b></td><td><b>Código de destino</b></td></tr><tr><td>90113</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1529.0</td></tr><tr><td>90403</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>010.8</td></tr><tr><td>90900</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>002.7</td></tr><tr><td>90967</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>003.5</td></tr><tr><td>90985</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>001.9</td></tr></table></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-j-urologia-sns-conv",
+  "version" : "1.0.0",
+  "name" : "MCDTS-j-urologia-SNS-CONV",
+  "title" : "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área J - Urologia ",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-11",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "group" : [{
+    "source" : "https://terminologias.hl7.pt/fhir/CodeSystem/mcdts-j-urologia-cs",
+    "target" : "https://www.acss.pt",
+    "element" : [{
+      "code" : "90113",
+      "target" : [{
+        "code" : "1529.0",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "90403",
+      "target" : [{
+        "code" : "010.8",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "90900",
+      "target" : [{
+        "code" : "002.7",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "90967",
+      "target" : [{
+        "code" : "003.5",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "90985",
+      "target" : [{
+        "code" : "001.9",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

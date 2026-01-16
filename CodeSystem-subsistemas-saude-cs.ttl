@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/CodeSystem/subsistemas-saude-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "subsistemas-saude-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem subsistemas-saude-cs</b></p><a name=\"subsistemas-saude-cs\"> </a><a name=\"hcsubsistemas-saude-cs\"> </a><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-subsistemas-saude</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">ADSE<a name=\"subsistemas-saude-cs-ADSE\"> </a></td><td>ADSE</td><td>Assistência na Doença dos Servidores do Estado</td></tr><tr><td style=\"white-space:nowrap\">ADM<a name=\"subsistemas-saude-cs-ADM\"> </a></td><td>ADM</td><td>Assistência na Doença aos Militares das forças armadas</td></tr><tr><td style=\"white-space:nowrap\">SAMS<a name=\"subsistemas-saude-cs-SAMS\"> </a></td><td>SAMS</td><td>Serviço de Assistência Médico-Social</td></tr><tr><td style=\"white-space:nowrap\">PTACS<a name=\"subsistemas-saude-cs-PTACS\"> </a></td><td>PT-ACS</td><td>Portugal Telecom - Associação de Cuidados de Saúde</td></tr><tr><td style=\"white-space:nowrap\">SADGNR<a name=\"subsistemas-saude-cs-SADGNR\"> </a></td><td>SAD/GNR</td><td>Serviços de Assistência na Doença - Guarda Nacional Republicana</td></tr><tr><td style=\"white-space:nowrap\">SADPSP<a name=\"subsistemas-saude-cs-SADPSP\"> </a></td><td>SAD/PSP</td><td>Serviços de Assistência na Doença - Polícia Segurança Pública</td></tr><tr><td style=\"white-space:nowrap\">SSMJ<a name=\"subsistemas-saude-cs-SSMJ\"> </a></td><td>SSMJ</td><td>Serviços Sociais do Ministério da Justiça</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7-pt.github.io/terminologias/CodeSystem-subsistemas-saude"^^xsd:anyURI ;
+     fhir:l <https://hl7-pt.github.io/terminologias/CodeSystem-subsistemas-saude>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "SubsistemasSaudeCS"] ; # 
+  fhir:title [ fhir:v "Subsistemas de saúde"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-16T11:04:17+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Subsistemas de saúde existentes em Portugal"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Estado Português" ]
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ADSE" ] ;
+     fhir:display [ fhir:v "ADSE" ] ;
+     fhir:definition [ fhir:v "Assistência na Doença dos Servidores do Estado" ]
+  ] [
+     fhir:code [ fhir:v "ADM" ] ;
+     fhir:display [ fhir:v "ADM" ] ;
+     fhir:definition [ fhir:v "Assistência na Doença aos Militares das forças armadas" ]
+  ] [
+     fhir:code [ fhir:v "SAMS" ] ;
+     fhir:display [ fhir:v "SAMS" ] ;
+     fhir:definition [ fhir:v "Serviço de Assistência Médico-Social" ]
+  ] [
+     fhir:code [ fhir:v "PTACS" ] ;
+     fhir:display [ fhir:v "PT-ACS" ] ;
+     fhir:definition [ fhir:v "Portugal Telecom - Associação de Cuidados de Saúde" ]
+  ] [
+     fhir:code [ fhir:v "SADGNR" ] ;
+     fhir:display [ fhir:v "SAD/GNR" ] ;
+     fhir:definition [ fhir:v "Serviços de Assistência na Doença - Guarda Nacional Republicana" ]
+  ] [
+     fhir:code [ fhir:v "SADPSP" ] ;
+     fhir:display [ fhir:v "SAD/PSP" ] ;
+     fhir:definition [ fhir:v "Serviços de Assistência na Doença - Polícia Segurança Pública" ]
+  ] [
+     fhir:code [ fhir:v "SSMJ" ] ;
+     fhir:display [ fhir:v "SSMJ" ] ;
+     fhir:definition [ fhir:v "Serviços Sociais do Ministério da Justiça" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

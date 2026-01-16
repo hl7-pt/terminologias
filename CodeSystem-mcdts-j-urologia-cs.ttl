@@ -1,0 +1,156 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/CodeSystem/mcdts-j-urologia-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mcdts-j-urologia-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem mcdts-j-urologia-cs</b></p><a name=\"mcdts-j-urologia-cs\"> </a><a name=\"hcmcdts-j-urologia-cs\"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class=\"grid\"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>preco</td><td>preco</td><td>decimal</td><td>Preço do MCDT</td></tr><tr><td>taxa</td><td>taxa</td><td>decimal</td><td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-j-urologia</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr><tr><td style=\"white-space:nowrap\">90113<a name=\"mcdts-j-urologia-cs-90113\"> </a></td><td>Colocação endoscópica retrógrada de tutor/cateter ureteral (unilateral)</td><td>Colocação endoscópica retrógrada de tutor/cateter ureteral (unilateral)</td><td>130.62</td><td>20</td></tr><tr><td style=\"white-space:nowrap\">90403<a name=\"mcdts-j-urologia-cs-90403\"> </a></td><td>Uretrocistoscopia</td><td>Uretrocistoscopia</td><td>60.48</td><td>13</td></tr><tr><td style=\"white-space:nowrap\">90900<a name=\"mcdts-j-urologia-cs-90900\"> </a></td><td>Cistometria</td><td>Cistometria</td><td>62.65</td><td>15</td></tr><tr><td style=\"white-space:nowrap\">90967<a name=\"mcdts-j-urologia-cs-90967\"> </a></td><td>Perfilometria uretral</td><td>Perfilometria uretral</td><td>52.99</td><td>13</td></tr><tr><td style=\"white-space:nowrap\">90985<a name=\"mcdts-j-urologia-cs-90985\"> </a></td><td>Urofluxometria</td><td>Urofluxometria</td><td>19.25</td><td>5</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-j-urologia"^^xsd:anyURI ;
+     fhir:l <https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-j-urologia>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "MCDTSJ_UrologiaCS"] ; # 
+  fhir:title [ fhir:v "MCDTS Tabela Da Área J - Urologia"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-16T11:04:17+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tabela Da Área J - Urologia"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "ACSS" ]
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:property ( [
+     fhir:code [ fhir:v "preco" ] ;
+     fhir:description [ fhir:v "Preço do MCDT" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] [
+     fhir:code [ fhir:v "taxa" ] ;
+     fhir:description [ fhir:v "Taxa Moderadora" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "90113" ] ;
+     fhir:display [ fhir:v "Colocação endoscópica retrógrada de tutor/cateter ureteral (unilateral)" ] ;
+     fhir:definition [ fhir:v "Colocação endoscópica retrógrada de tutor/cateter ureteral (unilateral)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 130.62
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "20"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "90403" ] ;
+     fhir:display [ fhir:v "Uretrocistoscopia" ] ;
+     fhir:definition [ fhir:v "Uretrocistoscopia" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 60.48
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "13"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "90900" ] ;
+     fhir:display [ fhir:v "Cistometria" ] ;
+     fhir:definition [ fhir:v "Cistometria" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 62.65
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "15"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "90967" ] ;
+     fhir:display [ fhir:v "Perfilometria uretral" ] ;
+     fhir:definition [ fhir:v "Perfilometria uretral" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 52.99
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "13"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "90985" ] ;
+     fhir:display [ fhir:v "Urofluxometria" ] ;
+     fhir:definition [ fhir:v "Urofluxometria" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 19.25
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

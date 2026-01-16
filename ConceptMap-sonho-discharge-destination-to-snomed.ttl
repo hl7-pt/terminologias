@@ -1,0 +1,157 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ConceptMap/sonho-discharge-destination-to-snomed> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "sonho-discharge-destination-to-snomed"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ConceptMap sonho-discharge-destination-to-snomed</b></p><a name=\"sonho-discharge-destination-to-snomed\"> </a><a name=\"hcsonho-discharge-destination-to-snomed\"> </a><p>Mapeamento de (não especificado) para (não especificado)</p><br/><p><b>Grupo 1 </b>Mapeamento de <a href=\"CodeSystem-sonho-discharge-destination-cs.html\">SONHO - Destinos de alta (2024)</a> to <code>http://snomed.info/sct</code> (SNOMED CT)</p><table class=\"grid\"><tr><td><b>Código fonte</b></td><td><b>Relacionamento</b></td><td><b>Código de destino</b></td></tr><tr><td>13 (Alta do utente)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>58000006 (Patient discharge)</td></tr><tr><td>81 (Alta p/recusa cons.CSP até 24h)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>81</td></tr><tr><td>11 (Alta disciplinar)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1258989004 (Patient disciplinary discharge (procedure))</td></tr><tr><td>6 (Alta do utente para autópsia)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>3133002 (Patient discharge, deceased, autopsy)</td></tr><tr><td>7 (Alta do utente, sem autópsia)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>79779006 (Patient discharge, deceased, no autopsy)</td></tr><tr><td>2 (Consulta externa)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>224885007 (Hospital consulting room)</td></tr><tr><td>10 (Alta contra parecer médico)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>225928004 (Patient self-discharge against medical advice)</td></tr><tr><td>12 (Cuidados de saúde primários)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>45131006 (Primary care hospital)</td></tr><tr><td>5 (Domicílio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>264362003 (Dwelling)</td></tr><tr><td>3 (Internamento)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>440654001 (Inpatient environment (environment))</td></tr><tr><td>32 (Hospitalização domiciliária)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1256098007 (Home hospitalization (qualifier value))</td></tr><tr><td>4 (Hospital de Dia)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>274516006 (Day hospital)</td></tr><tr><td>1 (Alta por abandono)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>34596002 (Patient discharge, elopement)</td></tr><tr><td>9 (Hospital Público)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>79993009 (Government hospital)</td></tr><tr><td>8 (Hospital Privado)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>309895006 (Private hospital)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7.pt/fhir/Terminologias/ConceptMap/sonho-discharge-destination-to-snomed"^^xsd:anyURI ;
+     fhir:l <https://hl7.pt/fhir/Terminologias/ConceptMap/sonho-discharge-destination-to-snomed>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "SONHODischargeDestinationToSNOMED"] ; # 
+  fhir:title [ fhir:v "Mapeamento SONHO (Destinos de alta) para SNOMED CT"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-01-14"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:group ( [
+     fhir:source [
+       fhir:v "https://hl7.pt/fhir/CodeSystem/sonho-discharge-destination"^^xsd:anyURI ;
+       fhir:l <https://hl7.pt/fhir/CodeSystem/sonho-discharge-destination>
+     ] ;
+     fhir:target [
+       fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+       fhir:l <http://snomed.info/sct>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "13" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "58000006" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "81" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "81" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "11" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "1258989004" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "6" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "3133002" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "7" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "79779006" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "2" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "224885007" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "10" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "225928004" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "12" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "45131006" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "5" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "264362003" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "3" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "440654001" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "32" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "1256098007" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "4" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "274516006" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "1" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "34596002" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "9" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "79993009" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "8" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "309895006" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

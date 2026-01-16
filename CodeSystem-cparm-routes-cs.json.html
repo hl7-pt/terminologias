@@ -1,0 +1,836 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Vias de Administração - JSON Representation - HL7 PT FHIR Implementation Guide: Terminologias v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.20"}
+    h3,h4,h5,h6{--heading-prefix:"6.20"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Terminologias</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="spec.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Vias de Administração</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Terminologias, publicado por HL7 Portugal. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 1.0.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/hl7-pt/terminologias/tree/master'>https://github.com/hl7-pt/terminologias/tree/master</a> e muda regularmente. Veja o <a href='http://hl7.pt/fhir/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-cparm-routes-cs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-cparm-routes-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-cparm-routes-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Vias de Administração - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2026-01-16
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-cparm-routes-cs.json" no-download="true">Raw json</a> | <a href="CodeSystem-cparm-routes-cs.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R5/resource.html#XCodeSystem.id">id</a>" : "cparm-routes-cs",
+  "<a href="http://hl7.org/fhir/R5/domainresource.html#XCodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narrativa gerada: CodeSystem cparm-routes-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cparm-routes-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccparm-routes-cs\&quot;&gt; &lt;/a&gt;&lt;p&gt;Este  sistema de código &lt;code&gt;https://hl7-pt.github.io/terminologias/CodeSystem-cparm-routes&lt;/code&gt; define o seguinte códigos:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definição&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20001000&lt;a name=\&quot;cparm-routes-cs-20001000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso auricular&lt;/td&gt;&lt;td&gt;Administração de um fármaco no ouvido&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20002000&lt;a name=\&quot;cparm-routes-cs-20002000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso aculear&lt;/td&gt;&lt;td&gt;Administração de um fármaco veterinário por imersão do bico das aves numa solução aquosa do fármaco&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20002500&lt;a name=\&quot;cparm-routes-cs-20002500\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso bucal&lt;/td&gt;&lt;td&gt;Administração de um fármaco na cavidade oral para obter um efeito sistémico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20003000&lt;a name=\&quot;cparm-routes-cs-20003000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso cutâneo&lt;/td&gt;&lt;td&gt;Administração de um fármaco à pele e/ou feridas e/ou unhas e/ou pêlos, para obter um efeito local&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20004000&lt;a name=\&quot;cparm-routes-cs-20004000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso dental&lt;/td&gt;&lt;td&gt;Administração de um fármaco aos dentes e/ou em redor dos nervos, que inervam os dentes&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20005000&lt;a name=\&quot;cparm-routes-cs-20005000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Banho medicamentoso&lt;/td&gt;&lt;td&gt;Administração de um fármaco veterinário por imersão do animal numa banheira ou piscina de imersão que contém o fármaco&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20006000&lt;a name=\&quot;cparm-routes-cs-20006000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via endocervical&lt;/td&gt;&lt;td&gt;Administração de um fármaco ao colo uterino&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20007000&lt;a name=\&quot;cparm-routes-cs-20007000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso endossinusal&lt;/td&gt;&lt;td&gt;Administração de um fármaco aos seios perinasais para obter um efeito local&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20008000&lt;a name=\&quot;cparm-routes-cs-20008000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via endotraqueobrônquica&lt;/td&gt;&lt;td&gt;Administração de um fármaco à traqueia e/ou brônquios para instilação (preparações para a inalação são excluídas; ver via inalatória)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20009000&lt;a name=\&quot;cparm-routes-cs-20009000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via epidural&lt;/td&gt;&lt;td&gt;Injeção de um fármaco no espaço epidural&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20010000&lt;a name=\&quot;cparm-routes-cs-20010000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso epilesional&lt;/td&gt;&lt;td&gt;Administração de um fármaco numa lesão&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20011000&lt;a name=\&quot;cparm-routes-cs-20011000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via extra-amniótica&lt;/td&gt;&lt;td&gt;Injeção de um fármaco entre as membranas coriónica e amniótica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20011500&lt;a name=\&quot;cparm-routes-cs-20011500\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso extracorpóreo&lt;/td&gt;&lt;td&gt;Uso de um fármaco fora do organismo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20012000&lt;a name=\&quot;cparm-routes-cs-20012000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso intrapodal&lt;/td&gt;&lt;td&gt;Administração de um fármaco veterinário na pata das aves&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20013000&lt;a name=\&quot;cparm-routes-cs-20013000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via gastroentérica&lt;/td&gt;&lt;td&gt;Administração de um fármaco no estômago ou duodeno, através de um dispositivo apropriado. Para usar apenas quando a via gástrica e intestinal não se aplicam&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20013500&lt;a name=\&quot;cparm-routes-cs-20013500\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via gástrica&lt;/td&gt;&lt;td&gt;Administração de um fármaco no estômago através de um dispositivo apropriado&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20014000&lt;a name=\&quot;cparm-routes-cs-20014000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso gengival&lt;/td&gt;&lt;td&gt;Administração de um fármaco nas gengivas&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20015000&lt;a name=\&quot;cparm-routes-cs-20015000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hemodiálise&lt;/td&gt;&lt;td&gt;Depuração do sangue através de uma membrana semipermeável&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20015500&lt;a name=\&quot;cparm-routes-cs-20015500\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Implantação&lt;/td&gt;&lt;td&gt;Inserção de um implante ou tecido vivo equivalente, num tecido vivo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20015700&lt;a name=\&quot;cparm-routes-cs-20015700\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Administração na água de bebida&lt;/td&gt;&lt;td&gt;Administração de um fármaco veterinário por incorporação na água de beber do animal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20016000&lt;a name=\&quot;cparm-routes-cs-20016000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alimento medicamentoso líquido&lt;/td&gt;&lt;td&gt;Administração de um fármaco veterinário por incorporação na água de beber do animal, leite ou derivado do leite&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20017000&lt;a name=\&quot;cparm-routes-cs-20017000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via transcoriónica&lt;/td&gt;&lt;td&gt;Administração de um fármaco veterinário através da casca de um ovo embrionado&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20018000&lt;a name=\&quot;cparm-routes-cs-20018000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alimento medicamentoso sólido&lt;/td&gt;&lt;td&gt;Administração de um fármaco veterinário por incorporação na ração animal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20019000&lt;a name=\&quot;cparm-routes-cs-20019000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aplicação apícola&lt;/td&gt;&lt;td&gt;Administração de um fármaco veterinário por colocação ou aspersão sobre uma colmeia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20019500&lt;a name=\&quot;cparm-routes-cs-20019500\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Infiltração&lt;/td&gt;&lt;td&gt;Método de administração, geralmente por injeção, através do qual um fluido passa para um tecido alvo (ex. infiltração anestésica)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20020000&lt;a name=\&quot;cparm-routes-cs-20020000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via inalatoria&lt;/td&gt;&lt;td&gt;Administração de um fármaco ao aparelho respiratório por inalação, para obter um efeito sistémico ou local, no aparelho respiratório inferior. As vias nasal e endotraqueopulmonar, são excluídas&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20021000&lt;a name=\&quot;cparm-routes-cs-20021000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intestinal&lt;/td&gt;&lt;td&gt;Administração de um fármaco ao duodeno, jejuno íleon e colon através de um dispositivo apropriado. O uso gastroentérico é excluído&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20022000&lt;a name=\&quot;cparm-routes-cs-20022000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intra-amniótica&lt;/td&gt;&lt;td&gt;Injeção de um fármaco no líquido amniótico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20023000&lt;a name=\&quot;cparm-routes-cs-20023000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intra-arterial&lt;/td&gt;&lt;td&gt;Injeção de um fármaco numa artéria&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20024000&lt;a name=\&quot;cparm-routes-cs-20024000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intra-articular&lt;/td&gt;&lt;td&gt;Injeção de um fármaco numa cavidade articular&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20025000&lt;a name=\&quot;cparm-routes-cs-20025000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intrassinovial&lt;/td&gt;&lt;td&gt;Injeção de um fármaco entre as bursas e tendões&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20025500&lt;a name=\&quot;cparm-routes-cs-20025500\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intracameral&lt;/td&gt;&lt;td&gt;Administração de um fármaco diretamente na câmara anterior do olho&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20026000&lt;a name=\&quot;cparm-routes-cs-20026000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intracardíaca&lt;/td&gt;&lt;td&gt;Injeção de um fármaco no miocárdio ou numa cavidade cardíaca&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20026500&lt;a name=\&quot;cparm-routes-cs-20026500\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intracartilaginosa&lt;/td&gt;&lt;td&gt;Administração de um fármaco na cartilagem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20027000&lt;a name=\&quot;cparm-routes-cs-20027000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intracavernosa&lt;/td&gt;&lt;td&gt;Injeção de um fármaco no corpo cavernoso&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20027010&lt;a name=\&quot;cparm-routes-cs-20027010\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intracerebral&lt;/td&gt;&lt;td&gt;Administração de um fármaco diretamente no tecido cerebral&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20028000&lt;a name=\&quot;cparm-routes-cs-20028000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intracervical&lt;/td&gt;&lt;td&gt;Injeção de um fármaco no cólo do útero&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20028300&lt;a name=\&quot;cparm-routes-cs-20028300\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intracolangiopancreática&lt;/td&gt;&lt;td&gt;Injeção de um fármaco no ducto biliar e pancreático, por exemplo através de uma cânula introduzida na ampola de Vater, geralmente para administração de um meio de contraste para técnicas como a colangiopancreaticografia retrógrada endoscópica (CPRE)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20028500&lt;a name=\&quot;cparm-routes-cs-20028500\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intracisternal&lt;/td&gt;&lt;td&gt;Administração de um fármaco dentro da cisterna magna&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20029000&lt;a name=\&quot;cparm-routes-cs-20029000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intracoronária&lt;/td&gt;&lt;td&gt;Injeção de um fármaco na artéria coronária&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20030000&lt;a name=\&quot;cparm-routes-cs-20030000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intradérmica&lt;/td&gt;&lt;td&gt;Injeção de um fármaco na derme&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20031000&lt;a name=\&quot;cparm-routes-cs-20031000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intradiscal&lt;/td&gt;&lt;td&gt;Injeção de um fármaco no núcleo polposo de um disco intervertebral&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20031500&lt;a name=\&quot;cparm-routes-cs-20031500\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intraepidérmica&lt;/td&gt;&lt;td&gt;Administração de um fármaco na epiderme&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20031700&lt;a name=\&quot;cparm-routes-cs-20031700\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intraglandular&lt;/td&gt;&lt;td&gt;Administração de um fármaco diretamente numa glândula, geralmente por injeção. A ser usado apenas em casos em que os termos mais específicos, como &amp;quot;intramamário ou intraprostático&amp;quot;, não se aplicam&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20032000&lt;a name=\&quot;cparm-routes-cs-20032000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso intralesional&lt;/td&gt;&lt;td&gt;Administração de um fármaco por injeção ou quaisquer outros meios, diretamente numa lesão&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20033000&lt;a name=\&quot;cparm-routes-cs-20033000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intralinfática&lt;/td&gt;&lt;td&gt;Injeção de um fármaco num vaso linfático&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20034000&lt;a name=\&quot;cparm-routes-cs-20034000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intramamária&lt;/td&gt;&lt;td&gt;Administração de um fármaco veterinário na glândula mamária&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20035000&lt;a name=\&quot;cparm-routes-cs-20035000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intramuscular&lt;/td&gt;&lt;td&gt;Injeção de um fármaco no tecido muscular&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20036000&lt;a name=\&quot;cparm-routes-cs-20036000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso intraocular&lt;/td&gt;&lt;td&gt;Administração de um fármaco no olho. O termo 'uso intraocular' é apenas para utlizar quando um termo mais específico (ex.&amp;quot;'uso intracameral&amp;quot;, &amp;quot;uso intravítreo&amp;quot;) não se aplica. O uso ocular e subconjuntival são excluídos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20036500&lt;a name=\&quot;cparm-routes-cs-20036500\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso intraósseo&lt;/td&gt;&lt;td&gt;Administração de um fármacona medula óssea. A utilização intraesternal é excluída&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20037000&lt;a name=\&quot;cparm-routes-cs-20037000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intrapericárdica&lt;/td&gt;&lt;td&gt;Injeção de um fármaco no pericárdio&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20038000&lt;a name=\&quot;cparm-routes-cs-20038000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intraperitoneal&lt;/td&gt;&lt;td&gt;Injeção de um fármaco na cavidade peritoneal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20039000&lt;a name=\&quot;cparm-routes-cs-20039000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intrapleural&lt;/td&gt;&lt;td&gt;Injeção de um fármaco na cavidade pleural&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20039200&lt;a name=\&quot;cparm-routes-cs-20039200\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso intraportal&lt;/td&gt;&lt;td&gt;Injeção/infusão de um fármaco na veia porta para atingir o fígado&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20039500&lt;a name=\&quot;cparm-routes-cs-20039500\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intraprostática&lt;/td&gt;&lt;td&gt;Administração de um fármaco na próstata&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20039800&lt;a name=\&quot;cparm-routes-cs-20039800\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intrapulmonar&lt;/td&gt;&lt;td&gt;Administração de um fármaco no pulmão, geralmente por injeção. Excluem-se 'uso por inalação' e 'via endotraqueobrônquica'&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20086000&lt;a name=\&quot;cparm-routes-cs-20086000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intraputaminal&lt;/td&gt;&lt;td&gt;Administração de um fármaco em um ou ambos os putâmens do cérebro&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20040000&lt;a name=\&quot;cparm-routes-cs-20040000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intrarruminal&lt;/td&gt;&lt;td&gt;Administração de um fármaco veterinário no rúmen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20041000&lt;a name=\&quot;cparm-routes-cs-20041000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intraesternal&lt;/td&gt;&lt;td&gt;Injeção de um fármaco na medula óssea do esterno&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20042000&lt;a name=\&quot;cparm-routes-cs-20042000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intratecal&lt;/td&gt;&lt;td&gt;Injeção de um fármaco no espaço subaracnoideu através da dura&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20043000&lt;a name=\&quot;cparm-routes-cs-20043000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intratumoral&lt;/td&gt;&lt;td&gt;Injeção de um fármaco num tumor&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20044000&lt;a name=\&quot;cparm-routes-cs-20044000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intrauterina&lt;/td&gt;&lt;td&gt;Administração de um fármaco na cavidade uterina&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20045000&lt;a name=\&quot;cparm-routes-cs-20045000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intravenosa&lt;/td&gt;&lt;td&gt;Injeção de um fármaco numa veia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20046000&lt;a name=\&quot;cparm-routes-cs-20046000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intravesical&lt;/td&gt;&lt;td&gt;Administração de um fármaco na bexiga&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20047000&lt;a name=\&quot;cparm-routes-cs-20047000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso intravítreo&lt;/td&gt;&lt;td&gt;Administração de um fármaco na câmara posterior do olho&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20047500&lt;a name=\&quot;cparm-routes-cs-20047500\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Iontoforese&lt;/td&gt;&lt;td&gt;Introdução de uma substância ionisada através de pele intacta, por aplicação de uma corrente elétrica direta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20048000&lt;a name=\&quot;cparm-routes-cs-20048000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso laringofaríngeo&lt;/td&gt;&lt;td&gt;Administração de um fármaco à laringofaringe, para obter um efeito local (anestésico)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20049000&lt;a name=\&quot;cparm-routes-cs-20049000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via nasal&lt;/td&gt;&lt;td&gt;Administração de um fármaco ao nariz para obter um efeito local ou sistémico. A terapêutica inalatória pretendida para o aparelho respiratório inferior é excluída; ver a &amp;quot;via inalatória&amp;quot;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20050000&lt;a name=\&quot;cparm-routes-cs-20050000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nebulização&lt;/td&gt;&lt;td&gt;Administração de um fármaco veterinário convertido em aerossol para medicação em massa, por exemplo de aves&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20051000&lt;a name=\&quot;cparm-routes-cs-20051000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso oftálmico&lt;/td&gt;&lt;td&gt;Administração de um fármaco no globo ocular e/ou conjuntiva&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20052000&lt;a name=\&quot;cparm-routes-cs-20052000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via oculonasal&lt;/td&gt;&lt;td&gt;Administração de um fármaco veterinário por instilação (gota a gota) nos olhos e narinas de animais individuais (geralmente aves) ou pulverização nos animais para obter o mesmo efeito&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20053000&lt;a name=\&quot;cparm-routes-cs-20053000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via oral&lt;/td&gt;&lt;td&gt;Ingerir um fármaco através da deglutição&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20054000&lt;a name=\&quot;cparm-routes-cs-20054000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via bucal&lt;/td&gt;&lt;td&gt;Administração de um fármaco na cavidade oral para obter quer um efeito sistémico, quer local. O termo &amp;quot;bucal&amp;quot;  é para ser utlizado quando um termo mais específico (ex. oral, gengival, sublingual...) não se aplica. A via oral é excluída&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20055000&lt;a name=\&quot;cparm-routes-cs-20055000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso orofaríngeo&lt;/td&gt;&lt;td&gt;Administração de um fármaco na orofaringe para obter um efeito local&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20056000&lt;a name=\&quot;cparm-routes-cs-20056000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via paravertebral&lt;/td&gt;&lt;td&gt;Injeção de um fármaco veterinário ao longo da coluna vertebral de animais&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20057000&lt;a name=\&quot;cparm-routes-cs-20057000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via periarticular&lt;/td&gt;&lt;td&gt;Injeção de um fármaco em redor de uma articulação&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20058000&lt;a name=\&quot;cparm-routes-cs-20058000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via perineural&lt;/td&gt;&lt;td&gt;Injeção de um fármaco na vizinhança imediata de um ou mais nervos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20059000&lt;a name=\&quot;cparm-routes-cs-20059000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso periodontal&lt;/td&gt;&lt;td&gt;Administração na bolsa entre os dentes e as gengivas&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20059300&lt;a name=\&quot;cparm-routes-cs-20059300\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via perióssea&lt;/td&gt;&lt;td&gt;Administração de um fármaco em redor de um osso&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20059400&lt;a name=\&quot;cparm-routes-cs-20059400\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via peritumoral&lt;/td&gt;&lt;td&gt;Administração de um fármaco, diretamente na região vizinha de um tumor&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20059500&lt;a name=\&quot;cparm-routes-cs-20059500\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via justa-escleral posterior&lt;/td&gt;&lt;td&gt;Administração de um fármaco sob a membrana sub-tendinosa da esclera (i.e. no espaço episclera), adjacente à mácula&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20060000&lt;a name=\&quot;cparm-routes-cs-20060000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unção contínua&lt;/td&gt;&lt;td&gt;Administração de um fármaco veterinário por injeção na linha média dorsal do animal ou no topo da cabeça e à volta da base dos cornos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20061000&lt;a name=\&quot;cparm-routes-cs-20061000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via retal&lt;/td&gt;&lt;td&gt;Administração de um fármaco ao reto, para obter um efeito local ou sistémico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20061500&lt;a name=\&quot;cparm-routes-cs-20061500\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via retrobulbar&lt;/td&gt;&lt;td&gt;Administração de um fármaco por trás do globo ocular&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20062000&lt;a name=\&quot;cparm-routes-cs-20062000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via de administração não especificada&lt;/td&gt;&lt;td&gt;Aplica-se a fármacos que não entrem diretamente em contacto com o organismo de um doente, ou administração a vários locais anatómicos não especificados&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20063000&lt;a name=\&quot;cparm-routes-cs-20063000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Escarificação&lt;/td&gt;&lt;td&gt;Administração de um fármaco, riscando a pele&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20064000&lt;a name=\&quot;cparm-routes-cs-20064000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unção punctiforme&lt;/td&gt;&lt;td&gt;Administração de um fármaco veterinário num único local nas costas do animal ou na base da nuca&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20065000&lt;a name=\&quot;cparm-routes-cs-20065000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via subconjuntival&lt;/td&gt;&lt;td&gt;Injeção de um fármaco sob a conjuntiva&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20066000&lt;a name=\&quot;cparm-routes-cs-20066000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via subcutânea&lt;/td&gt;&lt;td&gt;Injeção de um fármaco diretamente sob a pele, i.e. subdérmico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20067000&lt;a name=\&quot;cparm-routes-cs-20067000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via sublingual&lt;/td&gt;&lt;td&gt;Administração de um fármaco sob a língua, para obter um efeito sistémico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20067500&lt;a name=\&quot;cparm-routes-cs-20067500\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via submucosa&lt;/td&gt;&lt;td&gt;Injeção de um fármaco diretamente sob uma mucosa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20068000&lt;a name=\&quot;cparm-routes-cs-20068000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso mamário externo&lt;/td&gt;&lt;td&gt;Administração de um fármaco veterinário na superfície da(s) teta(s). A imersão da teta está incluída&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20069000&lt;a name=\&quot;cparm-routes-cs-20069000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dispersão superficial no alimento&lt;/td&gt;&lt;td&gt;Administração de um fármaco veterinário por aplicação na superfície do alimento imediatamente antes da alimentação&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20070000&lt;a name=\&quot;cparm-routes-cs-20070000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via transdérmica&lt;/td&gt;&lt;td&gt;Administração de um fármaco à pele para obter um efeito sistémico, ultrapassando a barreira cutânea&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20071000&lt;a name=\&quot;cparm-routes-cs-20071000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via uretral&lt;/td&gt;&lt;td&gt;Administração de um fármaco à uretra&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20072000&lt;a name=\&quot;cparm-routes-cs-20072000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso vaginal&lt;/td&gt;&lt;td&gt;Administração de um fármaco à vagina&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20080000&lt;a name=\&quot;cparm-routes-cs-20080000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intracerebroventricular&lt;/td&gt;&lt;td&gt;Administração de um fármaco aos ventrículos cerebrais (sistema ventricular) do cérebro&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20084000&lt;a name=\&quot;cparm-routes-cs-20084000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via intracorneal&lt;/td&gt;&lt;td&gt;Administração de um fármaco à córnea&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20081000&lt;a name=\&quot;cparm-routes-cs-20081000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via subretiniana&lt;/td&gt;&lt;td&gt;Administração de um fármaco entre a retina sensorial (retina neural) e o epitélio pigmentar da retina do olho&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20073000&lt;a name=\&quot;cparm-routes-cs-20073000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso no meio aquático&lt;/td&gt;&lt;td&gt;Administração de um fármaco veterinário a espécies aquáticas (marinhas ou de água doce) por medicação do meio aquático&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20074000&lt;a name=\&quot;cparm-routes-cs-20074000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inoculação alar&lt;/td&gt;&lt;td&gt;Administração de um fármaco veterinário na asa de uma ave&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20087000&lt;a name=\&quot;cparm-routes-cs-20087000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Via extrapleural&lt;/td&gt;&lt;td&gt;Injecção de um fármaco directamente fora da cavidade pleural, entre a pleura parietal e a fáscia endotorácica.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.url">url</a>" : "https://hl7-pt.github.io/terminologias/CodeSystem-cparm-routes",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.version">version</a>" : "1.0.0",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.name">name</a>" : "CPARMRoutesCS",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.title">title</a>" : "Vias de Administração",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.date">date</a>" : "2026-01-16T11:04:17+00:00",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.publisher">publisher</a>" : "HL7 Portugal",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "HL7 Portugal",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "http://hl7.pt"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "info@hl7.pt"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "HL7 Portugal",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "geral@hl7.pt",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.use">use</a>" : "work"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.description">description</a>" : "Vias de Administração de medicamentos",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "PT",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Portugal"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.author">author</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "Centro de Terminologias Clínicas"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.count">count</a>" : 102,
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20001000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso auricular",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco no ouvido"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20002000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso aculear",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco veterinário por imersão do bico das aves numa solução aquosa do fármaco"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20002500",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso bucal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco na cavidade oral para obter um efeito sistémico"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20003000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso cutâneo",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco à pele e/ou feridas e/ou unhas e/ou pêlos, para obter um efeito local"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20004000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso dental",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco aos dentes e/ou em redor dos nervos, que inervam os dentes"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20005000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Banho medicamentoso",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco veterinário por imersão do animal numa banheira ou piscina de imersão que contém o fármaco"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20006000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via endocervical",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco ao colo uterino"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20007000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso endossinusal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco aos seios perinasais para obter um efeito local"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20008000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via endotraqueobrônquica",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco à traqueia e/ou brônquios para instilação (preparações para a inalação são excluídas; ver via inalatória)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20009000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via epidural",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco no espaço epidural"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20010000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso epilesional",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco numa lesão"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20011000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via extra-amniótica",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco entre as membranas coriónica e amniótica"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20011500",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso extracorpóreo",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Uso de um fármaco fora do organismo"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20012000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso intrapodal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco veterinário na pata das aves"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20013000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via gastroentérica",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco no estômago ou duodeno, através de um dispositivo apropriado. Para usar apenas quando a via gástrica e intestinal não se aplicam"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20013500",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via gástrica",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco no estômago através de um dispositivo apropriado"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20014000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso gengival",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco nas gengivas"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20015000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Hemodiálise",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Depuração do sangue através de uma membrana semipermeável"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20015500",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Implantação",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Inserção de um implante ou tecido vivo equivalente, num tecido vivo"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20015700",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Administração na água de bebida",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco veterinário por incorporação na água de beber do animal"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20016000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Alimento medicamentoso líquido",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco veterinário por incorporação na água de beber do animal, leite ou derivado do leite"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20017000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via transcoriónica",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco veterinário através da casca de um ovo embrionado"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20018000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Alimento medicamentoso sólido",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco veterinário por incorporação na ração animal"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20019000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Aplicação apícola",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco veterinário por colocação ou aspersão sobre uma colmeia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20019500",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Infiltração",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Método de administração, geralmente por injeção, através do qual um fluido passa para um tecido alvo (ex. infiltração anestésica)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20020000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via inalatoria",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco ao aparelho respiratório por inalação, para obter um efeito sistémico ou local, no aparelho respiratório inferior. As vias nasal e endotraqueopulmonar, são excluídas"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20021000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intestinal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco ao duodeno, jejuno íleon e colon através de um dispositivo apropriado. O uso gastroentérico é excluído"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20022000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intra-amniótica",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco no líquido amniótico"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20023000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intra-arterial",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco numa artéria"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20024000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intra-articular",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco numa cavidade articular"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20025000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intrassinovial",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco entre as bursas e tendões"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20025500",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intracameral",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco diretamente na câmara anterior do olho"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20026000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intracardíaca",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco no miocárdio ou numa cavidade cardíaca"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20026500",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intracartilaginosa",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco na cartilagem"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20027000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intracavernosa",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco no corpo cavernoso"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20027010",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intracerebral",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco diretamente no tecido cerebral"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20028000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intracervical",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco no cólo do útero"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20028300",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intracolangiopancreática",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco no ducto biliar e pancreático, por exemplo através de uma cânula introduzida na ampola de Vater, geralmente para administração de um meio de contraste para técnicas como a colangiopancreaticografia retrógrada endoscópica (CPRE)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20028500",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intracisternal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco dentro da cisterna magna"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20029000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intracoronária",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco na artéria coronária"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20030000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intradérmica",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco na derme"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20031000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intradiscal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco no núcleo polposo de um disco intervertebral"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20031500",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intraepidérmica",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco na epiderme"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20031700",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intraglandular",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco diretamente numa glândula, geralmente por injeção. A ser usado apenas em casos em que os termos mais específicos, como \&quot;intramamário ou intraprostático\&quot;, não se aplicam"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20032000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso intralesional",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco por injeção ou quaisquer outros meios, diretamente numa lesão"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20033000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intralinfática",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco num vaso linfático"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20034000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intramamária",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco veterinário na glândula mamária"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20035000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intramuscular",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco no tecido muscular"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20036000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso intraocular",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco no olho. O termo 'uso intraocular' é apenas para utlizar quando um termo mais específico (ex.\&quot;'uso intracameral\&quot;, \&quot;uso intravítreo\&quot;) não se aplica. O uso ocular e subconjuntival são excluídos"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20036500",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso intraósseo",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármacona medula óssea. A utilização intraesternal é excluída"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20037000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intrapericárdica",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco no pericárdio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20038000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intraperitoneal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco na cavidade peritoneal"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20039000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intrapleural",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco na cavidade pleural"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20039200",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso intraportal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção/infusão de um fármaco na veia porta para atingir o fígado"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20039500",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intraprostática",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco na próstata"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20039800",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intrapulmonar",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco no pulmão, geralmente por injeção. Excluem-se 'uso por inalação' e 'via endotraqueobrônquica'"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20086000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intraputaminal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco em um ou ambos os putâmens do cérebro"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20040000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intrarruminal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco veterinário no rúmen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20041000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intraesternal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco na medula óssea do esterno"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20042000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intratecal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco no espaço subaracnoideu através da dura"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20043000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intratumoral",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco num tumor"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20044000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intrauterina",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco na cavidade uterina"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20045000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intravenosa",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco numa veia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20046000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intravesical",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco na bexiga"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20047000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso intravítreo",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco na câmara posterior do olho"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20047500",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Iontoforese",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Introdução de uma substância ionisada através de pele intacta, por aplicação de uma corrente elétrica direta"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20048000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso laringofaríngeo",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco à laringofaringe, para obter um efeito local (anestésico)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20049000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via nasal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco ao nariz para obter um efeito local ou sistémico. A terapêutica inalatória pretendida para o aparelho respiratório inferior é excluída; ver a \&quot;via inalatória\&quot;"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20050000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Nebulização",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco veterinário convertido em aerossol para medicação em massa, por exemplo de aves"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20051000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso oftálmico",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco no globo ocular e/ou conjuntiva"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20052000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via oculonasal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco veterinário por instilação (gota a gota) nos olhos e narinas de animais individuais (geralmente aves) ou pulverização nos animais para obter o mesmo efeito"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20053000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via oral",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Ingerir um fármaco através da deglutição"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20054000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via bucal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco na cavidade oral para obter quer um efeito sistémico, quer local. O termo \&quot;bucal\&quot;  é para ser utlizado quando um termo mais específico (ex. oral, gengival, sublingual...) não se aplica. A via oral é excluída"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20055000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso orofaríngeo",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco na orofaringe para obter um efeito local"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20056000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via paravertebral",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco veterinário ao longo da coluna vertebral de animais"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20057000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via periarticular",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco em redor de uma articulação"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20058000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via perineural",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco na vizinhança imediata de um ou mais nervos"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20059000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso periodontal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração na bolsa entre os dentes e as gengivas"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20059300",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via perióssea",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco em redor de um osso"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20059400",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via peritumoral",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco, diretamente na região vizinha de um tumor"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20059500",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via justa-escleral posterior",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco sob a membrana sub-tendinosa da esclera (i.e. no espaço episclera), adjacente à mácula"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20060000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Unção contínua",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco veterinário por injeção na linha média dorsal do animal ou no topo da cabeça e à volta da base dos cornos"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20061000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via retal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco ao reto, para obter um efeito local ou sistémico"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20061500",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via retrobulbar",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco por trás do globo ocular"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20062000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via de administração não especificada",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Aplica-se a fármacos que não entrem diretamente em contacto com o organismo de um doente, ou administração a vários locais anatómicos não especificados"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20063000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Escarificação",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco, riscando a pele"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20064000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Unção punctiforme",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco veterinário num único local nas costas do animal ou na base da nuca"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20065000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via subconjuntival",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco sob a conjuntiva"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20066000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via subcutânea",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco diretamente sob a pele, i.e. subdérmico"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20067000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via sublingual",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco sob a língua, para obter um efeito sistémico"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20067500",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via submucosa",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injeção de um fármaco diretamente sob uma mucosa"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20068000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso mamário externo",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco veterinário na superfície da(s) teta(s). A imersão da teta está incluída"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20069000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Dispersão superficial no alimento",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco veterinário por aplicação na superfície do alimento imediatamente antes da alimentação"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20070000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via transdérmica",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco à pele para obter um efeito sistémico, ultrapassando a barreira cutânea"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20071000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via uretral",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco à uretra"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20072000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso vaginal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco à vagina"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20080000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intracerebroventricular",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco aos ventrículos cerebrais (sistema ventricular) do cérebro"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20084000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via intracorneal",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco à córnea"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20081000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via subretiniana",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco entre a retina sensorial (retina neural) e o epitélio pigmentar da retina do olho"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20073000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Uso no meio aquático",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco veterinário a espécies aquáticas (marinhas ou de água doce) por medicação do meio aquático"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20074000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Inoculação alar",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Administração de um fármaco veterinário na asa de uma ave"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">code</a>" : "20087000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">display</a>" : "Via extrapleural",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.definition">definition</a>" : "Injecção de um fármaco directamente fora da cavidade pleural, entre a pleura parietal e a fáscia endotorácica."
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Jan 16, 2026 11:04+0000">2026-01-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

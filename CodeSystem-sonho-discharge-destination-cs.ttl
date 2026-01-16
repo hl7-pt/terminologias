@@ -1,0 +1,156 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/CodeSystem/sonho-discharge-destination-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "sonho-discharge-destination-cs"] ; # 
+  fhir:language [ fhir:v "pt"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xml:lang=\"pt\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem sonho-discharge-destination-cs</b></p><a name=\"sonho-discharge-destination-cs\"> </a><a name=\"hcsonho-discharge-destination-cs\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt</p></div><p>Este  sistema de código <code>https://hl7.pt/fhir/CodeSystem/sonho-discharge-destination</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"sonho-discharge-destination-cs-13\"> </a></td><td>Alta do utente</td><td>Alta do utente</td></tr><tr><td style=\"white-space:nowrap\">81<a name=\"sonho-discharge-destination-cs-81\"> </a></td><td>Alta p/recusa cons.CSP até 24h</td><td>Alta p/recusa cons.CSP até 24h</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"sonho-discharge-destination-cs-11\"> </a></td><td>Alta disciplinar</td><td>Alta disciplinar</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"sonho-discharge-destination-cs-6\"> </a></td><td>Alta do utente para autópsia</td><td>Alta do utente para autópsia</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"sonho-discharge-destination-cs-7\"> </a></td><td>Alta do utente, sem autópsia</td><td>Alta do utente, sem autópsia</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"sonho-discharge-destination-cs-2\"> </a></td><td>Consulta externa</td><td>Consulta externa</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"sonho-discharge-destination-cs-10\"> </a></td><td>Alta contra parecer médico</td><td>Alta contra parecer médico</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"sonho-discharge-destination-cs-12\"> </a></td><td>Cuidados de saúde primários</td><td>Cuidados de saúde primários</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"sonho-discharge-destination-cs-5\"> </a></td><td>Domicílio</td><td>Domicílio</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"sonho-discharge-destination-cs-3\"> </a></td><td>Internamento</td><td>Internamento</td></tr><tr><td style=\"white-space:nowrap\">32<a name=\"sonho-discharge-destination-cs-32\"> </a></td><td>Hospitalização domiciliária</td><td>Hospitalização domiciliária</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"sonho-discharge-destination-cs-4\"> </a></td><td>Hospital de Dia</td><td>Hospital de Dia</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"sonho-discharge-destination-cs-1\"> </a></td><td>Alta por abandono</td><td>Alta por abandono</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"sonho-discharge-destination-cs-9\"> </a></td><td>Hospital Público</td><td>Hospital Público</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"sonho-discharge-destination-cs-8\"> </a></td><td>Hospital Privado</td><td>Hospital Privado</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"sonho-discharge-destination-cs-16\"> </a></td><td>Não respondeu à chamada</td><td>Não respondeu à chamada</td></tr><tr><td style=\"white-space:nowrap\">83<a name=\"sonho-discharge-destination-cs-83\"> </a></td><td>REF. AZUIS/VERDES/BR CN11/2022</td><td>REF. AZUIS/VERDES/BR CN11/2022</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"sonho-discharge-destination-cs-14\"> </a></td><td>SERVICO DOMICILIARIO</td><td>SERVICO DOMICILIARIO</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"sonho-discharge-destination-cs-15\"> </a></td><td>RECOBRO</td><td>RECOBRO</td></tr><tr><td style=\"white-space:nowrap\">26<a name=\"sonho-discharge-destination-cs-26\"> </a></td><td>UNIDADES DE CONVALESCENCA</td><td>UNIDADES DE CONVALESCENCA</td></tr><tr><td style=\"white-space:nowrap\">27<a name=\"sonho-discharge-destination-cs-27\"> </a></td><td>UNIDADE MEDIA DURACAO REABILIT</td><td>UNIDADE MEDIA DURACAO REABILIT</td></tr><tr><td style=\"white-space:nowrap\">28<a name=\"sonho-discharge-destination-cs-28\"> </a></td><td>UNIDADE LONGA DURACAO MANUTENC</td><td>UNIDADE LONGA DURACAO MANUTENC</td></tr><tr><td style=\"white-space:nowrap\">29<a name=\"sonho-discharge-destination-cs-29\"> </a></td><td>UNIDADE CUIDADOS PALIATIVOS</td><td>UNIDADE CUIDADOS PALIATIVOS</td></tr><tr><td style=\"white-space:nowrap\">30<a name=\"sonho-discharge-destination-cs-30\"> </a></td><td>UNIDADES DE AVC</td><td>UNIDADES DE AVC</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7.pt/fhir/CodeSystem/sonho-discharge-destination"^^xsd:anyURI ;
+     fhir:l <https://hl7.pt/fhir/CodeSystem/sonho-discharge-destination>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "SONHO_DischargeDestinationCS"] ; # 
+  fhir:title [ fhir:v "SONHO - Destinos de alta (2024)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-16T11:04:17+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tabela de destinos de alta (SONHO), com equivalentes SNOMED CT quando existentes."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "24"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "13" ] ;
+     fhir:display [ fhir:v "Alta do utente" ] ;
+     fhir:definition [ fhir:v "Alta do utente" ]
+  ] [
+     fhir:code [ fhir:v "81" ] ;
+     fhir:display [ fhir:v "Alta p/recusa cons.CSP até 24h" ] ;
+     fhir:definition [ fhir:v "Alta p/recusa cons.CSP até 24h" ]
+  ] [
+     fhir:code [ fhir:v "11" ] ;
+     fhir:display [ fhir:v "Alta disciplinar" ] ;
+     fhir:definition [ fhir:v "Alta disciplinar" ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "Alta do utente para autópsia" ] ;
+     fhir:definition [ fhir:v "Alta do utente para autópsia" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "Alta do utente, sem autópsia" ] ;
+     fhir:definition [ fhir:v "Alta do utente, sem autópsia" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "Consulta externa" ] ;
+     fhir:definition [ fhir:v "Consulta externa" ]
+  ] [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "Alta contra parecer médico" ] ;
+     fhir:definition [ fhir:v "Alta contra parecer médico" ]
+  ] [
+     fhir:code [ fhir:v "12" ] ;
+     fhir:display [ fhir:v "Cuidados de saúde primários" ] ;
+     fhir:definition [ fhir:v "Cuidados de saúde primários" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "Domicílio" ] ;
+     fhir:definition [ fhir:v "Domicílio" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "Internamento" ] ;
+     fhir:definition [ fhir:v "Internamento" ]
+  ] [
+     fhir:code [ fhir:v "32" ] ;
+     fhir:display [ fhir:v "Hospitalização domiciliária" ] ;
+     fhir:definition [ fhir:v "Hospitalização domiciliária" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "Hospital de Dia" ] ;
+     fhir:definition [ fhir:v "Hospital de Dia" ]
+  ] [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "Alta por abandono" ] ;
+     fhir:definition [ fhir:v "Alta por abandono" ]
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "Hospital Público" ] ;
+     fhir:definition [ fhir:v "Hospital Público" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "Hospital Privado" ] ;
+     fhir:definition [ fhir:v "Hospital Privado" ]
+  ] [
+     fhir:code [ fhir:v "16" ] ;
+     fhir:display [ fhir:v "Não respondeu à chamada" ] ;
+     fhir:definition [ fhir:v "Não respondeu à chamada" ]
+  ] [
+     fhir:code [ fhir:v "83" ] ;
+     fhir:display [ fhir:v "REF. AZUIS/VERDES/BR CN11/2022" ] ;
+     fhir:definition [ fhir:v "REF. AZUIS/VERDES/BR CN11/2022" ]
+  ] [
+     fhir:code [ fhir:v "14" ] ;
+     fhir:display [ fhir:v "SERVICO DOMICILIARIO" ] ;
+     fhir:definition [ fhir:v "SERVICO DOMICILIARIO" ]
+  ] [
+     fhir:code [ fhir:v "15" ] ;
+     fhir:display [ fhir:v "RECOBRO" ] ;
+     fhir:definition [ fhir:v "RECOBRO" ]
+  ] [
+     fhir:code [ fhir:v "26" ] ;
+     fhir:display [ fhir:v "UNIDADES DE CONVALESCENCA" ] ;
+     fhir:definition [ fhir:v "UNIDADES DE CONVALESCENCA" ]
+  ] [
+     fhir:code [ fhir:v "27" ] ;
+     fhir:display [ fhir:v "UNIDADE MEDIA DURACAO REABILIT" ] ;
+     fhir:definition [ fhir:v "UNIDADE MEDIA DURACAO REABILIT" ]
+  ] [
+     fhir:code [ fhir:v "28" ] ;
+     fhir:display [ fhir:v "UNIDADE LONGA DURACAO MANUTENC" ] ;
+     fhir:definition [ fhir:v "UNIDADE LONGA DURACAO MANUTENC" ]
+  ] [
+     fhir:code [ fhir:v "29" ] ;
+     fhir:display [ fhir:v "UNIDADE CUIDADOS PALIATIVOS" ] ;
+     fhir:definition [ fhir:v "UNIDADE CUIDADOS PALIATIVOS" ]
+  ] [
+     fhir:code [ fhir:v "30" ] ;
+     fhir:display [ fhir:v "UNIDADES DE AVC" ] ;
+     fhir:definition [ fhir:v "UNIDADES DE AVC" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

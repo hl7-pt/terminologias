@@ -1,0 +1,151 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "sonho-discharge-destination-to-snomed",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ConceptMap sonho-discharge-destination-to-snomed</b></p><a name=\"sonho-discharge-destination-to-snomed\"> </a><a name=\"hcsonho-discharge-destination-to-snomed\"> </a><p>Mapeamento de (não especificado) para (não especificado)</p><br/><p><b>Grupo 1 </b>Mapeamento de <a href=\"CodeSystem-sonho-discharge-destination-cs.html\">SONHO - Destinos de alta (2024)</a> to <code>http://snomed.info/sct</code> (SNOMED CT)</p><table class=\"grid\"><tr><td><b>Código fonte</b></td><td><b>Relacionamento</b></td><td><b>Código de destino</b></td></tr><tr><td>13 (Alta do utente)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>58000006 (Patient discharge)</td></tr><tr><td>81 (Alta p/recusa cons.CSP até 24h)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>81</td></tr><tr><td>11 (Alta disciplinar)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1258989004 (Patient disciplinary discharge (procedure))</td></tr><tr><td>6 (Alta do utente para autópsia)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>3133002 (Patient discharge, deceased, autopsy)</td></tr><tr><td>7 (Alta do utente, sem autópsia)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>79779006 (Patient discharge, deceased, no autopsy)</td></tr><tr><td>2 (Consulta externa)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>224885007 (Hospital consulting room)</td></tr><tr><td>10 (Alta contra parecer médico)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>225928004 (Patient self-discharge against medical advice)</td></tr><tr><td>12 (Cuidados de saúde primários)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>45131006 (Primary care hospital)</td></tr><tr><td>5 (Domicílio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>264362003 (Dwelling)</td></tr><tr><td>3 (Internamento)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>440654001 (Inpatient environment (environment))</td></tr><tr><td>32 (Hospitalização domiciliária)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1256098007 (Home hospitalization (qualifier value))</td></tr><tr><td>4 (Hospital de Dia)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>274516006 (Day hospital)</td></tr><tr><td>1 (Alta por abandono)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>34596002 (Patient discharge, elopement)</td></tr><tr><td>9 (Hospital Público)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>79993009 (Government hospital)</td></tr><tr><td>8 (Hospital Privado)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>309895006 (Private hospital)</td></tr></table></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/sonho-discharge-destination-to-snomed",
+  "version" : "1.0.0",
+  "name" : "SONHODischargeDestinationToSNOMED",
+  "title" : "Mapeamento SONHO (Destinos de alta) para SNOMED CT",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-01-14",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "group" : [{
+    "source" : "https://hl7.pt/fhir/CodeSystem/sonho-discharge-destination",
+    "target" : "http://snomed.info/sct",
+    "element" : [{
+      "code" : "13",
+      "target" : [{
+        "code" : "58000006",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "81",
+      "target" : [{
+        "code" : "81",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "11",
+      "target" : [{
+        "code" : "1258989004",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "6",
+      "target" : [{
+        "code" : "3133002",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "7",
+      "target" : [{
+        "code" : "79779006",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "2",
+      "target" : [{
+        "code" : "224885007",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "10",
+      "target" : [{
+        "code" : "225928004",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "12",
+      "target" : [{
+        "code" : "45131006",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "5",
+      "target" : [{
+        "code" : "264362003",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "3",
+      "target" : [{
+        "code" : "440654001",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "32",
+      "target" : [{
+        "code" : "1256098007",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "4",
+      "target" : [{
+        "code" : "274516006",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "1",
+      "target" : [{
+        "code" : "34596002",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "9",
+      "target" : [{
+        "code" : "79993009",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "8",
+      "target" : [{
+        "code" : "309895006",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

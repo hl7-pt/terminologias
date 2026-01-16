@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mcdts-e-eeg-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem mcdts-e-eeg-cs</b></p><a name="mcdts-e-eeg-cs"> </a><a name="hcmcdts-e-eeg-cs"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class="grid"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>preco</td><td>preco</td><td>decimal</td><td>Preço do MCDT</td></tr><tr><td>taxa</td><td>taxa</td><td>decimal</td><td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-e-eeg</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr><tr><td style="white-space:nowrap">63010<a name="mcdts-e-eeg-cs-63010"> </a></td><td>EEG de rotina (inclui canal de ECG, prova de Hiperpneia e ELI)</td><td>EEG de rotina (inclui canal de ECG, prova de Hiperpneia e ELI)</td><td>26.98</td><td>11</td></tr><tr><td style="white-space:nowrap">63011<a name="mcdts-e-eeg-cs-63011"> </a></td><td>EEG de rotina, fora do laboratório</td><td>EEG de rotina, fora do laboratório</td><td>59.89</td><td>12</td></tr><tr><td style="white-space:nowrap">63017<a name="mcdts-e-eeg-cs-63017"> </a></td><td>Cartografia de EEG (adicional ao registo)</td><td>Cartografia de EEG (adicional ao registo)</td><td>72</td><td>5</td></tr><tr><td style="white-space:nowrap">63020<a name="mcdts-e-eeg-cs-63020"> </a></td><td>EEG de rotina com prova de Sono</td><td>EEG de rotina com prova de Sono</td><td>29.3</td><td>15</td></tr></table></div>
+  </text>
+  <url value="https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-e-eeg"/>
+  <version value="1.0.0"/>
+  <name value="MCDTSE_EEGCS"/>
+  <title value="MCDTS Tabela Da Área E - Electroencefalografia"/>
+  <status value="active"/>
+  <date value="2026-01-16T11:04:17+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Tabela Da Área E - Electroencefalografia"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="ACSS"/>
+  </author>
+  <content value="complete"/>
+  <count value="4"/>
+  <property>
+    <code value="preco"/>
+    <description value="Preço do MCDT"/>
+    <type value="decimal"/>
+  </property>
+  <property>
+    <code value="taxa"/>
+    <description value="Taxa Moderadora"/>
+    <type value="decimal"/>
+  </property>
+  <concept>
+    <code value="63010"/>
+    <display value="EEG de rotina (inclui canal de ECG, prova de Hiperpneia e ELI)"/>
+    <definition value="EEG de rotina (inclui canal de ECG, prova de Hiperpneia e ELI)"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="26.98"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="11"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="63011"/>
+    <display value="EEG de rotina, fora do laboratório"/>
+    <definition value="EEG de rotina, fora do laboratório"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="59.89"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="12"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="63017"/>
+    <display value="Cartografia de EEG (adicional ao registo)"/>
+    <definition value="Cartografia de EEG (adicional ao registo)"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="72"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="5"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="63020"/>
+    <display value="EEG de rotina com prova de Sono"/>
+    <definition value="EEG de rotina com prova de Sono"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="29.3"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="15"/>
+    </property>
+  </concept>
+</CodeSystem>

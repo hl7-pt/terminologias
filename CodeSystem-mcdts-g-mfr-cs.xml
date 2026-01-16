@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mcdts-g-mfr-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem mcdts-g-mfr-cs</b></p><a name="mcdts-g-mfr-cs"> </a><a name="hcmcdts-g-mfr-cs"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class="grid"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>preco</td><td>preco</td><td>decimal</td><td>Preço do MCDT</td></tr><tr><td>taxa</td><td>taxa</td><td>decimal</td><td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-g-mfr</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr><tr><td style="white-space:nowrap">60181<a name="mcdts-g-mfr-cs-60181"> </a></td><td>Estudo da marcha com plataforma elétrica e registo</td><td>Estudo da marcha com plataforma elétrica e registo</td><td>10.85</td><td>4</td></tr><tr><td style="white-space:nowrap">60200<a name="mcdts-g-mfr-cs-60200"> </a></td><td>Exame muscular com registo gráfico</td><td>Exame muscular com registo gráfico</td><td>5.4</td><td>4</td></tr><tr><td style="white-space:nowrap">60301<a name="mcdts-g-mfr-cs-60301"> </a></td><td>Goniometria elétrica</td><td>Goniometria elétrica</td><td>4.91</td><td>1.6</td></tr><tr><td style="white-space:nowrap">60310<a name="mcdts-g-mfr-cs-60310"> </a></td><td>Raquimetria</td><td>Raquimetria</td><td>4</td><td>4</td></tr><tr><td style="white-space:nowrap">60792<a name="mcdts-g-mfr-cs-60792"> </a></td><td>Iontoforese</td><td>Iontoforese</td><td>1.5</td><td>1.4</td></tr><tr><td style="white-space:nowrap">60800<a name="mcdts-g-mfr-cs-60800"> </a></td><td>Corrente continua</td><td>Corrente continua</td><td>1.5</td><td>1.5</td></tr><tr><td style="white-space:nowrap">60801<a name="mcdts-g-mfr-cs-60801"> </a></td><td>Corrente de baixa frequência</td><td>Corrente de baixa frequência</td><td>1.5</td><td>1.5</td></tr><tr><td style="white-space:nowrap">60802<a name="mcdts-g-mfr-cs-60802"> </a></td><td>Corrente de média frequência</td><td>Corrente de média frequência</td><td>1.5</td><td>1.5</td></tr><tr><td style="white-space:nowrap">60644<a name="mcdts-g-mfr-cs-60644"> </a></td><td>Corrente de alta frequência (micro-ondas)</td><td>Corrente de alta frequência (micro-ondas)</td><td>1.4</td><td>1.4</td></tr><tr><td style="white-space:nowrap">60624<a name="mcdts-g-mfr-cs-60624"> </a></td><td>Corrente de alta frequência (ondas curtas)</td><td>Corrente de alta frequência (ondas curtas)</td><td>1.8</td><td>1.4</td></tr><tr><td style="white-space:nowrap">60771<a name="mcdts-g-mfr-cs-60771"> </a></td><td>Estimulação elétrica neuro-muscular, por grupo muscular</td><td>Estimulação elétrica neuro-muscular, por grupo muscular</td><td>1.6</td><td>1.6</td></tr><tr><td style="white-space:nowrap">60666<a name="mcdts-g-mfr-cs-60666"> </a></td><td>Magnetoterapia</td><td>Magnetoterapia</td><td>1.3</td><td>1.2</td></tr><tr><td style="white-space:nowrap">60750<a name="mcdts-g-mfr-cs-60750"> </a></td><td>Ultrassonoterapia</td><td>Ultrassonoterapia</td><td>1.3</td><td>1.2</td></tr><tr><td style="white-space:nowrap">60708<a name="mcdts-g-mfr-cs-60708"> </a></td><td>Radiações infravermelhas</td><td>Radiações infravermelhas</td><td>1.21</td><td>0.9</td></tr><tr><td style="white-space:nowrap">60729<a name="mcdts-g-mfr-cs-60729"> </a></td><td>Radiações ultravioletas</td><td>Radiações ultravioletas</td><td>1.21</td><td>0.9</td></tr><tr><td style="white-space:nowrap">60550<a name="mcdts-g-mfr-cs-60550"> </a></td><td>Crioterapia</td><td>Crioterapia</td><td>1.21</td><td>1.1</td></tr><tr><td style="white-space:nowrap">60555<a name="mcdts-g-mfr-cs-60555"> </a></td><td>Terapia por calor húmido</td><td>Terapia por calor húmido</td><td>1.21</td><td>1</td></tr><tr><td style="white-space:nowrap">60583<a name="mcdts-g-mfr-cs-60583"> </a></td><td>Parafinoterapia</td><td>Parafinoterapia</td><td>1.63</td><td>1.3</td></tr><tr><td style="white-space:nowrap">60584<a name="mcdts-g-mfr-cs-60584"> </a></td><td>Parafangoterapia</td><td>Parafangoterapia</td><td>1.63</td><td>1.4</td></tr><tr><td style="white-space:nowrap">60962<a name="mcdts-g-mfr-cs-60962"> </a></td><td>Hidrocinesiterapia individual em piscina</td><td>Hidrocinesiterapia individual em piscina</td><td>2</td><td>2</td></tr><tr><td style="white-space:nowrap">60961<a name="mcdts-g-mfr-cs-60961"> </a></td><td>Hidrocinesiterapia coletiva em piscina</td><td>Hidrocinesiterapia coletiva em piscina</td><td>1.63</td><td>1.1</td></tr><tr><td style="white-space:nowrap">60930<a name="mcdts-g-mfr-cs-60930"> </a></td><td>Hidromassagem</td><td>Hidromassagem</td><td>1.63</td><td>1.3</td></tr><tr><td style="white-space:nowrap">60887<a name="mcdts-g-mfr-cs-60887"> </a></td><td>Banho de contraste</td><td>Banho de contraste</td><td>1.4</td><td>1</td></tr><tr><td style="white-space:nowrap">60929<a name="mcdts-g-mfr-cs-60929"> </a></td><td>Banho de turbilhão</td><td>Banho de turbilhão</td><td>1.63</td><td>1</td></tr><tr><td style="white-space:nowrap">60910<a name="mcdts-g-mfr-cs-60910"> </a></td><td>Banhos especiais</td><td>Banhos especiais</td><td>2.17</td><td>1.2</td></tr><tr><td style="white-space:nowrap">60908<a name="mcdts-g-mfr-cs-60908"> </a></td><td>Duches</td><td>Duches</td><td>1.55</td><td>1.5</td></tr><tr><td style="white-space:nowrap">60982<a name="mcdts-g-mfr-cs-60982"> </a></td><td>Hidrocinesiterapia individual em tanque</td><td>Hidrocinesiterapia individual em tanque</td><td>2.5</td><td>2.5</td></tr><tr><td style="white-space:nowrap">60985<a name="mcdts-g-mfr-cs-60985"> </a></td><td>Treino em tanque de marcha</td><td>Treino em tanque de marcha</td><td>1.63</td><td>1.1</td></tr><tr><td style="white-space:nowrap">60222<a name="mcdts-g-mfr-cs-60222"> </a></td><td>Massagem manual de uma região</td><td>Massagem manual de uma região</td><td>1.3</td><td>1.3</td></tr><tr><td style="white-space:nowrap">60233<a name="mcdts-g-mfr-cs-60233"> </a></td><td>Massagem manual de mais de uma região</td><td>Massagem manual de mais de uma região</td><td>1.8</td><td>1.6</td></tr><tr><td style="white-space:nowrap">60940<a name="mcdts-g-mfr-cs-60940"> </a></td><td>Massagem subaquática</td><td>Massagem subaquática</td><td>1.6</td><td>1.5</td></tr><tr><td style="white-space:nowrap">61175<a name="mcdts-g-mfr-cs-61175"> </a></td><td>Vibromassagem</td><td>Vibromassagem</td><td>1.3</td><td>1.1</td></tr><tr><td style="white-space:nowrap">60430<a name="mcdts-g-mfr-cs-60430"> </a></td><td>Cinesiterapia respiratória</td><td>Cinesiterapia respiratória</td><td>2.17</td><td>1.6</td></tr><tr><td style="white-space:nowrap">60375<a name="mcdts-g-mfr-cs-60375"> </a></td><td>Cinesiterapia vertebral</td><td>Cinesiterapia vertebral</td><td>2.17</td><td>1.4</td></tr><tr><td style="white-space:nowrap">60380<a name="mcdts-g-mfr-cs-60380"> </a></td><td>Cinesiterapia corretiva postural</td><td>Cinesiterapia corretiva postural</td><td>2.17</td><td>1.5</td></tr><tr><td style="white-space:nowrap">61090<a name="mcdts-g-mfr-cs-61090"> </a></td><td>Cinesiterapia pré e pós parto, em grupo</td><td>Cinesiterapia pré e pós parto, em grupo</td><td>2.17</td><td>1.8</td></tr><tr><td style="white-space:nowrap">61102<a name="mcdts-g-mfr-cs-61102"> </a></td><td>Fortalecimento muscular manual</td><td>Fortalecimento muscular manual</td><td>2</td><td>1.2</td></tr><tr><td style="white-space:nowrap">60290<a name="mcdts-g-mfr-cs-60290"> </a></td><td>Mobilização articular manual</td><td>Mobilização articular manual</td><td>1.5</td><td>1.2</td></tr><tr><td style="white-space:nowrap">60377<a name="mcdts-g-mfr-cs-60377"> </a></td><td>Técnicas especiais de Cinesiterapia</td><td>Técnicas especiais de Cinesiterapia</td><td>2.71</td><td>1.5</td></tr><tr><td style="white-space:nowrap">60404<a name="mcdts-g-mfr-cs-60404"> </a></td><td>Treino de equilíbrio e marcha</td><td>Treino de equilíbrio e marcha</td><td>1.4</td><td>1.4</td></tr><tr><td style="white-space:nowrap">60376<a name="mcdts-g-mfr-cs-60376"> </a></td><td>Cinesiterapia em grupo</td><td>Cinesiterapia em grupo</td><td>1.21</td><td>0.9</td></tr><tr><td style="white-space:nowrap">60401<a name="mcdts-g-mfr-cs-60401"> </a></td><td>Reeducação funcional de cada membro</td><td>Reeducação funcional de cada membro</td><td>1.8</td><td>1.3</td></tr><tr><td style="white-space:nowrap">60435<a name="mcdts-g-mfr-cs-60435"> </a></td><td>Drenagem postural</td><td>Drenagem postural</td><td>3</td><td>3</td></tr><tr><td style="white-space:nowrap">60438<a name="mcdts-g-mfr-cs-60438"> </a></td><td>Aerossóis</td><td>Aerossóis</td><td>1.5</td><td>1.4</td></tr><tr><td style="white-space:nowrap">60437<a name="mcdts-g-mfr-cs-60437"> </a></td><td>Aerossóis ultra-sónicos</td><td>Aerossóis ultra-sónicos</td><td>1.5</td><td>1.4</td></tr><tr><td style="white-space:nowrap">61137<a name="mcdts-g-mfr-cs-61137"> </a></td><td>Mobilização de secreções com flutter</td><td>Mobilização de secreções com flutter</td><td>3.5</td><td>3.5</td></tr><tr><td style="white-space:nowrap">99030<a name="mcdts-g-mfr-cs-99030"> </a></td><td>Oxigenoterapia</td><td>Oxigenoterapia</td><td>1.84</td><td>1.6</td></tr><tr><td style="white-space:nowrap">60845<a name="mcdts-g-mfr-cs-60845"> </a></td><td>Tração vertebral mecânica</td><td>Tração vertebral mecânica</td><td>1.6</td><td>1.3</td></tr><tr><td style="white-space:nowrap">60866<a name="mcdts-g-mfr-cs-60866"> </a></td><td>Tração vertebral motorizada</td><td>Tração vertebral motorizada</td><td>2</td><td>1.4</td></tr><tr><td style="white-space:nowrap">60824<a name="mcdts-g-mfr-cs-60824"> </a></td><td>Pressões intermitentes</td><td>Pressões intermitentes</td><td>1.35</td><td>1.1</td></tr><tr><td style="white-space:nowrap">60825<a name="mcdts-g-mfr-cs-60825"> </a></td><td>Pressões intermitentes sequenciais</td><td>Pressões intermitentes sequenciais</td><td>4.34</td><td>1.3</td></tr><tr><td style="white-space:nowrap">61104<a name="mcdts-g-mfr-cs-61104"> </a></td><td>Fortalecimento muscular/ mobilização articular</td><td>Fortalecimento muscular/ mobilização articular</td><td>2</td><td>1</td></tr><tr><td style="white-space:nowrap">61002<a name="mcdts-g-mfr-cs-61002"> </a></td><td>Treino de utilização de prótese do membro inferior</td><td>Treino de utilização de prótese do membro inferior</td><td>2</td><td>1.8</td></tr><tr><td style="white-space:nowrap">61004<a name="mcdts-g-mfr-cs-61004"> </a></td><td>Treino de utilização de prótese do membro superior</td><td>Treino de utilização de prótese do membro superior</td><td>2</td><td>1.6</td></tr><tr><td style="white-space:nowrap">61024<a name="mcdts-g-mfr-cs-61024"> </a></td><td>Treino de utilização de ortótese</td><td>Treino de utilização de ortótese</td><td>1.35</td><td>1.1</td></tr><tr><td style="white-space:nowrap">61087<a name="mcdts-g-mfr-cs-61087"> </a></td><td>Treino em atividades de vida diária</td><td>Treino em atividades de vida diária</td><td>4</td><td>4</td></tr><tr><td style="white-space:nowrap">61061<a name="mcdts-g-mfr-cs-61061"> </a></td><td>Terapia da fala</td><td>Terapia da fala</td><td>3.97</td><td>1.5</td></tr><tr><td style="white-space:nowrap">61062<a name="mcdts-g-mfr-cs-61062"> </a></td><td>Qualquer dos códigos de terapia da fala quando em grupo</td><td>Qualquer dos códigos de terapia da fala quando em grupo</td><td>3.61</td><td>1.1</td></tr><tr><td style="white-space:nowrap">61066<a name="mcdts-g-mfr-cs-61066"> </a></td><td>Terapia ocupacional</td><td>Terapia ocupacional</td><td>4</td><td>4</td></tr><tr><td style="white-space:nowrap">60349<a name="mcdts-g-mfr-cs-60349"> </a></td><td>Manipulação</td><td>Manipulação</td><td>4</td><td>4</td></tr></table></div>
+  </text>
+  <url value="https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-g-mfr"/>
+  <version value="1.0.0"/>
+  <name value="MCDTSG_MFRCS"/>
+  <title value="MCDTS Tabela Da Área G - Medicina Fisica E De Reabilitação"/>
+  <status value="active"/>
+  <date value="2026-01-16T11:04:17+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Tabela Da Área G - Medicina Fisica E De Reabilitação"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="ACSS"/>
+  </author>
+  <content value="complete"/>
+  <count value="60"/>
+  <property>
+    <code value="preco"/>
+    <description value="Preço do MCDT"/>
+    <type value="decimal"/>
+  </property>
+  <property>
+    <code value="taxa"/>
+    <description value="Taxa Moderadora"/>
+    <type value="decimal"/>
+  </property>
+  <concept>
+    <code value="60181"/>
+    <display value="Estudo da marcha com plataforma elétrica e registo"/>
+    <definition value="Estudo da marcha com plataforma elétrica e registo"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="10.85"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60200"/>
+    <display value="Exame muscular com registo gráfico"/>
+    <definition value="Exame muscular com registo gráfico"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="5.4"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60301"/>
+    <display value="Goniometria elétrica"/>
+    <definition value="Goniometria elétrica"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="4.91"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60310"/>
+    <display value="Raquimetria"/>
+    <definition value="Raquimetria"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="4"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60792"/>
+    <display value="Iontoforese"/>
+    <definition value="Iontoforese"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.5"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60800"/>
+    <display value="Corrente continua"/>
+    <definition value="Corrente continua"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.5"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.5"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60801"/>
+    <display value="Corrente de baixa frequência"/>
+    <definition value="Corrente de baixa frequência"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.5"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.5"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60802"/>
+    <display value="Corrente de média frequência"/>
+    <definition value="Corrente de média frequência"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.5"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.5"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60644"/>
+    <display value="Corrente de alta frequência (micro-ondas)"/>
+    <definition value="Corrente de alta frequência (micro-ondas)"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.4"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60624"/>
+    <display value="Corrente de alta frequência (ondas curtas)"/>
+    <definition value="Corrente de alta frequência (ondas curtas)"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.8"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60771"/>
+    <display value="Estimulação elétrica neuro-muscular, por grupo muscular"/>
+    <definition value="Estimulação elétrica neuro-muscular, por grupo muscular"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.6"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60666"/>
+    <display value="Magnetoterapia"/>
+    <definition value="Magnetoterapia"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.3"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60750"/>
+    <display value="Ultrassonoterapia"/>
+    <definition value="Ultrassonoterapia"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.3"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60708"/>
+    <display value="Radiações infravermelhas"/>
+    <definition value="Radiações infravermelhas"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.21"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="0.9"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60729"/>
+    <display value="Radiações ultravioletas"/>
+    <definition value="Radiações ultravioletas"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.21"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="0.9"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60550"/>
+    <display value="Crioterapia"/>
+    <definition value="Crioterapia"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.21"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.1"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60555"/>
+    <display value="Terapia por calor húmido"/>
+    <definition value="Terapia por calor húmido"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.21"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60583"/>
+    <display value="Parafinoterapia"/>
+    <definition value="Parafinoterapia"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.63"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.3"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60584"/>
+    <display value="Parafangoterapia"/>
+    <definition value="Parafangoterapia"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.63"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60962"/>
+    <display value="Hidrocinesiterapia individual em piscina"/>
+    <definition value="Hidrocinesiterapia individual em piscina"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="2"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60961"/>
+    <display value="Hidrocinesiterapia coletiva em piscina"/>
+    <definition value="Hidrocinesiterapia coletiva em piscina"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.63"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.1"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60930"/>
+    <display value="Hidromassagem"/>
+    <definition value="Hidromassagem"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.63"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.3"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60887"/>
+    <display value="Banho de contraste"/>
+    <definition value="Banho de contraste"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.4"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60929"/>
+    <display value="Banho de turbilhão"/>
+    <definition value="Banho de turbilhão"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.63"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60910"/>
+    <display value="Banhos especiais"/>
+    <definition value="Banhos especiais"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="2.17"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60908"/>
+    <display value="Duches"/>
+    <definition value="Duches"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.55"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.5"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60982"/>
+    <display value="Hidrocinesiterapia individual em tanque"/>
+    <definition value="Hidrocinesiterapia individual em tanque"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="2.5"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="2.5"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60985"/>
+    <display value="Treino em tanque de marcha"/>
+    <definition value="Treino em tanque de marcha"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.63"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.1"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60222"/>
+    <display value="Massagem manual de uma região"/>
+    <definition value="Massagem manual de uma região"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.3"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.3"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60233"/>
+    <display value="Massagem manual de mais de uma região"/>
+    <definition value="Massagem manual de mais de uma região"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.8"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60940"/>
+    <display value="Massagem subaquática"/>
+    <definition value="Massagem subaquática"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.6"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.5"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="61175"/>
+    <display value="Vibromassagem"/>
+    <definition value="Vibromassagem"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.3"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.1"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60430"/>
+    <display value="Cinesiterapia respiratória"/>
+    <definition value="Cinesiterapia respiratória"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="2.17"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60375"/>
+    <display value="Cinesiterapia vertebral"/>
+    <definition value="Cinesiterapia vertebral"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="2.17"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60380"/>
+    <display value="Cinesiterapia corretiva postural"/>
+    <definition value="Cinesiterapia corretiva postural"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="2.17"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.5"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="61090"/>
+    <display value="Cinesiterapia pré e pós parto, em grupo"/>
+    <definition value="Cinesiterapia pré e pós parto, em grupo"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="2.17"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.8"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="61102"/>
+    <display value="Fortalecimento muscular manual"/>
+    <definition value="Fortalecimento muscular manual"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="2"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60290"/>
+    <display value="Mobilização articular manual"/>
+    <definition value="Mobilização articular manual"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.5"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.2"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60377"/>
+    <display value="Técnicas especiais de Cinesiterapia"/>
+    <definition value="Técnicas especiais de Cinesiterapia"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="2.71"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.5"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60404"/>
+    <display value="Treino de equilíbrio e marcha"/>
+    <definition value="Treino de equilíbrio e marcha"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.4"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60376"/>
+    <display value="Cinesiterapia em grupo"/>
+    <definition value="Cinesiterapia em grupo"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.21"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="0.9"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60401"/>
+    <display value="Reeducação funcional de cada membro"/>
+    <definition value="Reeducação funcional de cada membro"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.8"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.3"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60435"/>
+    <display value="Drenagem postural"/>
+    <definition value="Drenagem postural"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="3"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="3"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60438"/>
+    <display value="Aerossóis"/>
+    <definition value="Aerossóis"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.5"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60437"/>
+    <display value="Aerossóis ultra-sónicos"/>
+    <definition value="Aerossóis ultra-sónicos"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.5"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="61137"/>
+    <display value="Mobilização de secreções com flutter"/>
+    <definition value="Mobilização de secreções com flutter"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="3.5"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="3.5"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="99030"/>
+    <display value="Oxigenoterapia"/>
+    <definition value="Oxigenoterapia"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.84"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60845"/>
+    <display value="Tração vertebral mecânica"/>
+    <definition value="Tração vertebral mecânica"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.6"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.3"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60866"/>
+    <display value="Tração vertebral motorizada"/>
+    <definition value="Tração vertebral motorizada"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="2"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60824"/>
+    <display value="Pressões intermitentes"/>
+    <definition value="Pressões intermitentes"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.35"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.1"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60825"/>
+    <display value="Pressões intermitentes sequenciais"/>
+    <definition value="Pressões intermitentes sequenciais"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="4.34"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.3"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="61104"/>
+    <display value="Fortalecimento muscular/ mobilização articular"/>
+    <definition value="Fortalecimento muscular/ mobilização articular"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="2"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="61002"/>
+    <display value="Treino de utilização de prótese do membro inferior"/>
+    <definition value="Treino de utilização de prótese do membro inferior"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="2"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.8"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="61004"/>
+    <display value="Treino de utilização de prótese do membro superior"/>
+    <definition value="Treino de utilização de prótese do membro superior"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="2"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="61024"/>
+    <display value="Treino de utilização de ortótese"/>
+    <definition value="Treino de utilização de ortótese"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="1.35"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.1"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="61087"/>
+    <display value="Treino em atividades de vida diária"/>
+    <definition value="Treino em atividades de vida diária"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="4"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="61061"/>
+    <display value="Terapia da fala"/>
+    <definition value="Terapia da fala"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="3.97"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.5"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="61062"/>
+    <display value="Qualquer dos códigos de terapia da fala quando em grupo"/>
+    <definition value="Qualquer dos códigos de terapia da fala quando em grupo"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="3.61"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.1"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="61066"/>
+    <display value="Terapia ocupacional"/>
+    <definition value="Terapia ocupacional"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="4"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="60349"/>
+    <display value="Manipulação"/>
+    <definition value="Manipulação"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="4"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="4"/>
+    </property>
+  </concept>
+</CodeSystem>

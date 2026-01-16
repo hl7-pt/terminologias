@@ -1,0 +1,292 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/CodeSystem/mcdts-b-anatomia-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mcdts-b-anatomia-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem mcdts-b-anatomia-cs</b></p><a name=\"mcdts-b-anatomia-cs\"> </a><a name=\"hcmcdts-b-anatomia-cs\"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class=\"grid\"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>preco</td><td>preco</td><td>decimal</td><td>Preço do MCDT</td></tr><tr><td>taxa</td><td>taxa</td><td>decimal</td><td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-b-anatomia</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr><tr><td style=\"white-space:nowrap\">30510<a name=\"mcdts-b-anatomia-cs-30510\"> </a></td><td>Exame citológico cervico-vaginal</td><td>Exame citológico cervico-vaginal</td><td>5.42</td><td>3</td></tr><tr><td style=\"white-space:nowrap\">30517<a name=\"mcdts-b-anatomia-cs-30517\"> </a></td><td>Exame de citologia esfoliativa não cervico-vaginal</td><td>Exame de citologia esfoliativa não cervico-vaginal</td><td>9.21</td><td>4.5</td></tr><tr><td style=\"white-space:nowrap\">30597<a name=\"mcdts-b-anatomia-cs-30597\"> </a></td><td>Aspiração com agulha fina guiada por palpação com preparação de esfregaços e exame citológico do produto obtido</td><td>Aspiração com agulha fina guiada por palpação com preparação de esfregaços e exame citológico do produto obtido</td><td>0</td><td>0</td></tr><tr><td style=\"white-space:nowrap\">30630<a name=\"mcdts-b-anatomia-cs-30630\"> </a></td><td>Processamento e exame citológico de aspirado de agulha fina</td><td>Processamento e exame citológico de aspirado de agulha fina</td><td>0</td><td>0</td></tr><tr><td style=\"white-space:nowrap\">30650<a name=\"mcdts-b-anatomia-cs-30650\"> </a></td><td>Exame citológico cervico-vaginal com processamento automatizado em camada fina</td><td>Exame citológico cervico-vaginal com processamento automatizado em camada fina</td><td>0</td><td>0</td></tr><tr><td style=\"white-space:nowrap\">30677<a name=\"mcdts-b-anatomia-cs-30677\"> </a></td><td>Exame citológico não cervico-vaginal, com processamento automatizado em camada fina</td><td>Exame citológico não cervico-vaginal, com processamento automatizado em camada fina</td><td>0</td><td>0</td></tr><tr><td style=\"white-space:nowrap\">31037<a name=\"mcdts-b-anatomia-cs-31037\"> </a></td><td>Exame histológico, fragmentos de biópsia com processamento rápido</td><td>Exame histológico, fragmentos de biópsia com processamento rápido</td><td>11.9</td><td>11.9</td></tr><tr><td style=\"white-space:nowrap\">31057<a name=\"mcdts-b-anatomia-cs-31057\"> </a></td><td>Exame macroscópico e histológico de produto de biópsia incisional ou excisional, raspagem, curetagem ou de eliminação espontânea</td><td>Exame macroscópico e histológico de produto de biópsia incisional ou excisional, raspagem, curetagem ou de eliminação espontânea</td><td>12.75</td><td>12.75</td></tr><tr><td style=\"white-space:nowrap\">31077<a name=\"mcdts-b-anatomia-cs-31077\"> </a></td><td>Exame macroscópico e histológico de peça de ressecção cirúrgica ou de feto com 11 semanas ou menos</td><td>Exame macroscópico e histológico de peça de ressecção cirúrgica ou de feto com 11 semanas ou menos</td><td>0</td><td>0</td></tr><tr><td style=\"white-space:nowrap\">31097<a name=\"mcdts-b-anatomia-cs-31097\"> </a></td><td>Exame macroscópico e histológico de peça de ressecção cirúrgica com dissecção ganglionar e/ou avaliação da margem circunferencial e/ou mapeamento</td><td>Exame macroscópico e histológico de peça de ressecção cirúrgica com dissecção ganglionar e/ou avaliação da margem circunferencial e/ou mapeamento</td><td>0</td><td>0</td></tr><tr><td style=\"white-space:nowrap\">31107<a name=\"mcdts-b-anatomia-cs-31107\"> </a></td><td>Exame extemporâneo</td><td>Exame extemporâneo</td><td>22.28</td><td>14</td></tr><tr><td style=\"white-space:nowrap\">31565<a name=\"mcdts-b-anatomia-cs-31565\"> </a></td><td>Imunocito(histo)química, cada anticorpo</td><td>Imunocito(histo)química, cada anticorpo</td><td>32.01</td><td>5</td></tr><tr><td style=\"white-space:nowrap\">31590<a name=\"mcdts-b-anatomia-cs-31590\"> </a></td><td>Exame por microscopia eletrónica</td><td>Exame por microscopia eletrónica</td><td>46.05</td><td>25</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-b-anatomia"^^xsd:anyURI ;
+     fhir:l <https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-b-anatomia>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "MCDTSB_AnatomiaCS"] ; # 
+  fhir:title [ fhir:v "MCDTS Tabela Da Área B - Anatomia Patológica"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-16T11:04:17+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tabela Da Área B - Anatomia Patológica"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "ACSS" ]
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "13"^^xsd:nonNegativeInteger] ; # 
+  fhir:property ( [
+     fhir:code [ fhir:v "preco" ] ;
+     fhir:description [ fhir:v "Preço do MCDT" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] [
+     fhir:code [ fhir:v "taxa" ] ;
+     fhir:description [ fhir:v "Taxa Moderadora" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "30510" ] ;
+     fhir:display [ fhir:v "Exame citológico cervico-vaginal" ] ;
+     fhir:definition [ fhir:v "Exame citológico cervico-vaginal" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 5.42
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "30517" ] ;
+     fhir:display [ fhir:v "Exame de citologia esfoliativa não cervico-vaginal" ] ;
+     fhir:definition [ fhir:v "Exame de citologia esfoliativa não cervico-vaginal" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 9.21
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "30597" ] ;
+     fhir:display [ fhir:v "Aspiração com agulha fina guiada por palpação com preparação de esfregaços e exame citológico do produto obtido" ] ;
+     fhir:definition [ fhir:v "Aspiração com agulha fina guiada por palpação com preparação de esfregaços e exame citológico do produto obtido" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "0"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "0"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "30630" ] ;
+     fhir:display [ fhir:v "Processamento e exame citológico de aspirado de agulha fina" ] ;
+     fhir:definition [ fhir:v "Processamento e exame citológico de aspirado de agulha fina" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "0"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "0"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "30650" ] ;
+     fhir:display [ fhir:v "Exame citológico cervico-vaginal com processamento automatizado em camada fina" ] ;
+     fhir:definition [ fhir:v "Exame citológico cervico-vaginal com processamento automatizado em camada fina" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "0"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "0"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "30677" ] ;
+     fhir:display [ fhir:v "Exame citológico não cervico-vaginal, com processamento automatizado em camada fina" ] ;
+     fhir:definition [ fhir:v "Exame citológico não cervico-vaginal, com processamento automatizado em camada fina" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "0"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "0"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "31037" ] ;
+     fhir:display [ fhir:v "Exame histológico, fragmentos de biópsia com processamento rápido" ] ;
+     fhir:definition [ fhir:v "Exame histológico, fragmentos de biópsia com processamento rápido" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 11.9
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 11.9
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "31057" ] ;
+     fhir:display [ fhir:v "Exame macroscópico e histológico de produto de biópsia incisional ou excisional, raspagem, curetagem ou de eliminação espontânea" ] ;
+     fhir:definition [ fhir:v "Exame macroscópico e histológico de produto de biópsia incisional ou excisional, raspagem, curetagem ou de eliminação espontânea" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 12.75
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 12.75
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "31077" ] ;
+     fhir:display [ fhir:v "Exame macroscópico e histológico de peça de ressecção cirúrgica ou de feto com 11 semanas ou menos" ] ;
+     fhir:definition [ fhir:v "Exame macroscópico e histológico de peça de ressecção cirúrgica ou de feto com 11 semanas ou menos" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "0"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "0"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "31097" ] ;
+     fhir:display [ fhir:v "Exame macroscópico e histológico de peça de ressecção cirúrgica com dissecção ganglionar e/ou avaliação da margem circunferencial e/ou mapeamento" ] ;
+     fhir:definition [ fhir:v "Exame macroscópico e histológico de peça de ressecção cirúrgica com dissecção ganglionar e/ou avaliação da margem circunferencial e/ou mapeamento" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "0"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "0"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "31107" ] ;
+     fhir:display [ fhir:v "Exame extemporâneo" ] ;
+     fhir:definition [ fhir:v "Exame extemporâneo" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 22.28
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "14"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "31565" ] ;
+     fhir:display [ fhir:v "Imunocito(histo)química, cada anticorpo" ] ;
+     fhir:definition [ fhir:v "Imunocito(histo)química, cada anticorpo" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 32.01
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "31590" ] ;
+     fhir:display [ fhir:v "Exame por microscopia eletrónica" ] ;
+     fhir:definition [ fhir:v "Exame por microscopia eletrónica" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 46.05
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "25"^^xsd:decimal
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,197 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/CodeSystem/mcdts-f-gastrenterologia-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mcdts-f-gastrenterologia-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem mcdts-f-gastrenterologia-cs</b></p><a name=\"mcdts-f-gastrenterologia-cs\"> </a><a name=\"hcmcdts-f-gastrenterologia-cs\"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class=\"grid\"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>preco</td><td>preco</td><td>decimal</td><td>Preço do MCDT</td></tr><tr><td>taxa</td><td>taxa</td><td>decimal</td><td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-f-gastrenterologia</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr><tr><td style=\"white-space:nowrap\">52175<a name=\"mcdts-f-gastrenterologia-cs-52175\"> </a></td><td>Biopsias transendoscópicas (acresce ao valor da endoscopia)</td><td>Biopsias transendoscópicas (acresce ao valor da endoscopia)</td><td>7.5</td><td>5</td></tr><tr><td style=\"white-space:nowrap\">52071<a name=\"mcdts-f-gastrenterologia-cs-52071\"> </a></td><td>Pesquisa de Helicobacter pylori na biópsia (Teste de Urease)</td><td>Pesquisa de Helicobacter pylori na biópsia (Teste de Urease)</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">50115<a name=\"mcdts-f-gastrenterologia-cs-50115\"> </a></td><td>Sedação efectuada por Gastrenterologista</td><td>Sedação efectuada por Gastrenterologista</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">51120<a name=\"mcdts-f-gastrenterologia-cs-51120\"> </a></td><td>Tatuagem cólica</td><td>Tatuagem cólica</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">52155<a name=\"mcdts-f-gastrenterologia-cs-52155\"> </a></td><td>Aplicação de \"clips\" (cada sessão)</td><td>Aplicação de \"clips\" (cada sessão)</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">52210<a name=\"mcdts-f-gastrenterologia-cs-52210\"> </a></td><td>Injecção endoscópica de fármacos</td><td>Injecção endoscópica de fármacos</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">52220<a name=\"mcdts-f-gastrenterologia-cs-52220\"> </a></td><td>Polipectomia, por sessão (a adicionar ao exame endoscópico)</td><td>Polipectomia, por sessão (a adicionar ao exame endoscópico)</td><td>32.27</td><td>12</td></tr><tr><td style=\"white-space:nowrap\">52230<a name=\"mcdts-f-gastrenterologia-cs-52230\"> </a></td><td>Terapêutica por Argon Plasma</td><td>Terapêutica por Argon Plasma</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">51280<a name=\"mcdts-f-gastrenterologia-cs-51280\"> </a></td><td>Anuscopia</td><td>Anuscopia</td><td>5.09</td><td>3</td></tr><tr><td style=\"white-space:nowrap\">52125<a name=\"mcdts-f-gastrenterologia-cs-52125\"> </a></td><td>Endoscopia alta</td><td>Endoscopia alta</td><td>42.28</td><td>12</td></tr><tr><td style=\"white-space:nowrap\">52130<a name=\"mcdts-f-gastrenterologia-cs-52130\"> </a></td><td>Rectoscopia rígida</td><td>Rectoscopia rígida</td><td>13.86</td><td>4.5</td></tr><tr><td style=\"white-space:nowrap\">52270<a name=\"mcdts-f-gastrenterologia-cs-52270\"> </a></td><td>Rectosigmoidoscopia flexível</td><td>Rectosigmoidoscopia flexível</td><td>33.96</td><td>10</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-f-gastrenterologia"^^xsd:anyURI ;
+     fhir:l <https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-f-gastrenterologia>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "MCDTSF_GastrenterologiaCS"] ; # 
+  fhir:title [ fhir:v "MCDTS Tabela Da Área F - Endoscopia Gastrenterológica"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-16T11:04:17+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tabela Da Área F - Endoscopia Gastrenterológica"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "ACSS" ]
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "12"^^xsd:nonNegativeInteger] ; # 
+  fhir:property ( [
+     fhir:code [ fhir:v "preco" ] ;
+     fhir:description [ fhir:v "Preço do MCDT" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] [
+     fhir:code [ fhir:v "taxa" ] ;
+     fhir:description [ fhir:v "Taxa Moderadora" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "52175" ] ;
+     fhir:display [ fhir:v "Biopsias transendoscópicas (acresce ao valor da endoscopia)" ] ;
+     fhir:definition [ fhir:v "Biopsias transendoscópicas (acresce ao valor da endoscopia)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 7.5
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "5"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "52071" ] ;
+     fhir:display [ fhir:v "Pesquisa de Helicobacter pylori na biópsia (Teste de Urease)" ] ;
+     fhir:definition [ fhir:v "Pesquisa de Helicobacter pylori na biópsia (Teste de Urease)" ]
+  ] [
+     fhir:code [ fhir:v "50115" ] ;
+     fhir:display [ fhir:v "Sedação efectuada por Gastrenterologista" ] ;
+     fhir:definition [ fhir:v "Sedação efectuada por Gastrenterologista" ]
+  ] [
+     fhir:code [ fhir:v "51120" ] ;
+     fhir:display [ fhir:v "Tatuagem cólica" ] ;
+     fhir:definition [ fhir:v "Tatuagem cólica" ]
+  ] [
+     fhir:code [ fhir:v "52155" ] ;
+     fhir:display [ fhir:v "Aplicação de \"clips\" (cada sessão)" ] ;
+     fhir:definition [ fhir:v "Aplicação de \"clips\" (cada sessão)" ]
+  ] [
+     fhir:code [ fhir:v "52210" ] ;
+     fhir:display [ fhir:v "Injecção endoscópica de fármacos" ] ;
+     fhir:definition [ fhir:v "Injecção endoscópica de fármacos" ]
+  ] [
+     fhir:code [ fhir:v "52220" ] ;
+     fhir:display [ fhir:v "Polipectomia, por sessão (a adicionar ao exame endoscópico)" ] ;
+     fhir:definition [ fhir:v "Polipectomia, por sessão (a adicionar ao exame endoscópico)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 32.27
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "12"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "52230" ] ;
+     fhir:display [ fhir:v "Terapêutica por Argon Plasma" ] ;
+     fhir:definition [ fhir:v "Terapêutica por Argon Plasma" ]
+  ] [
+     fhir:code [ fhir:v "51280" ] ;
+     fhir:display [ fhir:v "Anuscopia" ] ;
+     fhir:definition [ fhir:v "Anuscopia" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 5.09
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "3"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "52125" ] ;
+     fhir:display [ fhir:v "Endoscopia alta" ] ;
+     fhir:definition [ fhir:v "Endoscopia alta" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 42.28
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "12"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "52130" ] ;
+     fhir:display [ fhir:v "Rectoscopia rígida" ] ;
+     fhir:definition [ fhir:v "Rectoscopia rígida" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 13.86
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 4.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "52270" ] ;
+     fhir:display [ fhir:v "Rectosigmoidoscopia flexível" ] ;
+     fhir:definition [ fhir:v "Rectosigmoidoscopia flexível" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 33.96
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "10"^^xsd:decimal
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

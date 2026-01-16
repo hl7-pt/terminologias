@@ -1,0 +1,89 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "esp-farm-snomed",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ConceptMap esp-farm-snomed</b></p><a name=\"esp-farm-snomed\"> </a><a name=\"hcesp-farm-snomed\"> </a><p>Mapeamento de (não especificado) para (não especificado)</p><br/><p><b>Grupo 1 </b>Mapeamento de <code>https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-farmaceuticas-cs</code> to <code>http://snomed.info/sct</code> (SNOMED CT)</p><table class=\"grid\"><tr><td><b>Código fonte</b></td><td><b>Relacionamento</b></td><td><b>Código de destino</b></td></tr><tr><td>1</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>2</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1255514008 (Regulatory affairs pharmacist (occupation))</td></tr><tr><td>3</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>4</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>159010009 (Hospital pharmacist)</td></tr><tr><td>5</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1255515009 (Pharmacogenomics pharmacist (occupation))</td></tr><tr><td>6</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>159012001 (Industrial pharmacist)</td></tr><tr><td>7</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>159011008 (Retail pharmacist)</td></tr></table></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/esp-farm-snomed",
+  "version" : "1.0.0",
+  "name" : "ESP-FARM-SNOMED",
+  "title" : "Mapeamento de códigos de especialidades farmacêuticas para códigos SNOMEDCT",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-11",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "group" : [{
+    "source" : "https://terminologias.hl7.pt/fhir/CodeSystem/especialidades-farmaceuticas-cs",
+    "target" : "http://snomed.info/sct",
+    "element" : [{
+      "code" : "1",
+      "noMap" : true
+    },
+    {
+      "code" : "2",
+      "target" : [{
+        "code" : "1255514008",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "3",
+      "noMap" : true
+    },
+    {
+      "code" : "4",
+      "target" : [{
+        "code" : "159010009",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "5",
+      "target" : [{
+        "code" : "1255515009",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "6",
+      "target" : [{
+        "code" : "159012001",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "7",
+      "target" : [{
+        "code" : "159011008",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

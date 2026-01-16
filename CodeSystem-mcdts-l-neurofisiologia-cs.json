@@ -1,0 +1,187 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mcdts-l-neurofisiologia-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem mcdts-l-neurofisiologia-cs</b></p><a name=\"mcdts-l-neurofisiologia-cs\"> </a><a name=\"hcmcdts-l-neurofisiologia-cs\"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class=\"grid\"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>preco</td><td>preco</td><td>decimal</td><td>Preço do MCDT</td></tr><tr><td>taxa</td><td>taxa</td><td>decimal</td><td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-l-neurofisiologia</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr><tr><td style=\"white-space:nowrap\">63285<a name=\"mcdts-l-neurofisiologia-cs-63285\"> </a></td><td>Potenciais evocados somatossensitivos, dos membros superiores e dos membros inferiores, no laboratório</td><td>Potenciais evocados somatossensitivos, dos membros superiores e dos membros inferiores, no laboratório</td><td>62.1</td><td>15</td></tr><tr><td style=\"white-space:nowrap\">63305<a name=\"mcdts-l-neurofisiologia-cs-63305\"> </a></td><td>Potenciais evocados auditivos do tronco cerebral adultos</td><td>Potenciais evocados auditivos do tronco cerebral adultos</td><td>56.45</td><td>13</td></tr><tr><td style=\"white-space:nowrap\">63307<a name=\"mcdts-l-neurofisiologia-cs-63307\"> </a></td><td>Potenciais evocados auditivos em crianças</td><td>Potenciais evocados auditivos em crianças</td><td>62.1</td><td>14</td></tr><tr><td style=\"white-space:nowrap\">63310<a name=\"mcdts-l-neurofisiologia-cs-63310\"> </a></td><td>Potenciais evocados visuais (&quot;flash&quot; ou padrão)</td><td>Potenciais evocados visuais (&quot;flash&quot; ou padrão)</td><td>56.45</td><td>14</td></tr><tr><td style=\"white-space:nowrap\">63315<a name=\"mcdts-l-neurofisiologia-cs-63315\"> </a></td><td>Potenciais evocados visuais, em crianças</td><td>Potenciais evocados visuais, em crianças</td><td>62.1</td><td>13</td></tr><tr><td style=\"white-space:nowrap\">63330<a name=\"mcdts-l-neurofisiologia-cs-63330\"> </a></td><td>Potenciais de longa latência (P 300 ou outros)</td><td>Potenciais de longa latência (P 300 ou outros)</td><td>56.45</td><td>15</td></tr><tr><td style=\"white-space:nowrap\">63340<a name=\"mcdts-l-neurofisiologia-cs-63340\"> </a></td><td>Potenciais evocados, com cartografia</td><td>Potenciais evocados, com cartografia</td><td>79.2</td><td>17.5</td></tr><tr><td style=\"white-space:nowrap\">63401<a name=\"mcdts-l-neurofisiologia-cs-63401\"> </a></td><td>Estudo electromiográfico dos membros superiores ou dos membros inferiores ou de um território específico (inclui estimulação repetitiva), no laboratório</td><td>Estudo electromiográfico dos membros superiores ou dos membros inferiores ou de um território específico (inclui estimulação repetitiva), no laboratório</td><td>21.27</td><td>15</td></tr><tr><td style=\"white-space:nowrap\">63403<a name=\"mcdts-l-neurofisiologia-cs-63403\"> </a></td><td>Estudo electromiográfico dos membros superiores e dos membros inferiores, no laboratório</td><td>Estudo electromiográfico dos membros superiores e dos membros inferiores, no laboratório</td><td>21.27</td><td>17.5</td></tr><tr><td style=\"white-space:nowrap\">63472<a name=\"mcdts-l-neurofisiologia-cs-63472\"> </a></td><td>Monitorização neurofisiológica intra-operatória, com electroencefalografia</td><td>Monitorização neurofisiológica intra-operatória, com electroencefalografia</td><td>8.09</td><td>0</td></tr></table></div>"
+  },
+  "url" : "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-l-neurofisiologia",
+  "version" : "1.0.0",
+  "name" : "MCDTSL_NeurofisiologiaCS",
+  "title" : "MCDTS Tabela Da Área L - Neurofisiologia",
+  "status" : "active",
+  "date" : "2026-01-16T11:04:17+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Tabela Da Área L - Neurofisiologia",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "ACSS"
+  }],
+  "content" : "complete",
+  "count" : 10,
+  "property" : [{
+    "code" : "preco",
+    "description" : "Preço do MCDT",
+    "type" : "decimal"
+  },
+  {
+    "code" : "taxa",
+    "description" : "Taxa Moderadora",
+    "type" : "decimal"
+  }],
+  "concept" : [{
+    "code" : "63285",
+    "display" : "Potenciais evocados somatossensitivos, dos membros superiores e dos membros inferiores, no laboratório",
+    "definition" : "Potenciais evocados somatossensitivos, dos membros superiores e dos membros inferiores, no laboratório",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 62.1
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 15
+    }]
+  },
+  {
+    "code" : "63305",
+    "display" : "Potenciais evocados auditivos do tronco cerebral adultos",
+    "definition" : "Potenciais evocados auditivos do tronco cerebral adultos",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 56.45
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 13
+    }]
+  },
+  {
+    "code" : "63307",
+    "display" : "Potenciais evocados auditivos em crianças",
+    "definition" : "Potenciais evocados auditivos em crianças",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 62.1
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 14
+    }]
+  },
+  {
+    "code" : "63310",
+    "display" : "Potenciais evocados visuais (\"flash\" ou padrão)",
+    "definition" : "Potenciais evocados visuais (\"flash\" ou padrão)",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 56.45
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 14
+    }]
+  },
+  {
+    "code" : "63315",
+    "display" : "Potenciais evocados visuais, em crianças",
+    "definition" : "Potenciais evocados visuais, em crianças",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 62.1
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 13
+    }]
+  },
+  {
+    "code" : "63330",
+    "display" : "Potenciais de longa latência (P 300 ou outros)",
+    "definition" : "Potenciais de longa latência (P 300 ou outros)",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 56.45
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 15
+    }]
+  },
+  {
+    "code" : "63340",
+    "display" : "Potenciais evocados, com cartografia",
+    "definition" : "Potenciais evocados, com cartografia",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 79.2
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 17.5
+    }]
+  },
+  {
+    "code" : "63401",
+    "display" : "Estudo electromiográfico dos membros superiores ou dos membros inferiores ou de um território específico (inclui estimulação repetitiva), no laboratório",
+    "definition" : "Estudo electromiográfico dos membros superiores ou dos membros inferiores ou de um território específico (inclui estimulação repetitiva), no laboratório",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 21.27
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 15
+    }]
+  },
+  {
+    "code" : "63403",
+    "display" : "Estudo electromiográfico dos membros superiores e dos membros inferiores, no laboratório",
+    "definition" : "Estudo electromiográfico dos membros superiores e dos membros inferiores, no laboratório",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 21.27
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 17.5
+    }]
+  },
+  {
+    "code" : "63472",
+    "display" : "Monitorização neurofisiológica intra-operatória, com electroencefalografia",
+    "definition" : "Monitorização neurofisiológica intra-operatória, com electroencefalografia",
+    "property" : [{
+      "code" : "preco",
+      "valueDecimal" : 8.09
+    },
+    {
+      "code" : "taxa",
+      "valueDecimal" : 0
+    }]
+  }]
+}

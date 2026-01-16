@@ -1,0 +1,334 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/CodeSystem/mcdts-d-m-nuclear-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mcdts-d-m-nuclear-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem mcdts-d-m-nuclear-cs</b></p><a name=\"mcdts-d-m-nuclear-cs\"> </a><a name=\"hcmcdts-d-m-nuclear-cs\"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class=\"grid\"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>preco</td><td>preco</td><td>decimal</td><td>Preço do MCDT</td></tr><tr><td>taxa</td><td>taxa</td><td>decimal</td><td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-d-m-nuclear</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr><tr><td style=\"white-space:nowrap\">58015<a name=\"mcdts-d-m-nuclear-cs-58015\"> </a></td><td>Cintigrafia miocárdica de perfusão em esforço/stress farmacológico</td><td>Cintigrafia miocárdica de perfusão em esforço/stress farmacológico</td><td>148.54</td><td>27.5</td></tr><tr><td style=\"white-space:nowrap\">58020<a name=\"mcdts-d-m-nuclear-cs-58020\"> </a></td><td>Cintigrafia miocárdica de perfusão em repouso</td><td>Cintigrafia miocárdica de perfusão em repouso</td><td>101.33</td><td>20</td></tr><tr><td style=\"white-space:nowrap\">58050<a name=\"mcdts-d-m-nuclear-cs-58050\"> </a></td><td>Tomografia cerebral com 99mTc-HMPAO</td><td>Tomografia cerebral com 99mTc-HMPAO</td><td>175</td><td>27.5</td></tr><tr><td style=\"white-space:nowrap\">58100<a name=\"mcdts-d-m-nuclear-cs-58100\"> </a></td><td>Pesquisa de hemorragia digestiva</td><td>Pesquisa de hemorragia digestiva</td><td>70</td><td>17.5</td></tr><tr><td style=\"white-space:nowrap\">58105<a name=\"mcdts-d-m-nuclear-cs-58105\"> </a></td><td>Cintigrafia das glândulas salivares</td><td>Cintigrafia das glândulas salivares</td><td>41.51</td><td>11</td></tr><tr><td style=\"white-space:nowrap\">58115<a name=\"mcdts-d-m-nuclear-cs-58115\"> </a></td><td>Cintigrafia hepatobiliar</td><td>Cintigrafia hepatobiliar</td><td>57.96</td><td>15</td></tr><tr><td style=\"white-space:nowrap\">58120<a name=\"mcdts-d-m-nuclear-cs-58120\"> </a></td><td>Cintigrafia hepatobiliar com estimulação vesicular</td><td>Cintigrafia hepatobiliar com estimulação vesicular</td><td>98.32</td><td>20</td></tr><tr><td style=\"white-space:nowrap\">58125<a name=\"mcdts-d-m-nuclear-cs-58125\"> </a></td><td>Cintigrafia hepática com glóbulos vermelhos marcados</td><td>Cintigrafia hepática com glóbulos vermelhos marcados</td><td>66.08</td><td>15</td></tr><tr><td style=\"white-space:nowrap\">58130<a name=\"mcdts-d-m-nuclear-cs-58130\"> </a></td><td>Pesquisa de divertículo Meckel</td><td>Pesquisa de divertículo Meckel</td><td>35</td><td>10</td></tr><tr><td style=\"white-space:nowrap\">58150<a name=\"mcdts-d-m-nuclear-cs-58150\"> </a></td><td>Cintigrafia óssea corpo inteiro</td><td>Cintigrafia óssea corpo inteiro</td><td>63</td><td>15</td></tr><tr><td style=\"white-space:nowrap\">58200<a name=\"mcdts-d-m-nuclear-cs-58200\"> </a></td><td>Cintigrafia pulmonar de perfusão</td><td>Cintigrafia pulmonar de perfusão</td><td>46.24</td><td>13</td></tr><tr><td style=\"white-space:nowrap\">58205<a name=\"mcdts-d-m-nuclear-cs-58205\"> </a></td><td>Cintigrafia pulmonar ventilação/inalação (a)</td><td>Cintigrafia pulmonar ventilação/inalação (a)</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">58260<a name=\"mcdts-d-m-nuclear-cs-58260\"> </a></td><td>Cintigrafia da tiroideia</td><td>Cintigrafia da tiroideia</td><td>26.89</td><td>7</td></tr><tr><td style=\"white-space:nowrap\">58305<a name=\"mcdts-d-m-nuclear-cs-58305\"> </a></td><td>Renograma</td><td>Renograma</td><td>43.82</td><td>10</td></tr><tr><td style=\"white-space:nowrap\">58319<a name=\"mcdts-d-m-nuclear-cs-58319\"> </a></td><td>Intervenção farmacológica - prova diurética (acresce ao Renograma)</td><td>Intervenção farmacológica - prova diurética (acresce ao Renograma)</td><td>7.56</td><td>2</td></tr><tr><td style=\"white-space:nowrap\">58324<a name=\"mcdts-d-m-nuclear-cs-58324\"> </a></td><td>Intervenção farmacológica - prova de captopril (acresce ao Renograma)</td><td>Intervenção farmacológica - prova de captopril (acresce ao Renograma)</td><td>28.77</td><td>8</td></tr><tr><td style=\"white-space:nowrap\">58330<a name=\"mcdts-d-m-nuclear-cs-58330\"> </a></td><td>Cistocintigrafia direta (a)</td><td>Cistocintigrafia direta (a)</td><td/><td/></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-d-m-nuclear"^^xsd:anyURI ;
+     fhir:l <https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-d-m-nuclear>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "MCDTSD_MNuclearCS"] ; # 
+  fhir:title [ fhir:v "MCDTS Tabela Da Área D - Medicina Nuclear"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-16T11:04:17+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tabela Da Área D - Medicina Nuclear"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "ACSS" ]
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "17"^^xsd:nonNegativeInteger] ; # 
+  fhir:property ( [
+     fhir:code [ fhir:v "preco" ] ;
+     fhir:description [ fhir:v "Preço do MCDT" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] [
+     fhir:code [ fhir:v "taxa" ] ;
+     fhir:description [ fhir:v "Taxa Moderadora" ] ;
+     fhir:type [ fhir:v "decimal" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "58015" ] ;
+     fhir:display [ fhir:v "Cintigrafia miocárdica de perfusão em esforço/stress farmacológico" ] ;
+     fhir:definition [ fhir:v "Cintigrafia miocárdica de perfusão em esforço/stress farmacológico" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 148.54
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 27.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "58020" ] ;
+     fhir:display [ fhir:v "Cintigrafia miocárdica de perfusão em repouso" ] ;
+     fhir:definition [ fhir:v "Cintigrafia miocárdica de perfusão em repouso" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 101.33
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "20"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "58050" ] ;
+     fhir:display [ fhir:v "Tomografia cerebral com 99mTc-HMPAO" ] ;
+     fhir:definition [ fhir:v "Tomografia cerebral com 99mTc-HMPAO" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "175"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 27.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "58100" ] ;
+     fhir:display [ fhir:v "Pesquisa de hemorragia digestiva" ] ;
+     fhir:definition [ fhir:v "Pesquisa de hemorragia digestiva" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "70"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 17.5
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "58105" ] ;
+     fhir:display [ fhir:v "Cintigrafia das glândulas salivares" ] ;
+     fhir:definition [ fhir:v "Cintigrafia das glândulas salivares" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 41.51
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "11"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "58115" ] ;
+     fhir:display [ fhir:v "Cintigrafia hepatobiliar" ] ;
+     fhir:definition [ fhir:v "Cintigrafia hepatobiliar" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 57.96
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "15"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "58120" ] ;
+     fhir:display [ fhir:v "Cintigrafia hepatobiliar com estimulação vesicular" ] ;
+     fhir:definition [ fhir:v "Cintigrafia hepatobiliar com estimulação vesicular" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 98.32
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "20"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "58125" ] ;
+     fhir:display [ fhir:v "Cintigrafia hepática com glóbulos vermelhos marcados" ] ;
+     fhir:definition [ fhir:v "Cintigrafia hepática com glóbulos vermelhos marcados" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 66.08
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "15"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "58130" ] ;
+     fhir:display [ fhir:v "Pesquisa de divertículo Meckel" ] ;
+     fhir:definition [ fhir:v "Pesquisa de divertículo Meckel" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "35"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "10"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "58150" ] ;
+     fhir:display [ fhir:v "Cintigrafia óssea corpo inteiro" ] ;
+     fhir:definition [ fhir:v "Cintigrafia óssea corpo inteiro" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "63"^^xsd:decimal
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "15"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "58200" ] ;
+     fhir:display [ fhir:v "Cintigrafia pulmonar de perfusão" ] ;
+     fhir:definition [ fhir:v "Cintigrafia pulmonar de perfusão" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 46.24
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "13"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "58205" ] ;
+     fhir:display [ fhir:v "Cintigrafia pulmonar ventilação/inalação (a)" ] ;
+     fhir:definition [ fhir:v "Cintigrafia pulmonar ventilação/inalação (a)" ]
+  ] [
+     fhir:code [ fhir:v "58260" ] ;
+     fhir:display [ fhir:v "Cintigrafia da tiroideia" ] ;
+     fhir:definition [ fhir:v "Cintigrafia da tiroideia" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 26.89
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "7"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "58305" ] ;
+     fhir:display [ fhir:v "Renograma" ] ;
+     fhir:definition [ fhir:v "Renograma" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 43.82
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "10"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "58319" ] ;
+     fhir:display [ fhir:v "Intervenção farmacológica - prova diurética (acresce ao Renograma)" ] ;
+     fhir:definition [ fhir:v "Intervenção farmacológica - prova diurética (acresce ao Renograma)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 7.56
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "2"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "58324" ] ;
+     fhir:display [ fhir:v "Intervenção farmacológica - prova de captopril (acresce ao Renograma)" ] ;
+     fhir:definition [ fhir:v "Intervenção farmacológica - prova de captopril (acresce ao Renograma)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "preco" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v 28.77
+       ]
+     ] [
+       fhir:code [ fhir:v "taxa" ] ;
+       fhir:value [
+         a fhir:Decimal ;
+         fhir:v "8"^^xsd:decimal
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "58330" ] ;
+     fhir:display [ fhir:v "Cistocintigrafia direta (a)" ] ;
+     fhir:definition [ fhir:v "Cistocintigrafia direta (a)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mcdts-l-neurofisiologia-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem mcdts-l-neurofisiologia-cs</b></p><a name="mcdts-l-neurofisiologia-cs"> </a><a name="hcmcdts-l-neurofisiologia-cs"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class="grid"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>preco</td><td>preco</td><td>decimal</td><td>Preço do MCDT</td></tr><tr><td>taxa</td><td>taxa</td><td>decimal</td><td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-l-neurofisiologia</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr><tr><td style="white-space:nowrap">63285<a name="mcdts-l-neurofisiologia-cs-63285"> </a></td><td>Potenciais evocados somatossensitivos, dos membros superiores e dos membros inferiores, no laboratório</td><td>Potenciais evocados somatossensitivos, dos membros superiores e dos membros inferiores, no laboratório</td><td>62.1</td><td>15</td></tr><tr><td style="white-space:nowrap">63305<a name="mcdts-l-neurofisiologia-cs-63305"> </a></td><td>Potenciais evocados auditivos do tronco cerebral adultos</td><td>Potenciais evocados auditivos do tronco cerebral adultos</td><td>56.45</td><td>13</td></tr><tr><td style="white-space:nowrap">63307<a name="mcdts-l-neurofisiologia-cs-63307"> </a></td><td>Potenciais evocados auditivos em crianças</td><td>Potenciais evocados auditivos em crianças</td><td>62.1</td><td>14</td></tr><tr><td style="white-space:nowrap">63310<a name="mcdts-l-neurofisiologia-cs-63310"> </a></td><td>Potenciais evocados visuais (&quot;flash&quot; ou padrão)</td><td>Potenciais evocados visuais (&quot;flash&quot; ou padrão)</td><td>56.45</td><td>14</td></tr><tr><td style="white-space:nowrap">63315<a name="mcdts-l-neurofisiologia-cs-63315"> </a></td><td>Potenciais evocados visuais, em crianças</td><td>Potenciais evocados visuais, em crianças</td><td>62.1</td><td>13</td></tr><tr><td style="white-space:nowrap">63330<a name="mcdts-l-neurofisiologia-cs-63330"> </a></td><td>Potenciais de longa latência (P 300 ou outros)</td><td>Potenciais de longa latência (P 300 ou outros)</td><td>56.45</td><td>15</td></tr><tr><td style="white-space:nowrap">63340<a name="mcdts-l-neurofisiologia-cs-63340"> </a></td><td>Potenciais evocados, com cartografia</td><td>Potenciais evocados, com cartografia</td><td>79.2</td><td>17.5</td></tr><tr><td style="white-space:nowrap">63401<a name="mcdts-l-neurofisiologia-cs-63401"> </a></td><td>Estudo electromiográfico dos membros superiores ou dos membros inferiores ou de um território específico (inclui estimulação repetitiva), no laboratório</td><td>Estudo electromiográfico dos membros superiores ou dos membros inferiores ou de um território específico (inclui estimulação repetitiva), no laboratório</td><td>21.27</td><td>15</td></tr><tr><td style="white-space:nowrap">63403<a name="mcdts-l-neurofisiologia-cs-63403"> </a></td><td>Estudo electromiográfico dos membros superiores e dos membros inferiores, no laboratório</td><td>Estudo electromiográfico dos membros superiores e dos membros inferiores, no laboratório</td><td>21.27</td><td>17.5</td></tr><tr><td style="white-space:nowrap">63472<a name="mcdts-l-neurofisiologia-cs-63472"> </a></td><td>Monitorização neurofisiológica intra-operatória, com electroencefalografia</td><td>Monitorização neurofisiológica intra-operatória, com electroencefalografia</td><td>8.09</td><td>0</td></tr></table></div>
+  </text>
+  <url value="https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-l-neurofisiologia"/>
+  <version value="1.0.0"/>
+  <name value="MCDTSL_NeurofisiologiaCS"/>
+  <title value="MCDTS Tabela Da Área L - Neurofisiologia"/>
+  <status value="active"/>
+  <date value="2026-01-16T11:04:17+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Tabela Da Área L - Neurofisiologia"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="ACSS"/>
+  </author>
+  <content value="complete"/>
+  <count value="10"/>
+  <property>
+    <code value="preco"/>
+    <description value="Preço do MCDT"/>
+    <type value="decimal"/>
+  </property>
+  <property>
+    <code value="taxa"/>
+    <description value="Taxa Moderadora"/>
+    <type value="decimal"/>
+  </property>
+  <concept>
+    <code value="63285"/>
+    <display value="Potenciais evocados somatossensitivos, dos membros superiores e dos membros inferiores, no laboratório"/>
+    <definition value="Potenciais evocados somatossensitivos, dos membros superiores e dos membros inferiores, no laboratório"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="62.1"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="15"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="63305"/>
+    <display value="Potenciais evocados auditivos do tronco cerebral adultos"/>
+    <definition value="Potenciais evocados auditivos do tronco cerebral adultos"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="56.45"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="13"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="63307"/>
+    <display value="Potenciais evocados auditivos em crianças"/>
+    <definition value="Potenciais evocados auditivos em crianças"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="62.1"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="14"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="63310"/>
+    <display value="Potenciais evocados visuais (&quot;flash&quot; ou padrão)"/>
+    <definition value="Potenciais evocados visuais (&quot;flash&quot; ou padrão)"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="56.45"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="14"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="63315"/>
+    <display value="Potenciais evocados visuais, em crianças"/>
+    <definition value="Potenciais evocados visuais, em crianças"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="62.1"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="13"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="63330"/>
+    <display value="Potenciais de longa latência (P 300 ou outros)"/>
+    <definition value="Potenciais de longa latência (P 300 ou outros)"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="56.45"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="15"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="63340"/>
+    <display value="Potenciais evocados, com cartografia"/>
+    <definition value="Potenciais evocados, com cartografia"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="79.2"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="17.5"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="63401"/>
+    <display value="Estudo electromiográfico dos membros superiores ou dos membros inferiores ou de um território específico (inclui estimulação repetitiva), no laboratório"/>
+    <definition value="Estudo electromiográfico dos membros superiores ou dos membros inferiores ou de um território específico (inclui estimulação repetitiva), no laboratório"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="21.27"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="15"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="63403"/>
+    <display value="Estudo electromiográfico dos membros superiores e dos membros inferiores, no laboratório"/>
+    <definition value="Estudo electromiográfico dos membros superiores e dos membros inferiores, no laboratório"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="21.27"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="17.5"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="63472"/>
+    <display value="Monitorização neurofisiológica intra-operatória, com electroencefalografia"/>
+    <definition value="Monitorização neurofisiológica intra-operatória, com electroencefalografia"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="8.09"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="0"/>
+    </property>
+  </concept>
+</CodeSystem>

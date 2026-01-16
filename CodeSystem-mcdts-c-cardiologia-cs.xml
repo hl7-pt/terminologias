@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mcdts-c-cardiologia-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem mcdts-c-cardiologia-cs</b></p><a name="mcdts-c-cardiologia-cs"> </a><a name="hcmcdts-c-cardiologia-cs"> </a><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class="grid"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>preco</td><td>preco</td><td>decimal</td><td>Preço do MCDT</td></tr><tr><td>taxa</td><td>taxa</td><td>decimal</td><td>Taxa Moderadora</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código <code>https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-c-cardiologia</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>preco</b></td><td><b>taxa</b></td></tr><tr><td style="white-space:nowrap">40301<a name="mcdts-c-cardiologia-cs-40301"> </a></td><td>ECG simples de 12 derivações</td><td>ECG simples de 12 derivações</td><td>3.87</td><td>1.4</td></tr><tr><td style="white-space:nowrap">40315<a name="mcdts-c-cardiologia-cs-40315"> </a></td><td>Prova de esforço em bicicleta ergométrica ou em tapete rolante com monitorização eletrocardiográfica contínua, registo de ECG em cada estadio</td><td>Prova de esforço em bicicleta ergométrica ou em tapete rolante com monitorização eletrocardiográfica contínua, registo de ECG em cada estadio</td><td>27.55</td><td>6</td></tr><tr><td style="white-space:nowrap">40405<a name="mcdts-c-cardiologia-cs-40405"> </a></td><td>Registo de Holter até 24 horas com análise interativa do perfil rítmico e do segmento ST, podendo incluir variabilidade da frequência cardíaca</td><td>Registo de Holter até 24 horas com análise interativa do perfil rítmico e do segmento ST, podendo incluir variabilidade da frequência cardíaca</td><td>34.65</td><td>8</td></tr><tr><td style="white-space:nowrap">40560<a name="mcdts-c-cardiologia-cs-40560"> </a></td><td>Ecocardiograma transtorácico bidimensional</td><td>Ecocardiograma transtorácico bidimensional</td><td>40.7</td><td>7</td></tr><tr><td style="white-space:nowrap">41020<a name="mcdts-c-cardiologia-cs-41020"> </a></td><td>Análise electrónica e programação de sistema pacemaker permanente</td><td>Análise electrónica e programação de sistema pacemaker permanente</td><td>6</td><td>6</td></tr></table></div>
+  </text>
+  <url value="https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-c-cardiologia"/>
+  <version value="1.0.0"/>
+  <name value="MCDTSC_CardiologiaCS"/>
+  <title value="MCDTS Tabela Da Área C - Cardiologia"/>
+  <status value="active"/>
+  <date value="2026-01-16T11:04:17+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Tabela Da Área C - Cardiologia"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="ACSS"/>
+  </author>
+  <content value="complete"/>
+  <count value="5"/>
+  <property>
+    <code value="preco"/>
+    <description value="Preço do MCDT"/>
+    <type value="decimal"/>
+  </property>
+  <property>
+    <code value="taxa"/>
+    <description value="Taxa Moderadora"/>
+    <type value="decimal"/>
+  </property>
+  <concept>
+    <code value="40301"/>
+    <display value="ECG simples de 12 derivações"/>
+    <definition value="ECG simples de 12 derivações"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="3.87"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="1.4"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="40315"/>
+    <display value="Prova de esforço em bicicleta ergométrica ou em tapete rolante com monitorização eletrocardiográfica contínua, registo de ECG em cada estadio"/>
+    <definition value="Prova de esforço em bicicleta ergométrica ou em tapete rolante com monitorização eletrocardiográfica contínua, registo de ECG em cada estadio"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="27.55"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="6"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="40405"/>
+    <display value="Registo de Holter até 24 horas com análise interativa do perfil rítmico e do segmento ST, podendo incluir variabilidade da frequência cardíaca"/>
+    <definition value="Registo de Holter até 24 horas com análise interativa do perfil rítmico e do segmento ST, podendo incluir variabilidade da frequência cardíaca"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="34.65"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="8"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="40560"/>
+    <display value="Ecocardiograma transtorácico bidimensional"/>
+    <definition value="Ecocardiograma transtorácico bidimensional"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="40.7"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="7"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="41020"/>
+    <display value="Análise electrónica e programação de sistema pacemaker permanente"/>
+    <definition value="Análise electrónica e programação de sistema pacemaker permanente"/>
+    <property>
+      <code value="preco"/>
+      <valueDecimal value="6"/>
+    </property>
+    <property>
+      <code value="taxa"/>
+      <valueDecimal value="6"/>
+    </property>
+  </concept>
+</CodeSystem>
