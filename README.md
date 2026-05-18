@@ -23,3 +23,4 @@ Este IG está vazio e serve de template para quem criar IGs no ecossistema Portu
 4. pasta examples para recursos exemplo em json
 5. pasta images para images
 6. pasta images-source para conteudo plantuml
+ 
