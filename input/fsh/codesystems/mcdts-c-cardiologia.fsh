@@ -4,7 +4,6 @@ Id:         mcdts-c-cardiologia-cs
 Title:     "MCDTS Tabela Da Área C - Cardiologia"
 Description: "Tabela Da Área C - Cardiologia"
 
-* ^url =  "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-c-cardiologia"
 * ^version = "5.9.2024"
 * ^author.name = "ACSS"
 

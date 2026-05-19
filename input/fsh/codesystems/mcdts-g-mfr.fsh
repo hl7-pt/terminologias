@@ -4,7 +4,6 @@ Id:         mcdts-g-mfr-cs
 Title:     "MCDTS Tabela Da Área G - Medicina Fisica E De Reabilitação"
 Description: "Tabela Da Área G - Medicina Fisica E De Reabilitação"
 
-* ^url =  "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-g-mfr"
 * ^version = "5.9.2024"
 * ^author.name = "ACSS"
 

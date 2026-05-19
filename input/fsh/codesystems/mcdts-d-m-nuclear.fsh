@@ -4,7 +4,6 @@ Id:         mcdts-d-m-nuclear-cs
 Title:     "MCDTS Tabela Da Área D - Medicina Nuclear"
 Description: "Tabela Da Área D - Medicina Nuclear"
 
-* ^url =  "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-d-m-nuclear"
 * ^version = "5.9.2024"
 * ^author.name = "ACSS"
 

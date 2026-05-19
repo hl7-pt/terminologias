@@ -5,7 +5,6 @@ Id:         subsistemas-saude-cs
 Title:     "Subsistemas de saúde"
 Description: "Subsistemas de saúde existentes em Portugal"
 
-* ^url =  "https://hl7-pt.github.io/terminologias/CodeSystem-subsistemas-saude"
 * ^version = "1.0.0"
 * ^author.name = "Estado Português"
 

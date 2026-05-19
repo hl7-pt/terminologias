@@ -4,7 +4,6 @@ Id:         mcdts-i-pneumologia-imunoalergologia-cs
 Title:     "MCDTS Tabela Da Área I - Tabela De Pneumologia E Tabela De Imunoalergologia"
 Description: "Tabela Da Área I - Tabela De Pneumologia E Tabela De Imunoalergologia"
 
-* ^url =  "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-i-pneumologia-imunoalergologia"
 * ^version = "5.9.2024"
 * ^author.name = "ACSS"
 

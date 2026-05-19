@@ -4,7 +4,6 @@ Id:         mcdts-j-urologia-cs
 Title:     "MCDTS Tabela Da Área J - Urologia"
 Description: "Tabela Da Área J - Urologia"
 
-* ^url =  "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-j-urologia"
 * ^version = "5.9.2024"
 * ^author.name = "ACSS"
 

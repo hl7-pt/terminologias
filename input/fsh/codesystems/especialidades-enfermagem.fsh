@@ -6,7 +6,6 @@ Id:         especialidades-enfermagem-cs
 Title:     "Especialidades Enfermagem"
 Description: "Especialidades enfermagem existentes em Portugal"
 
-* ^url =  "https://hl7-pt.github.io/terminologias/CodeSystem-especialidades-enfermagem"
 * ^version = "1.0.0"
 * ^author.name = "Ordem dos Enfermeiros"
 

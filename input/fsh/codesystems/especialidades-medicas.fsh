@@ -5,7 +5,6 @@ Id:         especialidades-medicas-cs
 Title:     "Especialidades Médicas"
 Description: "Especialidades médicas existentes em Portugal"
 
-* ^url =  "https://hl7-pt.github.io/terminologias/CodeSystem-especialidades-medicas"
 * ^version = "1.0.0"
 * ^author.name = "Ordem dos médicos"
 

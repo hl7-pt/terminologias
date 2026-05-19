@@ -4,7 +4,6 @@ Id:         mcdts-e-eeg-cs
 Title:     "MCDTS Tabela Da Área E - Electroencefalografia"
 Description: "Tabela Da Área E - Electroencefalografia"
 
-* ^url =  "https://hl7-pt.github.io/terminologias/CodeSystem-mcdts-e-eeg"
 * ^version = "5.9.2024"
 * ^author.name = "ACSS"
 
