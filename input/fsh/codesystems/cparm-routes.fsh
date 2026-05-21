@@ -1,7 +1,7 @@
 
 // Define a local code system
 CodeSystem: CPARMRoutesCS
-Id:         cparm-routes-cs
+Id:         cparm-routes
 Title:     "Vias de Administração"
 Description: "Vias de Administração de medicamentos"
 
