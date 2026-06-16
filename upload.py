@@ -14,7 +14,7 @@ h = {"Cache-Control": "no-cache", "Pragma": "no-cache"}
 
 for file in listdir(FOLDER):
     res = file.split("-")[0]
-    if res in ["CodeSystem", "ConceptMap"]:
+    if res in ["CodeSystem", "ConceptMap", "ValueSet"]:
         f = open(FOLDER + "/" + file)
         data = json.load(f)
         id_ = data["id"]
