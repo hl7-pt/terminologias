@@ -1,0 +1,82 @@
+// CPARADM v3.0.0 - Discharge Type
+Instance: cparadm-discharge-type-vs
+InstanceOf: ValueSet
+Usage: #definition
+
+* url = "https://hl7.pt/fhir/ValueSet/cparadm-discharge-type-vs"
+* name = "CPARADMDischargeTypeVS"
+* title = "CPARADM - Discharge Type"
+* description = "Conjunto de valores DischargeType (CPARADM v3.0.0)."
+* version = "3.0.0"
+* status = #active
+* experimental = false
+* date = "2025-11-01"
+* publisher = "HL7 Portugal"
+* author.name = "Centro de Terminologias Clínicas"
+* contact[0].name = "Centro de Terminologias Clínicas"
+* identifier[0].system = "urn:ietf:rfc:3986"
+* identifier[0].value = "urn:oid:2.16.620.1.101.10.4.6.32"
+
+* compose.include[0].system = "http://snomed.info/sct"
+* compose.include[0].concept[0].code = #34596002
+* compose.include[0].concept[0].display = "Alta do utente por abandono"
+* compose.include[0].concept[0].designation[0].language = #en
+* compose.include[0].concept[0].designation[0].value = "Patient discharge, elopement (procedure)"
+* compose.include[0].concept[0].designation[1].language = #pt
+* compose.include[0].concept[0].designation[1].use = $sct#900000000000013009 "Synonym"
+* compose.include[0].concept[0].designation[1].value = "Alta por abandono"
+* compose.include[0].concept[1].code = #58000006
+* compose.include[0].concept[1].display = "Alta do utente"
+* compose.include[0].concept[1].designation[0].language = #en
+* compose.include[0].concept[1].designation[0].value = "Patient discharge (procedure)"
+* compose.include[0].concept[2].code = #1258989004
+* compose.include[0].concept[2].display = "Alta disciplinar do utente"
+* compose.include[0].concept[2].designation[0].language = #en
+* compose.include[0].concept[2].designation[0].value = "Patient disciplinary discharge (procedure)"
+* compose.include[0].concept[2].designation[1].language = #pt
+* compose.include[0].concept[2].designation[1].use = $sct#900000000000013009 "Synonym"
+* compose.include[0].concept[2].designation[1].value = "Alta disciplinar"
+* compose.include[0].concept[3].code = #3133002
+* compose.include[0].concept[3].display = "Alta do utente, falecido, para autópsia"
+* compose.include[0].concept[3].designation[0].language = #en
+* compose.include[0].concept[3].designation[0].value = "Patient discharge, deceased, autopsy (procedure)"
+* compose.include[0].concept[3].designation[1].language = #pt
+* compose.include[0].concept[3].designation[1].use = $sct#900000000000013009 "Synonym"
+* compose.include[0].concept[3].designation[1].value = "Alta utente para autópsia"
+* compose.include[0].concept[4].code = #79779006
+* compose.include[0].concept[4].display = "Alta do utente, falecido, sem autópsia"
+* compose.include[0].concept[4].designation[0].language = #en
+* compose.include[0].concept[4].designation[0].value = "Patient discharge, deceased, no autopsy (procedure)"
+* compose.include[0].concept[4].designation[1].language = #pt
+* compose.include[0].concept[4].designation[1].use = $sct#900000000000013009 "Synonym"
+* compose.include[0].concept[4].designation[1].value = "Alta sem autópsia"
+* compose.include[0].concept[5].code = #1917008
+* compose.include[0].concept[5].display = "Alta do utente, falecido, caso médico-legal"
+* compose.include[0].concept[5].designation[0].language = #en
+* compose.include[0].concept[5].designation[0].value = "Patient discharge, deceased, medicolegal case (procedure)"
+* compose.include[0].concept[6].code = #225928004
+* compose.include[0].concept[6].display = "Alta do utente contra parecer médico"
+* compose.include[0].concept[6].designation[0].language = #en
+* compose.include[0].concept[6].designation[0].value = "Patient self-discharge against medical advice (procedure)"
+* compose.include[0].concept[6].designation[1].language = #pt
+* compose.include[0].concept[6].designation[1].use = $sct#900000000000013009 "Synonym"
+* compose.include[0].concept[6].designation[1].value = "Alta contra parecer médico"
+* compose.include[0].concept[7].code = #671000314103
+* compose.include[0].concept[7].display = "Alta do utente por recusa de consulta nos cuidados de saúde primários"
+* compose.include[0].concept[7].designation[0].language = #en
+* compose.include[0].concept[7].designation[0].value = "Patient discharged for refusing consultation at the primary care hospital (procedure)"
+* compose.include[0].concept[7].designation[1].language = #pt
+* compose.include[0].concept[7].designation[1].use = $sct#900000000000013009 "Synonym"
+* compose.include[0].concept[7].designation[1].value = "Alta do utente por recusa de consulta nos CSP"
+* compose.include[0].concept[8].code = #681000314100
+* compose.include[0].concept[8].display = "Alta do utente triado com cor verde, azul ou branca"
+* compose.include[0].concept[8].designation[0].language = #en
+* compose.include[0].concept[8].designation[0].value = "Patient discharge triaged with green, blue or white colour (procedure)"
+* compose.include[0].concept[9].code = #1380185004
+* compose.include[0].concept[9].display = "Alta de utente falecido"
+* compose.include[0].concept[9].designation[0].language = #en
+* compose.include[0].concept[9].designation[0].value = "Discharge of deceased subject (procedure)"
+* compose.include[0].concept[9].designation[1].language = #pt
+* compose.include[0].concept[9].designation[1].use = $sct#900000000000013009 "Synonym"
+* compose.include[0].concept[9].designation[1].value = "Alta por falecimento"
+
