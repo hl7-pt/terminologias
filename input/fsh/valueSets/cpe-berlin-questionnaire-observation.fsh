@@ -1,0 +1,82 @@
+// CPE v2.0.0 - Berlin QuestionnaireObservation
+Instance: cpe-berlin-questionnaire-observation-vs
+InstanceOf: ValueSet
+Usage: #definition
+
+* url = "https://hl7.pt/fhir/ValueSet/cpe-berlin-questionnaire-observation-vs"
+* name = "CPEBerlinQuestionnaireObservationVS"
+* title = "CPE - Berlin QuestionnaireObservation"
+* description = "Conjunto de valores BerlinQuestionnaireObservation (CPE v2.0.0)."
+* version = "2.0.0"
+* status = #active
+* experimental = false
+* date = "2025-11-01"
+* publisher = "Centro de Terminologias Clínicas"
+* contact[0].name = "Centro de Terminologias Clínicas"
+* identifier[0].system = "urn:ietf:rfc:3986"
+* identifier[0].value = "urn:oid:2.16.620.1.101.10.4.6.181"
+
+* compose.include[0].system = "http://loinc.org"
+* compose.include[0].concept[0].code = #8302-2
+* compose.include[0].concept[0].display = "Medida da altura corporal"
+* compose.include[0].concept[0].designation[0].language = #en
+* compose.include[0].concept[0].designation[0].value = "Body height"
+* compose.include[0].concept[0].designation[1].language = #pt
+* compose.include[0].concept[0].designation[1].use = $sct#900000000000013009 "Synonym"
+* compose.include[0].concept[0].designation[1].value = "Altura"
+* compose.include[0].concept[1].code = #29463-7
+* compose.include[0].concept[1].display = "Peso corporal"
+* compose.include[0].concept[1].designation[0].language = #en
+* compose.include[0].concept[1].designation[0].value = "Body weight"
+* compose.include[0].concept[1].designation[1].language = #pt
+* compose.include[0].concept[1].designation[1].use = $sct#900000000000013009 "Synonym"
+* compose.include[0].concept[1].designation[1].value = "Peso"
+* compose.include[0].concept[2].code = #30525-0
+* compose.include[0].concept[2].display = "Idade"
+* compose.include[0].concept[2].designation[0].language = #en
+* compose.include[0].concept[2].designation[0].value = "Age"
+* compose.include[0].concept[3].code = #46098-0
+* compose.include[0].concept[3].display = "Sexo"
+* compose.include[0].concept[3].designation[0].language = #en
+* compose.include[0].concept[3].designation[0].value = "Sex"
+* compose.include[0].concept[4].code = #64487-2
+* compose.include[0].concept[4].display = "Ressona?"
+* compose.include[0].concept[4].designation[0].language = #en
+* compose.include[0].concept[4].designation[0].value = "Do you snore?"
+* compose.include[0].concept[5].code = #64488-0
+* compose.include[0].concept[5].display = "O seu ressonar é:"
+* compose.include[0].concept[5].designation[0].language = #en
+* compose.include[0].concept[5].designation[0].value = "Your snoring is:"
+* compose.include[0].concept[6].code = #64489-8
+* compose.include[0].concept[6].display = "Com que frequência ressona?"
+* compose.include[0].concept[6].designation[0].language = #en
+* compose.include[0].concept[6].designation[0].value = "How often do you snore?"
+* compose.include[0].concept[7].code = #64490-6
+* compose.include[0].concept[7].display = "O seu ressonar alguma vez incomodou outras pessoas?"
+* compose.include[0].concept[7].designation[0].language = #en
+* compose.include[0].concept[7].designation[0].value = "Has your snoring ever bothered other people?"
+* compose.include[0].concept[8].code = #64491-4
+* compose.include[0].concept[8].display = "Alguma pessoa notou que parava de respirar durante o sono?"
+* compose.include[0].concept[8].designation[0].language = #en
+* compose.include[0].concept[8].designation[0].value = "Has anyone noticed that you quit breathing during your sleep?"
+* compose.include[0].concept[9].code = #64492-2
+* compose.include[0].concept[9].display = "Com que frequência se sente cansado ou fatigado depois de uma noite de sono?"
+* compose.include[0].concept[9].designation[0].language = #en
+* compose.include[0].concept[9].designation[0].value = "How often do you feel tired or fatigued after your sleep?"
+* compose.include[0].concept[10].code = #64493-0
+* compose.include[0].concept[10].display = "Durante o dia, sente-se cansado, fatigado ou sem capacidade para o enfrentar?"
+* compose.include[0].concept[10].designation[0].language = #en
+* compose.include[0].concept[10].designation[0].value = "During your waking time, do you feel tired, fatigued, or not up to par?"
+* compose.include[0].concept[11].code = #64494-8
+* compose.include[0].concept[11].display = "Alguma vez \"passou pelas brasas\" ou adormeceu enquanto guiava?"
+* compose.include[0].concept[11].designation[0].language = #en
+* compose.include[0].concept[11].designation[0].value = "Have you ever nodded off or fallen asleep while driving a vehicle?"
+* compose.include[0].concept[12].code = #64495-5
+* compose.include[0].concept[12].display = "Com que frequência é que isso ocorre?"
+* compose.include[0].concept[12].designation[0].language = #en
+* compose.include[0].concept[12].designation[0].value = "How often does this occur?"
+* compose.include[0].concept[13].code = #64496-3
+* compose.include[0].concept[13].display = "Tem tensão arterial alta?"
+* compose.include[0].concept[13].designation[0].language = #en
+* compose.include[0].concept[13].designation[0].value = "Do you have high blood pressure?"
+
