@@ -1,0 +1,1308 @@
+[{
+  "id" : "hl7.fhir.pt.terminology",
+  "type" : "ImplementationGuide",
+  "url" : "http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.terminology",
+  "version" : "1.0.0",
+  "name" : "TerminologyPT"
+},
+{
+  "id" : "cparadm-cefrlevels-cs",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/CodeSystem/cparadm-cefrlevels-cs",
+  "version" : "1.0.0",
+  "name" : "CPARADMCEFRLevelsCS"
+},
+{
+  "id" : "cparm-routes",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/Terminologias/CodeSystem/cparm-routes",
+  "version" : "1.0.0",
+  "name" : "CPARMRoutesCS"
+},
+{
+  "id" : "cparm-units-presentation-cs",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/Terminologias/CodeSystem/cparm-units-presentation-cs",
+  "version" : "1.0.0",
+  "name" : "CPARMUnitsPresentationCS"
+},
+{
+  "id" : "especialidades-enfermagem-cs",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/Terminologias/CodeSystem/especialidades-enfermagem-cs",
+  "version" : "1.0.0",
+  "name" : "EspecialidadesEnfermagemCS"
+},
+{
+  "id" : "especialidades-farmaceuticas-cs",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/Terminologias/CodeSystem/especialidades-farmaceuticas-cs",
+  "version" : "1.0.0",
+  "name" : "EspecialidadesFarmaceuticasCS"
+},
+{
+  "id" : "especialidades-medicas-cs",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/Terminologias/CodeSystem/especialidades-medicas-cs",
+  "version" : "1.0.0",
+  "name" : "EspecialidadesMedicasCS"
+},
+{
+  "id" : "mcdts-a-analises-cs",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/Terminologias/CodeSystem/mcdts-a-analises-cs",
+  "version" : "1.0.0",
+  "name" : "MCDTSA_AnalisesCS"
+},
+{
+  "id" : "mcdts-b-anatomia-cs",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/Terminologias/CodeSystem/mcdts-b-anatomia-cs",
+  "version" : "1.0.0",
+  "name" : "MCDTSB_AnatomiaCS"
+},
+{
+  "id" : "mcdts-c-cardiologia-cs",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/Terminologias/CodeSystem/mcdts-c-cardiologia-cs",
+  "version" : "1.0.0",
+  "name" : "MCDTSC_CardiologiaCS"
+},
+{
+  "id" : "mcdts-d-m-nuclear-cs",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/Terminologias/CodeSystem/mcdts-d-m-nuclear-cs",
+  "version" : "1.0.0",
+  "name" : "MCDTSD_MNuclearCS"
+},
+{
+  "id" : "mcdts-e-eeg-cs",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/Terminologias/CodeSystem/mcdts-e-eeg-cs",
+  "version" : "1.0.0",
+  "name" : "MCDTSE_EEGCS"
+},
+{
+  "id" : "mcdts-f-gastrenterologia-cs",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/Terminologias/CodeSystem/mcdts-f-gastrenterologia-cs",
+  "version" : "1.0.0",
+  "name" : "MCDTSF_GastrenterologiaCS"
+},
+{
+  "id" : "mcdts-g-mfr-cs",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/Terminologias/CodeSystem/mcdts-g-mfr-cs",
+  "version" : "1.0.0",
+  "name" : "MCDTSG_MFRCS"
+},
+{
+  "id" : "mcdts-h-orl-cs",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/Terminologias/CodeSystem/mcdts-h-orl-cs",
+  "version" : "1.0.0",
+  "name" : "MCDTSH_ORLCS"
+},
+{
+  "id" : "mcdts-i-pneumologia-imunoalergologia-cs",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/Terminologias/CodeSystem/mcdts-i-pneumologia-imunoalergologia-cs",
+  "version" : "1.0.0",
+  "name" : "MCDTSI_Pneumologia_ImunoalergologiaCS"
+},
+{
+  "id" : "mcdts-j-urologia-cs",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/Terminologias/CodeSystem/mcdts-j-urologia-cs",
+  "version" : "1.0.0",
+  "name" : "MCDTSJ_UrologiaCS"
+},
+{
+  "id" : "mcdts-l-neurofisiologia-cs",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/Terminologias/CodeSystem/mcdts-l-neurofisiologia-cs",
+  "version" : "1.0.0",
+  "name" : "MCDTSL_NeurofisiologiaCS"
+},
+{
+  "id" : "mcdts-m-radiologia-cs",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/Terminologias/CodeSystem/mcdts-m-radiologia-cs",
+  "version" : "1.0.0",
+  "name" : "MCDTSM_RadiologiaCS"
+},
+{
+  "id" : "subsistemas-saude-cs",
+  "type" : "CodeSystem",
+  "url" : "https://hl7.pt/fhir/Terminologias/CodeSystem/subsistemas-saude-cs",
+  "version" : "1.0.0",
+  "name" : "SubsistemasSaudeCS"
+},
+{
+  "id" : "ctc-unit-edqm",
+  "type" : "ConceptMap",
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/ctc-unit-edqm",
+  "version" : "1.0.0",
+  "name" : "CTCUnitEDQM"
+},
+{
+  "id" : "esp-enfer-snomed",
+  "type" : "ConceptMap",
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/esp-enfer-snomed",
+  "version" : "1.0.0",
+  "name" : "ESP-Enferm-SNOMED"
+},
+{
+  "id" : "esp-farm-snomed",
+  "type" : "ConceptMap",
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/esp-farm-snomed",
+  "version" : "1.0.0",
+  "name" : "ESP-FARM-SNOMED"
+},
+{
+  "id" : "mcdts-a-analises-sns-conv",
+  "type" : "ConceptMap",
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-a-analises-sns-conv",
+  "version" : "1.0.0",
+  "name" : "MCDTS-a-analises-SNS-CONV"
+},
+{
+  "id" : "mcdts-b-anatomia-sns-conv",
+  "type" : "ConceptMap",
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-b-anatomia-sns-conv",
+  "version" : "1.0.0",
+  "name" : "MCDTS-b-anatomia-SNS-CONV"
+},
+{
+  "id" : "mcdts-c-cardiologia-sns-conv",
+  "type" : "ConceptMap",
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-c-cardiologia-sns-conv",
+  "version" : "1.0.0",
+  "name" : "MCDTS-c-cardiologia-SNS-CONV"
+},
+{
+  "id" : "mcdts-d-m-nuclear-sns-conv",
+  "type" : "ConceptMap",
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-d-m-nuclear-sns-conv",
+  "version" : "1.0.0",
+  "name" : "MCDTS-d-m-nuclear-SNS-CONV"
+},
+{
+  "id" : "mcdts-e-eeg-sns-conv",
+  "type" : "ConceptMap",
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-e-eeg-sns-conv",
+  "version" : "1.0.0",
+  "name" : "MCDTS-e-eeg-SNS-CONV"
+},
+{
+  "id" : "mcdts-f-gastrenterologia-sns-conv",
+  "type" : "ConceptMap",
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-f-gastrenterologia-sns-conv",
+  "version" : "1.0.0",
+  "name" : "MCDTS-f-gastrenterologia-SNS-CONV"
+},
+{
+  "id" : "mcdts-g-mfr-sns-conv",
+  "type" : "ConceptMap",
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-g-mfr-sns-conv",
+  "version" : "1.0.0",
+  "name" : "MCDTS-g-mfr-SNS-CONV"
+},
+{
+  "id" : "mcdts-h-orl-sns-conv",
+  "type" : "ConceptMap",
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-h-orl-sns-conv",
+  "version" : "1.0.0",
+  "name" : "MCDTS-h-orl-SNS-CONV"
+},
+{
+  "id" : "mcdts-i-pneumologia-imunoalergologia-sns-conv",
+  "type" : "ConceptMap",
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-i-pneumologia-imunoalergologia-sns-conv",
+  "version" : "1.0.0",
+  "name" : "MCDTS-i-pneumologia-imunoalergologia-SNS-CONV"
+},
+{
+  "id" : "mcdts-j-urologia-sns-conv",
+  "type" : "ConceptMap",
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-j-urologia-sns-conv",
+  "version" : "1.0.0",
+  "name" : "MCDTS-j-urologia-SNS-CONV"
+},
+{
+  "id" : "mcdts-l-neurofisiologia-sns-conv",
+  "type" : "ConceptMap",
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-l-neurofisiologia-sns-conv",
+  "version" : "1.0.0",
+  "name" : "MCDTS-l-neurofisiologia-SNS-CONV"
+},
+{
+  "id" : "mcdts-m-radiologia-sns-conv",
+  "type" : "ConceptMap",
+  "url" : "https://hl7.pt/fhir/Terminologias/ConceptMap/mcdts-m-radiologia-sns-conv",
+  "version" : "1.0.0",
+  "name" : "MCDTS-m-radiologia-SNS-CONV"
+},
+{
+  "id" : "cpal-ab0-group-phenotype-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-ab0-group-phenotype-vs",
+  "version" : "1.0.0",
+  "name" : "CPALAB0GroupPhenotypeVS",
+  "oids" : ["2.16.620.1.101.10.4.6.1"]
+},
+{
+  "id" : "cpal-antimicrobial-type-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-antimicrobial-type-vs",
+  "version" : "1.0.0",
+  "name" : "CPALAntimicrobialTypeVS",
+  "oids" : ["2.16.620.1.101.10.4.6.16"]
+},
+{
+  "id" : "cpal-antimicrobial-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-antimicrobial-vs",
+  "version" : "1.0.0",
+  "name" : "CPALAntimicrobialVS",
+  "oids" : ["2.16.620.1.101.10.4.6.2"]
+},
+{
+  "id" : "cpal-appearanceof-specimen-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-appearanceof-specimen-vs",
+  "version" : "1.0.0",
+  "name" : "CPALAppearanceofSpecimenVS",
+  "oids" : ["2.16.620.1.101.10.4.6.17"]
+},
+{
+  "id" : "cpal-blood-group-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-blood-group-vs",
+  "version" : "1.0.0",
+  "name" : "CPALBloodGroupVS",
+  "oids" : ["2.16.620.1.101.10.4.6.3"]
+},
+{
+  "id" : "cpal-cast-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-cast-vs",
+  "version" : "1.0.0",
+  "name" : "CPALCastVS",
+  "oids" : ["2.16.620.1.101.10.4.6.4"]
+},
+{
+  "id" : "cpal-cell-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-cell-vs",
+  "version" : "1.0.0",
+  "name" : "CPALCellVS",
+  "oids" : ["2.16.620.1.101.10.4.6.5"]
+},
+{
+  "id" : "cpal-clinical-pathology-method-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-clinical-pathology-method-vs",
+  "version" : "1.0.0",
+  "name" : "CPALClinicalPathologyMethodVS",
+  "oids" : ["2.16.620.1.101.10.4.6.7"]
+},
+{
+  "id" : "cpal-clinical-pathology-outcome-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-clinical-pathology-outcome-vs",
+  "version" : "1.0.0",
+  "name" : "CPALClinicalPathologyOutcomeVS",
+  "oids" : ["2.16.620.1.101.10.4.6.8"]
+},
+{
+  "id" : "cpal-clinical-pathology-procedure-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-clinical-pathology-procedure-vs",
+  "version" : "1.0.0",
+  "name" : "CPALClinicalPathologyProcedureVS",
+  "oids" : ["2.16.620.1.101.10.4.6.6"]
+},
+{
+  "id" : "cpal-colorof-specimen-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-colorof-specimen-vs",
+  "version" : "1.0.0",
+  "name" : "CPALColorofSpecimenVS",
+  "oids" : ["2.16.620.1.101.10.4.6.9"]
+},
+{
+  "id" : "cpal-consistency-feces-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-consistency-feces-vs",
+  "version" : "1.0.0",
+  "name" : "CPALConsistencyFecesVS",
+  "oids" : ["2.16.620.1.101.10.4.6.10"]
+},
+{
+  "id" : "cpal-crystal-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-crystal-vs",
+  "version" : "1.0.0",
+  "name" : "CPALCrystalVS",
+  "oids" : ["2.16.620.1.101.10.4.6.11"]
+},
+{
+  "id" : "cpal-laboratory-study-type-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-laboratory-study-type-vs",
+  "version" : "1.0.0",
+  "name" : "CPALLaboratoryStudyTypeVS",
+  "oids" : ["2.16.620.1.101.10.4.6.12"]
+},
+{
+  "id" : "cpal-microorganism-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-microorganism-vs",
+  "version" : "1.0.0",
+  "name" : "CPALMicroorganismVS",
+  "oids" : ["2.16.620.1.101.10.4.6.13"]
+},
+{
+  "id" : "cpal-rhesus-factor-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-rhesus-factor-vs",
+  "version" : "1.0.0",
+  "name" : "CPALRhesusFactorVS",
+  "oids" : ["2.16.620.1.101.10.4.6.14"]
+},
+{
+  "id" : "cpal-specimen-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-specimen-vs",
+  "version" : "1.0.0",
+  "name" : "CPALSpecimenVS",
+  "oids" : ["2.16.620.1.101.10.4.6.15"]
+},
+{
+  "id" : "cpal-susceptibility-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-susceptibility-vs",
+  "version" : "1.0.0",
+  "name" : "CPALSusceptibilityVS",
+  "oids" : ["2.16.620.1.101.10.4.6.18"]
+},
+{
+  "id" : "cpara-absent-or-unknown-allergy-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpara-absent-or-unknown-allergy-vs",
+  "version" : "1.0.0",
+  "name" : "CPARAAbsentOrUnknownAllergyVS",
+  "oids" : ["2.16.620.1.101.10.4.6.85"]
+},
+{
+  "id" : "cpara-allergen-no-drug-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpara-allergen-no-drug-vs",
+  "version" : "1.0.0",
+  "name" : "CPARAAllergenNoDrugVS",
+  "oids" : ["2.16.620.1.101.10.4.1.1"]
+},
+{
+  "id" : "cpara-allergy-intolerance-category-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpara-allergy-intolerance-category-vs",
+  "version" : "1.0.0",
+  "name" : "CPARAAllergyIntoleranceCategoryVS",
+  "oids" : ["2.16.620.1.101.10.4.6.88"]
+},
+{
+  "id" : "cpara-allergy-intolerance-type-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpara-allergy-intolerance-type-vs",
+  "version" : "1.0.0",
+  "name" : "CPARAAllergyIntoleranceTypeVS",
+  "oids" : ["2.16.620.1.101.10.4.6.89"]
+},
+{
+  "id" : "cpara-reaction-manifestation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpara-reaction-manifestation-vs",
+  "version" : "1.0.0",
+  "name" : "CPARAReactionManifestationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.90"]
+},
+{
+  "id" : "cparadm-additional-arrangement-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-additional-arrangement-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMAdditionalArrangementVS",
+  "oids" : ["2.16.620.1.101.10.4.6.19"]
+},
+{
+  "id" : "cparadm-administrative-emergency-cause-of-admission-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-administrative-emergency-cause-of-admission-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMAdministrativeEmergencyCauseOfAdmissionVS",
+  "oids" : ["2.16.620.1.101.10.4.6.30"]
+},
+{
+  "id" : "cparadm-cancellation-reason-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-cancellation-reason-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMCancellationReasonVS",
+  "oids" : ["2.16.620.1.101.10.4.6.169"]
+},
+{
+  "id" : "cparadm-cause-of-admission-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-cause-of-admission-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMCauseOfAdmissionVS",
+  "oids" : ["2.16.620.1.101.10.4.6.33"]
+},
+{
+  "id" : "cparadm-cefrlevels-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-cefrlevels-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMCEFRLevelsVS",
+  "oids" : ["2.16.620.1.101.10.4.6.20"]
+},
+{
+  "id" : "cparadm-clinical-outcome-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-clinical-outcome-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMClinicalOutcomeVS",
+  "oids" : ["2.16.620.1.101.10.4.6.160"]
+},
+{
+  "id" : "cparadm-communication-mode-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-communication-mode-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMCommunicationModeVS",
+  "oids" : ["2.16.620.1.101.10.4.6.170"]
+},
+{
+  "id" : "cparadm-communication-type-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-communication-type-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMCommunicationTypeVS",
+  "oids" : ["2.16.620.1.101.10.4.6.21"]
+},
+{
+  "id" : "cparadm-contact-reason-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-contact-reason-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMContactReasonVS",
+  "oids" : ["2.16.620.1.101.10.4.6.171"]
+},
+{
+  "id" : "cparadm-contact-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-contact-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMContactResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.172"]
+},
+{
+  "id" : "cparadm-destination-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-destination-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMDestinationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.31"]
+},
+{
+  "id" : "cparadm-discharge-type-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-discharge-type-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMDischargeTypeVS",
+  "oids" : ["2.16.620.1.101.10.4.6.32"]
+},
+{
+  "id" : "cparadm-document-format-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-document-format-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMDocumentFormatVS",
+  "oids" : ["2.16.620.1.101.10.4.6.173"]
+},
+{
+  "id" : "cparadm-education-or-schooling-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-education-or-schooling-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMEducationOrSchoolingVS",
+  "oids" : ["2.16.620.1.101.10.4.6.46"]
+},
+{
+  "id" : "cparadm-encounter-communication-method-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-encounter-communication-method-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMEncounterCommunicationMethodVS",
+  "oids" : ["2.16.620.1.101.10.4.6.24"]
+},
+{
+  "id" : "cparadm-encounter-presence-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-encounter-presence-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMEncounterPresenceVS",
+  "oids" : ["2.16.620.1.101.10.4.6.22"]
+},
+{
+  "id" : "cparadm-funding-source-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-funding-source-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMFundingSourceVS",
+  "oids" : ["2.16.620.1.101.10.4.6.23"]
+},
+{
+  "id" : "cparadm-internal-external-patient-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-internal-external-patient-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMInternalExternalPatientVS",
+  "oids" : ["2.16.620.1.101.10.4.6.174"]
+},
+{
+  "id" : "cparadm-location-type-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-location-type-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMLocationTypeVS",
+  "oids" : ["2.16.620.1.101.10.4.6.25"]
+},
+{
+  "id" : "cparadm-operational-location-status-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-operational-location-status-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMOperationalLocationStatusVS",
+  "oids" : ["2.16.620.1.101.10.4.6.26"]
+},
+{
+  "id" : "cparadm-organization-type-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-organization-type-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMOrganizationTypeVS",
+  "oids" : ["2.16.620.1.101.10.4.6.221"]
+},
+{
+  "id" : "cparadm-patient-encounter-status-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-patient-encounter-status-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMPatientEncounterStatusVS",
+  "oids" : ["2.16.620.1.101.10.4.6.27"]
+},
+{
+  "id" : "cparadm-patient-transfer-reason-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-patient-transfer-reason-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMPatientTransferReasonVS",
+  "oids" : ["2.16.620.1.101.10.4.6.175"]
+},
+{
+  "id" : "cparadm-priority-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-priority-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMPriorityVS",
+  "oids" : ["2.16.620.1.101.10.4.6.28"]
+},
+{
+  "id" : "cparadm-provenance-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-provenance-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMProvenanceVS",
+  "oids" : ["2.16.620.1.101.10.4.6.34"]
+},
+{
+  "id" : "cparadm-reason-not-elegible-for-schedule-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-reason-not-elegible-for-schedule-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMReasonNotElegibleForScheduleVS",
+  "oids" : ["2.16.620.1.101.10.4.6.176"]
+},
+{
+  "id" : "cparadm-surgery-waiting-list-suspension-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-surgery-waiting-list-suspension-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMSurgeryWaitingListSuspensionVS",
+  "oids" : ["2.16.620.1.101.10.4.6.177"]
+},
+{
+  "id" : "cparadm-type-of-planning-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-type-of-planning-vs",
+  "version" : "1.0.0",
+  "name" : "CPARADMTypeOfPlanningVS",
+  "oids" : ["2.16.620.1.101.10.4.6.29"]
+},
+{
+  "id" : "cpcbd-marital-status-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpcbd-marital-status-vs",
+  "version" : "1.0.0",
+  "name" : "CPCBDMaritalStatusVS",
+  "oids" : ["2.16.620.1.101.10.4.6.59"]
+},
+{
+  "id" : "cpcbd-person-in-family-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpcbd-person-in-family-vs",
+  "version" : "1.0.0",
+  "name" : "CPCBDPersonInFamilyVS",
+  "oids" : ["2.16.620.1.101.10.4.6.61"]
+},
+{
+  "id" : "cpcbd-person-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpcbd-person-vs",
+  "version" : "1.0.0",
+  "name" : "CPCBDPersonVS",
+  "oids" : ["2.16.620.1.101.10.4.6.60"]
+},
+{
+  "id" : "cpcbd-sex-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpcbd-sex-vs",
+  "version" : "1.0.0",
+  "name" : "CPCBDSexVS",
+  "oids" : ["2.16.620.1.101.10.4.6.62"]
+},
+{
+  "id" : "cpe-actobservation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-actobservation-vs",
+  "version" : "1.0.0",
+  "name" : "CPEACTObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.178"]
+},
+{
+  "id" : "cpe-actresult-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-actresult-vs",
+  "version" : "1.0.0",
+  "name" : "CPEACTResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.179"]
+},
+{
+  "id" : "cpe-apgar-score-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-apgar-score-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPEApgarScoreObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.115"]
+},
+{
+  "id" : "cpe-apgar-score-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-apgar-score-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEApgarScoreResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.116"]
+},
+{
+  "id" : "cpe-apvuscale-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-apvuscale-vs",
+  "version" : "1.0.0",
+  "name" : "CPEAPVUScaleVS",
+  "oids" : ["2.16.620.1.101.10.4.6.117"]
+},
+{
+  "id" : "cpe-asascale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-asascale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEASAScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.180"]
+},
+{
+  "id" : "cpe-auditcobservation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-auditcobservation-vs",
+  "version" : "1.0.0",
+  "name" : "CPEAUDITCObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.120"]
+},
+{
+  "id" : "cpe-auditcresult-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-auditcresult-vs",
+  "version" : "1.0.0",
+  "name" : "CPEAUDITCResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.121"]
+},
+{
+  "id" : "cpe-auditobservation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-auditobservation-vs",
+  "version" : "1.0.0",
+  "name" : "CPEAUDITObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.118"]
+},
+{
+  "id" : "cpe-auditresult-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-auditresult-vs",
+  "version" : "1.0.0",
+  "name" : "CPEAUDITResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.119"]
+},
+{
+  "id" : "cpe-barthel-index-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-barthel-index-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPEBarthelIndexObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.122"]
+},
+{
+  "id" : "cpe-barthel-index-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-barthel-index-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEBarthelIndexResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.123"]
+},
+{
+  "id" : "cpe-berlin-questionnaire-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-berlin-questionnaire-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPEBerlinQuestionnaireObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.181"]
+},
+{
+  "id" : "cpe-berlin-questionnaire-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-berlin-questionnaire-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEBerlinQuestionnaireResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.182"]
+},
+{
+  "id" : "cpe-biradsscale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-biradsscale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEBIRADSScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.183"]
+},
+{
+  "id" : "cpe-borg-scale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-borg-scale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEBorgScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.184"]
+},
+{
+  "id" : "cpe-boston-scale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-boston-scale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEBostonScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.185"]
+},
+{
+  "id" : "cpe-braden-scale-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-braden-scale-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPEBradenScaleObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.124"]
+},
+{
+  "id" : "cpe-braden-scale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-braden-scale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEBradenScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.125"]
+},
+{
+  "id" : "cpe-bromage-scale-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-bromage-scale-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPEBromageScaleObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.186"]
+},
+{
+  "id" : "cpe-bromage-scale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-bromage-scale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEBromageScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.187"]
+},
+{
+  "id" : "cpe-cdcwound-classification-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-cdcwound-classification-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPECDCWoundClassificationResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.188"]
+},
+{
+  "id" : "cpe-ecogperformance-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-ecogperformance-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEECOGPerformanceResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.189"]
+},
+{
+  "id" : "cpe-fagerstrom-test-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-fagerstrom-test-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPEFagerstromTestObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.126"]
+},
+{
+  "id" : "cpe-fagerstrom-test-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-fagerstrom-test-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEFagerstromTestResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.127"]
+},
+{
+  "id" : "cpe-findriscscale-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-findriscscale-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPEFINDRISCScaleObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.128"]
+},
+{
+  "id" : "cpe-findriscscale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-findriscscale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEFINDRISCScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.129"]
+},
+{
+  "id" : "cpe-flaccscale-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-flaccscale-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPEFLACCScaleObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.130"]
+},
+{
+  "id" : "cpe-flaccscale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-flaccscale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEFLACCScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.131"]
+},
+{
+  "id" : "cpe-glasgow-coma-scale-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-glasgow-coma-scale-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPEGlasgowComaScaleObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.132"]
+},
+{
+  "id" : "cpe-glasgow-coma-scale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-glasgow-coma-scale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEGlasgowComaScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.133"]
+},
+{
+  "id" : "cpe-grade-muscle-power-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-grade-muscle-power-vs",
+  "version" : "1.0.0",
+  "name" : "CPEGradeMusclePowerVS",
+  "oids" : ["2.16.620.1.101.10.4.6.134"]
+},
+{
+  "id" : "cpe-karnofsky-performance-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-karnofsky-performance-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEKarnofskyPerformanceResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.190"]
+},
+{
+  "id" : "cpe-killip-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-killip-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPEKillipObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.191"]
+},
+{
+  "id" : "cpe-killip-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-killip-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEKillipResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.192"]
+},
+{
+  "id" : "cpe-minnesota-lhfqobservation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-minnesota-lhfqobservation-vs",
+  "version" : "1.0.0",
+  "name" : "CPEMinnesotaLHFQObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.135"]
+},
+{
+  "id" : "cpe-minnesota-lhfqresult-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-minnesota-lhfqresult-vs",
+  "version" : "1.0.0",
+  "name" : "CPEMinnesotaLHFQResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.136"]
+},
+{
+  "id" : "cpe-morse-fall-scale-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-morse-fall-scale-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPEMorseFallScaleObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.137"]
+},
+{
+  "id" : "cpe-morse-fall-scale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-morse-fall-scale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEMorseFallScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.138"]
+},
+{
+  "id" : "cpe-nihstroke-scale-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-nihstroke-scale-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPENIHStrokeScaleObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.139"]
+},
+{
+  "id" : "cpe-nihstroke-scale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-nihstroke-scale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPENIHStrokeScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.140"]
+},
+{
+  "id" : "cpe-nipsscale-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-nipsscale-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPENIPSScaleObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.141"]
+},
+{
+  "id" : "cpe-nipsscale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-nipsscale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPENIPSScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.142"]
+},
+{
+  "id" : "cpe-npassscale-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-npassscale-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPENPASSScaleObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.143"]
+},
+{
+  "id" : "cpe-npassscale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-npassscale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPENPASSScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.144"]
+},
+{
+  "id" : "cpe-nrs2002-scale-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-nrs2002-scale-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPENRS2002ScaleObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.145"]
+},
+{
+  "id" : "cpe-nrs2002-scale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-nrs2002-scale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPENRS2002ScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.146"]
+},
+{
+  "id" : "cpe-nsrasobservation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-nsrasobservation-vs",
+  "version" : "1.0.0",
+  "name" : "CPENSRASObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.147"]
+},
+{
+  "id" : "cpe-nsrasresults-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-nsrasresults-vs",
+  "version" : "1.0.0",
+  "name" : "CPENSRASResultsVS",
+  "oids" : ["2.16.620.1.101.10.4.6.148"]
+},
+{
+  "id" : "cpe-pain-num-severity-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-pain-num-severity-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPEPainNumSeverityObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.151"]
+},
+{
+  "id" : "cpe-pain-num-severity-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-pain-num-severity-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEPainNumSeverityResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.152"]
+},
+{
+  "id" : "cpe-painadscale-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-painadscale-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPEPAINADScaleObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.149"]
+},
+{
+  "id" : "cpe-painadscale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-painadscale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPEPAINADScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.150"]
+},
+{
+  "id" : "cpe-ptmodification-manchester-triage-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-ptmodification-manchester-triage-vs",
+  "version" : "1.0.0",
+  "name" : "CPEPTModificationManchesterTriageVS",
+  "oids" : ["2.16.620.1.101.10.4.6.193"]
+},
+{
+  "id" : "cpe-ramsay-scale-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-ramsay-scale-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPERamsayScaleObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.153"]
+},
+{
+  "id" : "cpe-ramsay-scale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-ramsay-scale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPERamsayScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.154"]
+},
+{
+  "id" : "cpe-rankin-scale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-rankin-scale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPERankinScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.155"]
+},
+{
+  "id" : "cpe-robson-classification-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-robson-classification-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPERobsonClassificationResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.194"]
+},
+{
+  "id" : "cpe-rosenberg-scale-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-rosenberg-scale-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPERosenbergScaleObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.156"]
+},
+{
+  "id" : "cpe-rosenberg-scale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-rosenberg-scale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPERosenbergScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.157"]
+},
+{
+  "id" : "cpe-scale-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-scale-vs",
+  "version" : "1.0.0",
+  "name" : "CPEScaleVS",
+  "oids" : ["2.16.620.1.101.10.4.6.114"]
+},
+{
+  "id" : "cpe-tardieu-scale-observation-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-tardieu-scale-observation-vs",
+  "version" : "1.0.0",
+  "name" : "CPETardieuScaleObservationVS",
+  "oids" : ["2.16.620.1.101.10.4.6.195"]
+},
+{
+  "id" : "cpe-tardieu-scale-result-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-tardieu-scale-result-vs",
+  "version" : "1.0.0",
+  "name" : "CPETardieuScaleResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.196"]
+},
+{
+  "id" : "cpe-triage-system-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-triage-system-vs",
+  "version" : "1.0.0",
+  "name" : "CPETriageSystemVS",
+  "oids" : ["2.16.620.1.101.10.4.6.159"]
+},
+{
+  "id" : "cpe-wong-baker-facesresult-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-wong-baker-facesresult-vs",
+  "version" : "1.0.0",
+  "name" : "CPEWongBakerFACESResultVS",
+  "oids" : ["2.16.620.1.101.10.4.6.158"]
+},
+{
+  "id" : "cpevs-medical-physics-specialty-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpevs-medical-physics-specialty-vs",
+  "version" : "1.0.0",
+  "name" : "CPEVSMedicalPhysicsSpecialtyVS",
+  "oids" : ["2.16.620.1.101.10.4.6.68"]
+},
+{
+  "id" : "cpevs-medical-specialty-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpevs-medical-specialty-vs",
+  "version" : "1.0.0",
+  "name" : "CPEVSMedicalSpecialtyVS",
+  "oids" : ["2.16.620.1.101.10.4.6.161"]
+},
+{
+  "id" : "cpevs-primary-care-assistance-activity-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpevs-primary-care-assistance-activity-vs",
+  "version" : "1.0.0",
+  "name" : "CPEVSPrimaryCareAssistanceActivityVS",
+  "oids" : ["2.16.620.1.101.10.4.6.69"]
+},
+{
+  "id" : "cpevs-service-type-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpevs-service-type-vs",
+  "version" : "1.0.0",
+  "name" : "CPEVSServiceTypeVS",
+  "oids" : ["2.16.620.1.101.10.4.6.70"]
+},
+{
+  "id" : "cpevs-specialized-assistance-activity-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpevs-specialized-assistance-activity-vs",
+  "version" : "1.0.0",
+  "name" : "CPEVSSpecializedAssistanceActivityVS",
+  "oids" : ["2.16.620.1.101.10.4.6.71"]
+},
+{
+  "id" : "cpgo-gynecology-procedures-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpgo-gynecology-procedures-vs",
+  "version" : "1.0.0",
+  "name" : "CPGOGynecologyProceduresVS"
+},
+{
+  "id" : "cpgo-obstetrics-procedures-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpgo-obstetrics-procedures-vs",
+  "version" : "1.0.0",
+  "name" : "CPGOObstetricsProceduresVS"
+},
+{
+  "id" : "cpmn-medicine-nuclear-procedures-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpmn-medicine-nuclear-procedures-vs",
+  "version" : "1.0.0",
+  "name" : "CPMNMedicineNuclearProceduresVS"
+},
+{
+  "id" : "cpn-disorder-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpn-disorder-vs",
+  "version" : "1.0.0",
+  "name" : "CPNDisorderVS"
+},
+{
+  "id" : "cpn-finding-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpn-finding-vs",
+  "version" : "1.0.0",
+  "name" : "CPNFindingVS"
+},
+{
+  "id" : "cpn-procedure-therapeutic-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpn-procedure-therapeutic-vs",
+  "version" : "1.0.0",
+  "name" : "CPNProcedureTherapeuticVS"
+},
+{
+  "id" : "cpn-product-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpn-product-vs",
+  "version" : "1.0.0",
+  "name" : "CPNProductVS"
+},
+{
+  "id" : "cpn-status-vs",
+  "type" : "ValueSet",
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpn-status-vs",
+  "version" : "1.0.0",
+  "name" : "CPNStatusVS"
+},
+{
+  "id" : "orphanet-rare-disease-classification",
+  "type" : "CodeSystem",
+  "url" : "https://www.orpha.net/ORDO/Orphanet_",
+  "version" : "1.0.0",
+  "name" : "OrphanetRareDiseaseClassification"
+}]

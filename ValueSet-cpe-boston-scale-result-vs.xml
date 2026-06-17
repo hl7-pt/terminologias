@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-boston-scale-result-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-boston-scale-result-vs</b></p><a name="cpe-boston-scale-result-vs"> </a><a name="hccpe-boston-scale-result-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/10311000132100">10311000132100</a></td><td>Toda a mucosa do segmento do cólon é bem observada, sem coloração residual, pequenos fragmentos de fezes ou líquido opaco, 3</td><td>3 = Mucosa avaliada completamente com ausência de resíduos ou líquido opaco.</td><td>Entire mucosa of colon segment seen well with no residual staining, small fragments of stool or opaque liquid (finding)</td><td>3 = Mucosa avaliada completamente com ausência de resíduos ou líquido opaco.</td></tr><tr><td><a href="http://snomed.info/id/10301000132102">10301000132102</a></td><td>Pequena quantidade de coloração residual, pequenos fragmentos de fezes, e/ou líquido opaco, mas a mucosa do segmento do cólon é bem vista, 2</td><td>2 = Pequena quantidade de resíduos, pequenos fragmentos de fezes ou líquido opaco mas com mucosa bem avaliada.</td><td>Minor amount of residual staining, small fragments of stool and/or opaque liquid, but mucosa of colon segment seen well (finding)</td><td>2 = Pequena quantidade de resíduos, pequenos fragmentos de fezes ou líquido opaco mas com mucosa bem avaliada.</td></tr><tr><td><a href="http://snomed.info/id/10291000132101">10291000132101</a></td><td>Porção da mucosa do segmento do cólon vista, mas outras áreas do segmento do cólon não são bem vistas devido a coloração, fezes residuais ou líquido opaco, 1</td><td>1 = Porção da mucosa do segmento colónico visualizada mas com outras partes não avaliadas devido à presença de fezes ou líquido opaco espesso.</td><td>Portion of mucosa of colon segment seen, but other areas of colon segment not well seen due to staining, residual stool and/or opaque liquid (finding)</td><td>1 = Porção da mucosa do segmento colónico visualizada mas com outras partes não avaliadas devido à presença de fezes ou líquido opaco espesso.</td></tr><tr><td><a href="http://snomed.info/id/10281000132103">10281000132103</a></td><td>Segmento do cólon não preparado com mucosa não vista, mas devido a fezes sólidas que não podem ser removidas, 0</td><td>0 = Segmento não preparado com impossibilidade de visualização da mucosa devido a fezes sólidas que não podem ser removidas.</td><td>Unprepared colon segment with mucosa not seen due to solid stool that cannot be cleared (finding)</td><td>0 = Segmento não preparado com impossibilidade de visualização da mucosa devido a fezes sólidas que não podem ser removidas.</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-boston-scale-result-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.185"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPEBostonScaleResultVS"/>
+  <title value="CPE - Boston Scale Result"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores BostonScaleResult (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="10311000132100"/>
+        <display value="Toda a mucosa do segmento do cólon é bem observada, sem coloração residual, pequenos fragmentos de fezes ou líquido opaco, 3"/>
+        <designation>
+          <language value="en"/>
+          <value value="Entire mucosa of colon segment seen well with no residual staining, small fragments of stool or opaque liquid (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="3 = Mucosa avaliada completamente com ausência de resíduos ou líquido opaco."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="10301000132102"/>
+        <display value="Pequena quantidade de coloração residual, pequenos fragmentos de fezes, e/ou líquido opaco, mas a mucosa do segmento do cólon é bem vista, 2"/>
+        <designation>
+          <language value="en"/>
+          <value value="Minor amount of residual staining, small fragments of stool and/or opaque liquid, but mucosa of colon segment seen well (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="2 = Pequena quantidade de resíduos, pequenos fragmentos de fezes ou líquido opaco mas com mucosa bem avaliada."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="10291000132101"/>
+        <display value="Porção da mucosa do segmento do cólon vista, mas outras áreas do segmento do cólon não são bem vistas devido a coloração, fezes residuais ou líquido opaco, 1"/>
+        <designation>
+          <language value="en"/>
+          <value value="Portion of mucosa of colon segment seen, but other areas of colon segment not well seen due to staining, residual stool and/or opaque liquid (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="1 = Porção da mucosa do segmento colónico visualizada mas com outras partes não avaliadas devido à presença de fezes ou líquido opaco espesso."/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="10281000132103"/>
+        <display value="Segmento do cólon não preparado com mucosa não vista, mas devido a fezes sólidas que não podem ser removidas, 0"/>
+        <designation>
+          <language value="en"/>
+          <value value="Unprepared colon segment with mucosa not seen due to solid stool that cannot be cleared (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="0 = Segmento não preparado com impossibilidade de visualização da mucosa devido a fezes sólidas que não podem ser removidas."/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

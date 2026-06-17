@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpevs-service-type-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpevs-service-type-vs</b></p><a name="cpevs-service-type-vs"> </a><a name="hccpevs-service-type-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/11429006">11429006</a></td><td>Consulta</td><td/><td>Consultation (procedure)</td><td/></tr><tr><td><a href="http://snomed.info/id/394656005">394656005</a></td><td>Cuidados em internamento</td><td>Internamento</td><td>Inpatient care (regime/therapy)</td><td>Internamento</td></tr><tr><td><a href="http://snomed.info/id/183484003">183484003</a></td><td>Cuidados em hospital de dia</td><td>Hospital de dia</td><td>Day hospital care (regime/therapy)</td><td>Hospital de dia</td></tr><tr><td><a href="http://snomed.info/id/110468005">110468005</a></td><td>Cirurgia de ambulatório</td><td/><td>Ambulatory surgery (procedure)</td><td/></tr><tr><td><a href="http://snomed.info/id/387713003">387713003</a></td><td>Procedimento cirúrgico</td><td>Bloco Operatório</td><td>Surgical procedure (procedure)</td><td>Bloco Operatório</td></tr><tr><td><a href="http://snomed.info/id/373110003">373110003</a></td><td>Procedimento de urgência</td><td>Urgência</td><td>Emergency procedure (procedure)</td><td>Urgência</td></tr><tr><td><a href="http://snomed.info/id/2101000314109">2101000314109</a></td><td>Meios complementares de diagnóstico e/ou terapêutica</td><td>MCDT</td><td>Complementary diagnostic and/or therapeutic procedure (procedure)</td><td>MCDT</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpevs-service-type-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.70"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPEVSServiceTypeVS"/>
+  <title value="CPEVS - Service Type"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-12-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores ServiceType (CPEVS v2.1.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="11429006"/>
+        <display value="Consulta"/>
+        <designation>
+          <language value="en"/>
+          <value value="Consultation (procedure)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="394656005"/>
+        <display value="Cuidados em internamento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Inpatient care (regime/therapy)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Cuidados em regime de internamento"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Internamento"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="183484003"/>
+        <display value="Cuidados em hospital de dia"/>
+        <designation>
+          <language value="en"/>
+          <value value="Day hospital care (regime/therapy)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Hospital de dia"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="110468005"/>
+        <display value="Cirurgia de ambulatório"/>
+        <designation>
+          <language value="en"/>
+          <value value="Ambulatory surgery (procedure)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="387713003"/>
+        <display value="Procedimento cirúrgico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Surgical procedure (procedure)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Bloco Operatório"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="373110003"/>
+        <display value="Procedimento de urgência"/>
+        <designation>
+          <language value="en"/>
+          <value value="Emergency procedure (procedure)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Urgência"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2101000314109"/>
+        <display value="Meios complementares de diagnóstico e/ou terapêutica"/>
+        <designation>
+          <language value="en"/>
+          <value value="Complementary diagnostic and/or therapeutic procedure (procedure)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="MCDT"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

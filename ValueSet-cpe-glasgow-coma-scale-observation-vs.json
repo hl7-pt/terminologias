@@ -1,0 +1,123 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpe-glasgow-coma-scale-observation-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-glasgow-coma-scale-observation-vs</b></p><a name=\"cpe-glasgow-coma-scale-observation-vs\"> </a><a name=\"hccpe-glasgow-coma-scale-observation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/9267-6/\">9267-6</a></td><td>Abertura ocular [Escala de coma de Glasgow]</td><td>Olhos</td><td>Glasgow coma score eye opening</td><td>Olhos</td></tr><tr><td><a href=\"https://loinc.org/9268-4/\">9268-4</a></td><td>Resposta motora [Escala de coma de Glasgow]</td><td>Motor</td><td>Glasgow coma score motor</td><td>Motor</td></tr><tr><td><a href=\"https://loinc.org/9270-0/\">9270-0</a></td><td>Resposta verbal [Escala de coma de Glasgow]</td><td>Verbal</td><td>Glasgow coma score verbal</td><td>Verbal</td></tr><tr><td><a href=\"https://loinc.org/9269-2/\">9269-2</a></td><td>Total [Escala de coma de Glasgow]</td><td>Score total [Escala de coma de Glasgow]</td><td>Glasgow coma score total</td><td>Score total [Escala de coma de Glasgow]</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-glasgow-coma-scale-observation-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.132"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPEGlasgowComaScaleObservationVS",
+  "title" : "CPE - Glasgow Coma Scale Observation",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores GlasgowComaScaleObservation (CPE v2.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "9267-6",
+        "display" : "Abertura ocular [Escala de coma de Glasgow]",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Glasgow coma score eye opening"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Olhos"
+        }]
+      },
+      {
+        "code" : "9268-4",
+        "display" : "Resposta motora [Escala de coma de Glasgow]",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Glasgow coma score motor"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Motor"
+        }]
+      },
+      {
+        "code" : "9270-0",
+        "display" : "Resposta verbal [Escala de coma de Glasgow]",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Glasgow coma score verbal"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Verbal"
+        }]
+      },
+      {
+        "code" : "9269-2",
+        "display" : "Total [Escala de coma de Glasgow]",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Glasgow coma score total"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Score total [Escala de coma de Glasgow]"
+        }]
+      }]
+    }]
+  }
+}

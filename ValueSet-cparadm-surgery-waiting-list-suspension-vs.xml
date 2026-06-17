@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cparadm-surgery-waiting-list-suspension-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cparadm-surgery-waiting-list-suspension-vs</b></p><a name="cparadm-surgery-waiting-list-suspension-vs"> </a><a name="hccparadm-surgery-waiting-list-suspension-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/1551000314109">1551000314109</a></td><td>Pendente por motivo clínico</td><td>Pendência clínica</td><td>Pending due to clinical reason (situation)</td><td>Pendência clínica</td></tr><tr><td><a href="http://snomed.info/id/1561000314106">1561000314106</a></td><td>Pendente por motivo pessoal do utente</td><td>Pendência pessoal</td><td>Pending due to patient personal reason (situation)</td><td>Pendência pessoal</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-surgery-waiting-list-suspension-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.177"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPARADMSurgeryWaitingListSuspensionVS"/>
+  <title value="CPARADM - Surgery Waiting List Suspension"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores SurgeryWaitingListSuspension (CPARADM v3.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="1551000314109"/>
+        <display value="Pendente por motivo clínico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Pending due to clinical reason (situation)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Pendência clínica"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1561000314106"/>
+        <display value="Pendente por motivo pessoal do utente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Pending due to patient personal reason (situation)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Pendência pessoal"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpevs-specialized-assistance-activity-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpevs-specialized-assistance-activity-vs</b></p><a name="cpevs-specialized-assistance-activity-vs"> </a><a name="hccpevs-specialized-assistance-activity-vs"> </a><p>Este conjunto de valores inclui códigos baseados nas seguintes regras:</p><ul><li>Incluir estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/440654001">440654001</a></td><td>Internamento</td><td/><td>Inpatient environment (environment)</td><td/></tr><tr><td><a href="http://snomed.info/id/1256098007">1256098007</a></td><td>Hospitalização domiciliária</td><td/><td>Home hospitalization (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/25761000087103">25761000087103</a></td><td>Cuidados paliativos - internamento</td><td>Cuidados paliativos</td><td>Inpatient palliative care environment (environment)</td><td>Cuidados paliativos</td></tr><tr><td><a href="http://snomed.info/id/309904001">309904001</a></td><td>Unidade de cuidados intensivos</td><td>Cuidados intensivos</td><td>Intensive care unit (environment)</td><td>Cuidados intensivos</td></tr><tr><td><a href="http://snomed.info/id/32074000">32074000</a></td><td>Hospital de cuidados de longa duração</td><td>Hospital de cuidados de longo termo</td><td>Long term care hospital (environment)</td><td>Hospital de cuidados de longo termo</td></tr><tr><td><a href="http://snomed.info/id/274409007">274409007</a></td><td>Unidade de cuidados especiais</td><td>Cuidados especiais</td><td>Special care unit (environment)</td><td>Cuidados especiais</td></tr><tr><td><a href="http://snomed.info/id/419590001">419590001</a></td><td>Unidade de cuidados intermédios</td><td>Unidade de cuidados progressivos</td><td>Stepdown unit (environment)</td><td>Unidade de cuidados progressivos</td></tr><tr><td><a href="http://snomed.info/id/225746001">225746001</a></td><td>Enfermaria</td><td>Internamento</td><td>Ward (environment)</td><td>Internamento</td></tr><tr><td><a href="http://snomed.info/id/440655000">440655000</a></td><td>Ambulatório</td><td/><td>Outpatient environment (environment)</td><td/></tr><tr><td><a href="http://snomed.info/id/225728007">225728007</a></td><td>Departamento de emergência e acidentes</td><td>Urgência</td><td>Accident and Emergency department (environment)</td><td>Urgência</td></tr><tr><td><a href="http://snomed.info/id/405607001">405607001</a></td><td>Cirurgia de ambulatório</td><td/><td>Ambulatory surgery center (environment)</td><td/></tr><tr><td><a href="http://snomed.info/id/274516006">274516006</a></td><td>Hospital de dia</td><td/><td>Day hospital (environment)</td><td/></tr><tr><td><a href="http://snomed.info/id/113173007">113173007</a></td><td>Domicílio</td><td>Serviço domiciliário</td><td>Domiciliary (environment)</td><td>Serviço domiciliário</td></tr><tr><td><a href="http://snomed.info/id/224885007">224885007</a></td><td>Consulta hospitalar</td><td>Consulta externa</td><td>Hospital consulting room (environment)</td><td>Consulta externa</td></tr><tr><td><a href="http://snomed.info/id/225738002">225738002</a></td><td>Bloco operatório</td><td>Bloco</td><td>Operating room (environment)</td><td>Bloco</td></tr><tr><td><a href="http://snomed.info/id/25881000087103">25881000087103</a></td><td>Habitação de suporte</td><td>Lar de utentes</td><td>Supportive housing (environment)</td><td>Lar de utentes</td></tr></table></li><li>Incluir estes códigos, tal como definidos em <code>urn:oid:-</code><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td>2101000314109</td><td>Meios complementares de diagnóstico e/ou terapêutica</td><td>MCDT</td><td>Complementary diagnostic and/or therapeutic procedure (procedure)</td><td>MCDT</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpevs-specialized-assistance-activity-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.71"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPEVSSpecializedAssistanceActivityVS"/>
+  <title value="CPEVS - Specialized Assistance Activity"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-12-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores SpecializedAssistanceActivity (CPEVS v2.1.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="440654001"/>
+        <display value="Internamento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Inpatient environment (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1256098007"/>
+        <display value="Hospitalização domiciliária"/>
+        <designation>
+          <language value="en"/>
+          <value value="Home hospitalization (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="25761000087103"/>
+        <display value="Cuidados paliativos - internamento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Inpatient palliative care environment (environment)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Cuidados paliativos"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="309904001"/>
+        <display value="Unidade de cuidados intensivos"/>
+        <designation>
+          <language value="en"/>
+          <value value="Intensive care unit (environment)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="UCI"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Cuidados intensivos"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="32074000"/>
+        <display value="Hospital de cuidados de longa duração"/>
+        <designation>
+          <language value="en"/>
+          <value value="Long term care hospital (environment)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Hospital de cuidados continuados integrados"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Hospital de cuidados de longo termo"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="274409007"/>
+        <display value="Unidade de cuidados especiais"/>
+        <designation>
+          <language value="en"/>
+          <value value="Special care unit (environment)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Cuidados especiais"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="419590001"/>
+        <display value="Unidade de cuidados intermédios"/>
+        <designation>
+          <language value="en"/>
+          <value value="Stepdown unit (environment)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Unidade de cuidados progressivos"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="225746001"/>
+        <display value="Enfermaria"/>
+        <designation>
+          <language value="en"/>
+          <value value="Ward (environment)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Internamento"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="440655000"/>
+        <display value="Ambulatório"/>
+        <designation>
+          <language value="en"/>
+          <value value="Outpatient environment (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="225728007"/>
+        <display value="Departamento de emergência e acidentes"/>
+        <designation>
+          <language value="en"/>
+          <value value="Accident and Emergency department (environment)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Urgência"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="405607001"/>
+        <display value="Cirurgia de ambulatório"/>
+        <designation>
+          <language value="en"/>
+          <value value="Ambulatory surgery center (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="274516006"/>
+        <display value="Hospital de dia"/>
+        <designation>
+          <language value="en"/>
+          <value value="Day hospital (environment)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="113173007"/>
+        <display value="Domicílio"/>
+        <designation>
+          <language value="en"/>
+          <value value="Domiciliary (environment)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Serviço domiciliário"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="224885007"/>
+        <display value="Consulta hospitalar"/>
+        <designation>
+          <language value="en"/>
+          <value value="Hospital consulting room (environment)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Consulta externa"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="225738002"/>
+        <display value="Bloco operatório"/>
+        <designation>
+          <language value="en"/>
+          <value value="Operating room (environment)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Bloco"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="25881000087103"/>
+        <display value="Habitação de suporte"/>
+        <designation>
+          <language value="en"/>
+          <value value="Supportive housing (environment)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Lar de utentes"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="urn:oid:-"/>
+      <concept>
+        <code value="2101000314109"/>
+        <display value="Meios complementares de diagnóstico e/ou terapêutica"/>
+        <designation>
+          <language value="en"/>
+          <value value="Complementary diagnostic and/or therapeutic procedure (procedure)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="MCDT"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

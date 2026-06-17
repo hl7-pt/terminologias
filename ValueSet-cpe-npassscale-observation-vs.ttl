@@ -1,0 +1,229 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-npassscale-observation-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-npassscale-observation-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-npassscale-observation-vs</b></p><a name=\"cpe-npassscale-observation-vs\"> </a><a name=\"hccpe-npassscale-observation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/95629-2/\">95629-2</a></td><td>Painel de sedação NPASS</td><td/><td>Sedation panel NPASS</td><td/></tr><tr><td><a href=\"https://loinc.org/95630-0/\">95630-0</a></td><td>Nível de sedação - choro ou irritabilidade</td><td>Choro/irritabilidade</td><td>Sedation level.crying or irritability</td><td>Choro/irritabilidade</td></tr><tr><td><a href=\"https://loinc.org/95631-8/\">95631-8</a></td><td>Nível de sedação - estado de comportamento</td><td>Comportamento/estado</td><td>Sedation level.behavior state</td><td>Comportamento/estado</td></tr><tr><td><a href=\"https://loinc.org/95632-6/\">95632-6</a></td><td>Nível de sedação - expressão facial</td><td>Expressão facial</td><td>Sedation level.facial expression</td><td>Expressão facial</td></tr><tr><td><a href=\"https://loinc.org/95633-4/\">95633-4</a></td><td>Nível de sedação - tónus das extremidades</td><td>Extremidades/tónus</td><td>Sedation level.extremities tone</td><td>Extremidades/tónus</td></tr><tr><td><a href=\"https://loinc.org/95634-2/\">95634-2</a></td><td>Nível de sedação - variabilidade dos sinais vitais</td><td>Sinais vitais (FC;FR;TA;SatO2)</td><td>Sedation level.vital signs variability</td><td>Sinais vitais (FC;FR;TA;SatO2)</td></tr><tr><td><a href=\"https://loinc.org/95635-9/\">95635-9</a></td><td>Pontuação total de sedação NPASS</td><td/><td>Sedation total score NPASS</td><td/></tr><tr><td><a href=\"https://loinc.org/95636-7/\">95636-7</a></td><td>Nível de sedação</td><td/><td>Sedation level</td><td/></tr><tr><td><a href=\"https://loinc.org/95621-9/\">95621-9</a></td><td>Painel de dor/agitação NPASS</td><td/><td>Pain/agitation panel NPASS</td><td/></tr><tr><td><a href=\"https://loinc.org/95622-7/\">95622-7</a></td><td>Severidade da dor/agitação - choro ou irritabilidade</td><td/><td>Pain/agitation severity.crying or irritability</td><td/></tr><tr><td><a href=\"https://loinc.org/95623-5/\">95623-5</a></td><td>Gravidade da dor/agitação - estado de comportamento</td><td/><td>Pain/agitation severity.behavior state</td><td/></tr><tr><td><a href=\"https://loinc.org/95624-3/\">95624-3</a></td><td>Severidade da dor/agitação - expressão facial</td><td/><td>Pain/agitation severity.facial expression</td><td/></tr><tr><td><a href=\"https://loinc.org/95625-0/\">95625-0</a></td><td>Severidade da dor/agitação - tónus das extremidades</td><td/><td>Pain/agitation severity.extremities tone</td><td/></tr><tr><td><a href=\"https://loinc.org/95626-8/\">95626-8</a></td><td>Gravidade da dor/agitação - variabilidade dos sinais vitais</td><td/><td>Pain/agitation severity.vital signs variability</td><td/></tr><tr><td><a href=\"https://loinc.org/95656-5/\">95656-5</a></td><td>Idade gestacional &lt;30 semanas</td><td/><td>Gestational age &lt;30 weeks</td><td/></tr><tr><td><a href=\"https://loinc.org/95627-6/\">95627-6</a></td><td>Pontuação total de dor e agitação NPASS</td><td/><td>Pain agitation total score NPASS</td><td/></tr><tr><td><a href=\"https://loinc.org/95628-4/\">95628-4</a></td><td>Nível de gravidade da dor/agitação</td><td/><td>Pain/agitation severity level</td><td/></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-npassscale-observation-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.143" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPENPASSScaleObservationVS"] ; # 
+  fhir:title [ fhir:v "CPE - NPASS Scale Observation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores NPASSScaleObservation (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "95629-2" ] ;
+         fhir:display [ fhir:v "Painel de sedação NPASS" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sedation panel NPASS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "95630-0" ] ;
+         fhir:display [ fhir:v "Nível de sedação - choro ou irritabilidade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sedation level.crying or irritability" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Choro/irritabilidade" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "95631-8" ] ;
+         fhir:display [ fhir:v "Nível de sedação - estado de comportamento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sedation level.behavior state" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Comportamento/estado" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "95632-6" ] ;
+         fhir:display [ fhir:v "Nível de sedação - expressão facial" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sedation level.facial expression" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Expressão facial" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "95633-4" ] ;
+         fhir:display [ fhir:v "Nível de sedação - tónus das extremidades" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sedation level.extremities tone" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Extremidades/tónus" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "95634-2" ] ;
+         fhir:display [ fhir:v "Nível de sedação - variabilidade dos sinais vitais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sedation level.vital signs variability" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Sinais vitais (FC;FR;TA;SatO2)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "95635-9" ] ;
+         fhir:display [ fhir:v "Pontuação total de sedação NPASS" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sedation total score NPASS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "95636-7" ] ;
+         fhir:display [ fhir:v "Nível de sedação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sedation level" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "95621-9" ] ;
+         fhir:display [ fhir:v "Painel de dor/agitação NPASS" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pain/agitation panel NPASS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "95622-7" ] ;
+         fhir:display [ fhir:v "Severidade da dor/agitação - choro ou irritabilidade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pain/agitation severity.crying or irritability" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "95623-5" ] ;
+         fhir:display [ fhir:v "Gravidade da dor/agitação - estado de comportamento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pain/agitation severity.behavior state" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "95624-3" ] ;
+         fhir:display [ fhir:v "Severidade da dor/agitação - expressão facial" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pain/agitation severity.facial expression" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "95625-0" ] ;
+         fhir:display [ fhir:v "Severidade da dor/agitação - tónus das extremidades" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pain/agitation severity.extremities tone" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "95626-8" ] ;
+         fhir:display [ fhir:v "Gravidade da dor/agitação - variabilidade dos sinais vitais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pain/agitation severity.vital signs variability" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "95656-5" ] ;
+         fhir:display [ fhir:v "Idade gestacional <30 semanas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gestational age <30 weeks" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "95627-6" ] ;
+         fhir:display [ fhir:v "Pontuação total de dor e agitação NPASS" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pain agitation total score NPASS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "95628-4" ] ;
+         fhir:display [ fhir:v "Nível de gravidade da dor/agitação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pain/agitation severity level" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,422 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-flaccscale-result-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-flaccscale-result-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-flaccscale-result-vs</b></p><a name=\"cpe-flaccscale-result-vs\"> </a><a name=\"hccpe-flaccscale-result-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/LA9588-0/\">LA9588-0</a></td><td>Nenhuma expressão particular ou sorriso</td><td/><td>No particular expression or smile</td><td/></tr><tr><td><a href=\"https://loinc.org/LA9589-8/\">LA9589-8</a></td><td>Careta/carranca ocasional, retraído ou desinteressado, parece triste ou preocupado; ou expressão identificada pelos pais</td><td>Caretas ou sobrancelhas franzidas, introversão, desinteresse; aparenta estar triste ou preocupado.</td><td>Occasional grimace/frown, withdrawn or disinterested, appears sad or worried; or parent-identified expression</td><td>Caretas ou sobrancelhas franzidas, introversão, desinteresse; aparenta estar triste ou preocupado.</td></tr><tr><td><a href=\"https://loinc.org/LA9590-6/\">LA9590-6</a></td><td>Careta ou carranca constante, queixo trêmulo frequente/constante, mandíbula cerrada, rosto de aparência angustiada, expressão de medo ou pânico; ou expressão identificada pelo pai</td><td>Caretas ou sobrancelhas franzidas; tremor queixo, mandúbula cerrada; face ansiosa; expressão medo ou pânico.</td><td>Constant grimace or frown, frequent / constant quivering chin, clenched jaw, distressed-looking face, expression of fright or panic; or parent-identified expression</td><td>Caretas ou sobrancelhas franzidas; tremor queixo, mandúbula cerrada; face ansiosa; expressão medo ou pânico.</td></tr><tr><td><a href=\"https://loinc.org/LA9591-4/\">LA9591-4</a></td><td>Posição normal ou relaxada; tom habitual e movimento para os membros</td><td>Posição normal ou relaxadas; tonicidade e movimento habitual dos membros inferiores e superiores.</td><td>Normal position or relaxed; usual tone and motion to limbs</td><td>Posição normal ou relaxadas; tonicidade e movimento habitual dos membros inferiores e superiores.</td></tr><tr><td><a href=\"https://loinc.org/LA9592-2/\">LA9592-2</a></td><td>Inquieto, agitado, tenso, tremores ocasionais; ou comportamento identificado pelos pais</td><td>Inquietas, agitadas, tensas; tremores ocasionais.</td><td>Uneasy, restless, tense, occasional tremors; or parent-identified behavior</td><td>Inquietas, agitadas, tensas; tremores ocasionais.</td></tr><tr><td><a href=\"https://loinc.org/LA9593-0/\">LA9593-0</a></td><td>Pontapés ou pernas erguidas, aumento acentuado da espasticidade, tremores ou espasmos constantes; ou comportamento identificado pelos pais</td><td>Aos pontapés ou esticadas; aumento significativo de espasticidade, tremores constantes ou movimentos súbitos.</td><td>Kicking or legs drawn up, marked increase in spasticity, constant tremors or jerking; or parent-identified behavior</td><td>Aos pontapés ou esticadas; aumento significativo de espasticidade, tremores constantes ou movimentos súbitos.</td></tr><tr><td><a href=\"https://loinc.org/LA9594-8/\">LA9594-8</a></td><td>Deitado quieto, posição normal, move-se com facilidade; respirações regulares e rítmicas</td><td>Deitado calmamente, posição normal, mexe-se facilmente; respiração regular, rítmica</td><td>Lying quietly, normal position, moves easily; regular, rhythmic respirations</td><td>Deitado calmamente, posição normal, mexe-se facilmente; respiração regular, rítmica</td></tr><tr><td><a href=\"https://loinc.org/LA9595-5/\">LA9595-5</a></td><td>Contorcer-se, movendo-se para frente e para trás, movimentos tensos ou cautelosos; levemente agitado (por exemplo, cabeça para frente e para trás, agressão), superficial; respirações imobilizadas, suspiros intermitentes; ou comportamento identificado pelos pais</td><td>Contorcendo-se, movimentos tensos ou cuidadosos; ligeiramente agitado; respiração superficial ou estabilizada; suspiros.</td><td>Squirming, shifting back and forth, tense or guarded movements; mildly agitated (e.g., head back and forth, aggression), shallow; splinting respirations, intermittent sighs; or parent-identified behavior</td><td>Contorcendo-se, movimentos tensos ou cuidadosos; ligeiramente agitado; respiração superficial ou estabilizada; suspiros.</td></tr><tr><td><a href=\"https://loinc.org/LA9596-3/\">LA9596-3</a></td><td>Arqueado, rígido ou espasmódico; agitação severa; bate cabeça; tremores (não calafrios); retenção da respiração, respiração ofegante ou ingestão aguda de respirações, imobilização grave; ou comportamento identificado pelos pais</td><td>Curvado, rígido ou com movimentos bruscos; agitamento grave; abana cabeça; sustém respiração, arfar ou respirar fundo; contração muscular.</td><td>Arched, rigid, or jerking; severe agitation; head banging; shivering (not rigors); breath holding, gasping or sharp intake of breaths, severe splinting; or parent-identified behavior</td><td>Curvado, rígido ou com movimentos bruscos; agitamento grave; abana cabeça; sustém respiração, arfar ou respirar fundo; contração muscular.</td></tr><tr><td><a href=\"https://loinc.org/LA9597-1/\">LA9597-1</a></td><td>Sem choro/verbalização</td><td>Ausência de choro ou verbalização.</td><td>No cry/verbalization</td><td>Ausência de choro ou verbalização.</td></tr><tr><td><a href=\"https://loinc.org/LA9598-9/\">LA9598-9</a></td><td>Gemidos ou choramingos; queixa ocasional; explosão verbal ocasional ou grunhido; ou vocalização identificada pelos pais</td><td>Gemidos ou choramingos; queixas ocasionais; explosão verbal ou resmungos ocasionais</td><td>Moans or whimpers; occasional complaint; occasional verbal outburst or grunt; or parent-identified vocalization</td><td>Gemidos ou choramingos; queixas ocasionais; explosão verbal ou resmungos ocasionais</td></tr><tr><td><a href=\"https://loinc.org/LA9599-7/\">LA9599-7</a></td><td>Choro constante, gritos ou soluços; queixas frequentes; explosões repetidas, grunhidos constantes; ou vocalização identificada pelos pais</td><td>Choro persistente, gritos ou soluços; queixas frequentes; ataques repetidos ou resmungos constantes.</td><td>Crying steadily, screams or sobs; frequent complaints; repeated outbursts, constant grunting; or parent-identified vocalization</td><td>Choro persistente, gritos ou soluços; queixas frequentes; ataques repetidos ou resmungos constantes.</td></tr><tr><td><a href=\"https://loinc.org/LA9600-3/\">LA9600-3</a></td><td>Contente e descontraído</td><td>Satisfeito, relaxado.</td><td>Content and relaxed</td><td>Satisfeito, relaxado.</td></tr><tr><td><a href=\"https://loinc.org/LA9601-1/\">LA9601-1</a></td><td>Tranquilizado por toques, abraços ou conversas ocasionais; distraível; ou comportamento identificado pelos pais</td><td>Tranquilizado por toques, abraços ou conversas ocasionais; Distraído.</td><td>Reassured by occasional touching, hugging, or being talked to; distractible; or parent-identified behavior</td><td>Tranquilizado por toques, abraços ou conversas ocasionais; Distraído.</td></tr><tr><td><a href=\"https://loinc.org/LA9602-9/\">LA9602-9</a></td><td>Difícil de consolar ou confortar; afastando o cuidador, resistindo aos cuidados ou medidas de conforto; ou comportamento identificado pelos pais</td><td>Difícil de consolar ou confortar; afasta prestador de cuidados; resiste cuidados ou medidas conforto</td><td>Difficult to console or comfort; pushing away caregiver, resisting care or comfort measures; or parent-identified behavior</td><td>Difícil de consolar ou confortar; afasta prestador de cuidados; resiste cuidados ou medidas conforto</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-flaccscale-result-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.131" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPEFLACCScaleResultVS"] ; # 
+  fhir:title [ fhir:v "CPE - FLACC Scale Result"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores FLACCScaleResult (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA9588-0" ] ;
+         fhir:display [ fhir:v "Nenhuma expressão particular ou sorriso" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No particular expression or smile" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9589-8" ] ;
+         fhir:display [ fhir:v "Careta/carranca ocasional, retraído ou desinteressado, parece triste ou preocupado; ou expressão identificada pelos pais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Occasional grimace/frown, withdrawn or disinterested, appears sad or worried; or parent-identified expression" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Careta ocasional ou franzir de sobrancelhas, alheio, desinteressado" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Caretas ou sobrancelhas franzidas, introversão, desinteresse; aparenta estar triste ou preocupado." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9590-6" ] ;
+         fhir:display [ fhir:v "Careta ou carranca constante, queixo trêmulo frequente/constante, mandíbula cerrada, rosto de aparência angustiada, expressão de medo ou pânico; ou expressão identificada pelo pai" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Constant grimace or frown, frequent / constant quivering chin, clenched jaw, distressed-looking face, expression of fright or panic; or parent-identified expression" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Constante franzir de sobrancelhas, maxilares cerrados, queixo trémulo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Caretas ou sobrancelhas franzidas; tremor queixo, mandúbula cerrada; face ansiosa; expressão medo ou pânico." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9591-4" ] ;
+         fhir:display [ fhir:v "Posição normal ou relaxada; tom habitual e movimento para os membros" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Normal position or relaxed; usual tone and motion to limbs" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Posição normal ou relaxadas" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Posição normal ou relaxadas; tonicidade e movimento habitual dos membros inferiores e superiores." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9592-2" ] ;
+         fhir:display [ fhir:v "Inquieto, agitado, tenso, tremores ocasionais; ou comportamento identificado pelos pais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Uneasy, restless, tense, occasional tremors; or parent-identified behavior" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Inquietas, agitadas, tensas" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Inquietas, agitadas, tensas; tremores ocasionais." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9593-0" ] ;
+         fhir:display [ fhir:v "Pontapés ou pernas erguidas, aumento acentuado da espasticidade, tremores ou espasmos constantes; ou comportamento identificado pelos pais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Kicking or legs drawn up, marked increase in spasticity, constant tremors or jerking; or parent-identified behavior" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Aos pontapés ou com as pernas encolhidas" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Aos pontapés ou esticadas; aumento significativo de espasticidade, tremores constantes ou movimentos súbitos." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9594-8" ] ;
+         fhir:display [ fhir:v "Deitado quieto, posição normal, move-se com facilidade; respirações regulares e rítmicas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Lying quietly, normal position, moves easily; regular, rhythmic respirations" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Deitado calmamente, posição normal, mexe-se facilmente" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Deitado calmamente, posição normal, mexe-se facilmente; respiração regular, rítmica" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9595-5" ] ;
+         fhir:display [ fhir:v "Contorcer-se, movendo-se para frente e para trás, movimentos tensos ou cautelosos; levemente agitado (por exemplo, cabeça para frente e para trás, agressão), superficial; respirações imobilizadas, suspiros intermitentes; ou comportamento identificado pelos pais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Squirming, shifting back and forth, tense or guarded movements; mildly agitated (e.g., head back and forth, aggression), shallow; splinting respirations, intermittent sighs; or parent-identified behavior" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Contorcendo-se, virando-se para trás e para a frente, tenso" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Contorcendo-se, movimentos tensos ou cuidadosos; ligeiramente agitado; respiração superficial ou estabilizada; suspiros." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9596-3" ] ;
+         fhir:display [ fhir:v "Arqueado, rígido ou espasmódico; agitação severa; bate cabeça; tremores (não calafrios); retenção da respiração, respiração ofegante ou ingestão aguda de respirações, imobilização grave; ou comportamento identificado pelos pais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Arched, rigid, or jerking; severe agitation; head banging; shivering (not rigors); breath holding, gasping or sharp intake of breaths, severe splinting; or parent-identified behavior" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Arqueado, rígido ou com movimentos bruscos" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Curvado, rígido ou com movimentos bruscos; agitamento grave; abana cabeça; sustém respiração, arfar ou respirar fundo; contração muscular." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9597-1" ] ;
+         fhir:display [ fhir:v "Sem choro/verbalização" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No cry/verbalization" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Ausência de choro (acordado ou adormecido)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Ausência de choro ou verbalização." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9598-9" ] ;
+         fhir:display [ fhir:v "Gemidos ou choramingos; queixa ocasional; explosão verbal ocasional ou grunhido; ou vocalização identificada pelos pais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Moans or whimpers; occasional complaint; occasional verbal outburst or grunt; or parent-identified vocalization" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Gemidos ou lamentos, queixas ocasionais" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Gemidos ou choramingos; queixas ocasionais; explosão verbal ou resmungos ocasionais" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9599-7" ] ;
+         fhir:display [ fhir:v "Choro constante, gritos ou soluços; queixas frequentes; explosões repetidas, grunhidos constantes; ou vocalização identificada pelos pais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Crying steadily, screams or sobs; frequent complaints; repeated outbursts, constant grunting; or parent-identified vocalization" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Choro persistente, gritos ou suspiros, queixas frequentes" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Choro persistente, gritos ou soluços; queixas frequentes; ataques repetidos ou resmungos constantes." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9600-3" ] ;
+         fhir:display [ fhir:v "Contente e descontraído" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Content and relaxed" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Contente, relaxado" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Satisfeito, relaxado." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9601-1" ] ;
+         fhir:display [ fhir:v "Tranquilizado por toques, abraços ou conversas ocasionais; distraível; ou comportamento identificado pelos pais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Reassured by occasional touching, hugging, or being talked to; distractible; or parent-identified behavior" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Encorajado por toques ocasionais, abraços, conversas. Distrai-se" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Tranquilizado por toques, abraços ou conversas ocasionais; Distraído." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9602-9" ] ;
+         fhir:display [ fhir:v "Difícil de consolar ou confortar; afastando o cuidador, resistindo aos cuidados ou medidas de conforto; ou comportamento identificado pelos pais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Difficult to console or comfort; pushing away caregiver, resisting care or comfort measures; or parent-identified behavior" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Difícil de consolar ou confortar" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Difícil de consolar ou confortar; afasta prestador de cuidados; resiste cuidados ou medidas conforto" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

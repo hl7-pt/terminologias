@@ -1,0 +1,455 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-npassscale-result-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-npassscale-result-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-npassscale-result-vs</b></p><a name=\"cpe-npassscale-result-vs\"> </a><a name=\"hccpe-npassscale-result-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/LA31093-0/\">LA31093-0</a></td><td>Sem sinais de sedação</td><td>Choro adequado; não está irritável</td><td>No sedation signs</td><td>Choro adequado; não está irritável</td></tr><tr><td><a href=\"https://loinc.org/LA31094-8/\">LA31094-8</a></td><td>Geme ou chora minimamente com estímulos dolorosos</td><td>Geme ou chora pouco com estímulos dolorosos</td><td>Moans or cries minimally with painful stimuli</td><td>Geme ou chora pouco com estímulos dolorosos</td></tr><tr><td><a href=\"https://loinc.org/LA31095-5/\">LA31095-5</a></td><td>Sem choro com estímulos dolorosos</td><td>Não há choro com estímulos dolorosos</td><td>No cry with painful stimuli</td><td>Não há choro com estímulos dolorosos</td></tr><tr><td><a href=\"https://loinc.org/LA31096-3/\">LA31096-3</a></td><td>Desperta minimamente a estímulos. Pouco movimento espontâneo</td><td>Reação mínima aos estímulos; ligeiro movimento espontâneo</td><td>Arouses minimally to stimuli. Little spontaneous movement</td><td>Reação mínima aos estímulos; ligeiro movimento espontâneo</td></tr><tr><td><a href=\"https://loinc.org/LA31097-1/\">LA31097-1</a></td><td>Nenhuma excitação a qualquer estímulo. Nenhum movimento espontâneo</td><td>Não há reacção a qualquer estímulo; não há movimento espontâneo</td><td>No arousal to any stimuli. No spontaneous movement</td><td>Não há reacção a qualquer estímulo; não há movimento espontâneo</td></tr><tr><td><a href=\"https://loinc.org/LA31098-9/\">LA31098-9</a></td><td>Expressão mínima com estímulos</td><td>Expressão mínima com os estímulos</td><td>Minimal expression with stimuli</td><td>Expressão mínima com os estímulos</td></tr><tr><td><a href=\"https://loinc.org/LA31099-7/\">LA31099-7</a></td><td>A boca é frouxa. Nenhuma expressão</td><td>A boca está relaxada; sem expressão</td><td>Mouth is lax. No expression</td><td>A boca está relaxada; sem expressão</td></tr><tr><td><a href=\"https://loinc.org/LA31100-3/\">LA31100-3</a></td><td>Reflexo de preensão fraco. Diminuição do tónus muscular</td><td>Reflexo de agarrar fraco; diminuição tónus muscular</td><td>Weak grasp reflex. Decreased muscle tone</td><td>Reflexo de agarrar fraco; diminuição tónus muscular</td></tr><tr><td><a href=\"https://loinc.org/LA31101-1/\">LA31101-1</a></td><td>Sem reflexo de preensão. Tónus flácido</td><td>Não há reflexo de agarrar; tónus flácido</td><td>No grasp reflex. Flaccid tone</td><td>Não há reflexo de agarrar; tónus flácido</td></tr><tr><td><a href=\"https://loinc.org/LA31102-9/\">LA31102-9</a></td><td>Variabilidade &lt;10% da linha de base com estímulos</td><td>&lt; 10% variação dos valores iniciais dos estímulos</td><td>&lt;10% variability from baseline with stimuli</td><td>&lt; 10% variação dos valores iniciais dos estímulos</td></tr><tr><td><a href=\"https://loinc.org/LA31103-7/\">LA31103-7</a></td><td>Nenhuma variabilidade com estímulos. Hipoventilação ou apneia</td><td>Não há variação com a estimulação; hipoventilação ou apneia</td><td>No variability with stimuli. Hypoventilation or apnea</td><td>Não há variação com a estimulação; hipoventilação ou apneia</td></tr><tr><td><a href=\"https://loinc.org/LA31239-9/\">LA31239-9</a></td><td>Ligeiro: Pontuação de -1 a -3</td><td/><td>Light: Score of -1 to -2</td><td/></tr><tr><td><a href=\"https://loinc.org/LA31240-7/\">LA31240-7</a></td><td>Moderado: Pontuação de -4 a -6</td><td/><td>Moderate: Score of -4 to -5</td><td/></tr><tr><td><a href=\"https://loinc.org/LA31241-5/\">LA31241-5</a></td><td>Profundo: Pontuação de -7 a -10</td><td/><td>Deep: Score of -7 to -9</td><td/></tr><tr><td><a href=\"https://loinc.org/LA31082-3/\">LA31082-3</a></td><td>Sem sinais de dor</td><td/><td>No pain signs</td><td/></tr><tr><td><a href=\"https://loinc.org/LA31083-1/\">LA31083-1</a></td><td>Irritável ou chorando em intervalos, consolável</td><td>Irritável ou chora a intervalos; consolável</td><td>Irritable or crying at intervals, consolable</td><td>Irritável ou chora a intervalos; consolável</td></tr><tr><td><a href=\"https://loinc.org/LA31084-9/\">LA31084-9</a></td><td>Choro agudo ou silencioso-contínuo; Inconsolável</td><td/><td>High-pitched or silent-continuous cry; Inconsolable</td><td/></tr><tr><td><a href=\"https://loinc.org/LA31085-6/\">LA31085-6</a></td><td>Inquieto, contorce-se; Desperta frequentemente</td><td>Irrequieto, contorce-se; acorda frequentemente</td><td>Restless, squirming; Awakens frequently</td><td>Irrequieto, contorce-se; acorda frequentemente</td></tr><tr><td><a href=\"https://loinc.org/LA31086-4/\">LA31086-4</a></td><td>Arquear, chutar; Constantemente acordado ou desperta minimamente/nenhum movimento (não sedado)</td><td>Arqueia-se, dá pontapés; constantemete acordado ou reage minimamente/não há movimento</td><td>Arching, kicking; Constantly awake or arouses minimally/no movement (not sedated)</td><td>Arqueia-se, dá pontapés; constantemete acordado ou reage minimamente/não há movimento</td></tr><tr><td><a href=\"https://loinc.org/LA31087-2/\">LA31087-2</a></td><td>Qualquer expressão de dor intermitente</td><td>Qualquer expressão de dor é intermitente</td><td>Any pain expression intermittent</td><td>Qualquer expressão de dor é intermitente</td></tr><tr><td><a href=\"https://loinc.org/LA31088-0/\">LA31088-0</a></td><td>Qualquer expressão de dor contínua</td><td>Qualquer expressão de dor é contínua</td><td>Any pain expression continual</td><td>Qualquer expressão de dor é contínua</td></tr><tr><td><a href=\"https://loinc.org/LA31089-8/\">LA31089-8</a></td><td>Dedos dos pés, punhos ou dedos cerrados intermitentes; o corpo não está tenso</td><td>Fecha mãos e encolhe pés ou estica os dedos de forma intermitente (&lt;30seg); corpo não tenso.</td><td>Intermittent clenched toes, fists, or finger splay; Body is not tense</td><td>Fecha mãos e encolhe pés ou estica os dedos de forma intermitente (&lt;30seg); corpo não tenso.</td></tr><tr><td><a href=\"https://loinc.org/LA31090-6/\">LA31090-6</a></td><td>Dedos, punhos ou dedos dos pés cerrados contínuos; corpo está tenso</td><td>Fecha mãos e encolhe os pés ou estica dedos continuamente (&gt;/=30seg); corpo tenso</td><td>Continual clenched toes, fists, or finger splay; Body is tense</td><td>Fecha mãos e encolhe os pés ou estica dedos continuamente (&gt;/=30seg); corpo tenso</td></tr><tr><td><a href=\"https://loinc.org/LA31091-4/\">LA31091-4</a></td><td>Aumentou 10-20% desde a linha de base. SpO2 76-85% com estimulação - aumento rápido</td><td>Aumento sup. a 10-20% val. iniciais; satO2 a 76-85% com estimulação - aumenta rapidamente(&lt;/=2seg).</td><td>Increased 10-20% from baseline. SpO2 76-85% with stimulation--quick increase</td><td>Aumento sup. a 10-20% val. iniciais; satO2 a 76-85% com estimulação - aumenta rapidamente(&lt;/=2seg).</td></tr><tr><td><a href=\"https://loinc.org/LA31092-2/\">LA31092-2</a></td><td>Aumento &gt; 20% da linha de base. SpO2 &gt; ou igual a 75% com estimulação - aumento lento. Fora de sincronia/ventilação de combate</td><td>Aumento sup. a 20% val. iniciais; satO2&lt;/=75% c/ estim. - aum. lentamente(&gt;2seg); não sinc. c/ vent.</td><td>Increased &gt;20% from baseline. SpO2 &gt; or equal to 75% with stimulation--slow increase. Out of synch/fighting vent</td><td>Aumento sup. a 20% val. iniciais; satO2&lt;/=75% c/ estim. - aum. lentamente(&gt;2seg); não sinc. c/ vent.</td></tr><tr><td><a href=\"https://loinc.org/LA32-8/\">LA32-8</a></td><td>Não</td><td/><td>No</td><td/></tr><tr><td><a href=\"https://loinc.org/LA33-6/\">LA33-6</a></td><td>Sim</td><td/><td>Yes</td><td/></tr><tr><td><a href=\"https://loinc.org/LA31236-5/\">LA31236-5</a></td><td>Leve: Pontuação de +1 a +3</td><td/><td>Mild: Score of +1 to +2</td><td/></tr><tr><td><a href=\"https://loinc.org/LA31237-3/\">LA31237-3</a></td><td>Moderado: Pontuação de +4 a +6</td><td/><td>Moderate: Score of +4 to +5</td><td/></tr><tr><td><a href=\"https://loinc.org/LA31238-1/\">LA31238-1</a></td><td>Grave: Pontuação de +7 a +10 (ou +11 para prematuro)</td><td/><td>Severe: Score of +7 to +10 (or +11 for premature infant)</td><td/></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-npassscale-result-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.144" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPENPASSScaleResultVS"] ; # 
+  fhir:title [ fhir:v "CPE - NPASS Scale Result"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores NPASSScaleResult (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA31093-0" ] ;
+         fhir:display [ fhir:v "Sem sinais de sedação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No sedation signs" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Choro adequado; não está irritável" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31094-8" ] ;
+         fhir:display [ fhir:v "Geme ou chora minimamente com estímulos dolorosos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Moans or cries minimally with painful stimuli" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Geme ou chora pouco com estímulos dolorosos" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31095-5" ] ;
+         fhir:display [ fhir:v "Sem choro com estímulos dolorosos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No cry with painful stimuli" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Não há choro com estímulos dolorosos" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31096-3" ] ;
+         fhir:display [ fhir:v "Desperta minimamente a estímulos. Pouco movimento espontâneo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Arouses minimally to stimuli. Little spontaneous movement" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Reação mínima aos estímulos; ligeiro movimento espontâneo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31097-1" ] ;
+         fhir:display [ fhir:v "Nenhuma excitação a qualquer estímulo. Nenhum movimento espontâneo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No arousal to any stimuli. No spontaneous movement" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Não há reacção a qualquer estímulo; não há movimento espontâneo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31098-9" ] ;
+         fhir:display [ fhir:v "Expressão mínima com estímulos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Minimal expression with stimuli" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Expressão mínima com os estímulos" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31099-7" ] ;
+         fhir:display [ fhir:v "A boca é frouxa. Nenhuma expressão" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mouth is lax. No expression" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "A boca está relaxada; sem expressão" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31100-3" ] ;
+         fhir:display [ fhir:v "Reflexo de preensão fraco. Diminuição do tónus muscular" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Weak grasp reflex. Decreased muscle tone" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Reflexo de agarrar fraco; diminuição tónus muscular" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31101-1" ] ;
+         fhir:display [ fhir:v "Sem reflexo de preensão. Tónus flácido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No grasp reflex. Flaccid tone" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Não há reflexo de agarrar; tónus flácido" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31102-9" ] ;
+         fhir:display [ fhir:v "Variabilidade <10% da linha de base com estímulos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "<10% variability from baseline with stimuli" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "< 10% variação dos valores iniciais dos estímulos" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31103-7" ] ;
+         fhir:display [ fhir:v "Nenhuma variabilidade com estímulos. Hipoventilação ou apneia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No variability with stimuli. Hypoventilation or apnea" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Não há variação com a estimulação; hipoventilação ou apneia" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31239-9" ] ;
+         fhir:display [ fhir:v "Ligeiro: Pontuação de -1 a -3" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Light: Score of -1 to -2" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31240-7" ] ;
+         fhir:display [ fhir:v "Moderado: Pontuação de -4 a -6" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Moderate: Score of -4 to -5" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31241-5" ] ;
+         fhir:display [ fhir:v "Profundo: Pontuação de -7 a -10" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Deep: Score of -7 to -9" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31082-3" ] ;
+         fhir:display [ fhir:v "Sem sinais de dor" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No pain signs" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31083-1" ] ;
+         fhir:display [ fhir:v "Irritável ou chorando em intervalos, consolável" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Irritable or crying at intervals, consolable" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Irritável ou chora a intervalos; consolável" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31084-9" ] ;
+         fhir:display [ fhir:v "Choro agudo ou silencioso-contínuo; Inconsolável" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "High-pitched or silent-continuous cry; Inconsolable" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31085-6" ] ;
+         fhir:display [ fhir:v "Inquieto, contorce-se; Desperta frequentemente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Restless, squirming; Awakens frequently" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Irrequieto, contorce-se; acorda frequentemente" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31086-4" ] ;
+         fhir:display [ fhir:v "Arquear, chutar; Constantemente acordado ou desperta minimamente/nenhum movimento (não sedado)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Arching, kicking; Constantly awake or arouses minimally/no movement (not sedated)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Arqueia-se, dá pontapés; constantemete acordado ou reage minimamente/não há movimento" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31087-2" ] ;
+         fhir:display [ fhir:v "Qualquer expressão de dor intermitente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Any pain expression intermittent" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Qualquer expressão de dor é intermitente" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31088-0" ] ;
+         fhir:display [ fhir:v "Qualquer expressão de dor contínua" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Any pain expression continual" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Qualquer expressão de dor é contínua" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31089-8" ] ;
+         fhir:display [ fhir:v "Dedos dos pés, punhos ou dedos cerrados intermitentes; o corpo não está tenso" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Intermittent clenched toes, fists, or finger splay; Body is not tense" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Fecha mãos e encolhe pés ou estica os dedos de forma intermitente (<30seg); corpo não tenso." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31090-6" ] ;
+         fhir:display [ fhir:v "Dedos, punhos ou dedos dos pés cerrados contínuos; corpo está tenso" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Continual clenched toes, fists, or finger splay; Body is tense" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Fecha mãos e encolhe os pés ou estica dedos continuamente (>/=30seg); corpo tenso" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31091-4" ] ;
+         fhir:display [ fhir:v "Aumentou 10-20% desde a linha de base. SpO2 76-85% com estimulação - aumento rápido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Increased 10-20% from baseline. SpO2 76-85% with stimulation--quick increase" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Aumento sup. a 10-20% val. iniciais; satO2 a 76-85% com estimulação - aumenta rapidamente(</=2seg)." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31092-2" ] ;
+         fhir:display [ fhir:v "Aumento > 20% da linha de base. SpO2 > ou igual a 75% com estimulação - aumento lento. Fora de sincronia/ventilação de combate" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Increased >20% from baseline. SpO2 > or equal to 75% with stimulation--slow increase. Out of synch/fighting vent" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Aumento sup. a 20% val. iniciais; satO2</=75% c/ estim. - aum. lentamente(>2seg); não sinc. c/ vent." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA32-8" ] ;
+         fhir:display [ fhir:v "Não" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA33-6" ] ;
+         fhir:display [ fhir:v "Sim" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Yes" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31236-5" ] ;
+         fhir:display [ fhir:v "Leve: Pontuação de +1 a +3" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mild: Score of +1 to +2" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31237-3" ] ;
+         fhir:display [ fhir:v "Moderado: Pontuação de +4 a +6" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Moderate: Score of +4 to +5" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31238-1" ] ;
+         fhir:display [ fhir:v "Grave: Pontuação de +7 a +10 (ou +11 para prematuro)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Severe: Score of +7 to +10 (or +11 for premature infant)" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

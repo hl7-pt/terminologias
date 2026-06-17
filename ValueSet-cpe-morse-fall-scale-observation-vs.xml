@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-morse-fall-scale-observation-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-morse-fall-scale-observation-vs</b></p><a name="cpe-morse-fall-scale-observation-vs"> </a><a name="hccpe-morse-fall-scale-observation-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="https://loinc.org/59454-9/">59454-9</a></td><td>História de queda; imediato ou dentro de 3 meses [Morse Fall Scale]</td><td>Historial de quedas; neste internamento urgência/ ou nos últimos três meses</td><td>History of falling; immediate or within 3 months [Morse Fall Scale]</td><td>Historial de quedas; neste internamento urgência/ ou nos últimos três meses</td></tr><tr><td><a href="https://loinc.org/59455-6/">59455-6</a></td><td>O diagnóstico secundário está presente</td><td>Diagnóstico(s) secundário(s)</td><td>Secondary diagnosis is present</td><td>Diagnóstico(s) secundário(s)</td></tr><tr><td><a href="https://loinc.org/59456-4/">59456-4</a></td><td>Auxiliar ambulatorial [Escala de queda de Morse]</td><td>Ajuda para caminhar</td><td>Ambulatory aid [Morse Fall Scale]</td><td>Ajuda para caminhar</td></tr><tr><td><a href="https://loinc.org/59457-2/">59457-2</a></td><td>Bloqueio IV/Heparina</td><td>Terapia intravenosa</td><td>IV/Heparin Lock</td><td>Terapia intravenosa</td></tr><tr><td><a href="https://loinc.org/59458-0/">59458-0</a></td><td>Marcha [escala de queda de Morse]</td><td>Postura no andar e na transferência</td><td>Gait [Morse Fall Scale]</td><td>Postura no andar e na transferência</td></tr><tr><td><a href="https://loinc.org/59459-8/">59459-8</a></td><td>Estado mental [escala de queda de Morse]</td><td>Estado mental</td><td>Mental status [Morse Fall Scale]</td><td>Estado mental</td></tr><tr><td><a href="https://loinc.org/59460-6/">59460-6</a></td><td>Total de risco de queda [Escala de queda de Morse]</td><td/><td>Fall risk total [Morse Fall Scale]</td><td/></tr><tr><td><a href="https://loinc.org/59461-4/">59461-4</a></td><td>Nível de risco de queda [Escala de queda de Morse]</td><td/><td>Fall risk level [Morse Fall Scale]</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-morse-fall-scale-observation-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.137"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPEMorseFallScaleObservationVS"/>
+  <title value="CPE - Morse Fall Scale Observation"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores MorseFallScaleObservation (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="59454-9"/>
+        <display value="História de queda; imediato ou dentro de 3 meses [Morse Fall Scale]"/>
+        <designation>
+          <language value="en"/>
+          <value value="History of falling; immediate or within 3 months [Morse Fall Scale]"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Historial de quedas; neste internamento urgência/ ou nos últimos três meses"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="59455-6"/>
+        <display value="O diagnóstico secundário está presente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Secondary diagnosis is present"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Diagnóstico(s) secundário(s)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="59456-4"/>
+        <display value="Auxiliar ambulatorial [Escala de queda de Morse]"/>
+        <designation>
+          <language value="en"/>
+          <value value="Ambulatory aid [Morse Fall Scale]"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Ajuda para caminhar"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="59457-2"/>
+        <display value="Bloqueio IV/Heparina"/>
+        <designation>
+          <language value="en"/>
+          <value value="IV/Heparin Lock"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Terapia intravenosa"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="59458-0"/>
+        <display value="Marcha [escala de queda de Morse]"/>
+        <designation>
+          <language value="en"/>
+          <value value="Gait [Morse Fall Scale]"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Postura no andar e na transferência"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="59459-8"/>
+        <display value="Estado mental [escala de queda de Morse]"/>
+        <designation>
+          <language value="en"/>
+          <value value="Mental status [Morse Fall Scale]"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Estado mental"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="59460-6"/>
+        <display value="Total de risco de queda [Escala de queda de Morse]"/>
+        <designation>
+          <language value="en"/>
+          <value value="Fall risk total [Morse Fall Scale]"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="59461-4"/>
+        <display value="Nível de risco de queda [Escala de queda de Morse]"/>
+        <designation>
+          <language value="en"/>
+          <value value="Fall risk level [Morse Fall Scale]"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

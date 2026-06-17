@@ -1,0 +1,132 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-painadscale-observation-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-painadscale-observation-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-painadscale-observation-vs</b></p><a name=\"cpe-painadscale-observation-vs\"> </a><a name=\"hccpe-painadscale-observation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/103776-1/\">103776-1</a></td><td>Respiração independente da vocalização</td><td/><td>Breathing independent of vocalization</td><td/></tr><tr><td><a href=\"https://loinc.org/103777-9/\">103777-9</a></td><td>Vocalização negativa</td><td/><td>Negative vocalization</td><td/></tr><tr><td><a href=\"https://loinc.org/103778-7/\">103778-7</a></td><td>Expressão facial</td><td/><td>Facial expression</td><td/></tr><tr><td><a href=\"https://loinc.org/103779-5/\">103779-5</a></td><td>Linguagem corporal</td><td/><td>Body language</td><td/></tr><tr><td><a href=\"https://loinc.org/103775-3/\">103775-3</a></td><td>Consolabilidade</td><td/><td>Consolability</td><td/></tr><tr><td><a href=\"https://loinc.org/103781-1/\">103781-1</a></td><td>Pontuação total (de 0 a 10)</td><td>Score total (de 0 a 10)</td><td>Total Score (0 to 10)</td><td>Score total (de 0 a 10)</td></tr><tr><td><a href=\"https://loinc.org/103782-9/\">103782-9</a></td><td>Avaliação PAINAD (Interpretação)</td><td>-</td><td>PAINAD assessment (Interpretation)</td><td>-</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-painadscale-observation-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.149" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPEPAINADScaleObservationVS"] ; # 
+  fhir:title [ fhir:v "CPE - PAINAD Scale Observation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores PAINADScaleObservation (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "103776-1" ] ;
+         fhir:display [ fhir:v "Respiração independente da vocalização" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Breathing independent of vocalization" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "103777-9" ] ;
+         fhir:display [ fhir:v "Vocalização negativa" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Negative vocalization" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "103778-7" ] ;
+         fhir:display [ fhir:v "Expressão facial" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Facial expression" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "103779-5" ] ;
+         fhir:display [ fhir:v "Linguagem corporal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Body language" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "103775-3" ] ;
+         fhir:display [ fhir:v "Consolabilidade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Consolability" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "103781-1" ] ;
+         fhir:display [ fhir:v "Pontuação total (de 0 a 10)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Total Score (0 to 10)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Score total (de 0 a 10)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "103782-9" ] ;
+         fhir:display [ fhir:v "Avaliação PAINAD (Interpretação)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "PAINAD assessment (Interpretation)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpal-appearanceof-specimen-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpal-appearanceof-specimen-vs</b></p><a name="cpal-appearanceof-specimen-vs"> </a><a name="hccpal-appearanceof-specimen-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/167238004">167238004</a></td><td>Urina muito turva</td><td>Turbid urine (finding)</td><td>Muito turva</td><td>Turbid urine (finding)</td><td>Muito turva</td></tr><tr><td><a href="http://snomed.info/id/167236000">167236000</a></td><td>Urina com aspeto límpido</td><td>Urine looks clear (finding)</td><td>Límpida</td><td>Urine looks clear (finding)</td><td>Límpida</td></tr><tr><td><a href="http://snomed.info/id/7766007">7766007</a></td><td>Urina turva</td><td>Cloudy urine (finding)</td><td/><td>Cloudy urine (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/1290141002">1290141002</a></td><td>Urina ligeiramente turva</td><td>Slightly cloudy urine (finding)</td><td>Pouco turva</td><td>Slightly cloudy urine (finding)</td><td>Pouco turva</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpal-appearanceof-specimen-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.17"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPALAppearanceofSpecimenVS"/>
+  <title value="CPAL - Appearance of Specimen"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-09-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores AppearanceofSpecimen (CPAL v7.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="167238004"/>
+        <display value="Urina muito turva"/>
+        <designation>
+          <language value="en"/>
+          <value value="Turbid urine"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Turbid urine (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Muito turva"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="167236000"/>
+        <display value="Urina com aspeto límpido"/>
+        <designation>
+          <language value="en"/>
+          <value value="Urine looks clear"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Urine looks clear (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Urina límpida"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Límpida"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="7766007"/>
+        <display value="Urina turva"/>
+        <designation>
+          <language value="en"/>
+          <value value="Cloudy urine"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Cloudy urine (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1290141002"/>
+        <display value="Urina ligeiramente turva"/>
+        <designation>
+          <language value="en"/>
+          <value value="Slightly cloudy urine"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Slightly cloudy urine (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Ligeiramente turva"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Pouco turva"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

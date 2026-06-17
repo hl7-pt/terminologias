@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-nipsscale-observation-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-nipsscale-observation-vs</b></p><a name="cpe-nipsscale-observation-vs"> </a><a name="hccpe-nipsscale-observation-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="https://loinc.org/95624-3/">95624-3</a></td><td>Expressão facial</td><td/><td>Facial expression</td><td/></tr><tr><td><a href="https://loinc.org/95622-7/">95622-7</a></td><td>Chorar</td><td>Choro</td><td>Cry</td><td>Choro</td></tr><tr><td><a href="https://loinc.org/98009-4/">98009-4</a></td><td>Padrões de respiração</td><td>Respiração</td><td>Breathing patterns</td><td>Respiração</td></tr><tr><td><a href="https://loinc.org/98010-2/">98010-2</a></td><td>Braços</td><td/><td>Arms</td><td/></tr><tr><td><a href="https://loinc.org/98011-0/">98011-0</a></td><td>Pernas</td><td/><td>Legs</td><td/></tr><tr><td><a href="https://loinc.org/95623-5/">95623-5</a></td><td>Estado de excitação</td><td>Estado de vigília</td><td>State of arousal</td><td>Estado de vigília</td></tr><tr><td><a href="https://loinc.org/98012-8/">98012-8</a></td><td>Pontuação total NIPS</td><td/><td>Total score NIPS</td><td/></tr><tr><td><a href="https://loinc.org/98013-6/">98013-6</a></td><td>Interpretação da escala de dor infantil neonatal</td><td/><td>Neonatal infant pain scale interpretation</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-nipsscale-observation-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.141"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPENIPSScaleObservationVS"/>
+  <title value="CPE - NIPS Scale Observation"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores NIPSScaleObservation (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="95624-3"/>
+        <display value="Expressão facial"/>
+        <designation>
+          <language value="en"/>
+          <value value="Facial expression"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95622-7"/>
+        <display value="Chorar"/>
+        <designation>
+          <language value="en"/>
+          <value value="Cry"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Choro"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="98009-4"/>
+        <display value="Padrões de respiração"/>
+        <designation>
+          <language value="en"/>
+          <value value="Breathing patterns"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Respiração"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="98010-2"/>
+        <display value="Braços"/>
+        <designation>
+          <language value="en"/>
+          <value value="Arms"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="98011-0"/>
+        <display value="Pernas"/>
+        <designation>
+          <language value="en"/>
+          <value value="Legs"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="95623-5"/>
+        <display value="Estado de excitação"/>
+        <designation>
+          <language value="en"/>
+          <value value="State of arousal"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Estado de vigília"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="98012-8"/>
+        <display value="Pontuação total NIPS"/>
+        <designation>
+          <language value="en"/>
+          <value value="Total score NIPS"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="98013-6"/>
+        <display value="Interpretação da escala de dor infantil neonatal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Neonatal infant pain scale interpretation"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

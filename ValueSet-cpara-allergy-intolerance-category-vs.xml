@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpara-allergy-intolerance-category-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpara-allergy-intolerance-category-vs</b></p><a name="cpara-allergy-intolerance-category-vs"> </a><a name="hccpara-allergy-intolerance-category-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="http://snomed.info/id/115668003">115668003</a></td><td>Biological substance (substance)</td><td/></tr><tr><td><a href="http://snomed.info/id/762766007">762766007</a></td><td>Alimento</td><td>Edible substance (substance)</td></tr><tr><td><a href="http://snomed.info/id/410942007">410942007</a></td><td>Medicamento</td><td>Drug or medicament (substance)</td></tr><tr><td><a href="http://snomed.info/id/37877001">37877001</a></td><td>Substância ambiental</td><td>Environmental agent (qualifier value)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpara-allergy-intolerance-category-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.88"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPARAAllergyIntoleranceCategoryVS"/>
+  <title value="CPARA - Allergy Intolerance Category"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores AllergyIntoleranceCategory (CPARA v5.1.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="115668003"/>
+        <display value="Biological substance (substance)"/>
+      </concept>
+      <concept>
+        <code value="762766007"/>
+        <display value="Alimento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Edible substance (substance)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="410942007"/>
+        <display value="Medicamento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Drug or medicament (substance)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="37877001"/>
+        <display value="Substância ambiental"/>
+        <designation>
+          <language value="en"/>
+          <value value="Environmental agent (qualifier value)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

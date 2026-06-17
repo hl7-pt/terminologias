@@ -1,0 +1,3839 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpal-clinical-pathology-method-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpal-clinical-pathology-method-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpal-clinical-pathology-method-vs</b></p><a name=\"cpal-clinical-pathology-method-vs\"> </a><a name=\"hccpal-clinical-pathology-method-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/70541000052100\">70541000052100</a></td><td>Quimioluminescência</td><td>Chemiluminescence technique (qualifier value)</td><td>-</td><td>Chemiluminescence technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703450007\">703450007</a></td><td>Eletroforese</td><td>Electrophoresis technique (qualifier value)</td><td>-</td><td>Electrophoresis technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703690001\">703690001</a></td><td>Teste confirmatório</td><td>Confirmatory technique (qualifier value)</td><td>-</td><td>Confirmatory technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/702661004\">702661004</a></td><td>Microscopia óptica</td><td>Light microscopy technique (qualifier value)</td><td>-</td><td>Light microscopy technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708077009\">708077009</a></td><td>Espectroscopia de infravermelho</td><td>Infrared spectroscopy technique (qualifier value)</td><td>-</td><td>Infrared spectroscopy technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/278289002\">278289002</a></td><td>Técnica de microscopia</td><td>Microscopy technique (qualifier value)</td><td>-</td><td>Microscopy technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703451006\">703451006</a></td><td>Microscopia óptica de campo de baixa potência</td><td>Low power field light microscopy technique (qualifier value)</td><td>-</td><td>Low power field light microscopy technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/702662006\">702662006</a></td><td>Microscopia óptica de campo de alta potência</td><td>High power field light microscopy technique (qualifier value)</td><td>-</td><td>High power field light microscopy technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708076000\">708076000</a></td><td>Teste de Kleihauer-Betke</td><td>Kleihauer-Betke technique (qualifier value)</td><td>-</td><td>Kleihauer-Betke technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703751005\">703751005</a></td><td>Cultura em anaerobiose</td><td>Anaerobic culture technique (qualifier value)</td><td>-</td><td>Anaerobic culture technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703750006\">703750006</a></td><td>Cultura em aerobiose</td><td>Aerobic culture technique (qualifier value)</td><td>-</td><td>Aerobic culture technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703725008\">703725008</a></td><td>Cultura</td><td>Culture technique (qualifier value)</td><td>-</td><td>Culture technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708070006\">708070006</a></td><td>Teste de solubilidade</td><td>Solubility test technique (qualifier value)</td><td>-</td><td>Solubility test technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708064000\">708064000</a></td><td>Imunofixação</td><td>Immunofixation technique (qualifier value)</td><td>-</td><td>Immunofixation technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708063006\">708063006</a></td><td>Imunoelectroforese</td><td>Immunoelectrophoresis technique (qualifier value)</td><td>-</td><td>Immunoelectrophoresis technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703441005\">703441005</a></td><td>Coloração de Wright</td><td>Wright stain method (qualifier value)</td><td>-</td><td>Wright stain method (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/726528006\">726528006</a></td><td>Genotipagem</td><td>Genotyping (qualifier value)</td><td>-</td><td>Genotyping (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708056006\">708056006</a></td><td>Coloração alcool-ácido</td><td>Acid fast stain technique (qualifier value)</td><td>-</td><td>Acid fast stain technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703457005\">703457005</a></td><td>Exame direto em microbiologia</td><td>Wet preparation technique (qualifier value)</td><td>-</td><td>Wet preparation technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/702666009\">702666009</a></td><td>Citologia</td><td>Cytology technique (qualifier value)</td><td>-</td><td>Cytology technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708062001\">708062001</a></td><td>Imunodifusão</td><td>Immunodiffusion technique (qualifier value)</td><td>-</td><td>Immunodiffusion technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708061008\">708061008</a></td><td>Coloração de Gram</td><td>Gram stain technique (qualifier value)</td><td>-</td><td>Gram stain technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703444002\">703444002</a></td><td>Imunofluorescência</td><td>Fluorescent immunoassay (qualifier value)</td><td>-</td><td>Fluorescent immunoassay (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/767096000\">767096000</a></td><td>Imunofluorescência indireta</td><td>Indirect immunofluorescence technique (qualifier value)</td><td>-</td><td>Indirect immunofluorescence technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/767095001\">767095001</a></td><td>Imunofluorescência direta</td><td>Direct immunofluorescence technique (qualifier value)</td><td>-</td><td>Direct immunofluorescence technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/359838000\">359838000</a></td><td>Nefelometria</td><td>Nephelometry (qualifier value)</td><td>-</td><td>Nephelometry (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/726443006\">726443006</a></td><td>Cromatografia em coluna</td><td>Column chromatography technique (qualifier value)</td><td>-</td><td>Column chromatography technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/702946003\">702946003</a></td><td>Técnica de coagulação</td><td>Coagulation technique (qualifier value)</td><td>-</td><td>Coagulation technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708058007\">708058007</a></td><td>Citometria de fluxo</td><td>Flow cytometry technique (qualifier value)</td><td>-</td><td>Flow cytometry technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708068002\">708068002</a></td><td>Genética molecular</td><td>Molecular genetics technique (qualifier value)</td><td>-</td><td>Molecular genetics technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/726449005\">726449005</a></td><td>Imunoensaio</td><td>Immunoassay technique (qualifier value)</td><td>-</td><td>Immunoassay technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/66711000052103\">66711000052103</a></td><td>Contraimunoelectroforese</td><td>Line immunoassay technique (qualifier value)</td><td>-</td><td>Line immunoassay technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708099001\">708099001</a></td><td>Imunoensaio rápido</td><td>Rapid immunoassay technique (qualifier value)</td><td>-</td><td>Rapid immunoassay technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/726448002\">726448002</a></td><td>Técnica de identificador de sequência</td><td>Sequence identifier technique (qualifier value)</td><td>-</td><td>Sequence identifier technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703446000\">703446000</a></td><td>Immunoblotting</td><td>Immunoblot assay technique (qualifier value)</td><td>-</td><td>Immunoblot assay technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708104000\">708104000</a></td><td>Técnica de aglutinação</td><td>Agglutination technique (qualifier value)</td><td>-</td><td>Agglutination technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258083009\">258083009</a></td><td>Avaliação visual</td><td>Visual estimation (qualifier value)</td><td>-</td><td>Visual estimation (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703455002\">703455002</a></td><td>RPR</td><td>Rapid Plasma Reagin technique (qualifier value)</td><td>-</td><td>Rapid Plasma Reagin technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/702675006\">702675006</a></td><td>Deteção com sonda</td><td>Probe with target amplification technique (qualifier value)</td><td>-</td><td>Probe with target amplification technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258036007\">258036007</a></td><td>Imunoblotting</td><td>Immunoblotting (qualifier value)</td><td>-</td><td>Immunoblotting (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708133004\">708133004</a></td><td>Fixação do Complemento</td><td>Complement fixation technique (qualifier value)</td><td>-</td><td>Complement fixation technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/66701000052100\">66701000052100</a></td><td>Técnica de imunoensaio de enzimas fluorescentes</td><td>Fluorescent enzyme immunoassay technique (qualifier value)</td><td>-</td><td>Fluorescent enzyme immunoassay technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/70571000052108\">70571000052108</a></td><td>Técnica imunoquímica</td><td>Immunochemistry technique (qualifier value)</td><td>-</td><td>Immunochemistry technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/257425005\">257425005</a></td><td>Campo brilhante</td><td>Bright field microscopy technique (qualifier value)</td><td>-</td><td>Bright field microscopy technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/272390001\">272390001</a></td><td>Diluição</td><td>Dilution (qualifier value)</td><td>-</td><td>Dilution (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/404655007\">404655007</a></td><td>Microscopia de Autofluorescência</td><td>Autofluorescence microscopy technique (qualifier value)</td><td>-</td><td>Autofluorescence microscopy technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/702940009\">702940009</a></td><td>Filtração</td><td>Filtration technique (qualifier value)</td><td>-</td><td>Filtration technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/702674005\">702674005</a></td><td>Sonda de hibridização de ácido nucleico</td><td>Nucleic acid hybridization probe technique (qualifier value)</td><td>-</td><td>Nucleic acid hybridization probe technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/702673004\">702673004</a></td><td>Sonda de ácido desoxiribonucleico</td><td>Deoxyribonucleic acid probe technique (qualifier value)</td><td>-</td><td>Deoxyribonucleic acid probe technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/702669002\">702669002</a></td><td>Ensaio direto</td><td>Direct assay technique (qualifier value)</td><td>-</td><td>Direct assay technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703458000\">703458000</a></td><td>Método de neutralização</td><td>Neutralization method (qualifier value)</td><td>-</td><td>Neutralization method (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703454003\">703454003</a></td><td>Técnica de centrifugação</td><td>Centrifugation technique (qualifier value)</td><td>-</td><td>Centrifugation technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703452004\">703452004</a></td><td>Técnica de impedância elétrica</td><td>Electrical impedance technique (qualifier value)</td><td>-</td><td>Electrical impedance technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703449007\">703449007</a></td><td>Radioimunoensaio</td><td>Radioimmunoassay technique (qualifier value)</td><td>-</td><td>Radioimmunoassay technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703448004\">703448004</a></td><td>Teste de aglutinação em látex</td><td>Latex agglutination test technique (qualifier value)</td><td>-</td><td>Latex agglutination test technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703447009\">703447009</a></td><td>Método Imunoenzimático</td><td>Enzyme immunoassay technique (qualifier value)</td><td>-</td><td>Enzyme immunoassay technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703443008\">703443008</a></td><td>Coloração fúngica</td><td>Fungus stain method (qualifier value)</td><td>-</td><td>Fungus stain method (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703442003\">703442003</a></td><td>Teste de suscetibilidade - gradiente em tira</td><td>Gradient strip susceptibility test technique (qualifier value)</td><td>-</td><td>Gradient strip susceptibility test technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703445001\">703445001</a></td><td>Medição por eletrodo seletivo de ião</td><td>Ion selective electrode measurement technique (qualifier value)</td><td>-</td><td>Ion selective electrode measurement technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/58207001\">58207001</a></td><td>Ensaio imunoenzimático competitivo</td><td>Competitive protein binding assay technique (qualifier value)</td><td>-</td><td>Competitive protein binding assay technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258006003\">258006003</a></td><td>Método acidométrico</td><td>Acidometric method (qualifier value)</td><td>-</td><td>Acidometric method (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/787997001\">787997001</a></td><td>Hibridização in situ</td><td>Chromogenic in situ hybridization technique (qualifier value)</td><td>-</td><td>Chromogenic in situ hybridization technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708067007\">708067007</a></td><td>Coloração de Wright-Giemsa</td><td>Wright-Giemsa stain technique (qualifier value)</td><td>-</td><td>Wright-Giemsa stain technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/1156860005\">1156860005</a></td><td>Imunoensaio de detecção rápida de antigeneo</td><td>Rapid antigen detection immunoassay technique (qualifier value)</td><td>-</td><td>Rapid antigen detection immunoassay technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/70521000052109\">70521000052109</a></td><td>Cromatografia de afinidade</td><td>Affinity chromatography technique (qualifier value)</td><td>-</td><td>Affinity chromatography technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/70591000052107\">70591000052107</a></td><td>Técnica de pirosequenciação</td><td>Pyrosequencing technique (qualifier value)</td><td>-</td><td>Pyrosequencing technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/70581000052105\">70581000052105</a></td><td>Eletroforese capilar</td><td>Capillary electrophoresis technique (qualifier value)</td><td>-</td><td>Capillary electrophoresis technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/70561000052104\">70561000052104</a></td><td>Cromatografia gasosa</td><td>Gas chromatography technique (qualifier value)</td><td>-</td><td>Gas chromatography technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/70551000052102\">70551000052102</a></td><td>EMIT - Drogas de abuso</td><td>Enzyme-multiplied immunoassay technique (qualifier value)</td><td>-</td><td>Enzyme-multiplied immunoassay technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/70531000052106\">70531000052106</a></td><td>Eletroforese em gel de agarose</td><td>Agarose gel electrophoresis technique (qualifier value)</td><td>-</td><td>Agarose gel electrophoresis technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/68431000052104\">68431000052104</a></td><td>ELISA</td><td>Enzyme-linked immunosorbent assay technique (qualifier value)</td><td>-</td><td>Enzyme-linked immunosorbent assay technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/66741000052102\">66741000052102</a></td><td>Imunoensaio de micropartículas por quimioluminescência</td><td>Chemiluminescent microparticle immunoassay technique (qualifier value)</td><td>-</td><td>Chemiluminescent microparticle immunoassay technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/66731000052108\">66731000052108</a></td><td>Imunocromatografia</td><td>Immunochromatographic test technique (qualifier value)</td><td>-</td><td>Immunochromatographic test technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/66721000052106\">66721000052106</a></td><td>Ensaio de imunoblotting recombinante</td><td>Recombinant immunoblot assay technique (qualifier value)</td><td>-</td><td>Recombinant immunoblot assay technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/66691000052100\">66691000052100</a></td><td>Imunoensaio por electroquimioluminescência</td><td>Electrochemiluminescence immunoassay technique (qualifier value)</td><td>-</td><td>Electrochemiluminescence immunoassay technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/83611000052104\">83611000052104</a></td><td>Turbidimetria</td><td>Turbidimetry technique (qualifier value)</td><td>-</td><td>Turbidimetry technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/83601000052101\">83601000052101</a></td><td>Potenciometria</td><td>Potentiometry technique (qualifier value)</td><td>-</td><td>Potentiometry technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/83591000052109\">83591000052109</a></td><td>Imunoensaio turbidimétrico</td><td>Particle-enhanced turbidimetric immunoassay technique (qualifier value)</td><td>-</td><td>Particle-enhanced turbidimetric immunoassay technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/83581000052107\">83581000052107</a></td><td>Espectrometria de massa</td><td>Matrix assisted laser desorption ionization time of flight mass spectrometry technique (qualifier value)</td><td>-</td><td>Matrix assisted laser desorption ionization time of flight mass spectrometry technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/83561000052101\">83561000052101</a></td><td>Fotometria</td><td>Photometry technique (qualifier value)</td><td>-</td><td>Photometry technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/70621000052105\">70621000052105</a></td><td>Espectrofotometria</td><td>Spectrophotometric technique (qualifier value)</td><td>-</td><td>Spectrophotometric technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/70611000052102\">70611000052102</a></td><td>Técnica da curva de ponto de fusão</td><td>Melting curve technique (qualifier value)</td><td>-</td><td>Melting curve technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/70601000052104\">70601000052104</a></td><td>RT-PCR</td><td>Real-time polymerase chain reaction technique (qualifier value)</td><td>Real time PCR</td><td>Real-time polymerase chain reaction technique (qualifier value)</td><td>Real time PCR</td></tr><tr><td><a href=\"http://snomed.info/id/1179120009\">1179120009</a></td><td>Técnica de fracionamento</td><td>Fractionation technique (qualifier value)</td><td>-</td><td>Fractionation technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/897048005\">897048005</a></td><td>Espectroscopia de impedância bioelétrica</td><td>Bioelectrical impedance spectroscopy (qualifier value)</td><td>-</td><td>Bioelectrical impedance spectroscopy (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/865911008\">865911008</a></td><td>Microscopia de varrimento por laser confocal</td><td>Confocal laser scanning microscopy technique (qualifier value)</td><td>-</td><td>Confocal laser scanning microscopy technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/771289004\">771289004</a></td><td>Coloração de Rosa de Bengala</td><td>Rose bengal stain technique (qualifier value)</td><td>-</td><td>Rose bengal stain technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/737105002\">737105002</a></td><td>Técnica de cálculo da taxa de filtragem glomerular</td><td>Glomerular filtration rate calculation technique (qualifier value)</td><td>-</td><td>Glomerular filtration rate calculation technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708128003\">708128003</a></td><td>Coloração de Kinyoun - TB</td><td>Acid fast Kinyoun's cold carbolfuchsin stain technique (qualifier value)</td><td>-</td><td>Acid fast Kinyoun's cold carbolfuchsin stain technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708097004\">708097004</a></td><td>Imunohistoquímica</td><td>Immunohistochemistry technique (qualifier value)</td><td>-</td><td>Immunohistochemistry technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708075001\">708075001</a></td><td>Técnica de preparação C/KOH</td><td>Potassium hydroxide preparation technique (qualifier value)</td><td>-</td><td>Potassium hydroxide preparation technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708073008\">708073008</a></td><td>Concentração inibitória mínima</td><td>Minimum inhibitory concentration susceptibility test technique (qualifier value)</td><td>-</td><td>Minimum inhibitory concentration susceptibility test technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703461004\">703461004</a></td><td>Método de concentração para parasitas</td><td>Concentration of parasites method (qualifier value)</td><td>-</td><td>Concentration of parasites method (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703460003\">703460003</a></td><td>Método de Wintrobe</td><td>Wintrobe technique (qualifier value)</td><td>-</td><td>Wintrobe technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703459008\">703459008</a></td><td>Método de Westergren</td><td>Westergren technique (qualifier value)</td><td>-</td><td>Westergren technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/264275001\">264275001</a></td><td>Imunoensaio de polarização fluorescente</td><td>Fluorescence polarization immunoassay technique (qualifier value)</td><td>-</td><td>Fluorescence polarization immunoassay technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/264272003\">264272003</a></td><td>Condutividade</td><td>Conductivity technique (qualifier value)</td><td>-</td><td>Conductivity technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258126001\">258126001</a></td><td>Microscopia de contraste de fase</td><td>Phase contrast microscopy technique (qualifier value)</td><td>-</td><td>Phase contrast microscopy technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258110002\">258110002</a></td><td>Método salino</td><td>Saline method (qualifier value)</td><td>-</td><td>Saline method (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258099003\">258099003</a></td><td>Microscopia de fluorescência</td><td>Fluorescence microscopy technique (qualifier value)</td><td>-</td><td>Fluorescence microscopy technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258081006\">258081006</a></td><td>Absorção no ultravioleta</td><td>Ultraviolet absorption (qualifier value)</td><td>-</td><td>Ultraviolet absorption (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258075003\">258075003</a></td><td>Serotipagem ou serotipia</td><td>Serotyping (qualifier value)</td><td>-</td><td>Serotyping (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258069007\">258069007</a></td><td>Espectrometria de massa por pirólise</td><td>Pyrolysis mass spectrometry (qualifier value)</td><td>-</td><td>Pyrolysis mass spectrometry (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258066000\">258066000</a></td><td>PCR</td><td>Polymerase chain reaction technique (qualifier value)</td><td>-</td><td>Polymerase chain reaction technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258060006\">258060006</a></td><td>Fenotipagem</td><td>Phenotyping (qualifier value)</td><td>-</td><td>Phenotyping (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258048005\">258048005</a></td><td>Método microbiológico</td><td>Microbiological method (qualifier value)</td><td>-</td><td>Microbiological method (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258035006\">258035006</a></td><td>Cromatografia líquida de alta pressão</td><td>High pressure liquid chromatography (qualifier value)</td><td>-</td><td>High pressure liquid chromatography (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258030001\">258030001</a></td><td>Método de gradiente</td><td>Gradient method (qualifier value)</td><td>-</td><td>Gradient method (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258026004\">258026004</a></td><td>Método enzimático</td><td>Enzyme method (qualifier value)</td><td>-</td><td>Enzyme method (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/703752003\">703752003</a></td><td>Técnica de cultura específica do organismo</td><td>Organism specific culture technique (qualifier value)</td><td>-</td><td>Organism specific culture technique (qualifier value)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/702660003\">702660003</a></td><td>Técnica de tiras-teste</td><td>Test strip technique (qualifier value)</td><td>-</td><td>Test strip technique (qualifier value)</td><td>-</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-clinical-pathology-method-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.7" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPALClinicalPathologyMethodVS"] ; # 
+  fhir:title [ fhir:v "CPAL - Clinical Pathology Method"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2023-10-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores ClinicalPathologyMethod (CPAL v7.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "70541000052100" ] ;
+         fhir:display [ fhir:v "Quimioluminescência" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Chemiluminescence technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Chemiluminescence technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703450007" ] ;
+         fhir:display [ fhir:v "Eletroforese" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Electrophoresis" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Electrophoresis technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703690001" ] ;
+         fhir:display [ fhir:v "Teste confirmatório" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Confirmatory technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Confirmatory technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "702661004" ] ;
+         fhir:display [ fhir:v "Microscopia óptica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Light microscopy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Light microscopy technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708077009" ] ;
+         fhir:display [ fhir:v "Espectroscopia de infravermelho" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Infrared spectroscopy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Infrared spectroscopy technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "278289002" ] ;
+         fhir:display [ fhir:v "Técnica de microscopia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Microscopy technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Microscopy technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703451006" ] ;
+         fhir:display [ fhir:v "Microscopia óptica de campo de baixa potência" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Low power field light microscopy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Low power field light microscopy technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "702662006" ] ;
+         fhir:display [ fhir:v "Microscopia óptica de campo de alta potência" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "High power field light microscopy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "High power field light microscopy technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708076000" ] ;
+         fhir:display [ fhir:v "Teste de Kleihauer-Betke" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Kleihauer-Betke technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Kleihauer-Betke technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703751005" ] ;
+         fhir:display [ fhir:v "Cultura em anaerobiose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Anaerobic culture" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Anaerobic culture technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703750006" ] ;
+         fhir:display [ fhir:v "Cultura em aerobiose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Aerobic culture" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Aerobic culture technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703725008" ] ;
+         fhir:display [ fhir:v "Cultura" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Culture" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Culture technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708070006" ] ;
+         fhir:display [ fhir:v "Teste de solubilidade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Solubility test" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Solubility test technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708064000" ] ;
+         fhir:display [ fhir:v "Imunofixação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Immunofixation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Immunofixation technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708063006" ] ;
+         fhir:display [ fhir:v "Imunoelectroforese" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Immunoelectrophoresis" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Immunoelectrophoresis technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703441005" ] ;
+         fhir:display [ fhir:v "Coloração de Wright" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Wright stain method" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Wright stain method (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "726528006" ] ;
+         fhir:display [ fhir:v "Genotipagem" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Genotyping" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Genotyping (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708056006" ] ;
+         fhir:display [ fhir:v "Coloração alcool-ácido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Acid fast stain" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Acid fast stain technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703457005" ] ;
+         fhir:display [ fhir:v "Exame direto em microbiologia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Wet preparation technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Wet preparation technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "702666009" ] ;
+         fhir:display [ fhir:v "Citologia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cytology" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Cytology technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708062001" ] ;
+         fhir:display [ fhir:v "Imunodifusão" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Immunodiffusion" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Immunodiffusion technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708061008" ] ;
+         fhir:display [ fhir:v "Coloração de Gram" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gram stain" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Gram stain technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703444002" ] ;
+         fhir:display [ fhir:v "Imunofluorescência" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Immunofluorescence technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Fluorescent immunoassay (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "767096000" ] ;
+         fhir:display [ fhir:v "Imunofluorescência indireta" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Indirect immunofluorescence technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Indirect immunofluorescence technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "767095001" ] ;
+         fhir:display [ fhir:v "Imunofluorescência direta" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Direct immunofluorescence technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Direct immunofluorescence technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "359838000" ] ;
+         fhir:display [ fhir:v "Nefelometria" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nephelometry" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nephelometry (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "726443006" ] ;
+         fhir:display [ fhir:v "Cromatografia em coluna" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Column chromatography technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Column chromatography technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "702946003" ] ;
+         fhir:display [ fhir:v "Técnica de coagulação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Coagulation technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Coagulation technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708058007" ] ;
+         fhir:display [ fhir:v "Citometria de fluxo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Flow cytometry" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Flow cytometry technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708068002" ] ;
+         fhir:display [ fhir:v "Genética molecular" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Molecular genetics" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Molecular genetics technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "726449005" ] ;
+         fhir:display [ fhir:v "Imunoensaio" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Immunoassay technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Immunoassay technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "66711000052103" ] ;
+         fhir:display [ fhir:v "Contraimunoelectroforese" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Line immunoassay technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Line immunoassay technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708099001" ] ;
+         fhir:display [ fhir:v "Imunoensaio rápido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Rapid immunoassay" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Rapid immunoassay technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Teste rápido" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "726448002" ] ;
+         fhir:display [ fhir:v "Técnica de identificador de sequência" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sequence identifier technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Sequence identifier technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703446000" ] ;
+         fhir:display [ fhir:v "Immunoblotting" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Immunoblot assay" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Immunoblot assay technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708104000" ] ;
+         fhir:display [ fhir:v "Técnica de aglutinação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Agglutination technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Agglutination technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258083009" ] ;
+         fhir:display [ fhir:v "Avaliação visual" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Visual estimation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Visual estimation (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703455002" ] ;
+         fhir:display [ fhir:v "RPR" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Rapid Plasma Reagin technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Rapid Plasma Reagin technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "RPR (sifilis)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "702675006" ] ;
+         fhir:display [ fhir:v "Deteção com sonda" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Probe with target amplification" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Probe with target amplification technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258036007" ] ;
+         fhir:display [ fhir:v "Imunoblotting" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Immunoblotting" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Immunoblotting (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708133004" ] ;
+         fhir:display [ fhir:v "Fixação do Complemento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Complement fixation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Complement fixation technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "66701000052100" ] ;
+         fhir:display [ fhir:v "Técnica de imunoensaio de enzimas fluorescentes" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Fluorescent enzyme immunoassay technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Fluorescent enzyme immunoassay technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "70571000052108" ] ;
+         fhir:display [ fhir:v "Técnica imunoquímica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Immunochemistry technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Immunochemistry technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "257425005" ] ;
+         fhir:display [ fhir:v "Campo brilhante" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bright field" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Bright field microscopy technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "272390001" ] ;
+         fhir:display [ fhir:v "Diluição" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Dilution" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Dilution (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "404655007" ] ;
+         fhir:display [ fhir:v "Microscopia de Autofluorescência" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Autofluorescence" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Autofluorescence microscopy technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "702940009" ] ;
+         fhir:display [ fhir:v "Filtração" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Filtration" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Filtration technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "702674005" ] ;
+         fhir:display [ fhir:v "Sonda de hibridização de ácido nucleico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nucleic acid hybridization probe" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nucleic acid hybridization probe technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "702673004" ] ;
+         fhir:display [ fhir:v "Sonda de ácido desoxiribonucleico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Deoxyribonucleic acid probe" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Deoxyribonucleic acid probe technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "702669002" ] ;
+         fhir:display [ fhir:v "Ensaio direto" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Direct assay" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Direct assay technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703458000" ] ;
+         fhir:display [ fhir:v "Método de neutralização" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Neutralisation method" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Neutralization method (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703454003" ] ;
+         fhir:display [ fhir:v "Técnica de centrifugação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Centrifugation technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Centrifugation technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703452004" ] ;
+         fhir:display [ fhir:v "Técnica de impedância elétrica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Electrical impedance technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Electrical impedance technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703449007" ] ;
+         fhir:display [ fhir:v "Radioimunoensaio" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radioimmunoassay" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radioimmunoassay technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703448004" ] ;
+         fhir:display [ fhir:v "Teste de aglutinação em látex" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Latex agglutination test" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Latex agglutination test technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703447009" ] ;
+         fhir:display [ fhir:v "Método Imunoenzimático" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Enzyme immunoassay technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Enzyme immunoassay technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703443008" ] ;
+         fhir:display [ fhir:v "Coloração fúngica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Fungus stain method" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Fungus stain method (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703442003" ] ;
+         fhir:display [ fhir:v "Teste de suscetibilidade - gradiente em tira" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gradient strip susceptibility test" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Gradient strip susceptibility test technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703445001" ] ;
+         fhir:display [ fhir:v "Medição por eletrodo seletivo de ião" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Ion selective electrode measurement" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Ion selective electrode measurement technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "58207001" ] ;
+         fhir:display [ fhir:v "Ensaio imunoenzimático competitivo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Competitive protein binding assay technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Competitive protein binding assay technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258006003" ] ;
+         fhir:display [ fhir:v "Método acidométrico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Acidometric method" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Acidometric method (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "787997001" ] ;
+         fhir:display [ fhir:v "Hibridização in situ" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Chromogenic in situ hybridisation technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Chromogenic in situ hybridization technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708067007" ] ;
+         fhir:display [ fhir:v "Coloração de Wright-Giemsa" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Wright-Giemsa stain" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Wright-Giemsa stain technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1156860005" ] ;
+         fhir:display [ fhir:v "Imunoensaio de detecção rápida de antigeneo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Rapid antigen detection immunoassay technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Rapid antigen detection immunoassay technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "70521000052109" ] ;
+         fhir:display [ fhir:v "Cromatografia de afinidade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Affinity chromatography technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Affinity chromatography technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "70591000052107" ] ;
+         fhir:display [ fhir:v "Técnica de pirosequenciação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pyrosequencing technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Pyrosequencing technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "70581000052105" ] ;
+         fhir:display [ fhir:v "Eletroforese capilar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Capillary electrophoresis technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Capillary electrophoresis technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "70561000052104" ] ;
+         fhir:display [ fhir:v "Cromatografia gasosa" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gas chromatography technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Gas chromatography technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "70551000052102" ] ;
+         fhir:display [ fhir:v "EMIT - Drogas de abuso" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Enzyme-multiplied immunoassay technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Enzyme-multiplied immunoassay technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "70531000052106" ] ;
+         fhir:display [ fhir:v "Eletroforese em gel de agarose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Agarose gel electrophoresis technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Agarose gel electrophoresis technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "68431000052104" ] ;
+         fhir:display [ fhir:v "ELISA" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Enzyme-linked immunosorbent assay technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Enzyme-linked immunosorbent assay technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "66741000052102" ] ;
+         fhir:display [ fhir:v "Imunoensaio de micropartículas por quimioluminescência" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Chemiluminescent microparticle immunoassay technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Chemiluminescent microparticle immunoassay technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "66731000052108" ] ;
+         fhir:display [ fhir:v "Imunocromatografia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Immunochromatographic test technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Immunochromatographic test technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "66721000052106" ] ;
+         fhir:display [ fhir:v "Ensaio de imunoblotting recombinante" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Recombinant immunoblot assay technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Recombinant immunoblot assay technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "66691000052100" ] ;
+         fhir:display [ fhir:v "Imunoensaio por electroquimioluminescência" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Electrochemiluminescence immunoassay technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Electrochemiluminescence immunoassay technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Electroquimioluminescência" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "83611000052104" ] ;
+         fhir:display [ fhir:v "Turbidimetria" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Turbidimetry technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Turbidimetry technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "83601000052101" ] ;
+         fhir:display [ fhir:v "Potenciometria" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Potentiometry technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Potentiometry technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "83591000052109" ] ;
+         fhir:display [ fhir:v "Imunoensaio turbidimétrico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Particle-enhanced turbidimetric immunoassay technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Particle-enhanced turbidimetric immunoassay technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "83581000052107" ] ;
+         fhir:display [ fhir:v "Espectrometria de massa" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Matrix assisted laser desorption ionisation time of flight mass spectrometry technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Matrix assisted laser desorption ionization time of flight mass spectrometry technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "83561000052101" ] ;
+         fhir:display [ fhir:v "Fotometria" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Photometry technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Photometry technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "70621000052105" ] ;
+         fhir:display [ fhir:v "Espectrofotometria" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Spectrophotometric technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Spectrophotometric technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "70611000052102" ] ;
+         fhir:display [ fhir:v "Técnica da curva de ponto de fusão" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Melting curve technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Melting curve technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "70601000052104" ] ;
+         fhir:display [ fhir:v "RT-PCR" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Real-time polymerase chain reaction technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Real-time polymerase chain reaction technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "PCR em tempo real" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Real time PCR" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1179120009" ] ;
+         fhir:display [ fhir:v "Técnica de fracionamento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Fractionation technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Fractionation technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "897048005" ] ;
+         fhir:display [ fhir:v "Espectroscopia de impedância bioelétrica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bioelectrical impedance spectroscopy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Bioelectrical impedance spectroscopy (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "865911008" ] ;
+         fhir:display [ fhir:v "Microscopia de varrimento por laser confocal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Confocal laser scanning microscopy technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Confocal laser scanning microscopy technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "771289004" ] ;
+         fhir:display [ fhir:v "Coloração de Rosa de Bengala" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Rose bengal stain technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Rose bengal stain technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "737105002" ] ;
+         fhir:display [ fhir:v "Técnica de cálculo da taxa de filtragem glomerular" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Glomerular filtration rate calculation technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Glomerular filtration rate calculation technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708128003" ] ;
+         fhir:display [ fhir:v "Coloração de Kinyoun - TB" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Acid fast Kinyoun's cold carbolfuchsin stain" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Acid fast Kinyoun's cold carbolfuchsin stain technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708097004" ] ;
+         fhir:display [ fhir:v "Imunohistoquímica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Immunohistochemistry" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Immunohistochemistry technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708075001" ] ;
+         fhir:display [ fhir:v "Técnica de preparação C/KOH" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "KOH preparation technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Potassium hydroxide preparation technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708073008" ] ;
+         fhir:display [ fhir:v "Concentração inibitória mínima" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "MIC" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Minimum inhibitory concentration susceptibility test technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "MIC" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703461004" ] ;
+         fhir:display [ fhir:v "Método de concentração para parasitas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Concentration of parasites method" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Concentration of parasites method (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703460003" ] ;
+         fhir:display [ fhir:v "Método de Wintrobe" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Wintrobe technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Wintrobe technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703459008" ] ;
+         fhir:display [ fhir:v "Método de Westergren" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Westergren technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Westergren technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "264275001" ] ;
+         fhir:display [ fhir:v "Imunoensaio de polarização fluorescente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Fluorescence polarization immunoassay technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Fluorescence polarization immunoassay technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "264272003" ] ;
+         fhir:display [ fhir:v "Condutividade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Conductivity technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Conductivity technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258126001" ] ;
+         fhir:display [ fhir:v "Microscopia de contraste de fase" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Phase contrast microscopy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Phase contrast microscopy technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258110002" ] ;
+         fhir:display [ fhir:v "Método salino" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Saline method" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Saline method (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258099003" ] ;
+         fhir:display [ fhir:v "Microscopia de fluorescência" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Fluorescence microscopy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Fluorescence microscopy technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258081006" ] ;
+         fhir:display [ fhir:v "Absorção no ultravioleta" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Ultraviolet absorption" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Ultraviolet absorption (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258075003" ] ;
+         fhir:display [ fhir:v "Serotipagem ou serotipia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Serotyping" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Serotyping (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258069007" ] ;
+         fhir:display [ fhir:v "Espectrometria de massa por pirólise" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pyrolysis mass spectrometry" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Pyrolysis mass spectrometry (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258066000" ] ;
+         fhir:display [ fhir:v "PCR" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Polymerase chain reaction technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Polymerase chain reaction technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Polymerase chain reaction" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258060006" ] ;
+         fhir:display [ fhir:v "Fenotipagem" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Phenotyping" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Phenotyping (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258048005" ] ;
+         fhir:display [ fhir:v "Método microbiológico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Microbiological method" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Microbiological method (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258035006" ] ;
+         fhir:display [ fhir:v "Cromatografia líquida de alta pressão" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "High pressure liquid chromatography" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "High pressure liquid chromatography (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "HPLC" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258030001" ] ;
+         fhir:display [ fhir:v "Método de gradiente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gradient method" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Gradient method (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258026004" ] ;
+         fhir:display [ fhir:v "Método enzimático" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Enzyme method" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Enzyme method (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703752003" ] ;
+         fhir:display [ fhir:v "Técnica de cultura específica do organismo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Organism specific culture technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Organism specific culture technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "702660003" ] ;
+         fhir:display [ fhir:v "Técnica de tiras-teste" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Test strip technique" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Test strip technique (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,129 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cparadm-operational-location-status-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cparadm-operational-location-status-vs</b></p><a name=\"cparadm-operational-location-status-vs\"> </a><a name=\"hccparadm-operational-location-status-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/29179001\">29179001</a></td><td>Fechado</td><td>Fechada</td><td>Closed (qualifier value)</td><td>Fechada</td></tr><tr><td><a href=\"http://snomed.info/id/62604006\">62604006</a></td><td>Contaminada</td><td/><td>Contaminated (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1256105002\">1256105002</a></td><td>Reservada</td><td/><td>Reserved (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1256104003\">1256104003</a></td><td>Ocupada</td><td/><td>Occupied (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1256103009\">1256103009</a></td><td>Livre</td><td/><td>Unoccupied (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/73425007\">73425007</a></td><td>Inativada</td><td/><td>Inactive (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/46651001\">46651001</a></td><td>Isolada</td><td>Isolamento</td><td>Isolated (qualifier value)</td><td>Isolamento</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-operational-location-status-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.26"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPARADMOperationalLocationStatusVS",
+  "title" : "CPARADM - Operational Location Status",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-05-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores OperationalLocationStatus (CPARADM v3.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "29179001",
+        "display" : "Fechado",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Closed (qualifier value)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Fechada"
+        }]
+      },
+      {
+        "code" : "62604006",
+        "display" : "Contaminada",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Contaminated (qualifier value)"
+        }]
+      },
+      {
+        "code" : "1256105002",
+        "display" : "Reservada",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Reserved (qualifier value)"
+        }]
+      },
+      {
+        "code" : "1256104003",
+        "display" : "Ocupada",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Occupied (qualifier value)"
+        }]
+      },
+      {
+        "code" : "1256103009",
+        "display" : "Livre",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Unoccupied (qualifier value)"
+        }]
+      },
+      {
+        "code" : "73425007",
+        "display" : "Inativada",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Inactive (qualifier value)"
+        }]
+      },
+      {
+        "code" : "46651001",
+        "display" : "Isolada",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Isolated (qualifier value)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Isolamento"
+        }]
+      }]
+    }]
+  }
+}

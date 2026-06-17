@@ -1,0 +1,404 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-nsrasresults-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-nsrasresults-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-nsrasresults-vs</b></p><a name=\"cpe-nsrasresults-vs\"> </a><a name=\"hccpe-nsrasresults-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/LA19984-6/\">LA19984-6</a></td><td>Idade gestacional &lt; 28 semanas</td><td/><td>Gestational age &lt;28 weeks</td><td/></tr><tr><td><a href=\"https://loinc.org/LA19985-3/\">LA19985-3</a></td><td>Idade gestacional &gt; 28, mas &lt; 33 semanas</td><td/><td>Gestational age &gt;28 weeks but &lt;33 weeks</td><td/></tr><tr><td><a href=\"https://loinc.org/LA19986-1/\">LA19986-1</a></td><td>Idade gestacional &gt; 33, mas &lt; 38 semanas</td><td/><td>Gestational age &gt;33 weeks but &lt;38 weeks</td><td/></tr><tr><td><a href=\"https://loinc.org/LA19987-9/\">LA19987-9</a></td><td>Idade gestacional &gt; 38 semanas</td><td/><td>Gestational age &gt;38 weeks to posterm</td><td/></tr><tr><td><a href=\"https://loinc.org/LA19988-7/\">LA19988-7</a></td><td>Completamente limitado - não responde (não estremece, agarra ou geme, não há aumento da pressão arterial ou da frequência cardíaca) a estímulos dolorosos, devido à redução do nível de consciência ou sedação</td><td>Completamente limitado</td><td>Completely limited - Unresponsive (does not flinch, grasp, moan, increase blood pressure, or heart rate) to painful stimuli due to diminished level of consciousness or sedation.</td><td>Completamente limitado</td></tr><tr><td><a href=\"https://loinc.org/LA19989-5/\">LA19989-5</a></td><td>Muito limitado - responde apenas a estímulos dolorosos (estremece, agarra, geme, aumento da pressão arterial e frequência cardíaca)</td><td>Muito limitado</td><td>Very limited - Responds only to painful stimuli (flinches, grasps, moans, increased blood pressure or heart rate)</td><td>Muito limitado</td></tr><tr><td><a href=\"https://loinc.org/LA19990-3/\">LA19990-3</a></td><td>Ligeiramente limitado - letárgico/hipotónico</td><td>Ligeiramente limitado</td><td>Slightly limited - Lethargic</td><td>Ligeiramente limitado</td></tr><tr><td><a href=\"https://loinc.org/LA19991-1/\">LA19991-1</a></td><td>Nenhuma limitação - desperto e ativo</td><td>Nenhuma limitação</td><td>No impairment - Alert and active</td><td>Nenhuma limitação</td></tr><tr><td><a href=\"https://loinc.org/LA19994-5/\">LA19994-5</a></td><td>Completamente imóvel - não faz qualquer alteração ligeira de posição do corpo ou das extremidades sem ajuda (com ou sem sedação)</td><td>Completamente imóvel</td><td>Completely immobile - Does not make even slight changes in body or extremity position without assistance (e.g. Pavulon)</td><td>Completamente imóvel</td></tr><tr><td><a href=\"https://loinc.org/LA19995-2/\">LA19995-2</a></td><td>Muito limitada - capaz de fazer ligeiras alterações ocasionais do corpo ou das extremidades, mas incapaz de fazer alterações frequentes de forma independente</td><td>Muito limitada</td><td>Very limited - Makes occasional slight changes in body or extremity but unable to make frequent changes independently</td><td>Muito limitada</td></tr><tr><td><a href=\"https://loinc.org/LA19996-0/\">LA19996-0</a></td><td>Ligeiramente limitada -capaz de fazer alterações frequentes, embora ligeiras, de posição do corpo ou extremidades de forma independente</td><td>Ligeiramente limitada</td><td>Slightly limited - Makes frequent though slight changes in body or extremity position independently</td><td>Ligeiramente limitada</td></tr><tr><td><a href=\"https://loinc.org/LA19997-8/\">LA19997-8</a></td><td>Nenhuma limitação - capaz de fazer alterações frequentes e significativas de posição sem ajuda (por exemplo, virar a cabeça).</td><td>Nenhuma limitação</td><td>No limitations - Makes major and frequent changes in position without assistance (e.g., turn head)</td><td>Nenhuma limitação</td></tr><tr><td><a href=\"https://loinc.org/LA19948-1/\">LA19948-1</a></td><td>Completamente limitada à incubadora - está confinado à incubadora aquecida com humidade sem poder sair dela.</td><td>Completamente limitada à incubadora</td><td>Completely bedbound - In a radiant warmer with a clear plastic \"saran\" tent</td><td>Completamente limitada à incubadora</td></tr><tr><td><a href=\"https://loinc.org/LA19949-9/\">LA19949-9</a></td><td>Limitada à incubadora -está confinado à incubadora só saindo dela excecionalmente.</td><td>Limitada à incubadora</td><td>Limited bedbound - In a radiant warmer without a clear plastic \"saran\" tent</td><td>Limitada à incubadora</td></tr><tr><td><a href=\"https://loinc.org/LA19998-6/\">LA19998-6</a></td><td>Ligeiramente limitada - numa incubadora, mas pode ir ao colo, canguru, etc.</td><td>Ligeiramente limitada</td><td>Slightly limited - In a double walled isolette</td><td>Ligeiramente limitada</td></tr><tr><td><a href=\"https://loinc.org/LA19999-4/\">LA19999-4</a></td><td>Nenhuma limitação - num berço aberto</td><td>Nenhuma limitação</td><td>Unlimited - In an open crib</td><td>Nenhuma limitação</td></tr><tr><td><a href=\"https://loinc.org/LA20000-8/\">LA20000-8</a></td><td>Muito pobre - nada “Per os” (fluidos endovenosos exclusivos)</td><td>Muito pobre</td><td>Very poor - NPO on intravenous fluids</td><td>Muito pobre</td></tr><tr><td><a href=\"https://loinc.org/LA20001-6/\">LA20001-6</a></td><td>Inadequada - não recebe a quantidade ideal de dieta líquida para as necessidades (fórmula / leite materno) tendo de ser suplementada com fluidos endovenosos.</td><td>Inadequada</td><td>Inadequate - Receives less than optimum amount of liquid diet for growth (formula/breast milk) and supplemented with intravenous fluids</td><td>Inadequada</td></tr><tr><td><a href=\"https://loinc.org/LA20002-4/\">LA20002-4</a></td><td>Adequada - alimentação por sonda gástrica que permite satisfazer as necessidades nutricionais para o crescimento.</td><td>Adequada</td><td>Adequate - Is on tube feedings which meet nutritional needs for growth</td><td>Adequada</td></tr><tr><td><a href=\"https://loinc.org/LA20003-2/\">LA20003-2</a></td><td>Excelente - biberão/amamentação em todas as refeições que satisfazem as necessidades nutricionais para o crescimento.</td><td>Excelente</td><td>Excellent - Bottle/breastfeeds every meal which meets nutritional needs for growth</td><td>Excelente</td></tr><tr><td><a href=\"https://loinc.org/LA9607-8/\">LA9607-8</a></td><td>Constantemente húmida</td><td/><td>Constantly moist</td><td/></tr><tr><td><a href=\"https://loinc.org/LA20004-0/\">LA20004-0</a></td><td>Húmida - A pele está frequentemente húmida. Os lençóis têm que ser trocados pelo menos uma vez de 8/8 horas.</td><td>Húmida</td><td>Moist - Skin is often but not always moist/damp; linen must be changed at least once a shift</td><td>Húmida</td></tr><tr><td><a href=\"https://loinc.org/LA20005-7/\">LA20005-7</a></td><td>Ocasionalmente húmida - a pele está ocasionalmente húmida. Requer uma troca de lençóis extra aproximadamente uma vez por dia</td><td>Ocasionalmente húmida</td><td>Occasionally moist - Skin is occasionally moist/damp. Requiring an extra linen change approximately once a day.</td><td>Ocasionalmente húmida</td></tr><tr><td><a href=\"https://loinc.org/LA20006-5/\">LA20006-5</a></td><td>Raramente húmida - a pele está geralmente seca, os lençóis apenas requerem ser mudados a cada 24 horas.</td><td>Raramente húmida</td><td>Rarely moist - Skin is usually dry, linen requires changing only every 24 hours.</td><td>Raramente húmida</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-nsrasresults-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.148" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPENSRASResultsVS"] ; # 
+  fhir:title [ fhir:v "CPE - NSRAS Result"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores NSRASResults (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA19984-6" ] ;
+         fhir:display [ fhir:v "Idade gestacional < 28 semanas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gestational age <28 weeks" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA19985-3" ] ;
+         fhir:display [ fhir:v "Idade gestacional > 28, mas < 33 semanas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gestational age >28 weeks but <33 weeks" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA19986-1" ] ;
+         fhir:display [ fhir:v "Idade gestacional > 33, mas < 38 semanas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gestational age >33 weeks but <38 weeks" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA19987-9" ] ;
+         fhir:display [ fhir:v "Idade gestacional > 38 semanas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gestational age >38 weeks to posterm" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA19988-7" ] ;
+         fhir:display [ fhir:v "Completamente limitado - não responde (não estremece, agarra ou geme, não há aumento da pressão arterial ou da frequência cardíaca) a estímulos dolorosos, devido à redução do nível de consciência ou sedação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Completely limited - Unresponsive (does not flinch, grasp, moan, increase blood pressure, or heart rate) to painful stimuli due to diminished level of consciousness or sedation." ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Completamente limitado" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA19989-5" ] ;
+         fhir:display [ fhir:v "Muito limitado - responde apenas a estímulos dolorosos (estremece, agarra, geme, aumento da pressão arterial e frequência cardíaca)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Very limited - Responds only to painful stimuli (flinches, grasps, moans, increased blood pressure or heart rate)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Muito limitado" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA19990-3" ] ;
+         fhir:display [ fhir:v "Ligeiramente limitado - letárgico/hipotónico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Slightly limited - Lethargic" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Ligeiramente limitado" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA19991-1" ] ;
+         fhir:display [ fhir:v "Nenhuma limitação - desperto e ativo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No impairment - Alert and active" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Nenhuma limitação" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA19994-5" ] ;
+         fhir:display [ fhir:v "Completamente imóvel - não faz qualquer alteração ligeira de posição do corpo ou das extremidades sem ajuda (com ou sem sedação)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Completely immobile - Does not make even slight changes in body or extremity position without assistance (e.g. Pavulon)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Completamente imóvel" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA19995-2" ] ;
+         fhir:display [ fhir:v "Muito limitada - capaz de fazer ligeiras alterações ocasionais do corpo ou das extremidades, mas incapaz de fazer alterações frequentes de forma independente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Very limited - Makes occasional slight changes in body or extremity but unable to make frequent changes independently" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Muito limitada" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA19996-0" ] ;
+         fhir:display [ fhir:v "Ligeiramente limitada -capaz de fazer alterações frequentes, embora ligeiras, de posição do corpo ou extremidades de forma independente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Slightly limited - Makes frequent though slight changes in body or extremity position independently" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Ligeiramente limitada" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA19997-8" ] ;
+         fhir:display [ fhir:v "Nenhuma limitação - capaz de fazer alterações frequentes e significativas de posição sem ajuda (por exemplo, virar a cabeça)." ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No limitations - Makes major and frequent changes in position without assistance (e.g., turn head)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Nenhuma limitação" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA19948-1" ] ;
+         fhir:display [ fhir:v "Completamente limitada à incubadora - está confinado à incubadora aquecida com humidade sem poder sair dela." ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Completely bedbound - In a radiant warmer with a clear plastic \"saran\" tent" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Completamente limitada à incubadora" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA19949-9" ] ;
+         fhir:display [ fhir:v "Limitada à incubadora -está confinado à incubadora só saindo dela excecionalmente." ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Limited bedbound - In a radiant warmer without a clear plastic \"saran\" tent" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Limitada à incubadora" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA19998-6" ] ;
+         fhir:display [ fhir:v "Ligeiramente limitada - numa incubadora, mas pode ir ao colo, canguru, etc." ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Slightly limited - In a double walled isolette" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Ligeiramente limitada" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA19999-4" ] ;
+         fhir:display [ fhir:v "Nenhuma limitação - num berço aberto" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Unlimited - In an open crib" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Nenhuma limitação" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA20000-8" ] ;
+         fhir:display [ fhir:v "Muito pobre - nada “Per os” (fluidos endovenosos exclusivos)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Very poor - NPO on intravenous fluids" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Muito pobre" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA20001-6" ] ;
+         fhir:display [ fhir:v "Inadequada - não recebe a quantidade ideal de dieta líquida para as necessidades (fórmula / leite materno) tendo de ser suplementada com fluidos endovenosos." ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Inadequate - Receives less than optimum amount of liquid diet for growth (formula/breast milk) and supplemented with intravenous fluids" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Inadequada" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA20002-4" ] ;
+         fhir:display [ fhir:v "Adequada - alimentação por sonda gástrica que permite satisfazer as necessidades nutricionais para o crescimento." ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Adequate - Is on tube feedings which meet nutritional needs for growth" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Adequada" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA20003-2" ] ;
+         fhir:display [ fhir:v "Excelente - biberão/amamentação em todas as refeições que satisfazem as necessidades nutricionais para o crescimento." ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Excellent - Bottle/breastfeeds every meal which meets nutritional needs for growth" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Excelente" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9607-8" ] ;
+         fhir:display [ fhir:v "Constantemente húmida" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Constantly moist" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA20004-0" ] ;
+         fhir:display [ fhir:v "Húmida - A pele está frequentemente húmida. Os lençóis têm que ser trocados pelo menos uma vez de 8/8 horas." ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Moist - Skin is often but not always moist/damp; linen must be changed at least once a shift" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Húmida" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA20005-7" ] ;
+         fhir:display [ fhir:v "Ocasionalmente húmida - a pele está ocasionalmente húmida. Requer uma troca de lençóis extra aproximadamente uma vez por dia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Occasionally moist - Skin is occasionally moist/damp. Requiring an extra linen change approximately once a day." ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Ocasionalmente húmida" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA20006-5" ] ;
+         fhir:display [ fhir:v "Raramente húmida - a pele está geralmente seca, os lençóis apenas requerem ser mudados a cada 24 horas." ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Rarely moist - Skin is usually dry, linen requires changing only every 24 hours." ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Raramente húmida" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,185 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpe-berlin-questionnaire-observation-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-berlin-questionnaire-observation-vs</b></p><a name=\"cpe-berlin-questionnaire-observation-vs\"> </a><a name=\"hccpe-berlin-questionnaire-observation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/8302-2/\">8302-2</a></td><td>Medida da altura corporal</td><td>Altura</td><td>Body height</td><td>Altura</td></tr><tr><td><a href=\"https://loinc.org/29463-7/\">29463-7</a></td><td>Peso corporal</td><td>Peso</td><td>Body weight</td><td>Peso</td></tr><tr><td><a href=\"https://loinc.org/30525-0/\">30525-0</a></td><td>Idade</td><td/><td>Age</td><td/></tr><tr><td><a href=\"https://loinc.org/46098-0/\">46098-0</a></td><td>Sexo</td><td/><td>Sex</td><td/></tr><tr><td><a href=\"https://loinc.org/64487-2/\">64487-2</a></td><td>Ressona?</td><td/><td>Do you snore?</td><td/></tr><tr><td><a href=\"https://loinc.org/64488-0/\">64488-0</a></td><td>O seu ressonar é:</td><td/><td>Your snoring is:</td><td/></tr><tr><td><a href=\"https://loinc.org/64489-8/\">64489-8</a></td><td>Com que frequência ressona?</td><td/><td>How often do you snore?</td><td/></tr><tr><td><a href=\"https://loinc.org/64490-6/\">64490-6</a></td><td>O seu ressonar alguma vez incomodou outras pessoas?</td><td/><td>Has your snoring ever bothered other people?</td><td/></tr><tr><td><a href=\"https://loinc.org/64491-4/\">64491-4</a></td><td>Alguma pessoa notou que parava de respirar durante o sono?</td><td/><td>Has anyone noticed that you quit breathing during your sleep?</td><td/></tr><tr><td><a href=\"https://loinc.org/64492-2/\">64492-2</a></td><td>Com que frequência se sente cansado ou fatigado depois de uma noite de sono?</td><td/><td>How often do you feel tired or fatigued after your sleep?</td><td/></tr><tr><td><a href=\"https://loinc.org/64493-0/\">64493-0</a></td><td>Durante o dia, sente-se cansado, fatigado ou sem capacidade para o enfrentar?</td><td/><td>During your waking time, do you feel tired, fatigued, or not up to par?</td><td/></tr><tr><td><a href=\"https://loinc.org/64494-8/\">64494-8</a></td><td>Alguma vez &quot;passou pelas brasas&quot; ou adormeceu enquanto guiava?</td><td/><td>Have you ever nodded off or fallen asleep while driving a vehicle?</td><td/></tr><tr><td><a href=\"https://loinc.org/64495-5/\">64495-5</a></td><td>Com que frequência é que isso ocorre?</td><td/><td>How often does this occur?</td><td/></tr><tr><td><a href=\"https://loinc.org/64496-3/\">64496-3</a></td><td>Tem tensão arterial alta?</td><td/><td>Do you have high blood pressure?</td><td/></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-berlin-questionnaire-observation-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.181"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPEBerlinQuestionnaireObservationVS",
+  "title" : "CPE - Berlin QuestionnaireObservation",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores BerlinQuestionnaireObservation (CPE v2.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "8302-2",
+        "display" : "Medida da altura corporal",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Body height"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Altura"
+        }]
+      },
+      {
+        "code" : "29463-7",
+        "display" : "Peso corporal",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Body weight"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Peso"
+        }]
+      },
+      {
+        "code" : "30525-0",
+        "display" : "Idade",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Age"
+        }]
+      },
+      {
+        "code" : "46098-0",
+        "display" : "Sexo",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Sex"
+        }]
+      },
+      {
+        "code" : "64487-2",
+        "display" : "Ressona?",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Do you snore?"
+        }]
+      },
+      {
+        "code" : "64488-0",
+        "display" : "O seu ressonar é:",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Your snoring is:"
+        }]
+      },
+      {
+        "code" : "64489-8",
+        "display" : "Com que frequência ressona?",
+        "designation" : [{
+          "language" : "en",
+          "value" : "How often do you snore?"
+        }]
+      },
+      {
+        "code" : "64490-6",
+        "display" : "O seu ressonar alguma vez incomodou outras pessoas?",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Has your snoring ever bothered other people?"
+        }]
+      },
+      {
+        "code" : "64491-4",
+        "display" : "Alguma pessoa notou que parava de respirar durante o sono?",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Has anyone noticed that you quit breathing during your sleep?"
+        }]
+      },
+      {
+        "code" : "64492-2",
+        "display" : "Com que frequência se sente cansado ou fatigado depois de uma noite de sono?",
+        "designation" : [{
+          "language" : "en",
+          "value" : "How often do you feel tired or fatigued after your sleep?"
+        }]
+      },
+      {
+        "code" : "64493-0",
+        "display" : "Durante o dia, sente-se cansado, fatigado ou sem capacidade para o enfrentar?",
+        "designation" : [{
+          "language" : "en",
+          "value" : "During your waking time, do you feel tired, fatigued, or not up to par?"
+        }]
+      },
+      {
+        "code" : "64494-8",
+        "display" : "Alguma vez \"passou pelas brasas\" ou adormeceu enquanto guiava?",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Have you ever nodded off or fallen asleep while driving a vehicle?"
+        }]
+      },
+      {
+        "code" : "64495-5",
+        "display" : "Com que frequência é que isso ocorre?",
+        "designation" : [{
+          "language" : "en",
+          "value" : "How often does this occur?"
+        }]
+      },
+      {
+        "code" : "64496-3",
+        "display" : "Tem tensão arterial alta?",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Do you have high blood pressure?"
+        }]
+      }]
+    }]
+  }
+}

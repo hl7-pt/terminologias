@@ -1,0 +1,3473 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpal-specimen-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpal-specimen-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpal-specimen-vs</b></p><a name=\"cpal-specimen-vs\"> </a><a name=\"hccpal-specimen-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/258500001\">258500001</a></td><td>Zaragatoa nasofaríngea</td><td>Nasopharyngeal swab (specimen)</td><td>-</td><td>Nasopharyngeal swab (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/461911000124106\">461911000124106</a></td><td>Zaragatoa orofaríngea</td><td>Swab specimen from oropharynx (specimen)</td><td>-</td><td>Swab specimen from oropharynx (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/472881004\">472881004</a></td><td>Zaragatoa faríngea</td><td>Swab from pharynx (specimen)</td><td>-</td><td>Swab from pharynx (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/472901003\">472901003</a></td><td>Zaragatoa seio nasal</td><td>Swab from nasal sinus (specimen)</td><td>-</td><td>Swab from nasal sinus (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119342007\">119342007</a></td><td>Amostra saliva</td><td>Saliva specimen (specimen)</td><td>-</td><td>Saliva specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119297000\">119297000</a></td><td>Amostra sangue</td><td>Blood specimen (specimen)</td><td>-</td><td>Blood specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119361006\">119361006</a></td><td>Amostra plasma</td><td>Plasma specimen (specimen)</td><td>-</td><td>Plasma specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119364003\">119364003</a></td><td>Amostra soro</td><td>Serum specimen (specimen)</td><td>-</td><td>Serum specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/122592007\">122592007</a></td><td>Amostra soro ou plasma</td><td>Acellular blood (serum or plasma) specimen (specimen)</td><td>-</td><td>Acellular blood (serum or plasma) specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/122580007\">122580007</a></td><td>Amostra cerumen</td><td>Cerumen specimen (specimen)</td><td>-</td><td>Cerumen specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/122573005\">122573005</a></td><td>Amostra conteúdo gástrico</td><td>Gastric contents specimen (specimen)</td><td>-</td><td>Gastric contents specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/309502007\">309502007</a></td><td>Amostra feto</td><td>Fetus specimen (specimen)</td><td>-</td><td>Fetus specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119345009\">119345009</a></td><td>Amostra sangue menstrual</td><td>Menstrual blood specimen (specimen)</td><td>-</td><td>Menstrual blood specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/432825001\">432825001</a></td><td>Amostra secreção corporal</td><td>Body secretion specimen (specimen)</td><td>-</td><td>Body secretion specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/122569007\">122569007</a></td><td>Amostra de suor</td><td>Sweat specimen (specimen)</td><td>-</td><td>Sweat specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119376003\">119376003</a></td><td>Amostra tecido</td><td>Tissue specimen (specimen)</td><td>-</td><td>Tissue specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/445447003\">445447003</a></td><td>Amostra obtida por aspiração da traqueia</td><td>Specimen from trachea obtained by aspiration (specimen)</td><td>-</td><td>Specimen from trachea obtained by aspiration (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/441903006\">441903006</a></td><td>Amostra obtida por aspiração brônquica</td><td>Specimen obtained by bronchial aspiration (specimen)</td><td>-</td><td>Specimen obtained by bronchial aspiration (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119360007\">119360007</a></td><td>Amostra líquido diálise</td><td>Dialysis fluid specimen (specimen)</td><td>-</td><td>Dialysis fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/472898004\">472898004</a></td><td>Exsudado mão</td><td>Swab from hand (specimen)</td><td>-</td><td>Swab from hand (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/16223971000119109\">16223971000119109</a></td><td>Amostra de líquido sinovial obtida por aspiração com agulha fina</td><td>Synovial fluid specimen obtained by fine needle aspiration procedure (specimen)</td><td>-</td><td>Synovial fluid specimen obtained by fine needle aspiration procedure (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/127476006\">127476006</a></td><td>Amostra da trompa de falópio</td><td>Specimen from fallopian tube (specimen)</td><td>-</td><td>Specimen from fallopian tube (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119307008\">119307008</a></td><td>Amostra endotraqueal</td><td>Specimen from endotracheal tube (specimen)</td><td>-</td><td>Specimen from endotracheal tube (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/122566000\">122566000</a></td><td>Amostra de fluido da ferida</td><td>Fluid specimen from wound (specimen)</td><td>-</td><td>Fluid specimen from wound (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/302795002\">302795002</a></td><td>Aspirado de gânglio linfático</td><td>Lymph node aspirate (specimen)</td><td>-</td><td>Lymph node aspirate (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/16215771000119101\">16215771000119101</a></td><td>Amostra de gânglio linfático inguinal obtida por aspiração com agulha fina</td><td>Specimen from inguinal lymph node obtained by fine needle aspiration biopsy (specimen)</td><td>-</td><td>Specimen from inguinal lymph node obtained by fine needle aspiration biopsy (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/396997002\">396997002</a></td><td>Amostra da medula óssea obtida por aspiração</td><td>Specimen from bone marrow obtained by aspiration (specimen)</td><td>-</td><td>Specimen from bone marrow obtained by aspiration (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/168137004\">168137004</a></td><td>Aspirado gástrico</td><td>Gastric aspirate sample (specimen)</td><td>-</td><td>Gastric aspirate sample (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/16224171000119108\">16224171000119108</a></td><td>Aspirado nasotranqueal</td><td>Nasotracheal aspirate (specimen)</td><td>-</td><td>Nasotracheal aspirate (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/309174004\">309174004</a></td><td>Amostra biópsia brônquica</td><td>Bronchial biopsy sample (specimen)</td><td>-</td><td>Bronchial biopsy sample (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/309191000\">309191000</a></td><td>Amostra biópsia da amíglada palatina</td><td>Tonsil biopsy sample (specimen)</td><td>-</td><td>Tonsil biopsy sample (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/369611008\">369611008</a></td><td>Amostra de tecido do intestino delgado obtida por biópsia</td><td>Tissue specimen obtained from small intestine by biopsy (specimen)</td><td>-</td><td>Tissue specimen obtained from small intestine by biopsy (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/309079007\">309079007</a></td><td>Amostra biópsia ganglionar</td><td>Lymph node biopsy sample (specimen)</td><td>-</td><td>Lymph node biopsy sample (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/309172000\">309172000</a></td><td>Amostra biópsia pleural</td><td>Pleura biopsy sample (specimen)</td><td>-</td><td>Pleura biopsy sample (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/122610009\">122610009</a></td><td>Amostra biópsia pulmonar</td><td>Specimen from lung obtained by biopsy (specimen)</td><td>-</td><td>Specimen from lung obtained by biopsy (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/122556008\">122556008</a></td><td>Amostra sangue do cordão umbilical</td><td>Cord blood specimen (specimen)</td><td>-</td><td>Cord blood specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119325001\">119325001</a></td><td>Amostra pele (tecido)</td><td>Skin (tissue) specimen (specimen)</td><td>-</td><td>Skin (tissue) specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119347001\">119347001</a></td><td>Amostra líquido seminal</td><td>Seminal fluid specimen (specimen)</td><td>-</td><td>Seminal fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119334006\">119334006</a></td><td>Amostra expetoração</td><td>Sputum specimen (specimen)</td><td>-</td><td>Sputum specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258528007\">258528007</a></td><td>Exsudado rectal</td><td>Rectal swab (specimen)</td><td>-</td><td>Rectal swab (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/708317005\">708317005</a></td><td>Amostra combinada de exsudado rectal e vaginal</td><td>Pooled specimen from vaginal introitus and rectal swab (specimen)</td><td>-</td><td>Pooled specimen from vaginal introitus and rectal swab (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/309166000\">309166000</a></td><td>Exsudado auricular</td><td>Ear swab sample (specimen)</td><td>-</td><td>Ear swab sample (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258519006\">258519006</a></td><td>Exsudado genital (feminino)</td><td>Female genital swab (specimen)</td><td>-</td><td>Female genital swab (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258498002\">258498002</a></td><td>Exsudado conjuntival</td><td>Conjunctival swab (specimen)</td><td>-</td><td>Conjunctival swab (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/16210971000119108\">16210971000119108</a></td><td>Exsudado de lesão</td><td>Swab from lesion (specimen)</td><td>-</td><td>Swab from lesion (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/472862007\">472862007</a></td><td>Exsudado de lesão cutânea</td><td>Swab from lesion of skin (specimen)</td><td>-</td><td>Swab from lesion of skin (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/444787003\">444787003</a></td><td>Exsudado endocervical</td><td>Swab of endocervix (specimen)</td><td>-</td><td>Swab of endocervix (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258488008\">258488008</a></td><td>Exsudado ganglionar</td><td>Lymph node smear (specimen)</td><td>-</td><td>Lymph node smear (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258530009\">258530009</a></td><td>Exsudado uretral</td><td>Urethral swab (specimen)</td><td>-</td><td>Urethral swab (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258520000\">258520000</a></td><td>Exsudado vaginal</td><td>Vaginal swab (specimen)</td><td>-</td><td>Vaginal swab (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258523003\">258523003</a></td><td>Exsudado vulvar</td><td>Vulval swab (specimen)</td><td>-</td><td>Vulval swab (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119365002\">119365002</a></td><td>Amostra da ferida</td><td>Specimen from wound (specimen)</td><td>-</td><td>Specimen from wound (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119339001\">119339001</a></td><td>Amostra fezes</td><td>Stool specimen (specimen)</td><td>-</td><td>Stool specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/309199003\">309199003</a></td><td>Amostra fluido gastrointestinal</td><td>Gastrointestinal fluid sample (specimen)</td><td>-</td><td>Gastrointestinal fluid sample (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/418564007\">418564007</a></td><td>Amostra fluido pleural</td><td>Pleural fluid specimen (specimen)</td><td>-</td><td>Pleural fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258444001\">258444001</a></td><td>Amostra humor aquoso</td><td>Aqueous humor sample (specimen)</td><td>-</td><td>Aqueous humor sample (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258438000\">258438000</a></td><td>Amostra humor vitreo</td><td>Vitreous humor sample (specimen)</td><td>-</td><td>Vitreous humor sample (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258607008\">258607008</a></td><td>Amostra lavado bronco-alveolar</td><td>Bronchoalveolar lavage fluid sample (specimen)</td><td>LBA</td><td>Bronchoalveolar lavage fluid sample (specimen)</td><td>LBA</td></tr><tr><td><a href=\"http://snomed.info/id/430248009\">430248009</a></td><td>Amostra nasofaríngea</td><td>Specimen from nasopharyngeal structure (specimen)</td><td>-</td><td>Specimen from nasopharyngeal structure (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/309068002\">309068002</a></td><td>Amostra lesão cutânea</td><td>Skin lesion sample (specimen)</td><td>-</td><td>Skin lesion sample (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119401005\">119401005</a></td><td>Amostra da conjuntiva</td><td>Specimen from conjunctiva (specimen)</td><td>-</td><td>Specimen from conjunctiva (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119373006\">119373006</a></td><td>Amostra líquido amniótico</td><td>Amniotic fluid specimen (specimen)</td><td>-</td><td>Amniotic fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/431361003\">431361003</a></td><td>Amostra líquido articular</td><td>Joint fluid specimen (specimen)</td><td>-</td><td>Joint fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/309201001\">309201001</a></td><td>Amostra líquido ascítico</td><td>Ascitic fluid sample (specimen)</td><td>-</td><td>Ascitic fluid sample (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258450006\">258450006</a></td><td>Amostra líquido cefalorraquidiano</td><td>Cerebrospinal fluid sample (specimen)</td><td>LCR</td><td>Cerebrospinal fluid sample (specimen)</td><td>LCR</td></tr><tr><td><a href=\"http://snomed.info/id/122571007\">122571007</a></td><td>Amostra líquido pericárdico</td><td>Pericardial fluid specimen (specimen)</td><td>-</td><td>Pericardial fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258453008\">258453008</a></td><td>Amostra líquido quístico</td><td>Cyst fluid sample (specimen)</td><td>-</td><td>Cyst fluid sample (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119332005\">119332005</a></td><td>Amostra líquido sinovial</td><td>Synovial fluid specimen (specimen)</td><td>-</td><td>Synovial fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/430236006\">430236006</a></td><td>Amostra nervo</td><td>Specimen from nerve (specimen)</td><td>-</td><td>Specimen from nerve (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/608969007\">608969007</a></td><td>Amostra pele</td><td>Specimen from skin (specimen)</td><td>-</td><td>Specimen from skin (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119403008\">119403008</a></td><td>Amostra placenta</td><td>Specimen from placenta (specimen)</td><td>-</td><td>Specimen from placenta (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119323008\">119323008</a></td><td>Amostra pus</td><td>Pus specimen (specimen)</td><td>-</td><td>Pus specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/446131002\">446131002</a></td><td>Amostra sangue obtida para hemocultura</td><td>Blood specimen obtained for blood culture (specimen)</td><td>-</td><td>Blood specimen obtained for blood culture (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119359002\">119359002</a></td><td>Amostra de medula óssea</td><td>Bone marrow specimen (specimen)</td><td>-</td><td>Bone marrow specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/122551003\">122551003</a></td><td>Amostra sangue periférico</td><td>Peripheral blood specimen (specimen)</td><td>-</td><td>Peripheral blood specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258580003\">258580003</a></td><td>Amostra sangue total</td><td>Whole blood sample (specimen)</td><td>-</td><td>Whole blood sample (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/16221811000119106\">16221811000119106</a></td><td>Amostra obtida por broncoscopia</td><td>Specimen obtained by bronchoscopy (specimen)</td><td>-</td><td>Specimen obtained by bronchoscopy (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/122574004\">122574004</a></td><td>Amostra fluido duodenal</td><td>Duodenal fluid specimen (specimen)</td><td>-</td><td>Duodenal fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258467004\">258467004</a></td><td>Lavagens nasofaríngeas</td><td>Nasopharyngeal washings (specimen)</td><td>-</td><td>Nasopharyngeal washings (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258436001\">258436001</a></td><td>Amostra tecido do cordão umbilical</td><td>Umbilical cord tissue sample (specimen)</td><td>-</td><td>Umbilical cord tissue sample (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/399542003\">399542003</a></td><td>Amostra tecido do sistema nervoso central</td><td>Tissue specimen from central nervous system (specimen)</td><td>-</td><td>Tissue specimen from central nervous system (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/122736005\">122736005</a></td><td>Amostra tecido placentário</td><td>Tissue specimen from placenta (specimen)</td><td>-</td><td>Tissue specimen from placenta (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/122656001\">122656001</a></td><td>Amostra de tecido da vesícula biliar</td><td>Tissue specimen from gallbladder (specimen)</td><td>-</td><td>Tissue specimen from gallbladder (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/122575003\">122575003</a></td><td>Amostra urina</td><td>Urine specimen (specimen)</td><td>-</td><td>Urine specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/122572000\">122572000</a></td><td>Amostra vómito</td><td>Vomitus specimen (specimen)</td><td>-</td><td>Vomitus specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/257261003\">257261003</a></td><td>Zaragatoa</td><td>Swab (specimen)</td><td>-</td><td>Swab (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119327009\">119327009</a></td><td>Unha</td><td>Nail specimen (specimen)</td><td>-</td><td>Nail specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/119326000\">119326000</a></td><td>Cabelo</td><td>Hair specimen (specimen)</td><td>-</td><td>Hair specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/1259931002\">1259931002</a></td><td>Pêlos faciais</td><td>Hair of face specimen (specimen)</td><td>-</td><td>Hair of face specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/410580001\">410580001</a></td><td>Amostra de fluido respiratório</td><td>Respiratory fluid specimen (specimen)</td><td>-</td><td>Respiratory fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258502009\">258502009</a></td><td>Exsudado purulento</td><td>Pus swab (specimen)</td><td>-</td><td>Pus swab (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258485006\">258485006</a></td><td>Raspado da córnea</td><td>Corneal scraping specimen (specimen)</td><td>-</td><td>Corneal scraping specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258603007\">258603007</a></td><td>Amostra respiratória</td><td>Respiratory specimen (specimen)</td><td>-</td><td>Respiratory specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/258446004\">258446004</a></td><td>Fluido brônquico</td><td>Bronchial fluid specimen (specimen)</td><td>-</td><td>Bronchial fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/309507001\">309507001</a></td><td>Biópsia muscular</td><td>Muscle biopsy specimen (specimen)</td><td>-</td><td>Muscle biopsy specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/168145009\">168145009</a></td><td>Amostra linfa</td><td>Lymph specimen (specimen)</td><td>-</td><td>Lymph specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/309211008\">309211008</a></td><td>Amostra biópsia gástrica</td><td>Gastric biopsy specimen (specimen)</td><td>-</td><td>Gastric biopsy specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/472868006\">472868006</a></td><td>Exsudado da estrutura da cavidade peritoneal</td><td>Swab from peritoneal cavity structure (specimen)</td><td>-</td><td>Swab from peritoneal cavity structure (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/732227008\">732227008</a></td><td>Amostra de fezes 24h</td><td>Twenty four hour stool specimen (specimen)</td><td>-</td><td>Twenty four hour stool specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/732222002\">732222002</a></td><td>Amostra de urina 72h</td><td>Seventy two hour urine specimen (specimen)</td><td>-</td><td>Seventy two hour urine specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/732220005\">732220005</a></td><td>Amostra de urina 48h</td><td>Forty eight hour urine specimen (specimen)</td><td>-</td><td>Forty eight hour urine specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/732217002\">732217002</a></td><td>Amostra de urina 8h</td><td>Eight hour urine specimen (specimen)</td><td>-</td><td>Eight hour urine specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/732211001\">732211001</a></td><td>Amostra de urina 12h</td><td>Twelve hour urine specimen (specimen)</td><td>-</td><td>Twelve hour urine specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/442043001\">442043001</a></td><td>Amostra de urina 2h</td><td>2 hour urine specimen (specimen)</td><td>-</td><td>2 hour urine specimen (specimen)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/276833005\">276833005</a></td><td>Amostra de urina 24h</td><td>24 hour urine specimen (specimen)</td><td>-</td><td>24 hour urine specimen (specimen)</td><td>-</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-specimen-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.15" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPALSpecimenVS"] ; # 
+  fhir:title [ fhir:v "CPAL - Specimen"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2023-09-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores Specimen (CPAL v7.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "258500001" ] ;
+         fhir:display [ fhir:v "Zaragatoa nasofaríngea" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nasopharyngeal swab" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nasopharyngeal swab (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Exsudado nasofaríngeo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "461911000124106" ] ;
+         fhir:display [ fhir:v "Zaragatoa orofaríngea" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Oropharyngeal swab" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Swab specimen from oropharynx (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Exsudado orofaríngeo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "472881004" ] ;
+         fhir:display [ fhir:v "Zaragatoa faríngea" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pharyngeal swab" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Swab from pharynx (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Exsudado faríngeo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "472901003" ] ;
+         fhir:display [ fhir:v "Zaragatoa seio nasal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Swab from nasal sinus" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Swab from nasal sinus (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Exsudado nasal" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119342007" ] ;
+         fhir:display [ fhir:v "Amostra saliva" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Saliva specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Saliva specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Saliva" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119297000" ] ;
+         fhir:display [ fhir:v "Amostra sangue" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Blood specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Blood specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Sangue" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119361006" ] ;
+         fhir:display [ fhir:v "Amostra plasma" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Plasma specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Plasma specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Plasma" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119364003" ] ;
+         fhir:display [ fhir:v "Amostra soro" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Serum specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Serum specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Soro" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "122592007" ] ;
+         fhir:display [ fhir:v "Amostra soro ou plasma" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Acellular blood (serum or plasma) specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Acellular blood (serum or plasma) specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Soro ou plasma" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "122580007" ] ;
+         fhir:display [ fhir:v "Amostra cerumen" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cerumen specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Cerumen specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cerumen" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "122573005" ] ;
+         fhir:display [ fhir:v "Amostra conteúdo gástrico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gastric contents specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Gastric contents specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Conteúdo Gástrico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "309502007" ] ;
+         fhir:display [ fhir:v "Amostra feto" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Fetus specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Fetus specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Feto" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119345009" ] ;
+         fhir:display [ fhir:v "Amostra sangue menstrual" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Menstrual blood specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Menstrual blood specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Menstruação" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "432825001" ] ;
+         fhir:display [ fhir:v "Amostra secreção corporal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Body secretion specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Body secretion specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Secreção" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "122569007" ] ;
+         fhir:display [ fhir:v "Amostra de suor" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sweat specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Sweat specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suor" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119376003" ] ;
+         fhir:display [ fhir:v "Amostra tecido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Tissue specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Tissue specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Tecido" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "445447003" ] ;
+         fhir:display [ fhir:v "Amostra obtida por aspiração da traqueia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Specimen from trachea obtained by aspiration" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Specimen from trachea obtained by aspiration (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Aspirado traqueal" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "441903006" ] ;
+         fhir:display [ fhir:v "Amostra obtida por aspiração brônquica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Specimen obtained by bronchial aspiration" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Specimen obtained by bronchial aspiration (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Aspirado brônquico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119360007" ] ;
+         fhir:display [ fhir:v "Amostra líquido diálise" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Dialysis fluid specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Dialysis fluid specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Líquido diálise" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "472898004" ] ;
+         fhir:display [ fhir:v "Exsudado mão" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Swab from hand" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Swab from hand (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Mão" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "16223971000119109" ] ;
+         fhir:display [ fhir:v "Amostra de líquido sinovial obtida por aspiração com agulha fina" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Synovial fluid specimen obtained by fine needle aspiration procedure" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Synovial fluid specimen obtained by fine needle aspiration procedure (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Aspirado articular" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "127476006" ] ;
+         fhir:display [ fhir:v "Amostra da trompa de falópio" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Specimen from fallopian tube" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Specimen from fallopian tube (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Aspirado tubário" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119307008" ] ;
+         fhir:display [ fhir:v "Amostra endotraqueal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Specimen from endotracheal tube" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Specimen from endotracheal tube (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Aspirado das secreções endotraqueais" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "122566000" ] ;
+         fhir:display [ fhir:v "Amostra de fluido da ferida" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Fluid specimen from wound" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Fluid specimen from wound (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Aspirado de ferida" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "302795002" ] ;
+         fhir:display [ fhir:v "Aspirado de gânglio linfático" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Lymph node aspirate" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Lymph node aspirate (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "16215771000119101" ] ;
+         fhir:display [ fhir:v "Amostra de gânglio linfático inguinal obtida por aspiração com agulha fina" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Specimen from inguinal lymph node obtained by fine needle aspiration biopsy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Specimen from inguinal lymph node obtained by fine needle aspiration biopsy (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Aspirado de gânglio linfático inguinal" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "396997002" ] ;
+         fhir:display [ fhir:v "Amostra da medula óssea obtida por aspiração" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Specimen from bone marrow obtained by aspiration" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Specimen from bone marrow obtained by aspiration (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Aspirado de medula óssea" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "168137004" ] ;
+         fhir:display [ fhir:v "Aspirado gástrico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gastric aspirate sample" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Gastric aspirate sample (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "16224171000119108" ] ;
+         fhir:display [ fhir:v "Aspirado nasotranqueal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nasotracheal aspirate" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nasotracheal aspirate (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Aspirado nasal" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "309174004" ] ;
+         fhir:display [ fhir:v "Amostra biópsia brônquica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bronchial biopsy sample" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Bronchial biopsy sample (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Biópsia brônquica" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "309191000" ] ;
+         fhir:display [ fhir:v "Amostra biópsia da amíglada palatina" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Tonsil biopsy sample" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Tonsil biopsy sample (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Biópsia da amíglada palatina" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "369611008" ] ;
+         fhir:display [ fhir:v "Amostra de tecido do intestino delgado obtida por biópsia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Tissue specimen obtained from small intestine by biopsy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Tissue specimen obtained from small intestine by biopsy (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Biópsia do intestino delgado" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "309079007" ] ;
+         fhir:display [ fhir:v "Amostra biópsia ganglionar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Lymph node biopsy sample" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Lymph node biopsy sample (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Biópsia ganglionar" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "309172000" ] ;
+         fhir:display [ fhir:v "Amostra biópsia pleural" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pleura biopsy sample" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Pleura biopsy sample (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Biópsia pleural" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "122610009" ] ;
+         fhir:display [ fhir:v "Amostra biópsia pulmonar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Specimen from lung obtained by biopsy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Specimen from lung obtained by biopsy (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Biópsia pulmonar" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "122556008" ] ;
+         fhir:display [ fhir:v "Amostra sangue do cordão umbilical" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cord blood specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Cord blood specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Células do cordão umbilical" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119325001" ] ;
+         fhir:display [ fhir:v "Amostra pele (tecido)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Skin (tissue) specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Skin (tissue) specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119347001" ] ;
+         fhir:display [ fhir:v "Amostra líquido seminal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Seminal fluid specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Seminal fluid specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119334006" ] ;
+         fhir:display [ fhir:v "Amostra expetoração" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sputum specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Sputum specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Expetoração" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258528007" ] ;
+         fhir:display [ fhir:v "Exsudado rectal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Rectal swab" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Rectal swab (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Exsudado anorrectal" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708317005" ] ;
+         fhir:display [ fhir:v "Amostra combinada de exsudado rectal e vaginal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pooled specimen from vaginal introitus and rectal swab" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Pooled specimen from vaginal introitus and rectal swab (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Exsudado anorrectal de lesão anogenital" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "309166000" ] ;
+         fhir:display [ fhir:v "Exsudado auricular" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Ear swab sample" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Ear swab sample (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258519006" ] ;
+         fhir:display [ fhir:v "Exsudado genital (feminino)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Female genital swab" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Female genital swab (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Exsudado cervico-vaginal" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258498002" ] ;
+         fhir:display [ fhir:v "Exsudado conjuntival" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Conjunctival swab" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Conjunctival swab (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "16210971000119108" ] ;
+         fhir:display [ fhir:v "Exsudado de lesão" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Swab from lesion" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Swab from lesion (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "472862007" ] ;
+         fhir:display [ fhir:v "Exsudado de lesão cutânea" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Swab from lesion of skin" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Swab from lesion of skin (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "444787003" ] ;
+         fhir:display [ fhir:v "Exsudado endocervical" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Swab of endocervix" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Swab of endocervix (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258488008" ] ;
+         fhir:display [ fhir:v "Exsudado ganglionar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Lymph node smear" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Lymph node smear (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258530009" ] ;
+         fhir:display [ fhir:v "Exsudado uretral" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Urethral swab" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Urethral swab (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258520000" ] ;
+         fhir:display [ fhir:v "Exsudado vaginal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Vaginal swab" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Vaginal swab (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258523003" ] ;
+         fhir:display [ fhir:v "Exsudado vulvar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Vulval swab" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Vulval swab (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119365002" ] ;
+         fhir:display [ fhir:v "Amostra da ferida" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Specimen from wound" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Specimen from wound (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Ferida" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119339001" ] ;
+         fhir:display [ fhir:v "Amostra fezes" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Stool specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Stool specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Fezes" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "309199003" ] ;
+         fhir:display [ fhir:v "Amostra fluido gastrointestinal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gastrointestinal fluid sample" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Gastrointestinal fluid sample (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Fluido Intestinal" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "418564007" ] ;
+         fhir:display [ fhir:v "Amostra fluido pleural" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pleural fluid specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Pleural fluid specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Fluido pleural" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258444001" ] ;
+         fhir:display [ fhir:v "Amostra humor aquoso" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Aqueous humor sample" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Aqueous humor sample (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Humor aquoso" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258438000" ] ;
+         fhir:display [ fhir:v "Amostra humor vitreo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Vitreous humor sample" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Vitreous humor sample (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Humor vitreo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258607008" ] ;
+         fhir:display [ fhir:v "Amostra lavado bronco-alveolar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bronchoalveolar lavage fluid sample" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Bronchoalveolar lavage fluid sample (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Lavado bronco-alveolar" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "LBA" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "430248009" ] ;
+         fhir:display [ fhir:v "Amostra nasofaríngea" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Specimen from nasopharyngeal structure" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Specimen from nasopharyngeal structure (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Lavados ou aspirados da nasofaringe" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "309068002" ] ;
+         fhir:display [ fhir:v "Amostra lesão cutânea" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Skin lesion sample" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Skin lesion sample (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Lesão cutânea" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119401005" ] ;
+         fhir:display [ fhir:v "Amostra da conjuntiva" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Specimen from conjunctiva" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Specimen from conjunctiva (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Lesão da conjuntiva" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119373006" ] ;
+         fhir:display [ fhir:v "Amostra líquido amniótico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Amniotic fluid specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Amniotic fluid specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Líquido amniótico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "431361003" ] ;
+         fhir:display [ fhir:v "Amostra líquido articular" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Joint fluid specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Joint fluid specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Líquido articular" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "309201001" ] ;
+         fhir:display [ fhir:v "Amostra líquido ascítico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Ascitic fluid sample" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Ascitic fluid sample (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Líquido ascítico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258450006" ] ;
+         fhir:display [ fhir:v "Amostra líquido cefalorraquidiano" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cerebrospinal fluid sample" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Cerebrospinal fluid sample (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Liquor" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "LCR" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "122571007" ] ;
+         fhir:display [ fhir:v "Amostra líquido pericárdico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pericardial fluid specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Pericardial fluid specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Líquido pericárdico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258453008" ] ;
+         fhir:display [ fhir:v "Amostra líquido quístico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cyst fluid sample" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Cyst fluid sample (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Líquido quístico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119332005" ] ;
+         fhir:display [ fhir:v "Amostra líquido sinovial" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Synovial fluid specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Synovial fluid specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Líquido sinovial" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "430236006" ] ;
+         fhir:display [ fhir:v "Amostra nervo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Specimen from nerve" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Specimen from nerve (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Nervo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "608969007" ] ;
+         fhir:display [ fhir:v "Amostra pele" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Specimen from skin" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Specimen from skin (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Pele" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119403008" ] ;
+         fhir:display [ fhir:v "Amostra placenta" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Specimen from placenta" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Specimen from placenta (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Placenta" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119323008" ] ;
+         fhir:display [ fhir:v "Amostra pus" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pus specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Pus specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Pus" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "446131002" ] ;
+         fhir:display [ fhir:v "Amostra sangue obtida para hemocultura" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Blood specimen obtained for blood culture" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Blood specimen obtained for blood culture (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Sangue (hemocultura)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119359002" ] ;
+         fhir:display [ fhir:v "Amostra de medula óssea" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bone marrow specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Bone marrow specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Medula óssea" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "122551003" ] ;
+         fhir:display [ fhir:v "Amostra sangue periférico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Peripheral blood specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Peripheral blood specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Sangue periférico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258580003" ] ;
+         fhir:display [ fhir:v "Amostra sangue total" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Whole blood sample" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Whole blood sample (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Sangue total" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "16221811000119106" ] ;
+         fhir:display [ fhir:v "Amostra obtida por broncoscopia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Specimen obtained by bronchoscopy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Specimen obtained by bronchoscopy (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Secreções brônquicas" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "122574004" ] ;
+         fhir:display [ fhir:v "Amostra fluido duodenal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Duodenal fluid specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Duodenal fluid specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Secreções do duodeno" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258467004" ] ;
+         fhir:display [ fhir:v "Lavagens nasofaríngeas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nasopharyngeal washings" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nasopharyngeal washings (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Secreções naso-faríngeas" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258436001" ] ;
+         fhir:display [ fhir:v "Amostra tecido do cordão umbilical" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Umbilical cord tissue sample" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Umbilical cord tissue sample (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Tecido do cordão umbilical" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "399542003" ] ;
+         fhir:display [ fhir:v "Amostra tecido do sistema nervoso central" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Tissue specimen from central nervous system" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Tissue specimen from central nervous system (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Tecido do sistema nervoso central" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "122736005" ] ;
+         fhir:display [ fhir:v "Amostra tecido placentário" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Tissue specimen from placenta" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Tissue specimen from placenta (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Tecido placentário" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "122656001" ] ;
+         fhir:display [ fhir:v "Amostra de tecido da vesícula biliar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Tissue specimen from gallbladder" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Tissue specimen from gallbladder (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Tecidoda vesícula biliar" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "122575003" ] ;
+         fhir:display [ fhir:v "Amostra urina" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Urine specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Urine specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Urina" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "122572000" ] ;
+         fhir:display [ fhir:v "Amostra vómito" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Vomitus specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Vomitus specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Vómito" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "257261003" ] ;
+         fhir:display [ fhir:v "Zaragatoa" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Swab" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Swab (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119327009" ] ;
+         fhir:display [ fhir:v "Unha" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nail specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nail specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Amostra de unha" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "119326000" ] ;
+         fhir:display [ fhir:v "Cabelo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Hair specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Hair specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Amostra de cabelo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1259931002" ] ;
+         fhir:display [ fhir:v "Pêlos faciais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Hair of face specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Hair of face specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cabelo da face" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "410580001" ] ;
+         fhir:display [ fhir:v "Amostra de fluido respiratório" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Respiratory fluid specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Respiratory fluid specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Fluido respiratório" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258502009" ] ;
+         fhir:display [ fhir:v "Exsudado purulento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pus swab" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Pus swab (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258485006" ] ;
+         fhir:display [ fhir:v "Raspado da córnea" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Corneal scraping specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Corneal scraping specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258603007" ] ;
+         fhir:display [ fhir:v "Amostra respiratória" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Respiratory specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Respiratory specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "258446004" ] ;
+         fhir:display [ fhir:v "Fluido brônquico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bronchial fluid specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Bronchial fluid specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Escovado brônquico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "309507001" ] ;
+         fhir:display [ fhir:v "Biópsia muscular" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Muscle biopsy specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Muscle biopsy specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "168145009" ] ;
+         fhir:display [ fhir:v "Amostra linfa" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Lymph specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Lymph specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Linfa" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "309211008" ] ;
+         fhir:display [ fhir:v "Amostra biópsia gástrica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gastric biopsy specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Gastric biopsy specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "472868006" ] ;
+         fhir:display [ fhir:v "Exsudado da estrutura da cavidade peritoneal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Swab from peritoneal cavity structure" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Swab from peritoneal cavity structure (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Exsudado da cavidade peritoneal" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "732227008" ] ;
+         fhir:display [ fhir:v "Amostra de fezes 24h" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Twenty four hour stool specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Twenty four hour stool specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Fezes 24h" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "732222002" ] ;
+         fhir:display [ fhir:v "Amostra de urina 72h" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "72 hour urine specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Seventy two hour urine specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Urina 72h" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "732220005" ] ;
+         fhir:display [ fhir:v "Amostra de urina 48h" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "48 hour urine specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Forty eight hour urine specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Urina 48h" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "732217002" ] ;
+         fhir:display [ fhir:v "Amostra de urina 8h" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "8 hour urine specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Eight hour urine specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Urina 8h" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "732211001" ] ;
+         fhir:display [ fhir:v "Amostra de urina 12h" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "12 hour urine specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Twelve hour urine specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Urina 12h" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "442043001" ] ;
+         fhir:display [ fhir:v "Amostra de urina 2h" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "2 hour urine specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "2 hour urine specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Urina 2h" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "276833005" ] ;
+         fhir:display [ fhir:v "Amostra de urina 24h" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "24 hour urine specimen" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "24 hour urine specimen (specimen)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Urina 24h" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

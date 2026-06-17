@@ -1,0 +1,225 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-biradsscale-result-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-biradsscale-result-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-biradsscale-result-vs</b></p><a name=\"cpe-biradsscale-result-vs\"> </a><a name=\"hccpe-biradsscale-result-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/397138000\">397138000</a></td><td>Avaliação mamográfica (Categoria 0) - Necessita de avaliação imagiológica adicional</td><td>Categoria 0 - Exame incompleto. Necessária avaliação por Ecografia/RM e/ou comparação com Mamografias prévias.</td><td>Mammography assessment (Category 0) - Need additional imaging evaluation (finding)</td><td>Categoria 0 - Exame incompleto. Necessária avaliação por Ecografia/RM e/ou comparação com Mamografias prévias.</td></tr><tr><td><a href=\"http://snomed.info/id/397140005\">397140005</a></td><td>Avaliação mamográfica (Categoria 1) - Negativa</td><td>Categoria 1 - Exame negativo. Vigilância periódica de rotina</td><td>Mammography assessment (Category 1) - Negative (finding)</td><td>Categoria 1 - Exame negativo. Vigilância periódica de rotina</td></tr><tr><td><a href=\"http://snomed.info/id/397141009\">397141009</a></td><td>Avaliação mamográfica (Categoria 2) - Achado benigno</td><td>Categoria 2 - Achados benignos. Vigilância periódica de rotina.</td><td>Mammography assessment (Category 2) - Benign finding (finding)</td><td>Categoria 2 - Achados benignos. Vigilância periódica de rotina.</td></tr><tr><td><a href=\"http://snomed.info/id/397143007\">397143007</a></td><td>Avaliação mamográfica (Categoria 3) - Achado provavelmente benigno, acompanhamento em intervalos curtos</td><td>Categoria 3 - Achados provavelmente benignos. Vigilância especial</td><td>Mammography assessment (Category 3) - Probably benign finding, short interval follow-up (finding)</td><td>Categoria 3 - Achados provavelmente benignos. Vigilância especial</td></tr><tr><td><a href=\"http://snomed.info/id/397144001\">397144001</a></td><td>Avaliação mamográfica (Categoria 4) - Anomalia suspeita, deve ser considerada uma biopsia</td><td>Categoria 4 - Achado suspeito. Biópsia.</td><td>Mammography assessment (Category 4) - Suspicious abnormality, biopsy should be considered (finding)</td><td>Categoria 4 - Achado suspeito. Biópsia.</td></tr><tr><td><a href=\"http://snomed.info/id/6121000179106\">6121000179106</a></td><td>Avaliação mamográfica (Categoria 4A) - Baixa suspeita de malignidade</td><td>Categoria 4A - Baixa suspeição de malignidade. Biópsia.</td><td>Mammography assessment (Category 4A) - Suspicious abnormality, biopsy should be considered, low suspicion of malignancy (finding)</td><td>Categoria 4A - Baixa suspeição de malignidade. Biópsia.</td></tr><tr><td><a href=\"http://snomed.info/id/6131000179108\">6131000179108</a></td><td>Avaliação mamográfica (Categoria 4B) - Suspeita moderada de malignidade</td><td>Categoria 4B - Moderada suspeição de malignidade. Biopsia.</td><td>Mammography assessment (Category 4B) - Suspicious abnormality, biopsy should be considered, moderate suspicion of malignancy (finding)</td><td>Categoria 4B - Moderada suspeição de malignidade. Biopsia.</td></tr><tr><td><a href=\"http://snomed.info/id/6141000179100\">6141000179100</a></td><td>Avaliação mamográfica (Categoria 4C) - Suspeita elevada de malignidade</td><td>Categoria 4C - Altamente sugestivo de malignidade. Biopsia.</td><td>Mammography assessment (Category 4C) - Suspicious abnormality, biopsy should be considered, high suspicion of malignancy (finding)</td><td>Categoria 4C - Altamente sugestivo de malignidade. Biopsia.</td></tr><tr><td><a href=\"http://snomed.info/id/397145000\">397145000</a></td><td>Avaliação mamográfica (Categoria 5) - Altamente sugestiva de malignidade</td><td>Categoria 5 - Altamente sugestivo de malignidade. Biopsia.</td><td>Mammography assessment (Category 5) - Highly suggestive of malignancy (finding)</td><td>Categoria 5 - Altamente sugestivo de malignidade. Biopsia.</td></tr><tr><td><a href=\"http://snomed.info/id/6111000179101\">6111000179101</a></td><td>Avaliação mamográfica (Categoria 6) - Biópsia conhecida, malignidade comprovada</td><td>Categoria 6 - Biopsia efectuada. Malignidade confirmada</td><td>Mammography assessment (Category 6) - known biopsy, proven malignancy (finding)</td><td>Categoria 6 - Biopsia efectuada. Malignidade confirmada</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-biradsscale-result-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.183" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPEBIRADSScaleResultVS"] ; # 
+  fhir:title [ fhir:v "CPE - BI-RADS Scale Result"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores BIRADSScaleResult (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "397138000" ] ;
+         fhir:display [ fhir:v "Avaliação mamográfica (Categoria 0) - Necessita de avaliação imagiológica adicional" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mammography assessment (Category 0) - Need additional imaging evaluation (finding)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Categoria 0 - Exame incompleto. Necessária avaliação por Ecografia/RM e/ou comparação com Mamografias prévias." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "397140005" ] ;
+         fhir:display [ fhir:v "Avaliação mamográfica (Categoria 1) - Negativa" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mammography assessment (Category 1) - Negative (finding)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Categoria 1 - Exame negativo. Vigilância periódica de rotina" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "397141009" ] ;
+         fhir:display [ fhir:v "Avaliação mamográfica (Categoria 2) - Achado benigno" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mammography assessment (Category 2) - Benign finding (finding)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Categoria 2 - Achados benignos. Vigilância periódica de rotina." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "397143007" ] ;
+         fhir:display [ fhir:v "Avaliação mamográfica (Categoria 3) - Achado provavelmente benigno, acompanhamento em intervalos curtos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mammography assessment (Category 3) - Probably benign finding, short interval follow-up (finding)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Categoria 3 - Achados provavelmente benignos. Vigilância especial" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "397144001" ] ;
+         fhir:display [ fhir:v "Avaliação mamográfica (Categoria 4) - Anomalia suspeita, deve ser considerada uma biopsia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mammography assessment (Category 4) - Suspicious abnormality, biopsy should be considered (finding)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Categoria 4 - Achado suspeito. Biópsia." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "6121000179106" ] ;
+         fhir:display [ fhir:v "Avaliação mamográfica (Categoria 4A) - Baixa suspeita de malignidade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mammography assessment (Category 4A) - Suspicious abnormality, biopsy should be considered, low suspicion of malignancy (finding)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Categoria 4A - Baixa suspeição de malignidade. Biópsia." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "6131000179108" ] ;
+         fhir:display [ fhir:v "Avaliação mamográfica (Categoria 4B) - Suspeita moderada de malignidade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mammography assessment (Category 4B) - Suspicious abnormality, biopsy should be considered, moderate suspicion of malignancy (finding)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Categoria 4B - Moderada suspeição de malignidade. Biopsia." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "6141000179100" ] ;
+         fhir:display [ fhir:v "Avaliação mamográfica (Categoria 4C) - Suspeita elevada de malignidade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mammography assessment (Category 4C) - Suspicious abnormality, biopsy should be considered, high suspicion of malignancy (finding)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Categoria 4C - Altamente sugestivo de malignidade. Biopsia." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "397145000" ] ;
+         fhir:display [ fhir:v "Avaliação mamográfica (Categoria 5) - Altamente sugestiva de malignidade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mammography assessment (Category 5) - Highly suggestive of malignancy (finding)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Categoria 5 - Altamente sugestivo de malignidade. Biopsia." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "6111000179101" ] ;
+         fhir:display [ fhir:v "Avaliação mamográfica (Categoria 6) - Biópsia conhecida, malignidade comprovada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mammography assessment (Category 6) - known biopsy, proven malignancy (finding)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Categoria 6 - Biopsia efectuada. Malignidade confirmada" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-morse-fall-scale-result-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-morse-fall-scale-result-vs</b></p><a name="cpe-morse-fall-scale-result-vs"> </a><a name="hccpe-morse-fall-scale-result-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="https://loinc.org/LA32-8/">LA32-8</a></td><td>Não</td><td/><td>No</td><td/></tr><tr><td><a href="https://loinc.org/LA33-6/">LA33-6</a></td><td>Sim</td><td/><td>Yes</td><td/></tr><tr><td><a href="https://loinc.org/LA13030-4/">LA13030-4</a></td><td>Repouso na cama/assistência de enfermagem</td><td>Nenhuma/ajuda de enfermeiro/acamado/cadeira de rodas</td><td>Bed rest/nurse assist</td><td>Nenhuma/ajuda de enfermeiro/acamado/cadeira de rodas</td></tr><tr><td><a href="https://loinc.org/LA13031-2/">LA13031-2</a></td><td>Muletas/bengala/andarilho</td><td>Muletas/canadianas/bengala/andarilho</td><td>Crutches/cane/walker</td><td>Muletas/canadianas/bengala/andarilho</td></tr><tr><td><a href="https://loinc.org/LA13032-0/">LA13032-0</a></td><td>Mobiliário</td><td>Apoia-se no mobiliário para andar</td><td>Furniture</td><td>Apoia-se no mobiliário para andar</td></tr><tr><td><a href="https://loinc.org/LA13033-8/">LA13033-8</a></td><td>Normal/em repouso/imóvel</td><td>Normal/acamado/imóvel</td><td>Normal/bedrest/immobile</td><td>Normal/acamado/imóvel</td></tr><tr><td><a href="https://loinc.org/LA13034-6/">LA13034-6</a></td><td>Fraco</td><td>Debilitado</td><td>Weak</td><td>Debilitado</td></tr><tr><td><a href="https://loinc.org/LA13035-3/">LA13035-3</a></td><td>Deficiente</td><td>Dependente de ajuda</td><td>Impaired</td><td>Dependente de ajuda</td></tr><tr><td><a href="https://loinc.org/LA13036-1/">LA13036-1</a></td><td>Orientado para a própria capacidade</td><td>Consciente das suas capacidades</td><td>Oriented to own ability</td><td>Consciente das suas capacidades</td></tr><tr><td><a href="https://loinc.org/LA13037-9/">LA13037-9</a></td><td>Esquece as limitações</td><td>Esquece-se das suas limitações</td><td>Forgets limitations</td><td>Esquece-se das suas limitações</td></tr><tr><td><a href="https://loinc.org/LA13038-7/">LA13038-7</a></td><td>Baixo risco (pontuação MFS 0 - 24)</td><td/><td>Low Risk (MFS Score 0 - 24)</td><td/></tr><tr><td><a href="https://loinc.org/LA13039-5/">LA13039-5</a></td><td>Risco moderado (pontuação MFS 25 - 45)</td><td/><td>Moderate Risk (MFS Score 25 - 45)</td><td/></tr><tr><td><a href="https://loinc.org/LA13040-3/">LA13040-3</a></td><td>Alto risco (pontuação MFS 50+)</td><td/><td>High Risk (MFS Score 50+)</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-morse-fall-scale-result-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.138"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPEMorseFallScaleResultVS"/>
+  <title value="CPE - Morse Fall Scale Result"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores MorseFallScaleResult (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA32-8"/>
+        <display value="Não"/>
+        <designation>
+          <language value="en"/>
+          <value value="No"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA33-6"/>
+        <display value="Sim"/>
+        <designation>
+          <language value="en"/>
+          <value value="Yes"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA13030-4"/>
+        <display value="Repouso na cama/assistência de enfermagem"/>
+        <designation>
+          <language value="en"/>
+          <value value="Bed rest/nurse assist"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Nenhuma/ajuda de enfermeiro/acamado/cadeira de rodas"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA13031-2"/>
+        <display value="Muletas/bengala/andarilho"/>
+        <designation>
+          <language value="en"/>
+          <value value="Crutches/cane/walker"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Muletas/canadianas/bengala/andarilho"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA13032-0"/>
+        <display value="Mobiliário"/>
+        <designation>
+          <language value="en"/>
+          <value value="Furniture"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Apoia-se no mobiliário para andar"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA13033-8"/>
+        <display value="Normal/em repouso/imóvel"/>
+        <designation>
+          <language value="en"/>
+          <value value="Normal/bedrest/immobile"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Normal/acamado/imóvel"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA13034-6"/>
+        <display value="Fraco"/>
+        <designation>
+          <language value="en"/>
+          <value value="Weak"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Debilitado"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA13035-3"/>
+        <display value="Deficiente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Impaired"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Dependente de ajuda"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA13036-1"/>
+        <display value="Orientado para a própria capacidade"/>
+        <designation>
+          <language value="en"/>
+          <value value="Oriented to own ability"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Consciente das suas capacidades"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA13037-9"/>
+        <display value="Esquece as limitações"/>
+        <designation>
+          <language value="en"/>
+          <value value="Forgets limitations"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Esquece-se das suas limitações"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA13038-7"/>
+        <display value="Baixo risco (pontuação MFS 0 - 24)"/>
+        <designation>
+          <language value="en"/>
+          <value value="Low Risk (MFS Score 0 - 24)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA13039-5"/>
+        <display value="Risco moderado (pontuação MFS 25 - 45)"/>
+        <designation>
+          <language value="en"/>
+          <value value="Moderate Risk (MFS Score 25 - 45)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA13040-3"/>
+        <display value="Alto risco (pontuação MFS 50+)"/>
+        <designation>
+          <language value="en"/>
+          <value value="High Risk (MFS Score 50+)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

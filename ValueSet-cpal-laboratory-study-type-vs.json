@@ -1,0 +1,755 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpal-laboratory-study-type-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpal-laboratory-study-type-vs</b></p><a name=\"cpal-laboratory-study-type-vs\"> </a><a name=\"hccpal-laboratory-study-type-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/18723-7/\">18723-7</a></td><td>Hematologia</td><td>-</td><td>Hematology studies (set)</td><td>-</td></tr><tr><td><a href=\"https://loinc.org/18719-5/\">18719-5</a></td><td>Bioquímica</td><td>-</td><td>Chemistry studies (set)</td><td>-</td></tr><tr><td><a href=\"https://loinc.org/93960-3/\">93960-3</a></td><td>Imunologia</td><td>-</td><td>Immunology Diagnostic study note</td><td>-</td></tr><tr><td><a href=\"https://loinc.org/18725-2/\">18725-2</a></td><td>Microbiologia</td><td>-</td><td>Microbiology studies (set)</td><td>-</td></tr><tr><td><a href=\"https://loinc.org/18717-9/\">18717-9</a></td><td>Imunohemoterapia</td><td>-</td><td>Blood bank studies (set)</td><td>-</td></tr><tr><td><a href=\"https://loinc.org/18727-8/\">18727-8</a></td><td>Serologia</td><td>-</td><td>Serology studies (set)</td><td>-</td></tr><tr><td><a href=\"https://loinc.org/26435-8/\">26435-8</a></td><td>Genética humana</td><td>Genética</td><td>Molecular pathology studies (set)</td><td>Genética</td></tr><tr><td><a href=\"https://loinc.org/18720-3/\">18720-3</a></td><td>Hemostase</td><td>-</td><td>Coagulation studies (set)</td><td>-</td></tr><tr><td><a href=\"https://loinc.org/33719-6/\">33719-6</a></td><td>Citometria de Fluxo</td><td>-</td><td>Flow cytometry study</td><td>-</td></tr><tr><td><a href=\"https://loinc.org/92893-7/\">92893-7</a></td><td>Virologia</td><td>-</td><td>Microbiology - viral studies</td><td>-</td></tr><tr><td><a href=\"https://loinc.org/18724-5/\">18724-5</a></td><td>Histocompatibilidade</td><td>-</td><td>HLA studies (set)</td><td>-</td></tr><tr><td><a href=\"https://loinc.org/92894-5/\">92894-5</a></td><td>Bacteriologia</td><td>-</td><td>Microbiology - bacterial studies</td><td>-</td></tr><tr><td><a href=\"https://loinc.org/96397-5/\">96397-5</a></td><td>Micobacteriologia</td><td>-</td><td>Microbiology - mycobacteriology studies Document</td><td>-</td></tr><tr><td><a href=\"https://loinc.org/96398-3/\">96398-3</a></td><td>Micologia</td><td>-</td><td>Microbiology - mycology studies Document</td><td>-</td></tr><tr><td><a href=\"https://loinc.org/92892-9/\">92892-9</a></td><td>Parasitologia</td><td>-</td><td>Microbiology - parasitic studies</td><td>-</td></tr><tr><td><a href=\"https://loinc.org/26438-2/\">26438-2</a></td><td>Citologia</td><td>-</td><td>Cytology studies (set)</td><td>-</td></tr><tr><td><a href=\"https://loinc.org/18728-6/\">18728-6</a></td><td>Toxicologia</td><td>-</td><td>Toxicology studies (set)</td><td>-</td></tr><tr><td><a href=\"https://loinc.org/92895-2/\">92895-2</a></td><td>Endocrinologia</td><td>-</td><td>Endocrinology studies</td><td>-</td></tr><tr><td><a href=\"https://loinc.org/18716-1/\">18716-1</a></td><td>Imunoalergologia</td><td>-</td><td>Allergy studies (set)</td><td>-</td></tr><tr><td><a href=\"https://loinc.org/18722-9/\">18722-9</a></td><td>Fertilidade</td><td>-</td><td>Fertility studies (set)</td><td>-</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-laboratory-study-type-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.12"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPALLaboratoryStudyTypeVS",
+  "title" : "CPAL - Laboratory Study Type",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-09-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores LaboratoryStudyType (CPAL v7.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "18723-7",
+        "display" : "Hematologia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Hematology studies (set)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo hematológico"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo hematologia"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      },
+      {
+        "code" : "18719-5",
+        "display" : "Bioquímica",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Chemistry studies (set)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo bioquímica"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Química clínica"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      },
+      {
+        "code" : "93960-3",
+        "display" : "Imunologia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Immunology Diagnostic study note"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo imunológico"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo de imunologia"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      },
+      {
+        "code" : "18725-2",
+        "display" : "Microbiologia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Microbiology studies (set)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo microbiológico"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo de microbiologia"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      },
+      {
+        "code" : "18717-9",
+        "display" : "Imunohemoterapia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Blood bank studies (set)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo de sangue"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo de banco de sangue"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      },
+      {
+        "code" : "18727-8",
+        "display" : "Serologia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Serology studies (set)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo serológico"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo de serologia"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      },
+      {
+        "code" : "26435-8",
+        "display" : "Genética humana",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Molecular pathology studies (set)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo de patologia molecular"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo de genética humana"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Genética"
+        }]
+      },
+      {
+        "code" : "18720-3",
+        "display" : "Hemostase",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Coagulation studies (set)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo de coagulação"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Coagulação"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      },
+      {
+        "code" : "33719-6",
+        "display" : "Citometria de Fluxo",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Flow cytometry study"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo de citometria de fluxo"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      },
+      {
+        "code" : "92893-7",
+        "display" : "Virologia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Microbiology - viral studies"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Microbiologia - estudo de vírus"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      },
+      {
+        "code" : "18724-5",
+        "display" : "Histocompatibilidade",
+        "designation" : [{
+          "language" : "en",
+          "value" : "HLA studies (set)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo HLA"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo de antigénio leucocitário humano"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      },
+      {
+        "code" : "92894-5",
+        "display" : "Bacteriologia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Microbiology - bacterial studies"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Microbiologia - estudo de bactérias"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      },
+      {
+        "code" : "96397-5",
+        "display" : "Micobacteriologia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Microbiology - mycobacteriology studies Document"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Microbiologia - estudo de micobactérias"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      },
+      {
+        "code" : "96398-3",
+        "display" : "Micologia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Microbiology - mycology studies Document"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Microbiologia - estudo micológico"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Microbiologia - estudo de fungos"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      },
+      {
+        "code" : "92892-9",
+        "display" : "Parasitologia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Microbiology - parasitic studies"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Microbiologia - estudo parasitológico"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Microbiologia - estudo de parasitas"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      },
+      {
+        "code" : "26438-2",
+        "display" : "Citologia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Cytology studies (set)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo citológico"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      },
+      {
+        "code" : "18728-6",
+        "display" : "Toxicologia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Toxicology studies (set)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo toxicológico"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      },
+      {
+        "code" : "92895-2",
+        "display" : "Endocrinologia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Endocrinology studies"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo endócrino"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      },
+      {
+        "code" : "18716-1",
+        "display" : "Imunoalergologia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Allergy studies (set)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo de alergias"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Alergologia"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      },
+      {
+        "code" : "18722-9",
+        "display" : "Fertilidade",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Fertility studies (set)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estudo de fertilidade"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "-"
+        }]
+      }]
+    }]
+  }
+}

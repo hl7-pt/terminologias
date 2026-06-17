@@ -1,0 +1,112 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpe-actobservation-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-actobservation-vs</b></p><a name=\"cpe-actobservation-vs\"> </a><a name=\"hccpe-actobservation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/82669-3/\">82669-3</a></td><td>Durante as últimas 4 semanas, quanto tempo é que a asma o/a impediu de fazer as suas tarefas habituais no trabalho, na escola/universidade ou em casa?</td><td>In the past 4 weeks, how much of the time did your asthma keep you from getting as much done at work, school or at home?</td><td/></tr><tr><td><a href=\"https://loinc.org/82670-1/\">82670-1</a></td><td>Durante as últimas 4 semanas, quantas vezes teve falta de ar?</td><td>During the past 4 weeks, how often have you had shortness of breath?</td><td/></tr><tr><td><a href=\"https://loinc.org/82671-9/\">82671-9</a></td><td>Durante as últimas 4 semanas, quantas vezes os sintomas da asma (pieira, tosse, falta de ar, aperto ou dor no peito) o/a fizeram acordar de noite ou mais cedo do que é costume de manhã?</td><td>During the past 4 weeks, how often did your asthma symptoms (wheezing, coughing, shortness of breath, chest tightness or pain) wake you up at night or earlier than usual in the morning?</td><td/></tr><tr><td><a href=\"https://loinc.org/82672-7/\">82672-7</a></td><td>Durante as últimas 4 semanas, quantas vezes usou os seus medicamentos para alívio rápido, em inalador ou nebulizador, como por exemplo, salbutamol?</td><td>During the past 4 weeks, how often have you used your rescue inhaler or nebulizer medication (such as albuterol)?</td><td/></tr><tr><td><a href=\"https://loinc.org/82673-5/\">82673-5</a></td><td>Como avaliaria o seu controlo da asma nas últimas 4 semanas?</td><td>How would you rate your asthma control during the past 4 weeks?</td><td/></tr><tr><td><a href=\"https://loinc.org/82668-5/\">82668-5</a></td><td>Pontuação total</td><td>Total score [ACT]</td><td>Score total</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-actobservation-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.178"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPEACTObservationVS",
+  "title" : "CPE - ACT Observation",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores ACTObservation (CPE v2.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "82669-3",
+        "display" : "Durante as últimas 4 semanas, quanto tempo é que a asma o/a impediu de fazer as suas tarefas habituais no trabalho, na escola/universidade ou em casa?",
+        "designation" : [{
+          "language" : "en",
+          "value" : "In the past 4 weeks, how much of the time did your asthma keep you from getting as much done at work, school or at home?"
+        }]
+      },
+      {
+        "code" : "82670-1",
+        "display" : "Durante as últimas 4 semanas, quantas vezes teve falta de ar?",
+        "designation" : [{
+          "language" : "en",
+          "value" : "During the past 4 weeks, how often have you had shortness of breath?"
+        }]
+      },
+      {
+        "code" : "82671-9",
+        "display" : "Durante as últimas 4 semanas, quantas vezes os sintomas da asma (pieira, tosse, falta de ar, aperto ou dor no peito) o/a fizeram acordar de noite ou mais cedo do que é costume de manhã?",
+        "designation" : [{
+          "language" : "en",
+          "value" : "During the past 4 weeks, how often did your asthma symptoms (wheezing, coughing, shortness of breath, chest tightness or pain) wake you up at night or earlier than usual in the morning?"
+        }]
+      },
+      {
+        "code" : "82672-7",
+        "display" : "Durante as últimas 4 semanas, quantas vezes usou os seus medicamentos para alívio rápido, em inalador ou nebulizador, como por exemplo, salbutamol?",
+        "designation" : [{
+          "language" : "en",
+          "value" : "During the past 4 weeks, how often have you used your rescue inhaler or nebulizer medication (such as albuterol)?"
+        }]
+      },
+      {
+        "code" : "82673-5",
+        "display" : "Como avaliaria o seu controlo da asma nas últimas 4 semanas?",
+        "designation" : [{
+          "language" : "en",
+          "value" : "How would you rate your asthma control during the past 4 weeks?"
+        }]
+      },
+      {
+        "code" : "82668-5",
+        "display" : "Pontuação total",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Total score [ACT]"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Score total"
+        }]
+      }]
+    }]
+  }
+}

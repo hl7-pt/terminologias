@@ -1,0 +1,236 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpe-npassscale-observation-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-npassscale-observation-vs</b></p><a name=\"cpe-npassscale-observation-vs\"> </a><a name=\"hccpe-npassscale-observation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/95629-2/\">95629-2</a></td><td>Painel de sedação NPASS</td><td/><td>Sedation panel NPASS</td><td/></tr><tr><td><a href=\"https://loinc.org/95630-0/\">95630-0</a></td><td>Nível de sedação - choro ou irritabilidade</td><td>Choro/irritabilidade</td><td>Sedation level.crying or irritability</td><td>Choro/irritabilidade</td></tr><tr><td><a href=\"https://loinc.org/95631-8/\">95631-8</a></td><td>Nível de sedação - estado de comportamento</td><td>Comportamento/estado</td><td>Sedation level.behavior state</td><td>Comportamento/estado</td></tr><tr><td><a href=\"https://loinc.org/95632-6/\">95632-6</a></td><td>Nível de sedação - expressão facial</td><td>Expressão facial</td><td>Sedation level.facial expression</td><td>Expressão facial</td></tr><tr><td><a href=\"https://loinc.org/95633-4/\">95633-4</a></td><td>Nível de sedação - tónus das extremidades</td><td>Extremidades/tónus</td><td>Sedation level.extremities tone</td><td>Extremidades/tónus</td></tr><tr><td><a href=\"https://loinc.org/95634-2/\">95634-2</a></td><td>Nível de sedação - variabilidade dos sinais vitais</td><td>Sinais vitais (FC;FR;TA;SatO2)</td><td>Sedation level.vital signs variability</td><td>Sinais vitais (FC;FR;TA;SatO2)</td></tr><tr><td><a href=\"https://loinc.org/95635-9/\">95635-9</a></td><td>Pontuação total de sedação NPASS</td><td/><td>Sedation total score NPASS</td><td/></tr><tr><td><a href=\"https://loinc.org/95636-7/\">95636-7</a></td><td>Nível de sedação</td><td/><td>Sedation level</td><td/></tr><tr><td><a href=\"https://loinc.org/95621-9/\">95621-9</a></td><td>Painel de dor/agitação NPASS</td><td/><td>Pain/agitation panel NPASS</td><td/></tr><tr><td><a href=\"https://loinc.org/95622-7/\">95622-7</a></td><td>Severidade da dor/agitação - choro ou irritabilidade</td><td/><td>Pain/agitation severity.crying or irritability</td><td/></tr><tr><td><a href=\"https://loinc.org/95623-5/\">95623-5</a></td><td>Gravidade da dor/agitação - estado de comportamento</td><td/><td>Pain/agitation severity.behavior state</td><td/></tr><tr><td><a href=\"https://loinc.org/95624-3/\">95624-3</a></td><td>Severidade da dor/agitação - expressão facial</td><td/><td>Pain/agitation severity.facial expression</td><td/></tr><tr><td><a href=\"https://loinc.org/95625-0/\">95625-0</a></td><td>Severidade da dor/agitação - tónus das extremidades</td><td/><td>Pain/agitation severity.extremities tone</td><td/></tr><tr><td><a href=\"https://loinc.org/95626-8/\">95626-8</a></td><td>Gravidade da dor/agitação - variabilidade dos sinais vitais</td><td/><td>Pain/agitation severity.vital signs variability</td><td/></tr><tr><td><a href=\"https://loinc.org/95656-5/\">95656-5</a></td><td>Idade gestacional &lt;30 semanas</td><td/><td>Gestational age &lt;30 weeks</td><td/></tr><tr><td><a href=\"https://loinc.org/95627-6/\">95627-6</a></td><td>Pontuação total de dor e agitação NPASS</td><td/><td>Pain agitation total score NPASS</td><td/></tr><tr><td><a href=\"https://loinc.org/95628-4/\">95628-4</a></td><td>Nível de gravidade da dor/agitação</td><td/><td>Pain/agitation severity level</td><td/></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-npassscale-observation-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.143"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPENPASSScaleObservationVS",
+  "title" : "CPE - NPASS Scale Observation",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores NPASSScaleObservation (CPE v2.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "95629-2",
+        "display" : "Painel de sedação NPASS",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Sedation panel NPASS"
+        }]
+      },
+      {
+        "code" : "95630-0",
+        "display" : "Nível de sedação - choro ou irritabilidade",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Sedation level.crying or irritability"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Choro/irritabilidade"
+        }]
+      },
+      {
+        "code" : "95631-8",
+        "display" : "Nível de sedação - estado de comportamento",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Sedation level.behavior state"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Comportamento/estado"
+        }]
+      },
+      {
+        "code" : "95632-6",
+        "display" : "Nível de sedação - expressão facial",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Sedation level.facial expression"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Expressão facial"
+        }]
+      },
+      {
+        "code" : "95633-4",
+        "display" : "Nível de sedação - tónus das extremidades",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Sedation level.extremities tone"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Extremidades/tónus"
+        }]
+      },
+      {
+        "code" : "95634-2",
+        "display" : "Nível de sedação - variabilidade dos sinais vitais",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Sedation level.vital signs variability"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Sinais vitais (FC;FR;TA;SatO2)"
+        }]
+      },
+      {
+        "code" : "95635-9",
+        "display" : "Pontuação total de sedação NPASS",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Sedation total score NPASS"
+        }]
+      },
+      {
+        "code" : "95636-7",
+        "display" : "Nível de sedação",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Sedation level"
+        }]
+      },
+      {
+        "code" : "95621-9",
+        "display" : "Painel de dor/agitação NPASS",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Pain/agitation panel NPASS"
+        }]
+      },
+      {
+        "code" : "95622-7",
+        "display" : "Severidade da dor/agitação - choro ou irritabilidade",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Pain/agitation severity.crying or irritability"
+        }]
+      },
+      {
+        "code" : "95623-5",
+        "display" : "Gravidade da dor/agitação - estado de comportamento",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Pain/agitation severity.behavior state"
+        }]
+      },
+      {
+        "code" : "95624-3",
+        "display" : "Severidade da dor/agitação - expressão facial",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Pain/agitation severity.facial expression"
+        }]
+      },
+      {
+        "code" : "95625-0",
+        "display" : "Severidade da dor/agitação - tónus das extremidades",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Pain/agitation severity.extremities tone"
+        }]
+      },
+      {
+        "code" : "95626-8",
+        "display" : "Gravidade da dor/agitação - variabilidade dos sinais vitais",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Pain/agitation severity.vital signs variability"
+        }]
+      },
+      {
+        "code" : "95656-5",
+        "display" : "Idade gestacional <30 semanas",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Gestational age <30 weeks"
+        }]
+      },
+      {
+        "code" : "95627-6",
+        "display" : "Pontuação total de dor e agitação NPASS",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Pain agitation total score NPASS"
+        }]
+      },
+      {
+        "code" : "95628-4",
+        "display" : "Nível de gravidade da dor/agitação",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Pain/agitation severity level"
+        }]
+      }]
+    }]
+  }
+}

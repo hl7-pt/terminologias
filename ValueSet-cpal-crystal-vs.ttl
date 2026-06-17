@@ -1,0 +1,769 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpal-crystal-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpal-crystal-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpal-crystal-vs</b></p><a name=\"cpal-crystal-vs\"> </a><a name=\"hccpal-crystal-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/724182003\">724182003</a></td><td>Acetaminophen crystal</td><td>Paracetamol crystal (substance)</td><td>Cristal de acetaminofeno</td><td>Paracetamol crystal (substance)</td><td>Cristal de acetaminofeno</td></tr><tr><td><a href=\"http://snomed.info/id/715228000\">715228000</a></td><td>Triple phosphate crystal</td><td>Triple phosphate crystal (substance)</td><td>Cristal de fosfato triplo</td><td>Triple phosphate crystal (substance)</td><td>Cristal de fosfato triplo</td></tr><tr><td><a href=\"http://snomed.info/id/707966003\">707966003</a></td><td>Ammonium urate crystal</td><td>Ammonium urate crystal (substance)</td><td>Cristal de urato de amoníaco</td><td>Ammonium urate crystal (substance)</td><td>Cristal de urato de amoníaco</td></tr><tr><td><a href=\"http://snomed.info/id/707965004\">707965004</a></td><td>Bilirubin crystal</td><td>Bilirubin crystal (substance)</td><td>Cristal de bilirrubina</td><td>Bilirubin crystal (substance)</td><td>Cristal de bilirrubina</td></tr><tr><td><a href=\"http://snomed.info/id/707964000\">707964000</a></td><td>Calcium carbonate crystal</td><td>Calcium carbonate crystal (substance)</td><td>Cristal de carbonato de cálcio</td><td>Calcium carbonate crystal (substance)</td><td>Cristal de carbonato de cálcio</td></tr><tr><td><a href=\"http://snomed.info/id/707963006\">707963006</a></td><td>Calcium hydrogen phosphate dihydrate crystal</td><td>Calcium hydrogen phosphate dihydrate crystal (substance)</td><td>Cristal dihidratado de hidrogenofosfato de cálcio</td><td>Calcium hydrogen phosphate dihydrate crystal (substance)</td><td>Cristal dihidratado de hidrogenofosfato de cálcio</td></tr><tr><td><a href=\"http://snomed.info/id/707962001\">707962001</a></td><td>Calcium hydrogen phosphate crystal</td><td>Calcium hydrogen phosphate crystal (substance)</td><td>Cristal de hidrogenofosfato de cálcio</td><td>Calcium hydrogen phosphate crystal (substance)</td><td>Cristal de hidrogenofosfato de cálcio</td></tr><tr><td><a href=\"http://snomed.info/id/707961008\">707961008</a></td><td>Calcium oxalate dihydrate crystal</td><td>Calcium oxalate dihydrate crystal (substance)</td><td>Cristal de oxalato de cálcio dihidratado</td><td>Calcium oxalate dihydrate crystal (substance)</td><td>Cristal de oxalato de cálcio dihidratado</td></tr><tr><td><a href=\"http://snomed.info/id/707960009\">707960009</a></td><td>Calcium oxalate monohydrate crystal</td><td>Calcium oxalate monohydrate crystal (substance)</td><td>Cristal monohidratado de oxalato de cálcio</td><td>Calcium oxalate monohydrate crystal (substance)</td><td>Cristal monohidratado de oxalato de cálcio</td></tr><tr><td><a href=\"http://snomed.info/id/707959004\">707959004</a></td><td>Calcium phosphate crystal</td><td>Calcium phosphate crystal (substance)</td><td>Cristal de fosfato de cálcio</td><td>Calcium phosphate crystal (substance)</td><td>Cristal de fosfato de cálcio</td></tr><tr><td><a href=\"http://snomed.info/id/707958007\">707958007</a></td><td>Calcium sulfate crystal</td><td>Calcium sulfate crystal (substance)</td><td>Cristal de sulfato de cálcio</td><td>Calcium sulfate crystal (substance)</td><td>Cristal de sulfato de cálcio</td></tr><tr><td><a href=\"http://snomed.info/id/707957002\">707957002</a></td><td>Cystine crystal</td><td>Cystine crystal (substance)</td><td>Cristal de cistina</td><td>Cystine crystal (substance)</td><td>Cristal de cistina</td></tr><tr><td><a href=\"http://snomed.info/id/707956006\">707956006</a></td><td>Hippurate crystal</td><td>Hippurate crystal (substance)</td><td>Cristal hipurato</td><td>Hippurate crystal (substance)</td><td>Cristal hipurato</td></tr><tr><td><a href=\"http://snomed.info/id/707955005\">707955005</a></td><td>Newberyite crystal</td><td>Newberyite crystal (substance)</td><td>Cristal Newberyita</td><td>Newberyite crystal (substance)</td><td>Cristal Newberyita</td></tr><tr><td><a href=\"http://snomed.info/id/707954009\">707954009</a></td><td>Sodium urate crystal</td><td>Sodium urate crystal (substance)</td><td>Cristal de urato de sódio</td><td>Sodium urate crystal (substance)</td><td>Cristal de urato de sódio</td></tr><tr><td><a href=\"http://snomed.info/id/707953003\">707953003</a></td><td>Sulfonamide crystal</td><td>Sulfonamide crystal (substance)</td><td>Cristal de sulfonamida</td><td>Sulfonamide crystal (substance)</td><td>Cristal de sulfonamida</td></tr><tr><td><a href=\"http://snomed.info/id/707952008\">707952008</a></td><td>Triamterene crystal</td><td>Triamterene crystal (substance)</td><td>Cristal triantereno</td><td>Triamterene crystal (substance)</td><td>Cristal triantereno</td></tr><tr><td><a href=\"http://snomed.info/id/703498003\">703498003</a></td><td>Amorphous urate crystal</td><td>Amorphous urate crystal (substance)</td><td>Cristal de urato amorfo</td><td>Amorphous urate crystal (substance)</td><td>Cristal de urato amorfo</td></tr><tr><td><a href=\"http://snomed.info/id/413935006\">413935006</a></td><td>Crystal - body material</td><td>Crystal - body material (substance)</td><td>Cristal - material do corpo</td><td>Crystal - body material (substance)</td><td>Cristal - material do corpo</td></tr><tr><td><a href=\"http://snomed.info/id/312283005\">312283005</a></td><td>Tyrosine crystal</td><td>Tyrosine crystal (substance)</td><td>Cristal de tirosina</td><td>Tyrosine crystal (substance)</td><td>Cristal de tirosina</td></tr><tr><td><a href=\"http://snomed.info/id/312282000\">312282000</a></td><td>Leucine crystal</td><td>Leucine crystal (substance)</td><td>Cristal de leucina</td><td>Leucine crystal (substance)</td><td>Cristal de leucina</td></tr><tr><td><a href=\"http://snomed.info/id/312281007\">312281007</a></td><td>Calcium oxalate crystal</td><td>Calcium oxalate crystal (substance)</td><td>Cristal de oxalato de cálcio</td><td>Calcium oxalate crystal (substance)</td><td>Cristal de oxalato de cálcio</td></tr><tr><td><a href=\"http://snomed.info/id/250457008\">250457008</a></td><td>Oxalate crystal</td><td>Oxalate crystal (substance)</td><td>Cristal de oxalato</td><td>Oxalate crystal (substance)</td><td>Cristal de oxalato</td></tr><tr><td><a href=\"http://snomed.info/id/250456004\">250456004</a></td><td>Urate crystal</td><td>Urate crystal (substance)</td><td>Cristal de urato</td><td>Urate crystal (substance)</td><td>Cristal de urato</td></tr><tr><td><a href=\"http://snomed.info/id/250455000\">250455000</a></td><td>Phosphate crystal</td><td>Phosphate crystal (substance)</td><td>Cristal de fosfato</td><td>Phosphate crystal (substance)</td><td>Cristal de fosfato</td></tr><tr><td><a href=\"http://snomed.info/id/250454001\">250454001</a></td><td>Monosodium urate crystal</td><td>Monosodium urate crystal (substance)</td><td>Cristal de urato monossódico</td><td>Monosodium urate crystal (substance)</td><td>Cristal de urato monossódico</td></tr><tr><td><a href=\"http://snomed.info/id/250453007\">250453007</a></td><td>Cysteine crystal</td><td>Cysteine crystal (substance)</td><td>Cristal de cisteína</td><td>Cysteine crystal (substance)</td><td>Cristal de cisteína</td></tr><tr><td><a href=\"http://snomed.info/id/250452002\">250452002</a></td><td>Cholesterol crystal</td><td>Cholesterol crystal (substance)</td><td>Cristal de colesterol</td><td>Cholesterol crystal (substance)</td><td>Cristal de colesterol</td></tr><tr><td><a href=\"http://snomed.info/id/250451009\">250451009</a></td><td>Calcium pyrophosphate crystal</td><td>Calcium pyrophosphate crystal (substance)</td><td>Cristal de pirofosfato de cálcio</td><td>Calcium pyrophosphate crystal (substance)</td><td>Cristal de pirofosfato de cálcio</td></tr><tr><td><a href=\"http://snomed.info/id/250450005\">250450005</a></td><td>Calcium hydroxyapatite crystal</td><td>Calcium hydroxyapatite crystal (substance)</td><td>Cristal de hidroxiapatita de cálcio</td><td>Calcium hydroxyapatite crystal (substance)</td><td>Cristal de hidroxiapatita de cálcio</td></tr><tr><td><a href=\"http://snomed.info/id/250449005\">250449005</a></td><td>Calcium bilirubinate crystal</td><td>Calcium bilirubinate crystal (substance)</td><td>Cristal de bilirrubinato de cálcio</td><td>Calcium bilirubinate crystal (substance)</td><td>Cristal de bilirrubinato de cálcio</td></tr><tr><td><a href=\"http://snomed.info/id/250448002\">250448002</a></td><td>Crystal - human material</td><td>Crystal - human material (substance)</td><td>Cristal - material humano</td><td>Crystal - human material (substance)</td><td>Cristal - material humano</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-crystal-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.11" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPALCrystalVS"] ; # 
+  fhir:title [ fhir:v "CPAL - Crystal"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2022-06-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores Crystal (CPAL v7.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "724182003" ] ;
+         fhir:display [ fhir:v "Acetaminophen crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Paracetamol crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de acetaminofeno" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "715228000" ] ;
+         fhir:display [ fhir:v "Triple phosphate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Triple phosphate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de fosfato triplo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "707966003" ] ;
+         fhir:display [ fhir:v "Ammonium urate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Ammonium urate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de urato de amoníaco" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "707965004" ] ;
+         fhir:display [ fhir:v "Bilirubin crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Bilirubin crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de bilirrubina" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "707964000" ] ;
+         fhir:display [ fhir:v "Calcium carbonate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Calcium carbonate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de carbonato de cálcio" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "707963006" ] ;
+         fhir:display [ fhir:v "Calcium hydrogen phosphate dihydrate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Calcium hydrogen phosphate dihydrate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal dihidratado de hidrogenofosfato de cálcio" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "707962001" ] ;
+         fhir:display [ fhir:v "Calcium hydrogen phosphate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Calcium hydrogen phosphate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de hidrogenofosfato de cálcio" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "707961008" ] ;
+         fhir:display [ fhir:v "Calcium oxalate dihydrate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Calcium oxalate dihydrate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de oxalato de cálcio dihidratado" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "707960009" ] ;
+         fhir:display [ fhir:v "Calcium oxalate monohydrate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Calcium oxalate monohydrate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal monohidratado de oxalato de cálcio" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "707959004" ] ;
+         fhir:display [ fhir:v "Calcium phosphate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Calcium phosphate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de fosfato de cálcio" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "707958007" ] ;
+         fhir:display [ fhir:v "Calcium sulfate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Calcium sulfate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de sulfato de cálcio" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "707957002" ] ;
+         fhir:display [ fhir:v "Cystine crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Cystine crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de cistina" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "707956006" ] ;
+         fhir:display [ fhir:v "Hippurate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Hippurate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal hipurato" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "707955005" ] ;
+         fhir:display [ fhir:v "Newberyite crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Newberyite crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal Newberyita" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "707954009" ] ;
+         fhir:display [ fhir:v "Sodium urate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Sodium urate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de urato de sódio" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "707953003" ] ;
+         fhir:display [ fhir:v "Sulfonamide crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Sulfonamide crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de sulfonamida" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "707952008" ] ;
+         fhir:display [ fhir:v "Triamterene crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Triamterene crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal triantereno" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "703498003" ] ;
+         fhir:display [ fhir:v "Amorphous urate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Amorphous urate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de urato amorfo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "413935006" ] ;
+         fhir:display [ fhir:v "Crystal - body material" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Crystal - body material (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal - material do corpo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "312283005" ] ;
+         fhir:display [ fhir:v "Tyrosine crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Tyrosine crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de tirosina" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "312282000" ] ;
+         fhir:display [ fhir:v "Leucine crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Leucine crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de leucina" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "312281007" ] ;
+         fhir:display [ fhir:v "Calcium oxalate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Calcium oxalate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de oxalato de cálcio" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "250457008" ] ;
+         fhir:display [ fhir:v "Oxalate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Oxalate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de oxalato" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "250456004" ] ;
+         fhir:display [ fhir:v "Urate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Urate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de urato" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "250455000" ] ;
+         fhir:display [ fhir:v "Phosphate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Phosphate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de fosfato" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "250454001" ] ;
+         fhir:display [ fhir:v "Monosodium urate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Monosodium urate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de urato monossódico" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "250453007" ] ;
+         fhir:display [ fhir:v "Cysteine crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Cysteine crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de cisteína" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "250452002" ] ;
+         fhir:display [ fhir:v "Cholesterol crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Cholesterol crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de colesterol" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "250451009" ] ;
+         fhir:display [ fhir:v "Calcium pyrophosphate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Calcium pyrophosphate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de pirofosfato de cálcio" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "250450005" ] ;
+         fhir:display [ fhir:v "Calcium hydroxyapatite crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Calcium hydroxyapatite crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de hidroxiapatita de cálcio" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "250449005" ] ;
+         fhir:display [ fhir:v "Calcium bilirubinate crystal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Calcium bilirubinate crystal (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal de bilirrubinato de cálcio" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "250448002" ] ;
+         fhir:display [ fhir:v "Crystal - human material" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Crystal - human material (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cristal - material humano" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

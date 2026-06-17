@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpal-clinical-pathology-outcome-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpal-clinical-pathology-outcome-vs</b></p><a name="cpal-clinical-pathology-outcome-vs"> </a><a name="hccpal-clinical-pathology-outcome-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/83185005">83185005</a></td><td>Sensível</td><td>Sensitive (qualifier value)</td><td>S</td><td>Sensitive (qualifier value)</td><td>S</td></tr><tr><td><a href="http://snomed.info/id/11896004">11896004</a></td><td>Intermédio</td><td>Intermediate (qualifier value)</td><td>I</td><td>Intermediate (qualifier value)</td><td>I</td></tr><tr><td><a href="http://snomed.info/id/30714006">30714006</a></td><td>Resistente</td><td>Resistant (qualifier value)</td><td>R</td><td>Resistant (qualifier value)</td><td>R</td></tr><tr><td><a href="http://snomed.info/id/2667000">2667000</a></td><td>Ausente</td><td>Absent (qualifier value)</td><td>Ausência</td><td>Absent (qualifier value)</td><td>Ausência</td></tr><tr><td><a href="http://snomed.info/id/52101004">52101004</a></td><td>Presente</td><td>Present (qualifier value)</td><td>Presença</td><td>Present (qualifier value)</td><td>Presença</td></tr><tr><td><a href="http://snomed.info/id/260385009">260385009</a></td><td>Negativo</td><td>Negative (qualifier value)</td><td>Negativa</td><td>Negative (qualifier value)</td><td>Negativa</td></tr><tr><td><a href="http://snomed.info/id/10828004">10828004</a></td><td>Positivo</td><td>Positive (qualifier value)</td><td>Positiva</td><td>Positive (qualifier value)</td><td>Positiva</td></tr><tr><td><a href="http://snomed.info/id/442779003">442779003</a></td><td>Borderline baixo</td><td>Borderline low (qualifier value)</td><td>Borderline limite inferior</td><td>Borderline low (qualifier value)</td><td>Borderline limite inferior</td></tr><tr><td><a href="http://snomed.info/id/442777001">442777001</a></td><td>Borderline alto</td><td>Borderline high (qualifier value)</td><td>Borderline limite superior</td><td>Borderline high (qualifier value)</td><td>Borderline limite superior</td></tr><tr><td><a href="http://snomed.info/id/371932001">371932001</a></td><td>Borderline normal</td><td>Borderline normal (qualifier value)</td><td>Borderline no limite da normalidade</td><td>Borderline normal (qualifier value)</td><td>Borderline no limite da normalidade</td></tr><tr><td><a href="http://snomed.info/id/260373001">260373001</a></td><td>Detetado</td><td>Detected (qualifier value)</td><td>Detetada</td><td>Detected (qualifier value)</td><td>Detetada</td></tr><tr><td><a href="http://snomed.info/id/260415000">260415000</a></td><td>Não detetado</td><td>Not detected (qualifier value)</td><td>Não detetada</td><td>Not detected (qualifier value)</td><td>Não detetada</td></tr><tr><td><a href="http://snomed.info/id/11214006">11214006</a></td><td>Reativo</td><td>Reactive (qualifier value)</td><td>Reativa</td><td>Reactive (qualifier value)</td><td>Reativa</td></tr><tr><td><a href="http://snomed.info/id/131194007">131194007</a></td><td>Não reativo</td><td>Non-Reactive (qualifier value)</td><td>Não reativa</td><td>Non-Reactive (qualifier value)</td><td>Não reativa</td></tr><tr><td><a href="http://snomed.info/id/82334004">82334004</a></td><td>Indeterminado</td><td>Indeterminate (qualifier value)</td><td>Indeterminante</td><td>Indeterminate (qualifier value)</td><td>Indeterminante</td></tr><tr><td><a href="http://snomed.info/id/419984006">419984006</a></td><td>Inconclusivo</td><td>Inconclusive (qualifier value)</td><td>Inconclusiva</td><td>Inconclusive (qualifier value)</td><td>Inconclusiva</td></tr><tr><td><a href="http://snomed.info/id/42425007">42425007</a></td><td>Equívoco</td><td>Equivocal (qualifier value)</td><td/><td>Equivocal (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/260405006">260405006</a></td><td>Vestígio</td><td>Trace (qualifier value)</td><td>Vestígios</td><td>Trace (qualifier value)</td><td>Vestígios</td></tr><tr><td><a href="http://snomed.info/id/264605009">264605009</a></td><td>+5</td><td>Integer +5 (qualifier value)</td><td/><td>Integer +5 (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/260308009">260308009</a></td><td>+4</td><td>Integer +4 (qualifier value)</td><td/><td>Integer +4 (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/260307004">260307004</a></td><td>+3</td><td>Integer +3 (qualifier value)</td><td/><td>Integer +3 (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/260306008">260306008</a></td><td>+2</td><td>Integer +2 (qualifier value)</td><td/><td>Integer +2 (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/260305007">260305007</a></td><td>+1</td><td>Integer +1 (qualifier value)</td><td/><td>Integer +1 (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/1255965005">1255965005</a></td><td>Sensível com aumento de exposição</td><td>Susceptible with increased exposure (qualifier value)</td><td>I</td><td>Susceptible with increased exposure (qualifier value)</td><td>I</td></tr><tr><td><a href="http://snomed.info/id/75540009">75540009</a></td><td>Alto</td><td>High (qualifier value)</td><td>Alta</td><td>High (qualifier value)</td><td>Alta</td></tr><tr><td><a href="http://snomed.info/id/62482003">62482003</a></td><td>Baixo</td><td>Low (qualifier value)</td><td>Baixa</td><td>Low (qualifier value)</td><td>Baixa</td></tr><tr><td><a href="http://snomed.info/id/27768009">27768009</a></td><td>Alguma(s)</td><td>Some (qualifier value)</td><td>Algum(s)</td><td>Some (qualifier value)</td><td>Algum(s)</td></tr><tr><td><a href="http://snomed.info/id/260396001">260396001</a></td><td>Numerosas</td><td>Numerous (qualifier value)</td><td>Abundantes</td><td>Numerous (qualifier value)</td><td>Abundantes</td></tr><tr><td><a href="http://snomed.info/id/89292003">89292003</a></td><td>Rara(s)</td><td>Rare (qualifier value)</td><td>Raro(s)</td><td>Rare (qualifier value)</td><td>Raro(s)</td></tr><tr><td><a href="http://snomed.info/id/260350009">260350009</a></td><td>++++</td><td>Present ++++ out of ++++ (qualifier value)</td><td>4+</td><td>Present ++++ out of ++++ (qualifier value)</td><td>4+</td></tr><tr><td><a href="http://snomed.info/id/260349009">260349009</a></td><td>+++</td><td>Present +++ out of ++++ (qualifier value)</td><td>3+</td><td>Present +++ out of ++++ (qualifier value)</td><td>3+</td></tr><tr><td><a href="http://snomed.info/id/260348001">260348001</a></td><td>++</td><td>Present ++ out of ++++ (qualifier value)</td><td>2+</td><td>Present ++ out of ++++ (qualifier value)</td><td>2+</td></tr><tr><td><a href="http://snomed.info/id/260347006">260347006</a></td><td>+</td><td>Present + out of ++++ (qualifier value)</td><td>1+</td><td>Present + out of ++++ (qualifier value)</td><td>1+</td></tr><tr><td><a href="http://snomed.info/id/1286842004">1286842004</a></td><td>RAST Class 1</td><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 1 (qualifier value)</td><td/><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 1 (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/1286841006">1286841006</a></td><td>RAST Class 6</td><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 6 (qualifier value)</td><td/><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 6 (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/1286840007">1286840007</a></td><td>RAST Class 5</td><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 5 (qualifier value)</td><td/><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 5 (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/1286838002">1286838002</a></td><td>RAST Class 4</td><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 4 (qualifier value)</td><td/><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 4 (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/1286837007">1286837007</a></td><td>RAST Class 2</td><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 2 (qualifier value)</td><td/><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 2 (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/1286836003">1286836003</a></td><td>RAST Class 0</td><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 0 (qualifier value)</td><td/><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 0 (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/1285482005">1285482005</a></td><td>RAST Class 3</td><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 3 (qualifier value)</td><td/><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 3 (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/1290623009">1290623009</a></td><td>Positivo forte</td><td>Strong positive (qualifier value)</td><td/><td>Strong positive (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/260408008">260408008</a></td><td>Positivo fraco</td><td>Weakly positive (qualifier value)</td><td/><td>Weakly positive (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/17621005">17621005</a></td><td>Normal</td><td>Normal (qualifier value)</td><td/><td>Normal (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/261028005">261028005</a></td><td>Muitas</td><td>Several (qualifier value)</td><td>Muitos</td><td>Several (qualifier value)</td><td>Muitos</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpal-clinical-pathology-outcome-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.8"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPALClinicalPathologyOutcomeVS"/>
+  <title value="CPAL - Clinical Pathology Outcome"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-10-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores ClinicalPathologyOutcome (CPAL v7.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="83185005"/>
+        <display value="Sensível"/>
+        <designation>
+          <language value="en"/>
+          <value value="Sensitive"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Sensitive (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="S"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="11896004"/>
+        <display value="Intermédio"/>
+        <designation>
+          <language value="en"/>
+          <value value="Intermediate"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Intermediate (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="I"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="30714006"/>
+        <display value="Resistente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Resistant"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Resistant (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="R"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2667000"/>
+        <display value="Ausente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Absent"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Absent (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Ausência"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="52101004"/>
+        <display value="Presente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Present"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Present (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Presença"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260385009"/>
+        <display value="Negativo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Negative"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Negative (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Negativa"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="10828004"/>
+        <display value="Positivo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Positive"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Positive (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Positiva"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="442779003"/>
+        <display value="Borderline baixo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Borderline low"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Borderline low (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Borderline limite inferior"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="442777001"/>
+        <display value="Borderline alto"/>
+        <designation>
+          <language value="en"/>
+          <value value="Borderline high"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Borderline high (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Borderline limite superior"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="371932001"/>
+        <display value="Borderline normal"/>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Borderline normal (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Borderline no limite da normalidade"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260373001"/>
+        <display value="Detetado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Detected"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Detected (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Detetável"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Detetada"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260415000"/>
+        <display value="Não detetado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Not detected"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Not detected (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Não detetável"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Não detetada"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="11214006"/>
+        <display value="Reativo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Reactive"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Reactive (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Reativa"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="131194007"/>
+        <display value="Não reativo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Non-Reactive"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Non-Reactive (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Não reativa"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="82334004"/>
+        <display value="Indeterminado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Indeterminate"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Indeterminate (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Indeterminante"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="419984006"/>
+        <display value="Inconclusivo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Inconclusive"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Inconclusive (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Inconclusiva"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="42425007"/>
+        <display value="Equívoco"/>
+        <designation>
+          <language value="en"/>
+          <value value="Equivocal"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Equivocal (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260405006"/>
+        <display value="Vestígio"/>
+        <designation>
+          <language value="en"/>
+          <value value="Trace"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Trace (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Vestígios"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="264605009"/>
+        <display value="+5"/>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Integer +5 (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260308009"/>
+        <display value="+4"/>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Integer +4 (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260307004"/>
+        <display value="+3"/>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Integer +3 (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260306008"/>
+        <display value="+2"/>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Integer +2 (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260305007"/>
+        <display value="+1"/>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Integer +1 (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1255965005"/>
+        <display value="Sensível com aumento de exposição"/>
+        <designation>
+          <language value="en"/>
+          <value value="Susceptible with increased exposure"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Susceptible with increased exposure (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="I"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="75540009"/>
+        <display value="Alto"/>
+        <designation>
+          <language value="en"/>
+          <value value="High"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="High (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Alta"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="62482003"/>
+        <display value="Baixo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Low"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Low (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Baixa"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="27768009"/>
+        <display value="Alguma(s)"/>
+        <designation>
+          <language value="en"/>
+          <value value="Some"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Some (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Algum(s)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260396001"/>
+        <display value="Numerosas"/>
+        <designation>
+          <language value="en"/>
+          <value value="Numerous"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Numerous (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Abundantes"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="89292003"/>
+        <display value="Rara(s)"/>
+        <designation>
+          <language value="en"/>
+          <value value="Rare"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Rare (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Raro(s)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260350009"/>
+        <display value="++++"/>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Present ++++ out of ++++ (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="4+"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260349009"/>
+        <display value="+++"/>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Present +++ out of ++++ (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="3+"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260348001"/>
+        <display value="++"/>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Present ++ out of ++++ (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="2+"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260347006"/>
+        <display value="+"/>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Present + out of ++++ (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="1+"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1286842004"/>
+        <display value="RAST Class 1"/>
+        <designation>
+          <language value="en"/>
+          <value value="In vitro allergen specific immunoglobulin E antibody immunoassay class 1"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="In vitro allergen specific immunoglobulin E antibody immunoassay class 1 (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1286841006"/>
+        <display value="RAST Class 6"/>
+        <designation>
+          <language value="en"/>
+          <value value="In vitro allergen specific immunoglobulin E antibody immunoassay class 6"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="In vitro allergen specific immunoglobulin E antibody immunoassay class 6 (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1286840007"/>
+        <display value="RAST Class 5"/>
+        <designation>
+          <language value="en"/>
+          <value value="In vitro allergen specific immunoglobulin E antibody immunoassay class 5"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="In vitro allergen specific immunoglobulin E antibody immunoassay class 5 (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1286838002"/>
+        <display value="RAST Class 4"/>
+        <designation>
+          <language value="en"/>
+          <value value="In vitro allergen specific immunoglobulin E antibody immunoassay class 4"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="In vitro allergen specific immunoglobulin E antibody immunoassay class 4 (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1286837007"/>
+        <display value="RAST Class 2"/>
+        <designation>
+          <language value="en"/>
+          <value value="In vitro allergen specific immunoglobulin E antibody immunoassay class 2"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="In vitro allergen specific immunoglobulin E antibody immunoassay class 2 (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1286836003"/>
+        <display value="RAST Class 0"/>
+        <designation>
+          <language value="en"/>
+          <value value="In vitro allergen specific immunoglobulin E antibody immunoassay class 0"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="In vitro allergen specific immunoglobulin E antibody immunoassay class 0 (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1285482005"/>
+        <display value="RAST Class 3"/>
+        <designation>
+          <language value="en"/>
+          <value value="In vitro allergen specific immunoglobulin E antibody immunoassay class 3"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="In vitro allergen specific immunoglobulin E antibody immunoassay class 3 (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1290623009"/>
+        <display value="Positivo forte"/>
+        <designation>
+          <language value="en"/>
+          <value value="Strong positive"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Strong positive (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="260408008"/>
+        <display value="Positivo fraco"/>
+        <designation>
+          <language value="en"/>
+          <value value="Weakly positive"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Weakly positive (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="17621005"/>
+        <display value="Normal"/>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Normal (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="261028005"/>
+        <display value="Muitas"/>
+        <designation>
+          <language value="en"/>
+          <value value="Several"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Several (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Muitos"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

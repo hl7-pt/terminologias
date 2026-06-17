@@ -1,0 +1,189 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cparadm-contact-reason-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cparadm-contact-reason-vs</b></p><a name=\"cparadm-contact-reason-vs\"> </a><a name=\"hccparadm-contact-reason-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/1571000314103\">1571000314103</a></td><td>Atualização de contactos</td><td/><td>Update of contact information (procedure)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/410538000\">410538000</a></td><td>Agendamento</td><td/><td>Scheduling (procedure)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1581000314100\">1581000314100</a></td><td>Alteração de agendamento</td><td/><td>Appointment rescheduling (procedure)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/185335007\">185335007</a></td><td>Cancelamento de agendamento pelo hospital</td><td/><td>Appointment canceled by hospital (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/183671000\">183671000</a></td><td>Remoção da lista de espera</td><td/><td>Removed from waiting list (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/74781006\">74781006</a></td><td>Certificado de admissão aprovado</td><td/><td>Admission certification approved (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/16702001\">16702001</a></td><td>Recusa proposta de inscrição</td><td/><td>Admission certification denied (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1591000314102\">1591000314102</a></td><td>Justificação de falta</td><td/><td>Absence justification (procedure)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/414925007\">414925007</a></td><td>Obtenção de consentimento</td><td>Pedido de consentimento</td><td>Obtaining consent (procedure)</td><td>Pedido de consentimento</td></tr><tr><td><a href=\"http://snomed.info/id/311791003\">311791003</a></td><td>Recolha de informação</td><td>Pedido de informação</td><td>Information gathering (procedure)</td><td>Pedido de informação</td></tr><tr><td><a href=\"http://snomed.info/id/223464006\">223464006</a></td><td>Instruções sobre procedimento</td><td/><td>Procedure education (procedure)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/422424000\">422424000</a></td><td>Instruções sobre agendamento</td><td/><td>Scheduling instructions (procedure)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1601000314106\">1601000314106</a></td><td>Pedido de cancelamento de agendamento pelo utente</td><td/><td>Appointment cancellation requested by patient (situation)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1611000314109\">1611000314109</a></td><td>Utente recusa transferência</td><td/><td>Transfer rejected by patient (situation)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/107724000\">107724000</a></td><td>Patient transfer (procedure)</td><td/><td/><td/></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-contact-reason-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.171"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPARADMContactReasonVS",
+  "title" : "CPARADM - Contact Reason",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores ContactReason (CPARADM v3.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "1571000314103",
+        "display" : "Atualização de contactos",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Update of contact information (procedure)"
+        }]
+      },
+      {
+        "code" : "410538000",
+        "display" : "Agendamento",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Scheduling (procedure)"
+        }]
+      },
+      {
+        "code" : "1581000314100",
+        "display" : "Alteração de agendamento",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Appointment rescheduling (procedure)"
+        }]
+      },
+      {
+        "code" : "185335007",
+        "display" : "Cancelamento de agendamento pelo hospital",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Appointment canceled by hospital (finding)"
+        }]
+      },
+      {
+        "code" : "183671000",
+        "display" : "Remoção da lista de espera",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Removed from waiting list (finding)"
+        }]
+      },
+      {
+        "code" : "74781006",
+        "display" : "Certificado de admissão aprovado",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Admission certification approved (finding)"
+        }]
+      },
+      {
+        "code" : "16702001",
+        "display" : "Recusa proposta de inscrição",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Admission certification denied (finding)"
+        }]
+      },
+      {
+        "code" : "1591000314102",
+        "display" : "Justificação de falta",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Absence justification (procedure)"
+        }]
+      },
+      {
+        "code" : "414925007",
+        "display" : "Obtenção de consentimento",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Obtaining consent (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Pedido de consentimento"
+        }]
+      },
+      {
+        "code" : "311791003",
+        "display" : "Recolha de informação",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Information gathering (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Pedido de informação"
+        }]
+      },
+      {
+        "code" : "223464006",
+        "display" : "Instruções sobre procedimento",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Procedure education (procedure)"
+        }]
+      },
+      {
+        "code" : "422424000",
+        "display" : "Instruções sobre agendamento",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Scheduling instructions (procedure)"
+        }]
+      },
+      {
+        "code" : "1601000314106",
+        "display" : "Pedido de cancelamento de agendamento pelo utente",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Appointment cancellation requested by patient (situation)"
+        }]
+      },
+      {
+        "code" : "1611000314109",
+        "display" : "Utente recusa transferência",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Transfer rejected by patient (situation)"
+        }]
+      },
+      {
+        "code" : "107724000",
+        "display" : "Patient transfer (procedure)"
+      }]
+    }]
+  }
+}

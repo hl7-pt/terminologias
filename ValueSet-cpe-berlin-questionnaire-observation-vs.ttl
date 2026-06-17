@@ -1,0 +1,181 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-berlin-questionnaire-observation-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-berlin-questionnaire-observation-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-berlin-questionnaire-observation-vs</b></p><a name=\"cpe-berlin-questionnaire-observation-vs\"> </a><a name=\"hccpe-berlin-questionnaire-observation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/8302-2/\">8302-2</a></td><td>Medida da altura corporal</td><td>Altura</td><td>Body height</td><td>Altura</td></tr><tr><td><a href=\"https://loinc.org/29463-7/\">29463-7</a></td><td>Peso corporal</td><td>Peso</td><td>Body weight</td><td>Peso</td></tr><tr><td><a href=\"https://loinc.org/30525-0/\">30525-0</a></td><td>Idade</td><td/><td>Age</td><td/></tr><tr><td><a href=\"https://loinc.org/46098-0/\">46098-0</a></td><td>Sexo</td><td/><td>Sex</td><td/></tr><tr><td><a href=\"https://loinc.org/64487-2/\">64487-2</a></td><td>Ressona?</td><td/><td>Do you snore?</td><td/></tr><tr><td><a href=\"https://loinc.org/64488-0/\">64488-0</a></td><td>O seu ressonar é:</td><td/><td>Your snoring is:</td><td/></tr><tr><td><a href=\"https://loinc.org/64489-8/\">64489-8</a></td><td>Com que frequência ressona?</td><td/><td>How often do you snore?</td><td/></tr><tr><td><a href=\"https://loinc.org/64490-6/\">64490-6</a></td><td>O seu ressonar alguma vez incomodou outras pessoas?</td><td/><td>Has your snoring ever bothered other people?</td><td/></tr><tr><td><a href=\"https://loinc.org/64491-4/\">64491-4</a></td><td>Alguma pessoa notou que parava de respirar durante o sono?</td><td/><td>Has anyone noticed that you quit breathing during your sleep?</td><td/></tr><tr><td><a href=\"https://loinc.org/64492-2/\">64492-2</a></td><td>Com que frequência se sente cansado ou fatigado depois de uma noite de sono?</td><td/><td>How often do you feel tired or fatigued after your sleep?</td><td/></tr><tr><td><a href=\"https://loinc.org/64493-0/\">64493-0</a></td><td>Durante o dia, sente-se cansado, fatigado ou sem capacidade para o enfrentar?</td><td/><td>During your waking time, do you feel tired, fatigued, or not up to par?</td><td/></tr><tr><td><a href=\"https://loinc.org/64494-8/\">64494-8</a></td><td>Alguma vez \"passou pelas brasas\" ou adormeceu enquanto guiava?</td><td/><td>Have you ever nodded off or fallen asleep while driving a vehicle?</td><td/></tr><tr><td><a href=\"https://loinc.org/64495-5/\">64495-5</a></td><td>Com que frequência é que isso ocorre?</td><td/><td>How often does this occur?</td><td/></tr><tr><td><a href=\"https://loinc.org/64496-3/\">64496-3</a></td><td>Tem tensão arterial alta?</td><td/><td>Do you have high blood pressure?</td><td/></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-berlin-questionnaire-observation-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.181" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPEBerlinQuestionnaireObservationVS"] ; # 
+  fhir:title [ fhir:v "CPE - Berlin QuestionnaireObservation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores BerlinQuestionnaireObservation (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "8302-2" ] ;
+         fhir:display [ fhir:v "Medida da altura corporal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Body height" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Altura" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "29463-7" ] ;
+         fhir:display [ fhir:v "Peso corporal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Body weight" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Peso" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30525-0" ] ;
+         fhir:display [ fhir:v "Idade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Age" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "46098-0" ] ;
+         fhir:display [ fhir:v "Sexo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sex" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "64487-2" ] ;
+         fhir:display [ fhir:v "Ressona?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Do you snore?" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "64488-0" ] ;
+         fhir:display [ fhir:v "O seu ressonar é:" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Your snoring is:" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "64489-8" ] ;
+         fhir:display [ fhir:v "Com que frequência ressona?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "How often do you snore?" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "64490-6" ] ;
+         fhir:display [ fhir:v "O seu ressonar alguma vez incomodou outras pessoas?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Has your snoring ever bothered other people?" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "64491-4" ] ;
+         fhir:display [ fhir:v "Alguma pessoa notou que parava de respirar durante o sono?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Has anyone noticed that you quit breathing during your sleep?" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "64492-2" ] ;
+         fhir:display [ fhir:v "Com que frequência se sente cansado ou fatigado depois de uma noite de sono?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "How often do you feel tired or fatigued after your sleep?" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "64493-0" ] ;
+         fhir:display [ fhir:v "Durante o dia, sente-se cansado, fatigado ou sem capacidade para o enfrentar?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "During your waking time, do you feel tired, fatigued, or not up to par?" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "64494-8" ] ;
+         fhir:display [ fhir:v "Alguma vez \"passou pelas brasas\" ou adormeceu enquanto guiava?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Have you ever nodded off or fallen asleep while driving a vehicle?" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "64495-5" ] ;
+         fhir:display [ fhir:v "Com que frequência é que isso ocorre?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "How often does this occur?" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "64496-3" ] ;
+         fhir:display [ fhir:v "Tem tensão arterial alta?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Do you have high blood pressure?" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

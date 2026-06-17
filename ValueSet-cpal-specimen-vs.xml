@@ -1,0 +1,3568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpal-specimen-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpal-specimen-vs</b></p><a name="cpal-specimen-vs"> </a><a name="hccpal-specimen-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/258500001">258500001</a></td><td>Zaragatoa nasofaríngea</td><td>Nasopharyngeal swab (specimen)</td><td>-</td><td>Nasopharyngeal swab (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/461911000124106">461911000124106</a></td><td>Zaragatoa orofaríngea</td><td>Swab specimen from oropharynx (specimen)</td><td>-</td><td>Swab specimen from oropharynx (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/472881004">472881004</a></td><td>Zaragatoa faríngea</td><td>Swab from pharynx (specimen)</td><td>-</td><td>Swab from pharynx (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/472901003">472901003</a></td><td>Zaragatoa seio nasal</td><td>Swab from nasal sinus (specimen)</td><td>-</td><td>Swab from nasal sinus (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119342007">119342007</a></td><td>Amostra saliva</td><td>Saliva specimen (specimen)</td><td>-</td><td>Saliva specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119297000">119297000</a></td><td>Amostra sangue</td><td>Blood specimen (specimen)</td><td>-</td><td>Blood specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119361006">119361006</a></td><td>Amostra plasma</td><td>Plasma specimen (specimen)</td><td>-</td><td>Plasma specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119364003">119364003</a></td><td>Amostra soro</td><td>Serum specimen (specimen)</td><td>-</td><td>Serum specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/122592007">122592007</a></td><td>Amostra soro ou plasma</td><td>Acellular blood (serum or plasma) specimen (specimen)</td><td>-</td><td>Acellular blood (serum or plasma) specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/122580007">122580007</a></td><td>Amostra cerumen</td><td>Cerumen specimen (specimen)</td><td>-</td><td>Cerumen specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/122573005">122573005</a></td><td>Amostra conteúdo gástrico</td><td>Gastric contents specimen (specimen)</td><td>-</td><td>Gastric contents specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/309502007">309502007</a></td><td>Amostra feto</td><td>Fetus specimen (specimen)</td><td>-</td><td>Fetus specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119345009">119345009</a></td><td>Amostra sangue menstrual</td><td>Menstrual blood specimen (specimen)</td><td>-</td><td>Menstrual blood specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/432825001">432825001</a></td><td>Amostra secreção corporal</td><td>Body secretion specimen (specimen)</td><td>-</td><td>Body secretion specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/122569007">122569007</a></td><td>Amostra de suor</td><td>Sweat specimen (specimen)</td><td>-</td><td>Sweat specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119376003">119376003</a></td><td>Amostra tecido</td><td>Tissue specimen (specimen)</td><td>-</td><td>Tissue specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/445447003">445447003</a></td><td>Amostra obtida por aspiração da traqueia</td><td>Specimen from trachea obtained by aspiration (specimen)</td><td>-</td><td>Specimen from trachea obtained by aspiration (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/441903006">441903006</a></td><td>Amostra obtida por aspiração brônquica</td><td>Specimen obtained by bronchial aspiration (specimen)</td><td>-</td><td>Specimen obtained by bronchial aspiration (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119360007">119360007</a></td><td>Amostra líquido diálise</td><td>Dialysis fluid specimen (specimen)</td><td>-</td><td>Dialysis fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/472898004">472898004</a></td><td>Exsudado mão</td><td>Swab from hand (specimen)</td><td>-</td><td>Swab from hand (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/16223971000119109">16223971000119109</a></td><td>Amostra de líquido sinovial obtida por aspiração com agulha fina</td><td>Synovial fluid specimen obtained by fine needle aspiration procedure (specimen)</td><td>-</td><td>Synovial fluid specimen obtained by fine needle aspiration procedure (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/127476006">127476006</a></td><td>Amostra da trompa de falópio</td><td>Specimen from fallopian tube (specimen)</td><td>-</td><td>Specimen from fallopian tube (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119307008">119307008</a></td><td>Amostra endotraqueal</td><td>Specimen from endotracheal tube (specimen)</td><td>-</td><td>Specimen from endotracheal tube (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/122566000">122566000</a></td><td>Amostra de fluido da ferida</td><td>Fluid specimen from wound (specimen)</td><td>-</td><td>Fluid specimen from wound (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/302795002">302795002</a></td><td>Aspirado de gânglio linfático</td><td>Lymph node aspirate (specimen)</td><td>-</td><td>Lymph node aspirate (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/16215771000119101">16215771000119101</a></td><td>Amostra de gânglio linfático inguinal obtida por aspiração com agulha fina</td><td>Specimen from inguinal lymph node obtained by fine needle aspiration biopsy (specimen)</td><td>-</td><td>Specimen from inguinal lymph node obtained by fine needle aspiration biopsy (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/396997002">396997002</a></td><td>Amostra da medula óssea obtida por aspiração</td><td>Specimen from bone marrow obtained by aspiration (specimen)</td><td>-</td><td>Specimen from bone marrow obtained by aspiration (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/168137004">168137004</a></td><td>Aspirado gástrico</td><td>Gastric aspirate sample (specimen)</td><td>-</td><td>Gastric aspirate sample (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/16224171000119108">16224171000119108</a></td><td>Aspirado nasotranqueal</td><td>Nasotracheal aspirate (specimen)</td><td>-</td><td>Nasotracheal aspirate (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/309174004">309174004</a></td><td>Amostra biópsia brônquica</td><td>Bronchial biopsy sample (specimen)</td><td>-</td><td>Bronchial biopsy sample (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/309191000">309191000</a></td><td>Amostra biópsia da amíglada palatina</td><td>Tonsil biopsy sample (specimen)</td><td>-</td><td>Tonsil biopsy sample (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/369611008">369611008</a></td><td>Amostra de tecido do intestino delgado obtida por biópsia</td><td>Tissue specimen obtained from small intestine by biopsy (specimen)</td><td>-</td><td>Tissue specimen obtained from small intestine by biopsy (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/309079007">309079007</a></td><td>Amostra biópsia ganglionar</td><td>Lymph node biopsy sample (specimen)</td><td>-</td><td>Lymph node biopsy sample (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/309172000">309172000</a></td><td>Amostra biópsia pleural</td><td>Pleura biopsy sample (specimen)</td><td>-</td><td>Pleura biopsy sample (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/122610009">122610009</a></td><td>Amostra biópsia pulmonar</td><td>Specimen from lung obtained by biopsy (specimen)</td><td>-</td><td>Specimen from lung obtained by biopsy (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/122556008">122556008</a></td><td>Amostra sangue do cordão umbilical</td><td>Cord blood specimen (specimen)</td><td>-</td><td>Cord blood specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119325001">119325001</a></td><td>Amostra pele (tecido)</td><td>Skin (tissue) specimen (specimen)</td><td>-</td><td>Skin (tissue) specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119347001">119347001</a></td><td>Amostra líquido seminal</td><td>Seminal fluid specimen (specimen)</td><td>-</td><td>Seminal fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119334006">119334006</a></td><td>Amostra expetoração</td><td>Sputum specimen (specimen)</td><td>-</td><td>Sputum specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258528007">258528007</a></td><td>Exsudado rectal</td><td>Rectal swab (specimen)</td><td>-</td><td>Rectal swab (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/708317005">708317005</a></td><td>Amostra combinada de exsudado rectal e vaginal</td><td>Pooled specimen from vaginal introitus and rectal swab (specimen)</td><td>-</td><td>Pooled specimen from vaginal introitus and rectal swab (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/309166000">309166000</a></td><td>Exsudado auricular</td><td>Ear swab sample (specimen)</td><td>-</td><td>Ear swab sample (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258519006">258519006</a></td><td>Exsudado genital (feminino)</td><td>Female genital swab (specimen)</td><td>-</td><td>Female genital swab (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258498002">258498002</a></td><td>Exsudado conjuntival</td><td>Conjunctival swab (specimen)</td><td>-</td><td>Conjunctival swab (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/16210971000119108">16210971000119108</a></td><td>Exsudado de lesão</td><td>Swab from lesion (specimen)</td><td>-</td><td>Swab from lesion (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/472862007">472862007</a></td><td>Exsudado de lesão cutânea</td><td>Swab from lesion of skin (specimen)</td><td>-</td><td>Swab from lesion of skin (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/444787003">444787003</a></td><td>Exsudado endocervical</td><td>Swab of endocervix (specimen)</td><td>-</td><td>Swab of endocervix (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258488008">258488008</a></td><td>Exsudado ganglionar</td><td>Lymph node smear (specimen)</td><td>-</td><td>Lymph node smear (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258530009">258530009</a></td><td>Exsudado uretral</td><td>Urethral swab (specimen)</td><td>-</td><td>Urethral swab (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258520000">258520000</a></td><td>Exsudado vaginal</td><td>Vaginal swab (specimen)</td><td>-</td><td>Vaginal swab (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258523003">258523003</a></td><td>Exsudado vulvar</td><td>Vulval swab (specimen)</td><td>-</td><td>Vulval swab (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119365002">119365002</a></td><td>Amostra da ferida</td><td>Specimen from wound (specimen)</td><td>-</td><td>Specimen from wound (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119339001">119339001</a></td><td>Amostra fezes</td><td>Stool specimen (specimen)</td><td>-</td><td>Stool specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/309199003">309199003</a></td><td>Amostra fluido gastrointestinal</td><td>Gastrointestinal fluid sample (specimen)</td><td>-</td><td>Gastrointestinal fluid sample (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/418564007">418564007</a></td><td>Amostra fluido pleural</td><td>Pleural fluid specimen (specimen)</td><td>-</td><td>Pleural fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258444001">258444001</a></td><td>Amostra humor aquoso</td><td>Aqueous humor sample (specimen)</td><td>-</td><td>Aqueous humor sample (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258438000">258438000</a></td><td>Amostra humor vitreo</td><td>Vitreous humor sample (specimen)</td><td>-</td><td>Vitreous humor sample (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258607008">258607008</a></td><td>Amostra lavado bronco-alveolar</td><td>Bronchoalveolar lavage fluid sample (specimen)</td><td>LBA</td><td>Bronchoalveolar lavage fluid sample (specimen)</td><td>LBA</td></tr><tr><td><a href="http://snomed.info/id/430248009">430248009</a></td><td>Amostra nasofaríngea</td><td>Specimen from nasopharyngeal structure (specimen)</td><td>-</td><td>Specimen from nasopharyngeal structure (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/309068002">309068002</a></td><td>Amostra lesão cutânea</td><td>Skin lesion sample (specimen)</td><td>-</td><td>Skin lesion sample (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119401005">119401005</a></td><td>Amostra da conjuntiva</td><td>Specimen from conjunctiva (specimen)</td><td>-</td><td>Specimen from conjunctiva (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119373006">119373006</a></td><td>Amostra líquido amniótico</td><td>Amniotic fluid specimen (specimen)</td><td>-</td><td>Amniotic fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/431361003">431361003</a></td><td>Amostra líquido articular</td><td>Joint fluid specimen (specimen)</td><td>-</td><td>Joint fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/309201001">309201001</a></td><td>Amostra líquido ascítico</td><td>Ascitic fluid sample (specimen)</td><td>-</td><td>Ascitic fluid sample (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258450006">258450006</a></td><td>Amostra líquido cefalorraquidiano</td><td>Cerebrospinal fluid sample (specimen)</td><td>LCR</td><td>Cerebrospinal fluid sample (specimen)</td><td>LCR</td></tr><tr><td><a href="http://snomed.info/id/122571007">122571007</a></td><td>Amostra líquido pericárdico</td><td>Pericardial fluid specimen (specimen)</td><td>-</td><td>Pericardial fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258453008">258453008</a></td><td>Amostra líquido quístico</td><td>Cyst fluid sample (specimen)</td><td>-</td><td>Cyst fluid sample (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119332005">119332005</a></td><td>Amostra líquido sinovial</td><td>Synovial fluid specimen (specimen)</td><td>-</td><td>Synovial fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/430236006">430236006</a></td><td>Amostra nervo</td><td>Specimen from nerve (specimen)</td><td>-</td><td>Specimen from nerve (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/608969007">608969007</a></td><td>Amostra pele</td><td>Specimen from skin (specimen)</td><td>-</td><td>Specimen from skin (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119403008">119403008</a></td><td>Amostra placenta</td><td>Specimen from placenta (specimen)</td><td>-</td><td>Specimen from placenta (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119323008">119323008</a></td><td>Amostra pus</td><td>Pus specimen (specimen)</td><td>-</td><td>Pus specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/446131002">446131002</a></td><td>Amostra sangue obtida para hemocultura</td><td>Blood specimen obtained for blood culture (specimen)</td><td>-</td><td>Blood specimen obtained for blood culture (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119359002">119359002</a></td><td>Amostra de medula óssea</td><td>Bone marrow specimen (specimen)</td><td>-</td><td>Bone marrow specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/122551003">122551003</a></td><td>Amostra sangue periférico</td><td>Peripheral blood specimen (specimen)</td><td>-</td><td>Peripheral blood specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258580003">258580003</a></td><td>Amostra sangue total</td><td>Whole blood sample (specimen)</td><td>-</td><td>Whole blood sample (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/16221811000119106">16221811000119106</a></td><td>Amostra obtida por broncoscopia</td><td>Specimen obtained by bronchoscopy (specimen)</td><td>-</td><td>Specimen obtained by bronchoscopy (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/122574004">122574004</a></td><td>Amostra fluido duodenal</td><td>Duodenal fluid specimen (specimen)</td><td>-</td><td>Duodenal fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258467004">258467004</a></td><td>Lavagens nasofaríngeas</td><td>Nasopharyngeal washings (specimen)</td><td>-</td><td>Nasopharyngeal washings (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258436001">258436001</a></td><td>Amostra tecido do cordão umbilical</td><td>Umbilical cord tissue sample (specimen)</td><td>-</td><td>Umbilical cord tissue sample (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/399542003">399542003</a></td><td>Amostra tecido do sistema nervoso central</td><td>Tissue specimen from central nervous system (specimen)</td><td>-</td><td>Tissue specimen from central nervous system (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/122736005">122736005</a></td><td>Amostra tecido placentário</td><td>Tissue specimen from placenta (specimen)</td><td>-</td><td>Tissue specimen from placenta (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/122656001">122656001</a></td><td>Amostra de tecido da vesícula biliar</td><td>Tissue specimen from gallbladder (specimen)</td><td>-</td><td>Tissue specimen from gallbladder (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/122575003">122575003</a></td><td>Amostra urina</td><td>Urine specimen (specimen)</td><td>-</td><td>Urine specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/122572000">122572000</a></td><td>Amostra vómito</td><td>Vomitus specimen (specimen)</td><td>-</td><td>Vomitus specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/257261003">257261003</a></td><td>Zaragatoa</td><td>Swab (specimen)</td><td>-</td><td>Swab (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119327009">119327009</a></td><td>Unha</td><td>Nail specimen (specimen)</td><td>-</td><td>Nail specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/119326000">119326000</a></td><td>Cabelo</td><td>Hair specimen (specimen)</td><td>-</td><td>Hair specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/1259931002">1259931002</a></td><td>Pêlos faciais</td><td>Hair of face specimen (specimen)</td><td>-</td><td>Hair of face specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/410580001">410580001</a></td><td>Amostra de fluido respiratório</td><td>Respiratory fluid specimen (specimen)</td><td>-</td><td>Respiratory fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258502009">258502009</a></td><td>Exsudado purulento</td><td>Pus swab (specimen)</td><td>-</td><td>Pus swab (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258485006">258485006</a></td><td>Raspado da córnea</td><td>Corneal scraping specimen (specimen)</td><td>-</td><td>Corneal scraping specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258603007">258603007</a></td><td>Amostra respiratória</td><td>Respiratory specimen (specimen)</td><td>-</td><td>Respiratory specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/258446004">258446004</a></td><td>Fluido brônquico</td><td>Bronchial fluid specimen (specimen)</td><td>-</td><td>Bronchial fluid specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/309507001">309507001</a></td><td>Biópsia muscular</td><td>Muscle biopsy specimen (specimen)</td><td>-</td><td>Muscle biopsy specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/168145009">168145009</a></td><td>Amostra linfa</td><td>Lymph specimen (specimen)</td><td>-</td><td>Lymph specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/309211008">309211008</a></td><td>Amostra biópsia gástrica</td><td>Gastric biopsy specimen (specimen)</td><td>-</td><td>Gastric biopsy specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/472868006">472868006</a></td><td>Exsudado da estrutura da cavidade peritoneal</td><td>Swab from peritoneal cavity structure (specimen)</td><td>-</td><td>Swab from peritoneal cavity structure (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/732227008">732227008</a></td><td>Amostra de fezes 24h</td><td>Twenty four hour stool specimen (specimen)</td><td>-</td><td>Twenty four hour stool specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/732222002">732222002</a></td><td>Amostra de urina 72h</td><td>Seventy two hour urine specimen (specimen)</td><td>-</td><td>Seventy two hour urine specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/732220005">732220005</a></td><td>Amostra de urina 48h</td><td>Forty eight hour urine specimen (specimen)</td><td>-</td><td>Forty eight hour urine specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/732217002">732217002</a></td><td>Amostra de urina 8h</td><td>Eight hour urine specimen (specimen)</td><td>-</td><td>Eight hour urine specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/732211001">732211001</a></td><td>Amostra de urina 12h</td><td>Twelve hour urine specimen (specimen)</td><td>-</td><td>Twelve hour urine specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/442043001">442043001</a></td><td>Amostra de urina 2h</td><td>2 hour urine specimen (specimen)</td><td>-</td><td>2 hour urine specimen (specimen)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/276833005">276833005</a></td><td>Amostra de urina 24h</td><td>24 hour urine specimen (specimen)</td><td>-</td><td>24 hour urine specimen (specimen)</td><td>-</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpal-specimen-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.15"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPALSpecimenVS"/>
+  <title value="CPAL - Specimen"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-09-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores Specimen (CPAL v7.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="258500001"/>
+        <display value="Zaragatoa nasofaríngea"/>
+        <designation>
+          <language value="en"/>
+          <value value="Nasopharyngeal swab"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Nasopharyngeal swab (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Exsudado nasofaríngeo"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="461911000124106"/>
+        <display value="Zaragatoa orofaríngea"/>
+        <designation>
+          <language value="en"/>
+          <value value="Oropharyngeal swab"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Swab specimen from oropharynx (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Exsudado orofaríngeo"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="472881004"/>
+        <display value="Zaragatoa faríngea"/>
+        <designation>
+          <language value="en"/>
+          <value value="Pharyngeal swab"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Swab from pharynx (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Exsudado faríngeo"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="472901003"/>
+        <display value="Zaragatoa seio nasal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Swab from nasal sinus"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Swab from nasal sinus (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Exsudado nasal"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119342007"/>
+        <display value="Amostra saliva"/>
+        <designation>
+          <language value="en"/>
+          <value value="Saliva specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Saliva specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Saliva"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119297000"/>
+        <display value="Amostra sangue"/>
+        <designation>
+          <language value="en"/>
+          <value value="Blood specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Blood specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Sangue"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119361006"/>
+        <display value="Amostra plasma"/>
+        <designation>
+          <language value="en"/>
+          <value value="Plasma specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Plasma specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Plasma"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119364003"/>
+        <display value="Amostra soro"/>
+        <designation>
+          <language value="en"/>
+          <value value="Serum specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Serum specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Soro"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="122592007"/>
+        <display value="Amostra soro ou plasma"/>
+        <designation>
+          <language value="en"/>
+          <value value="Acellular blood (serum or plasma) specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Acellular blood (serum or plasma) specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Soro ou plasma"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="122580007"/>
+        <display value="Amostra cerumen"/>
+        <designation>
+          <language value="en"/>
+          <value value="Cerumen specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Cerumen specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Cerumen"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="122573005"/>
+        <display value="Amostra conteúdo gástrico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Gastric contents specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Gastric contents specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Conteúdo Gástrico"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="309502007"/>
+        <display value="Amostra feto"/>
+        <designation>
+          <language value="en"/>
+          <value value="Fetus specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Fetus specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Feto"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119345009"/>
+        <display value="Amostra sangue menstrual"/>
+        <designation>
+          <language value="en"/>
+          <value value="Menstrual blood specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Menstrual blood specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Menstruação"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="432825001"/>
+        <display value="Amostra secreção corporal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Body secretion specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Body secretion specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Secreção"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="122569007"/>
+        <display value="Amostra de suor"/>
+        <designation>
+          <language value="en"/>
+          <value value="Sweat specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Sweat specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Suor"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119376003"/>
+        <display value="Amostra tecido"/>
+        <designation>
+          <language value="en"/>
+          <value value="Tissue specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Tissue specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Tecido"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="445447003"/>
+        <display value="Amostra obtida por aspiração da traqueia"/>
+        <designation>
+          <language value="en"/>
+          <value value="Specimen from trachea obtained by aspiration"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Specimen from trachea obtained by aspiration (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Aspirado traqueal"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="441903006"/>
+        <display value="Amostra obtida por aspiração brônquica"/>
+        <designation>
+          <language value="en"/>
+          <value value="Specimen obtained by bronchial aspiration"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Specimen obtained by bronchial aspiration (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Aspirado brônquico"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119360007"/>
+        <display value="Amostra líquido diálise"/>
+        <designation>
+          <language value="en"/>
+          <value value="Dialysis fluid specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Dialysis fluid specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Líquido diálise"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="472898004"/>
+        <display value="Exsudado mão"/>
+        <designation>
+          <language value="en"/>
+          <value value="Swab from hand"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Swab from hand (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Mão"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="16223971000119109"/>
+        <display value="Amostra de líquido sinovial obtida por aspiração com agulha fina"/>
+        <designation>
+          <language value="en"/>
+          <value value="Synovial fluid specimen obtained by fine needle aspiration procedure"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Synovial fluid specimen obtained by fine needle aspiration procedure (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Aspirado articular"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="127476006"/>
+        <display value="Amostra da trompa de falópio"/>
+        <designation>
+          <language value="en"/>
+          <value value="Specimen from fallopian tube"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Specimen from fallopian tube (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Aspirado tubário"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119307008"/>
+        <display value="Amostra endotraqueal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Specimen from endotracheal tube"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Specimen from endotracheal tube (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Aspirado das secreções endotraqueais"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="122566000"/>
+        <display value="Amostra de fluido da ferida"/>
+        <designation>
+          <language value="en"/>
+          <value value="Fluid specimen from wound"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Fluid specimen from wound (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Aspirado de ferida"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="302795002"/>
+        <display value="Aspirado de gânglio linfático"/>
+        <designation>
+          <language value="en"/>
+          <value value="Lymph node aspirate"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Lymph node aspirate (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="16215771000119101"/>
+        <display value="Amostra de gânglio linfático inguinal obtida por aspiração com agulha fina"/>
+        <designation>
+          <language value="en"/>
+          <value value="Specimen from inguinal lymph node obtained by fine needle aspiration biopsy"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Specimen from inguinal lymph node obtained by fine needle aspiration biopsy (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Aspirado de gânglio linfático inguinal"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="396997002"/>
+        <display value="Amostra da medula óssea obtida por aspiração"/>
+        <designation>
+          <language value="en"/>
+          <value value="Specimen from bone marrow obtained by aspiration"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Specimen from bone marrow obtained by aspiration (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Aspirado de medula óssea"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="168137004"/>
+        <display value="Aspirado gástrico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Gastric aspirate sample"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Gastric aspirate sample (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="16224171000119108"/>
+        <display value="Aspirado nasotranqueal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Nasotracheal aspirate"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Nasotracheal aspirate (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Aspirado nasal"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="309174004"/>
+        <display value="Amostra biópsia brônquica"/>
+        <designation>
+          <language value="en"/>
+          <value value="Bronchial biopsy sample"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Bronchial biopsy sample (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Biópsia brônquica"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="309191000"/>
+        <display value="Amostra biópsia da amíglada palatina"/>
+        <designation>
+          <language value="en"/>
+          <value value="Tonsil biopsy sample"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Tonsil biopsy sample (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Biópsia da amíglada palatina"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="369611008"/>
+        <display value="Amostra de tecido do intestino delgado obtida por biópsia"/>
+        <designation>
+          <language value="en"/>
+          <value value="Tissue specimen obtained from small intestine by biopsy"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Tissue specimen obtained from small intestine by biopsy (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Biópsia do intestino delgado"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="309079007"/>
+        <display value="Amostra biópsia ganglionar"/>
+        <designation>
+          <language value="en"/>
+          <value value="Lymph node biopsy sample"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Lymph node biopsy sample (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Biópsia ganglionar"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="309172000"/>
+        <display value="Amostra biópsia pleural"/>
+        <designation>
+          <language value="en"/>
+          <value value="Pleura biopsy sample"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Pleura biopsy sample (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Biópsia pleural"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="122610009"/>
+        <display value="Amostra biópsia pulmonar"/>
+        <designation>
+          <language value="en"/>
+          <value value="Specimen from lung obtained by biopsy"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Specimen from lung obtained by biopsy (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Biópsia pulmonar"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="122556008"/>
+        <display value="Amostra sangue do cordão umbilical"/>
+        <designation>
+          <language value="en"/>
+          <value value="Cord blood specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Cord blood specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Células do cordão umbilical"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119325001"/>
+        <display value="Amostra pele (tecido)"/>
+        <designation>
+          <language value="en"/>
+          <value value="Skin (tissue) specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Skin (tissue) specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119347001"/>
+        <display value="Amostra líquido seminal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Seminal fluid specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Seminal fluid specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119334006"/>
+        <display value="Amostra expetoração"/>
+        <designation>
+          <language value="en"/>
+          <value value="Sputum specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Sputum specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Expetoração"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258528007"/>
+        <display value="Exsudado rectal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Rectal swab"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Rectal swab (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Exsudado anorrectal"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="708317005"/>
+        <display value="Amostra combinada de exsudado rectal e vaginal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Pooled specimen from vaginal introitus and rectal swab"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Pooled specimen from vaginal introitus and rectal swab (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Exsudado anorrectal de lesão anogenital"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="309166000"/>
+        <display value="Exsudado auricular"/>
+        <designation>
+          <language value="en"/>
+          <value value="Ear swab sample"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Ear swab sample (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258519006"/>
+        <display value="Exsudado genital (feminino)"/>
+        <designation>
+          <language value="en"/>
+          <value value="Female genital swab"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Female genital swab (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Exsudado cervico-vaginal"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258498002"/>
+        <display value="Exsudado conjuntival"/>
+        <designation>
+          <language value="en"/>
+          <value value="Conjunctival swab"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Conjunctival swab (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="16210971000119108"/>
+        <display value="Exsudado de lesão"/>
+        <designation>
+          <language value="en"/>
+          <value value="Swab from lesion"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Swab from lesion (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="472862007"/>
+        <display value="Exsudado de lesão cutânea"/>
+        <designation>
+          <language value="en"/>
+          <value value="Swab from lesion of skin"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Swab from lesion of skin (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="444787003"/>
+        <display value="Exsudado endocervical"/>
+        <designation>
+          <language value="en"/>
+          <value value="Swab of endocervix"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Swab of endocervix (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258488008"/>
+        <display value="Exsudado ganglionar"/>
+        <designation>
+          <language value="en"/>
+          <value value="Lymph node smear"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Lymph node smear (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258530009"/>
+        <display value="Exsudado uretral"/>
+        <designation>
+          <language value="en"/>
+          <value value="Urethral swab"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Urethral swab (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258520000"/>
+        <display value="Exsudado vaginal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Vaginal swab"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Vaginal swab (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258523003"/>
+        <display value="Exsudado vulvar"/>
+        <designation>
+          <language value="en"/>
+          <value value="Vulval swab"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Vulval swab (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119365002"/>
+        <display value="Amostra da ferida"/>
+        <designation>
+          <language value="en"/>
+          <value value="Specimen from wound"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Specimen from wound (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Ferida"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119339001"/>
+        <display value="Amostra fezes"/>
+        <designation>
+          <language value="en"/>
+          <value value="Stool specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Stool specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Fezes"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="309199003"/>
+        <display value="Amostra fluido gastrointestinal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Gastrointestinal fluid sample"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Gastrointestinal fluid sample (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Fluido Intestinal"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="418564007"/>
+        <display value="Amostra fluido pleural"/>
+        <designation>
+          <language value="en"/>
+          <value value="Pleural fluid specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Pleural fluid specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Fluido pleural"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258444001"/>
+        <display value="Amostra humor aquoso"/>
+        <designation>
+          <language value="en"/>
+          <value value="Aqueous humor sample"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Aqueous humor sample (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Humor aquoso"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258438000"/>
+        <display value="Amostra humor vitreo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Vitreous humor sample"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Vitreous humor sample (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Humor vitreo"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258607008"/>
+        <display value="Amostra lavado bronco-alveolar"/>
+        <designation>
+          <language value="en"/>
+          <value value="Bronchoalveolar lavage fluid sample"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Bronchoalveolar lavage fluid sample (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Lavado bronco-alveolar"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="LBA"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="430248009"/>
+        <display value="Amostra nasofaríngea"/>
+        <designation>
+          <language value="en"/>
+          <value value="Specimen from nasopharyngeal structure"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Specimen from nasopharyngeal structure (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Lavados ou aspirados da nasofaringe"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="309068002"/>
+        <display value="Amostra lesão cutânea"/>
+        <designation>
+          <language value="en"/>
+          <value value="Skin lesion sample"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Skin lesion sample (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Lesão cutânea"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119401005"/>
+        <display value="Amostra da conjuntiva"/>
+        <designation>
+          <language value="en"/>
+          <value value="Specimen from conjunctiva"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Specimen from conjunctiva (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Lesão da conjuntiva"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119373006"/>
+        <display value="Amostra líquido amniótico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Amniotic fluid specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Amniotic fluid specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Líquido amniótico"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="431361003"/>
+        <display value="Amostra líquido articular"/>
+        <designation>
+          <language value="en"/>
+          <value value="Joint fluid specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Joint fluid specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Líquido articular"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="309201001"/>
+        <display value="Amostra líquido ascítico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Ascitic fluid sample"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Ascitic fluid sample (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Líquido ascítico"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258450006"/>
+        <display value="Amostra líquido cefalorraquidiano"/>
+        <designation>
+          <language value="en"/>
+          <value value="Cerebrospinal fluid sample"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Cerebrospinal fluid sample (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Liquor"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="LCR"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="122571007"/>
+        <display value="Amostra líquido pericárdico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Pericardial fluid specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Pericardial fluid specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Líquido pericárdico"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258453008"/>
+        <display value="Amostra líquido quístico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Cyst fluid sample"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Cyst fluid sample (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Líquido quístico"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119332005"/>
+        <display value="Amostra líquido sinovial"/>
+        <designation>
+          <language value="en"/>
+          <value value="Synovial fluid specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Synovial fluid specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Líquido sinovial"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="430236006"/>
+        <display value="Amostra nervo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Specimen from nerve"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Specimen from nerve (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Nervo"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="608969007"/>
+        <display value="Amostra pele"/>
+        <designation>
+          <language value="en"/>
+          <value value="Specimen from skin"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Specimen from skin (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Pele"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119403008"/>
+        <display value="Amostra placenta"/>
+        <designation>
+          <language value="en"/>
+          <value value="Specimen from placenta"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Specimen from placenta (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Placenta"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119323008"/>
+        <display value="Amostra pus"/>
+        <designation>
+          <language value="en"/>
+          <value value="Pus specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Pus specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Pus"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="446131002"/>
+        <display value="Amostra sangue obtida para hemocultura"/>
+        <designation>
+          <language value="en"/>
+          <value value="Blood specimen obtained for blood culture"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Blood specimen obtained for blood culture (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Sangue (hemocultura)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119359002"/>
+        <display value="Amostra de medula óssea"/>
+        <designation>
+          <language value="en"/>
+          <value value="Bone marrow specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Bone marrow specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Medula óssea"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="122551003"/>
+        <display value="Amostra sangue periférico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Peripheral blood specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Peripheral blood specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Sangue periférico"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258580003"/>
+        <display value="Amostra sangue total"/>
+        <designation>
+          <language value="en"/>
+          <value value="Whole blood sample"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Whole blood sample (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Sangue total"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="16221811000119106"/>
+        <display value="Amostra obtida por broncoscopia"/>
+        <designation>
+          <language value="en"/>
+          <value value="Specimen obtained by bronchoscopy"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Specimen obtained by bronchoscopy (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Secreções brônquicas"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="122574004"/>
+        <display value="Amostra fluido duodenal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Duodenal fluid specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Duodenal fluid specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Secreções do duodeno"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258467004"/>
+        <display value="Lavagens nasofaríngeas"/>
+        <designation>
+          <language value="en"/>
+          <value value="Nasopharyngeal washings"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Nasopharyngeal washings (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Secreções naso-faríngeas"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258436001"/>
+        <display value="Amostra tecido do cordão umbilical"/>
+        <designation>
+          <language value="en"/>
+          <value value="Umbilical cord tissue sample"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Umbilical cord tissue sample (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Tecido do cordão umbilical"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="399542003"/>
+        <display value="Amostra tecido do sistema nervoso central"/>
+        <designation>
+          <language value="en"/>
+          <value value="Tissue specimen from central nervous system"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Tissue specimen from central nervous system (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Tecido do sistema nervoso central"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="122736005"/>
+        <display value="Amostra tecido placentário"/>
+        <designation>
+          <language value="en"/>
+          <value value="Tissue specimen from placenta"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Tissue specimen from placenta (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Tecido placentário"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="122656001"/>
+        <display value="Amostra de tecido da vesícula biliar"/>
+        <designation>
+          <language value="en"/>
+          <value value="Tissue specimen from gallbladder"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Tissue specimen from gallbladder (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Tecidoda vesícula biliar"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="122575003"/>
+        <display value="Amostra urina"/>
+        <designation>
+          <language value="en"/>
+          <value value="Urine specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Urine specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Urina"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="122572000"/>
+        <display value="Amostra vómito"/>
+        <designation>
+          <language value="en"/>
+          <value value="Vomitus specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Vomitus specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Vómito"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="257261003"/>
+        <display value="Zaragatoa"/>
+        <designation>
+          <language value="en"/>
+          <value value="Swab"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Swab (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119327009"/>
+        <display value="Unha"/>
+        <designation>
+          <language value="en"/>
+          <value value="Nail specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Nail specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Amostra de unha"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="119326000"/>
+        <display value="Cabelo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Hair specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Hair specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Amostra de cabelo"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1259931002"/>
+        <display value="Pêlos faciais"/>
+        <designation>
+          <language value="en"/>
+          <value value="Hair of face specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Hair of face specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Cabelo da face"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="410580001"/>
+        <display value="Amostra de fluido respiratório"/>
+        <designation>
+          <language value="en"/>
+          <value value="Respiratory fluid specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Respiratory fluid specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Fluido respiratório"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258502009"/>
+        <display value="Exsudado purulento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Pus swab"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Pus swab (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258485006"/>
+        <display value="Raspado da córnea"/>
+        <designation>
+          <language value="en"/>
+          <value value="Corneal scraping specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Corneal scraping specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258603007"/>
+        <display value="Amostra respiratória"/>
+        <designation>
+          <language value="en"/>
+          <value value="Respiratory specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Respiratory specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="258446004"/>
+        <display value="Fluido brônquico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Bronchial fluid specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Bronchial fluid specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Escovado brônquico"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="309507001"/>
+        <display value="Biópsia muscular"/>
+        <designation>
+          <language value="en"/>
+          <value value="Muscle biopsy specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Muscle biopsy specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="168145009"/>
+        <display value="Amostra linfa"/>
+        <designation>
+          <language value="en"/>
+          <value value="Lymph specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Lymph specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Linfa"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="309211008"/>
+        <display value="Amostra biópsia gástrica"/>
+        <designation>
+          <language value="en"/>
+          <value value="Gastric biopsy specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Gastric biopsy specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="472868006"/>
+        <display value="Exsudado da estrutura da cavidade peritoneal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Swab from peritoneal cavity structure"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Swab from peritoneal cavity structure (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Exsudado da cavidade peritoneal"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="732227008"/>
+        <display value="Amostra de fezes 24h"/>
+        <designation>
+          <language value="en"/>
+          <value value="Twenty four hour stool specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Twenty four hour stool specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Fezes 24h"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="732222002"/>
+        <display value="Amostra de urina 72h"/>
+        <designation>
+          <language value="en"/>
+          <value value="72 hour urine specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Seventy two hour urine specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Urina 72h"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="732220005"/>
+        <display value="Amostra de urina 48h"/>
+        <designation>
+          <language value="en"/>
+          <value value="48 hour urine specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Forty eight hour urine specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Urina 48h"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="732217002"/>
+        <display value="Amostra de urina 8h"/>
+        <designation>
+          <language value="en"/>
+          <value value="8 hour urine specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Eight hour urine specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Urina 8h"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="732211001"/>
+        <display value="Amostra de urina 12h"/>
+        <designation>
+          <language value="en"/>
+          <value value="12 hour urine specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Twelve hour urine specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Urina 12h"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="442043001"/>
+        <display value="Amostra de urina 2h"/>
+        <designation>
+          <language value="en"/>
+          <value value="2 hour urine specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="2 hour urine specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Urina 2h"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="276833005"/>
+        <display value="Amostra de urina 24h"/>
+        <designation>
+          <language value="en"/>
+          <value value="24 hour urine specimen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="24 hour urine specimen (specimen)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Urina 24h"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

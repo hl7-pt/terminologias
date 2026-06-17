@@ -1,0 +1,2223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.pt.terminology"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ImplementationGuide hl7.fhir.pt.terminology</b></p><a name="hl7.fhir.pt.terminology"> </a><a name="hchl7.fhir.pt.terminology"> </a><h2>TerminologyPT</h2><p>O URL oficial para este guia de implementação é: </p><pre>http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.terminology</pre><div><p>Example IG exercises many of the fields in a SUSHI configuration.</p>
+</div></div>
+  </text>
+  <url value="http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.terminology"/>
+  <version value="1.0.0"/>
+  <name value="TerminologyPT"/>
+  <title value="HL7 PT FHIR Implementation Guide: Terminologias"/>
+  <status value="active"/>
+  <date value="2024-11-27"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Example IG exercises many of the fields in a SUSHI configuration."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.pt.terminology"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="5.0.0"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r5"/>
+    <version value="7.2.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r5"/>
+    <version value="5.3.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r5#1.1.2"/>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpal-ab0-group-phenotype-vs"/>
+      </reference>
+      <name value="CPAL - AB0 Group Phenotype"/>
+      <description value="Conjunto de valores AB0GroupPhenotype (CPAL v7.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpal-antimicrobial-vs"/>
+      </reference>
+      <name value="CPAL - Antimicrobial"/>
+      <description value="Conjunto de valores Antimicrobial (CPAL v7.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpal-antimicrobial-type-vs"/>
+      </reference>
+      <name value="CPAL - Antimicrobial Type"/>
+      <description value="Conjunto de valores AntimicrobialType (CPAL v7.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpal-appearanceof-specimen-vs"/>
+      </reference>
+      <name value="CPAL - Appearance of Specimen"/>
+      <description value="Conjunto de valores AppearanceofSpecimen (CPAL v7.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpal-blood-group-vs"/>
+      </reference>
+      <name value="CPAL - Blood Group"/>
+      <description value="Conjunto de valores BloodGroup (CPAL v7.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpal-cast-vs"/>
+      </reference>
+      <name value="CPAL - Cast"/>
+      <description value="Conjunto de valores Cast (CPAL v7.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpal-cell-vs"/>
+      </reference>
+      <name value="CPAL - Cell"/>
+      <description value="Conjunto de valores Cell (CPAL v7.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpal-clinical-pathology-method-vs"/>
+      </reference>
+      <name value="CPAL - Clinical Pathology Method"/>
+      <description value="Conjunto de valores ClinicalPathologyMethod (CPAL v7.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpal-clinical-pathology-outcome-vs"/>
+      </reference>
+      <name value="CPAL - Clinical Pathology Outcome"/>
+      <description value="Conjunto de valores ClinicalPathologyOutcome (CPAL v7.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpal-clinical-pathology-procedure-vs"/>
+      </reference>
+      <name value="CPAL - Clinical Pathology Procedure"/>
+      <description value="Conjunto de valores ClinicalPathologyProcedure (CPAL v7.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpal-colorof-specimen-vs"/>
+      </reference>
+      <name value="CPAL - Color of Specimen"/>
+      <description value="Conjunto de valores ColorofSpecimen (CPAL v7.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpal-consistency-feces-vs"/>
+      </reference>
+      <name value="CPAL - Consistency of Feces"/>
+      <description value="Conjunto de valores ConsistencyFeces (CPAL v7.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpal-crystal-vs"/>
+      </reference>
+      <name value="CPAL - Crystal"/>
+      <description value="Conjunto de valores Crystal (CPAL v7.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpal-laboratory-study-type-vs"/>
+      </reference>
+      <name value="CPAL - Laboratory Study Type"/>
+      <description value="Conjunto de valores LaboratoryStudyType (CPAL v7.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpal-microorganism-vs"/>
+      </reference>
+      <name value="CPAL - Microorganism"/>
+      <description value="Conjunto de valores Microorganism (CPAL v7.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpal-rhesus-factor-vs"/>
+      </reference>
+      <name value="CPAL - Rhesus Factor"/>
+      <description value="Conjunto de valores RhesusFactor (CPAL v7.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpal-specimen-vs"/>
+      </reference>
+      <name value="CPAL - Specimen"/>
+      <description value="Conjunto de valores Specimen (CPAL v7.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpal-susceptibility-vs"/>
+      </reference>
+      <name value="CPAL - Susceptibility"/>
+      <description value="Conjunto de valores Susceptibility (CPAL v7.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpara-absent-or-unknown-allergy-vs"/>
+      </reference>
+      <name value="CPARA - AbsentOrUnknownAllergy"/>
+      <description value="Conjunto de valores AbsentOrUnknownAllergy (CPARA v5.1.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpara-allergen-no-drug-vs"/>
+      </reference>
+      <name value="CPARA - Allergen No Drug"/>
+      <description value="Conjunto de valores AllergenNoDrug (CPARA v5.1.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpara-allergy-intolerance-category-vs"/>
+      </reference>
+      <name value="CPARA - Allergy Intolerance Category"/>
+      <description value="Conjunto de valores AllergyIntoleranceCategory (CPARA v5.1.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpara-allergy-intolerance-type-vs"/>
+      </reference>
+      <name value="CPARA - Allergy Intolerance Type"/>
+      <description value="Conjunto de valores AllergyIntoleranceType (CPARA v5.1.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpara-reaction-manifestation-vs"/>
+      </reference>
+      <name value="CPARA - Reaction Manifestation"/>
+      <description value="Conjunto de valores ReactionManifestation (CPARA v5.1.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-additional-arrangement-vs"/>
+      </reference>
+      <name value="CPARADM - Additional Arrangement"/>
+      <description value="Conjunto de valores AdditionalArrangement (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-administrative-emergency-cause-of-admission-vs"/>
+      </reference>
+      <name value="CPARADM - Adm Emergency Cause Admission"/>
+      <description value="Conjunto de valores AdministrativeEmergencyCauseOfAdmission (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-cancellation-reason-vs"/>
+      </reference>
+      <name value="CPARADM - Cancellation Reason"/>
+      <description value="Conjunto de valores CancellationReason (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-cause-of-admission-vs"/>
+      </reference>
+      <name value="CPARADM - Cause of Admission"/>
+      <description value="Conjunto de valores CauseOfAdmission (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cparadm-cefrlevels-cs"/>
+      </reference>
+      <name value="CPARADM - CEFR Level"/>
+      <description value="Sistema de codificação local CEFRLevels (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-cefrlevels-vs"/>
+      </reference>
+      <name value="CPARADM - CEFR Level"/>
+      <description value="Conjunto de valores CEFRLevels (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-clinical-outcome-vs"/>
+      </reference>
+      <name value="CPARADM - Clinical Outcome"/>
+      <description value="Conjunto de valores ClinicalOutcome (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-communication-mode-vs"/>
+      </reference>
+      <name value="CPARADM - Communication Mode"/>
+      <description value="Conjunto de valores CommunicationMode (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-communication-type-vs"/>
+      </reference>
+      <name value="CPARADM - Communication Type"/>
+      <description value="Conjunto de valores CommunicationType (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-contact-reason-vs"/>
+      </reference>
+      <name value="CPARADM - Contact Reason"/>
+      <description value="Conjunto de valores ContactReason (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-contact-result-vs"/>
+      </reference>
+      <name value="CPARADM - Contact Result"/>
+      <description value="Conjunto de valores ContactResult (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-destination-vs"/>
+      </reference>
+      <name value="CPARADM - Destination"/>
+      <description value="Conjunto de valores Destination (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-discharge-type-vs"/>
+      </reference>
+      <name value="CPARADM - Discharge Type"/>
+      <description value="Conjunto de valores DischargeType (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-document-format-vs"/>
+      </reference>
+      <name value="CPARADM - Document Format"/>
+      <description value="Conjunto de valores DocumentFormat (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-education-or-schooling-vs"/>
+      </reference>
+      <name value="CPARADM - Education Or Schooling"/>
+      <description value="Conjunto de valores EducationOrSchooling (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-encounter-communication-method-vs"/>
+      </reference>
+      <name value="CPARADM - Encounter Communication Method"/>
+      <description value="Conjunto de valores EncounterCommunicationMethod (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-encounter-presence-vs"/>
+      </reference>
+      <name value="CPARADM - Encounter Presence"/>
+      <description value="Conjunto de valores EncounterPresence (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-funding-source-vs"/>
+      </reference>
+      <name value="CPARADM - Funding Source"/>
+      <description value="Conjunto de valores FundingSource (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-internal-external-patient-vs"/>
+      </reference>
+      <name value="CPARADM - Internal External Patient"/>
+      <description value="Conjunto de valores InternalExternalPatient (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-location-type-vs"/>
+      </reference>
+      <name value="CPARADM - Location Type"/>
+      <description value="Conjunto de valores LocationType (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-operational-location-status-vs"/>
+      </reference>
+      <name value="CPARADM - Operational Location Status"/>
+      <description value="Conjunto de valores OperationalLocationStatus (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-organization-type-vs"/>
+      </reference>
+      <name value="CPARADM - Organization Type"/>
+      <description value="Conjunto de valores OrganizationType (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-patient-encounter-status-vs"/>
+      </reference>
+      <name value="CPARADM - Patient Encounter Status"/>
+      <description value="Conjunto de valores PatientEncounterStatus (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-patient-transfer-reason-vs"/>
+      </reference>
+      <name value="CPARADM - Patient Transfer Reason"/>
+      <description value="Conjunto de valores PatientTransferReason (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-priority-vs"/>
+      </reference>
+      <name value="CPARADM - Priority"/>
+      <description value="Conjunto de valores Priority (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-provenance-vs"/>
+      </reference>
+      <name value="CPARADM - Provenance"/>
+      <description value="Conjunto de valores Provenance (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-reason-not-elegible-for-schedule-vs"/>
+      </reference>
+      <name value="CPARADM - Reason Not Elegible ForSchedule"/>
+      <description value="Conjunto de valores ReasonNotElegibleForSchedule (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-surgery-waiting-list-suspension-vs"/>
+      </reference>
+      <name value="CPARADM - Surgery Waiting List Suspension"/>
+      <description value="Conjunto de valores SurgeryWaitingListSuspension (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cparadm-type-of-planning-vs"/>
+      </reference>
+      <name value="CPARADM - Type of Planning"/>
+      <description value="Conjunto de valores TypeOfPlanning (CPARADM v3.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpcbd-marital-status-vs"/>
+      </reference>
+      <name value="CPCBD - Marital Status"/>
+      <description value="Conjunto de valores MaritalStatus (CPCBD v1.1.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpcbd-person-vs"/>
+      </reference>
+      <name value="CPCBD - Person"/>
+      <description value="Conjunto de valores Person (CPCBD v1.1.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpcbd-person-in-family-vs"/>
+      </reference>
+      <name value="CPCBD - Person in Family"/>
+      <description value="Conjunto de valores PersonInFamily (CPCBD v1.1.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpcbd-sex-vs"/>
+      </reference>
+      <name value="CPCBD - Sex-Gender"/>
+      <description value="Conjunto de valores Sex (CPCBD v1.1.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-actobservation-vs"/>
+      </reference>
+      <name value="CPE - ACT Observation"/>
+      <description value="Conjunto de valores ACTObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-actresult-vs"/>
+      </reference>
+      <name value="CPE - ACT Result"/>
+      <description value="Conjunto de valores ACTResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-apgar-score-observation-vs"/>
+      </reference>
+      <name value="CPE - Apgar Score Observation"/>
+      <description value="Conjunto de valores ApgarScoreObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-apgar-score-result-vs"/>
+      </reference>
+      <name value="CPE - Apgar Score Result"/>
+      <description value="Conjunto de valores ApgarScoreResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-asascale-result-vs"/>
+      </reference>
+      <name value="CPE - ASA Scale Result"/>
+      <description value="Conjunto de valores ASAScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-auditobservation-vs"/>
+      </reference>
+      <name value="CPE - AUDIT Observation"/>
+      <description value="Conjunto de valores AUDITObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-auditresult-vs"/>
+      </reference>
+      <name value="CPE - AUDIT Result"/>
+      <description value="Conjunto de valores AUDITResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-auditcobservation-vs"/>
+      </reference>
+      <name value="CPE - AUDIT-C Observation"/>
+      <description value="Conjunto de valores AUDITCObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-auditcresult-vs"/>
+      </reference>
+      <name value="CPE - AUDIT-C Result"/>
+      <description value="Conjunto de valores AUDITCResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-apvuscale-vs"/>
+      </reference>
+      <name value="CPE - AVPU Scale"/>
+      <description value="Conjunto de valores APVUScale (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-barthel-index-observation-vs"/>
+      </reference>
+      <name value="CPE - Barthel Index Observation"/>
+      <description value="Conjunto de valores BarthelIndexObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-barthel-index-result-vs"/>
+      </reference>
+      <name value="CPE - Barthel Index Result"/>
+      <description value="Conjunto de valores BarthelIndexResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-berlin-questionnaire-result-vs"/>
+      </reference>
+      <name value="CPE - Berlin Questionnaire Result"/>
+      <description value="Conjunto de valores BerlinQuestionnaireResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-berlin-questionnaire-observation-vs"/>
+      </reference>
+      <name value="CPE - Berlin QuestionnaireObservation"/>
+      <description value="Conjunto de valores BerlinQuestionnaireObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-biradsscale-result-vs"/>
+      </reference>
+      <name value="CPE - BI-RADS Scale Result"/>
+      <description value="Conjunto de valores BIRADSScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-borg-scale-result-vs"/>
+      </reference>
+      <name value="CPE - Borg Scale Result"/>
+      <description value="Conjunto de valores BorgScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-boston-scale-result-vs"/>
+      </reference>
+      <name value="CPE - Boston Scale Result"/>
+      <description value="Conjunto de valores BostonScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-braden-scale-observation-vs"/>
+      </reference>
+      <name value="CPE - Braden Scale Observation"/>
+      <description value="Conjunto de valores BradenScaleObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-braden-scale-result-vs"/>
+      </reference>
+      <name value="CPE - Braden Scale Result"/>
+      <description value="Conjunto de valores BradenScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-bromage-scale-observation-vs"/>
+      </reference>
+      <name value="CPE - Bromage Scale Observation"/>
+      <description value="Conjunto de valores BromageScaleObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-bromage-scale-result-vs"/>
+      </reference>
+      <name value="CPE - Bromage Scale Result"/>
+      <description value="Conjunto de valores BromageScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-cdcwound-classification-result-vs"/>
+      </reference>
+      <name value="CPE - CDC Wound Classification Result"/>
+      <description value="Conjunto de valores CDCWoundClassificationResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-ecogperformance-result-vs"/>
+      </reference>
+      <name value="CPE - ECOG Performance Result"/>
+      <description value="Conjunto de valores ECOGPerformanceResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-fagerstrom-test-observation-vs"/>
+      </reference>
+      <name value="CPE - Fagerstrom Test Observation"/>
+      <description value="Conjunto de valores FagerstromTestObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-fagerstrom-test-result-vs"/>
+      </reference>
+      <name value="CPE - Fagerstrom Test Result"/>
+      <description value="Conjunto de valores FagerstromTestResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-findriscscale-observation-vs"/>
+      </reference>
+      <name value="CPE - FINDRISC Scale Observation"/>
+      <description value="Conjunto de valores FINDRISCScaleObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-findriscscale-result-vs"/>
+      </reference>
+      <name value="CPE - FINDRISC Scale Result"/>
+      <description value="Conjunto de valores FINDRISCScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-flaccscale-observation-vs"/>
+      </reference>
+      <name value="CPE - FLACC Scale Observation"/>
+      <description value="Conjunto de valores FLACCScaleObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-flaccscale-result-vs"/>
+      </reference>
+      <name value="CPE - FLACC Scale Result"/>
+      <description value="Conjunto de valores FLACCScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-glasgow-coma-scale-observation-vs"/>
+      </reference>
+      <name value="CPE - Glasgow Coma Scale Observation"/>
+      <description value="Conjunto de valores GlasgowComaScaleObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-glasgow-coma-scale-result-vs"/>
+      </reference>
+      <name value="CPE - Glasgow Coma Scale Result"/>
+      <description value="Conjunto de valores GlasgowComaScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-grade-muscle-power-vs"/>
+      </reference>
+      <name value="CPE - Grade Muscle Power"/>
+      <description value="Conjunto de valores GradeMusclePower (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-karnofsky-performance-result-vs"/>
+      </reference>
+      <name value="CPE - Karnofsky Performance Result"/>
+      <description value="Conjunto de valores KarnofskyPerformanceResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-killip-observation-vs"/>
+      </reference>
+      <name value="CPE - Killip Observation"/>
+      <description value="Conjunto de valores KillipObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-killip-result-vs"/>
+      </reference>
+      <name value="CPE - Killip Result"/>
+      <description value="Conjunto de valores KillipResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-minnesota-lhfqobservation-vs"/>
+      </reference>
+      <name value="CPE - Minnesota LHFQ Observation"/>
+      <description value="Conjunto de valores MinnesotaLHFQObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-minnesota-lhfqresult-vs"/>
+      </reference>
+      <name value="CPE - Minnesota LHFQ Result"/>
+      <description value="Conjunto de valores MinnesotaLHFQResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-morse-fall-scale-observation-vs"/>
+      </reference>
+      <name value="CPE - Morse Fall Scale Observation"/>
+      <description value="Conjunto de valores MorseFallScaleObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-morse-fall-scale-result-vs"/>
+      </reference>
+      <name value="CPE - Morse Fall Scale Result"/>
+      <description value="Conjunto de valores MorseFallScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-nihstroke-scale-observation-vs"/>
+      </reference>
+      <name value="CPE - NIH Stroke Scale Observation"/>
+      <description value="Conjunto de valores NIHStrokeScaleObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-nihstroke-scale-result-vs"/>
+      </reference>
+      <name value="CPE - NIH Stroke Scale Result"/>
+      <description value="Conjunto de valores NIHStrokeScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-nipsscale-observation-vs"/>
+      </reference>
+      <name value="CPE - NIPS Scale Observation"/>
+      <description value="Conjunto de valores NIPSScaleObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-nipsscale-result-vs"/>
+      </reference>
+      <name value="CPE - NIPS Scale Result"/>
+      <description value="Conjunto de valores NIPSScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-npassscale-observation-vs"/>
+      </reference>
+      <name value="CPE - NPASS Scale Observation"/>
+      <description value="Conjunto de valores NPASSScaleObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-npassscale-result-vs"/>
+      </reference>
+      <name value="CPE - NPASS Scale Result"/>
+      <description value="Conjunto de valores NPASSScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-nrs2002-scale-observation-vs"/>
+      </reference>
+      <name value="CPE - NRS 2002 Scale Observation"/>
+      <description value="Conjunto de valores NRS2002ScaleObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-nrs2002-scale-result-vs"/>
+      </reference>
+      <name value="CPE - NRS 2002 Scale Result"/>
+      <description value="Conjunto de valores NRS2002ScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-nsrasobservation-vs"/>
+      </reference>
+      <name value="CPE - NSRAS Observation"/>
+      <description value="Conjunto de valores NSRASObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-nsrasresults-vs"/>
+      </reference>
+      <name value="CPE - NSRAS Result"/>
+      <description value="Conjunto de valores NSRASResults (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-pain-num-severity-observation-vs"/>
+      </reference>
+      <name value="CPE - Pain Num Severity Observation"/>
+      <description value="Conjunto de valores PainNumSeverityObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-pain-num-severity-result-vs"/>
+      </reference>
+      <name value="CPE - Pain Num Severity Result"/>
+      <description value="Conjunto de valores PainNumSeverityResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-painadscale-observation-vs"/>
+      </reference>
+      <name value="CPE - PAINAD Scale Observation"/>
+      <description value="Conjunto de valores PAINADScaleObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-painadscale-result-vs"/>
+      </reference>
+      <name value="CPE - PAINAD Scale Result"/>
+      <description value="Conjunto de valores PAINADScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-ptmodification-manchester-triage-vs"/>
+      </reference>
+      <name value="CPE - PT Mod Manchester Triage"/>
+      <description value="Conjunto de valores PTModificationManchesterTriage (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-ramsay-scale-observation-vs"/>
+      </reference>
+      <name value="CPE - Ramsay Scale Observation"/>
+      <description value="Conjunto de valores RamsayScaleObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-ramsay-scale-result-vs"/>
+      </reference>
+      <name value="CPE - Ramsay Scale Result"/>
+      <description value="Conjunto de valores RamsayScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-rankin-scale-result-vs"/>
+      </reference>
+      <name value="CPE - Rankin Scale Result"/>
+      <description value="Conjunto de valores RankinScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-robson-classification-result-vs"/>
+      </reference>
+      <name value="CPE - Robson Classification Result"/>
+      <description value="Conjunto de valores RobsonClassificationResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-rosenberg-scale-observation-vs"/>
+      </reference>
+      <name value="CPE - Rosenberg Scale Observation"/>
+      <description value="Conjunto de valores RosenbergScaleObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-rosenberg-scale-result-vs"/>
+      </reference>
+      <name value="CPE - Rosenberg Scale Result"/>
+      <description value="Conjunto de valores RosenbergScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-scale-vs"/>
+      </reference>
+      <name value="CPE - Scale"/>
+      <description value="Conjunto de valores Scale (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-tardieu-scale-observation-vs"/>
+      </reference>
+      <name value="CPE - Tardieu Scale Observation"/>
+      <description value="Conjunto de valores TardieuScaleObservation (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-tardieu-scale-result-vs"/>
+      </reference>
+      <name value="CPE - Tardieu Scale Result"/>
+      <description value="Conjunto de valores TardieuScaleResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-triage-system-vs"/>
+      </reference>
+      <name value="CPE - Triage System"/>
+      <description value="Conjunto de valores TriageSystem (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpe-wong-baker-facesresult-vs"/>
+      </reference>
+      <name value="CPE - Wong-Baker FACES Result"/>
+      <description value="Conjunto de valores WongBakerFACESResult (CPE v2.0.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpevs-medical-physics-specialty-vs"/>
+      </reference>
+      <name value="CPEVS - Medical Physics Specialty"/>
+      <description value="Conjunto de valores MedicalPhysicsSpecialty (CPEVS v2.1.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpevs-medical-specialty-vs"/>
+      </reference>
+      <name value="CPEVS - Medical Specialty"/>
+      <description value="Conjunto de valores MedicalSpecialty (CPEVS v2.1.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpevs-primary-care-assistance-activity-vs"/>
+      </reference>
+      <name value="CPEVS - Primary Care AssistanceActivity"/>
+      <description value="Conjunto de valores PrimaryCareAssistanceActivity (CPEVS v2.1.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpevs-service-type-vs"/>
+      </reference>
+      <name value="CPEVS - Service Type"/>
+      <description value="Conjunto de valores ServiceType (CPEVS v2.1.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpevs-specialized-assistance-activity-vs"/>
+      </reference>
+      <name value="CPEVS - Specialized Assistance Activity"/>
+      <description value="Conjunto de valores SpecializedAssistanceActivity (CPEVS v2.1.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpgo-gynecology-procedures-vs"/>
+      </reference>
+      <name value="CPGO - Gynecology Procedures"/>
+      <description value="Conjunto de valores GynecologyProcedures (CPGO v1.1)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpgo-obstetrics-procedures-vs"/>
+      </reference>
+      <name value="CPGO - Obstetrics Procedures"/>
+      <description value="Conjunto de valores ObstetricsProcedures (CPGO v1.1)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpmn-medicine-nuclear-procedures-vs"/>
+      </reference>
+      <name value="CPMN - Medicine Nuclear Procedures"/>
+      <description value="Conjunto de valores MedicineNuclearProcedures (CPMN v1.1)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpn-disorder-vs"/>
+      </reference>
+      <name value="CPN - Disorder"/>
+      <description value="Conjunto de valores Disorder (CPN v3.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpn-finding-vs"/>
+      </reference>
+      <name value="CPN - Finding"/>
+      <description value="Conjunto de valores Finding (CPN v3.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpn-procedure-therapeutic-vs"/>
+      </reference>
+      <name value="CPN - Procedure&amp;Therapeutic"/>
+      <description value="Conjunto de valores ProcedureTherapeutic (CPN v3.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpn-product-vs"/>
+      </reference>
+      <name value="CPN - Product"/>
+      <description value="Conjunto de valores Product (CPN v3.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cpn-status-vs"/>
+      </reference>
+      <name value="CPN - Status"/>
+      <description value="Conjunto de valores Status (CPN v3.0)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/especialidades-enfermagem-cs"/>
+      </reference>
+      <name value="Especialidades Enfermagem"/>
+      <description value="Especialidades enfermagem existentes em Portugal"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/especialidades-farmaceuticas-cs"/>
+      </reference>
+      <name value="Especialidades Farmacêuticas"/>
+      <description value="Especialidades farmacêuticas existentes em Portugal"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/especialidades-medicas-cs"/>
+      </reference>
+      <name value="Especialidades Médicas"/>
+      <description value="Especialidades médicas existentes em Portugal"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/ctc-unit-edqm"/>
+      </reference>
+      <name value="Mapeamento de códigos CTC para unidades de apresentação para EDQM"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/esp-enfer-snomed"/>
+      </reference>
+      <name value="Mapeamento de códigos de especialidade de enfermagem para códigos SNOMEDCT"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/esp-farm-snomed"/>
+      </reference>
+      <name value="Mapeamento de códigos de especialidades farmacêuticas para códigos SNOMEDCT"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/mcdts-a-analises-sns-conv"/>
+      </reference>
+      <name value="Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área A - Análises Clínicas"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/mcdts-b-anatomia-sns-conv"/>
+      </reference>
+      <name value="Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área B - Anatomia Patológica"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/mcdts-c-cardiologia-sns-conv"/>
+      </reference>
+      <name value="Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área C - Cardiologia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/mcdts-d-m-nuclear-sns-conv"/>
+      </reference>
+      <name value="Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área D - Medicina Nuclear"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/mcdts-e-eeg-sns-conv"/>
+      </reference>
+      <name value="Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área E - Electroencefalografia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/mcdts-f-gastrenterologia-sns-conv"/>
+      </reference>
+      <name value="Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área F - Endoscopia Gastrenterológica"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/mcdts-g-mfr-sns-conv"/>
+      </reference>
+      <name value="Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área G - Medicina Fisica E De Reabilitação"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/mcdts-h-orl-sns-conv"/>
+      </reference>
+      <name value="Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área H - Otorrinolaringologia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/mcdts-i-pneumologia-imunoalergologia-sns-conv"/>
+      </reference>
+      <name value="Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área I - Tabela De Pneumologia E Tabela De Imunoalergologia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/mcdts-j-urologia-sns-conv"/>
+      </reference>
+      <name value="Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área J - Urologia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/mcdts-l-neurofisiologia-sns-conv"/>
+      </reference>
+      <name value="Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área L - Neurofisiologia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/mcdts-m-radiologia-sns-conv"/>
+      </reference>
+      <name value="Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área M - Tabela De Radiologia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mcdts-a-analises-cs"/>
+      </reference>
+      <name value="MCDTS Tabela Da Área A - Análises Clínicas"/>
+      <description value="Tabela Da Área A - Análises Clínicas"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mcdts-b-anatomia-cs"/>
+      </reference>
+      <name value="MCDTS Tabela Da Área B - Anatomia Patológica"/>
+      <description value="Tabela Da Área B - Anatomia Patológica"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mcdts-c-cardiologia-cs"/>
+      </reference>
+      <name value="MCDTS Tabela Da Área C - Cardiologia"/>
+      <description value="Tabela Da Área C - Cardiologia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mcdts-d-m-nuclear-cs"/>
+      </reference>
+      <name value="MCDTS Tabela Da Área D - Medicina Nuclear"/>
+      <description value="Tabela Da Área D - Medicina Nuclear"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mcdts-e-eeg-cs"/>
+      </reference>
+      <name value="MCDTS Tabela Da Área E - Electroencefalografia"/>
+      <description value="Tabela Da Área E - Electroencefalografia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mcdts-f-gastrenterologia-cs"/>
+      </reference>
+      <name value="MCDTS Tabela Da Área F - Endoscopia Gastrenterológica"/>
+      <description value="Tabela Da Área F - Endoscopia Gastrenterológica"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mcdts-g-mfr-cs"/>
+      </reference>
+      <name value="MCDTS Tabela Da Área G - Medicina Fisica E De Reabilitação"/>
+      <description value="Tabela Da Área G - Medicina Fisica E De Reabilitação"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mcdts-h-orl-cs"/>
+      </reference>
+      <name value="MCDTS Tabela Da Área H - Otorrinolaringologia"/>
+      <description value="Tabela Da Área H - Otorrinolaringologia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mcdts-i-pneumologia-imunoalergologia-cs"/>
+      </reference>
+      <name value="MCDTS Tabela Da Área I - Tabela De Pneumologia E Tabela De Imunoalergologia"/>
+      <description value="Tabela Da Área I - Tabela De Pneumologia E Tabela De Imunoalergologia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mcdts-j-urologia-cs"/>
+      </reference>
+      <name value="MCDTS Tabela Da Área J - Urologia"/>
+      <description value="Tabela Da Área J - Urologia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mcdts-l-neurofisiologia-cs"/>
+      </reference>
+      <name value="MCDTS Tabela Da Área L - Neurofisiologia"/>
+      <description value="Tabela Da Área L - Neurofisiologia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mcdts-m-radiologia-cs"/>
+      </reference>
+      <name value="MCDTS Tabela Da Área M - Tabela De Radiologia "/>
+      <description value="Tabela Da Área M - Tabela De Radiologia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/orphanet-rare-disease-classification"/>
+      </reference>
+      <name value="Orphanet Rare Disease Classification"/>
+      <description value="Orphanet classification of rare diseases. Contains all entities from the 34&#xA;Orphanet classification trees, with hierarchical parent-child relationships.&#xA;Source: Orphadata CC BY 4.0 (https://www.orphadata.com)&#xA;Codes are Orphanet ORPHA numbers (e.g., ORPHA:98050)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/subsistemas-saude-cs"/>
+      </reference>
+      <name value="Subsistemas de saúde"/>
+      <description value="Subsistemas de saúde existentes em Portugal"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cparm-units-presentation-cs"/>
+      </reference>
+      <name value="Unidades de apresentação"/>
+      <description value="Unidades de apresentação de medicamentos"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cparm-routes"/>
+      </reference>
+      <name value="Vias de Administração"/>
+      <description value="Vias de Administração de medicamentos"/>
+      <isExample value="false"/>
+    </resource>
+    <page>
+      <sourceUrl value="toc.html"/>
+      <name value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <sourceUrl value="index.html"/>
+        <name value="index.html"/>
+        <title value="Home Page"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="background.html"/>
+        <name value="background.html"/>
+        <title value="Background"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="spec.html"/>
+        <name value="spec.html"/>
+        <title value="Specification"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="downloads.html"/>
+        <name value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <sourceUrl value="changes.html"/>
+        <name value="changes.html"/>
+        <title value="IG Change History"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="copyrightyear"/>
+      </code>
+      <value value="2024+"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="releaselabel"/>
+      </code>
+      <value value="STU1"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="produce-jekyll-data"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="autoload-resources"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="template/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="input/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-qa"/>
+      </code>
+      <value value="temp/qa"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-temp"/>
+      </code>
+      <value value="temp/pages"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-output"/>
+      </code>
+      <value value="output"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-tx-cache"/>
+      </code>
+      <value value="input-cache/txcache"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-suppressed-warnings"/>
+      </code>
+      <value value="input/ignoreWarnings.txt"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-history"/>
+      </code>
+      <value value="http://hl7.pt/fhir/history.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-html"/>
+      </code>
+      <value value="template-page.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-md"/>
+      </code>
+      <value value="template-page-md.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-contact"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-context"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-copyright"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-jurisdiction"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-license"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-publisher"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-version"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-wg"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="active-tables"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="fmm-definition"/>
+      </code>
+      <value value="http://hl7.org/fhir/versions.html#maturity"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="propagate-status"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludelogbinaryformat"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="tabbed-snapshots"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

@@ -1,0 +1,481 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpal-colorof-specimen-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpal-colorof-specimen-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpal-colorof-specimen-vs</b></p><a name=\"cpal-colorof-specimen-vs\"> </a><a name=\"hccpal-colorof-specimen-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/1290436002\">1290436002</a></td><td>Amarelo claro</td><td>Light yellow color (qualifier value)</td><td>Cor amarelo claro</td><td>Light yellow color (qualifier value)</td><td>Cor amarelo claro</td></tr><tr><td><a href=\"http://snomed.info/id/40731000284103\">40731000284103</a></td><td>Amarelo pálido</td><td>Pale yellow color (qualifier value)</td><td>Cor amarelo pálido</td><td>Pale yellow color (qualifier value)</td><td>Cor amarelo pálido</td></tr><tr><td><a href=\"http://snomed.info/id/371244009\">371244009</a></td><td>Amarelo</td><td>Yellow color (qualifier value)</td><td>Cor amarelo</td><td>Yellow color (qualifier value)</td><td>Cor amarelo</td></tr><tr><td><a href=\"http://snomed.info/id/21691000284101\">21691000284101</a></td><td>Amarelo citrino</td><td>Lemon yellow color (qualifier value)</td><td>Cor amarelo citrino</td><td>Lemon yellow color (qualifier value)</td><td>Cor amarelo citrino</td></tr><tr><td><a href=\"http://snomed.info/id/40741000284105\">40741000284105</a></td><td>Amarelo laranja</td><td>Yellow orange color (qualifier value)</td><td>Cor amarelo laranja</td><td>Yellow orange color (qualifier value)</td><td>Cor amarelo laranja</td></tr><tr><td><a href=\"http://snomed.info/id/32701000284107\">32701000284107</a></td><td>Vermelho laranja</td><td>Red orange color (qualifier value)</td><td>Cor vermelho laranja</td><td>Red orange color (qualifier value)</td><td>Cor vermelho laranja</td></tr><tr><td><a href=\"http://snomed.info/id/371240000\">371240000</a></td><td>Vermelho</td><td>Red color (qualifier value)</td><td>Cor vermelho</td><td>Red color (qualifier value)</td><td>Cor vermelho</td></tr><tr><td><a href=\"http://snomed.info/id/1284821003\">1284821003</a></td><td>Vermelho acastanhado</td><td>Brown red color (qualifier value)</td><td>Cor vermelho acastanhado</td><td>Brown red color (qualifier value)</td><td>Cor vermelho acastanhado</td></tr><tr><td><a href=\"http://snomed.info/id/371242008\">371242008</a></td><td>Laranja</td><td>Orange color (qualifier value)</td><td>Cor laranja</td><td>Orange color (qualifier value)</td><td>Cor laranja</td></tr><tr><td><a href=\"http://snomed.info/id/371254008\">371254008</a></td><td>Castanho</td><td>Brown color (qualifier value)</td><td>Cor castanho</td><td>Brown color (qualifier value)</td><td>Cor castanho</td></tr><tr><td><a href=\"http://snomed.info/id/263716002\">263716002</a></td><td>Incolor</td><td>Colorless (qualifier value)</td><td/><td>Colorless (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1290435003\">1290435003</a></td><td>Amarelo Escuro</td><td>Dark yellow color (qualifier value)</td><td>Cor amarelo Escuro</td><td>Dark yellow color (qualifier value)</td><td>Cor amarelo Escuro</td></tr><tr><td><a href=\"http://snomed.info/id/371252007\">371252007</a></td><td>Preto</td><td>Black color (qualifier value)</td><td>Cor preto</td><td>Black color (qualifier value)</td><td>Cor preto</td></tr><tr><td><a href=\"http://snomed.info/id/371246006\">371246006</a></td><td>Verde</td><td>Green color (qualifier value)</td><td>Cor verde</td><td>Green color (qualifier value)</td><td>Cor verde</td></tr><tr><td><a href=\"http://snomed.info/id/371262000\">371262000</a></td><td>Pálido</td><td>Pale color saturation (qualifier value)</td><td>Pálida</td><td>Pale color saturation (qualifier value)</td><td>Pálida</td></tr><tr><td><a href=\"http://snomed.info/id/371251000\">371251000</a></td><td>Branco</td><td>White color (qualifier value)</td><td>Cor branco</td><td>White color (qualifier value)</td><td>Cor branco</td></tr><tr><td><a href=\"http://snomed.info/id/371253002\">371253002</a></td><td>Cinzento</td><td>Gray color (qualifier value)</td><td>Cor cinzento</td><td>Gray color (qualifier value)</td><td>Cor cinzento</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-colorof-specimen-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.9" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPALColorofSpecimenVS"] ; # 
+  fhir:title [ fhir:v "CPAL - Color of Specimen"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2023-09-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores ColorofSpecimen (CPAL v7.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "1290436002" ] ;
+         fhir:display [ fhir:v "Amarelo claro" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Light yellow color" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Light yellow color (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cor amarelo claro" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "40731000284103" ] ;
+         fhir:display [ fhir:v "Amarelo pálido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pale yellow color" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Pale yellow color (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cor amarelo pálido" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "371244009" ] ;
+         fhir:display [ fhir:v "Amarelo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Yellow color" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Yellow color (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cor amarelo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "21691000284101" ] ;
+         fhir:display [ fhir:v "Amarelo citrino" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Lemon yellow color" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Lemon yellow color (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cor amarelo citrino" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "40741000284105" ] ;
+         fhir:display [ fhir:v "Amarelo laranja" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Yellow orange color" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Yellow orange color (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cor amarelo laranja" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "32701000284107" ] ;
+         fhir:display [ fhir:v "Vermelho laranja" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Red orange color" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Red orange color (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cor vermelho laranja" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "371240000" ] ;
+         fhir:display [ fhir:v "Vermelho" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Red color" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Red color (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cor vermelho" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1284821003" ] ;
+         fhir:display [ fhir:v "Vermelho acastanhado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Brown red color" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Brown red color (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cor vermelho acastanhado" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "371242008" ] ;
+         fhir:display [ fhir:v "Laranja" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Orange colour" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Orange color (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cor laranja" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "371254008" ] ;
+         fhir:display [ fhir:v "Castanho" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Brown color" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Brown color (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cor castanho" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "263716002" ] ;
+         fhir:display [ fhir:v "Incolor" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Colorless" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Colorless (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1290435003" ] ;
+         fhir:display [ fhir:v "Amarelo Escuro" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Dark yellow color" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Dark yellow color (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cor amarelo Escuro" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "371252007" ] ;
+         fhir:display [ fhir:v "Preto" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Black color" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Black color (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cor preto" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "371246006" ] ;
+         fhir:display [ fhir:v "Verde" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Green colour" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Green color (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cor verde" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "371262000" ] ;
+         fhir:display [ fhir:v "Pálido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pale color saturation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Pale color saturation (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Pálida" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "371251000" ] ;
+         fhir:display [ fhir:v "Branco" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "White color" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "White color (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cor branco" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "371253002" ] ;
+         fhir:display [ fhir:v "Cinzento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gray color" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Gray color (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cor cinzento" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

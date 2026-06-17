@@ -1,0 +1,125 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpal-rhesus-factor-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpal-rhesus-factor-vs</b></p><a name=\"cpal-rhesus-factor-vs\"> </a><a name=\"hccpal-rhesus-factor-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/165747007\">165747007</a></td><td>RhD positivo</td><td>RhD positive (finding)</td><td>RhD +</td><td>RhD positive (finding)</td><td>RhD +</td></tr><tr><td><a href=\"http://snomed.info/id/165746003\">165746003</a></td><td>RhD negativo</td><td>RhD negative (finding)</td><td>RhD -</td><td>RhD negative (finding)</td><td>RhD -</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-rhesus-factor-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.14"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPALRhesusFactorVS",
+  "title" : "CPAL - Rhesus Factor",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2022-06-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores RhesusFactor (CPAL v7.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "165747007",
+        "display" : "RhD positivo",
+        "designation" : [{
+          "language" : "en",
+          "value" : "RhD positive"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "RhD positive (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Rh +"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "RhD +"
+        }]
+      },
+      {
+        "code" : "165746003",
+        "display" : "RhD negativo",
+        "designation" : [{
+          "language" : "en",
+          "value" : "RhD negative"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "RhD negative (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Rh -"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "RhD -"
+        }]
+      }]
+    }]
+  }
+}

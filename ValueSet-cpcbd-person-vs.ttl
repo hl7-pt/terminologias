@@ -1,0 +1,473 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpcbd-person-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpcbd-person-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpcbd-person-vs</b></p><a name=\"cpcbd-person-vs\"> </a><a name=\"hccpcbd-person-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/113163005\">113163005</a></td><td>Amigo</td><td>Friend (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/427568008\">427568008</a></td><td>Vizinho</td><td>Neighbor (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/133932002\">133932002</a></td><td>Cuidador</td><td>Caregiver (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/58626002\">58626002</a></td><td>Representante Legal</td><td>Legal guardian (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/446654005\">446654005</a></td><td>Refugiado</td><td>Refugee (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/224619008\">224619008</a></td><td>Migrante</td><td>Migrant (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/79756005\">79756005</a></td><td>Namorado</td><td>Boyfriend (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/84390006\">84390006</a></td><td>Namorada</td><td>Girlfriend (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/113161007\">113161007</a></td><td>Noiva</td><td>Female fiance (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/17219007\">17219007</a></td><td>Noivo</td><td>Male fiance (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/133936004\">133936004</a></td><td>Adulto</td><td>Adult (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/410599005\">410599005</a></td><td>Menor</td><td>Minor (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/105436006\">105436006</a></td><td>Idoso</td><td>Elderly person (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/133937008\">133937008</a></td><td>Adolescente</td><td>Adolescent (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/360863008\">360863008</a></td><td>Mendigo</td><td>Beggar (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/116154003\">116154003</a></td><td>Utente</td><td>Patient (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/257500003\">257500003</a></td><td>Passageiro</td><td>Passenger (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/160772005\">160772005</a></td><td>Voluntário</td><td>Voluntary worker (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/70862002\">70862002</a></td><td>Pessoa de contacto</td><td>Contact person (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/105456007\">105456007</a></td><td>Dador vivo</td><td>Live donor (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/105457003\">105457003</a></td><td>Dador cadáver</td><td>Cadaver donor (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/105470007\">105470007</a></td><td>Dador de sangue</td><td>Blood donor (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/105471006\">105471006</a></td><td>Dador de medula óssea</td><td>Bone marrow donor (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/441463002\">441463002</a></td><td>Dador de esperma</td><td>Spermatozoa donor (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/224528001\">224528001</a></td><td>Funcionário</td><td>Employee (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394571004\">394571004</a></td><td>Empregador</td><td>Employer (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1187334000\">1187334000</a></td><td>Contacto de emergência</td><td>Emergency contact (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/414043009\">414043009</a></td><td>Companheiro/a</td><td>Domestic partner (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/262043009\">262043009</a></td><td>Parceiro de relacionamento</td><td>Partner in relationship (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/429577009\">429577009</a></td><td>Advogado do utente</td><td>Patient advocate (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/276035002\">276035002</a></td><td>Ajudante de voluntariado</td><td>Voluntary helper (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/276037005\">276037005</a></td><td>Ajudante voluntário</td><td>Volunteer helper (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/105458008\">105458008</a></td><td>Candidato a dador</td><td>Candidate donor (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394921008\">394921008</a></td><td>Coabitante</td><td>Cohabitee (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/133931009\">133931009</a></td><td>Criança</td><td>Infant (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/373929005\">373929005</a></td><td>Criança órfã</td><td>Orphan child (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/407542009\">407542009</a></td><td>Cuidador informal</td><td>Informal caregiver (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/407543004\">407543004</a></td><td>Cuidador principal</td><td>Primary caregiver (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/430882007\">430882007</a></td><td>Dador de ovócitos humanos</td><td>Human oocyte donor (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/105461009\">105461009</a></td><td>Dador de órgãos</td><td>Organ donor (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/713352007\">713352007</a></td><td>Dador de pele</td><td>Skin donor (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/713184006\">713184006</a></td><td>Dador de produtos sanguíneos</td><td>Blood product donor (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/105468003\">105468003</a></td><td>Dador de tecido</td><td>Tissue donor (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/105469006\">105469006</a></td><td>Dador de tecido ósseo</td><td>Bone tissue donor (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/105460005\">105460005</a></td><td>Dador rejeitado</td><td>Rejected donor (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/133933007\">133933007</a></td><td>Recém-nascido</td><td>Newborn (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/390790000\">390790000</a></td><td>Requerente de asilo</td><td>Asylum seeker (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/268557009\">268557009</a></td><td>Desportista</td><td>Sportsman (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/430792005\">430792005</a></td><td>Dador de células-tronco</td><td>Stem cell donor (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/450768005\">450768005</a></td><td>Estudante internacional</td><td>International student (occupation)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/125677006\">125677006</a></td><td>Familiar</td><td>Relative (person)</td><td>Parente</td></tr><tr><td><a href=\"http://snomed.info/id/394619001\">394619001</a></td><td>Representante</td><td>Guardian (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/161158003\">161158003</a></td><td>Imigrante</td><td>Immigrant (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/373864002\">373864002</a></td><td>Utente em ambulatório</td><td>Outpatient (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/416800000\">416800000</a></td><td>Utente internado</td><td>Inpatient (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1287116005\">1287116005</a></td><td>Acompanhante</td><td>Chaperone (person)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1340167007\">1340167007</a></td><td>Tutelado</td><td>Ward (person)</td><td/></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpcbd-person-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.60" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPCBDPersonVS"] ; # 
+  fhir:title [ fhir:v "CPCBD - Person"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores Person (CPCBD v1.1.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "113163005" ] ;
+         fhir:display [ fhir:v "Amigo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Friend (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "427568008" ] ;
+         fhir:display [ fhir:v "Vizinho" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Neighbor (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "133932002" ] ;
+         fhir:display [ fhir:v "Cuidador" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Caregiver (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "58626002" ] ;
+         fhir:display [ fhir:v "Representante Legal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Legal guardian (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "446654005" ] ;
+         fhir:display [ fhir:v "Refugiado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Refugee (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "224619008" ] ;
+         fhir:display [ fhir:v "Migrante" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Migrant (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "79756005" ] ;
+         fhir:display [ fhir:v "Namorado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Boyfriend (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "84390006" ] ;
+         fhir:display [ fhir:v "Namorada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Girlfriend (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "113161007" ] ;
+         fhir:display [ fhir:v "Noiva" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Female fiance (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "17219007" ] ;
+         fhir:display [ fhir:v "Noivo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Male fiance (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "133936004" ] ;
+         fhir:display [ fhir:v "Adulto" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Adult (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "410599005" ] ;
+         fhir:display [ fhir:v "Menor" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Minor (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "105436006" ] ;
+         fhir:display [ fhir:v "Idoso" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Elderly person (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "133937008" ] ;
+         fhir:display [ fhir:v "Adolescente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Adolescent (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "360863008" ] ;
+         fhir:display [ fhir:v "Mendigo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Beggar (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "116154003" ] ;
+         fhir:display [ fhir:v "Utente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Patient (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "257500003" ] ;
+         fhir:display [ fhir:v "Passageiro" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Passenger (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "160772005" ] ;
+         fhir:display [ fhir:v "Voluntário" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Voluntary worker (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "70862002" ] ;
+         fhir:display [ fhir:v "Pessoa de contacto" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Contact person (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "105456007" ] ;
+         fhir:display [ fhir:v "Dador vivo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Live donor (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "105457003" ] ;
+         fhir:display [ fhir:v "Dador cadáver" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cadaver donor (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "105470007" ] ;
+         fhir:display [ fhir:v "Dador de sangue" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Blood donor (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "105471006" ] ;
+         fhir:display [ fhir:v "Dador de medula óssea" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bone marrow donor (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "441463002" ] ;
+         fhir:display [ fhir:v "Dador de esperma" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Spermatozoa donor (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "224528001" ] ;
+         fhir:display [ fhir:v "Funcionário" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Employee (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394571004" ] ;
+         fhir:display [ fhir:v "Empregador" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Employer (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1187334000" ] ;
+         fhir:display [ fhir:v "Contacto de emergência" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Emergency contact (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "414043009" ] ;
+         fhir:display [ fhir:v "Companheiro/a" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Domestic partner (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "262043009" ] ;
+         fhir:display [ fhir:v "Parceiro de relacionamento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Partner in relationship (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "429577009" ] ;
+         fhir:display [ fhir:v "Advogado do utente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Patient advocate (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "276035002" ] ;
+         fhir:display [ fhir:v "Ajudante de voluntariado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Voluntary helper (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "276037005" ] ;
+         fhir:display [ fhir:v "Ajudante voluntário" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Volunteer helper (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "105458008" ] ;
+         fhir:display [ fhir:v "Candidato a dador" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Candidate donor (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394921008" ] ;
+         fhir:display [ fhir:v "Coabitante" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cohabitee (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "133931009" ] ;
+         fhir:display [ fhir:v "Criança" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Infant (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "373929005" ] ;
+         fhir:display [ fhir:v "Criança órfã" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Orphan child (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "407542009" ] ;
+         fhir:display [ fhir:v "Cuidador informal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Informal caregiver (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "407543004" ] ;
+         fhir:display [ fhir:v "Cuidador principal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Primary caregiver (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "430882007" ] ;
+         fhir:display [ fhir:v "Dador de ovócitos humanos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Human oocyte donor (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "105461009" ] ;
+         fhir:display [ fhir:v "Dador de órgãos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Organ donor (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "713352007" ] ;
+         fhir:display [ fhir:v "Dador de pele" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Skin donor (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "713184006" ] ;
+         fhir:display [ fhir:v "Dador de produtos sanguíneos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Blood product donor (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "105468003" ] ;
+         fhir:display [ fhir:v "Dador de tecido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Tissue donor (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "105469006" ] ;
+         fhir:display [ fhir:v "Dador de tecido ósseo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bone tissue donor (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "105460005" ] ;
+         fhir:display [ fhir:v "Dador rejeitado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Rejected donor (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "133933007" ] ;
+         fhir:display [ fhir:v "Recém-nascido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Newborn (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "390790000" ] ;
+         fhir:display [ fhir:v "Requerente de asilo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Asylum seeker (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "268557009" ] ;
+         fhir:display [ fhir:v "Desportista" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sportsman (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "430792005" ] ;
+         fhir:display [ fhir:v "Dador de células-tronco" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Stem cell donor (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "450768005" ] ;
+         fhir:display [ fhir:v "Estudante internacional" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "International student (occupation)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "125677006" ] ;
+         fhir:display [ fhir:v "Familiar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Relative (person)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Parente" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394619001" ] ;
+         fhir:display [ fhir:v "Representante" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Guardian (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "161158003" ] ;
+         fhir:display [ fhir:v "Imigrante" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Immigrant (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "373864002" ] ;
+         fhir:display [ fhir:v "Utente em ambulatório" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Outpatient (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "416800000" ] ;
+         fhir:display [ fhir:v "Utente internado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Inpatient (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287116005" ] ;
+         fhir:display [ fhir:v "Acompanhante" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Chaperone (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1340167007" ] ;
+         fhir:display [ fhir:v "Tutelado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Ward (person)" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

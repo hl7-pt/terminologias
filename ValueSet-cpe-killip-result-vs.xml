@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-killip-result-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-killip-result-vs</b></p><a name="cpe-killip-result-vs"> </a><a name="hccpe-killip-result-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="https://loinc.org/LA34758-5/">LA34758-5</a></td><td>Classe I: Sem sinais de insuficiência cardíaca</td><td>Class I: No signs of heart failure</td></tr><tr><td><a href="https://loinc.org/LA34759-3/">LA34759-3</a></td><td>Classe II: Rales basais, S3 e pressão venosa jugular elevada</td><td>Class II: Basal rales , S3, and elevated jugular venous pressure</td></tr><tr><td><a href="https://loinc.org/LA34760-1/">LA34760-1</a></td><td>Classe III: Edema pulmonar agudo</td><td>Class III: Acute pulmonary edema</td></tr><tr><td><a href="https://loinc.org/LA34761-9/">LA34761-9</a></td><td>Classe IV: Choque cardiogénico ou hipotensão (PAS &lt; 90mmHg) e evidência de vasoconstrição periférica</td><td>Class IV: cardiogenic shock or hypotension (SBP &lt; 90mmHg) and evidence of peripheral vasoconstriction</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-killip-result-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.192"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPEKillipResultVS"/>
+  <title value="CPE - Killip Result"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores KillipResult (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA34758-5"/>
+        <display value="Classe I: Sem sinais de insuficiência cardíaca"/>
+        <designation>
+          <language value="en"/>
+          <value value="Class I: No signs of heart failure"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA34759-3"/>
+        <display value="Classe II: Rales basais, S3 e pressão venosa jugular elevada"/>
+        <designation>
+          <language value="en"/>
+          <value value="Class II: Basal rales , S3, and elevated jugular venous pressure"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA34760-1"/>
+        <display value="Classe III: Edema pulmonar agudo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Class III: Acute pulmonary edema"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA34761-9"/>
+        <display value="Classe IV: Choque cardiogénico ou hipotensão (PAS &lt; 90mmHg) e evidência de vasoconstrição periférica"/>
+        <designation>
+          <language value="en"/>
+          <value value="Class IV: cardiogenic shock or hypotension (SBP &lt; 90mmHg) and evidence of peripheral vasoconstriction"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

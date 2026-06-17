@@ -1,0 +1,261 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cparadm-encounter-communication-method-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cparadm-encounter-communication-method-vs</b></p><a name=\"cparadm-encounter-communication-method-vs\"> </a><a name=\"hccparadm-encounter-communication-method-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/1479971000168109\">1479971000168109</a></td><td>Episódio por e-mail</td><td>E-mail</td><td>Email encounter (procedure)</td><td>E-mail</td></tr><tr><td><a href=\"http://snomed.info/id/453131000124105\">453131000124105</a></td><td>Episódio por videoconferência</td><td>Videoconferência</td><td>Videotelephony encounter (procedure)</td><td>Videoconferência</td></tr><tr><td><a href=\"http://snomed.info/id/1197766005\">1197766005</a></td><td>Episódio por comunicação assíncrona baseada em texto eletrónico</td><td>Chat</td><td>Encounter by electronic text-based asynchronous communication (procedure)</td><td>Chat</td></tr><tr><td><a href=\"http://snomed.info/id/445450000\">445450000</a></td><td>Episódio por SMS</td><td>SMS</td><td>Encounter by short message service text messaging (procedure)</td><td>SMS</td></tr><tr><td><a href=\"http://snomed.info/id/308720009\">308720009</a></td><td>Episódio por meio escrito</td><td>Correio postal</td><td>Letter encounter (procedure)</td><td>Correio postal</td></tr><tr><td><a href=\"http://snomed.info/id/185317003\">185317003</a></td><td>Episódio por telefone</td><td>Telemóvel</td><td>Telephone encounter (procedure)</td><td>Telemóvel</td></tr><tr><td><a href=\"http://snomed.info/id/1258986006\">1258986006</a></td><td>Episódio cara a cara</td><td>Presencial</td><td>Face-to-face encounter (procedure)</td><td>Presencial</td></tr><tr><td><a href=\"http://snomed.info/id/448337001\">448337001</a></td><td>Teleconsulta com o utente</td><td>Consulta de telemedicina com utente</td><td>Telemedicine consultation with patient (procedure)</td><td>Consulta de telemedicina com utente</td></tr><tr><td><a href=\"http://snomed.info/id/868184008\">868184008</a></td><td>Teleconsulta com o profissional</td><td>Consulta de telesaúde com o profissional</td><td>Telemedicine consultation with provider (procedure)</td><td>Consulta de telesaúde com o profissional</td></tr><tr><td><a href=\"http://snomed.info/id/1051000314102\">1051000314102</a></td><td>Consulta de telemedicina</td><td>Teleconsulta</td><td>Telemedicine consultation (procedure)</td><td>Teleconsulta</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-encounter-communication-method-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.24"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPARADMEncounterCommunicationMethodVS",
+  "title" : "CPARADM - Encounter Communication Method",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores EncounterCommunicationMethod (CPARADM v3.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "1479971000168109",
+        "display" : "Episódio por e-mail",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Email encounter (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "E-mail"
+        }]
+      },
+      {
+        "code" : "453131000124105",
+        "display" : "Episódio por videoconferência",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Videotelephony encounter (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Videoconferência"
+        }]
+      },
+      {
+        "code" : "1197766005",
+        "display" : "Episódio por comunicação assíncrona baseada em texto eletrónico",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Encounter by electronic text-based asynchronous communication (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Chat"
+        }]
+      },
+      {
+        "code" : "445450000",
+        "display" : "Episódio por SMS",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Encounter by short message service text messaging (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "SMS"
+        }]
+      },
+      {
+        "code" : "308720009",
+        "display" : "Episódio por meio escrito",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Letter encounter (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Correio postal"
+        }]
+      },
+      {
+        "code" : "185317003",
+        "display" : "Episódio por telefone",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Telephone encounter (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Telefone"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Telemóvel"
+        }]
+      },
+      {
+        "code" : "1258986006",
+        "display" : "Episódio cara a cara",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Face-to-face encounter (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Cara a cara"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Frente a frente"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Presencial"
+        }]
+      },
+      {
+        "code" : "448337001",
+        "display" : "Teleconsulta com o utente",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Telemedicine consultation with patient (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Consulta de telemedicina com utente"
+        }]
+      },
+      {
+        "code" : "868184008",
+        "display" : "Teleconsulta com o profissional",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Telemedicine consultation with provider (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Consulta telemedicina com o profissional"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Consulta de telesaúde com o profissional"
+        }]
+      },
+      {
+        "code" : "1051000314102",
+        "display" : "Consulta de telemedicina",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Telemedicine consultation (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Teleconsulta"
+        }]
+      }]
+    }]
+  }
+}

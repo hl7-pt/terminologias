@@ -1,0 +1,419 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpal-cell-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpal-cell-vs</b></p><a name=\"cpal-cell-vs\"> </a><a name=\"hccpal-cell-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/14793004\">14793004</a></td><td>Eosinófilo</td><td>Eosinophil, segmented (cell)</td><td>Eosinófilos</td><td>Eosinophil, segmented (cell)</td><td>Eosinófilos</td></tr><tr><td><a href=\"http://snomed.info/id/52501007\">52501007</a></td><td>Leucócito</td><td>Leukocyte (cell)</td><td>Leucócitos</td><td>Leukocyte (cell)</td><td>Leucócitos</td></tr><tr><td><a href=\"http://snomed.info/id/4212006\">4212006</a></td><td>Célula epitelial</td><td>Epithelial cell (cell)</td><td>Células epiteliais</td><td>Epithelial cell (cell)</td><td>Células epiteliais</td></tr><tr><td><a href=\"http://snomed.info/id/725264003\">725264003</a></td><td>Célula epitelial não escamosa</td><td>Non-squamous epithelial cell (cell)</td><td>Células epiteliais não escamosas</td><td>Non-squamous epithelial cell (cell)</td><td>Células epiteliais não escamosas</td></tr><tr><td><a href=\"http://snomed.info/id/80554009\">80554009</a></td><td>Célula epitelial escamosa</td><td>Squamous epithelial cell (cell)</td><td>Células epiteliais escamosas</td><td>Squamous epithelial cell (cell)</td><td>Células epiteliais escamosas</td></tr><tr><td><a href=\"http://snomed.info/id/115596003\">115596003</a></td><td>Célula epitelial vesical</td><td>Bladder epithelial cell (cell)</td><td>Células epiteliais vesicais</td><td>Bladder epithelial cell (cell)</td><td>Células epiteliais vesicais</td></tr><tr><td><a href=\"http://snomed.info/id/115593006\">115593006</a></td><td>Célula epitelial renal</td><td>Renal epithelial cell (cell)</td><td>Células epiteliais renais</td><td>Renal epithelial cell (cell)</td><td>Células epiteliais renais</td></tr><tr><td><a href=\"http://snomed.info/id/51384001\">51384001</a></td><td>Célula de Burr</td><td>Burr cell (cell)</td><td>Células de Burr</td><td>Burr cell (cell)</td><td>Células de Burr</td></tr><tr><td><a href=\"http://snomed.info/id/41898006\">41898006</a></td><td>Eritrócito</td><td>Erythrocyte (cell)</td><td>Eritrócitos</td><td>Erythrocyte (cell)</td><td>Eritrócitos</td></tr><tr><td><a href=\"http://snomed.info/id/3028004\">3028004</a></td><td>Célula epitelial de transição</td><td>Transitional epithelial cell (cell)</td><td>Células epiteliais de transição</td><td>Transitional epithelial cell (cell)</td><td>Células epiteliais de transição</td></tr><tr><td><a href=\"http://snomed.info/id/17287000\">17287000</a></td><td>Célula epitelial tubular renal</td><td>Renal tubular epithelial cell (cell)</td><td>Células epiteliais tubulares renais</td><td>Renal tubular epithelial cell (cell)</td><td>Células epiteliais tubulares renais</td></tr><tr><td><a href=\"http://snomed.info/id/6789008\">6789008</a></td><td>Espermatozóide</td><td>Spermatozoa (cell)</td><td>Espermatozóides</td><td>Spermatozoa (cell)</td><td>Espermatozóides</td></tr><tr><td><a href=\"http://snomed.info/id/725993007\">725993007</a></td><td>Eritrócito dismórfico</td><td>Dysmorphic erythrocyte (cell)</td><td>Eritrócitos dismórficos</td><td>Dysmorphic erythrocyte (cell)</td><td>Eritrócitos dismórficos</td></tr><tr><td><a href=\"http://snomed.info/id/14295007\">14295007</a></td><td>Histiócito</td><td>Resident tissue macrophage (cell)</td><td>Histiócitos</td><td>Resident tissue macrophage (cell)</td><td>Histiócitos</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-cell-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.5"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPALCellVS",
+  "title" : "CPAL - Cell",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-10-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores Cell (CPAL v7.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "14793004",
+        "display" : "Eosinófilo",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Eosinophil"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Eosinophil, segmented (cell)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Eosinófilos"
+        }]
+      },
+      {
+        "code" : "52501007",
+        "display" : "Leucócito",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Leukocyte"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Leukocyte (cell)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Leucócitos"
+        }]
+      },
+      {
+        "code" : "4212006",
+        "display" : "Célula epitelial",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Epithelial cell"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Epithelial cell (cell)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Células epiteliais"
+        }]
+      },
+      {
+        "code" : "725264003",
+        "display" : "Célula epitelial não escamosa",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Non-squamous epithelial cell"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Non-squamous epithelial cell (cell)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Células epiteliais não escamosas"
+        }]
+      },
+      {
+        "code" : "80554009",
+        "display" : "Célula epitelial escamosa",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Squamous epithelial cell"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Squamous epithelial cell (cell)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Células epiteliais escamosas"
+        }]
+      },
+      {
+        "code" : "115596003",
+        "display" : "Célula epitelial vesical",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Bladder epithelial cell"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Bladder epithelial cell (cell)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Células epiteliais vesicais"
+        }]
+      },
+      {
+        "code" : "115593006",
+        "display" : "Célula epitelial renal",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Renal epithelial cell"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Renal epithelial cell (cell)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Células epiteliais renais"
+        }]
+      },
+      {
+        "code" : "51384001",
+        "display" : "Célula de Burr",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Burr cell"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Burr cell (cell)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Células de Burr"
+        }]
+      },
+      {
+        "code" : "41898006",
+        "display" : "Eritrócito",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Erythrocyte"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Erythrocyte (cell)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Eritrócitos"
+        }]
+      },
+      {
+        "code" : "3028004",
+        "display" : "Célula epitelial de transição",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Transitional epithelial cell"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Transitional epithelial cell (cell)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Células epiteliais de transição"
+        }]
+      },
+      {
+        "code" : "17287000",
+        "display" : "Célula epitelial tubular renal",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Renal tubular epithelial cell"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Renal tubular epithelial cell (cell)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Células epiteliais tubulares renais"
+        }]
+      },
+      {
+        "code" : "6789008",
+        "display" : "Espermatozóide",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Spermatozoa"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Spermatozoa (cell)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Espermatozóides"
+        }]
+      },
+      {
+        "code" : "725993007",
+        "display" : "Eritrócito dismórfico",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Dysmorphic erythrocyte"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Dysmorphic erythrocyte (cell)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Eritrócitos dismórficos"
+        }]
+      },
+      {
+        "code" : "14295007",
+        "display" : "Histiócito",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Resident tissue macrophage"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Resident tissue macrophage (cell)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Histiócitos"
+        }]
+      }]
+    }]
+  }
+}

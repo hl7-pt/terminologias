@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-rosenberg-scale-result-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-rosenberg-scale-result-vs</b></p><a name="cpe-rosenberg-scale-result-vs"> </a><a name="hccpe-rosenberg-scale-result-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="https://loinc.org/LA15237-3/">LA15237-3</a></td><td>Concordo bastante</td><td>Strongly agree</td></tr><tr><td><a href="https://loinc.org/LA15774-5/">LA15774-5</a></td><td>Concordo</td><td>Agree</td></tr><tr><td><a href="https://loinc.org/LA15773-7/">LA15773-7</a></td><td>Discordo</td><td>Disagree</td></tr><tr><td><a href="https://loinc.org/LA15236-5/">LA15236-5</a></td><td>Discordo bastante</td><td>Strongly disagree</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-rosenberg-scale-result-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.157"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPERosenbergScaleResultVS"/>
+  <title value="CPE - Rosenberg Scale Result"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores RosenbergScaleResult (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA15237-3"/>
+        <display value="Concordo bastante"/>
+        <designation>
+          <language value="en"/>
+          <value value="Strongly agree"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15774-5"/>
+        <display value="Concordo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Agree"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15773-7"/>
+        <display value="Discordo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Disagree"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15236-5"/>
+        <display value="Discordo bastante"/>
+        <designation>
+          <language value="en"/>
+          <value value="Strongly disagree"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

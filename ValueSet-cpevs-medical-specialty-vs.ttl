@@ -1,0 +1,550 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpevs-medical-specialty-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpevs-medical-specialty-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpevs-medical-specialty-vs</b></p><a name=\"cpevs-medical-specialty-vs\"> </a><a name=\"hccpevs-medical-specialty-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/1255732006\">1255732006</a></td><td>Anatomia patológica</td><td/><td>Anatomic pathology (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394577000\">394577000</a></td><td>Anestesiologia</td><td/><td>Anesthetics (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/408463005\">408463005</a></td><td>Angiologia e cirurgia vascular</td><td>Cirurgia vascular</td><td>Vascular surgery (qualifier value)</td><td>Cirurgia vascular</td></tr><tr><td><a href=\"http://snomed.info/id/394579002\">394579002</a></td><td>Cardiologia</td><td/><td>Cardiology (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/408459003\">408459003</a></td><td>Cardiologia pediátrica</td><td/><td>Pediatric cardiology (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/408466002\">408466002</a></td><td>Cirurgia cardíaca</td><td/><td>Cardiac surgery (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394603008\">394603008</a></td><td>Cirurgia cardiotorácica</td><td/><td>Cardiothoracic surgery (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394609007\">394609007</a></td><td>Cirurgia geral</td><td/><td>General surgery (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/408457001\">408457001</a></td><td>Cirurgia maxilo-facial</td><td/><td>Maxillofacial surgery (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394539006\">394539006</a></td><td>Cirurgia pediátrica</td><td/><td>Pediatric surgery (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394611003\">394611003</a></td><td>Cirurgia plástica reconstrutiva e estética</td><td>Cirurgia plástica</td><td>Plastic surgery - specialty (qualifier value)</td><td>Cirurgia plástica</td></tr><tr><td><a href=\"http://snomed.info/id/408456005\">408456005</a></td><td>Cirurgia torácica</td><td/><td>Thoracic surgery (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394582007\">394582007</a></td><td>Dermato-venereologia</td><td>Dermatologia</td><td>Dermatology (qualifier value)</td><td>Dermatologia</td></tr><tr><td><a href=\"http://snomed.info/id/394807007\">394807007</a></td><td>Doenças infecciosas</td><td>Infecciologia</td><td>Infectious disease specialty (qualifier value)</td><td>Infecciologia</td></tr><tr><td><a href=\"http://snomed.info/id/394583002\">394583002</a></td><td>Endocrinologia e nutrição</td><td>Endocrinologia</td><td>Endocrinology (qualifier value)</td><td>Endocrinologia</td></tr><tr><td><a href=\"http://snomed.info/id/1259957004\">1259957004</a></td><td>Estomatologia</td><td/><td>Oral medicine (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394600006\">394600006</a></td><td>Farmacologia clínica</td><td/><td>Clinical pharmacology (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394584008\">394584008</a></td><td>Gastrenterologia</td><td/><td>Gastroenterology (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394580004\">394580004</a></td><td>Genética médica</td><td>Genética clínica</td><td>Clinical genetics (qualifier value)</td><td>Genética clínica</td></tr><tr><td><a href=\"http://snomed.info/id/394585009\">394585009</a></td><td>Ginecologia e obstetrícia</td><td/><td>Obstetrics and gynecology (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394803006\">394803006</a></td><td>Hematologia clínica</td><td/><td>Clinical hematology (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394805004\">394805004</a></td><td>Imunoalergologia</td><td>Imunologia/alergia clínica</td><td>Clinical immunology and/or allergy (qualifier value)</td><td>Imunologia/alergia clínica</td></tr><tr><td><a href=\"http://snomed.info/id/1259944007\">1259944007</a></td><td>Imunohemoterapia</td><td/><td>Immunohemotherapy (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1251536003\">1251536003</a></td><td>Medicina desportiva</td><td/><td>Sport medicine (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394821009\">394821009</a></td><td>Medicina do trabalho</td><td>Medicina ocupacional</td><td>Occupational medicine (qualifier value)</td><td>Medicina ocupacional</td></tr><tr><td><a href=\"http://snomed.info/id/394602003\">394602003</a></td><td>Medicina física e reabilitação</td><td/><td>Rehabilitation specialty (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/419772000\">419772000</a></td><td>Medicina geral e familiar</td><td>Medicina familiar</td><td>Family practice (qualifier value)</td><td>Medicina familiar</td></tr><tr><td><a href=\"http://snomed.info/id/408478003\">408478003</a></td><td>Medicina intensiva</td><td>Medicina cuidados críticos</td><td>Critical care medicine (qualifier value)</td><td>Medicina cuidados críticos</td></tr><tr><td><a href=\"http://snomed.info/id/419192003\">419192003</a></td><td>Medicina interna</td><td/><td>Internal medicine (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/722204007\">722204007</a></td><td>Medicina legal</td><td/><td>Legal medicine (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394649004\">394649004</a></td><td>Medicina nuclear</td><td/><td>Nuclear medicine - specialty (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/408448007\">408448007</a></td><td>Medicina tropical</td><td/><td>Tropical medicine (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394589003\">394589003</a></td><td>Nefrologia</td><td/><td>Nephrology (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394610002\">394610002</a></td><td>Neurocirurgia</td><td/><td>Neurosurgery (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394591006\">394591006</a></td><td>Neurologia</td><td/><td>Neurology (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1251547005\">1251547005</a></td><td>Neurorradiologia</td><td/><td>Neuroradiology (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394594003\">394594003</a></td><td>Oftalmologia</td><td/><td>Ophthalmology (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394593009\">394593009</a></td><td>Oncologia médica</td><td/><td>Medical oncology (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394801008\">394801008</a></td><td>Ortopedia</td><td>Ortopedia e trauma</td><td>Trauma and orthopedics (qualifier value)</td><td>Ortopedia e trauma</td></tr><tr><td><a href=\"http://snomed.info/id/418960008\">418960008</a></td><td>Otorrinolaringologia</td><td/><td>Otolaryngology (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1255736009\">1255736009</a></td><td>Patologia clínica</td><td/><td>Clinical pathology (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394537008\">394537008</a></td><td>Pediatria</td><td/><td>Pediatric specialty (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/418112009\">418112009</a></td><td>Pneumologia</td><td>Medicina pulmonar</td><td>Pulmonary medicine (qualifier value)</td><td>Medicina pulmonar</td></tr><tr><td><a href=\"http://snomed.info/id/394587001\">394587001</a></td><td>Psiquiatria</td><td/><td>Psychiatry (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/394588006\">394588006</a></td><td>Psiquiatria da infância e da adolescência</td><td>Psiquiatria da criança e adolescência</td><td>Child and adolescent psychiatry (qualifier value)</td><td>Psiquiatria da criança e adolescência</td></tr><tr><td><a href=\"http://snomed.info/id/394914008\">394914008</a></td><td>Radiologia</td><td/><td>Radiology - specialty (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/419815003\">419815003</a></td><td>Radioncologia</td><td>Radioterapia</td><td>Radiation oncology (qualifier value)</td><td>Radioterapia</td></tr><tr><td><a href=\"http://snomed.info/id/394810000\">394810000</a></td><td>Reumatologia</td><td/><td>Rheumatology (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/408440000\">408440000</a></td><td>Saúde pública</td><td>Medicina de saúde pública</td><td>Public health medicine (qualifier value)</td><td>Medicina de saúde pública</td></tr><tr><td><a href=\"http://snomed.info/id/394612005\">394612005</a></td><td>Urologia</td><td/><td>Urology (qualifier value)</td><td/></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpevs-medical-specialty-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.161" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPEVSMedicalSpecialtyVS"] ; # 
+  fhir:title [ fhir:v "CPEVS - Medical Specialty"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores MedicalSpecialty (CPEVS v2.1.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "1255732006" ] ;
+         fhir:display [ fhir:v "Anatomia patológica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Anatomic pathology (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394577000" ] ;
+         fhir:display [ fhir:v "Anestesiologia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Anesthetics (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "408463005" ] ;
+         fhir:display [ fhir:v "Angiologia e cirurgia vascular" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Vascular surgery (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cirurgia vascular" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394579002" ] ;
+         fhir:display [ fhir:v "Cardiologia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cardiology (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "408459003" ] ;
+         fhir:display [ fhir:v "Cardiologia pediátrica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pediatric cardiology (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "408466002" ] ;
+         fhir:display [ fhir:v "Cirurgia cardíaca" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cardiac surgery (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394603008" ] ;
+         fhir:display [ fhir:v "Cirurgia cardiotorácica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cardiothoracic surgery (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394609007" ] ;
+         fhir:display [ fhir:v "Cirurgia geral" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "General surgery (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "408457001" ] ;
+         fhir:display [ fhir:v "Cirurgia maxilo-facial" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Maxillofacial surgery (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394539006" ] ;
+         fhir:display [ fhir:v "Cirurgia pediátrica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pediatric surgery (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394611003" ] ;
+         fhir:display [ fhir:v "Cirurgia plástica reconstrutiva e estética" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Plastic surgery - specialty (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cirurgia plástica" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "408456005" ] ;
+         fhir:display [ fhir:v "Cirurgia torácica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Thoracic surgery (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394582007" ] ;
+         fhir:display [ fhir:v "Dermato-venereologia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Dermatology (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Dermatologia" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394807007" ] ;
+         fhir:display [ fhir:v "Doenças infecciosas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Infectious disease specialty (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Infecciologia" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394583002" ] ;
+         fhir:display [ fhir:v "Endocrinologia e nutrição" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Endocrinology (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Endocrinologia" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1259957004" ] ;
+         fhir:display [ fhir:v "Estomatologia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Oral medicine (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394600006" ] ;
+         fhir:display [ fhir:v "Farmacologia clínica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Clinical pharmacology (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394584008" ] ;
+         fhir:display [ fhir:v "Gastrenterologia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gastroenterology (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394580004" ] ;
+         fhir:display [ fhir:v "Genética médica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Clinical genetics (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Genética clínica" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394585009" ] ;
+         fhir:display [ fhir:v "Ginecologia e obstetrícia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Obstetrics and gynecology (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394803006" ] ;
+         fhir:display [ fhir:v "Hematologia clínica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Clinical hematology (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394805004" ] ;
+         fhir:display [ fhir:v "Imunoalergologia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Clinical immunology and/or allergy (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Imunologia/alergia clínica" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1259944007" ] ;
+         fhir:display [ fhir:v "Imunohemoterapia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Immunohemotherapy (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1251536003" ] ;
+         fhir:display [ fhir:v "Medicina desportiva" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sport medicine (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394821009" ] ;
+         fhir:display [ fhir:v "Medicina do trabalho" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Occupational medicine (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Medicina ocupacional" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394602003" ] ;
+         fhir:display [ fhir:v "Medicina física e reabilitação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Rehabilitation specialty (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "419772000" ] ;
+         fhir:display [ fhir:v "Medicina geral e familiar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Family practice (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Medicina familiar" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "408478003" ] ;
+         fhir:display [ fhir:v "Medicina intensiva" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Critical care medicine (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Medicina cuidados críticos" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "419192003" ] ;
+         fhir:display [ fhir:v "Medicina interna" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Internal medicine (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "722204007" ] ;
+         fhir:display [ fhir:v "Medicina legal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Legal medicine (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394649004" ] ;
+         fhir:display [ fhir:v "Medicina nuclear" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nuclear medicine - specialty (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "408448007" ] ;
+         fhir:display [ fhir:v "Medicina tropical" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Tropical medicine (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394589003" ] ;
+         fhir:display [ fhir:v "Nefrologia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nephrology (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394610002" ] ;
+         fhir:display [ fhir:v "Neurocirurgia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Neurosurgery (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394591006" ] ;
+         fhir:display [ fhir:v "Neurologia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Neurology (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1251547005" ] ;
+         fhir:display [ fhir:v "Neurorradiologia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Neuroradiology (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394594003" ] ;
+         fhir:display [ fhir:v "Oftalmologia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Ophthalmology (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394593009" ] ;
+         fhir:display [ fhir:v "Oncologia médica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Medical oncology (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394801008" ] ;
+         fhir:display [ fhir:v "Ortopedia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Trauma and orthopedics (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Ortopedia e trauma" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "418960008" ] ;
+         fhir:display [ fhir:v "Otorrinolaringologia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Otolaryngology (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1255736009" ] ;
+         fhir:display [ fhir:v "Patologia clínica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Clinical pathology (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394537008" ] ;
+         fhir:display [ fhir:v "Pediatria" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pediatric specialty (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "418112009" ] ;
+         fhir:display [ fhir:v "Pneumologia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pulmonary medicine (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Medicina pulmonar" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394587001" ] ;
+         fhir:display [ fhir:v "Psiquiatria" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Psychiatry (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394588006" ] ;
+         fhir:display [ fhir:v "Psiquiatria da infância e da adolescência" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Child and adolescent psychiatry (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Psiquiatria da criança e adolescência" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394914008" ] ;
+         fhir:display [ fhir:v "Radiologia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radiology - specialty (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "419815003" ] ;
+         fhir:display [ fhir:v "Radioncologia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radiation oncology (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Radioterapia" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394810000" ] ;
+         fhir:display [ fhir:v "Reumatologia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Rheumatology (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "408440000" ] ;
+         fhir:display [ fhir:v "Saúde pública" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Public health medicine (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Medicina de saúde pública" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394612005" ] ;
+         fhir:display [ fhir:v "Urologia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Urology (qualifier value)" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

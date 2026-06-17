@@ -1,0 +1,177 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-rankin-scale-result-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-rankin-scale-result-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-rankin-scale-result-vs</b></p><a name=\"cpe-rankin-scale-result-vs\"> </a><a name=\"hccpe-rankin-scale-result-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/LA6111-4/\">LA6111-4</a></td><td>Sem sintomas</td><td>Ausência de sintomas</td><td>No symptoms.</td><td>Ausência de sintomas</td></tr><tr><td><a href=\"https://loinc.org/LA6112-2/\">LA6112-2</a></td><td>Nenhuma incapacidade significativa. Capaz de realizar todas as atividades habituais, apesar de alguns sintomas</td><td>Sintomas não incapacitantes (capaz de realizar todas as tarefas habituais)</td><td>No significant disability. Able to carry out all usual activities, despite some symptoms.</td><td>Sintomas não incapacitantes (capaz de realizar todas as tarefas habituais)</td></tr><tr><td><a href=\"https://loinc.org/LA6113-0/\">LA6113-0</a></td><td>Incapacidade leve. Capaz de cuidar de seus próprios assuntos sem ajuda, mas incapaz de realizar todas as atividades anteriores</td><td>Incapacidade ligeira (incapaz de realizar algumas tarefas que realizava, mas independente nas AVDs)</td><td>Slight disability. Able to look after own affairs without assistance, but unable to carry out all previous activities.</td><td>Incapacidade ligeira (incapaz de realizar algumas tarefas que realizava, mas independente nas AVDs)</td></tr><tr><td><a href=\"https://loinc.org/LA6114-8/\">LA6114-8</a></td><td>Incapacidade moderada. Requer alguma ajuda, mas é capaz de andar sem ajuda</td><td>Incapacidade moderada (sintomas que restringem estilo de vida e/ou impedem independência nas AVDs)</td><td>Moderate disability. Requires some help, but able to walk unassisted.</td><td>Incapacidade moderada (sintomas que restringem estilo de vida e/ou impedem independência nas AVDs)</td></tr><tr><td><a href=\"https://loinc.org/LA6115-5/\">LA6115-5</a></td><td>Incapacidade moderadamente grave. Incapaz de atender às próprias necessidades corporais sem ajuda e incapaz de andar sem ajuda</td><td>Incapacidade moderadamente grave (sintomas que tornam o doente dependente, mas não em todas as AVDs)</td><td>Moderately severe disability. Unable to attend to own bodily needs without assistance, and unable to walk unassisted.</td><td>Incapacidade moderadamente grave (sintomas que tornam o doente dependente, mas não em todas as AVDs)</td></tr><tr><td><a href=\"https://loinc.org/LA10137-0/\">LA10137-0</a></td><td>Incapacidade severa. Requer cuidado e atenção constante da enfermagem, acamado, incontinente</td><td>Incapacidade grave (totalmente dependente, requerendo cuidados de terceiros)</td><td>Severe disability. Requires constant nursing care and attention, bedridden, incontinent.</td><td>Incapacidade grave (totalmente dependente, requerendo cuidados de terceiros)</td></tr><tr><td><a href=\"https://loinc.org/LA10138-8/\">LA10138-8</a></td><td>Óbito</td><td>Morte</td><td>Dead.</td><td>Morte</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-rankin-scale-result-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.155" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPERankinScaleResultVS"] ; # 
+  fhir:title [ fhir:v "CPE - Rankin Scale Result"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores RankinScaleResult (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA6111-4" ] ;
+         fhir:display [ fhir:v "Sem sintomas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No symptoms." ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Ausência de sintomas" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA6112-2" ] ;
+         fhir:display [ fhir:v "Nenhuma incapacidade significativa. Capaz de realizar todas as atividades habituais, apesar de alguns sintomas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No significant disability. Able to carry out all usual activities, despite some symptoms." ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Sintomas não incapacitantes (capaz de realizar todas as tarefas habituais)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA6113-0" ] ;
+         fhir:display [ fhir:v "Incapacidade leve. Capaz de cuidar de seus próprios assuntos sem ajuda, mas incapaz de realizar todas as atividades anteriores" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Slight disability. Able to look after own affairs without assistance, but unable to carry out all previous activities." ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Incapacidade ligeira (incapaz de realizar algumas tarefas que realizava, mas independente nas AVDs)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA6114-8" ] ;
+         fhir:display [ fhir:v "Incapacidade moderada. Requer alguma ajuda, mas é capaz de andar sem ajuda" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Moderate disability. Requires some help, but able to walk unassisted." ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Incapacidade moderada (sintomas que restringem estilo de vida e/ou impedem independência nas AVDs)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA6115-5" ] ;
+         fhir:display [ fhir:v "Incapacidade moderadamente grave. Incapaz de atender às próprias necessidades corporais sem ajuda e incapaz de andar sem ajuda" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Moderately severe disability. Unable to attend to own bodily needs without assistance, and unable to walk unassisted." ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Incapacidade moderadamente grave (sintomas que tornam o doente dependente, mas não em todas as AVDs)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA10137-0" ] ;
+         fhir:display [ fhir:v "Incapacidade severa. Requer cuidado e atenção constante da enfermagem, acamado, incontinente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Severe disability. Requires constant nursing care and attention, bedridden, incontinent." ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Incapacidade grave (totalmente dependente, requerendo cuidados de terceiros)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA10138-8" ] ;
+         fhir:display [ fhir:v "Óbito" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Dead." ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Morte" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-bromage-scale-result-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-bromage-scale-result-vs</b></p><a name="cpe-bromage-scale-result-vs"> </a><a name="hccpe-bromage-scale-result-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="https://loinc.org/LA34644-7/">LA34644-7</a></td><td>Incapaz de mover os pés ou joelhos</td><td>Unable to move feet or knees</td></tr><tr><td><a href="https://loinc.org/LA35088-6/">LA35088-6</a></td><td>Capaz de mover apenas os pés</td><td>Able to move feet only</td></tr><tr><td><a href="https://loinc.org/LA34645-4/">LA34645-4</a></td><td>Capaz de mover os joelhos</td><td>Just able to move knees</td></tr><tr><td><a href="https://loinc.org/LA34646-2/">LA34646-2</a></td><td>Flexão total dos joelhos e pés</td><td>Full flexion of knees and feet</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-bromage-scale-result-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.187"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPEBromageScaleResultVS"/>
+  <title value="CPE - Bromage Scale Result"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores BromageScaleResult (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA34644-7"/>
+        <display value="Incapaz de mover os pés ou joelhos"/>
+        <designation>
+          <language value="en"/>
+          <value value="Unable to move feet or knees"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA35088-6"/>
+        <display value="Capaz de mover apenas os pés"/>
+        <designation>
+          <language value="en"/>
+          <value value="Able to move feet only"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA34645-4"/>
+        <display value="Capaz de mover os joelhos"/>
+        <designation>
+          <language value="en"/>
+          <value value="Just able to move knees"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA34646-2"/>
+        <display value="Flexão total dos joelhos e pés"/>
+        <designation>
+          <language value="en"/>
+          <value value="Full flexion of knees and feet"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

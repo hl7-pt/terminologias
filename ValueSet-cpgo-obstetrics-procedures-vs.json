@@ -1,0 +1,250 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpgo-obstetrics-procedures-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpgo-obstetrics-procedures-vs</b></p><a name=\"cpgo-obstetrics-procedures-vs\"> </a><a name=\"hccpgo-obstetrics-procedures-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/66456009\">66456009</a></td><td>Amnioscopia</td><td>Amnioscopy (procedure)</td><td/><td>Amnioscopy (procedure)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/387672006\">387672006</a></td><td>Cardiotocografia</td><td>Cardiotochogram (regime/therapy)</td><td>Cardiotocografia a)</td><td>Cardiotochogram (regime/therapy)</td><td>Cardiotocografia a)</td></tr><tr><td><a href=\"http://snomed.info/id/303720006\">303720006</a></td><td>Amostragem de vilosidades coriónica</td><td>Sampling of chorionic villus (procedure)</td><td>Biópsia de vilosidades coriónicas</td><td>Sampling of chorionic villus (procedure)</td><td>Biópsia de vilosidades coriónicas</td></tr><tr><td><a href=\"http://snomed.info/id/34536000\">34536000</a></td><td>Amniocentese</td><td>Amniocentesis (procedure)</td><td>Amniocentese a)</td><td>Amniocentesis (procedure)</td><td>Amniocentese a)</td></tr><tr><td><a href=\"http://snomed.info/id/6708002\">6708002</a></td><td>Cordocentese intrauterina</td><td>Intrauterine cordocentesis (procedure)</td><td>Cordocentese (funicolocentese) a)</td><td>Intrauterine cordocentesis (procedure)</td><td>Cordocentese (funicolocentese) a)</td></tr><tr><td><a href=\"http://snomed.info/id/386641000\">386641000</a></td><td>Procedimento terapêutico de abortamento</td><td>Therapeutic abortion procedure (procedure)</td><td>Tratamento cirúrgico de abortamento incompleto ou de restos ovulares pós-parto</td><td>Therapeutic abortion procedure (procedure)</td><td>Tratamento cirúrgico de abortamento incompleto ou de restos ovulares pós-parto</td></tr><tr><td><a href=\"http://snomed.info/id/285409006\">285409006</a></td><td>Interrupção médica da gravidez</td><td>Medical termination of pregnancy (procedure)</td><td>Interrupção medicamentosa da gravidez, até às 10 semanas de gestação, em ambulatório b)</td><td>Medical termination of pregnancy (procedure)</td><td>Interrupção medicamentosa da gravidez, até às 10 semanas de gestação, em ambulatório b)</td></tr><tr><td><a href=\"http://snomed.info/id/302375005\">302375005</a></td><td>Interrupção cirúrgica da gravidez</td><td>Operative termination of pregnancy (procedure)</td><td>Interrupção cirúrgica da gravidez, até às 10 semanas de gestação, em ambulatório b)</td><td>Operative termination of pregnancy (procedure)</td><td>Interrupção cirúrgica da gravidez, até às 10 semanas de gestação, em ambulatório b)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpgo-obstetrics-procedures-vs",
+  "version" : "1.0.0",
+  "name" : "CPGOObstetricsProceduresVS",
+  "title" : "CPGO - Obstetrics Procedures",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2020-09-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores ObstetricsProcedures (CPGO v1.1).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "66456009",
+        "display" : "Amnioscopia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Amnioscopy"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Amnioscopy (procedure)"
+        }]
+      },
+      {
+        "code" : "387672006",
+        "display" : "Cardiotocografia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Cardiotochogram"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Cardiotochogram (regime/therapy)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Cardiotocografia a)"
+        }]
+      },
+      {
+        "code" : "303720006",
+        "display" : "Amostragem de vilosidades coriónica",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Sampling of chorionic villus"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Sampling of chorionic villus (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Biópsia de vilosidades coriónicas"
+        }]
+      },
+      {
+        "code" : "34536000",
+        "display" : "Amniocentese",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Amniocentesis"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Amniocentesis (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Amniocentese a)"
+        }]
+      },
+      {
+        "code" : "6708002",
+        "display" : "Cordocentese intrauterina",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Intrauterine cordocentesis"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Intrauterine cordocentesis (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Cordocentese (funicolocentese) a)"
+        }]
+      },
+      {
+        "code" : "386641000",
+        "display" : "Procedimento terapêutico de abortamento",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Therapeutic abortion procedure"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Therapeutic abortion procedure (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Tratamento cirúrgico de abortamento incompleto ou de restos ovulares pós-parto"
+        }]
+      },
+      {
+        "code" : "285409006",
+        "display" : "Interrupção médica da gravidez",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Medical termination of pregnancy"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Medical termination of pregnancy (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Interrupção medicamentosa da gravidez, até às 10 semanas de gestação, em ambulatório b)"
+        }]
+      },
+      {
+        "code" : "302375005",
+        "display" : "Interrupção cirúrgica da gravidez",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Operative termination of pregnancy"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Operative termination of pregnancy (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Interrupção cirúrgica da gravidez, até às 10 semanas de gestação, em ambulatório b)"
+        }]
+      }]
+    }]
+  }
+}

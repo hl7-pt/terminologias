@@ -1,0 +1,1608 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>CPCBD - Person in Family - JSON Representation - HL7 PT FHIR Implementation Guide: Terminologias v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.54"}
+    h3,h4,h5,h6{--heading-prefix:"6.54"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Terminologias</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="spec.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CPCBD - Person in Family</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Terminologias, publicado por HL7 Portugal. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 1.0.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/hl7-pt/terminologias/tree/master'>https://github.com/hl7-pt/terminologias/tree/master</a> e muda regularmente. Veja o <a href='http://hl7.pt/fhir/history.html'>Diretório de versões publicadas</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/hl7-pt/terminologias/commit/987016b692d9e8d3c724739e2350b4e3cdb93844"><code>987016b6</code></a>.</span></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-cpcbd-person-in-family-vs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-cpcbd-person-in-family-vs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-cpcbd-person-in-family-vs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: CPCBD - Person in Family - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-11-01
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-cpcbd-person-in-family-vs.json" no-download="true">Raw json</a> | <a href="ValueSet-cpcbd-person-in-family-vs.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R5/resource.html#XValueSet.id">id</a>" : "cpcbd-person-in-family-vs",
+  "<a href="http://hl7.org/fhir/R5/domainresource.html#XValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narrativa gerada: ValueSet cpcbd-person-in-family-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cpcbd-person-in-family-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccpcbd-person-in-family-vs\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include estes códigos, tal como definidos em &lt;a href=\&quot;http://www.snomed.org/\&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; versão Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (English, en)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/25211005\&quot;&gt;25211005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tia&lt;/td&gt;&lt;td&gt;Aunt (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/67822003\&quot;&gt;67822003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Filho/filha&lt;/td&gt;&lt;td&gt;Child (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/393547004\&quot;&gt;393547004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Criança adotada&lt;/td&gt;&lt;td&gt;Adopted child (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/39062003\&quot;&gt;39062003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Criança de acolhimento&lt;/td&gt;&lt;td&gt;Foster child (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/55538000\&quot;&gt;55538000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Primo/prima&lt;/td&gt;&lt;td&gt;Cousin (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/83420006\&quot;&gt;83420006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Filha biológica&lt;/td&gt;&lt;td&gt;Natural daughter (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/393549001\&quot;&gt;393549001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Filha adoptiva&lt;/td&gt;&lt;td&gt;Adopted daughter (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/66089001\&quot;&gt;66089001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Filha&lt;/td&gt;&lt;td&gt;Daughter (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/31831004\&quot;&gt;31831004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Filha de acolhimento&lt;/td&gt;&lt;td&gt;Foster daughter (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/303071001\&quot;&gt;303071001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Membro da família&lt;/td&gt;&lt;td&gt;Person in the family (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/9947008\&quot;&gt;9947008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pai biológico&lt;/td&gt;&lt;td&gt;Natural father (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/5171000124108\&quot;&gt;5171000124108&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sogro&lt;/td&gt;&lt;td&gt;Father-in-law (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/33969000\&quot;&gt;33969000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bisavô&lt;/td&gt;&lt;td&gt;Great grandparent (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/86372007\&quot;&gt;86372007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neto/neta&lt;/td&gt;&lt;td&gt;Grandchild (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/62296006\&quot;&gt;62296006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avô biológico&lt;/td&gt;&lt;td&gt;Natural grandfather (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/65656005\&quot;&gt;65656005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mãe biológica&lt;/td&gt;&lt;td&gt;Natural mother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/5181000124106\&quot;&gt;5181000124106&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sogra&lt;/td&gt;&lt;td&gt;Mother-in-law (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/75226009\&quot;&gt;75226009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Filho/filha biológico&lt;/td&gt;&lt;td&gt;Natural child (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/34581001\&quot;&gt;34581001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sobrinha&lt;/td&gt;&lt;td&gt;Niece (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/83559000\&quot;&gt;83559000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sobrinho&lt;/td&gt;&lt;td&gt;Nephew (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/40683002\&quot;&gt;40683002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pai/mãe&lt;/td&gt;&lt;td&gt;Parent (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/5161000124101\&quot;&gt;5161000124101&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sogro/sogra&lt;/td&gt;&lt;td&gt;Parent in-law (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/375005\&quot;&gt;375005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmão/irmã&lt;/td&gt;&lt;td&gt;Sibling (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/113160008\&quot;&gt;113160008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Filho biológico&lt;/td&gt;&lt;td&gt;Natural son (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/394560000\&quot;&gt;394560000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Filho adoptivo&lt;/td&gt;&lt;td&gt;Adopted son (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/65616008\&quot;&gt;65616008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Filho&lt;/td&gt;&lt;td&gt;Son (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/12241003\&quot;&gt;12241003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Filho de acolhimento&lt;/td&gt;&lt;td&gt;Foster son (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/127848009\&quot;&gt;127848009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cônjuge&lt;/td&gt;&lt;td&gt;Spouse (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/86764008\&quot;&gt;86764008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Enteado/enteada&lt;/td&gt;&lt;td&gt;Stepchild (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/22573006\&quot;&gt;22573006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Enteada&lt;/td&gt;&lt;td&gt;Stepdaughter (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/8674003\&quot;&gt;8674003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Enteado&lt;/td&gt;&lt;td&gt;Stepson (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/38048003\&quot;&gt;38048003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tio&lt;/td&gt;&lt;td&gt;Uncle (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/127849001\&quot;&gt;127849001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Marido&lt;/td&gt;&lt;td&gt;Husband (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/2272004\&quot;&gt;2272004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meia irmã&lt;/td&gt;&lt;td&gt;Half-sister (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/45929001\&quot;&gt;45929001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meio irmão&lt;/td&gt;&lt;td&gt;Half-brother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/127850001\&quot;&gt;127850001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mulher&lt;/td&gt;&lt;td&gt;Wife (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/736454006\&quot;&gt;736454006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tia materna&lt;/td&gt;&lt;td&gt;Maternal aunt (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/736455007\&quot;&gt;736455007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tia paterna&lt;/td&gt;&lt;td&gt;Paternal aunt (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/719759007\&quot;&gt;719759007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Primo materno&lt;/td&gt;&lt;td&gt;Maternal cousin (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/719760002\&quot;&gt;719760002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Primo paterno&lt;/td&gt;&lt;td&gt;Paternal cousin (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/50261002\&quot;&gt;50261002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bisavô&lt;/td&gt;&lt;td&gt;Great grandfather (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/78652007\&quot;&gt;78652007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bisavó&lt;/td&gt;&lt;td&gt;Great grandmother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/44181008\&quot;&gt;44181008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neta&lt;/td&gt;&lt;td&gt;Granddaughter (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/70578009\&quot;&gt;70578009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neto&lt;/td&gt;&lt;td&gt;Grandson (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/34871008\&quot;&gt;34871008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avô&lt;/td&gt;&lt;td&gt;Grandfather (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/394857004\&quot;&gt;394857004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avô materno&lt;/td&gt;&lt;td&gt;Maternal grandfather (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/394856008\&quot;&gt;394856008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avô paterno&lt;/td&gt;&lt;td&gt;Paternal grandfather (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/113157001\&quot;&gt;113157001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avó&lt;/td&gt;&lt;td&gt;Grandmother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/394859001\&quot;&gt;394859001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avó materna&lt;/td&gt;&lt;td&gt;Maternal grandmother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/394858009\&quot;&gt;394858009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avó paterna&lt;/td&gt;&lt;td&gt;Paternal grandmother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/442031000124102\&quot;&gt;442031000124102&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tio materna&lt;/td&gt;&lt;td&gt;Maternal uncle (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/442041000124107\&quot;&gt;442041000124107&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tio paterno&lt;/td&gt;&lt;td&gt;Paternal uncle (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/41953004\&quot;&gt;41953004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pai/mãe adoptivo&lt;/td&gt;&lt;td&gt;Adoptive parent (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/609005\&quot;&gt;609005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pai adoptivo&lt;/td&gt;&lt;td&gt;Adoptive father (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/21464003\&quot;&gt;21464003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mãe adoptiva&lt;/td&gt;&lt;td&gt;Adoptive mother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/8458002\&quot;&gt;8458002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pai de acolhimento&lt;/td&gt;&lt;td&gt;Foster father (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/30578000\&quot;&gt;30578000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Padrasto&lt;/td&gt;&lt;td&gt;Stepfather (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/38265003\&quot;&gt;38265003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mãe de acolhimento&lt;/td&gt;&lt;td&gt;Foster mother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/65412001\&quot;&gt;65412001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Madrasta&lt;/td&gt;&lt;td&gt;Stepmother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/13646006\&quot;&gt;13646006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pai/mãe biológico&lt;/td&gt;&lt;td&gt;Natural parent (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/90921004\&quot;&gt;90921004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pai/mãe de acolhimento&lt;/td&gt;&lt;td&gt;Foster parent (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/70924004\&quot;&gt;70924004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmão&lt;/td&gt;&lt;td&gt;Brother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/60614009\&quot;&gt;60614009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmão biológico&lt;/td&gt;&lt;td&gt;Natural brother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/81276006\&quot;&gt;81276006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmão gémeo&lt;/td&gt;&lt;td&gt;Twin brother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/81467001\&quot;&gt;81467001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmão gémeo não idêntico&lt;/td&gt;&lt;td&gt;Fraternal twin brother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/78194006\&quot;&gt;78194006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmão gémeo idêntico&lt;/td&gt;&lt;td&gt;Identical twin brother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/76087000\&quot;&gt;76087000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meio irmão&lt;/td&gt;&lt;td&gt;Stepbrother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/21093007\&quot;&gt;21093007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmão consaguíneo&lt;/td&gt;&lt;td&gt;Half-sibling (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/82101005\&quot;&gt;82101005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmão biológico&lt;/td&gt;&lt;td&gt;Natural sibling (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/73678001\&quot;&gt;73678001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmã biológica&lt;/td&gt;&lt;td&gt;Natural sister (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/19343003\&quot;&gt;19343003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmã gémea&lt;/td&gt;&lt;td&gt;Twin sister (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/29644004\&quot;&gt;29644004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmã gémea não idêntica&lt;/td&gt;&lt;td&gt;Fraternal twin sister (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/50058005\&quot;&gt;50058005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmã gémea idêntica&lt;/td&gt;&lt;td&gt;Identical twin sister (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/313416000\&quot;&gt;313416000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gémeo não idêntico&lt;/td&gt;&lt;td&gt;Fraternal twin (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/313415001\&quot;&gt;313415001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gémeo idêntico&lt;/td&gt;&lt;td&gt;Identical twin (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/27733009\&quot;&gt;27733009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmã&lt;/td&gt;&lt;td&gt;Sister (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/46363003\&quot;&gt;46363003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meia irmã&lt;/td&gt;&lt;td&gt;Stepsister (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/88510002\&quot;&gt;88510002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meio irmão/irmã&lt;/td&gt;&lt;td&gt;Stepsibling (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/31656007\&quot;&gt;31656007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avó adotiva&lt;/td&gt;&lt;td&gt;Adoptive grandmother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/85058002\&quot;&gt;85058002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avô adotivo&lt;/td&gt;&lt;td&gt;Adoptive grandfather (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/17945006\&quot;&gt;17945006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avó biológica&lt;/td&gt;&lt;td&gt;Natural grandmother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/38312007\&quot;&gt;38312007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avó/avô&lt;/td&gt;&lt;td&gt;Grandparent (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/22609000\&quot;&gt;22609000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avô/avó adotivo&lt;/td&gt;&lt;td&gt;Adoptive grandparent (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/78272007\&quot;&gt;78272007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avós biológicos&lt;/td&gt;&lt;td&gt;Natural grandparent (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/719769001\&quot;&gt;719769001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bisavó materna&lt;/td&gt;&lt;td&gt;Maternal great grandmother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/719771001\&quot;&gt;719771001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bisavô materno&lt;/td&gt;&lt;td&gt;Maternal great grandfather (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/719768009\&quot;&gt;719768009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bisavó paterna&lt;/td&gt;&lt;td&gt;Paternal great grandmother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/719770000\&quot;&gt;719770000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bisavô paterno&lt;/td&gt;&lt;td&gt;Paternal great grandfather (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/394567002\&quot;&gt;394567002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bisneta&lt;/td&gt;&lt;td&gt;Great granddaughter (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/394566006\&quot;&gt;394566006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bisneto&lt;/td&gt;&lt;td&gt;Great grandson (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/72012000\&quot;&gt;72012000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bisneto/bisneta&lt;/td&gt;&lt;td&gt;Great grandchild (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/34972000\&quot;&gt;34972000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Filha única&lt;/td&gt;&lt;td&gt;Only daughter (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/14469008\&quot;&gt;14469008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Filho/filha legal&lt;/td&gt;&lt;td&gt;Legal child (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/81173009\&quot;&gt;81173009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Filho único&lt;/td&gt;&lt;td&gt;Only son (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/76022008\&quot;&gt;76022008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmã adotiva&lt;/td&gt;&lt;td&gt;Adoptive sister (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/58293006\&quot;&gt;58293006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmã de acolhimento&lt;/td&gt;&lt;td&gt;Foster sister (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/17925003\&quot;&gt;17925003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmão adotivo&lt;/td&gt;&lt;td&gt;Adoptive brother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/29787005\&quot;&gt;29787005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmão de acolhimento&lt;/td&gt;&lt;td&gt;Foster brother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/11773006\&quot;&gt;11773006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmão legal&lt;/td&gt;&lt;td&gt;Legal brother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/79508001\&quot;&gt;79508001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmão/irmã adotivo&lt;/td&gt;&lt;td&gt;Adoptive sibling (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/18906004\&quot;&gt;18906004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmão/irmã de acolhimento&lt;/td&gt;&lt;td&gt;Foster sibling (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/11286003\&quot;&gt;11286003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irmão/irmã gémeo&lt;/td&gt;&lt;td&gt;Twin sibling (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/72705000\&quot;&gt;72705000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mãe&lt;/td&gt;&lt;td&gt;Mother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/719765007\&quot;&gt;719765007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meia-irmã materna&lt;/td&gt;&lt;td&gt;Maternal half sister (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/719764006\&quot;&gt;719764006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meia-irmã paterna&lt;/td&gt;&lt;td&gt;Paternal half sister (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/719766008\&quot;&gt;719766008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meio-irmão materno&lt;/td&gt;&lt;td&gt;Maternal half brother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/719762005\&quot;&gt;719762005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meio-irmão paterno&lt;/td&gt;&lt;td&gt;Paternal half brother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/74128007\&quot;&gt;74128007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Padrasto/madrasta&lt;/td&gt;&lt;td&gt;Stepparent (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/66839005\&quot;&gt;66839005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pai&lt;/td&gt;&lt;td&gt;Father (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/266943008\&quot;&gt;266943008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pai/mãe solteiro&lt;/td&gt;&lt;td&gt;Single parent (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/125679009\&quot;&gt;125679009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Parente de sangue&lt;/td&gt;&lt;td&gt;Blood relative (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/125678001\&quot;&gt;125678001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Parente de sangue de primeiro grau&lt;/td&gt;&lt;td&gt;First degree blood relative (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/699110007\&quot;&gt;699110007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Parente de sangue de segundo grau&lt;/td&gt;&lt;td&gt;Second degree blood relative (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/105431001\&quot;&gt;105431001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pessoa adotada&lt;/td&gt;&lt;td&gt;Adopted person (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/2959006\&quot;&gt;2959006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Prima&lt;/td&gt;&lt;td&gt;Female cousin (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/47801002\&quot;&gt;47801002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Primo&lt;/td&gt;&lt;td&gt;Male cousin (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/4577005\&quot;&gt;4577005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Primo em primeiro grau&lt;/td&gt;&lt;td&gt;First cousin (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/13443008\&quot;&gt;13443008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Primo em segundo grau&lt;/td&gt;&lt;td&gt;Second cousin (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/736456008\&quot;&gt;736456008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Primo materno em primeiro grau&lt;/td&gt;&lt;td&gt;Maternal first cousin (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/394862003\&quot;&gt;394862003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tia-avó&lt;/td&gt;&lt;td&gt;Great aunt (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/394861005\&quot;&gt;394861005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tio-avô&lt;/td&gt;&lt;td&gt;Great uncle (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/2368000\&quot;&gt;2368000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trisavó&lt;/td&gt;&lt;td&gt;Great great grandmother (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/80386000\&quot;&gt;80386000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trisavô&lt;/td&gt;&lt;td&gt;Great great grandfather (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/68021009\&quot;&gt;68021009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trisavô/trisavó&lt;/td&gt;&lt;td&gt;Great great grandparent (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/11393001\&quot;&gt;11393001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trisneto/trisneta&lt;/td&gt;&lt;td&gt;Great great grandchild (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1258960001\&quot;&gt;1258960001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Genro&lt;/td&gt;&lt;td&gt;Son-in-law (person)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1258961002\&quot;&gt;1258961002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nora&lt;/td&gt;&lt;td&gt;Daughter-in-law (person)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.url">url</a>" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpcbd-person-in-family-vs",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.system">system</a>" : "urn:ietf:rfc:3986",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.value">value</a>" : "urn:oid:2.16.620.1.101.10.4.6.61"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.version">version</a>" : "1.0.0",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.name">name</a>" : "CPCBDPersonInFamilyVS",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.title">title</a>" : "CPCBD - Person in Family",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.date">date</a>" : "2022-11-01",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.publisher">publisher</a>" : "HL7 Portugal",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "HL7 Portugal",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "http://hl7.pt"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "info@hl7.pt"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "HL7 Portugal",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "geral@hl7.pt",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.use">use</a>" : "work"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.description">description</a>" : "Conjunto de valores PersonInFamily (CPCBD v1.1.0).",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "PT",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Portugal"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.author">author</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "Centro de Terminologias Clínicas"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.system">system</a>" : "http://snomed.info/sct",
+        "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "25211005",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Tia",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Aunt (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "67822003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Filho/filha",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Child (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "393547004",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Criança adotada",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Adopted child (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "39062003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Criança de acolhimento",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Foster child (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "55538000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Primo/prima",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Cousin (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "83420006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Filha biológica",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Natural daughter (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "393549001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Filha adoptiva",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Adopted daughter (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "66089001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Filha",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Daughter (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "31831004",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Filha de acolhimento",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Foster daughter (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "303071001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Membro da família",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Person in the family (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "9947008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Pai biológico",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Natural father (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "5171000124108",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Sogro",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Father-in-law (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "33969000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Bisavô",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Great grandparent (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "86372007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Neto/neta",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Grandchild (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "62296006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Avô biológico",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Natural grandfather (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "65656005",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Mãe biológica",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Natural mother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "5181000124106",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Sogra",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Mother-in-law (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "75226009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Filho/filha biológico",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Natural child (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "34581001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Sobrinha",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Niece (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "83559000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Sobrinho",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Nephew (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "40683002",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Pai/mãe",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Parent (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "5161000124101",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Sogro/sogra",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Parent in-law (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "375005",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmão/irmã",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Sibling (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "113160008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Filho biológico",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Natural son (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "394560000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Filho adoptivo",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Adopted son (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "65616008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Filho",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Son (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "12241003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Filho de acolhimento",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Foster son (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "127848009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Cônjuge",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Spouse (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "86764008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Enteado/enteada",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Stepchild (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "22573006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Enteada",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Stepdaughter (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "8674003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Enteado",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Stepson (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "38048003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Tio",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Uncle (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "127849001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Marido",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Husband (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "2272004",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Meia irmã",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Half-sister (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "45929001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Meio irmão",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Half-brother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "127850001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Mulher",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Wife (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "736454006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Tia materna",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Maternal aunt (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "736455007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Tia paterna",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Paternal aunt (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "719759007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Primo materno",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Maternal cousin (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "719760002",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Primo paterno",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Paternal cousin (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "50261002",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Bisavô",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Great grandfather (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "78652007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Bisavó",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Great grandmother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "44181008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Neta",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Granddaughter (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "70578009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Neto",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Grandson (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "34871008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Avô",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Grandfather (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "394857004",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Avô materno",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Maternal grandfather (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "394856008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Avô paterno",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Paternal grandfather (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "113157001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Avó",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Grandmother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "394859001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Avó materna",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Maternal grandmother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "394858009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Avó paterna",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Paternal grandmother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "442031000124102",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Tio materna",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Maternal uncle (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "442041000124107",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Tio paterno",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Paternal uncle (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "41953004",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Pai/mãe adoptivo",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Adoptive parent (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "609005",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Pai adoptivo",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Adoptive father (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "21464003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Mãe adoptiva",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Adoptive mother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "8458002",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Pai de acolhimento",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Foster father (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "30578000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Padrasto",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Stepfather (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "38265003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Mãe de acolhimento",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Foster mother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "65412001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Madrasta",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Stepmother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "13646006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Pai/mãe biológico",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Natural parent (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "90921004",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Pai/mãe de acolhimento",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Foster parent (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "70924004",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmão",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Brother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "60614009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmão biológico",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Natural brother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "81276006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmão gémeo",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Twin brother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "81467001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmão gémeo não idêntico",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Fraternal twin brother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "78194006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmão gémeo idêntico",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Identical twin brother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "76087000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Meio irmão",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Stepbrother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "21093007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmão consaguíneo",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Half-sibling (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "82101005",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmão biológico",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Natural sibling (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "73678001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmã biológica",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Natural sister (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "19343003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmã gémea",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Twin sister (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "29644004",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmã gémea não idêntica",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Fraternal twin sister (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "50058005",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmã gémea idêntica",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Identical twin sister (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "313416000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Gémeo não idêntico",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Fraternal twin (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "313415001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Gémeo idêntico",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Identical twin (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "27733009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmã",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Sister (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "46363003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Meia irmã",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Stepsister (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "88510002",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Meio irmão/irmã",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Stepsibling (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "31656007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Avó adotiva",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Adoptive grandmother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "85058002",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Avô adotivo",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Adoptive grandfather (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "17945006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Avó biológica",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Natural grandmother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "38312007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Avó/avô",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Grandparent (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "22609000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Avô/avó adotivo",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Adoptive grandparent (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "78272007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Avós biológicos",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Natural grandparent (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "719769001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Bisavó materna",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Maternal great grandmother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "719771001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Bisavô materno",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Maternal great grandfather (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "719768009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Bisavó paterna",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Paternal great grandmother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "719770000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Bisavô paterno",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Paternal great grandfather (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "394567002",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Bisneta",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Great granddaughter (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "394566006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Bisneto",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Great grandson (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "72012000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Bisneto/bisneta",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Great grandchild (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "34972000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Filha única",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Only daughter (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "14469008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Filho/filha legal",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Legal child (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "81173009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Filho único",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Only son (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "76022008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmã adotiva",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Adoptive sister (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "58293006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmã de acolhimento",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Foster sister (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "17925003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmão adotivo",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Adoptive brother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "29787005",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmão de acolhimento",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Foster brother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "11773006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmão legal",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Legal brother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "79508001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmão/irmã adotivo",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Adoptive sibling (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "18906004",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmão/irmã de acolhimento",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Foster sibling (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "11286003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Irmão/irmã gémeo",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Twin sibling (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "72705000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Mãe",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Mother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "719765007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Meia-irmã materna",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Maternal half sister (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "719764006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Meia-irmã paterna",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Paternal half sister (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "719766008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Meio-irmão materno",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Maternal half brother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "719762005",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Meio-irmão paterno",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Paternal half brother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "74128007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Padrasto/madrasta",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Stepparent (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "66839005",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Pai",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Father (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "266943008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Pai/mãe solteiro",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Single parent (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "125679009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Parente de sangue",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Blood relative (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "125678001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Parente de sangue de primeiro grau",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "First degree blood relative (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "699110007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Parente de sangue de segundo grau",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Second degree blood relative (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "105431001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Pessoa adotada",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Adopted person (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "2959006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Prima",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Female cousin (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "47801002",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Primo",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Male cousin (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "4577005",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Primo em primeiro grau",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "First cousin (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "13443008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Primo em segundo grau",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Second cousin (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "736456008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Primo materno em primeiro grau",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Maternal first cousin (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "394862003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Tia-avó",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Great aunt (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "394861005",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Tio-avô",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Great uncle (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "2368000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Trisavó",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Great great grandmother (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "80386000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Trisavô",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Great great grandfather (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "68021009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Trisavô/trisavó",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Great great grandparent (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "11393001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Trisneto/trisneta",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Great great grandchild (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "1258960001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Genro",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Son-in-law (person)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "1258961002",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Nora",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Daughter-in-law (person)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Jun 17, 2026 10:02+0000">2026-06-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

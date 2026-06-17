@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cparadm-additional-arrangement-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cparadm-additional-arrangement-vs</b></p><a name="cparadm-additional-arrangement-vs"> </a><a name="hccparadm-additional-arrangement-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="http://snomed.info/id/58938008">58938008</a></td><td>Cadeira de rodas</td><td>Wheelchair device (physical object)</td></tr><tr><td><a href="http://snomed.info/id/308005007">308005007</a></td><td>Intérprete de língua</td><td>Language interpreter (occupation)</td></tr><tr><td><a href="http://snomed.info/id/89149003">89149003</a></td><td>Maca</td><td>Stretcher, device (physical object)</td></tr><tr><td><a href="http://snomed.info/id/229772003">229772003</a></td><td>Cama</td><td>Bed (physical object)</td></tr><tr><td><a href="http://snomed.info/id/707808001">707808001</a></td><td>Oxigénio</td><td>Oxygen therapy support (regime/therapy)</td></tr><tr><td><a href="http://snomed.info/id/40617009">40617009</a></td><td>Ventilação</td><td>Artificial ventilation (regime/therapy)</td></tr><tr><td><a href="http://snomed.info/id/40174006">40174006</a></td><td>Isolado</td><td>Isolation procedure (procedure)</td></tr><tr><td><a href="http://snomed.info/id/223366009">223366009</a></td><td>Profissional de saúde</td><td>Healthcare professional (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1287116005">1287116005</a></td><td>Acompanhante</td><td>Chaperone (person)</td></tr><tr><td><a href="http://snomed.info/id/182777000">182777000</a></td><td>Monitorização do utente</td><td>Monitoring of patient (regime/therapy)</td></tr><tr><td><a href="http://snomed.info/id/1299103002">1299103002</a></td><td>Cadeira de rodas pediátrica</td><td>Pediatric wheelchair (physical object)</td></tr><tr><td><a href="http://snomed.info/id/1299104008">1299104008</a></td><td>Cadeira de rodas de adulto</td><td>Adult wheelchair (physical object)</td></tr><tr><td><a href="http://snomed.info/id/281000314102">281000314102</a></td><td>Kit de partos</td><td>Delivery kit (physical object)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-additional-arrangement-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.19"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPARADMAdditionalArrangementVS"/>
+  <title value="CPARADM - Additional Arrangement"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores AdditionalArrangement (CPARADM v3.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="58938008"/>
+        <display value="Cadeira de rodas"/>
+        <designation>
+          <language value="en"/>
+          <value value="Wheelchair device (physical object)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="308005007"/>
+        <display value="Intérprete de língua"/>
+        <designation>
+          <language value="en"/>
+          <value value="Language interpreter (occupation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="89149003"/>
+        <display value="Maca"/>
+        <designation>
+          <language value="en"/>
+          <value value="Stretcher, device (physical object)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="229772003"/>
+        <display value="Cama"/>
+        <designation>
+          <language value="en"/>
+          <value value="Bed (physical object)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="707808001"/>
+        <display value="Oxigénio"/>
+        <designation>
+          <language value="en"/>
+          <value value="Oxygen therapy support (regime/therapy)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="40617009"/>
+        <display value="Ventilação"/>
+        <designation>
+          <language value="en"/>
+          <value value="Artificial ventilation (regime/therapy)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="40174006"/>
+        <display value="Isolado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Isolation procedure (procedure)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="223366009"/>
+        <display value="Profissional de saúde"/>
+        <designation>
+          <language value="en"/>
+          <value value="Healthcare professional (occupation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1287116005"/>
+        <display value="Acompanhante"/>
+        <designation>
+          <language value="en"/>
+          <value value="Chaperone (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="182777000"/>
+        <display value="Monitorização do utente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Monitoring of patient (regime/therapy)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1299103002"/>
+        <display value="Cadeira de rodas pediátrica"/>
+        <designation>
+          <language value="en"/>
+          <value value="Pediatric wheelchair (physical object)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1299104008"/>
+        <display value="Cadeira de rodas de adulto"/>
+        <designation>
+          <language value="en"/>
+          <value value="Adult wheelchair (physical object)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="281000314102"/>
+        <display value="Kit de partos"/>
+        <designation>
+          <language value="en"/>
+          <value value="Delivery kit (physical object)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

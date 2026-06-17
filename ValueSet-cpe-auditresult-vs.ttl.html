@@ -1,0 +1,505 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>CPE - AUDIT Result - TTL Representation - HL7 PT FHIR Implementation Guide: Terminologias v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.62"}
+    h3,h4,h5,h6{--heading-prefix:"6.62"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Terminologias</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="spec.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CPE - AUDIT Result</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Terminologias, publicado por HL7 Portugal. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 1.0.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/hl7-pt/terminologias/tree/master'>https://github.com/hl7-pt/terminologias/tree/master</a> e muda regularmente. Veja o <a href='http://hl7.pt/fhir/history.html'>Diretório de versões publicadas</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/hl7-pt/terminologias/commit/987016b692d9e8d3c724739e2350b4e3cdb93844"><code>987016b6</code></a>.</span></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-cpe-auditresult-vs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-cpe-auditresult-vs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-cpe-auditresult-vs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: CPE - AUDIT Result - TTL Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2024-11-01
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-cpe-auditresult-vs.ttl" no-download="true">Raw ttl</a> | <a href="ValueSet-cpe-auditresult-vs.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:ValueSet ;
+  <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R5/resource.html#XValueSet.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;cpe-auditresult-vs&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/domainresource.html#XValueSet.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R5/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narrativa gerada: ValueSet cpe-auditresult-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cpe-auditresult-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccpe-auditresult-vs\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include estes códigos, tal como definidos em &lt;a href=\&quot;http://loinc.org\&quot;&gt;&lt;code&gt;http://loinc.org&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; versão Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Synonym&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (English, en)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Portuguese (pt)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA2-8/\&quot;&gt;LA2-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Masculino&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Male&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA3-6/\&quot;&gt;LA3-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Feminino&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Female&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA6270-8/\&quot;&gt;LA6270-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nunca&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Never&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA18926-8/\&quot;&gt;LA18926-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uma vez por mês ou menos&lt;/td&gt;&lt;td&gt;1 vez/mês ou menos&lt;/td&gt;&lt;td&gt;Monthly or less&lt;/td&gt;&lt;td&gt;1 vez/mês ou menos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA18927-6/\&quot;&gt;LA18927-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Duas a quatro vezes por mês&lt;/td&gt;&lt;td&gt;2 a 4 vezes/mês&lt;/td&gt;&lt;td&gt;2-4 times a month&lt;/td&gt;&lt;td&gt;2 a 4 vezes/mês&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA18928-4/\&quot;&gt;LA18928-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Duas a três vezes por semanas&lt;/td&gt;&lt;td&gt;2 a 3 vezes/semana&lt;/td&gt;&lt;td&gt;2-3 times a week&lt;/td&gt;&lt;td&gt;2 a 3 vezes/semana&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA18929-2/\&quot;&gt;LA18929-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Quatro ou mais vezes por semana&lt;/td&gt;&lt;td&gt;4 ou mais vezes/semana&lt;/td&gt;&lt;td&gt;4 or more times a week&lt;/td&gt;&lt;td&gt;4 ou mais vezes/semana&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA15694-5/\&quot;&gt;LA15694-5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;1 ou 2&lt;/td&gt;&lt;td&gt;1 ou 2 por dia&lt;/td&gt;&lt;td&gt;1 or 2&lt;/td&gt;&lt;td&gt;1 ou 2 por dia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA15695-2/\&quot;&gt;LA15695-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;3 ou 4&lt;/td&gt;&lt;td&gt;3 ou 4 por dia&lt;/td&gt;&lt;td&gt;3 or 4&lt;/td&gt;&lt;td&gt;3 ou 4 por dia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA18930-0/\&quot;&gt;LA18930-0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;5 ou 6&lt;/td&gt;&lt;td&gt;5 ou 6 por dia&lt;/td&gt;&lt;td&gt;5 or 6&lt;/td&gt;&lt;td&gt;5 ou 6 por dia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA18931-8/\&quot;&gt;LA18931-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;De 7 a 9&lt;/td&gt;&lt;td&gt;De 7 a 9 por dia&lt;/td&gt;&lt;td&gt;7 to 9&lt;/td&gt;&lt;td&gt;De 7 a 9 por dia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA18932-6/\&quot;&gt;LA18932-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;10 ou mais&lt;/td&gt;&lt;td&gt;10 ou mais por dia&lt;/td&gt;&lt;td&gt;10 or more&lt;/td&gt;&lt;td&gt;10 ou mais por dia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA18933-4/\&quot;&gt;LA18933-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Menos de uma vez por mês&lt;/td&gt;&lt;td&gt;Menos de 1 vez/mês&lt;/td&gt;&lt;td&gt;Less than monthly&lt;/td&gt;&lt;td&gt;Menos de 1 vez/mês&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA18876-5/\&quot;&gt;LA18876-5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pelo menos uma vez por mês&lt;/td&gt;&lt;td&gt;Pelo menos 1 vez/mês&lt;/td&gt;&lt;td&gt;Monthly&lt;/td&gt;&lt;td&gt;Pelo menos 1 vez/mês&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA18891-4/\&quot;&gt;LA18891-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pelo menos uma vez por semana&lt;/td&gt;&lt;td&gt;pelo menos 1 vez/semana&lt;/td&gt;&lt;td&gt;Weekly&lt;/td&gt;&lt;td&gt;pelo menos 1 vez/semana&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA18934-2/\&quot;&gt;LA18934-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diariamente ou quase diariamente&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Daily or almost daily&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA32-8/\&quot;&gt;LA32-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Não&lt;/td&gt;&lt;td/&gt;&lt;td&gt;No&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA32279-4/\&quot;&gt;LA32279-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sim, mas não nos últimos 12 meses&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Yes, but not in the last year&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA32280-2/\&quot;&gt;LA32280-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sim, aconteceu nos últimos 12 meses&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Yes, during the last year&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;https://hl7.pt/fhir/Terminologias/ValueSet/cpe-auditresult-vs&quot;^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:ietf:rfc:3986&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;urn:oid:2.16.620.1.101.10.4.6.119&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1.0.0&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;CPEAUDITResultVS&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;CPE - AUDIT Result&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2024-11-01&quot;^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;HL7 Portugal&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;HL7 Portugal&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;http://hl7.pt&quot; ]     ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;info@hl7.pt&quot; ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;HL7 Portugal&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;geral@hl7.pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;work&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Conjunto de valores AUDITResult (CPE v2.0.0).&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.jurisdiction">fhir:jurisdiction</a> ( [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:iso:std:iso:3166&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;PT&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Portugal&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.author">fhir:author</a> ( [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Centro de Terminologias Clínicas&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose">fhir:compose</a> [
+    ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include">fhir:include</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+      ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">fhir:concept</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA2-8&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Masculino&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Male&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA3-6&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Feminino&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Female&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA6270-8&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Nunca&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Never&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA18926-8&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Uma vez por mês ou menos&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Monthly or less&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1 vez/mês ou menos&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA18927-6&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Duas a quatro vezes por mês&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;2-4 times a month&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;2 a 4 vezes/mês&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA18928-4&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Duas a três vezes por semanas&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;2-3 times a week&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;2 a 3 vezes/semana&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA18929-2&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Quatro ou mais vezes por semana&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;4 or more times a week&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;4 ou mais vezes/semana&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA15694-5&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1 ou 2&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1 or 2&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1 ou 2 por dia&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA15695-2&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;3 ou 4&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;3 or 4&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;3 ou 4 por dia&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA18930-0&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;5 ou 6&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;5 or 6&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;5 ou 6 por dia&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA18931-8&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;De 7 a 9&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;7 to 9&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;De 7 a 9 por dia&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA18932-6&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;10 ou mais&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;10 or more&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;10 ou mais por dia&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA18933-4&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Menos de uma vez por mês&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Less than monthly&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Menos de 1 vez/mês&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA18876-5&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Pelo menos uma vez por mês&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Monthly&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Pelo menos 1 vez/mês&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA18891-4&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Pelo menos uma vez por semana&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Weekly&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;pelo menos 1 vez/semana&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA18934-2&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Diariamente ou quase diariamente&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Daily or almost daily&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA32-8&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Não&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;No&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA32279-4&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sim, mas não nos últimos 12 meses&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Yes, but not in the last year&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA32280-2&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sim, aconteceu nos últimos 12 meses&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Yes, during the last year&quot; ]         ] )       ] )     ] )
+  ] . # 
+
+</code></pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Jun 17, 2026 10:02+0000">2026-06-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

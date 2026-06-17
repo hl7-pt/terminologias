@@ -1,0 +1,337 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpal-cast-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpal-cast-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpal-cast-vs</b></p><a name=\"cpal-cast-vs\"> </a><a name=\"hccpal-cast-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"http://snomed.info/id/250445004\">250445004</a></td><td>Cilindros celulares</td><td>Cellular casts (finding)</td><td>Cellular casts (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/167338002\">167338002</a></td><td>Microscopia de urina: cilindros hialinos</td><td>Urine microscopy: hyaline casts (finding)</td><td>Urine microscopy: hyaline casts (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/167337007\">167337007</a></td><td>Microscopia de urina: cilindros epiteliais</td><td>Urine microscopy: epithelial casts (finding)</td><td>Urine microscopy: epithelial casts (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/167336003\">167336003</a></td><td>Microscopia de urina: sem cilindros</td><td>Urine microscopy: no casts (finding)</td><td>Urine microscopy: no casts (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/102845008\">102845008</a></td><td>Cilindro ceroso largo</td><td>Urinary cast, broad waxy (finding)</td><td>Urinary cast, broad waxy (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/102844007\">102844007</a></td><td>Cilindro largo</td><td>Urinary cast, broad (finding)</td><td>Urinary cast, broad (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/102843001\">102843001</a></td><td>Cilindro granuloso</td><td>Urinary cast, granular (finding)</td><td>Urinary cast, granular (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/102841004\">102841004</a></td><td>Cilindro gorduroso</td><td>Urinary cast, fatty (finding)</td><td>Urinary cast, fatty (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/102840003\">102840003</a></td><td>Cilindro hemático</td><td>Urinary cast, erythrocyte (finding)</td><td>Urinary cast, erythrocyte (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/102838008\">102838008</a></td><td>Cilindro leucocitário</td><td>Urinary cast, leukocyte (finding)</td><td>Urinary cast, leukocyte (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/102837003\">102837003</a></td><td>Cilindro ceroso</td><td>Urinary cast, waxy (finding)</td><td>Urinary cast, waxy (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/5277004\">5277004</a></td><td>Cilindros urinários</td><td>Urinary casts (finding)</td><td>Urinary casts (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/726569002\">726569002</a></td><td>Cilindro finamente granuloso</td><td>Fine granular cast (morphologic abnormality)</td><td>Fine granular cast (morphologic abnormality)</td></tr><tr><td><a href=\"http://snomed.info/id/726568005\">726568005</a></td><td>Cilindro grosseiramente granuloso</td><td>Coarse granular cast (morphologic abnormality)</td><td>Coarse granular cast (morphologic abnormality)</td></tr><tr><td><a href=\"http://snomed.info/id/724374007\">724374007</a></td><td>Cilindro bacteriano</td><td>Bacterial cast (morphologic abnormality)</td><td>Bacterial cast (morphologic abnormality)</td></tr><tr><td><a href=\"http://snomed.info/id/724183008\">724183008</a></td><td>Cilindro de bilirrubina</td><td>Bilirubin cast (morphologic abnormality)</td><td>Bilirubin cast (morphologic abnormality)</td></tr><tr><td><a href=\"http://snomed.info/id/6780007\">6780007</a></td><td>Cilindro hemoglobínico</td><td>Hemoglobin cast (morphologic abnormality)</td><td>Hemoglobin cast (morphologic abnormality)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-cast-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.4" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPALCastVS"] ; # 
+  fhir:title [ fhir:v "CPAL - Cast"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2022-08-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores Cast (CPAL v7.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "250445004" ] ;
+         fhir:display [ fhir:v "Cilindros celulares" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cellular casts" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Cellular casts (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "167338002" ] ;
+         fhir:display [ fhir:v "Microscopia de urina: cilindros hialinos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Urine microscopy: hyaline casts" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Urine microscopy: hyaline casts (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "167337007" ] ;
+         fhir:display [ fhir:v "Microscopia de urina: cilindros epiteliais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Urine microscopy: epithelial casts" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Urine microscopy: epithelial casts (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "167336003" ] ;
+         fhir:display [ fhir:v "Microscopia de urina: sem cilindros" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Urine microscopy: no casts" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Urine microscopy: no casts (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "102845008" ] ;
+         fhir:display [ fhir:v "Cilindro ceroso largo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Urinary cast, broad waxy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Urinary cast, broad waxy (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "102844007" ] ;
+         fhir:display [ fhir:v "Cilindro largo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Urinary cast, broad" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Urinary cast, broad (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "102843001" ] ;
+         fhir:display [ fhir:v "Cilindro granuloso" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Urinary cast, granular" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Urinary cast, granular (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "102841004" ] ;
+         fhir:display [ fhir:v "Cilindro gorduroso" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Urinary cast, fatty" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Urinary cast, fatty (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "102840003" ] ;
+         fhir:display [ fhir:v "Cilindro hemático" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Urinary cast, erythrocyte" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Urinary cast, erythrocyte (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "102838008" ] ;
+         fhir:display [ fhir:v "Cilindro leucocitário" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Urinary cast, leucocyte" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Urinary cast, leukocyte (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "102837003" ] ;
+         fhir:display [ fhir:v "Cilindro ceroso" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Urinary cast, waxy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Urinary cast, waxy (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "5277004" ] ;
+         fhir:display [ fhir:v "Cilindros urinários" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Urinary casts" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Urinary casts (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "726569002" ] ;
+         fhir:display [ fhir:v "Cilindro finamente granuloso" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Fine granular cast" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Fine granular cast (morphologic abnormality)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "726568005" ] ;
+         fhir:display [ fhir:v "Cilindro grosseiramente granuloso" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Coarse granular cast" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Coarse granular cast (morphologic abnormality)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "724374007" ] ;
+         fhir:display [ fhir:v "Cilindro bacteriano" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bacterial cast" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Bacterial cast (morphologic abnormality)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "724183008" ] ;
+         fhir:display [ fhir:v "Cilindro de bilirrubina" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bilirubin cast" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Bilirubin cast (morphologic abnormality)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "6780007" ] ;
+         fhir:display [ fhir:v "Cilindro hemoglobínico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Haemoglobin cast" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Hemoglobin cast (morphologic abnormality)" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

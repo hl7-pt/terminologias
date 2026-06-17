@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpal-consistency-feces-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpal-consistency-feces-vs</b></p><a name="cpal-consistency-feces-vs"> </a><a name="hccpal-consistency-feces-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="http://snomed.info/id/424278001">424278001</a></td><td>Fezes secas</td><td>Dry stool (finding)</td><td>Dry stool (finding)</td></tr><tr><td><a href="http://snomed.info/id/422784003">422784003</a></td><td>Consistência anormal das fezes</td><td>Abnormal consistency of stool (finding)</td><td>Abnormal consistency of stool (finding)</td></tr><tr><td><a href="http://snomed.info/id/398212009">398212009</a></td><td>Fezes líquidas</td><td>Liquid stool (finding)</td><td>Liquid stool (finding)</td></tr><tr><td><a href="http://snomed.info/id/398032003">398032003</a></td><td>Fezes soltas</td><td>Loose stool (finding)</td><td>Loose stool (finding)</td></tr><tr><td><a href="http://snomed.info/id/229209009">229209009</a></td><td>Mudança na consistência das fezes</td><td>Change in stool consistency (finding)</td><td>Change in stool consistency (finding)</td></tr><tr><td><a href="http://snomed.info/id/167614006">167614006</a></td><td>Consistência das fezes: normal</td><td>Feces consistency: normal (finding)</td><td>Feces consistency: normal (finding)</td></tr><tr><td><a href="http://snomed.info/id/75295004">75295004</a></td><td>Fezes duras</td><td>Hard stool (finding)</td><td>Hard stool (finding)</td></tr><tr><td><a href="http://snomed.info/id/27731006">27731006</a></td><td>Fezes moles</td><td>Soft stool (finding)</td><td>Soft stool (finding)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpal-consistency-feces-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.10"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPALConsistencyFecesVS"/>
+  <title value="CPAL - Consistency of Feces"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores ConsistencyFeces (CPAL v7.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="424278001"/>
+        <display value="Fezes secas"/>
+        <designation>
+          <language value="en"/>
+          <value value="Dry stool"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Dry stool (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="422784003"/>
+        <display value="Consistência anormal das fezes"/>
+        <designation>
+          <language value="en"/>
+          <value value="Abnormal consistency of stool"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Abnormal consistency of stool (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="398212009"/>
+        <display value="Fezes líquidas"/>
+        <designation>
+          <language value="en"/>
+          <value value="Liquid stool"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Liquid stool (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="398032003"/>
+        <display value="Fezes soltas"/>
+        <designation>
+          <language value="en"/>
+          <value value="Loose stool"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Loose stool (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="229209009"/>
+        <display value="Mudança na consistência das fezes"/>
+        <designation>
+          <language value="en"/>
+          <value value="Change in stool consistency"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Change in stool consistency (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="167614006"/>
+        <display value="Consistência das fezes: normal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Faeces consistency: normal"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Feces consistency: normal (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="75295004"/>
+        <display value="Fezes duras"/>
+        <designation>
+          <language value="en"/>
+          <value value="Hard stool"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Hard stool (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="27731006"/>
+        <display value="Fezes moles"/>
+        <designation>
+          <language value="en"/>
+          <value value="Soft stool"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Soft stool (finding)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

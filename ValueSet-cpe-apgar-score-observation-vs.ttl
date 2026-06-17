@@ -1,0 +1,380 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-apgar-score-observation-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-apgar-score-observation-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-apgar-score-observation-vs</b></p><a name=\"cpe-apgar-score-observation-vs\"> </a><a name=\"hccpe-apgar-score-observation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/32401-2/\">32401-2</a></td><td>Apgar aos 10 minutos, cor</td><td>Apgar aos 10', cor</td><td>10 minute Apgar Color</td><td>Apgar aos 10', cor</td></tr><tr><td><a href=\"https://loinc.org/32402-0/\">32402-0</a></td><td>Apgar aos 10 minutos, frequência cardíaca</td><td>Apgar aos 10', frequência cardíaca</td><td>10 minute Apgar Heart rate</td><td>Apgar aos 10', frequência cardíaca</td></tr><tr><td><a href=\"https://loinc.org/32404-6/\">32404-6</a></td><td>Apgar aos 10 minutos, irritabilidade do reflexo</td><td>Apgar aos 10', irritabilidade do reflexo</td><td>10 minute Apgar Reflex irritability</td><td>Apgar aos 10', irritabilidade do reflexo</td></tr><tr><td><a href=\"https://loinc.org/32403-8/\">32403-8</a></td><td>Apgar aos 10 minutos, tónus muscular</td><td>Apgar aos 10', tónus muscular</td><td>10 minute Apgar Muscle tone</td><td>Apgar aos 10', tónus muscular</td></tr><tr><td><a href=\"https://loinc.org/32405-3/\">32405-3</a></td><td>Apgar aos 10 minutos, esforço respiratório</td><td>Apgar aos 10', frequência respiratória</td><td>10 minute Apgar Respiratory effort</td><td>Apgar aos 10', frequência respiratória</td></tr><tr><td><a href=\"https://loinc.org/9271-8/\">9271-8</a></td><td>Índice de Apgar aos 10 minutos</td><td>Apgar aos 10'</td><td>10 minute Apgar Score</td><td>Apgar aos 10'</td></tr><tr><td><a href=\"https://loinc.org/32411-1/\">32411-1</a></td><td>Apgar aos 5 minutos, cor</td><td>Apgar aos 5', cor</td><td>5 minute Apgar Color</td><td>Apgar aos 5', cor</td></tr><tr><td><a href=\"https://loinc.org/32412-9/\">32412-9</a></td><td>Apgar aos 5 minutos, frequência cardíaca</td><td>Apgar aos 5', frequência cardíaca</td><td>5 minute Apgar Heart rate</td><td>Apgar aos 5', frequência cardíaca</td></tr><tr><td><a href=\"https://loinc.org/32414-5/\">32414-5</a></td><td>Apgar aos 5 minutos, irritabilidade do reflexo</td><td>Apgar aos 5', irritabilidade do reflexo</td><td>5 minute Apgar Reflex irritability</td><td>Apgar aos 5', irritabilidade do reflexo</td></tr><tr><td><a href=\"https://loinc.org/32413-7/\">32413-7</a></td><td>Apgar aos 5 minutos, tónus muscular</td><td>Apgar aos 5', tónus muscular</td><td>5 minute Apgar Muscle tone</td><td>Apgar aos 5', tónus muscular</td></tr><tr><td><a href=\"https://loinc.org/32415-2/\">32415-2</a></td><td>Apgar aos 5 minutos, esforço respiratório</td><td>Apgar aos 5', frequência respiratória</td><td>5 minute Apgar Respiratory effort</td><td>Apgar aos 5', frequência respiratória</td></tr><tr><td><a href=\"https://loinc.org/9274-2/\">9274-2</a></td><td>Índice de Apgar aos 5 minutos</td><td>Apgar aos 5'</td><td>5 minute Apgar Score</td><td>Apgar aos 5'</td></tr><tr><td><a href=\"https://loinc.org/32406-1/\">32406-1</a></td><td>Apgar ao 1 minuto, cor</td><td>Apgar ao 1', cor</td><td>1 minute Apgar Color</td><td>Apgar ao 1', cor</td></tr><tr><td><a href=\"https://loinc.org/32407-9/\">32407-9</a></td><td>Apgar ao 1 minuto, frequência cardíaca</td><td>Apgar ao 1', frequência cardíaca</td><td>1 minute Apgar Heart rate</td><td>Apgar ao 1', frequência cardíaca</td></tr><tr><td><a href=\"https://loinc.org/32409-5/\">32409-5</a></td><td>Apgar ao 1 minuto, irritabilidade do reflexo</td><td>Apgar ao 1', irritabilidade do reflexo</td><td>1 minute Apgar Reflex irritability</td><td>Apgar ao 1', irritabilidade do reflexo</td></tr><tr><td><a href=\"https://loinc.org/32408-7/\">32408-7</a></td><td>Apgar ao 1 minuto, tónus muscular</td><td>Apgar ao 1', tónus muscular</td><td>1 minute Apgar Muscle tone</td><td>Apgar ao 1', tónus muscular</td></tr><tr><td><a href=\"https://loinc.org/32410-3/\">32410-3</a></td><td>Apgar ao 1 minuto, esforço respiratório</td><td>Apgar ao 1', frequência respiratória</td><td>1 minute Apgar Respiratory effort</td><td>Apgar ao 1', frequência respiratória</td></tr><tr><td><a href=\"https://loinc.org/9272-6/\">9272-6</a></td><td>Índice de Apgar ao 1 minuto</td><td>Apgar ao 1'</td><td>1 minute Apgar Score</td><td>Apgar ao 1'</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-apgar-score-observation-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.115" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPEApgarScoreObservationVS"] ; # 
+  fhir:title [ fhir:v "CPE - Apgar Score Observation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores ApgarScoreObservation (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "32401-2" ] ;
+         fhir:display [ fhir:v "Apgar aos 10 minutos, cor" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "10 minute Apgar Color" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apgar aos 10', cor" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "32402-0" ] ;
+         fhir:display [ fhir:v "Apgar aos 10 minutos, frequência cardíaca" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "10 minute Apgar Heart rate" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apgar aos 10', frequência cardíaca" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "32404-6" ] ;
+         fhir:display [ fhir:v "Apgar aos 10 minutos, irritabilidade do reflexo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "10 minute Apgar Reflex irritability" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apgar aos 10', irritabilidade do reflexo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "32403-8" ] ;
+         fhir:display [ fhir:v "Apgar aos 10 minutos, tónus muscular" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "10 minute Apgar Muscle tone" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apgar aos 10', tónus muscular" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "32405-3" ] ;
+         fhir:display [ fhir:v "Apgar aos 10 minutos, esforço respiratório" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "10 minute Apgar Respiratory effort" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apgar aos 10', frequência respiratória" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "9271-8" ] ;
+         fhir:display [ fhir:v "Índice de Apgar aos 10 minutos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "10 minute Apgar Score" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Índice de Apgar aos 10'" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apgar aos 10'" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "32411-1" ] ;
+         fhir:display [ fhir:v "Apgar aos 5 minutos, cor" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "5 minute Apgar Color" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apgar aos 5', cor" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "32412-9" ] ;
+         fhir:display [ fhir:v "Apgar aos 5 minutos, frequência cardíaca" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "5 minute Apgar Heart rate" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apgar aos 5', frequência cardíaca" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "32414-5" ] ;
+         fhir:display [ fhir:v "Apgar aos 5 minutos, irritabilidade do reflexo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "5 minute Apgar Reflex irritability" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apgar aos 5', irritabilidade do reflexo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "32413-7" ] ;
+         fhir:display [ fhir:v "Apgar aos 5 minutos, tónus muscular" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "5 minute Apgar Muscle tone" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apgar aos 5', tónus muscular" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "32415-2" ] ;
+         fhir:display [ fhir:v "Apgar aos 5 minutos, esforço respiratório" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "5 minute Apgar Respiratory effort" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apgar aos 5', frequência respiratória" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "9274-2" ] ;
+         fhir:display [ fhir:v "Índice de Apgar aos 5 minutos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "5 minute Apgar Score" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Índice de Apgar aos 5'" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apgar aos 5'" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "32406-1" ] ;
+         fhir:display [ fhir:v "Apgar ao 1 minuto, cor" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "1 minute Apgar Color" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apgar ao 1', cor" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "32407-9" ] ;
+         fhir:display [ fhir:v "Apgar ao 1 minuto, frequência cardíaca" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "1 minute Apgar Heart rate" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apgar ao 1', frequência cardíaca" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "32409-5" ] ;
+         fhir:display [ fhir:v "Apgar ao 1 minuto, irritabilidade do reflexo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "1 minute Apgar Reflex irritability" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apgar ao 1', irritabilidade do reflexo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "32408-7" ] ;
+         fhir:display [ fhir:v "Apgar ao 1 minuto, tónus muscular" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "1 minute Apgar Muscle tone" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apgar ao 1', tónus muscular" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "32410-3" ] ;
+         fhir:display [ fhir:v "Apgar ao 1 minuto, esforço respiratório" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "1 minute Apgar Respiratory effort" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apgar ao 1', frequência respiratória" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "9272-6" ] ;
+         fhir:display [ fhir:v "Índice de Apgar ao 1 minuto" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "1 minute Apgar Score" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Índice de Apgar ao 1'" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apgar ao 1'" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

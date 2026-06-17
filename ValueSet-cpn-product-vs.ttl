@@ -1,0 +1,2227 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpn-product-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpn-product-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpn-product-vs</b></p><a name=\"cpn-product-vs\"> </a><a name=\"hccpn-product-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/3792001\">3792001</a></td><td>Ácido araquidónico</td><td>Arachidonic acid (substance)</td><td>AA</td><td>Arachidonic acid (substance)</td><td>AA</td></tr><tr><td><a href=\"http://snomed.info/id/226368001\">226368001</a></td><td>Ácido docosa-hexaenóico</td><td>Docosahexaenoic acid (substance)</td><td>DHA</td><td>Docosahexaenoic acid (substance)</td><td>DHA</td></tr><tr><td><a href=\"http://snomed.info/id/13121007\">13121007</a></td><td>Ácido Gama-linolénico</td><td>Gamolenic acid (substance)</td><td>-</td><td>Gamolenic acid (substance)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226365003\">226365003</a></td><td>Ácido gordo n-3</td><td>N-3 fatty acid (substance)</td><td>-</td><td>N-3 fatty acid (substance)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226366002\">226366002</a></td><td>Ácido gordo n-6</td><td>N-6 fatty acid (substance)</td><td>-</td><td>N-6 fatty acid (substance)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/8822004\">8822004</a></td><td>Ácido linoleico</td><td>Linoleic acid (substance)</td><td>-</td><td>Linoleic acid (substance)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/81868000\">81868000</a></td><td>Ácido linolénico</td><td>Linolenic acid (substance)</td><td>-</td><td>Linolenic acid (substance)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/436811000124102\">436811000124102</a></td><td>Ácidos gordos monoinsaturados</td><td>Monounsaturated fat (substance)</td><td>-</td><td>Monounsaturated fat (substance)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/436821000124105\">436821000124105</a></td><td>Ácidos gordos polinsaturados</td><td>Polyunsaturated fat (substance)</td><td>-</td><td>Polyunsaturated fat (substance)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/436841000124103\">436841000124103</a></td><td>Ácidos gordos saturados</td><td>Saturated fat (substance)</td><td>-</td><td>Saturated fat (substance)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/227983006\">227983006</a></td><td>Alimentos infantis</td><td>Baby food (substance)</td><td>-</td><td>Baby food (substance)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/70113000\">70113000</a></td><td>Aminoácidos de cadeia ramificada</td><td>Branched-chain amino acid (substance)</td><td>-</td><td>Branched-chain amino acid (substance)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/112000000\">112000000</a></td><td>Aminoácidos essenciais</td><td>Essential amino acid (substance)</td><td>-</td><td>Essential amino acid (substance)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/65123005\">65123005</a></td><td>Colina</td><td>Choline (substance)</td><td>-</td><td>Choline (substance)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/63004003\">63004003</a></td><td>Fenilalanina</td><td>Phenylalanine (substance)</td><td>-</td><td>Phenylalanine (substance)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/789082009\">789082009</a></td><td>Fibra insolúvel</td><td>Insoluble fiber (substance)</td><td>-</td><td>Insoluble fiber (substance)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/789081002\">789081002</a></td><td>Fibra solúvel</td><td>Soluble fiber (substance)</td><td>-</td><td>Soluble fiber (substance)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/443561000124107\">443561000124107</a></td><td>Fórmula com proteína de soja</td><td>Soy-based formula (product)</td><td>-</td><td>Soy-based formula (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/443771000124106\">443771000124106</a></td><td>Formula com proteínas hidrolisadas ou semi-elementar</td><td>Hydrolyzed protein formula (product)</td><td>-</td><td>Hydrolyzed protein formula (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/443351000124102\">443351000124102</a></td><td>Fórmula enriquecida em fibra</td><td>Increased fiber formula (product)</td><td>-</td><td>Increased fiber formula (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/443431000124102\">443431000124102</a></td><td>Fórmula hipercalórica</td><td>High energy formula (product)</td><td>-</td><td>High energy formula (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/441551000124109\">441551000124109</a></td><td>Fórmula hipercalórica e hiperproteica para nutrição entérica</td><td>High calorie high protein enteral formula (product)</td><td>-</td><td>High calorie high protein enteral formula (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/443111000124101\">443111000124101</a></td><td>Fórmula hiperproteica</td><td>High protein formula (product)</td><td>-</td><td>High protein formula (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/444351000124104\">444351000124104</a></td><td>Fórmula isenta de aminoácidos não essenciais</td><td>Non-essential amino acid free formula (product)</td><td>-</td><td>Non-essential amino acid free formula (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/443711000124102\">443711000124102</a></td><td>Fórmula modificada em aminoácidos</td><td>Modified amino acid composition formula (product)</td><td>-</td><td>Modified amino acid composition formula (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/443481000124101\">443481000124101</a></td><td>Formula para doentes renais</td><td>Renal formula (product)</td><td>-</td><td>Renal formula (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/443361000124100\">443361000124100</a></td><td>Fórmula pediátrica</td><td>Pediatric formula (product)</td><td>-</td><td>Pediatric formula (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/443461000124106\">443461000124106</a></td><td>Fórmula isocalórica</td><td>Standard formula (product)</td><td>-</td><td>Standard formula (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226280007\">226280007</a></td><td>Suplementação energética</td><td>Energy supplementation (product)</td><td>-</td><td>Energy supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/789708003\">789708003</a></td><td>Nutrição parentérica total</td><td>Total parenteral nutrition agent (substance)</td><td>-</td><td>Total parenteral nutrition agent (substance)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226288000\">226288000</a></td><td>Suplementação de aminoácidos de cadeia ramificada</td><td>Branched chain amino acid supplementation (product)</td><td>-</td><td>Branched chain amino acid supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226286001\">226286001</a></td><td>Suplementação de aminoácidos essenciais</td><td>Essential amino acid supplementation (product)</td><td>-</td><td>Essential amino acid supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226287005\">226287005</a></td><td>Suplementação de aminoácidos não essenciais</td><td>Non-essential amino acid supplementation (product)</td><td>-</td><td>Non-essential amino acid supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226300006\">226300006</a></td><td>Suplementação de ácido alfa-linolénico</td><td>Alpha-linolenic acid supplementation (product)</td><td>-</td><td>Alpha-linolenic acid supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226302003\">226302003</a></td><td>Suplementação de ácido araquidónico</td><td>Arachidonic acid supplementation (product)</td><td>-</td><td>Arachidonic acid supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226306000\">226306000</a></td><td>Suplementação de ácido docohexaenóico</td><td>Docosahexaenoic acid supplementation (product)</td><td>-</td><td>Docosahexaenoic acid supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226305001\">226305001</a></td><td>Suplementação de ácido eicosapentanóico</td><td>Eicosapentanoic acid supplementation (product)</td><td>-</td><td>Eicosapentanoic acid supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226316008\">226316008</a></td><td>Suplementação de ácido fólico</td><td>Medicinal product acting as folic acid supplement (product)</td><td>-</td><td>Medicinal product acting as folic acid supplement (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226301005\">226301005</a></td><td>Suplementação de ácido gama-linolénico</td><td>Gamma-linolenic acid supplementation (product)</td><td>-</td><td>Gamma-linolenic acid supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226304002\">226304002</a></td><td>Suplementação de ácido linoleico</td><td>Linoleic acid supplementation (product)</td><td>-</td><td>Linoleic acid supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226299003\">226299003</a></td><td>Suplementação de ácidos gordos n-3</td><td>N-3 fatty acid supplementation (product)</td><td>-</td><td>N-3 fatty acid supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226303008\">226303008</a></td><td>Suplementação de ácidos gordos n-6</td><td>N-6 fatty acid supplementation (product)</td><td>-</td><td>N-6 fatty acid supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226289008\">226289008</a></td><td>Suplementação de azoto</td><td>Nitrogen supplementation (product)</td><td>-</td><td>Nitrogen supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226290004\">226290004</a></td><td>Suplementação de azoto não proteico</td><td>Non-protein nitrogen supplementation (product)</td><td>-</td><td>Non-protein nitrogen supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/284090003\">284090003</a></td><td>Suplementação de cálcio</td><td>Medicinal product acting as calcium supplement (product)</td><td>-</td><td>Medicinal product acting as calcium supplement (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226292007\">226292007</a></td><td>Suplementação de colina</td><td>Choline supplementation (product)</td><td>-</td><td>Choline supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/284081005\">284081005</a></td><td>Suplementação de fenilalanina</td><td>Phenylalanine supplementation (product)</td><td>-</td><td>Phenylalanine supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226311003\">226311003</a></td><td>Suplementação de fibra</td><td>Dietary fiber supplementation (product)</td><td>-</td><td>Dietary fiber supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226312005\">226312005</a></td><td>Suplementação de fibra insolúvel</td><td>Insoluble fiber supplementation (product)</td><td>-</td><td>Insoluble fiber supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226313000\">226313000</a></td><td>Suplementação de fibra solúvel</td><td>Soluble fiber supplementation (product)</td><td>-</td><td>Soluble fiber supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226296005\">226296005</a></td><td>Suplementação de ácidos gordos monoinsaturados</td><td>Monounsaturated fat supplementation (product)</td><td>-</td><td>Monounsaturated fat supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226297001\">226297001</a></td><td>Suplementação de ácidos gordos polinsaturados</td><td>Polyunsaturated fat supplementation (product)</td><td>-</td><td>Polyunsaturated fat supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226295009\">226295009</a></td><td>Suplementação de gordura saturada</td><td>Saturated fat supplementation (product)</td><td>-</td><td>Saturated fat supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226307009\">226307009</a></td><td>Suplementação de hidratos de carbono</td><td>Carbohydrate supplementation (product)</td><td>-</td><td>Carbohydrate supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226308004\">226308004</a></td><td>Suplementação de hidratos de carbono complexos</td><td>Complex carbohydrate supplementation (product)</td><td>-</td><td>Complex carbohydrate supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226310002\">226310002</a></td><td>Suplementação de hidratos de carbono simples</td><td>Refined carbohydrate supplementation (product)</td><td>Suplementação com hidratos de carbono de absorção rapida</td><td>Refined carbohydrate supplementation (product)</td><td>Suplementação com hidratos de carbono de absorção rapida</td></tr><tr><td><a href=\"http://snomed.info/id/226318009\">226318009</a></td><td>Suplementação de minerais</td><td>Mineral supplementation (product)</td><td>-</td><td>Mineral supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226319001\">226319001</a></td><td>Suplementação de oligoelementos</td><td>Trace element supplementation (product)</td><td>-</td><td>Trace element supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/284093001\">284093001</a></td><td>Suplementação de potássio</td><td>Potassium supplementation (product)</td><td>-</td><td>Potassium supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226283009\">226283009</a></td><td>Suplementação de proteína de alto valor biológico</td><td>High biological value protein supplementation (product)</td><td>-</td><td>High biological value protein supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226285002\">226285002</a></td><td>Suplementação de proteína de baixo valor biológico</td><td>Low biological value protein supplementation (product)</td><td>-</td><td>Low biological value protein supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/284092006\">284092006</a></td><td>Suplementação de sódio</td><td>Medicinal product acting as sodium supplement (product)</td><td>-</td><td>Medicinal product acting as sodium supplement (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226294008\">226294008</a></td><td>Suplementação de triglicerídeos de cadeia longa</td><td>Long chain triglyceride supplementation (product)</td><td>Suplementação de LCT</td><td>Long chain triglyceride supplementation (product)</td><td>Suplementação de LCT</td></tr><tr><td><a href=\"http://snomed.info/id/776650000\">776650000</a></td><td>Produto medicinal de triglicerídeos de cadeia média</td><td>Product containing only medium chain triglyceride (medicinal product)</td><td>Suplementação de MCT</td><td>Product containing only medium chain triglyceride (medicinal product)</td><td>Suplementação de MCT</td></tr><tr><td><a href=\"http://snomed.info/id/226315007\">226315007</a></td><td>Suplementação de vitaminas hidrossolúveis</td><td>Water soluble vitamin supplementation (product)</td><td>-</td><td>Water soluble vitamin supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226317004\">226317004</a></td><td>Suplementação de vitaminas lipossolúveis</td><td>Fat soluble vitamin supplementation (product)</td><td>-</td><td>Fat soluble vitamin supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226281006\">226281006</a></td><td>Suplementação energética não proteica</td><td>Non-protein energy supplementation (product)</td><td>-</td><td>Non-protein energy supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226291000\">226291000</a></td><td>Suplementação lipídica</td><td>Fat supplementation (product)</td><td>-</td><td>Fat supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226282004\">226282004</a></td><td>Suplementação proteica</td><td>Protein supplementation (product)</td><td>-</td><td>Protein supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226314006\">226314006</a></td><td>Suplementação de vitaminas</td><td>Medicinal product acting as vitamin supplement (product)</td><td>-</td><td>Medicinal product acting as vitamin supplement (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/373453009\">373453009</a></td><td>Suplemento nutricional</td><td>Nutritional supplement (substance)</td><td>-</td><td>Nutritional supplement (substance)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/108953005\">108953005</a></td><td>Suplemento de aminoácidos</td><td>Amino acid supplement (product)</td><td>-</td><td>Amino acid supplement (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/443571000124100\">443571000124100</a></td><td>Suplemento modular</td><td>Modular formula component (product)</td><td>-</td><td>Modular formula component (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/443601000124107\">443601000124107</a></td><td>Suplemento modular de hidratos de carbono</td><td>Modular carbohydrate formula component (product)</td><td>-</td><td>Modular carbohydrate formula component (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/443581000124102\">443581000124102</a></td><td>Suplemento modular proteico</td><td>Modular protein formula component (product)</td><td>-</td><td>Modular protein formula component (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/438681000124106\">438681000124106</a></td><td>Suplemento multivitamínico e multimineral</td><td>Multivitamin multimineral supplement (substance)</td><td>-</td><td>Multivitamin multimineral supplement (substance)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/226378003\">226378003</a></td><td>Suplementos nutricionais</td><td>Nutritional product supplementation (product)</td><td>-</td><td>Nutritional product supplementation (product)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/420621009\">420621009</a></td><td>Suplemento modular lipidico - triglicerídeos cadeia média</td><td>Product containing medium chain triglyceride (medicinal product)</td><td>MCT</td><td>Product containing medium chain triglyceride (medicinal product)</td><td>MCT</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpn-product-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPNProductVS"] ; # 
+  fhir:title [ fhir:v "CPN - Product"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2022-01-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores Product (CPN v3.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "3792001" ] ;
+         fhir:display [ fhir:v "Ácido araquidónico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Arachidonic acid" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Arachidonic acid (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "AA" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226368001" ] ;
+         fhir:display [ fhir:v "Ácido docosa-hexaenóico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Docosahexaenoic acid" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Docosahexaenoic acid (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Ácido docosahexaenóico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "DHA" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "13121007" ] ;
+         fhir:display [ fhir:v "Ácido Gama-linolénico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gamolenic acid" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Gamolenic acid (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226365003" ] ;
+         fhir:display [ fhir:v "Ácido gordo n-3" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "N-3 fatty acid" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "N-3 fatty acid (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Ácido gordo omega 3" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226366002" ] ;
+         fhir:display [ fhir:v "Ácido gordo n-6" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "N-6 fatty acid" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "N-6 fatty acid (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Ácido gordo omega 6" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "8822004" ] ;
+         fhir:display [ fhir:v "Ácido linoleico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Linoleic acid" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Linoleic acid (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "81868000" ] ;
+         fhir:display [ fhir:v "Ácido linolénico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Linolenic acid" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Linolenic acid (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "436811000124102" ] ;
+         fhir:display [ fhir:v "Ácidos gordos monoinsaturados" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Monounsaturated fat" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Monounsaturated fat (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "436821000124105" ] ;
+         fhir:display [ fhir:v "Ácidos gordos polinsaturados" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Polyunsaturated fat" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Polyunsaturated fat (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "436841000124103" ] ;
+         fhir:display [ fhir:v "Ácidos gordos saturados" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Saturated fat" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Saturated fat (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "227983006" ] ;
+         fhir:display [ fhir:v "Alimentos infantis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Baby food" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Baby food (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "70113000" ] ;
+         fhir:display [ fhir:v "Aminoácidos de cadeia ramificada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Branched-chain amino acid" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Branched-chain amino acid (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "112000000" ] ;
+         fhir:display [ fhir:v "Aminoácidos essenciais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Essential amino acid" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Essential amino acid (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "65123005" ] ;
+         fhir:display [ fhir:v "Colina" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Choline" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Choline (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "63004003" ] ;
+         fhir:display [ fhir:v "Fenilalanina" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Phenylalanine" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Phenylalanine (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "789082009" ] ;
+         fhir:display [ fhir:v "Fibra insolúvel" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Insoluble fiber" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Insoluble fiber (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "789081002" ] ;
+         fhir:display [ fhir:v "Fibra solúvel" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Soluble fiber" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Soluble fiber (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443561000124107" ] ;
+         fhir:display [ fhir:v "Fórmula com proteína de soja" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Soy-based formula" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Soy-based formula (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443771000124106" ] ;
+         fhir:display [ fhir:v "Formula com proteínas hidrolisadas ou semi-elementar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Hydrolyzed protein formula" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Hydrolyzed protein formula (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443351000124102" ] ;
+         fhir:display [ fhir:v "Fórmula enriquecida em fibra" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Increased fiber formula" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Increased fiber formula (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443431000124102" ] ;
+         fhir:display [ fhir:v "Fórmula hipercalórica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "High energy formula" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "High energy formula (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "441551000124109" ] ;
+         fhir:display [ fhir:v "Fórmula hipercalórica e hiperproteica para nutrição entérica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "High calorie high protein enteral formula" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "High calorie high protein enteral formula (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443111000124101" ] ;
+         fhir:display [ fhir:v "Fórmula hiperproteica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "High protein formula" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "High protein formula (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "444351000124104" ] ;
+         fhir:display [ fhir:v "Fórmula isenta de aminoácidos não essenciais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Non-essential amino acid free formula" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Non-essential amino acid free formula (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443711000124102" ] ;
+         fhir:display [ fhir:v "Fórmula modificada em aminoácidos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Modified amino acid composition formula" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Modified amino acid composition formula (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443481000124101" ] ;
+         fhir:display [ fhir:v "Formula para doentes renais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Renal formula" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Renal formula (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443361000124100" ] ;
+         fhir:display [ fhir:v "Fórmula pediátrica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pediatric formula" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Pediatric formula (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443461000124106" ] ;
+         fhir:display [ fhir:v "Fórmula isocalórica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Standard formula" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Standard formula (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Fórmula standard" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226280007" ] ;
+         fhir:display [ fhir:v "Suplementação energética" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Energy supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Energy supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Necessidades de ácidos gordos polinsaturados" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "789708003" ] ;
+         fhir:display [ fhir:v "Nutrição parentérica total" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Total parenteral nutrition agent" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Total parenteral nutrition agent (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Solução para nutrição parentérica" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226288000" ] ;
+         fhir:display [ fhir:v "Suplementação de aminoácidos de cadeia ramificada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Branched chain amino acid supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Branched chain amino acid supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação de AA de cadeia ramificada" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226286001" ] ;
+         fhir:display [ fhir:v "Suplementação de aminoácidos essenciais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Essential amino acid supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Essential amino acid supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação de AA essenciais" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226287005" ] ;
+         fhir:display [ fhir:v "Suplementação de aminoácidos não essenciais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Non-essential amino acid supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Non-essential amino acid supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação de AA não essenciais" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226300006" ] ;
+         fhir:display [ fhir:v "Suplementação de ácido alfa-linolénico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Alpha-linolenic acid supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Alpha-linolenic acid supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226302003" ] ;
+         fhir:display [ fhir:v "Suplementação de ácido araquidónico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Arachidonic acid supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Arachidonic acid supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226306000" ] ;
+         fhir:display [ fhir:v "Suplementação de ácido docohexaenóico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Docosahexaenoic acid supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Docosahexaenoic acid supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação de ácido DHA" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226305001" ] ;
+         fhir:display [ fhir:v "Suplementação de ácido eicosapentanóico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Eicosapentanoic acid supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Eicosapentanoic acid supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação de ácido EPA" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226316008" ] ;
+         fhir:display [ fhir:v "Suplementação de ácido fólico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Medicinal product acting as folic acid supplement" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Medicinal product acting as folic acid supplement (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226301005" ] ;
+         fhir:display [ fhir:v "Suplementação de ácido gama-linolénico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gamma-linolenic acid supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Gamma-linolenic acid supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226304002" ] ;
+         fhir:display [ fhir:v "Suplementação de ácido linoleico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Linoleic acid supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Linoleic acid supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226299003" ] ;
+         fhir:display [ fhir:v "Suplementação de ácidos gordos n-3" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "N-3 fatty acid supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "N-3 fatty acid supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação de ácidos ómega-3" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226303008" ] ;
+         fhir:display [ fhir:v "Suplementação de ácidos gordos n-6" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "N-6 fatty acid supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "N-6 fatty acid supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação de ácidos ómega-6" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226289008" ] ;
+         fhir:display [ fhir:v "Suplementação de azoto" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nitrogen supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nitrogen supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226290004" ] ;
+         fhir:display [ fhir:v "Suplementação de azoto não proteico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Non-protein nitrogen supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Non-protein nitrogen supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "284090003" ] ;
+         fhir:display [ fhir:v "Suplementação de cálcio" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Medicinal product acting as calcium supplement" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Medicinal product acting as calcium supplement (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226292007" ] ;
+         fhir:display [ fhir:v "Suplementação de colina" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Choline supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Choline supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "284081005" ] ;
+         fhir:display [ fhir:v "Suplementação de fenilalanina" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Phenylalanine supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Phenylalanine supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226311003" ] ;
+         fhir:display [ fhir:v "Suplementação de fibra" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Dietary fiber supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Dietary fiber supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação de fibra alimentar" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226312005" ] ;
+         fhir:display [ fhir:v "Suplementação de fibra insolúvel" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Insoluble fiber supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Insoluble fiber supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226313000" ] ;
+         fhir:display [ fhir:v "Suplementação de fibra solúvel" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Soluble fiber supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Soluble fiber supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226296005" ] ;
+         fhir:display [ fhir:v "Suplementação de ácidos gordos monoinsaturados" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Monounsaturated fat supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Monounsaturated fat supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação de gordura monoinsaturada" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226297001" ] ;
+         fhir:display [ fhir:v "Suplementação de ácidos gordos polinsaturados" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Polyunsaturated fat supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Polyunsaturated fat supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação de gordura polinsaturada" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226295009" ] ;
+         fhir:display [ fhir:v "Suplementação de gordura saturada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Saturated fat supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Saturated fat supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226307009" ] ;
+         fhir:display [ fhir:v "Suplementação de hidratos de carbono" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Carbohydrate supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Carbohydrate supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226308004" ] ;
+         fhir:display [ fhir:v "Suplementação de hidratos de carbono complexos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Complex carbohydrate supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Complex carbohydrate supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226310002" ] ;
+         fhir:display [ fhir:v "Suplementação de hidratos de carbono simples" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Refined carbohydrate supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Refined carbohydrate supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação de hidratos de carbono refinados" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação com hidratos de carbono de absorção rapida" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226318009" ] ;
+         fhir:display [ fhir:v "Suplementação de minerais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mineral supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Mineral supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226319001" ] ;
+         fhir:display [ fhir:v "Suplementação de oligoelementos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Trace element supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Trace element supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "284093001" ] ;
+         fhir:display [ fhir:v "Suplementação de potássio" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Potassium supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Potassium supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226283009" ] ;
+         fhir:display [ fhir:v "Suplementação de proteína de alto valor biológico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "High biological value protein supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "High biological value protein supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação de proteína de AVB" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226285002" ] ;
+         fhir:display [ fhir:v "Suplementação de proteína de baixo valor biológico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Low biological value protein supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Low biological value protein supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação de proteína de BVB" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "284092006" ] ;
+         fhir:display [ fhir:v "Suplementação de sódio" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Medicinal product acting as sodium supplement" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Medicinal product acting as sodium supplement (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226294008" ] ;
+         fhir:display [ fhir:v "Suplementação de triglicerídeos de cadeia longa" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Long chain triglyceride supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Long chain triglyceride supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação de TCL" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação de LCT" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "776650000" ] ;
+         fhir:display [ fhir:v "Produto medicinal de triglicerídeos de cadeia média" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Product containing only medium chain triglyceride" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Product containing only medium chain triglyceride (medicinal product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação de TCM" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação de MCT" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226315007" ] ;
+         fhir:display [ fhir:v "Suplementação de vitaminas hidrossolúveis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Water soluble vitamin supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Water soluble vitamin supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226317004" ] ;
+         fhir:display [ fhir:v "Suplementação de vitaminas lipossolúveis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Fat soluble vitamin supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Fat soluble vitamin supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226281006" ] ;
+         fhir:display [ fhir:v "Suplementação energética não proteica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Non-protein energy supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Non-protein energy supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226291000" ] ;
+         fhir:display [ fhir:v "Suplementação lipídica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Fat supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Fat supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226282004" ] ;
+         fhir:display [ fhir:v "Suplementação proteica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Protein supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Protein supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226314006" ] ;
+         fhir:display [ fhir:v "Suplementação de vitaminas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Medicinal product acting as vitamin supplement" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Medicinal product acting as vitamin supplement (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplementação vitamínica" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "373453009" ] ;
+         fhir:display [ fhir:v "Suplemento nutricional" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nutritional supplement" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nutritional supplement (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Suplemento alimentar" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "108953005" ] ;
+         fhir:display [ fhir:v "Suplemento de aminoácidos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Amino acid supplement" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Amino acid supplement (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443571000124100" ] ;
+         fhir:display [ fhir:v "Suplemento modular" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Modular formula component" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Modular formula component (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443601000124107" ] ;
+         fhir:display [ fhir:v "Suplemento modular de hidratos de carbono" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Modular carbohydrate formula component" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Modular carbohydrate formula component (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443581000124102" ] ;
+         fhir:display [ fhir:v "Suplemento modular proteico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Modular protein formula component" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Modular protein formula component (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "438681000124106" ] ;
+         fhir:display [ fhir:v "Suplemento multivitamínico e multimineral" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Multivitamin multimineral supplement" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Multivitamin multimineral supplement (substance)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226378003" ] ;
+         fhir:display [ fhir:v "Suplementos nutricionais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nutritional product supplementation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nutritional product supplementation (product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "420621009" ] ;
+         fhir:display [ fhir:v "Suplemento modular lipidico - triglicerídeos cadeia média" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Product containing medium chain triglyceride" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Product containing medium chain triglyceride (medicinal product)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "TCM" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "MCT" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

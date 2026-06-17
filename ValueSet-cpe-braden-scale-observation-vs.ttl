@@ -1,0 +1,175 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-braden-scale-observation-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-braden-scale-observation-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-braden-scale-observation-vs</b></p><a name=\"cpe-braden-scale-observation-vs\"> </a><a name=\"hccpe-braden-scale-observation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/38222-6/\">38222-6</a></td><td>Percepção sensorial Escala de Braden</td><td>Percepção sensorial</td><td>Sensory perception Braden scale</td><td>Percepção sensorial</td></tr><tr><td><a href=\"https://loinc.org/38229-1/\">38229-1</a></td><td>Escala de Braden de exposição à humidade</td><td>Humidade</td><td>Moisture exposure Braden scale</td><td>Humidade</td></tr><tr><td><a href=\"https://loinc.org/38223-4/\">38223-4</a></td><td>Escala de atividade física de Braden</td><td>Atividade</td><td>Physical activity Braden scale</td><td>Atividade</td></tr><tr><td><a href=\"https://loinc.org/38224-2/\">38224-2</a></td><td>Escala de Braden de mobilidade física</td><td>Mobilidade</td><td>Physical mobility Braden scale</td><td>Mobilidade</td></tr><tr><td><a href=\"https://loinc.org/38225-9/\">38225-9</a></td><td>Padrão de ingestão nutricional Escala de Braden</td><td>Nutrição</td><td>Nutrition intake pattern Braden scale</td><td>Nutrição</td></tr><tr><td><a href=\"https://loinc.org/38226-7/\">38226-7</a></td><td>Escala de Braden de fricção e forças de deslizamento</td><td>Fricção e forças de deslizamento</td><td>Friction and shear Braden scale</td><td>Fricção e forças de deslizamento</td></tr><tr><td><a href=\"https://loinc.org/38227-5/\">38227-5</a></td><td>Pontuação total da escala de Braden</td><td/><td>Braden scale total score</td><td/></tr><tr><td><a href=\"https://loinc.org/81636-3/\">81636-3</a></td><td>Nível de risco de lesão por pressão Escala de Braden</td><td/><td>Pressure injury risk level Braden scale</td><td/></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-braden-scale-observation-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.124" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPEBradenScaleObservationVS"] ; # 
+  fhir:title [ fhir:v "CPE - Braden Scale Observation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores BradenScaleObservation (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "38222-6" ] ;
+         fhir:display [ fhir:v "Percepção sensorial Escala de Braden" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sensory perception Braden scale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Percepção sensorial" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "38229-1" ] ;
+         fhir:display [ fhir:v "Escala de Braden de exposição à humidade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Moisture exposure Braden scale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Humidade" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "38223-4" ] ;
+         fhir:display [ fhir:v "Escala de atividade física de Braden" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Physical activity Braden scale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Atividade" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "38224-2" ] ;
+         fhir:display [ fhir:v "Escala de Braden de mobilidade física" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Physical mobility Braden scale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Mobilidade" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "38225-9" ] ;
+         fhir:display [ fhir:v "Padrão de ingestão nutricional Escala de Braden" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nutrition intake pattern Braden scale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Nutrição" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "38226-7" ] ;
+         fhir:display [ fhir:v "Escala de Braden de fricção e forças de deslizamento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Friction and shear Braden scale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Fricção e forças de deslizamento" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "38227-5" ] ;
+         fhir:display [ fhir:v "Pontuação total da escala de Braden" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Braden scale total score" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "81636-3" ] ;
+         fhir:display [ fhir:v "Nível de risco de lesão por pressão Escala de Braden" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pressure injury risk level Braden scale" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

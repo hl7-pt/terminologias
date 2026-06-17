@@ -1,0 +1,133 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cparadm-encounter-presence-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cparadm-encounter-presence-vs</b></p><a name=\"cparadm-encounter-presence-vs\"> </a><a name=\"hccparadm-encounter-presence-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/1258986006\">1258986006</a></td><td>Episódio cara a cara</td><td>Presencial</td><td>Face-to-face encounter (procedure)</td><td>Presencial</td></tr><tr><td><a href=\"http://snomed.info/id/185316007\">185316007</a></td><td>Episódio indireto</td><td>Episódio não presencial</td><td>Indirect encounter (procedure)</td><td>Episódio não presencial</td></tr><tr><td><a href=\"http://snomed.info/id/1041000314104\">1041000314104</a></td><td>Episódio sem presença do utente</td><td>Sem presença do utente</td><td>Encounter without patient present (procedure)</td><td>Sem presença do utente</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-encounter-presence-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.22"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPARADMEncounterPresenceVS",
+  "title" : "CPARADM - Encounter Presence",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores EncounterPresence (CPARADM v3.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "1258986006",
+        "display" : "Episódio cara a cara",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Face-to-face encounter (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Cara a cara"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Frente a frente"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Presencial"
+        }]
+      },
+      {
+        "code" : "185316007",
+        "display" : "Episódio indireto",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Indirect encounter (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Não presencial"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Episódio não presencial"
+        }]
+      },
+      {
+        "code" : "1041000314104",
+        "display" : "Episódio sem presença do utente",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Encounter without patient present (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Sem presença do utente"
+        }]
+      }]
+    }]
+  }
+}

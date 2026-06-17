@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-fagerstrom-test-observation-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-fagerstrom-test-observation-vs</b></p><a name="cpe-fagerstrom-test-observation-vs"> </a><a name="hccpe-fagerstrom-test-observation-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="https://loinc.org/63638-1/">63638-1</a></td><td>Situação de fumador</td><td/><td>Smoking status [FTND]</td><td/></tr><tr><td><a href="https://loinc.org/63636-5/">63636-5</a></td><td>Quanto tempo depois de acordar fuma o primeiro cigarro?</td><td>Quanto tempo depois de acordar fuma o seu primeiro cigarro?</td><td>How soon after you wake up do/did you smoke your first cigarette?</td><td>Quanto tempo depois de acordar fuma o seu primeiro cigarro?</td></tr><tr><td><a href="https://loinc.org/63637-3/">63637-3</a></td><td>Tem dificuldade em não fumar em locais proibidos (por ex. igreja, biblioteca, cinema, etc)?</td><td>Custa-lhe não fumar em locais onde é proibido?</td><td>Do/Did you find it difficult to refrain from smoking in places where it is forbidden, e.g., in church, at the library, in a cinema, etc.?</td><td>Custa-lhe não fumar em locais onde é proibido?</td></tr><tr><td><a href="https://loinc.org/63639-9/">63639-9</a></td><td>Qual dos cigarros que fuma durante o dia seria o mais difícil de deixar de fumar?</td><td>Qual o cigarro que seria mais difícil para si deixar de fumar?</td><td>Which cigarette would you hate most to give up?</td><td>Qual o cigarro que seria mais difícil para si deixar de fumar?</td></tr><tr><td><a href="https://loinc.org/63640-7/">63640-7</a></td><td>Quantos cigarros fuma por dia?</td><td/><td>How many cigarettes per day do/did you smoke?</td><td/></tr><tr><td><a href="https://loinc.org/63641-5/">63641-5</a></td><td>Fuma mais nas primeiras horas depois de acordar do que no resto do dia?</td><td>Fuma mais nas primeiras horas depois de acordar, ou no resto do dia?</td><td>Do/did you smoke more frequently during the first hours after waking than during the rest of the day?</td><td>Fuma mais nas primeiras horas depois de acordar, ou no resto do dia?</td></tr><tr><td><a href="https://loinc.org/63642-3/">63642-3</a></td><td>Fuma mesmo quando está doente e passa a maior parte do dia na cama?</td><td>Se estiver muito doente, de cama, fuma ou não?</td><td>Do/did you smoke if you are so ill that you are in bed most of the day?</td><td>Se estiver muito doente, de cama, fuma ou não?</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-fagerstrom-test-observation-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.126"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPEFagerstromTestObservationVS"/>
+  <title value="CPE - Fagerstrom Test Observation"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores FagerstromTestObservation (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="63638-1"/>
+        <display value="Situação de fumador"/>
+        <designation>
+          <language value="en"/>
+          <value value="Smoking status [FTND]"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="63636-5"/>
+        <display value="Quanto tempo depois de acordar fuma o primeiro cigarro?"/>
+        <designation>
+          <language value="en"/>
+          <value value="How soon after you wake up do/did you smoke your first cigarette?"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Quanto tempo depois de acordar fuma o seu primeiro cigarro?"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="63637-3"/>
+        <display value="Tem dificuldade em não fumar em locais proibidos (por ex. igreja, biblioteca, cinema, etc)?"/>
+        <designation>
+          <language value="en"/>
+          <value value="Do/Did you find it difficult to refrain from smoking in places where it is forbidden, e.g., in church, at the library, in a cinema, etc.?"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Custa-lhe não fumar em locais onde é proibido?"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="63639-9"/>
+        <display value="Qual dos cigarros que fuma durante o dia seria o mais difícil de deixar de fumar?"/>
+        <designation>
+          <language value="en"/>
+          <value value="Which cigarette would you hate most to give up?"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Qual o cigarro que seria mais difícil para si deixar de fumar?"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="63640-7"/>
+        <display value="Quantos cigarros fuma por dia?"/>
+        <designation>
+          <language value="en"/>
+          <value value="How many cigarettes per day do/did you smoke?"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="63641-5"/>
+        <display value="Fuma mais nas primeiras horas depois de acordar do que no resto do dia?"/>
+        <designation>
+          <language value="en"/>
+          <value value="Do/did you smoke more frequently during the first hours after waking than during the rest of the day?"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Fuma mais nas primeiras horas depois de acordar, ou no resto do dia?"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="63642-3"/>
+        <display value="Fuma mesmo quando está doente e passa a maior parte do dia na cama?"/>
+        <designation>
+          <language value="en"/>
+          <value value="Do/did you smoke if you are so ill that you are in bed most of the day?"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Se estiver muito doente, de cama, fuma ou não?"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

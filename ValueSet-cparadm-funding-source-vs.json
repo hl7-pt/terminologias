@@ -1,0 +1,71 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cparadm-funding-source-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cparadm-funding-source-vs</b></p><a name=\"cparadm-funding-source-vs\"> </a><a name=\"hccparadm-funding-source-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <code>urn:oid:2.16.840.1.113883.4.642.3.293</code><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td>public</td><td>Público</td><td>Public</td></tr><tr><td>private</td><td>Privado</td><td>Private</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-funding-source-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.23"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPARADMFundingSourceVS",
+  "title" : "CPARADM - Funding Source",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2022-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores FundingSource (CPARADM v3.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.113883.4.642.3.293",
+      "concept" : [{
+        "code" : "public",
+        "display" : "Público",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Public"
+        }]
+      },
+      {
+        "code" : "private",
+        "display" : "Privado",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Private"
+        }]
+      }]
+    }]
+  }
+}

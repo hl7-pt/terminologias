@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-karnofsky-performance-result-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-karnofsky-performance-result-vs</b></p><a name="cpe-karnofsky-performance-result-vs"> </a><a name="hccpe-karnofsky-performance-result-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="https://loinc.org/LA29175-9/">LA29175-9</a></td><td>Normal; sem queixas; sem evidência de doença</td><td>Normal; no complaints; no evidence of disease</td></tr><tr><td><a href="https://loinc.org/LA29176-7/">LA29176-7</a></td><td>Capaz de realizar atividades normais; poucos sinais ou sintomas de doença</td><td>Able to carry on normal activity; minor signs or symptoms of disease</td></tr><tr><td><a href="https://loinc.org/LA29177-5/">LA29177-5</a></td><td>Capaz de realizar atividades normais com algum esforço; alguns sinais ou sintomas de doença</td><td>Normal activity with effort; some signs or symptoms of disease</td></tr><tr><td><a href="https://loinc.org/LA29178-3/">LA29178-3</a></td><td>Capaz de cuidar de si mesmo; incapaz de realizar atividades normais ou trabalho ativo</td><td>Cares for self; unable to carry on normal activity or do active work</td></tr><tr><td><a href="https://loinc.org/LA29179-1/">LA29179-1</a></td><td>Requer assistência ocasional, mas é capaz de cuidar da maioria das suas necessidades</td><td>Requires occasional assistance but is able to care for most needs</td></tr><tr><td><a href="https://loinc.org/LA29180-9/">LA29180-9</a></td><td>Requer assistência considerável e cuidados médicos frequentes</td><td>Requires considerable assistance and frequent medical care</td></tr><tr><td><a href="https://loinc.org/LA29181-7/">LA29181-7</a></td><td>Incapaz de cuidar de si mesmo; requer cuidado especial e assistência</td><td>Disabled; requires special care and assistance</td></tr><tr><td><a href="https://loinc.org/LA29182-5/">LA29182-5</a></td><td>Gravemente incapacitado; hospitalização indicada, mas a morte não é iminente</td><td>Severely disabled; hospitalization is indicated, although death not imminent</td></tr><tr><td><a href="https://loinc.org/LA29183-3/">LA29183-3</a></td><td>Muito doente; necessita de hospitalização e tratamento de suporte ativo</td><td>Very sick; hospitalization necessary; active supportive treatment necessary</td></tr><tr><td><a href="https://loinc.org/LA29184-1/">LA29184-1</a></td><td>Moribundo; com progressão rápida de processos letais</td><td>Moribund; fatal processes progressing rapidly</td></tr><tr><td><a href="https://loinc.org/LA9627-6/">LA9627-6</a></td><td>Morte</td><td>Dead</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-karnofsky-performance-result-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.190"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPEKarnofskyPerformanceResultVS"/>
+  <title value="CPE - Karnofsky Performance Result"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores KarnofskyPerformanceResult (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA29175-9"/>
+        <display value="Normal; sem queixas; sem evidência de doença"/>
+        <designation>
+          <language value="en"/>
+          <value value="Normal; no complaints; no evidence of disease"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA29176-7"/>
+        <display value="Capaz de realizar atividades normais; poucos sinais ou sintomas de doença"/>
+        <designation>
+          <language value="en"/>
+          <value value="Able to carry on normal activity; minor signs or symptoms of disease"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA29177-5"/>
+        <display value="Capaz de realizar atividades normais com algum esforço; alguns sinais ou sintomas de doença"/>
+        <designation>
+          <language value="en"/>
+          <value value="Normal activity with effort; some signs or symptoms of disease"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA29178-3"/>
+        <display value="Capaz de cuidar de si mesmo; incapaz de realizar atividades normais ou trabalho ativo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Cares for self; unable to carry on normal activity or do active work"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA29179-1"/>
+        <display value="Requer assistência ocasional, mas é capaz de cuidar da maioria das suas necessidades"/>
+        <designation>
+          <language value="en"/>
+          <value value="Requires occasional assistance but is able to care for most needs"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA29180-9"/>
+        <display value="Requer assistência considerável e cuidados médicos frequentes"/>
+        <designation>
+          <language value="en"/>
+          <value value="Requires considerable assistance and frequent medical care"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA29181-7"/>
+        <display value="Incapaz de cuidar de si mesmo; requer cuidado especial e assistência"/>
+        <designation>
+          <language value="en"/>
+          <value value="Disabled; requires special care and assistance"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA29182-5"/>
+        <display value="Gravemente incapacitado; hospitalização indicada, mas a morte não é iminente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Severely disabled; hospitalization is indicated, although death not imminent"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA29183-3"/>
+        <display value="Muito doente; necessita de hospitalização e tratamento de suporte ativo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Very sick; hospitalization necessary; active supportive treatment necessary"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA29184-1"/>
+        <display value="Moribundo; com progressão rápida de processos letais"/>
+        <designation>
+          <language value="en"/>
+          <value value="Moribund; fatal processes progressing rapidly"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA9627-6"/>
+        <display value="Morte"/>
+        <designation>
+          <language value="en"/>
+          <value value="Dead"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

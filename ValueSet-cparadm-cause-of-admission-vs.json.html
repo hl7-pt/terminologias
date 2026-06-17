@@ -1,0 +1,1056 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>CPARADM - Cause of Admission - JSON Representation - HL7 PT FHIR Implementation Guide: Terminologias v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.27"}
+    h3,h4,h5,h6{--heading-prefix:"6.27"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Terminologias</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="spec.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CPARADM - Cause of Admission</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Terminologias, publicado por HL7 Portugal. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 1.0.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/hl7-pt/terminologias/tree/master'>https://github.com/hl7-pt/terminologias/tree/master</a> e muda regularmente. Veja o <a href='http://hl7.pt/fhir/history.html'>Diretório de versões publicadas</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/hl7-pt/terminologias/commit/987016b692d9e8d3c724739e2350b4e3cdb93844"><code>987016b6</code></a>.</span></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-cparadm-cause-of-admission-vs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-cparadm-cause-of-admission-vs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-cparadm-cause-of-admission-vs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: CPARADM - Cause of Admission - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2025-11-01
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-cparadm-cause-of-admission-vs.json" no-download="true">Raw json</a> | <a href="ValueSet-cparadm-cause-of-admission-vs.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R5/resource.html#XValueSet.id">id</a>" : "cparadm-cause-of-admission-vs",
+  "<a href="http://hl7.org/fhir/R5/domainresource.html#XValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narrativa gerada: ValueSet cparadm-cause-of-admission-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cparadm-cause-of-admission-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccparadm-cause-of-admission-vs\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include estes códigos, tal como definidos em &lt;a href=\&quot;http://www.snomed.org/\&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; versão Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Synonym&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (English, en)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Portuguese (pt)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/713107002\&quot;&gt;713107002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rastreio para abuso de álcool&lt;/td&gt;&lt;td&gt;Rastreio de padrão nocivo de consumo de álcool&lt;/td&gt;&lt;td&gt;Screening for harmful pattern of alcohol use (procedure)&lt;/td&gt;&lt;td&gt;Rastreio de padrão nocivo de consumo de álcool&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/370854007\&quot;&gt;370854007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rastreio para abuso de drogas&lt;/td&gt;&lt;td&gt;Rastreio de padrão nocivo de consumo de substâncias&lt;/td&gt;&lt;td&gt;Screening for harmful pattern of substance use (procedure)&lt;/td&gt;&lt;td&gt;Rastreio de padrão nocivo de consumo de substâncias&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/58015007\&quot;&gt;58015007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Doença epidémica&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Epidemic disease (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/52748007\&quot;&gt;52748007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Admissão hospitalar involuntária&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Involuntary hospital admission (procedure)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/219218005\&quot;&gt;219218005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Agressão com arma branca&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Assault by cutting and stabbing instruments (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/404189009\&quot;&gt;404189009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Violência doméstica&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Domestic violence (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/248110007\&quot;&gt;248110007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Agressão sexual&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Sexual assault (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/242869008\&quot;&gt;242869008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Agressão com arma de fogo&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Assault by firearms (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/160932005\&quot;&gt;160932005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Problemas económicos&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Financial problem (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/17369002\&quot;&gt;17369002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aborto espontâneo&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Miscarriage (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/199745000\&quot;&gt;199745000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Complicação que ocorre durante o trabalho de parto e parto&lt;/td&gt;&lt;td&gt;Complicação no trabalho de parto e parto&lt;/td&gt;&lt;td&gt;Complication occurring during labor and delivery (disorder)&lt;/td&gt;&lt;td&gt;Complicação no trabalho de parto e parto&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/609496007\&quot;&gt;609496007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Complicação que ocorre durante a gravidez&lt;/td&gt;&lt;td&gt;Complicação na gravidez&lt;/td&gt;&lt;td&gt;Complication occurring during pregnancy (disorder)&lt;/td&gt;&lt;td&gt;Complicação na gravidez&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/735642007\&quot;&gt;735642007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lesão autoinfligida não suicida&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Non suicidal self inflicted injury (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/82313006\&quot;&gt;82313006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tentativa de suicídio&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Suicide attempt (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/242651001\&quot;&gt;242651001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lesão causada por animal&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Injury caused by animal (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/125666000\&quot;&gt;125666000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Queimadura&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Burn (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/125665001\&quot;&gt;125665001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lesão por esmagamento&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Crushing injury (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/299973008\&quot;&gt;299973008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Picada de planta&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Plant sting (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/125605004\&quot;&gt;125605004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fratura do osso&lt;/td&gt;&lt;td&gt;Fratura&lt;/td&gt;&lt;td&gt;Fracture of bone (disorder)&lt;/td&gt;&lt;td&gt;Fratura&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/416462003\&quot;&gt;416462003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ferida&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Wound (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/418757007\&quot;&gt;418757007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ingestão acidental de uma subtância potencialmente nociva&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Accidental ingestion of potentially harmful entity (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/274923000\&quot;&gt;274923000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente causado por ferramenta de gume&lt;/td&gt;&lt;td&gt;Acidente causado por ferramenta cortante&lt;/td&gt;&lt;td&gt;Accident caused by edge tool (event)&lt;/td&gt;&lt;td&gt;Acidente causado por ferramenta cortante&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/218081007\&quot;&gt;218081007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente causado por arma de fogo&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Accident caused by firearm missile (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/217623006\&quot;&gt;217623006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente devido a mudanças de pressão em mergulho&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Accident due to pressure changes in diving (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/79573009\&quot;&gt;79573009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente durante atividade doméstica&lt;/td&gt;&lt;td&gt;Acidente doméstico&lt;/td&gt;&lt;td&gt;Accident while engaged in household activity (event)&lt;/td&gt;&lt;td&gt;Acidente doméstico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/57701003\&quot;&gt;57701003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente durante atividade desportiva&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Accident while engaged in sports activity (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/17542004\&quot;&gt;17542004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente durante atividade laboral&lt;/td&gt;&lt;td&gt;Acidente durante atividade profissional&lt;/td&gt;&lt;td&gt;Accident while engaged in work-related activity (event)&lt;/td&gt;&lt;td&gt;Acidente durante atividade profissional&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/274224000\&quot;&gt;274224000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente com corpo estranho&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Foreign body accident (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/213770003\&quot;&gt;213770003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente ferroviário&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Railway accident (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1258918000\&quot;&gt;1258918000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente durante atividade de caça&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Accident while engaged in hunting activity (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1258887001\&quot;&gt;1258887001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente durante treino militar&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Accident while engaged in military training (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1258919008\&quot;&gt;1258919008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente durante atividade escolar&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Accident while engaged in school activity (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/40947009\&quot;&gt;40947009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Afogamento&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Drowning (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1912002\&quot;&gt;1912002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Queda&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Fall (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/218164000\&quot;&gt;218164000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente causado por corrente elétrica&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Accident caused by electric current (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/242777003\&quot;&gt;242777003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente causado por explosão&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Accident caused by explosion (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/217176002\&quot;&gt;217176002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente causado por fogo e chamas&lt;/td&gt;&lt;td&gt;Queimadura com fogo&lt;/td&gt;&lt;td&gt;Accident caused by fire and flames (event)&lt;/td&gt;&lt;td&gt;Queimadura com fogo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/217740007\&quot;&gt;217740007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente causado por deslizamento de terra&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Accident caused by landslide (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/269716005\&quot;&gt;269716005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente causado por máquinas&lt;/td&gt;&lt;td&gt;Acidente com maquinaria&lt;/td&gt;&lt;td&gt;Accident caused by machinery (event)&lt;/td&gt;&lt;td&gt;Acidente com maquinaria&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/242577001\&quot;&gt;242577001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente causado por animal ou planta&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Accident due to animal or plant (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/242575009\&quot;&gt;242575009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente devido às condições meteorológicas&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Accident due to exposure to weather conditions (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/386680008\&quot;&gt;386680008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente de avião&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Airplane accident (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/386663009\&quot;&gt;386663009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente de bicicleta&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Bicycle accident (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/297186008\&quot;&gt;297186008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente de motociclo&lt;/td&gt;&lt;td&gt;Acidente de mota&lt;/td&gt;&lt;td&gt;Motorcycle accident (event)&lt;/td&gt;&lt;td&gt;Acidente de mota&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/217115005\&quot;&gt;217115005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente causado por mergulho ou salto para a água&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Accident caused by diving or jumping into water (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/66466001\&quot;&gt;66466001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Asfixia&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Asphyxiation (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/70579001\&quot;&gt;70579001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tentativa de homicídio&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Homicide attempt (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/214031005\&quot;&gt;214031005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente de viação&lt;/td&gt;&lt;td&gt;Acidente de viação com veículo motorizado&lt;/td&gt;&lt;td&gt;Motor vehicle traffic accident (event)&lt;/td&gt;&lt;td&gt;Acidente de viação com veículo motorizado&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/214218008\&quot;&gt;214218008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Peão atropelado por veículo a motor&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Pedestrian hit by motor vehicle (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/772808000\&quot;&gt;772808000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intoxicação causada pelo uso de drogas recreativas&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Intoxication caused by recreational drug misuse (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/25702006\&quot;&gt;25702006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intoxicação alcoólica&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Alcohol intoxication (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/418506006\&quot;&gt;418506006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Abuso físico&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Physical abuse (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/371776003\&quot;&gt;371776003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Negligência ou abandono&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Neglect or abandonment (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/371773006\&quot;&gt;371773006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Abuso emocional&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Emotional abuse (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/213017001\&quot;&gt;213017001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Abuso sexual&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Sexual abuse (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/702579009\&quot;&gt;702579009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Suspeita de abuso sexual&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Suspected victim of sexual abuse (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/481000314103\&quot;&gt;481000314103&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Suspeita de carregar droga dentro do corpo&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Body packer suspected (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/221000314101\&quot;&gt;221000314101&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acidente causado por incêndio florestal&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Accident caused by forest fire (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/901681000000103\&quot;&gt;901681000000103&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avaliação da aptidão para o trabalho&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Assessment of fitness for work (procedure)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1354644008\&quot;&gt;1354644008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Negligência&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Neglect (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1354645009\&quot;&gt;1354645009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Abandono&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Abandonment (event)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.url">url</a>" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-cause-of-admission-vs",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.system">system</a>" : "urn:ietf:rfc:3986",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.value">value</a>" : "urn:oid:2.16.620.1.101.10.4.6.33"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.version">version</a>" : "1.0.0",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.name">name</a>" : "CPARADMCauseOfAdmissionVS",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.title">title</a>" : "CPARADM - Cause of Admission",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.date">date</a>" : "2025-11-01",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.publisher">publisher</a>" : "HL7 Portugal",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "HL7 Portugal",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "http://hl7.pt"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "info@hl7.pt"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "HL7 Portugal",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "geral@hl7.pt",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.use">use</a>" : "work"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.description">description</a>" : "Conjunto de valores CauseOfAdmission (CPARADM v3.0.0).",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "PT",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Portugal"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.author">author</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "Centro de Terminologias Clínicas"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.system">system</a>" : "http://snomed.info/sct",
+        "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "713107002",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Rastreio para abuso de álcool",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Screening for harmful pattern of alcohol use (procedure)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Rastreio de padrão nocivo de consumo de álcool"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "370854007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Rastreio para abuso de drogas",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Screening for harmful pattern of substance use (procedure)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Rastreio de padrão nocivo de consumo de substâncias"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "58015007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Doença epidémica",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Epidemic disease (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "52748007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Admissão hospitalar involuntária",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Involuntary hospital admission (procedure)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "219218005",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Agressão com arma branca",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Assault by cutting and stabbing instruments (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "404189009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Violência doméstica",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Domestic violence (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "248110007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Agressão sexual",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Sexual assault (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "242869008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Agressão com arma de fogo",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Assault by firearms (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "160932005",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Problemas económicos",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Financial problem (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "17369002",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Aborto espontâneo",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Miscarriage (disorder)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "199745000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Complicação que ocorre durante o trabalho de parto e parto",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Complication occurring during labor and delivery (disorder)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Complicação no trabalho de parto e parto"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "609496007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Complicação que ocorre durante a gravidez",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Complication occurring during pregnancy (disorder)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Complicação na gravidez"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "735642007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Lesão autoinfligida não suicida",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Non suicidal self inflicted injury (disorder)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "82313006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Tentativa de suicídio",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Suicide attempt (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "242651001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Lesão causada por animal",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Injury caused by animal (disorder)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "125666000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Queimadura",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Burn (disorder)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "125665001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Lesão por esmagamento",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Crushing injury (disorder)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "299973008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Picada de planta",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Plant sting (disorder)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "125605004",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Fratura do osso",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Fracture of bone (disorder)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Fratura"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "416462003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Ferida",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Wound (disorder)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "418757007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Ingestão acidental de uma subtância potencialmente nociva",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accidental ingestion of potentially harmful entity (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "274923000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente causado por ferramenta de gume",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accident caused by edge tool (event)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Acidente causado por ferramenta cortante"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "218081007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente causado por arma de fogo",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accident caused by firearm missile (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "217623006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente devido a mudanças de pressão em mergulho",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accident due to pressure changes in diving (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "79573009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente durante atividade doméstica",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accident while engaged in household activity (event)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Acidente doméstico"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "57701003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente durante atividade desportiva",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accident while engaged in sports activity (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "17542004",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente durante atividade laboral",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accident while engaged in work-related activity (event)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Acidente durante atividade profissional"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "274224000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente com corpo estranho",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Foreign body accident (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "213770003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente ferroviário",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Railway accident (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "1258918000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente durante atividade de caça",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accident while engaged in hunting activity (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "1258887001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente durante treino militar",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accident while engaged in military training (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "1258919008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente durante atividade escolar",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accident while engaged in school activity (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "40947009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Afogamento",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Drowning (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "1912002",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Queda",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Fall (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "218164000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente causado por corrente elétrica",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accident caused by electric current (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "242777003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente causado por explosão",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accident caused by explosion (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "217176002",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente causado por fogo e chamas",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accident caused by fire and flames (event)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Queimadura com fogo"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "217740007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente causado por deslizamento de terra",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accident caused by landslide (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "269716005",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente causado por máquinas",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accident caused by machinery (event)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Acidente com maquinaria"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "242577001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente causado por animal ou planta",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accident due to animal or plant (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "242575009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente devido às condições meteorológicas",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accident due to exposure to weather conditions (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "386680008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente de avião",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Airplane accident (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "386663009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente de bicicleta",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Bicycle accident (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "297186008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente de motociclo",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Motorcycle accident (event)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Acidente de mota"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "217115005",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente causado por mergulho ou salto para a água",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accident caused by diving or jumping into water (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "66466001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Asfixia",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Asphyxiation (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "70579001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Tentativa de homicídio",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Homicide attempt (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "214031005",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente de viação",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Motor vehicle traffic accident (event)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Acidente de viação com veículo motorizado"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "214218008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Peão atropelado por veículo a motor",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Pedestrian hit by motor vehicle (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "772808000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Intoxicação causada pelo uso de drogas recreativas",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Intoxication caused by recreational drug misuse (disorder)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "25702006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Intoxicação alcoólica",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Alcohol intoxication (disorder)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "418506006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Abuso físico",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Physical abuse (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "371776003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Negligência ou abandono",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Neglect or abandonment (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "371773006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Abuso emocional",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Emotional abuse (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "213017001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Abuso sexual",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Sexual abuse (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "702579009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Suspeita de abuso sexual",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Suspected victim of sexual abuse (situation)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "481000314103",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Suspeita de carregar droga dentro do corpo",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Body packer suspected (situation)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "221000314101",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Acidente causado por incêndio florestal",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Accident caused by forest fire (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "901681000000103",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Avaliação da aptidão para o trabalho",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Assessment of fitness for work (procedure)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "1354644008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Negligência",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Neglect (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "1354645009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Abandono",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Abandonment (event)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Jun 17, 2026 10:02+0000">2026-06-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

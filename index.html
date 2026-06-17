@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home Page - HL7 PT FHIR Implementation Guide: Terminologias v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Terminologias</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="spec.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home Page</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Terminologias, publicado por HL7 Portugal. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 1.0.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/hl7-pt/terminologias/tree/master'>https://github.com/hl7-pt/terminologias/tree/master</a> e muda regularmente. Veja o <a href='http://hl7.pt/fhir/history.html'>Diretório de versões publicadas</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/hl7-pt/terminologias/commit/987016b692d9e8d3c724739e2350b4e3cdb93844"><code>987016b6</code></a>.</span></p><!--EndReleaseHeader-->
+<!--PlainLangHeader--><div id="plain-lang-box">Plain Language Summary goes here</div><script src="https://hl7.org/fhir/plain-lang.js"></script><script type="application/javascript" src="https://hl7.org/fhir/history-cm.js"> </script><script>showPlainLanguage('hl7.fhir.pt.terminology', '1.0.0', '92a68166-7ae1-41e2-8f51-09de698a1d57');</script><!--EndPlainLangHeader-->
+  <h2>Home Page</h2>
+  
+
+
+
+
+
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.terminology<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.terminology"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.terminology|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2024-11-27
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">TerminologyPT</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#âmbito" id="markdown-toc-âmbito">Âmbito</a></li>
+  <li><a href="#introdução" id="markdown-toc-introdução">Introdução</a></li>
+  <li><a href="#ip-e-licença" id="markdown-toc-ip-e-licença">IP e Licença</a></li>
+  <li><a href="#autores-e-contribuidores" id="markdown-toc-autores-e-contribuidores">Autores e contribuidores</a></li>
+</ul>
+
+</div>
+<blockquote class="stu-note">
+    <p>A especificação aqui documentada é, por enquanto, uma especificação de prova de conceito e não pode ser usada para fins de implementação. 
+    Nenhuma responsabilidade pode ser inferida do uso ou mau uso desta especificação, ou de suas consequências.</p>
+  </blockquote>
+
+<h3 id="âmbito">Âmbito</h3>
+
+<p>Esta publicação tal e tal</p>
+
+<h3 id="introdução">Introdução</h3>
+
+<p>tal e tal</p>
+
+<h3 id="ip-e-licença">IP e Licença</h3>
+
+<p>Este publication inclui o IP abrangido pelas seguintes declarações.</p>
+<ul>
+<li>Este material contém conteúdo do <a href="http://loinc.org">LOINC</a>. LOINC é copyright &copy; 1995-2020, Regenstrief Institute, Inc. e o Logical Observation Identifiers Names and Codes (LOINC) Committee e está disponível sem custo sob a <a href="http://loinc.org/license">licença</a>. LOINC&reg; é uma marca registada dos Estados Unidos da América do Regenstrief Institute, Inc.<div data-fhir="generated" id="ipp_1" onclick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_1" style="display: none">
+<ul>
+<li><a href="http://tx.fhir.org/r5/ValueSet/x-loinc2.82">LOINC</a>: <a href="ValueSet-cpal-antimicrobial-vs.html">CPALAntimicrobialVS</a>, <a href="ValueSet-cpal-clinical-pathology-procedure-vs.html">CPALClinicalPathologyProcedureVS</a><span id="ips_1" onclick="document.getElementById('ips_1').innerHTML = document.getElementById('ips2_1').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 56 more</span></span><span id="ips2_1" style="display: none">, <a href="ValueSet-cpal-laboratory-study-type-vs.html">CPALLaboratoryStudyTypeVS</a>, <a href="ValueSet-cpe-actobservation-vs.html">CPEACTObservationVS</a>, <a href="ValueSet-cpe-actresult-vs.html">CPEACTResultVS</a>, <a href="ValueSet-cpe-auditcobservation-vs.html">CPEAUDITCObservationVS</a>, <a href="ValueSet-cpe-auditcresult-vs.html">CPEAUDITCResultVS</a>, <a href="ValueSet-cpe-auditobservation-vs.html">CPEAUDITObservationVS</a>, <a href="ValueSet-cpe-auditresult-vs.html">CPEAUDITResultVS</a>, <a href="ValueSet-cpe-apgar-score-observation-vs.html">CPEApgarScoreObservationVS</a>, <a href="ValueSet-cpe-apgar-score-result-vs.html">CPEApgarScoreResultVS</a>, <a href="ValueSet-cpe-barthel-index-observation-vs.html">CPEBarthelIndexObservationVS</a>, <a href="ValueSet-cpe-barthel-index-result-vs.html">CPEBarthelIndexResultVS</a>, <a href="ValueSet-cpe-berlin-questionnaire-observation-vs.html">CPEBerlinQuestionnaireObservationVS</a>, <a href="ValueSet-cpe-berlin-questionnaire-result-vs.html">CPEBerlinQuestionnaireResultVS</a>, <a href="ValueSet-cpe-braden-scale-observation-vs.html">CPEBradenScaleObservationVS</a>, <a href="ValueSet-cpe-braden-scale-result-vs.html">CPEBradenScaleResultVS</a>, <a href="ValueSet-cpe-bromage-scale-observation-vs.html">CPEBromageScaleObservationVS</a>, <a href="ValueSet-cpe-bromage-scale-result-vs.html">CPEBromageScaleResultVS</a>, <a href="ValueSet-cpe-ecogperformance-result-vs.html">CPEECOGPerformanceResultVS</a>, <a href="ValueSet-cpe-findriscscale-observation-vs.html">CPEFINDRISCScaleObservationVS</a>, <a href="ValueSet-cpe-findriscscale-result-vs.html">CPEFINDRISCScaleResultVS</a>, <a href="ValueSet-cpe-flaccscale-observation-vs.html">CPEFLACCScaleObservationVS</a>, <a href="ValueSet-cpe-flaccscale-result-vs.html">CPEFLACCScaleResultVS</a>, <a href="ValueSet-cpe-fagerstrom-test-observation-vs.html">CPEFagerstromTestObservationVS</a>, <a href="ValueSet-cpe-fagerstrom-test-result-vs.html">CPEFagerstromTestResultVS</a>, <a href="ValueSet-cpe-glasgow-coma-scale-observation-vs.html">CPEGlasgowComaScaleObservationVS</a>, <a href="ValueSet-cpe-glasgow-coma-scale-result-vs.html">CPEGlasgowComaScaleResultVS</a>, <a href="ValueSet-cpe-karnofsky-performance-result-vs.html">CPEKarnofskyPerformanceResultVS</a>, <a href="ValueSet-cpe-killip-observation-vs.html">CPEKillipObservationVS</a>, <a href="ValueSet-cpe-killip-result-vs.html">CPEKillipResultVS</a>, <a href="ValueSet-cpe-minnesota-lhfqobservation-vs.html">CPEMinnesotaLHFQObservationVS</a>, <a href="ValueSet-cpe-minnesota-lhfqresult-vs.html">CPEMinnesotaLHFQResultVS</a>, <a href="ValueSet-cpe-morse-fall-scale-observation-vs.html">CPEMorseFallScaleObservationVS</a>, <a href="ValueSet-cpe-morse-fall-scale-result-vs.html">CPEMorseFallScaleResultVS</a>, <a href="ValueSet-cpe-nihstroke-scale-observation-vs.html">CPENIHStrokeScaleObservationVS</a>, <a href="ValueSet-cpe-nihstroke-scale-result-vs.html">CPENIHStrokeScaleResultVS</a>, <a href="ValueSet-cpe-nipsscale-observation-vs.html">CPENIPSScaleObservationVS</a>, <a href="ValueSet-cpe-nipsscale-result-vs.html">CPENIPSScaleResultVS</a>, <a href="ValueSet-cpe-npassscale-observation-vs.html">CPENPASSScaleObservationVS</a>, <a href="ValueSet-cpe-npassscale-result-vs.html">CPENPASSScaleResultVS</a>, <a href="ValueSet-cpe-nrs2002-scale-observation-vs.html">CPENRS2002ScaleObservationVS</a>, <a href="ValueSet-cpe-nrs2002-scale-result-vs.html">CPENRS2002ScaleResultVS</a>, <a href="ValueSet-cpe-nsrasobservation-vs.html">CPENSRASObservationVS</a>, <a href="ValueSet-cpe-nsrasresults-vs.html">CPENSRASResultsVS</a>, <a href="ValueSet-cpe-painadscale-observation-vs.html">CPEPAINADScaleObservationVS</a>, <a href="ValueSet-cpe-painadscale-result-vs.html">CPEPAINADScaleResultVS</a>, <a href="ValueSet-cpe-pain-num-severity-observation-vs.html">CPEPainNumSeverityObservationVS</a>, <a href="ValueSet-cpe-pain-num-severity-result-vs.html">CPEPainNumSeverityResultVS</a>, <a href="ValueSet-cpe-ramsay-scale-observation-vs.html">CPERamsayScaleObservationVS</a>, <a href="ValueSet-cpe-ramsay-scale-result-vs.html">CPERamsayScaleResultVS</a>, <a href="ValueSet-cpe-rankin-scale-result-vs.html">CPERankinScaleResultVS</a>, <a href="ValueSet-cpe-robson-classification-result-vs.html">CPERobsonClassificationResultVS</a>, <a href="ValueSet-cpe-rosenberg-scale-observation-vs.html">CPERosenbergScaleObservationVS</a>, <a href="ValueSet-cpe-rosenberg-scale-result-vs.html">CPERosenbergScaleResultVS</a>, <a href="ValueSet-cpe-tardieu-scale-observation-vs.html">CPETardieuScaleObservationVS</a>, <a href="ValueSet-cpe-tardieu-scale-result-vs.html">CPETardieuScaleResultVS</a> and <a href="ValueSet-cpe-wong-baker-facesresult-vs.html">CPEWongBakerFACESResultVS</a></span></li>
+</ul>
+</div></li>
+<li>Este material contém conteúdo que é copyright da SNOMED International. Os implementadores destas especificações devem ter a licença apropriada de afiliado da SNOMED CT - para mais informações contacte <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a> ou <a href="mailto:info@snomed.org">info@snomed.org</a>.<div data-fhir="generated" id="ipp_2" onclick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_2" style="display: none">
+<ul>
+<li>Termos clínicos SNOMED&amp;reg; (SNOMED CT&amp;reg;): <a href="ValueSet-cpal-ab0-group-phenotype-vs.html">CPALAB0GroupPhenotypeVS</a>, <a href="ValueSet-cpal-antimicrobial-type-vs.html">CPALAntimicrobialTypeVS</a><span id="ips_2" onclick="document.getElementById('ips_2').innerHTML = document.getElementById('ips2_2').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 112 more</span></span><span id="ips2_2" style="display: none">, <a href="ValueSet-cpal-antimicrobial-vs.html">CPALAntimicrobialVS</a>, <a href="ValueSet-cpal-appearanceof-specimen-vs.html">CPALAppearanceofSpecimenVS</a>, <a href="ValueSet-cpal-blood-group-vs.html">CPALBloodGroupVS</a>, <a href="ValueSet-cpal-cast-vs.html">CPALCastVS</a>, <a href="ValueSet-cpal-cell-vs.html">CPALCellVS</a>, <a href="ValueSet-cpal-clinical-pathology-method-vs.html">CPALClinicalPathologyMethodVS</a>, <a href="ValueSet-cpal-clinical-pathology-outcome-vs.html">CPALClinicalPathologyOutcomeVS</a>, <a href="ValueSet-cpal-clinical-pathology-procedure-vs.html">CPALClinicalPathologyProcedureVS</a>, <a href="ValueSet-cpal-colorof-specimen-vs.html">CPALColorofSpecimenVS</a>, <a href="ValueSet-cpal-consistency-feces-vs.html">CPALConsistencyFecesVS</a>, <a href="ValueSet-cpal-crystal-vs.html">CPALCrystalVS</a>, <a href="ValueSet-cpal-laboratory-study-type-vs.html">CPALLaboratoryStudyTypeVS</a>, <a href="ValueSet-cpal-microorganism-vs.html">CPALMicroorganismVS</a>, <a href="ValueSet-cpal-rhesus-factor-vs.html">CPALRhesusFactorVS</a>, <a href="ValueSet-cpal-specimen-vs.html">CPALSpecimenVS</a>, <a href="ValueSet-cpal-susceptibility-vs.html">CPALSusceptibilityVS</a>, <a href="ValueSet-cpara-absent-or-unknown-allergy-vs.html">CPARAAbsentOrUnknownAllergyVS</a>, <a href="ValueSet-cpara-allergen-no-drug-vs.html">CPARAAllergenNoDrugVS</a>, <a href="ValueSet-cpara-allergy-intolerance-category-vs.html">CPARAAllergyIntoleranceCategoryVS</a>, <a href="ValueSet-cpara-allergy-intolerance-type-vs.html">CPARAAllergyIntoleranceTypeVS</a>, <a href="ValueSet-cparadm-additional-arrangement-vs.html">CPARADMAdditionalArrangementVS</a>, <a href="ValueSet-cparadm-administrative-emergency-cause-of-admission-vs.html">CPARADMAdministrativeEmergencyCauseOfAdmissionVS</a>, <a href="ValueSet-cparadm-cancellation-reason-vs.html">CPARADMCancellationReasonVS</a>, <a href="ValueSet-cparadm-cause-of-admission-vs.html">CPARADMCauseOfAdmissionVS</a>, <a href="ValueSet-cparadm-clinical-outcome-vs.html">CPARADMClinicalOutcomeVS</a>, <a href="ValueSet-cparadm-communication-mode-vs.html">CPARADMCommunicationModeVS</a>, <a href="ValueSet-cparadm-communication-type-vs.html">CPARADMCommunicationTypeVS</a>, <a href="ValueSet-cparadm-contact-reason-vs.html">CPARADMContactReasonVS</a>, <a href="ValueSet-cparadm-contact-result-vs.html">CPARADMContactResultVS</a>, <a href="ValueSet-cparadm-destination-vs.html">CPARADMDestinationVS</a>, <a href="ValueSet-cparadm-discharge-type-vs.html">CPARADMDischargeTypeVS</a>, <a href="ValueSet-cparadm-document-format-vs.html">CPARADMDocumentFormatVS</a>, <a href="ValueSet-cparadm-education-or-schooling-vs.html">CPARADMEducationOrSchoolingVS</a>, <a href="ValueSet-cparadm-encounter-communication-method-vs.html">CPARADMEncounterCommunicationMethodVS</a>, <a href="ValueSet-cparadm-encounter-presence-vs.html">CPARADMEncounterPresenceVS</a>, <a href="ValueSet-cparadm-internal-external-patient-vs.html">CPARADMInternalExternalPatientVS</a>, <a href="ValueSet-cparadm-location-type-vs.html">CPARADMLocationTypeVS</a>, <a href="ValueSet-cparadm-operational-location-status-vs.html">CPARADMOperationalLocationStatusVS</a>, <a href="ValueSet-cparadm-organization-type-vs.html">CPARADMOrganizationTypeVS</a>, <a href="ValueSet-cparadm-patient-encounter-status-vs.html">CPARADMPatientEncounterStatusVS</a>, <a href="ValueSet-cparadm-patient-transfer-reason-vs.html">CPARADMPatientTransferReasonVS</a>, <a href="ValueSet-cparadm-priority-vs.html">CPARADMPriorityVS</a>, <a href="ValueSet-cparadm-provenance-vs.html">CPARADMProvenanceVS</a>, <a href="ValueSet-cparadm-reason-not-elegible-for-schedule-vs.html">CPARADMReasonNotElegibleForScheduleVS</a>, <a href="ValueSet-cparadm-surgery-waiting-list-suspension-vs.html">CPARADMSurgeryWaitingListSuspensionVS</a>, <a href="ValueSet-cparadm-type-of-planning-vs.html">CPARADMTypeOfPlanningVS</a>, <a href="ValueSet-cpara-reaction-manifestation-vs.html">CPARAReactionManifestationVS</a>, <a href="ValueSet-cpcbd-marital-status-vs.html">CPCBDMaritalStatusVS</a>, <a href="ValueSet-cpcbd-person-in-family-vs.html">CPCBDPersonInFamilyVS</a>, <a href="ValueSet-cpcbd-person-vs.html">CPCBDPersonVS</a>, <a href="ValueSet-cpcbd-sex-vs.html">CPCBDSexVS</a>, <a href="ValueSet-cpe-actobservation-vs.html">CPEACTObservationVS</a>, <a href="ValueSet-cpe-apvuscale-vs.html">CPEAPVUScaleVS</a>, <a href="ValueSet-cpe-asascale-result-vs.html">CPEASAScaleResultVS</a>, <a href="ValueSet-cpe-auditcobservation-vs.html">CPEAUDITCObservationVS</a>, <a href="ValueSet-cpe-auditcresult-vs.html">CPEAUDITCResultVS</a>, <a href="ValueSet-cpe-auditobservation-vs.html">CPEAUDITObservationVS</a>, <a href="ValueSet-cpe-auditresult-vs.html">CPEAUDITResultVS</a>, <a href="ValueSet-cpe-apgar-score-observation-vs.html">CPEApgarScoreObservationVS</a>, <a href="ValueSet-cpe-apgar-score-result-vs.html">CPEApgarScoreResultVS</a>, <a href="ValueSet-cpe-biradsscale-result-vs.html">CPEBIRADSScaleResultVS</a>, <a href="ValueSet-cpe-barthel-index-observation-vs.html">CPEBarthelIndexObservationVS</a>, <a href="ValueSet-cpe-barthel-index-result-vs.html">CPEBarthelIndexResultVS</a>, <a href="ValueSet-cpe-berlin-questionnaire-observation-vs.html">CPEBerlinQuestionnaireObservationVS</a>, <a href="ValueSet-cpe-borg-scale-result-vs.html">CPEBorgScaleResultVS</a>, <a href="ValueSet-cpe-boston-scale-result-vs.html">CPEBostonScaleResultVS</a>, <a href="ValueSet-cpe-braden-scale-observation-vs.html">CPEBradenScaleObservationVS</a>, <a href="ValueSet-cpe-braden-scale-result-vs.html">CPEBradenScaleResultVS</a>, <a href="ValueSet-cpe-cdcwound-classification-result-vs.html">CPECDCWoundClassificationResultVS</a>, <a href="ValueSet-cpe-findriscscale-observation-vs.html">CPEFINDRISCScaleObservationVS</a>, <a href="ValueSet-cpe-findriscscale-result-vs.html">CPEFINDRISCScaleResultVS</a>, <a href="ValueSet-cpe-flaccscale-observation-vs.html">CPEFLACCScaleObservationVS</a>, <a href="ValueSet-cpe-flaccscale-result-vs.html">CPEFLACCScaleResultVS</a>, <a href="ValueSet-cpe-fagerstrom-test-observation-vs.html">CPEFagerstromTestObservationVS</a>, <a href="ValueSet-cpe-fagerstrom-test-result-vs.html">CPEFagerstromTestResultVS</a>, <a href="ValueSet-cpe-glasgow-coma-scale-observation-vs.html">CPEGlasgowComaScaleObservationVS</a>, <a href="ValueSet-cpe-glasgow-coma-scale-result-vs.html">CPEGlasgowComaScaleResultVS</a>, <a href="ValueSet-cpe-grade-muscle-power-vs.html">CPEGradeMusclePowerVS</a>, <a href="ValueSet-cpe-minnesota-lhfqobservation-vs.html">CPEMinnesotaLHFQObservationVS</a>, <a href="ValueSet-cpe-morse-fall-scale-observation-vs.html">CPEMorseFallScaleObservationVS</a>, <a href="ValueSet-cpe-morse-fall-scale-result-vs.html">CPEMorseFallScaleResultVS</a>, <a href="ValueSet-cpe-nihstroke-scale-observation-vs.html">CPENIHStrokeScaleObservationVS</a>, <a href="ValueSet-cpe-nihstroke-scale-result-vs.html">CPENIHStrokeScaleResultVS</a>, <a href="ValueSet-cpe-nipsscale-observation-vs.html">CPENIPSScaleObservationVS</a>, <a href="ValueSet-cpe-nipsscale-result-vs.html">CPENIPSScaleResultVS</a>, <a href="ValueSet-cpe-npassscale-observation-vs.html">CPENPASSScaleObservationVS</a>, <a href="ValueSet-cpe-npassscale-result-vs.html">CPENPASSScaleResultVS</a>, <a href="ValueSet-cpe-nsrasresults-vs.html">CPENSRASResultsVS</a>, <a href="ValueSet-cpe-painadscale-observation-vs.html">CPEPAINADScaleObservationVS</a>, <a href="ValueSet-cpe-painadscale-result-vs.html">CPEPAINADScaleResultVS</a>, <a href="ValueSet-cpe-ptmodification-manchester-triage-vs.html">CPEPTModificationManchesterTriageVS</a>, <a href="ValueSet-cpe-pain-num-severity-result-vs.html">CPEPainNumSeverityResultVS</a>, <a href="ValueSet-cpe-ramsay-scale-observation-vs.html">CPERamsayScaleObservationVS</a>, <a href="ValueSet-cpe-ramsay-scale-result-vs.html">CPERamsayScaleResultVS</a>, <a href="ValueSet-cpe-rankin-scale-result-vs.html">CPERankinScaleResultVS</a>, <a href="ValueSet-cpe-rosenberg-scale-observation-vs.html">CPERosenbergScaleObservationVS</a>, <a href="ValueSet-cpe-scale-vs.html">CPEScaleVS</a>, <a href="ValueSet-cpe-triage-system-vs.html">CPETriageSystemVS</a>, <a href="ValueSet-cpevs-medical-physics-specialty-vs.html">CPEVSMedicalPhysicsSpecialtyVS</a>, <a href="ValueSet-cpevs-medical-specialty-vs.html">CPEVSMedicalSpecialtyVS</a>, <a href="ValueSet-cpevs-primary-care-assistance-activity-vs.html">CPEVSPrimaryCareAssistanceActivityVS</a>, <a href="ValueSet-cpevs-service-type-vs.html">CPEVSServiceTypeVS</a>, <a href="ValueSet-cpevs-specialized-assistance-activity-vs.html">CPEVSSpecializedAssistanceActivityVS</a>, <a href="ValueSet-cpe-wong-baker-facesresult-vs.html">CPEWongBakerFACESResultVS</a>, <a href="ValueSet-cpgo-gynecology-procedures-vs.html">CPGOGynecologyProceduresVS</a>, <a href="ValueSet-cpgo-obstetrics-procedures-vs.html">CPGOObstetricsProceduresVS</a>, <a href="ValueSet-cpmn-medicine-nuclear-procedures-vs.html">CPMNMedicineNuclearProceduresVS</a>, <a href="ValueSet-cpn-disorder-vs.html">CPNDisorderVS</a>, <a href="ValueSet-cpn-finding-vs.html">CPNFindingVS</a>, <a href="ValueSet-cpn-procedure-therapeutic-vs.html">CPNProcedureTherapeuticVS</a>, <a href="ValueSet-cpn-product-vs.html">CPNProductVS</a> and <a href="ValueSet-cpn-status-vs.html">CPNStatusVS</a></span></li>
+</ul>
+</div></li>
+</ul>
+<!--$$1$$-->
+
+<h3 id="autores-e-contribuidores">Autores e contribuidores</h3>
+
+<table>
+<thead>
+<tr class="header">
+<th>Papel</th>
+<th>Nome</th>
+<th>Organização</th>
+<th>Contacto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Autor</td>
+<td>zzz</td>
+<td>xxxx</td>
+<td>yyyy</td>
+</tr><tr class="even">
+<td>Autor</td>
+<td>xxx</td>
+<td></td>
+<td>dssd</td>
+</tr><tr class="odd">
+<td>Autor</td>
+<td>asdasd</td>
+<td>asdasd</td>
+<td>asdas</td>
+</tr><tr class="even">
+<td>Autor</td>
+<td>asdasd</td>
+<td></td>
+<td>dasda</td>
+</tr></tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Jun 17, 2026 10:02+0000">2026-06-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,198 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cparadm-discharge-type-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cparadm-discharge-type-vs</b></p><a name=\"cparadm-discharge-type-vs\"> </a><a name=\"hccparadm-discharge-type-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/34596002\">34596002</a></td><td>Alta do utente por abandono</td><td>Alta por abandono</td><td>Patient discharge, elopement (procedure)</td><td>Alta por abandono</td></tr><tr><td><a href=\"http://snomed.info/id/58000006\">58000006</a></td><td>Alta do utente</td><td/><td>Patient discharge (procedure)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1258989004\">1258989004</a></td><td>Alta disciplinar do utente</td><td>Alta disciplinar</td><td>Patient disciplinary discharge (procedure)</td><td>Alta disciplinar</td></tr><tr><td><a href=\"http://snomed.info/id/3133002\">3133002</a></td><td>Alta do utente, falecido, para autópsia</td><td>Alta utente para autópsia</td><td>Patient discharge, deceased, autopsy (procedure)</td><td>Alta utente para autópsia</td></tr><tr><td><a href=\"http://snomed.info/id/79779006\">79779006</a></td><td>Alta do utente, falecido, sem autópsia</td><td>Alta sem autópsia</td><td>Patient discharge, deceased, no autopsy (procedure)</td><td>Alta sem autópsia</td></tr><tr><td><a href=\"http://snomed.info/id/1917008\">1917008</a></td><td>Alta do utente, falecido, caso médico-legal</td><td/><td>Patient discharge, deceased, medicolegal case (procedure)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/225928004\">225928004</a></td><td>Alta do utente contra parecer médico</td><td>Alta contra parecer médico</td><td>Patient self-discharge against medical advice (procedure)</td><td>Alta contra parecer médico</td></tr><tr><td><a href=\"http://snomed.info/id/671000314103\">671000314103</a></td><td>Alta do utente por recusa de consulta nos cuidados de saúde primários</td><td>Alta do utente por recusa de consulta nos CSP</td><td>Patient discharged for refusing consultation at the primary care hospital (procedure)</td><td>Alta do utente por recusa de consulta nos CSP</td></tr><tr><td><a href=\"http://snomed.info/id/681000314100\">681000314100</a></td><td>Alta do utente triado com cor verde, azul ou branca</td><td/><td>Patient discharge triaged with green, blue or white colour (procedure)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1380185004\">1380185004</a></td><td>Alta de utente falecido</td><td>Alta por falecimento</td><td>Discharge of deceased subject (procedure)</td><td>Alta por falecimento</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-discharge-type-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.32"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPARADMDischargeTypeVS",
+  "title" : "CPARADM - Discharge Type",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores DischargeType (CPARADM v3.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "34596002",
+        "display" : "Alta do utente por abandono",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Patient discharge, elopement (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Alta por abandono"
+        }]
+      },
+      {
+        "code" : "58000006",
+        "display" : "Alta do utente",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Patient discharge (procedure)"
+        }]
+      },
+      {
+        "code" : "1258989004",
+        "display" : "Alta disciplinar do utente",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Patient disciplinary discharge (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Alta disciplinar"
+        }]
+      },
+      {
+        "code" : "3133002",
+        "display" : "Alta do utente, falecido, para autópsia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Patient discharge, deceased, autopsy (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Alta utente para autópsia"
+        }]
+      },
+      {
+        "code" : "79779006",
+        "display" : "Alta do utente, falecido, sem autópsia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Patient discharge, deceased, no autopsy (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Alta sem autópsia"
+        }]
+      },
+      {
+        "code" : "1917008",
+        "display" : "Alta do utente, falecido, caso médico-legal",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Patient discharge, deceased, medicolegal case (procedure)"
+        }]
+      },
+      {
+        "code" : "225928004",
+        "display" : "Alta do utente contra parecer médico",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Patient self-discharge against medical advice (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Alta contra parecer médico"
+        }]
+      },
+      {
+        "code" : "671000314103",
+        "display" : "Alta do utente por recusa de consulta nos cuidados de saúde primários",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Patient discharged for refusing consultation at the primary care hospital (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Alta do utente por recusa de consulta nos CSP"
+        }]
+      },
+      {
+        "code" : "681000314100",
+        "display" : "Alta do utente triado com cor verde, azul ou branca",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Patient discharge triaged with green, blue or white colour (procedure)"
+        }]
+      },
+      {
+        "code" : "1380185004",
+        "display" : "Alta de utente falecido",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Discharge of deceased subject (procedure)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Alta por falecimento"
+        }]
+      }]
+    }]
+  }
+}

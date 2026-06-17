@@ -1,0 +1,79 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpevs-medical-physics-specialty-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpevs-medical-physics-specialty-vs</b></p><a name=\"cpevs-medical-physics-specialty-vs\"> </a><a name=\"hccpevs-medical-physics-specialty-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"http://snomed.info/id/1255735008\">1255735008</a></td><td>Física médica em medicina nuclear</td><td>Medical physics in nuclear medicine (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/1255734007\">1255734007</a></td><td>Física médica em radioterapia</td><td>Medical physics in radiotherapy (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/1255733001\">1255733001</a></td><td>Física médica em radiologia de diagnóstico e intervenção</td><td>Medical physics in radiology (qualifier value)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpevs-medical-physics-specialty-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.68"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPEVSMedicalPhysicsSpecialtyVS",
+  "title" : "CPEVS - Medical Physics Specialty",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-12-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores MedicalPhysicsSpecialty (CPEVS v2.1.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "1255735008",
+        "display" : "Física médica em medicina nuclear",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Medical physics in nuclear medicine (qualifier value)"
+        }]
+      },
+      {
+        "code" : "1255734007",
+        "display" : "Física médica em radioterapia",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Medical physics in radiotherapy (qualifier value)"
+        }]
+      },
+      {
+        "code" : "1255733001",
+        "display" : "Física médica em radiologia de diagnóstico e intervenção",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Medical physics in radiology (qualifier value)"
+        }]
+      }]
+    }]
+  }
+}

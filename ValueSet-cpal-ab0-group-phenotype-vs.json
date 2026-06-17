@@ -1,0 +1,159 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpal-ab0-group-phenotype-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpal-ab0-group-phenotype-vs</b></p><a name=\"cpal-ab0-group-phenotype-vs\"> </a><a name=\"hccpal-ab0-group-phenotype-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/112144000\">112144000</a></td><td>Grupo de Sangue Tipo A</td><td>Blood group A (finding)</td><td>A</td><td>Blood group A (finding)</td><td>A</td></tr><tr><td><a href=\"http://snomed.info/id/112149005\">112149005</a></td><td>Grupo de Sangue Tipo B</td><td>Blood group B (finding)</td><td>B</td><td>Blood group B (finding)</td><td>B</td></tr><tr><td><a href=\"http://snomed.info/id/165743006\">165743006</a></td><td>Grupo de Sangue Tipo AB</td><td>Blood group AB (finding)</td><td>AB</td><td>Blood group AB (finding)</td><td>AB</td></tr><tr><td><a href=\"http://snomed.info/id/58460004\">58460004</a></td><td>Grupo de Sangue Tipo O</td><td>Blood group O (finding)</td><td>O</td><td>Blood group O (finding)</td><td>O</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-ab0-group-phenotype-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.1"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPALAB0GroupPhenotypeVS",
+  "title" : "CPAL - AB0 Group Phenotype",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2022-06-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores AB0GroupPhenotype (CPAL v7.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "112144000",
+        "display" : "Grupo de Sangue Tipo A",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Blood group A"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Blood group A (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "A"
+        }]
+      },
+      {
+        "code" : "112149005",
+        "display" : "Grupo de Sangue Tipo B",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Blood group B"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Blood group B (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "B"
+        }]
+      },
+      {
+        "code" : "165743006",
+        "display" : "Grupo de Sangue Tipo AB",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Blood group AB"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Blood group AB (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "AB"
+        }]
+      },
+      {
+        "code" : "58460004",
+        "display" : "Grupo de Sangue Tipo O",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Blood group O"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Blood group O (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "O"
+        }]
+      }]
+    }]
+  }
+}

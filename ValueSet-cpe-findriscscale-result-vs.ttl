@@ -1,0 +1,275 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-findriscscale-result-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-findriscscale-result-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-findriscscale-result-vs</b></p><a name=\"cpe-findriscscale-result-vs\"> </a><a name=\"hccpe-findriscscale-result-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/LA31987-3/\">LA31987-3</a></td><td>Menos de 45 anos</td><td/><td>Under 45 years</td><td/></tr><tr><td><a href=\"https://loinc.org/LA31988-1/\">LA31988-1</a></td><td>45-54 anos</td><td/><td>45-54 years</td><td/></tr><tr><td><a href=\"https://loinc.org/LA31989-9/\">LA31989-9</a></td><td>55-64 anos</td><td/><td>55-64 years</td><td/></tr><tr><td><a href=\"https://loinc.org/LA31990-7/\">LA31990-7</a></td><td>Mais de 64 anos</td><td/><td>Over 64 years</td><td/></tr><tr><td><a href=\"https://loinc.org/LA31984-0/\">LA31984-0</a></td><td>Menos de 25 Kg/m2</td><td/><td>Lower than 25 kg/m2</td><td/></tr><tr><td><a href=\"https://loinc.org/LA31985-7/\">LA31985-7</a></td><td>25-30 kg/m2</td><td/><td/><td/></tr><tr><td><a href=\"https://loinc.org/LA31986-5/\">LA31986-5</a></td><td>Mais de 30 kg/m2</td><td/><td>Higher than 30 kg/m2</td><td/></tr><tr><td><a href=\"https://loinc.org/LA31920-4/\">LA31920-4</a></td><td>Homem: Menos de 94 cm</td><td>Menos de 94 cm</td><td>Men: less than 94 cm</td><td>Menos de 94 cm</td></tr><tr><td><a href=\"https://loinc.org/LA31921-2/\">LA31921-2</a></td><td>Homem: 94-102 cm</td><td>94-102 cm</td><td>Men: 94-102 cm</td><td>94-102 cm</td></tr><tr><td><a href=\"https://loinc.org/LA31922-0/\">LA31922-0</a></td><td>Homem: Mais de 102 cm</td><td>Mais de 102 cm</td><td>Men: more than 102 cm</td><td>Mais de 102 cm</td></tr><tr><td><a href=\"https://loinc.org/LA31923-8/\">LA31923-8</a></td><td>Mulher: Menos de 80 cm</td><td>Menos de 80 cm</td><td>Women: less than 80 cm</td><td>Menos de 80 cm</td></tr><tr><td><a href=\"https://loinc.org/LA31924-6/\">LA31924-6</a></td><td>Mulher: 80-88 cm</td><td>80-88 cm</td><td>Women: 80-88 cm</td><td>80-88 cm</td></tr><tr><td><a href=\"https://loinc.org/LA31925-3/\">LA31925-3</a></td><td>Mulher: Mais de 88 cm</td><td>Mais de 88 cm</td><td>Women: more than 88 cm</td><td>Mais de 88 cm</td></tr><tr><td><a href=\"https://loinc.org/LA32-8/\">LA32-8</a></td><td>Não</td><td/><td>No</td><td/></tr><tr><td><a href=\"https://loinc.org/LA33-6/\">LA33-6</a></td><td>Sim</td><td/><td>Yes</td><td/></tr><tr><td><a href=\"https://loinc.org/LA14799-3/\">LA14799-3</a></td><td>Todos os dias</td><td/><td>Every day</td><td/></tr><tr><td><a href=\"https://loinc.org/LA31926-1/\">LA31926-1</a></td><td>Nem todos os dias</td><td>Ás vezes</td><td>Not every day</td><td>Ás vezes</td></tr><tr><td><a href=\"https://loinc.org/LA31927-9/\">LA31927-9</a></td><td>Sim: avós, tia, tio, ou primo em primeiro grau (mas não os próprios pais, irmão, irmã ou filho)</td><td>Sim: avós, tias, tios, ou primo em 1.º grau (excepto pais, irmãos ou filhos)</td><td>Yes: grandparent, aunt, uncle, or first cousin (but not own parent, brother, sister or child)</td><td>Sim: avós, tias, tios, ou primo em 1.º grau (excepto pais, irmãos ou filhos)</td></tr><tr><td><a href=\"https://loinc.org/LA31928-7/\">LA31928-7</a></td><td>Sim: pais, irmão, irmã ou filhos</td><td>Sim: pais, irmãos ou filhos</td><td>Yes: parent, brother, sister, or own child</td><td>Sim: pais, irmãos ou filhos</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-findriscscale-result-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.129" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPEFINDRISCScaleResultVS"] ; # 
+  fhir:title [ fhir:v "CPE - FINDRISC Scale Result"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores FINDRISCScaleResult (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA31987-3" ] ;
+         fhir:display [ fhir:v "Menos de 45 anos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Under 45 years" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31988-1" ] ;
+         fhir:display [ fhir:v "45-54 anos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "45-54 years" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31989-9" ] ;
+         fhir:display [ fhir:v "55-64 anos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "55-64 years" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31990-7" ] ;
+         fhir:display [ fhir:v "Mais de 64 anos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Over 64 years" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31984-0" ] ;
+         fhir:display [ fhir:v "Menos de 25 Kg/m2" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Lower than 25 kg/m2" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31985-7" ] ;
+         fhir:display [ fhir:v "25-30 kg/m2" ]
+       ] [
+         fhir:code [ fhir:v "LA31986-5" ] ;
+         fhir:display [ fhir:v "Mais de 30 kg/m2" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Higher than 30 kg/m2" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31920-4" ] ;
+         fhir:display [ fhir:v "Homem: Menos de 94 cm" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Men: less than 94 cm" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Menos de 94 cm" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31921-2" ] ;
+         fhir:display [ fhir:v "Homem: 94-102 cm" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Men: 94-102 cm" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "94-102 cm" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31922-0" ] ;
+         fhir:display [ fhir:v "Homem: Mais de 102 cm" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Men: more than 102 cm" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Mais de 102 cm" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31923-8" ] ;
+         fhir:display [ fhir:v "Mulher: Menos de 80 cm" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Women: less than 80 cm" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Menos de 80 cm" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31924-6" ] ;
+         fhir:display [ fhir:v "Mulher: 80-88 cm" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Women: 80-88 cm" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "80-88 cm" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31925-3" ] ;
+         fhir:display [ fhir:v "Mulher: Mais de 88 cm" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Women: more than 88 cm" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Mais de 88 cm" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA32-8" ] ;
+         fhir:display [ fhir:v "Não" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA33-6" ] ;
+         fhir:display [ fhir:v "Sim" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Yes" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA14799-3" ] ;
+         fhir:display [ fhir:v "Todos os dias" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Every day" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31926-1" ] ;
+         fhir:display [ fhir:v "Nem todos os dias" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Not every day" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Ás vezes" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31927-9" ] ;
+         fhir:display [ fhir:v "Sim: avós, tia, tio, ou primo em primeiro grau (mas não os próprios pais, irmão, irmã ou filho)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Yes: grandparent, aunt, uncle, or first cousin (but not own parent, brother, sister or child)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Sim: avós, tias, tios, ou primo em 1.º grau (excepto pais, irmãos ou filhos)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA31928-7" ] ;
+         fhir:display [ fhir:v "Sim: pais, irmão, irmã ou filhos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Yes: parent, brother, sister, or own child" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Sim: pais, irmãos ou filhos" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

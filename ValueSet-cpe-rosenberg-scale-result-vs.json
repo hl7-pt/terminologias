@@ -1,0 +1,87 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpe-rosenberg-scale-result-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-rosenberg-scale-result-vs</b></p><a name=\"cpe-rosenberg-scale-result-vs\"> </a><a name=\"hccpe-rosenberg-scale-result-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/LA15237-3/\">LA15237-3</a></td><td>Concordo bastante</td><td>Strongly agree</td></tr><tr><td><a href=\"https://loinc.org/LA15774-5/\">LA15774-5</a></td><td>Concordo</td><td>Agree</td></tr><tr><td><a href=\"https://loinc.org/LA15773-7/\">LA15773-7</a></td><td>Discordo</td><td>Disagree</td></tr><tr><td><a href=\"https://loinc.org/LA15236-5/\">LA15236-5</a></td><td>Discordo bastante</td><td>Strongly disagree</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-rosenberg-scale-result-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.157"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPERosenbergScaleResultVS",
+  "title" : "CPE - Rosenberg Scale Result",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores RosenbergScaleResult (CPE v2.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA15237-3",
+        "display" : "Concordo bastante",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Strongly agree"
+        }]
+      },
+      {
+        "code" : "LA15774-5",
+        "display" : "Concordo",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Agree"
+        }]
+      },
+      {
+        "code" : "LA15773-7",
+        "display" : "Discordo",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Disagree"
+        }]
+      },
+      {
+        "code" : "LA15236-5",
+        "display" : "Discordo bastante",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Strongly disagree"
+        }]
+      }]
+    }]
+  }
+}

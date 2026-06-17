@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-fagerstrom-test-result-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-fagerstrom-test-result-vs</b></p><a name="cpe-fagerstrom-test-result-vs"> </a><a name="hccpe-fagerstrom-test-result-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="https://loinc.org/LA15918-8/">LA15918-8</a></td><td>Fuma todos os dias</td><td/><td>Every-day smoker</td><td/></tr><tr><td><a href="https://loinc.org/LA15919-6/">LA15919-6</a></td><td>Não fuma todos os dias</td><td/><td>Some-day smoker</td><td/></tr><tr><td><a href="https://loinc.org/LA15920-4/">LA15920-4</a></td><td>Antigo fumador</td><td/><td>Former smoker</td><td/></tr><tr><td><a href="https://loinc.org/LA15792-7/">LA15792-7</a></td><td>Até 5 minutos</td><td>Nos primeiros 5 minutos</td><td>Within 5 minutes</td><td>Nos primeiros 5 minutos</td></tr><tr><td><a href="https://loinc.org/LA15793-5/">LA15793-5</a></td><td>De 6 a 30 minutos</td><td>Após 6 - 30 minutos</td><td>6-30 minutes</td><td>Após 6 - 30 minutos</td></tr><tr><td><a href="https://loinc.org/LA15794-3/">LA15794-3</a></td><td>De 31 a 60 minutos</td><td>Após 31 - 60 minutos</td><td>31-60 minutes</td><td>Após 31 - 60 minutos</td></tr><tr><td><a href="https://loinc.org/LA15795-0/">LA15795-0</a></td><td>Mais de 60 minutos</td><td>Após 60 minutos</td><td>After 60 minutes</td><td>Após 60 minutos</td></tr><tr><td><a href="https://loinc.org/LA15798-4/">LA15798-4</a></td><td>Sim</td><td/><td>Yes</td><td/></tr><tr><td><a href="https://loinc.org/LA15799-2/">LA15799-2</a></td><td>Não</td><td/><td>No</td><td/></tr><tr><td><a href="https://loinc.org/LA15796-8/">LA15796-8</a></td><td>O primeiro da manhã</td><td/><td>The first one in the morning</td><td/></tr><tr><td><a href="https://loinc.org/LA15797-6/">LA15797-6</a></td><td>Qualquer outro cigarro</td><td>Qualquer outro</td><td>All others</td><td>Qualquer outro</td></tr><tr><td><a href="https://loinc.org/LA15912-1/">LA15912-1</a></td><td>10 ou menos</td><td/><td>10 or less</td><td/></tr><tr><td><a href="https://loinc.org/LA15913-9/">LA15913-9</a></td><td>De 11 a 20</td><td>11 - 20</td><td>11-20</td><td>11 - 20</td></tr><tr><td><a href="https://loinc.org/LA15914-7/">LA15914-7</a></td><td>De 21 a 30</td><td>21 - 30</td><td>21-30</td><td>21 - 30</td></tr><tr><td><a href="https://loinc.org/LA15915-4/">LA15915-4</a></td><td>31 ou mais</td><td/><td>31 or more</td><td/></tr><tr><td><a href="https://loinc.org/LA33-6/">LA33-6</a></td><td>Sim</td><td>Nas primeiras horas</td><td>Yes</td><td>Nas primeiras horas</td></tr><tr><td><a href="https://loinc.org/LA32-8/">LA32-8</a></td><td>Não</td><td>No resto do dia</td><td>No</td><td>No resto do dia</td></tr><tr><td><a href="https://loinc.org/LA15775-2/">LA15775-2</a></td><td>Não sabe/recusa responder</td><td/><td>Don't know/refused</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-fagerstrom-test-result-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.127"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPEFagerstromTestResultVS"/>
+  <title value="CPE - Fagerstrom Test Result"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores FagerstromTestResult (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA15918-8"/>
+        <display value="Fuma todos os dias"/>
+        <designation>
+          <language value="en"/>
+          <value value="Every-day smoker"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15919-6"/>
+        <display value="Não fuma todos os dias"/>
+        <designation>
+          <language value="en"/>
+          <value value="Some-day smoker"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15920-4"/>
+        <display value="Antigo fumador"/>
+        <designation>
+          <language value="en"/>
+          <value value="Former smoker"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15792-7"/>
+        <display value="Até 5 minutos"/>
+        <designation>
+          <language value="en"/>
+          <value value="Within 5 minutes"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Nos primeiros 5 minutos"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15793-5"/>
+        <display value="De 6 a 30 minutos"/>
+        <designation>
+          <language value="en"/>
+          <value value="6-30 minutes"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Após 6 - 30 minutos"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15794-3"/>
+        <display value="De 31 a 60 minutos"/>
+        <designation>
+          <language value="en"/>
+          <value value="31-60 minutes"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Após 31 - 60 minutos"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15795-0"/>
+        <display value="Mais de 60 minutos"/>
+        <designation>
+          <language value="en"/>
+          <value value="After 60 minutes"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Após 60 minutos"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15798-4"/>
+        <display value="Sim"/>
+        <designation>
+          <language value="en"/>
+          <value value="Yes"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15799-2"/>
+        <display value="Não"/>
+        <designation>
+          <language value="en"/>
+          <value value="No"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15796-8"/>
+        <display value="O primeiro da manhã"/>
+        <designation>
+          <language value="en"/>
+          <value value="The first one in the morning"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15797-6"/>
+        <display value="Qualquer outro cigarro"/>
+        <designation>
+          <language value="en"/>
+          <value value="All others"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Qualquer outro"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15912-1"/>
+        <display value="10 ou menos"/>
+        <designation>
+          <language value="en"/>
+          <value value="10 or less"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15913-9"/>
+        <display value="De 11 a 20"/>
+        <designation>
+          <language value="en"/>
+          <value value="11-20"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="11 - 20"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15914-7"/>
+        <display value="De 21 a 30"/>
+        <designation>
+          <language value="en"/>
+          <value value="21-30"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="21 - 30"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15915-4"/>
+        <display value="31 ou mais"/>
+        <designation>
+          <language value="en"/>
+          <value value="31 or more"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA33-6"/>
+        <display value="Sim"/>
+        <designation>
+          <language value="en"/>
+          <value value="Yes"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Nas primeiras horas"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA32-8"/>
+        <display value="Não"/>
+        <designation>
+          <language value="en"/>
+          <value value="No"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="No resto do dia"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15775-2"/>
+        <display value="Não sabe/recusa responder"/>
+        <designation>
+          <language value="en"/>
+          <value value="Don't know/refused"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

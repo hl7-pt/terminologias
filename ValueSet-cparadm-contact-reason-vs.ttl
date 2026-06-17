@@ -1,0 +1,184 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cparadm-contact-reason-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cparadm-contact-reason-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cparadm-contact-reason-vs</b></p><a name=\"cparadm-contact-reason-vs\"> </a><a name=\"hccparadm-contact-reason-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/1571000314103\">1571000314103</a></td><td>Atualização de contactos</td><td/><td>Update of contact information (procedure)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/410538000\">410538000</a></td><td>Agendamento</td><td/><td>Scheduling (procedure)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1581000314100\">1581000314100</a></td><td>Alteração de agendamento</td><td/><td>Appointment rescheduling (procedure)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/185335007\">185335007</a></td><td>Cancelamento de agendamento pelo hospital</td><td/><td>Appointment canceled by hospital (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/183671000\">183671000</a></td><td>Remoção da lista de espera</td><td/><td>Removed from waiting list (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/74781006\">74781006</a></td><td>Certificado de admissão aprovado</td><td/><td>Admission certification approved (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/16702001\">16702001</a></td><td>Recusa proposta de inscrição</td><td/><td>Admission certification denied (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1591000314102\">1591000314102</a></td><td>Justificação de falta</td><td/><td>Absence justification (procedure)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/414925007\">414925007</a></td><td>Obtenção de consentimento</td><td>Pedido de consentimento</td><td>Obtaining consent (procedure)</td><td>Pedido de consentimento</td></tr><tr><td><a href=\"http://snomed.info/id/311791003\">311791003</a></td><td>Recolha de informação</td><td>Pedido de informação</td><td>Information gathering (procedure)</td><td>Pedido de informação</td></tr><tr><td><a href=\"http://snomed.info/id/223464006\">223464006</a></td><td>Instruções sobre procedimento</td><td/><td>Procedure education (procedure)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/422424000\">422424000</a></td><td>Instruções sobre agendamento</td><td/><td>Scheduling instructions (procedure)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1601000314106\">1601000314106</a></td><td>Pedido de cancelamento de agendamento pelo utente</td><td/><td>Appointment cancellation requested by patient (situation)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1611000314109\">1611000314109</a></td><td>Utente recusa transferência</td><td/><td>Transfer rejected by patient (situation)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/107724000\">107724000</a></td><td>Patient transfer (procedure)</td><td/><td/><td/></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-contact-reason-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.171" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPARADMContactReasonVS"] ; # 
+  fhir:title [ fhir:v "CPARADM - Contact Reason"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores ContactReason (CPARADM v3.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "1571000314103" ] ;
+         fhir:display [ fhir:v "Atualização de contactos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Update of contact information (procedure)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "410538000" ] ;
+         fhir:display [ fhir:v "Agendamento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Scheduling (procedure)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1581000314100" ] ;
+         fhir:display [ fhir:v "Alteração de agendamento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Appointment rescheduling (procedure)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "185335007" ] ;
+         fhir:display [ fhir:v "Cancelamento de agendamento pelo hospital" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Appointment canceled by hospital (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "183671000" ] ;
+         fhir:display [ fhir:v "Remoção da lista de espera" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Removed from waiting list (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "74781006" ] ;
+         fhir:display [ fhir:v "Certificado de admissão aprovado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Admission certification approved (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "16702001" ] ;
+         fhir:display [ fhir:v "Recusa proposta de inscrição" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Admission certification denied (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1591000314102" ] ;
+         fhir:display [ fhir:v "Justificação de falta" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Absence justification (procedure)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "414925007" ] ;
+         fhir:display [ fhir:v "Obtenção de consentimento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Obtaining consent (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Pedido de consentimento" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "311791003" ] ;
+         fhir:display [ fhir:v "Recolha de informação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Information gathering (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Pedido de informação" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "223464006" ] ;
+         fhir:display [ fhir:v "Instruções sobre procedimento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Procedure education (procedure)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "422424000" ] ;
+         fhir:display [ fhir:v "Instruções sobre agendamento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Scheduling instructions (procedure)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1601000314106" ] ;
+         fhir:display [ fhir:v "Pedido de cancelamento de agendamento pelo utente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Appointment cancellation requested by patient (situation)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1611000314109" ] ;
+         fhir:display [ fhir:v "Utente recusa transferência" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Transfer rejected by patient (situation)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "107724000" ] ;
+         fhir:display [ fhir:v "Patient transfer (procedure)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

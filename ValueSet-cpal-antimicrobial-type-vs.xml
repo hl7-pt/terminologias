@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpal-antimicrobial-type-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpal-antimicrobial-type-vs</b></p><a name="cpal-antimicrobial-type-vs"> </a><a name="hccpal-antimicrobial-type-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="http://snomed.info/id/768681000">768681000</a></td><td>Antibacteriano</td><td>Antibacterial (disposition)</td><td>Antibacterial (disposition)</td></tr><tr><td><a href="http://snomed.info/id/768684008">768684008</a></td><td>Antimicobacteriano</td><td>Antimycobacterial (disposition)</td><td>Antimycobacterial (disposition)</td></tr><tr><td><a href="http://snomed.info/id/768682007">768682007</a></td><td>Antifúngico</td><td>Antifungal (disposition)</td><td>Antifungal (disposition)</td></tr><tr><td><a href="http://snomed.info/id/768683002">768683002</a></td><td>Antiviral</td><td>Antiviral (disposition)</td><td>Antiviral (disposition)</td></tr><tr><td><a href="http://snomed.info/id/768685009">768685009</a></td><td>Antiretroviral</td><td>Antiretroviral (disposition)</td><td>Antiretroviral (disposition)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpal-antimicrobial-type-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.16"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPALAntimicrobialTypeVS"/>
+  <title value="CPAL - Antimicrobial Type"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-09-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores AntimicrobialType (CPAL v7.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="768681000"/>
+        <display value="Antibacteriano"/>
+        <designation>
+          <language value="en"/>
+          <value value="Antibacterial"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Antibacterial (disposition)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="768684008"/>
+        <display value="Antimicobacteriano"/>
+        <designation>
+          <language value="en"/>
+          <value value="Antimycobacterial"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Antimycobacterial (disposition)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="768682007"/>
+        <display value="Antifúngico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Antifungal"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Antifungal (disposition)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="768683002"/>
+        <display value="Antiviral"/>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Antiviral (disposition)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="768685009"/>
+        <display value="Antiretroviral"/>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Antiretroviral (disposition)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,357 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cparadm-education-or-schooling-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cparadm-education-or-schooling-vs</b></p><a name=\"cparadm-education-or-schooling-vs\"> </a><a name=\"hccparadm-education-or-schooling-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/224294005\">224294005</a></td><td>Sem educação formal</td><td>Nenhuma educação</td><td>No formal education (finding)</td><td>Nenhuma educação</td></tr><tr><td><a href=\"http://snomed.info/id/741725004\">741725004</a></td><td>Escola primária iniciada, mas não finalizada</td><td>Não terminou 1.º ciclo do ensino básico</td><td>Primary school started but not finished (finding)</td><td>Não terminou 1.º ciclo do ensino básico</td></tr><tr><td><a href=\"http://snomed.info/id/224295006\">224295006</a></td><td>Recebeu apenas o ensino primário</td><td>1.º ciclo do ensino básico</td><td>Only received primary school education (finding)</td><td>1.º ciclo do ensino básico</td></tr><tr><td><a href=\"http://snomed.info/id/531000314100\">531000314100</a></td><td>Ensino até ao 6.º ano do segundo ciclo do ensino básico</td><td>2.º ciclo do ensino básico</td><td>Educated to 6th grade junior high school level (finding)</td><td>2.º ciclo do ensino básico</td></tr><tr><td><a href=\"http://snomed.info/id/541000314106\">541000314106</a></td><td>Ensino até ao 9.º ano do terceiro ciclo do ensino básico</td><td>3.º ciclo do ensino básico</td><td>Educated to 9th grade junior high school level (finding)</td><td>3.º ciclo do ensino básico</td></tr><tr><td><a href=\"http://snomed.info/id/551000314108\">551000314108</a></td><td>Ensino até ao 11.º ano do ensino secundário</td><td>11.º ano</td><td>Educated to 11th grade high school level (finding)</td><td>11.º ano</td></tr><tr><td><a href=\"http://snomed.info/id/473461003\">473461003</a></td><td>Concluiu o ensino secundário</td><td>Ensino secundário</td><td>Educated to high school level (finding)</td><td>Ensino secundário</td></tr><tr><td><a href=\"http://snomed.info/id/440586004\">440586004</a></td><td>Recebeu formação profissional</td><td>Curso profissional</td><td>Received vocational training (finding)</td><td>Curso profissional</td></tr><tr><td><a href=\"http://snomed.info/id/1344658003\">1344658003</a></td><td>Bacharelato</td><td>Ensino superior - Bacherelato</td><td>Associate's degree achieved (finding)</td><td>Ensino superior - Bacherelato</td></tr><tr><td><a href=\"http://snomed.info/id/38861000087100\">38861000087100</a></td><td>Obteve o grau de licenciatura</td><td>Ensino superior - Licenciatura</td><td>Bachelor's degree achieved (finding)</td><td>Ensino superior - Licenciatura</td></tr><tr><td><a href=\"http://snomed.info/id/440344006\">440344006</a></td><td>Recebeu ensino pós-graduado</td><td>Pós-graduação</td><td>Received postgraduate education (finding)</td><td>Pós-graduação</td></tr><tr><td><a href=\"http://snomed.info/id/38881000087106\">38881000087106</a></td><td>Obteve o grau de mestre</td><td>Ensino superior - Mestrado</td><td>Master's degree achieved (finding)</td><td>Ensino superior - Mestrado</td></tr><tr><td><a href=\"http://snomed.info/id/440345007\">440345007</a></td><td>Obteve o grau de doutoramento</td><td>Ensino superior - Doutoramento</td><td>Doctorate degree achieved (finding)</td><td>Ensino superior - Doutoramento</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-education-or-schooling-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.46"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPARADMEducationOrSchoolingVS",
+  "title" : "CPARADM - Education Or Schooling",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores EducationOrSchooling (CPARADM v3.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "224294005",
+        "display" : "Sem educação formal",
+        "designation" : [{
+          "language" : "en",
+          "value" : "No formal education (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Nenhuma educação"
+        }]
+      },
+      {
+        "code" : "741725004",
+        "display" : "Escola primária iniciada, mas não finalizada",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Primary school started but not finished (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Não terminou escola primária"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Não terminou 1.º ciclo do ensino básico"
+        }]
+      },
+      {
+        "code" : "224295006",
+        "display" : "Recebeu apenas o ensino primário",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Only received primary school education (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "4 anos de escolaridade"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "1.º ciclo do ensino básico"
+        }]
+      },
+      {
+        "code" : "531000314100",
+        "display" : "Ensino até ao 6.º ano do segundo ciclo do ensino básico",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Educated to 6th grade junior high school level (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "6 anos de escolaridade"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "2.º ciclo do ensino básico"
+        }]
+      },
+      {
+        "code" : "541000314106",
+        "display" : "Ensino até ao 9.º ano do terceiro ciclo do ensino básico",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Educated to 9th grade junior high school level (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "9.º ano"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "3.º ciclo do ensino básico"
+        }]
+      },
+      {
+        "code" : "551000314108",
+        "display" : "Ensino até ao 11.º ano do ensino secundário",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Educated to 11th grade high school level (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "11.º ano"
+        }]
+      },
+      {
+        "code" : "473461003",
+        "display" : "Concluiu o ensino secundário",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Educated to high school level (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "12.º ano"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Ensino secundário"
+        }]
+      },
+      {
+        "code" : "440586004",
+        "display" : "Recebeu formação profissional",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Received vocational training (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Curso tecnológico"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Curso profissional"
+        }]
+      },
+      {
+        "code" : "1344658003",
+        "display" : "Bacharelato",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Associate's degree achieved (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Ensino superior - Bacherelato"
+        }]
+      },
+      {
+        "code" : "38861000087100",
+        "display" : "Obteve o grau de licenciatura",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Bachelor's degree achieved (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Licenciatura"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Ensino superior - Licenciatura"
+        }]
+      },
+      {
+        "code" : "440344006",
+        "display" : "Recebeu ensino pós-graduado",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Received postgraduate education (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Pós-graduação"
+        }]
+      },
+      {
+        "code" : "38881000087106",
+        "display" : "Obteve o grau de mestre",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Master's degree achieved (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Mestrado"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Ensino superior - Mestrado"
+        }]
+      },
+      {
+        "code" : "440345007",
+        "display" : "Obteve o grau de doutoramento",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Doctorate degree achieved (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Doutoramento"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Ensino superior - Doutoramento"
+        }]
+      }]
+    }]
+  }
+}

@@ -1,0 +1,847 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>CPARADM - Organization Type - JSON Representation - HL7 PT FHIR Implementation Guide: Terminologias v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.44"}
+    h3,h4,h5,h6{--heading-prefix:"6.44"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Terminologias</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="spec.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CPARADM - Organization Type</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Terminologias, publicado por HL7 Portugal. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 1.0.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/hl7-pt/terminologias/tree/master'>https://github.com/hl7-pt/terminologias/tree/master</a> e muda regularmente. Veja o <a href='http://hl7.pt/fhir/history.html'>Diretório de versões publicadas</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/hl7-pt/terminologias/commit/987016b692d9e8d3c724739e2350b4e3cdb93844"><code>987016b6</code></a>.</span></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-cparadm-organization-type-vs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-cparadm-organization-type-vs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-cparadm-organization-type-vs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: CPARADM - Organization Type - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2025-11-01
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-cparadm-organization-type-vs.json" no-download="true">Raw json</a> | <a href="ValueSet-cparadm-organization-type-vs.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R5/resource.html#XValueSet.id">id</a>" : "cparadm-organization-type-vs",
+  "<a href="http://hl7.org/fhir/R5/domainresource.html#XValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narrativa gerada: ValueSet cparadm-organization-type-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cparadm-organization-type-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccparadm-organization-type-vs\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include estes códigos, tal como definidos em &lt;a href=\&quot;http://www.snomed.org/\&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; versão Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Synonym&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (English, en)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Portuguese (pt)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/22232009\&quot;&gt;22232009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hospital&lt;/td&gt;&lt;td&gt;H&lt;/td&gt;&lt;td&gt;Hospital (environment)&lt;/td&gt;&lt;td&gt;H&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/224687002\&quot;&gt;224687002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hospital prisional&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Prison hospital (environment)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/62480006\&quot;&gt;62480006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hospital psiquiátrico&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Psychiatric hospital (environment)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/702916001\&quot;&gt;702916001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Centro de reabilitação&lt;/td&gt;&lt;td&gt;CR&lt;/td&gt;&lt;td&gt;Rehabilitation clinic (environment)&lt;/td&gt;&lt;td&gt;CR&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/264372000\&quot;&gt;264372000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Farmácia&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Pharmacy (environment)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/702846002\&quot;&gt;702846002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clínica de medicina dentária&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Dental clinic (environment)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/39350007\&quot;&gt;39350007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Consultório médico&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Private physicians' group office (environment)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/73588009\&quot;&gt;73588009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laboratório&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Hospital-based laboratory facility (environment)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/789741000\&quot;&gt;789741000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Centro de diálise de ambulatório&lt;/td&gt;&lt;td&gt;Unidade de diálise&lt;/td&gt;&lt;td&gt;Outpatient dialysis treatment facility (environment)&lt;/td&gt;&lt;td&gt;Unidade de diálise&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/264362003\&quot;&gt;264362003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Casa&lt;/td&gt;&lt;td&gt;Domícilio&lt;/td&gt;&lt;td&gt;Home (environment)&lt;/td&gt;&lt;td&gt;Domícilio&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/30629002\&quot;&gt;30629002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Estrutura residencial para idosos&lt;/td&gt;&lt;td&gt;ERPI&lt;/td&gt;&lt;td&gt;Retirement home (environment)&lt;/td&gt;&lt;td&gt;ERPI&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/413456002\&quot;&gt;413456002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Centro de dia de adultos&lt;/td&gt;&lt;td&gt;Centro de dia&lt;/td&gt;&lt;td&gt;Adult day care center (environment)&lt;/td&gt;&lt;td&gt;Centro de dia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1258860000\&quot;&gt;1258860000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Centro de noite&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Overnight day care (environment)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/79491001\&quot;&gt;79491001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clínica médica de radiodiagnóstico&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Hospital-based radiology facility (environment)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1269187006\&quot;&gt;1269187006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clínica de medicina alternativa&lt;/td&gt;&lt;td&gt;Consultório de medicina alternativa&lt;/td&gt;&lt;td&gt;Complementary and alternative medicine center (environment)&lt;/td&gt;&lt;td&gt;Consultório de medicina alternativa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1279970009\&quot;&gt;1279970009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Centro de tratamento de comportamentos aditivos&lt;/td&gt;&lt;td&gt;Clínica de tratamento de comportamentos aditivos&lt;/td&gt;&lt;td&gt;Addictive behavior treatment center (environment)&lt;/td&gt;&lt;td&gt;Clínica de tratamento de comportamentos aditivos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/310207003\&quot;&gt;310207003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Casa de acolhimento&lt;/td&gt;&lt;td&gt;Centro de acolhimento&lt;/td&gt;&lt;td&gt;Sheltered housing (environment)&lt;/td&gt;&lt;td&gt;Centro de acolhimento&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/394573001\&quot;&gt;394573001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maternidade&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Maternity clinic (environment)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/48120004\&quot;&gt;48120004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hospital oncológico&lt;/td&gt;&lt;td&gt;Instituto oncológico&lt;/td&gt;&lt;td&gt;Cancer hospital (environment)&lt;/td&gt;&lt;td&gt;Instituto oncológico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/82242000\&quot;&gt;82242000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hospital pediátrico&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Children's hospital (environment)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1279969008\&quot;&gt;1279969008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clínica de nutrição&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Nutrition clinic (environment)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/702915002\&quot;&gt;702915002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Consultório de psicologia&lt;/td&gt;&lt;td&gt;Clínica de psicologia&lt;/td&gt;&lt;td&gt;Psychology clinic (environment)&lt;/td&gt;&lt;td&gt;Clínica de psicologia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1287108001\&quot;&gt;1287108001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Consultório de optometria&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Optometry clinic (environment)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/45131006\&quot;&gt;45131006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cuidados de saúde primários&lt;/td&gt;&lt;td&gt;CSP&lt;/td&gt;&lt;td&gt;Primary care hospital (environment)&lt;/td&gt;&lt;td&gt;CSP&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/702935001\&quot;&gt;702935001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clínica de fisioterapia&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Physiotherapy clinic (environment)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/971000314106\&quot;&gt;971000314106&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Agrupamento de centros de saúde&lt;/td&gt;&lt;td&gt;ACES&lt;/td&gt;&lt;td&gt;Primary care centre cluster (environment)&lt;/td&gt;&lt;td&gt;ACES&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/981000314109\&quot;&gt;981000314109&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unidade de saúde familiar&lt;/td&gt;&lt;td&gt;USF&lt;/td&gt;&lt;td&gt;Family health unit (environment)&lt;/td&gt;&lt;td&gt;USF&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/991000314107\&quot;&gt;991000314107&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unidade de cuidados de saúde personalizados&lt;/td&gt;&lt;td&gt;UCSP&lt;/td&gt;&lt;td&gt;Personalised healthcare unit (environment)&lt;/td&gt;&lt;td&gt;UCSP&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1001000314101\&quot;&gt;1001000314101&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unidade de recursos assistenciais partilhados&lt;/td&gt;&lt;td&gt;URAP&lt;/td&gt;&lt;td&gt;Shared care resources unit (environment)&lt;/td&gt;&lt;td&gt;URAP&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1011000314103\&quot;&gt;1011000314103&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unidade de saúde pública&lt;/td&gt;&lt;td&gt;USP&lt;/td&gt;&lt;td&gt;Public health unit (environment)&lt;/td&gt;&lt;td&gt;USP&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1021000314107\&quot;&gt;1021000314107&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unidade local de saúde&lt;/td&gt;&lt;td&gt;ULS&lt;/td&gt;&lt;td&gt;Local health unit (environment)&lt;/td&gt;&lt;td&gt;ULS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1031000314105\&quot;&gt;1031000314105&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cuidados continuados integrados&lt;/td&gt;&lt;td&gt;RNCCI&lt;/td&gt;&lt;td&gt;National integrated continued care network (environment)&lt;/td&gt;&lt;td&gt;RNCCI&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.url">url</a>" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-organization-type-vs",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.system">system</a>" : "urn:ietf:rfc:3986",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.value">value</a>" : "urn:oid:2.16.620.1.101.10.4.6.221"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.version">version</a>" : "1.0.0",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.name">name</a>" : "CPARADMOrganizationTypeVS",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.title">title</a>" : "CPARADM - Organization Type",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.date">date</a>" : "2025-11-01",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.publisher">publisher</a>" : "HL7 Portugal",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "HL7 Portugal",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "http://hl7.pt"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "info@hl7.pt"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "HL7 Portugal",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a>" : "geral@hl7.pt",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.use">use</a>" : "work"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.description">description</a>" : "Conjunto de valores OrganizationType (CPARADM v3.0.0).",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "PT",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Portugal"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.author">author</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a>" : "Centro de Terminologias Clínicas"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.system">system</a>" : "http://snomed.info/sct",
+        "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "22232009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Hospital",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Hospital (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "H"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "224687002",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Hospital prisional",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Prison hospital (environment)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "62480006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Hospital psiquiátrico",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Psychiatric hospital (environment)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "702916001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Centro de reabilitação",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Rehabilitation clinic (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "CR"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "264372000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Farmácia",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Pharmacy (environment)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "702846002",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Clínica de medicina dentária",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Dental clinic (environment)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "39350007",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Consultório médico",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Private physicians' group office (environment)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "73588009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Laboratório",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Hospital-based laboratory facility (environment)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "789741000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Centro de diálise de ambulatório",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Outpatient dialysis treatment facility (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Unidade de diálise"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "264362003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Casa",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Home (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Domícilio"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "30629002",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Estrutura residencial para idosos",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Retirement home (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Lar"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Lar de idosos"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "ERPI"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "413456002",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Centro de dia de adultos",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Adult day care center (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Centro de dia"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "1258860000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Centro de noite",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Overnight day care (environment)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "79491001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Clínica médica de radiodiagnóstico",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Hospital-based radiology facility (environment)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "1269187006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Clínica de medicina alternativa",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Complementary and alternative medicine center (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Consultório de medicina alternativa"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "1279970009",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Centro de tratamento de comportamentos aditivos",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Addictive behavior treatment center (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Clínica de tratamento de comportamentos aditivos"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "310207003",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Casa de acolhimento",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Sheltered housing (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Centro de acolhimento"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "394573001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Maternidade",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Maternity clinic (environment)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "48120004",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Hospital oncológico",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Cancer hospital (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Instituto oncológico"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "82242000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Hospital pediátrico",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Children's hospital (environment)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "1279969008",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Clínica de nutrição",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Nutrition clinic (environment)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "702915002",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Consultório de psicologia",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Psychology clinic (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Clínica de psicologia"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "1287108001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Consultório de optometria",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Optometry clinic (environment)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "45131006",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Cuidados de saúde primários",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Primary care hospital (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "CSP"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "702935001",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Clínica de fisioterapia",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Physiotherapy clinic (environment)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "971000314106",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Agrupamento de centros de saúde",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Primary care centre cluster (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "ACES"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "981000314109",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Unidade de saúde familiar",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Family health unit (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "USF"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "991000314107",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Unidade de cuidados de saúde personalizados",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Personalised healthcare unit (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "UCSP"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "1001000314101",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Unidade de recursos assistenciais partilhados",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Shared care resources unit (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "URAP"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "1011000314103",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Unidade de saúde pública",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Public health unit (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "USP"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "1021000314107",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Unidade local de saúde",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "Local health unit (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "ULS"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a>" : "1031000314105",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a>" : "Cuidados continuados integrados",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "National integrated continued care network (environment)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "900000000000013009",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Synonym"
+                },
+                "<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>" : "RNCCI"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Jun 17, 2026 10:02+0000">2026-06-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

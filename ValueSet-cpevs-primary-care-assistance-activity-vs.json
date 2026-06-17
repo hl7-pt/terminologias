@@ -1,0 +1,123 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpevs-primary-care-assistance-activity-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpevs-primary-care-assistance-activity-vs</b></p><a name=\"cpevs-primary-care-assistance-activity-vs\"> </a><a name=\"hccpevs-primary-care-assistance-activity-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/45131006\">45131006</a></td><td>Cuidados de saúde primários</td><td>CSP</td><td>Primary care hospital (environment)</td><td>CSP</td></tr><tr><td><a href=\"http://snomed.info/id/288568004\">288568004</a></td><td>Consulta de cuidados de saúde primários</td><td>Consulta de CSP</td><td>General practice consulting room (environment)</td><td>Consulta de CSP</td></tr><tr><td><a href=\"http://snomed.info/id/113173007\">113173007</a></td><td>Domicílio</td><td>Serviço domiciliário</td><td>Domiciliary (environment)</td><td>Serviço domiciliário</td></tr><tr><td><a href=\"http://snomed.info/id/225746001\">225746001</a></td><td>Enfermaria</td><td>Internamento</td><td>Ward (environment)</td><td>Internamento</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpevs-primary-care-assistance-activity-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.69"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPEVSPrimaryCareAssistanceActivityVS",
+  "title" : "CPEVS - Primary Care AssistanceActivity",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-12-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores PrimaryCareAssistanceActivity (CPEVS v2.1.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "45131006",
+        "display" : "Cuidados de saúde primários",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Primary care hospital (environment)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "CSP"
+        }]
+      },
+      {
+        "code" : "288568004",
+        "display" : "Consulta de cuidados de saúde primários",
+        "designation" : [{
+          "language" : "en",
+          "value" : "General practice consulting room (environment)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Consulta de CSP"
+        }]
+      },
+      {
+        "code" : "113173007",
+        "display" : "Domicílio",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Domiciliary (environment)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Serviço domiciliário"
+        }]
+      },
+      {
+        "code" : "225746001",
+        "display" : "Enfermaria",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Ward (environment)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Internamento"
+        }]
+      }]
+    }]
+  }
+}

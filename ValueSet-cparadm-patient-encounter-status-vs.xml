@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cparadm-patient-encounter-status-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cparadm-patient-encounter-status-vs</b></p><a name="cparadm-patient-encounter-status-vs"> </a><a name="hccparadm-patient-encounter-status-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/769681006">769681006</a></td><td>Primeira consulta</td><td>Primeiro episódio</td><td>First encounter by subject (finding)</td><td>Primeiro episódio</td></tr><tr><td><a href="http://snomed.info/id/769686001">769686001</a></td><td>Consulta subsequente</td><td>Episódio de seguimento</td><td>Subsequent encounter by subject (finding)</td><td>Episódio de seguimento</td></tr><tr><td><a href="http://snomed.info/id/2141000314106">2141000314106</a></td><td>Primeira consulta</td><td>Primeiro episódio</td><td>First encounter (finding)</td><td>Primeiro episódio</td></tr><tr><td><a href="http://snomed.info/id/2151000314108">2151000314108</a></td><td>Consulta subsequente</td><td>Episódio de seguimento</td><td>Subsequent encounter (finding)</td><td>Episódio de seguimento</td></tr><tr><td><a href="http://snomed.info/id/2121000314103">2121000314103</a></td><td>Cuidados personalizados de saúde</td><td/><td>Personalised healthcare encounter (finding)</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-patient-encounter-status-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.27"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPARADMPatientEncounterStatusVS"/>
+  <title value="CPARADM - Patient Encounter Status"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores PatientEncounterStatus (CPARADM v3.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="769681006"/>
+        <display value="Primeira consulta"/>
+        <designation>
+          <language value="en"/>
+          <value value="First encounter by subject (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Primeiro episódio"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="769686001"/>
+        <display value="Consulta subsequente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Subsequent encounter by subject (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Episódio de seguimento"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2141000314106"/>
+        <display value="Primeira consulta"/>
+        <designation>
+          <language value="en"/>
+          <value value="First encounter (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Primeiro episódio"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2151000314108"/>
+        <display value="Consulta subsequente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Subsequent encounter (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Episódio de seguimento"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2121000314103"/>
+        <display value="Cuidados personalizados de saúde"/>
+        <designation>
+          <language value="en"/>
+          <value value="Personalised healthcare encounter (finding)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

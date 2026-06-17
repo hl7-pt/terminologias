@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cparadm-communication-type-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cparadm-communication-type-vs</b></p><a name="cparadm-communication-type-vs"> </a><a name="hccparadm-communication-type-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/255237009">255237009</a></td><td>Síncrono</td><td>Tempo real</td><td>Synchronous (qualifier value)</td><td>Tempo real</td></tr><tr><td><a href="http://snomed.info/id/255215002">255215002</a></td><td>Assíncrono</td><td>Tempo diferido</td><td>Asynchronous (qualifier value)</td><td>Tempo diferido</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-communication-type-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.21"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPARADMCommunicationTypeVS"/>
+  <title value="CPARADM - Communication Type"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-01-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores CommunicationType (CPARADM v3.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="255237009"/>
+        <display value="Síncrono"/>
+        <designation>
+          <language value="en"/>
+          <value value="Synchronous (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Tempo real"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="255215002"/>
+        <display value="Assíncrono"/>
+        <designation>
+          <language value="en"/>
+          <value value="Asynchronous (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Tempo diferido"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,2220 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpn-disorder-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpn-disorder-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpn-disorder-vs</b></p><a name=\"cpn-disorder-vs\"> </a><a name=\"hccpn-disorder-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/65130004\">65130004</a></td><td>Alopécia de etiologia nutricional</td><td>Nutritional alopecia (disorder)</td><td>-</td><td>Nutritional alopecia (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/390951007\">390951007</a></td><td>Alteração da glicemia em jejum</td><td>Impaired fasting glycaemia (disorder)</td><td>Anomalia da glicemia em jejum</td><td>Impaired fasting glycaemia (disorder)</td><td>Anomalia da glicemia em jejum</td></tr><tr><td><a href=\"http://snomed.info/id/66612000\">66612000</a></td><td>Anemia de etiologia nutricional</td><td>Nutritional anemia (disorder)</td><td>Anemia por carência nutricional</td><td>Nutritional anemia (disorder)</td><td>Anemia por carência nutricional</td></tr><tr><td><a href=\"http://snomed.info/id/56882008\">56882008</a></td><td>Anorexia nervosa</td><td>Anorexia nervosa (disorder)</td><td>-</td><td>Anorexia nervosa (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/389026000\">389026000</a></td><td>Ascite</td><td>Ascites (disorder)</td><td>-</td><td>Ascites (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/74257000\">74257000</a></td><td>Atraso no desenvolvimento devido a subnutrição proteico-energética</td><td>Arrested development following protein-calorie malnutrition (disorder)</td><td>Marasmo</td><td>Arrested development following protein-calorie malnutrition (disorder)</td><td>Marasmo</td></tr><tr><td><a href=\"http://snomed.info/id/88092000\">88092000</a></td><td>Atrofia muscular</td><td>Muscle atrophy (disorder)</td><td>-</td><td>Muscle atrophy (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/36656008\">36656008</a></td><td>Beribéri</td><td>Beriberi (disorder)</td><td>-</td><td>Beriberi (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/439960005\">439960005</a></td><td>Binge eating</td><td>Binge eating disorder (disorder)</td><td>-</td><td>Binge eating disorder (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/416316005\">416316005</a></td><td>Blefarite angular</td><td>Angular blepharitis (disorder)</td><td>-</td><td>Angular blepharitis (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/78004001\">78004001</a></td><td>Bulimia</td><td>Bulimia nervosa (disorder)</td><td>-</td><td>Bulimia nervosa (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/281583001\">281583001</a></td><td>Caquexia de etiologia nutricional</td><td>Nutritional wasting (disorder)</td><td>-</td><td>Nutritional wasting (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/66270006\">66270006</a></td><td>Coiloníquia</td><td>Koilonychia (disorder)</td><td/><td>Koilonychia (disorder)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/363246002\">363246002</a></td><td>Condição associada a uma deficiência nutricional</td><td>Nutritional deficiency associated condition (disorder)</td><td>-</td><td>Nutritional deficiency associated condition (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/238114000\">238114000</a></td><td>Défice de ácidos gordos essenciais</td><td>Essential fatty acid deficiency (disorder)</td><td>-</td><td>Essential fatty acid deficiency (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/428707000\">428707000</a></td><td>Défice nutricional na gravidez</td><td>Nutritional deficiency in pregnancy (disorder)</td><td>-</td><td>Nutritional deficiency in pregnancy (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/70241007\">70241007</a></td><td>Défices nutricionais</td><td>Nutritional deficiency disorder (disorder)</td><td>-</td><td>Nutritional deficiency disorder (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/190633005\">190633005</a></td><td>Deficiência de ácido fólico</td><td>Folic acid deficiency (disorder)</td><td>Deficiência de vitamina B9</td><td>Folic acid deficiency (disorder)</td><td>Deficiência de vitamina B9</td></tr><tr><td><a href=\"http://snomed.info/id/35240004\">35240004</a></td><td>Deficiência de ferro</td><td>Iron deficiency (disorder)</td><td>-</td><td>Iron deficiency (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/190656001\">190656001</a></td><td>Deficiência de ingestão cálcio</td><td>Dietary calcium deficiency (disorder)</td><td>-</td><td>Dietary calcium deficiency (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/190657005\">190657005</a></td><td>Deficiência de ingestão iodo</td><td>Dietary iodine deficiency (disorder)</td><td>-</td><td>Dietary iodine deficiency (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/111379007\">111379007</a></td><td>Deficiência de minerais</td><td>Mineral deficiency (disorder)</td><td>Défice de minerais</td><td>Mineral deficiency (disorder)</td><td>Défice de minerais</td></tr><tr><td><a href=\"http://snomed.info/id/190669002\">190669002</a></td><td>Deficiência de múltiplos nutrientes</td><td>Deficiency of multiple nutrient elements (disorder)</td><td>-</td><td>Deficiency of multiple nutrient elements (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/190634004\">190634004</a></td><td>Deficiência de vitamina B12</td><td>Cobalamin deficiency (disorder)</td><td>Deficiência de cianobalamina</td><td>Cobalamin deficiency (disorder)</td><td>Deficiência de cianobalamina</td></tr><tr><td><a href=\"http://snomed.info/id/85670002\">85670002</a></td><td>Deficiência de vitaminas</td><td>Vitamin deficiency (disorder)</td><td>Défice vitamínico</td><td>Vitamin deficiency (disorder)</td><td>Défice vitamínico</td></tr><tr><td><a href=\"http://snomed.info/id/285588004\">285588004</a></td><td>Deficiência nutricional por falta de alimentos</td><td>Nutrition deficiency due to insufficient food (disorder)</td><td>-</td><td>Nutrition deficiency due to insufficient food (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/50563003\">50563003</a></td><td>Dermatite seborreica</td><td>Seborrheic dermatitis (disorder)</td><td>-</td><td>Seborrheic dermatitis (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/34095006\">34095006</a></td><td>Desidratação</td><td>Dehydration (disorder)</td><td>-</td><td>Dehydration (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/65404009\">65404009</a></td><td>Desnutrição</td><td>Undernutrition (disorder)</td><td>-</td><td>Undernutrition (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/13365009\">13365009</a></td><td>Desnutrição após cirurgia do trato gastrointestinal</td><td>Malnutrition following gastrointestinal surgery (disorder)</td><td>-</td><td>Malnutrition following gastrointestinal surgery (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/441971000124107\">441971000124107</a></td><td>Desnutrição associada à doença</td><td>Chronic disease-related malnutrition (disorder)</td><td>-</td><td>Chronic disease-related malnutrition (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/302869005\">302869005</a></td><td>Desnutrição crónica em pediatria</td><td>Nutritional stunting (disorder)</td><td>-</td><td>Nutritional stunting (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/276608005\">276608005</a></td><td>Desnutrição fetal</td><td>Poor fetal nutrition (disorder)</td><td>-</td><td>Poor fetal nutrition (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/77702009\">77702009</a></td><td>Desnutrição ligeira (Gomez: igual ou superior a 75% e inferior a 90% do peso corporal normal)</td><td>Malnutrition of mild degree (Gomez: 75% to less than 90% of standard weight) (disorder)</td><td>-</td><td>Malnutrition of mild degree (Gomez: 75% to less than 90% of standard weight) (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/77091003\">77091003</a></td><td>Desnutrição moderada (Gomez: igual ou superior a 60% e inferior a 75% do peso corporal normal)</td><td>Malnutrition of moderate degree (Gomez: 60% to less than 75% of standard weight) (disorder)</td><td>-</td><td>Malnutrition of moderate degree (Gomez: 60% to less than 75% of standard weight) (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/199741009\">199741009</a></td><td>Desnutrição na gravidez</td><td>Malnutrition in pregnancy (disorder)</td><td>-</td><td>Malnutrition in pregnancy (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/190603003\">190603003</a></td><td>Desnutrição proteico energética ligeira (peso para idade 75 a 89% do normal)</td><td>Mild protein-calorie malnutrition (weight for age 75-89% of standard) (disorder)</td><td>-</td><td>Mild protein-calorie malnutrition (weight for age 75-89% of standard) (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/238107002\">238107002</a></td><td>Desnutrição proteico-energética</td><td>Deficiency of macronutrients (disorder)</td><td>-</td><td>Deficiency of macronutrients (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/360549009\">360549009</a></td><td>Desnutrição proteico-energética grave (Gomez: menos de 60% do peso corporal normal)</td><td>Severe protein-calorie malnutrition (Gomez: less than 60% of standard weight) (disorder)</td><td>-</td><td>Severe protein-calorie malnutrition (Gomez: less than 60% of standard weight) (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/190606006\">190606006</a></td><td>Desnutrição proteico-energética moderada</td><td>Moderate protein energy malnutrition (disorder)</td><td>-</td><td>Moderate protein energy malnutrition (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/190602008\">190602008</a></td><td>Desnutrição proteico-energética moderada (peso para idade 60 a 74% do normal)</td><td>Moderate protein-calorie malnutrition (weight for age 60-74% of standard) (disorder)</td><td>-</td><td>Moderate protein-calorie malnutrition (weight for age 60-74% of standard) (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/2492009\">2492009</a></td><td>Doença de etiologia nutricional</td><td>Nutritional disorder (disorder)</td><td>Disfunção nutricional</td><td>Nutritional disorder (disorder)</td><td>Disfunção nutricional</td></tr><tr><td><a href=\"http://snomed.info/id/72366004\">72366004</a></td><td>Doenças do comportamento alimentar</td><td>Eating disorder (disorder)</td><td>-</td><td>Eating disorder (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/360554000\">360554000</a></td><td>Edema de etiologia alimentar</td><td>Alimentary edema (disorder)</td><td>-</td><td>Alimentary edema (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/89091004\">89091004</a></td><td>Edema ocular</td><td>Edema of eyelid (disorder)</td><td>-</td><td>Edema of eyelid (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/88153005\">88153005</a></td><td>Escorbuto infantil</td><td>Infantile scurvy (disorder)</td><td>-</td><td>Infantile scurvy (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/266429005\">266429005</a></td><td>Estomatite angular</td><td>Angular cheilitis (disorder)</td><td>-</td><td>Angular cheilitis (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/222376002\">222376002</a></td><td>Excesso de calorias</td><td>Calorie overload (disorder)</td><td>-</td><td>Calorie overload (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/10836241000119104\">10836241000119104</a></td><td>Fissuras mamilares associadas à amamentação</td><td>Cracked nipple associated with lactation (disorder)</td><td>-</td><td>Cracked nipple associated with lactation (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/53024001\">53024001</a></td><td>Ganho de peso insuficiente durante a gravidez</td><td>Insufficient weight gain of pregnancy (disorder)</td><td>-</td><td>Insufficient weight gain of pregnancy (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/45534005\">45534005</a></td><td>Glossite</td><td>Glossitis (disorder)</td><td>-</td><td>Glossitis (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/719182002\">719182002</a></td><td>Hemorragia perifolicular</td><td>Perifollicular petechiae of skin (disorder)</td><td>-</td><td>Perifollicular petechiae of skin (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/72000004\">72000004</a></td><td>Hipovitaminose Vit A</td><td>Vitamin A deficiency (disorder)</td><td>-</td><td>Vitamin A deficiency (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/34713006\">34713006</a></td><td>Hipovitaminose Vit D</td><td>Vitamin D deficiency (disorder)</td><td>-</td><td>Vitamin D deficiency (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/48026007\">48026007</a></td><td>Inanição</td><td>Inanition (disorder)</td><td>-</td><td>Inanition (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/286542000\">286542000</a></td><td>Inanição por falta de alimento</td><td>Inanition due to lack of food (disorder)</td><td>Fraqueza extrema por falta de alimentos</td><td>Inanition due to lack of food (disorder)</td><td>Fraqueza extrema por falta de alimentos</td></tr><tr><td><a href=\"http://snomed.info/id/58262005\">58262005</a></td><td>Kwashiorkor</td><td>Kwashiorkor (disorder)</td><td>-</td><td>Kwashiorkor (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/238109004\">238109004</a></td><td>Kwashiorkor marasmático</td><td>Marasmic kwashiorkor (disorder)</td><td>-</td><td>Marasmic kwashiorkor (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/44087005\">44087005</a></td><td>Linhas transversais nas unhas</td><td>Beau's lines (disorder)</td><td>-</td><td>Beau's lines (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/71325002\">71325002</a></td><td>Lipodistrofia</td><td>Lipodystrophy (disorder)</td><td>-</td><td>Lipodystrophy (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/54840006\">54840006</a></td><td>Má evolução estaturo-ponderal</td><td>Failure to thrive (disorder)</td><td>-</td><td>Failure to thrive (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/272588001\">272588001</a></td><td>Má nutrição calórica</td><td>Malnutrition (calorie) (disorder)</td><td>-</td><td>Malnutrition (calorie) (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/29740003\">29740003</a></td><td>Marasmo de etiologia nutricional</td><td>Nutritional marasmus (disorder)</td><td>-</td><td>Nutritional marasmus (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/414916001\">414916001</a></td><td>Obesidade</td><td>Obesity (disorder)</td><td>-</td><td>Obesity (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/444862003\">444862003</a></td><td>Obesidade infantil</td><td>Childhood obesity (disorder)</td><td>-</td><td>Childhood obesity (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/111360009\">111360009</a></td><td>Obstipação</td><td>Obstipation (disorder)</td><td>-</td><td>Obstipation (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/870568002\">870568002</a></td><td>Ortorexia nervosa</td><td>Orthorexia nervosa (disorder)</td><td/><td>Orthorexia nervosa (disorder)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/418186002\">418186002</a></td><td>Pelagra</td><td>Pellagra (disorder)</td><td>-</td><td>Pellagra (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/423716004\">423716004</a></td><td>Petéquia</td><td>Petechiae of skin (disorder)</td><td>-</td><td>Petechiae of skin (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/14077003\">14077003</a></td><td>Pica</td><td>Pica (disorder)</td><td>-</td><td>Pica (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/287519002\">287519002</a></td><td>Privação de alimentos</td><td>Deprivation of food (disorder)</td><td>-</td><td>Deprivation of food (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/249520001\">249520001</a></td><td>Purgação</td><td>Self-induced purging (disorder)</td><td>-</td><td>Self-induced purging (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/16459000\">16459000</a></td><td>Queilose</td><td>Cheilosis (disorder)</td><td>-</td><td>Cheilosis (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/85149007\">85149007</a></td><td>Queratomalacia</td><td>Keratomalacia (disorder)</td><td>-</td><td>Keratomalacia (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/772791006\">772791006</a></td><td>Sarcopenia</td><td>Sarcopenia (disorder)</td><td>-</td><td>Sarcopenia (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/427698009\">427698009</a></td><td>Síndrome de realimentação</td><td>Refeeding syndrome (disorder)</td><td>-</td><td>Refeeding syndrome (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/237602007\">237602007</a></td><td>Síndrome metabólica X</td><td>Metabolic syndrome X (disorder)</td><td>-</td><td>Metabolic syndrome X (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/9414007\">9414007</a></td><td>Tolerância diminuída à glicose</td><td>Impaired glucose tolerance (disorder)</td><td>-</td><td>Impaired glucose tolerance (disorder)</td><td>-</td></tr><tr><td><a href=\"http://snomed.info/id/75258004\">75258004</a></td><td>Toxinfeção alimentar</td><td>Food poisoning (disorder)</td><td>Intoxicação alimentar</td><td>Food poisoning (disorder)</td><td>Intoxicação alimentar</td></tr><tr><td><a href=\"http://snomed.info/id/422400008\">422400008</a></td><td>Vómitos</td><td>Vomiting (disorder)</td><td>-</td><td>Vomiting (disorder)</td><td>-</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpn-disorder-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPNDisorderVS"] ; # 
+  fhir:title [ fhir:v "CPN - Disorder"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2021-12-22"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores Disorder (CPN v3.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "65130004" ] ;
+         fhir:display [ fhir:v "Alopécia de etiologia nutricional" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nutritional alopecia" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nutritional alopecia (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "390951007" ] ;
+         fhir:display [ fhir:v "Alteração da glicemia em jejum" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Impaired fasting glycaemia" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Impaired fasting glycaemia (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Anomalia nos níveis de glicose em jejum" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Anomalia da glicemia em jejum" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "66612000" ] ;
+         fhir:display [ fhir:v "Anemia de etiologia nutricional" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nutritional anemia" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nutritional anemia (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Anemia carencial" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Anemia por carência nutricional" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "56882008" ] ;
+         fhir:display [ fhir:v "Anorexia nervosa" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Anorexia nervosa (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "389026000" ] ;
+         fhir:display [ fhir:v "Ascite" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Ascites" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Ascites (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "74257000" ] ;
+         fhir:display [ fhir:v "Atraso no desenvolvimento devido a subnutrição proteico-energética" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Arrested development following protein-calorie malnutrition" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Arrested development following protein-calorie malnutrition (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Atraso no desenvolvimento por desnutrição enérgico-proteica" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Marasmo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "88092000" ] ;
+         fhir:display [ fhir:v "Atrofia muscular" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Muscle atrophy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Muscle atrophy (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "36656008" ] ;
+         fhir:display [ fhir:v "Beribéri" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Beriberi" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Beriberi (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "439960005" ] ;
+         fhir:display [ fhir:v "Binge eating" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Binge eating disorder" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Binge eating disorder (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "416316005" ] ;
+         fhir:display [ fhir:v "Blefarite angular" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Angular blepharitis" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Angular blepharitis (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "78004001" ] ;
+         fhir:display [ fhir:v "Bulimia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bulimia nervosa" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Bulimia nervosa (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "281583001" ] ;
+         fhir:display [ fhir:v "Caquexia de etiologia nutricional" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nutritional wasting" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nutritional wasting (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "66270006" ] ;
+         fhir:display [ fhir:v "Coiloníquia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Koilonychia" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Koilonychia (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "363246002" ] ;
+         fhir:display [ fhir:v "Condição associada a uma deficiência nutricional" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nutritional deficiency associated condition" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nutritional deficiency associated condition (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Doença associada a uma deficiência nutricional" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "238114000" ] ;
+         fhir:display [ fhir:v "Défice de ácidos gordos essenciais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Essential fatty acid deficiency" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Essential fatty acid deficiency (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "428707000" ] ;
+         fhir:display [ fhir:v "Défice nutricional na gravidez" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nutritional deficiency in pregnancy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nutritional deficiency in pregnancy (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "70241007" ] ;
+         fhir:display [ fhir:v "Défices nutricionais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nutritional deficiency disorder" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nutritional deficiency disorder (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "190633005" ] ;
+         fhir:display [ fhir:v "Deficiência de ácido fólico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Folic acid deficiency" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Folic acid deficiency (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Deficiência de vitamina B9" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "35240004" ] ;
+         fhir:display [ fhir:v "Deficiência de ferro" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Iron deficiency" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Iron deficiency (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "190656001" ] ;
+         fhir:display [ fhir:v "Deficiência de ingestão cálcio" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Dietary calcium deficiency" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Dietary calcium deficiency (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "190657005" ] ;
+         fhir:display [ fhir:v "Deficiência de ingestão iodo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Dietary iodine deficiency" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Dietary iodine deficiency (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "111379007" ] ;
+         fhir:display [ fhir:v "Deficiência de minerais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mineral deficiency" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Mineral deficiency (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Défice de minerais" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "190669002" ] ;
+         fhir:display [ fhir:v "Deficiência de múltiplos nutrientes" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Deficiency of multiple nutrient elements" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Deficiency of multiple nutrient elements (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Carência de múltiplos nutrientes" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "190634004" ] ;
+         fhir:display [ fhir:v "Deficiência de vitamina B12" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cobalamin deficiency" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Cobalamin deficiency (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Deficiência de cianobalamina" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "85670002" ] ;
+         fhir:display [ fhir:v "Deficiência de vitaminas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Vitamin deficiency" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Vitamin deficiency (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Défice vitamínico" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "285588004" ] ;
+         fhir:display [ fhir:v "Deficiência nutricional por falta de alimentos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nutrition deficiency due to insufficient food" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nutrition deficiency due to insufficient food (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "50563003" ] ;
+         fhir:display [ fhir:v "Dermatite seborreica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Seborrheic dermatitis" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Seborrheic dermatitis (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "34095006" ] ;
+         fhir:display [ fhir:v "Desidratação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Dehydration" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Dehydration (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "65404009" ] ;
+         fhir:display [ fhir:v "Desnutrição" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Undernutrition" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Undernutrition (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Subnutrição" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "13365009" ] ;
+         fhir:display [ fhir:v "Desnutrição após cirurgia do trato gastrointestinal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Malnutrition following gastrointestinal surgery" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Malnutrition following gastrointestinal surgery (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "441971000124107" ] ;
+         fhir:display [ fhir:v "Desnutrição associada à doença" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Chronic disease-related malnutrition" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Chronic disease-related malnutrition (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "302869005" ] ;
+         fhir:display [ fhir:v "Desnutrição crónica em pediatria" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nutritional stunting" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nutritional stunting (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "276608005" ] ;
+         fhir:display [ fhir:v "Desnutrição fetal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Poor fetal nutrition" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Poor fetal nutrition (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "77702009" ] ;
+         fhir:display [ fhir:v "Desnutrição ligeira (Gomez: igual ou superior a 75% e inferior a 90% do peso corporal normal)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Malnutrition of mild degree (Gomez: 75% to less than 90% of standard weight)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Malnutrition of mild degree (Gomez: 75% to less than 90% of standard weight) (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "77091003" ] ;
+         fhir:display [ fhir:v "Desnutrição moderada (Gomez: igual ou superior a 60% e inferior a 75% do peso corporal normal)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Malnutrition of moderate degree (Gomez: 60% to less than 75% of standard weight)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Malnutrition of moderate degree (Gomez: 60% to less than 75% of standard weight) (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "199741009" ] ;
+         fhir:display [ fhir:v "Desnutrição na gravidez" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Malnutrition in pregnancy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Malnutrition in pregnancy (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Má nutrição na gravidez" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "190603003" ] ;
+         fhir:display [ fhir:v "Desnutrição proteico energética ligeira (peso para idade 75 a 89% do normal)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mild protein-calorie malnutrition (weight for age 75-89% of standard)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Mild protein-calorie malnutrition (weight for age 75-89% of standard) (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "238107002" ] ;
+         fhir:display [ fhir:v "Desnutrição proteico-energética" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Deficiency of macronutrients" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Deficiency of macronutrients (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "360549009" ] ;
+         fhir:display [ fhir:v "Desnutrição proteico-energética grave (Gomez: menos de 60% do peso corporal normal)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Severe protein-calorie malnutrition (Gomez: less than 60% of standard weight)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Severe protein-calorie malnutrition (Gomez: less than 60% of standard weight) (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "190606006" ] ;
+         fhir:display [ fhir:v "Desnutrição proteico-energética moderada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Moderate protein energy malnutrition" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Moderate protein energy malnutrition (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "190602008" ] ;
+         fhir:display [ fhir:v "Desnutrição proteico-energética moderada (peso para idade 60 a 74% do normal)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Moderate protein-calorie malnutrition (weight for age 60-74% of standard)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Moderate protein-calorie malnutrition (weight for age 60-74% of standard) (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Desnutrição proteico-energética moderada ((peso para idade 60 a 74% do normal)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "2492009" ] ;
+         fhir:display [ fhir:v "Doença de etiologia nutricional" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nutritional disorder" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nutritional disorder (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Doença de causa nutricional" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Disfunção nutricional" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "72366004" ] ;
+         fhir:display [ fhir:v "Doenças do comportamento alimentar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Eating disorder" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Eating disorder (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Perturbações do comportamento alimentar" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "360554000" ] ;
+         fhir:display [ fhir:v "Edema de etiologia alimentar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Alimentary edema" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Alimentary edema (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Edema de causa alimentar" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "89091004" ] ;
+         fhir:display [ fhir:v "Edema ocular" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Edema of eyelid" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Edema of eyelid (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "88153005" ] ;
+         fhir:display [ fhir:v "Escorbuto infantil" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Infantile scurvy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Infantile scurvy (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Escorbuto infanil" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "266429005" ] ;
+         fhir:display [ fhir:v "Estomatite angular" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Angular cheilitis" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Angular cheilitis (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "222376002" ] ;
+         fhir:display [ fhir:v "Excesso de calorias" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Calorie overload" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Calorie overload (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Consumo energético excessivo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "10836241000119104" ] ;
+         fhir:display [ fhir:v "Fissuras mamilares associadas à amamentação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cracked nipple associated with lactation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Cracked nipple associated with lactation (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Fissuras mamilares associadas à amentação" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "53024001" ] ;
+         fhir:display [ fhir:v "Ganho de peso insuficiente durante a gravidez" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Insufficient weight gain of pregnancy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Insufficient weight gain of pregnancy (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Incremento deficitário de peso durante a gravidez" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "45534005" ] ;
+         fhir:display [ fhir:v "Glossite" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Glossitis" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Glossitis (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "719182002" ] ;
+         fhir:display [ fhir:v "Hemorragia perifolicular" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Perifollicular petechiae of skin" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Perifollicular petechiae of skin (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "72000004" ] ;
+         fhir:display [ fhir:v "Hipovitaminose Vit A" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Vitamin A deficiency" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Vitamin A deficiency (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Deficiência de vitamina A" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "34713006" ] ;
+         fhir:display [ fhir:v "Hipovitaminose Vit D" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Vitamin D deficiency" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Vitamin D deficiency (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Deficiência de vitamina D" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "48026007" ] ;
+         fhir:display [ fhir:v "Inanição" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Inanition" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Inanition (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "286542000" ] ;
+         fhir:display [ fhir:v "Inanição por falta de alimento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Inanition due to lack of food" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Inanition due to lack of food (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Astenia por carência alimentar" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Fraqueza extrema por falta de alimentos" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "58262005" ] ;
+         fhir:display [ fhir:v "Kwashiorkor" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Kwashiorkor (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "238109004" ] ;
+         fhir:display [ fhir:v "Kwashiorkor marasmático" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Marasmic kwashiorkor" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Marasmic kwashiorkor (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "44087005" ] ;
+         fhir:display [ fhir:v "Linhas transversais nas unhas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Beau's lines" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Beau's lines (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "71325002" ] ;
+         fhir:display [ fhir:v "Lipodistrofia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Lipodystrophy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Lipodystrophy (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "54840006" ] ;
+         fhir:display [ fhir:v "Má evolução estaturo-ponderal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Failure to thrive" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Failure to thrive (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Atraso de crescimento" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "272588001" ] ;
+         fhir:display [ fhir:v "Má nutrição calórica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Malnutrition (calorie)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Malnutrition (calorie) (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Malnutrição" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "29740003" ] ;
+         fhir:display [ fhir:v "Marasmo de etiologia nutricional" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nutritional marasmus" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Nutritional marasmus (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "414916001" ] ;
+         fhir:display [ fhir:v "Obesidade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Obesity" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Obesity (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "444862003" ] ;
+         fhir:display [ fhir:v "Obesidade infantil" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Childhood obesity" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Childhood obesity (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "111360009" ] ;
+         fhir:display [ fhir:v "Obstipação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Obstipation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Obstipation (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "870568002" ] ;
+         fhir:display [ fhir:v "Ortorexia nervosa" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Orthorexia nervosa" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Orthorexia nervosa (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "418186002" ] ;
+         fhir:display [ fhir:v "Pelagra" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pellagra" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Pellagra (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "423716004" ] ;
+         fhir:display [ fhir:v "Petéquia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Petechiae of skin" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Petechiae of skin (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14077003" ] ;
+         fhir:display [ fhir:v "Pica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Pica (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "287519002" ] ;
+         fhir:display [ fhir:v "Privação de alimentos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Deprivation of food" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Deprivation of food (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "249520001" ] ;
+         fhir:display [ fhir:v "Purgação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Self-induced purging" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Self-induced purging (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "16459000" ] ;
+         fhir:display [ fhir:v "Queilose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cheilosis" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Cheilosis (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "85149007" ] ;
+         fhir:display [ fhir:v "Queratomalacia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Keratomalacia" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Keratomalacia (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "772791006" ] ;
+         fhir:display [ fhir:v "Sarcopenia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Sarcopenia (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "427698009" ] ;
+         fhir:display [ fhir:v "Síndrome de realimentação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Refeeding syndrome" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Refeeding syndrome (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "237602007" ] ;
+         fhir:display [ fhir:v "Síndrome metabólica X" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Metabolic syndrome X" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Metabolic syndrome X (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Síndrome metabólica" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "9414007" ] ;
+         fhir:display [ fhir:v "Tolerância diminuída à glicose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Impaired glucose tolerance" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Impaired glucose tolerance (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "75258004" ] ;
+         fhir:display [ fhir:v "Toxinfeção alimentar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Food poisoning" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Food poisoning (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Intoxicação alimentar" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "422400008" ] ;
+         fhir:display [ fhir:v "Vómitos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Vomiting" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Vomiting (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "-" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

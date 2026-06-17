@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpcbd-person-in-family-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpcbd-person-in-family-vs</b></p><a name="cpcbd-person-in-family-vs"> </a><a name="hccpcbd-person-in-family-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="http://snomed.info/id/25211005">25211005</a></td><td>Tia</td><td>Aunt (person)</td></tr><tr><td><a href="http://snomed.info/id/67822003">67822003</a></td><td>Filho/filha</td><td>Child (person)</td></tr><tr><td><a href="http://snomed.info/id/393547004">393547004</a></td><td>Criança adotada</td><td>Adopted child (person)</td></tr><tr><td><a href="http://snomed.info/id/39062003">39062003</a></td><td>Criança de acolhimento</td><td>Foster child (person)</td></tr><tr><td><a href="http://snomed.info/id/55538000">55538000</a></td><td>Primo/prima</td><td>Cousin (person)</td></tr><tr><td><a href="http://snomed.info/id/83420006">83420006</a></td><td>Filha biológica</td><td>Natural daughter (person)</td></tr><tr><td><a href="http://snomed.info/id/393549001">393549001</a></td><td>Filha adoptiva</td><td>Adopted daughter (person)</td></tr><tr><td><a href="http://snomed.info/id/66089001">66089001</a></td><td>Filha</td><td>Daughter (person)</td></tr><tr><td><a href="http://snomed.info/id/31831004">31831004</a></td><td>Filha de acolhimento</td><td>Foster daughter (person)</td></tr><tr><td><a href="http://snomed.info/id/303071001">303071001</a></td><td>Membro da família</td><td>Person in the family (person)</td></tr><tr><td><a href="http://snomed.info/id/9947008">9947008</a></td><td>Pai biológico</td><td>Natural father (person)</td></tr><tr><td><a href="http://snomed.info/id/5171000124108">5171000124108</a></td><td>Sogro</td><td>Father-in-law (person)</td></tr><tr><td><a href="http://snomed.info/id/33969000">33969000</a></td><td>Bisavô</td><td>Great grandparent (person)</td></tr><tr><td><a href="http://snomed.info/id/86372007">86372007</a></td><td>Neto/neta</td><td>Grandchild (person)</td></tr><tr><td><a href="http://snomed.info/id/62296006">62296006</a></td><td>Avô biológico</td><td>Natural grandfather (person)</td></tr><tr><td><a href="http://snomed.info/id/65656005">65656005</a></td><td>Mãe biológica</td><td>Natural mother (person)</td></tr><tr><td><a href="http://snomed.info/id/5181000124106">5181000124106</a></td><td>Sogra</td><td>Mother-in-law (person)</td></tr><tr><td><a href="http://snomed.info/id/75226009">75226009</a></td><td>Filho/filha biológico</td><td>Natural child (person)</td></tr><tr><td><a href="http://snomed.info/id/34581001">34581001</a></td><td>Sobrinha</td><td>Niece (person)</td></tr><tr><td><a href="http://snomed.info/id/83559000">83559000</a></td><td>Sobrinho</td><td>Nephew (person)</td></tr><tr><td><a href="http://snomed.info/id/40683002">40683002</a></td><td>Pai/mãe</td><td>Parent (person)</td></tr><tr><td><a href="http://snomed.info/id/5161000124101">5161000124101</a></td><td>Sogro/sogra</td><td>Parent in-law (person)</td></tr><tr><td><a href="http://snomed.info/id/375005">375005</a></td><td>Irmão/irmã</td><td>Sibling (person)</td></tr><tr><td><a href="http://snomed.info/id/113160008">113160008</a></td><td>Filho biológico</td><td>Natural son (person)</td></tr><tr><td><a href="http://snomed.info/id/394560000">394560000</a></td><td>Filho adoptivo</td><td>Adopted son (person)</td></tr><tr><td><a href="http://snomed.info/id/65616008">65616008</a></td><td>Filho</td><td>Son (person)</td></tr><tr><td><a href="http://snomed.info/id/12241003">12241003</a></td><td>Filho de acolhimento</td><td>Foster son (person)</td></tr><tr><td><a href="http://snomed.info/id/127848009">127848009</a></td><td>Cônjuge</td><td>Spouse (person)</td></tr><tr><td><a href="http://snomed.info/id/86764008">86764008</a></td><td>Enteado/enteada</td><td>Stepchild (person)</td></tr><tr><td><a href="http://snomed.info/id/22573006">22573006</a></td><td>Enteada</td><td>Stepdaughter (person)</td></tr><tr><td><a href="http://snomed.info/id/8674003">8674003</a></td><td>Enteado</td><td>Stepson (person)</td></tr><tr><td><a href="http://snomed.info/id/38048003">38048003</a></td><td>Tio</td><td>Uncle (person)</td></tr><tr><td><a href="http://snomed.info/id/127849001">127849001</a></td><td>Marido</td><td>Husband (person)</td></tr><tr><td><a href="http://snomed.info/id/2272004">2272004</a></td><td>Meia irmã</td><td>Half-sister (person)</td></tr><tr><td><a href="http://snomed.info/id/45929001">45929001</a></td><td>Meio irmão</td><td>Half-brother (person)</td></tr><tr><td><a href="http://snomed.info/id/127850001">127850001</a></td><td>Mulher</td><td>Wife (person)</td></tr><tr><td><a href="http://snomed.info/id/736454006">736454006</a></td><td>Tia materna</td><td>Maternal aunt (person)</td></tr><tr><td><a href="http://snomed.info/id/736455007">736455007</a></td><td>Tia paterna</td><td>Paternal aunt (person)</td></tr><tr><td><a href="http://snomed.info/id/719759007">719759007</a></td><td>Primo materno</td><td>Maternal cousin (person)</td></tr><tr><td><a href="http://snomed.info/id/719760002">719760002</a></td><td>Primo paterno</td><td>Paternal cousin (person)</td></tr><tr><td><a href="http://snomed.info/id/50261002">50261002</a></td><td>Bisavô</td><td>Great grandfather (person)</td></tr><tr><td><a href="http://snomed.info/id/78652007">78652007</a></td><td>Bisavó</td><td>Great grandmother (person)</td></tr><tr><td><a href="http://snomed.info/id/44181008">44181008</a></td><td>Neta</td><td>Granddaughter (person)</td></tr><tr><td><a href="http://snomed.info/id/70578009">70578009</a></td><td>Neto</td><td>Grandson (person)</td></tr><tr><td><a href="http://snomed.info/id/34871008">34871008</a></td><td>Avô</td><td>Grandfather (person)</td></tr><tr><td><a href="http://snomed.info/id/394857004">394857004</a></td><td>Avô materno</td><td>Maternal grandfather (person)</td></tr><tr><td><a href="http://snomed.info/id/394856008">394856008</a></td><td>Avô paterno</td><td>Paternal grandfather (person)</td></tr><tr><td><a href="http://snomed.info/id/113157001">113157001</a></td><td>Avó</td><td>Grandmother (person)</td></tr><tr><td><a href="http://snomed.info/id/394859001">394859001</a></td><td>Avó materna</td><td>Maternal grandmother (person)</td></tr><tr><td><a href="http://snomed.info/id/394858009">394858009</a></td><td>Avó paterna</td><td>Paternal grandmother (person)</td></tr><tr><td><a href="http://snomed.info/id/442031000124102">442031000124102</a></td><td>Tio materna</td><td>Maternal uncle (person)</td></tr><tr><td><a href="http://snomed.info/id/442041000124107">442041000124107</a></td><td>Tio paterno</td><td>Paternal uncle (person)</td></tr><tr><td><a href="http://snomed.info/id/41953004">41953004</a></td><td>Pai/mãe adoptivo</td><td>Adoptive parent (person)</td></tr><tr><td><a href="http://snomed.info/id/609005">609005</a></td><td>Pai adoptivo</td><td>Adoptive father (person)</td></tr><tr><td><a href="http://snomed.info/id/21464003">21464003</a></td><td>Mãe adoptiva</td><td>Adoptive mother (person)</td></tr><tr><td><a href="http://snomed.info/id/8458002">8458002</a></td><td>Pai de acolhimento</td><td>Foster father (person)</td></tr><tr><td><a href="http://snomed.info/id/30578000">30578000</a></td><td>Padrasto</td><td>Stepfather (person)</td></tr><tr><td><a href="http://snomed.info/id/38265003">38265003</a></td><td>Mãe de acolhimento</td><td>Foster mother (person)</td></tr><tr><td><a href="http://snomed.info/id/65412001">65412001</a></td><td>Madrasta</td><td>Stepmother (person)</td></tr><tr><td><a href="http://snomed.info/id/13646006">13646006</a></td><td>Pai/mãe biológico</td><td>Natural parent (person)</td></tr><tr><td><a href="http://snomed.info/id/90921004">90921004</a></td><td>Pai/mãe de acolhimento</td><td>Foster parent (person)</td></tr><tr><td><a href="http://snomed.info/id/70924004">70924004</a></td><td>Irmão</td><td>Brother (person)</td></tr><tr><td><a href="http://snomed.info/id/60614009">60614009</a></td><td>Irmão biológico</td><td>Natural brother (person)</td></tr><tr><td><a href="http://snomed.info/id/81276006">81276006</a></td><td>Irmão gémeo</td><td>Twin brother (person)</td></tr><tr><td><a href="http://snomed.info/id/81467001">81467001</a></td><td>Irmão gémeo não idêntico</td><td>Fraternal twin brother (person)</td></tr><tr><td><a href="http://snomed.info/id/78194006">78194006</a></td><td>Irmão gémeo idêntico</td><td>Identical twin brother (person)</td></tr><tr><td><a href="http://snomed.info/id/76087000">76087000</a></td><td>Meio irmão</td><td>Stepbrother (person)</td></tr><tr><td><a href="http://snomed.info/id/21093007">21093007</a></td><td>Irmão consaguíneo</td><td>Half-sibling (person)</td></tr><tr><td><a href="http://snomed.info/id/82101005">82101005</a></td><td>Irmão biológico</td><td>Natural sibling (person)</td></tr><tr><td><a href="http://snomed.info/id/73678001">73678001</a></td><td>Irmã biológica</td><td>Natural sister (person)</td></tr><tr><td><a href="http://snomed.info/id/19343003">19343003</a></td><td>Irmã gémea</td><td>Twin sister (person)</td></tr><tr><td><a href="http://snomed.info/id/29644004">29644004</a></td><td>Irmã gémea não idêntica</td><td>Fraternal twin sister (person)</td></tr><tr><td><a href="http://snomed.info/id/50058005">50058005</a></td><td>Irmã gémea idêntica</td><td>Identical twin sister (person)</td></tr><tr><td><a href="http://snomed.info/id/313416000">313416000</a></td><td>Gémeo não idêntico</td><td>Fraternal twin (person)</td></tr><tr><td><a href="http://snomed.info/id/313415001">313415001</a></td><td>Gémeo idêntico</td><td>Identical twin (person)</td></tr><tr><td><a href="http://snomed.info/id/27733009">27733009</a></td><td>Irmã</td><td>Sister (person)</td></tr><tr><td><a href="http://snomed.info/id/46363003">46363003</a></td><td>Meia irmã</td><td>Stepsister (person)</td></tr><tr><td><a href="http://snomed.info/id/88510002">88510002</a></td><td>Meio irmão/irmã</td><td>Stepsibling (person)</td></tr><tr><td><a href="http://snomed.info/id/31656007">31656007</a></td><td>Avó adotiva</td><td>Adoptive grandmother (person)</td></tr><tr><td><a href="http://snomed.info/id/85058002">85058002</a></td><td>Avô adotivo</td><td>Adoptive grandfather (person)</td></tr><tr><td><a href="http://snomed.info/id/17945006">17945006</a></td><td>Avó biológica</td><td>Natural grandmother (person)</td></tr><tr><td><a href="http://snomed.info/id/38312007">38312007</a></td><td>Avó/avô</td><td>Grandparent (person)</td></tr><tr><td><a href="http://snomed.info/id/22609000">22609000</a></td><td>Avô/avó adotivo</td><td>Adoptive grandparent (person)</td></tr><tr><td><a href="http://snomed.info/id/78272007">78272007</a></td><td>Avós biológicos</td><td>Natural grandparent (person)</td></tr><tr><td><a href="http://snomed.info/id/719769001">719769001</a></td><td>Bisavó materna</td><td>Maternal great grandmother (person)</td></tr><tr><td><a href="http://snomed.info/id/719771001">719771001</a></td><td>Bisavô materno</td><td>Maternal great grandfather (person)</td></tr><tr><td><a href="http://snomed.info/id/719768009">719768009</a></td><td>Bisavó paterna</td><td>Paternal great grandmother (person)</td></tr><tr><td><a href="http://snomed.info/id/719770000">719770000</a></td><td>Bisavô paterno</td><td>Paternal great grandfather (person)</td></tr><tr><td><a href="http://snomed.info/id/394567002">394567002</a></td><td>Bisneta</td><td>Great granddaughter (person)</td></tr><tr><td><a href="http://snomed.info/id/394566006">394566006</a></td><td>Bisneto</td><td>Great grandson (person)</td></tr><tr><td><a href="http://snomed.info/id/72012000">72012000</a></td><td>Bisneto/bisneta</td><td>Great grandchild (person)</td></tr><tr><td><a href="http://snomed.info/id/34972000">34972000</a></td><td>Filha única</td><td>Only daughter (person)</td></tr><tr><td><a href="http://snomed.info/id/14469008">14469008</a></td><td>Filho/filha legal</td><td>Legal child (person)</td></tr><tr><td><a href="http://snomed.info/id/81173009">81173009</a></td><td>Filho único</td><td>Only son (person)</td></tr><tr><td><a href="http://snomed.info/id/76022008">76022008</a></td><td>Irmã adotiva</td><td>Adoptive sister (person)</td></tr><tr><td><a href="http://snomed.info/id/58293006">58293006</a></td><td>Irmã de acolhimento</td><td>Foster sister (person)</td></tr><tr><td><a href="http://snomed.info/id/17925003">17925003</a></td><td>Irmão adotivo</td><td>Adoptive brother (person)</td></tr><tr><td><a href="http://snomed.info/id/29787005">29787005</a></td><td>Irmão de acolhimento</td><td>Foster brother (person)</td></tr><tr><td><a href="http://snomed.info/id/11773006">11773006</a></td><td>Irmão legal</td><td>Legal brother (person)</td></tr><tr><td><a href="http://snomed.info/id/79508001">79508001</a></td><td>Irmão/irmã adotivo</td><td>Adoptive sibling (person)</td></tr><tr><td><a href="http://snomed.info/id/18906004">18906004</a></td><td>Irmão/irmã de acolhimento</td><td>Foster sibling (person)</td></tr><tr><td><a href="http://snomed.info/id/11286003">11286003</a></td><td>Irmão/irmã gémeo</td><td>Twin sibling (person)</td></tr><tr><td><a href="http://snomed.info/id/72705000">72705000</a></td><td>Mãe</td><td>Mother (person)</td></tr><tr><td><a href="http://snomed.info/id/719765007">719765007</a></td><td>Meia-irmã materna</td><td>Maternal half sister (person)</td></tr><tr><td><a href="http://snomed.info/id/719764006">719764006</a></td><td>Meia-irmã paterna</td><td>Paternal half sister (person)</td></tr><tr><td><a href="http://snomed.info/id/719766008">719766008</a></td><td>Meio-irmão materno</td><td>Maternal half brother (person)</td></tr><tr><td><a href="http://snomed.info/id/719762005">719762005</a></td><td>Meio-irmão paterno</td><td>Paternal half brother (person)</td></tr><tr><td><a href="http://snomed.info/id/74128007">74128007</a></td><td>Padrasto/madrasta</td><td>Stepparent (person)</td></tr><tr><td><a href="http://snomed.info/id/66839005">66839005</a></td><td>Pai</td><td>Father (person)</td></tr><tr><td><a href="http://snomed.info/id/266943008">266943008</a></td><td>Pai/mãe solteiro</td><td>Single parent (person)</td></tr><tr><td><a href="http://snomed.info/id/125679009">125679009</a></td><td>Parente de sangue</td><td>Blood relative (person)</td></tr><tr><td><a href="http://snomed.info/id/125678001">125678001</a></td><td>Parente de sangue de primeiro grau</td><td>First degree blood relative (person)</td></tr><tr><td><a href="http://snomed.info/id/699110007">699110007</a></td><td>Parente de sangue de segundo grau</td><td>Second degree blood relative (person)</td></tr><tr><td><a href="http://snomed.info/id/105431001">105431001</a></td><td>Pessoa adotada</td><td>Adopted person (person)</td></tr><tr><td><a href="http://snomed.info/id/2959006">2959006</a></td><td>Prima</td><td>Female cousin (person)</td></tr><tr><td><a href="http://snomed.info/id/47801002">47801002</a></td><td>Primo</td><td>Male cousin (person)</td></tr><tr><td><a href="http://snomed.info/id/4577005">4577005</a></td><td>Primo em primeiro grau</td><td>First cousin (person)</td></tr><tr><td><a href="http://snomed.info/id/13443008">13443008</a></td><td>Primo em segundo grau</td><td>Second cousin (person)</td></tr><tr><td><a href="http://snomed.info/id/736456008">736456008</a></td><td>Primo materno em primeiro grau</td><td>Maternal first cousin (person)</td></tr><tr><td><a href="http://snomed.info/id/394862003">394862003</a></td><td>Tia-avó</td><td>Great aunt (person)</td></tr><tr><td><a href="http://snomed.info/id/394861005">394861005</a></td><td>Tio-avô</td><td>Great uncle (person)</td></tr><tr><td><a href="http://snomed.info/id/2368000">2368000</a></td><td>Trisavó</td><td>Great great grandmother (person)</td></tr><tr><td><a href="http://snomed.info/id/80386000">80386000</a></td><td>Trisavô</td><td>Great great grandfather (person)</td></tr><tr><td><a href="http://snomed.info/id/68021009">68021009</a></td><td>Trisavô/trisavó</td><td>Great great grandparent (person)</td></tr><tr><td><a href="http://snomed.info/id/11393001">11393001</a></td><td>Trisneto/trisneta</td><td>Great great grandchild (person)</td></tr><tr><td><a href="http://snomed.info/id/1258960001">1258960001</a></td><td>Genro</td><td>Son-in-law (person)</td></tr><tr><td><a href="http://snomed.info/id/1258961002">1258961002</a></td><td>Nora</td><td>Daughter-in-law (person)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpcbd-person-in-family-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.61"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPCBDPersonInFamilyVS"/>
+  <title value="CPCBD - Person in Family"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores PersonInFamily (CPCBD v1.1.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="25211005"/>
+        <display value="Tia"/>
+        <designation>
+          <language value="en"/>
+          <value value="Aunt (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="67822003"/>
+        <display value="Filho/filha"/>
+        <designation>
+          <language value="en"/>
+          <value value="Child (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="393547004"/>
+        <display value="Criança adotada"/>
+        <designation>
+          <language value="en"/>
+          <value value="Adopted child (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="39062003"/>
+        <display value="Criança de acolhimento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Foster child (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="55538000"/>
+        <display value="Primo/prima"/>
+        <designation>
+          <language value="en"/>
+          <value value="Cousin (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="83420006"/>
+        <display value="Filha biológica"/>
+        <designation>
+          <language value="en"/>
+          <value value="Natural daughter (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="393549001"/>
+        <display value="Filha adoptiva"/>
+        <designation>
+          <language value="en"/>
+          <value value="Adopted daughter (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="66089001"/>
+        <display value="Filha"/>
+        <designation>
+          <language value="en"/>
+          <value value="Daughter (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="31831004"/>
+        <display value="Filha de acolhimento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Foster daughter (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="303071001"/>
+        <display value="Membro da família"/>
+        <designation>
+          <language value="en"/>
+          <value value="Person in the family (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9947008"/>
+        <display value="Pai biológico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Natural father (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5171000124108"/>
+        <display value="Sogro"/>
+        <designation>
+          <language value="en"/>
+          <value value="Father-in-law (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33969000"/>
+        <display value="Bisavô"/>
+        <designation>
+          <language value="en"/>
+          <value value="Great grandparent (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86372007"/>
+        <display value="Neto/neta"/>
+        <designation>
+          <language value="en"/>
+          <value value="Grandchild (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="62296006"/>
+        <display value="Avô biológico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Natural grandfather (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="65656005"/>
+        <display value="Mãe biológica"/>
+        <designation>
+          <language value="en"/>
+          <value value="Natural mother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5181000124106"/>
+        <display value="Sogra"/>
+        <designation>
+          <language value="en"/>
+          <value value="Mother-in-law (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="75226009"/>
+        <display value="Filho/filha biológico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Natural child (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="34581001"/>
+        <display value="Sobrinha"/>
+        <designation>
+          <language value="en"/>
+          <value value="Niece (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="83559000"/>
+        <display value="Sobrinho"/>
+        <designation>
+          <language value="en"/>
+          <value value="Nephew (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="40683002"/>
+        <display value="Pai/mãe"/>
+        <designation>
+          <language value="en"/>
+          <value value="Parent (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5161000124101"/>
+        <display value="Sogro/sogra"/>
+        <designation>
+          <language value="en"/>
+          <value value="Parent in-law (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="375005"/>
+        <display value="Irmão/irmã"/>
+        <designation>
+          <language value="en"/>
+          <value value="Sibling (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="113160008"/>
+        <display value="Filho biológico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Natural son (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="394560000"/>
+        <display value="Filho adoptivo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Adopted son (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="65616008"/>
+        <display value="Filho"/>
+        <designation>
+          <language value="en"/>
+          <value value="Son (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="12241003"/>
+        <display value="Filho de acolhimento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Foster son (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="127848009"/>
+        <display value="Cônjuge"/>
+        <designation>
+          <language value="en"/>
+          <value value="Spouse (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="86764008"/>
+        <display value="Enteado/enteada"/>
+        <designation>
+          <language value="en"/>
+          <value value="Stepchild (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22573006"/>
+        <display value="Enteada"/>
+        <designation>
+          <language value="en"/>
+          <value value="Stepdaughter (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8674003"/>
+        <display value="Enteado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Stepson (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38048003"/>
+        <display value="Tio"/>
+        <designation>
+          <language value="en"/>
+          <value value="Uncle (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="127849001"/>
+        <display value="Marido"/>
+        <designation>
+          <language value="en"/>
+          <value value="Husband (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2272004"/>
+        <display value="Meia irmã"/>
+        <designation>
+          <language value="en"/>
+          <value value="Half-sister (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="45929001"/>
+        <display value="Meio irmão"/>
+        <designation>
+          <language value="en"/>
+          <value value="Half-brother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="127850001"/>
+        <display value="Mulher"/>
+        <designation>
+          <language value="en"/>
+          <value value="Wife (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="736454006"/>
+        <display value="Tia materna"/>
+        <designation>
+          <language value="en"/>
+          <value value="Maternal aunt (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="736455007"/>
+        <display value="Tia paterna"/>
+        <designation>
+          <language value="en"/>
+          <value value="Paternal aunt (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="719759007"/>
+        <display value="Primo materno"/>
+        <designation>
+          <language value="en"/>
+          <value value="Maternal cousin (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="719760002"/>
+        <display value="Primo paterno"/>
+        <designation>
+          <language value="en"/>
+          <value value="Paternal cousin (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="50261002"/>
+        <display value="Bisavô"/>
+        <designation>
+          <language value="en"/>
+          <value value="Great grandfather (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="78652007"/>
+        <display value="Bisavó"/>
+        <designation>
+          <language value="en"/>
+          <value value="Great grandmother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="44181008"/>
+        <display value="Neta"/>
+        <designation>
+          <language value="en"/>
+          <value value="Granddaughter (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="70578009"/>
+        <display value="Neto"/>
+        <designation>
+          <language value="en"/>
+          <value value="Grandson (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="34871008"/>
+        <display value="Avô"/>
+        <designation>
+          <language value="en"/>
+          <value value="Grandfather (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="394857004"/>
+        <display value="Avô materno"/>
+        <designation>
+          <language value="en"/>
+          <value value="Maternal grandfather (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="394856008"/>
+        <display value="Avô paterno"/>
+        <designation>
+          <language value="en"/>
+          <value value="Paternal grandfather (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="113157001"/>
+        <display value="Avó"/>
+        <designation>
+          <language value="en"/>
+          <value value="Grandmother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="394859001"/>
+        <display value="Avó materna"/>
+        <designation>
+          <language value="en"/>
+          <value value="Maternal grandmother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="394858009"/>
+        <display value="Avó paterna"/>
+        <designation>
+          <language value="en"/>
+          <value value="Paternal grandmother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="442031000124102"/>
+        <display value="Tio materna"/>
+        <designation>
+          <language value="en"/>
+          <value value="Maternal uncle (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="442041000124107"/>
+        <display value="Tio paterno"/>
+        <designation>
+          <language value="en"/>
+          <value value="Paternal uncle (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41953004"/>
+        <display value="Pai/mãe adoptivo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Adoptive parent (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="609005"/>
+        <display value="Pai adoptivo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Adoptive father (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="21464003"/>
+        <display value="Mãe adoptiva"/>
+        <designation>
+          <language value="en"/>
+          <value value="Adoptive mother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8458002"/>
+        <display value="Pai de acolhimento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Foster father (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="30578000"/>
+        <display value="Padrasto"/>
+        <designation>
+          <language value="en"/>
+          <value value="Stepfather (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38265003"/>
+        <display value="Mãe de acolhimento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Foster mother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="65412001"/>
+        <display value="Madrasta"/>
+        <designation>
+          <language value="en"/>
+          <value value="Stepmother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="13646006"/>
+        <display value="Pai/mãe biológico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Natural parent (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="90921004"/>
+        <display value="Pai/mãe de acolhimento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Foster parent (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="70924004"/>
+        <display value="Irmão"/>
+        <designation>
+          <language value="en"/>
+          <value value="Brother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="60614009"/>
+        <display value="Irmão biológico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Natural brother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="81276006"/>
+        <display value="Irmão gémeo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Twin brother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="81467001"/>
+        <display value="Irmão gémeo não idêntico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Fraternal twin brother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="78194006"/>
+        <display value="Irmão gémeo idêntico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Identical twin brother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="76087000"/>
+        <display value="Meio irmão"/>
+        <designation>
+          <language value="en"/>
+          <value value="Stepbrother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="21093007"/>
+        <display value="Irmão consaguíneo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Half-sibling (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="82101005"/>
+        <display value="Irmão biológico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Natural sibling (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="73678001"/>
+        <display value="Irmã biológica"/>
+        <designation>
+          <language value="en"/>
+          <value value="Natural sister (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="19343003"/>
+        <display value="Irmã gémea"/>
+        <designation>
+          <language value="en"/>
+          <value value="Twin sister (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29644004"/>
+        <display value="Irmã gémea não idêntica"/>
+        <designation>
+          <language value="en"/>
+          <value value="Fraternal twin sister (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="50058005"/>
+        <display value="Irmã gémea idêntica"/>
+        <designation>
+          <language value="en"/>
+          <value value="Identical twin sister (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="313416000"/>
+        <display value="Gémeo não idêntico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Fraternal twin (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="313415001"/>
+        <display value="Gémeo idêntico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Identical twin (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="27733009"/>
+        <display value="Irmã"/>
+        <designation>
+          <language value="en"/>
+          <value value="Sister (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="46363003"/>
+        <display value="Meia irmã"/>
+        <designation>
+          <language value="en"/>
+          <value value="Stepsister (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="88510002"/>
+        <display value="Meio irmão/irmã"/>
+        <designation>
+          <language value="en"/>
+          <value value="Stepsibling (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="31656007"/>
+        <display value="Avó adotiva"/>
+        <designation>
+          <language value="en"/>
+          <value value="Adoptive grandmother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85058002"/>
+        <display value="Avô adotivo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Adoptive grandfather (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="17945006"/>
+        <display value="Avó biológica"/>
+        <designation>
+          <language value="en"/>
+          <value value="Natural grandmother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38312007"/>
+        <display value="Avó/avô"/>
+        <designation>
+          <language value="en"/>
+          <value value="Grandparent (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22609000"/>
+        <display value="Avô/avó adotivo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Adoptive grandparent (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="78272007"/>
+        <display value="Avós biológicos"/>
+        <designation>
+          <language value="en"/>
+          <value value="Natural grandparent (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="719769001"/>
+        <display value="Bisavó materna"/>
+        <designation>
+          <language value="en"/>
+          <value value="Maternal great grandmother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="719771001"/>
+        <display value="Bisavô materno"/>
+        <designation>
+          <language value="en"/>
+          <value value="Maternal great grandfather (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="719768009"/>
+        <display value="Bisavó paterna"/>
+        <designation>
+          <language value="en"/>
+          <value value="Paternal great grandmother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="719770000"/>
+        <display value="Bisavô paterno"/>
+        <designation>
+          <language value="en"/>
+          <value value="Paternal great grandfather (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="394567002"/>
+        <display value="Bisneta"/>
+        <designation>
+          <language value="en"/>
+          <value value="Great granddaughter (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="394566006"/>
+        <display value="Bisneto"/>
+        <designation>
+          <language value="en"/>
+          <value value="Great grandson (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72012000"/>
+        <display value="Bisneto/bisneta"/>
+        <designation>
+          <language value="en"/>
+          <value value="Great grandchild (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="34972000"/>
+        <display value="Filha única"/>
+        <designation>
+          <language value="en"/>
+          <value value="Only daughter (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="14469008"/>
+        <display value="Filho/filha legal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Legal child (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="81173009"/>
+        <display value="Filho único"/>
+        <designation>
+          <language value="en"/>
+          <value value="Only son (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="76022008"/>
+        <display value="Irmã adotiva"/>
+        <designation>
+          <language value="en"/>
+          <value value="Adoptive sister (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="58293006"/>
+        <display value="Irmã de acolhimento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Foster sister (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="17925003"/>
+        <display value="Irmão adotivo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Adoptive brother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29787005"/>
+        <display value="Irmão de acolhimento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Foster brother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="11773006"/>
+        <display value="Irmão legal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Legal brother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="79508001"/>
+        <display value="Irmão/irmã adotivo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Adoptive sibling (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="18906004"/>
+        <display value="Irmão/irmã de acolhimento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Foster sibling (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="11286003"/>
+        <display value="Irmão/irmã gémeo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Twin sibling (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="72705000"/>
+        <display value="Mãe"/>
+        <designation>
+          <language value="en"/>
+          <value value="Mother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="719765007"/>
+        <display value="Meia-irmã materna"/>
+        <designation>
+          <language value="en"/>
+          <value value="Maternal half sister (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="719764006"/>
+        <display value="Meia-irmã paterna"/>
+        <designation>
+          <language value="en"/>
+          <value value="Paternal half sister (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="719766008"/>
+        <display value="Meio-irmão materno"/>
+        <designation>
+          <language value="en"/>
+          <value value="Maternal half brother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="719762005"/>
+        <display value="Meio-irmão paterno"/>
+        <designation>
+          <language value="en"/>
+          <value value="Paternal half brother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="74128007"/>
+        <display value="Padrasto/madrasta"/>
+        <designation>
+          <language value="en"/>
+          <value value="Stepparent (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="66839005"/>
+        <display value="Pai"/>
+        <designation>
+          <language value="en"/>
+          <value value="Father (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="266943008"/>
+        <display value="Pai/mãe solteiro"/>
+        <designation>
+          <language value="en"/>
+          <value value="Single parent (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="125679009"/>
+        <display value="Parente de sangue"/>
+        <designation>
+          <language value="en"/>
+          <value value="Blood relative (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="125678001"/>
+        <display value="Parente de sangue de primeiro grau"/>
+        <designation>
+          <language value="en"/>
+          <value value="First degree blood relative (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="699110007"/>
+        <display value="Parente de sangue de segundo grau"/>
+        <designation>
+          <language value="en"/>
+          <value value="Second degree blood relative (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="105431001"/>
+        <display value="Pessoa adotada"/>
+        <designation>
+          <language value="en"/>
+          <value value="Adopted person (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2959006"/>
+        <display value="Prima"/>
+        <designation>
+          <language value="en"/>
+          <value value="Female cousin (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="47801002"/>
+        <display value="Primo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Male cousin (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="4577005"/>
+        <display value="Primo em primeiro grau"/>
+        <designation>
+          <language value="en"/>
+          <value value="First cousin (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="13443008"/>
+        <display value="Primo em segundo grau"/>
+        <designation>
+          <language value="en"/>
+          <value value="Second cousin (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="736456008"/>
+        <display value="Primo materno em primeiro grau"/>
+        <designation>
+          <language value="en"/>
+          <value value="Maternal first cousin (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="394862003"/>
+        <display value="Tia-avó"/>
+        <designation>
+          <language value="en"/>
+          <value value="Great aunt (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="394861005"/>
+        <display value="Tio-avô"/>
+        <designation>
+          <language value="en"/>
+          <value value="Great uncle (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2368000"/>
+        <display value="Trisavó"/>
+        <designation>
+          <language value="en"/>
+          <value value="Great great grandmother (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="80386000"/>
+        <display value="Trisavô"/>
+        <designation>
+          <language value="en"/>
+          <value value="Great great grandfather (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="68021009"/>
+        <display value="Trisavô/trisavó"/>
+        <designation>
+          <language value="en"/>
+          <value value="Great great grandparent (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="11393001"/>
+        <display value="Trisneto/trisneta"/>
+        <designation>
+          <language value="en"/>
+          <value value="Great great grandchild (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1258960001"/>
+        <display value="Genro"/>
+        <designation>
+          <language value="en"/>
+          <value value="Son-in-law (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1258961002"/>
+        <display value="Nora"/>
+        <designation>
+          <language value="en"/>
+          <value value="Daughter-in-law (person)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

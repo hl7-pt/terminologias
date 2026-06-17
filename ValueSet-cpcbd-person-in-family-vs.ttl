@@ -1,0 +1,953 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpcbd-person-in-family-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpcbd-person-in-family-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpcbd-person-in-family-vs</b></p><a name=\"cpcbd-person-in-family-vs\"> </a><a name=\"hccpcbd-person-in-family-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"http://snomed.info/id/25211005\">25211005</a></td><td>Tia</td><td>Aunt (person)</td></tr><tr><td><a href=\"http://snomed.info/id/67822003\">67822003</a></td><td>Filho/filha</td><td>Child (person)</td></tr><tr><td><a href=\"http://snomed.info/id/393547004\">393547004</a></td><td>Criança adotada</td><td>Adopted child (person)</td></tr><tr><td><a href=\"http://snomed.info/id/39062003\">39062003</a></td><td>Criança de acolhimento</td><td>Foster child (person)</td></tr><tr><td><a href=\"http://snomed.info/id/55538000\">55538000</a></td><td>Primo/prima</td><td>Cousin (person)</td></tr><tr><td><a href=\"http://snomed.info/id/83420006\">83420006</a></td><td>Filha biológica</td><td>Natural daughter (person)</td></tr><tr><td><a href=\"http://snomed.info/id/393549001\">393549001</a></td><td>Filha adoptiva</td><td>Adopted daughter (person)</td></tr><tr><td><a href=\"http://snomed.info/id/66089001\">66089001</a></td><td>Filha</td><td>Daughter (person)</td></tr><tr><td><a href=\"http://snomed.info/id/31831004\">31831004</a></td><td>Filha de acolhimento</td><td>Foster daughter (person)</td></tr><tr><td><a href=\"http://snomed.info/id/303071001\">303071001</a></td><td>Membro da família</td><td>Person in the family (person)</td></tr><tr><td><a href=\"http://snomed.info/id/9947008\">9947008</a></td><td>Pai biológico</td><td>Natural father (person)</td></tr><tr><td><a href=\"http://snomed.info/id/5171000124108\">5171000124108</a></td><td>Sogro</td><td>Father-in-law (person)</td></tr><tr><td><a href=\"http://snomed.info/id/33969000\">33969000</a></td><td>Bisavô</td><td>Great grandparent (person)</td></tr><tr><td><a href=\"http://snomed.info/id/86372007\">86372007</a></td><td>Neto/neta</td><td>Grandchild (person)</td></tr><tr><td><a href=\"http://snomed.info/id/62296006\">62296006</a></td><td>Avô biológico</td><td>Natural grandfather (person)</td></tr><tr><td><a href=\"http://snomed.info/id/65656005\">65656005</a></td><td>Mãe biológica</td><td>Natural mother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/5181000124106\">5181000124106</a></td><td>Sogra</td><td>Mother-in-law (person)</td></tr><tr><td><a href=\"http://snomed.info/id/75226009\">75226009</a></td><td>Filho/filha biológico</td><td>Natural child (person)</td></tr><tr><td><a href=\"http://snomed.info/id/34581001\">34581001</a></td><td>Sobrinha</td><td>Niece (person)</td></tr><tr><td><a href=\"http://snomed.info/id/83559000\">83559000</a></td><td>Sobrinho</td><td>Nephew (person)</td></tr><tr><td><a href=\"http://snomed.info/id/40683002\">40683002</a></td><td>Pai/mãe</td><td>Parent (person)</td></tr><tr><td><a href=\"http://snomed.info/id/5161000124101\">5161000124101</a></td><td>Sogro/sogra</td><td>Parent in-law (person)</td></tr><tr><td><a href=\"http://snomed.info/id/375005\">375005</a></td><td>Irmão/irmã</td><td>Sibling (person)</td></tr><tr><td><a href=\"http://snomed.info/id/113160008\">113160008</a></td><td>Filho biológico</td><td>Natural son (person)</td></tr><tr><td><a href=\"http://snomed.info/id/394560000\">394560000</a></td><td>Filho adoptivo</td><td>Adopted son (person)</td></tr><tr><td><a href=\"http://snomed.info/id/65616008\">65616008</a></td><td>Filho</td><td>Son (person)</td></tr><tr><td><a href=\"http://snomed.info/id/12241003\">12241003</a></td><td>Filho de acolhimento</td><td>Foster son (person)</td></tr><tr><td><a href=\"http://snomed.info/id/127848009\">127848009</a></td><td>Cônjuge</td><td>Spouse (person)</td></tr><tr><td><a href=\"http://snomed.info/id/86764008\">86764008</a></td><td>Enteado/enteada</td><td>Stepchild (person)</td></tr><tr><td><a href=\"http://snomed.info/id/22573006\">22573006</a></td><td>Enteada</td><td>Stepdaughter (person)</td></tr><tr><td><a href=\"http://snomed.info/id/8674003\">8674003</a></td><td>Enteado</td><td>Stepson (person)</td></tr><tr><td><a href=\"http://snomed.info/id/38048003\">38048003</a></td><td>Tio</td><td>Uncle (person)</td></tr><tr><td><a href=\"http://snomed.info/id/127849001\">127849001</a></td><td>Marido</td><td>Husband (person)</td></tr><tr><td><a href=\"http://snomed.info/id/2272004\">2272004</a></td><td>Meia irmã</td><td>Half-sister (person)</td></tr><tr><td><a href=\"http://snomed.info/id/45929001\">45929001</a></td><td>Meio irmão</td><td>Half-brother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/127850001\">127850001</a></td><td>Mulher</td><td>Wife (person)</td></tr><tr><td><a href=\"http://snomed.info/id/736454006\">736454006</a></td><td>Tia materna</td><td>Maternal aunt (person)</td></tr><tr><td><a href=\"http://snomed.info/id/736455007\">736455007</a></td><td>Tia paterna</td><td>Paternal aunt (person)</td></tr><tr><td><a href=\"http://snomed.info/id/719759007\">719759007</a></td><td>Primo materno</td><td>Maternal cousin (person)</td></tr><tr><td><a href=\"http://snomed.info/id/719760002\">719760002</a></td><td>Primo paterno</td><td>Paternal cousin (person)</td></tr><tr><td><a href=\"http://snomed.info/id/50261002\">50261002</a></td><td>Bisavô</td><td>Great grandfather (person)</td></tr><tr><td><a href=\"http://snomed.info/id/78652007\">78652007</a></td><td>Bisavó</td><td>Great grandmother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/44181008\">44181008</a></td><td>Neta</td><td>Granddaughter (person)</td></tr><tr><td><a href=\"http://snomed.info/id/70578009\">70578009</a></td><td>Neto</td><td>Grandson (person)</td></tr><tr><td><a href=\"http://snomed.info/id/34871008\">34871008</a></td><td>Avô</td><td>Grandfather (person)</td></tr><tr><td><a href=\"http://snomed.info/id/394857004\">394857004</a></td><td>Avô materno</td><td>Maternal grandfather (person)</td></tr><tr><td><a href=\"http://snomed.info/id/394856008\">394856008</a></td><td>Avô paterno</td><td>Paternal grandfather (person)</td></tr><tr><td><a href=\"http://snomed.info/id/113157001\">113157001</a></td><td>Avó</td><td>Grandmother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/394859001\">394859001</a></td><td>Avó materna</td><td>Maternal grandmother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/394858009\">394858009</a></td><td>Avó paterna</td><td>Paternal grandmother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/442031000124102\">442031000124102</a></td><td>Tio materna</td><td>Maternal uncle (person)</td></tr><tr><td><a href=\"http://snomed.info/id/442041000124107\">442041000124107</a></td><td>Tio paterno</td><td>Paternal uncle (person)</td></tr><tr><td><a href=\"http://snomed.info/id/41953004\">41953004</a></td><td>Pai/mãe adoptivo</td><td>Adoptive parent (person)</td></tr><tr><td><a href=\"http://snomed.info/id/609005\">609005</a></td><td>Pai adoptivo</td><td>Adoptive father (person)</td></tr><tr><td><a href=\"http://snomed.info/id/21464003\">21464003</a></td><td>Mãe adoptiva</td><td>Adoptive mother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/8458002\">8458002</a></td><td>Pai de acolhimento</td><td>Foster father (person)</td></tr><tr><td><a href=\"http://snomed.info/id/30578000\">30578000</a></td><td>Padrasto</td><td>Stepfather (person)</td></tr><tr><td><a href=\"http://snomed.info/id/38265003\">38265003</a></td><td>Mãe de acolhimento</td><td>Foster mother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/65412001\">65412001</a></td><td>Madrasta</td><td>Stepmother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/13646006\">13646006</a></td><td>Pai/mãe biológico</td><td>Natural parent (person)</td></tr><tr><td><a href=\"http://snomed.info/id/90921004\">90921004</a></td><td>Pai/mãe de acolhimento</td><td>Foster parent (person)</td></tr><tr><td><a href=\"http://snomed.info/id/70924004\">70924004</a></td><td>Irmão</td><td>Brother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/60614009\">60614009</a></td><td>Irmão biológico</td><td>Natural brother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/81276006\">81276006</a></td><td>Irmão gémeo</td><td>Twin brother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/81467001\">81467001</a></td><td>Irmão gémeo não idêntico</td><td>Fraternal twin brother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/78194006\">78194006</a></td><td>Irmão gémeo idêntico</td><td>Identical twin brother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/76087000\">76087000</a></td><td>Meio irmão</td><td>Stepbrother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/21093007\">21093007</a></td><td>Irmão consaguíneo</td><td>Half-sibling (person)</td></tr><tr><td><a href=\"http://snomed.info/id/82101005\">82101005</a></td><td>Irmão biológico</td><td>Natural sibling (person)</td></tr><tr><td><a href=\"http://snomed.info/id/73678001\">73678001</a></td><td>Irmã biológica</td><td>Natural sister (person)</td></tr><tr><td><a href=\"http://snomed.info/id/19343003\">19343003</a></td><td>Irmã gémea</td><td>Twin sister (person)</td></tr><tr><td><a href=\"http://snomed.info/id/29644004\">29644004</a></td><td>Irmã gémea não idêntica</td><td>Fraternal twin sister (person)</td></tr><tr><td><a href=\"http://snomed.info/id/50058005\">50058005</a></td><td>Irmã gémea idêntica</td><td>Identical twin sister (person)</td></tr><tr><td><a href=\"http://snomed.info/id/313416000\">313416000</a></td><td>Gémeo não idêntico</td><td>Fraternal twin (person)</td></tr><tr><td><a href=\"http://snomed.info/id/313415001\">313415001</a></td><td>Gémeo idêntico</td><td>Identical twin (person)</td></tr><tr><td><a href=\"http://snomed.info/id/27733009\">27733009</a></td><td>Irmã</td><td>Sister (person)</td></tr><tr><td><a href=\"http://snomed.info/id/46363003\">46363003</a></td><td>Meia irmã</td><td>Stepsister (person)</td></tr><tr><td><a href=\"http://snomed.info/id/88510002\">88510002</a></td><td>Meio irmão/irmã</td><td>Stepsibling (person)</td></tr><tr><td><a href=\"http://snomed.info/id/31656007\">31656007</a></td><td>Avó adotiva</td><td>Adoptive grandmother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/85058002\">85058002</a></td><td>Avô adotivo</td><td>Adoptive grandfather (person)</td></tr><tr><td><a href=\"http://snomed.info/id/17945006\">17945006</a></td><td>Avó biológica</td><td>Natural grandmother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/38312007\">38312007</a></td><td>Avó/avô</td><td>Grandparent (person)</td></tr><tr><td><a href=\"http://snomed.info/id/22609000\">22609000</a></td><td>Avô/avó adotivo</td><td>Adoptive grandparent (person)</td></tr><tr><td><a href=\"http://snomed.info/id/78272007\">78272007</a></td><td>Avós biológicos</td><td>Natural grandparent (person)</td></tr><tr><td><a href=\"http://snomed.info/id/719769001\">719769001</a></td><td>Bisavó materna</td><td>Maternal great grandmother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/719771001\">719771001</a></td><td>Bisavô materno</td><td>Maternal great grandfather (person)</td></tr><tr><td><a href=\"http://snomed.info/id/719768009\">719768009</a></td><td>Bisavó paterna</td><td>Paternal great grandmother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/719770000\">719770000</a></td><td>Bisavô paterno</td><td>Paternal great grandfather (person)</td></tr><tr><td><a href=\"http://snomed.info/id/394567002\">394567002</a></td><td>Bisneta</td><td>Great granddaughter (person)</td></tr><tr><td><a href=\"http://snomed.info/id/394566006\">394566006</a></td><td>Bisneto</td><td>Great grandson (person)</td></tr><tr><td><a href=\"http://snomed.info/id/72012000\">72012000</a></td><td>Bisneto/bisneta</td><td>Great grandchild (person)</td></tr><tr><td><a href=\"http://snomed.info/id/34972000\">34972000</a></td><td>Filha única</td><td>Only daughter (person)</td></tr><tr><td><a href=\"http://snomed.info/id/14469008\">14469008</a></td><td>Filho/filha legal</td><td>Legal child (person)</td></tr><tr><td><a href=\"http://snomed.info/id/81173009\">81173009</a></td><td>Filho único</td><td>Only son (person)</td></tr><tr><td><a href=\"http://snomed.info/id/76022008\">76022008</a></td><td>Irmã adotiva</td><td>Adoptive sister (person)</td></tr><tr><td><a href=\"http://snomed.info/id/58293006\">58293006</a></td><td>Irmã de acolhimento</td><td>Foster sister (person)</td></tr><tr><td><a href=\"http://snomed.info/id/17925003\">17925003</a></td><td>Irmão adotivo</td><td>Adoptive brother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/29787005\">29787005</a></td><td>Irmão de acolhimento</td><td>Foster brother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/11773006\">11773006</a></td><td>Irmão legal</td><td>Legal brother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/79508001\">79508001</a></td><td>Irmão/irmã adotivo</td><td>Adoptive sibling (person)</td></tr><tr><td><a href=\"http://snomed.info/id/18906004\">18906004</a></td><td>Irmão/irmã de acolhimento</td><td>Foster sibling (person)</td></tr><tr><td><a href=\"http://snomed.info/id/11286003\">11286003</a></td><td>Irmão/irmã gémeo</td><td>Twin sibling (person)</td></tr><tr><td><a href=\"http://snomed.info/id/72705000\">72705000</a></td><td>Mãe</td><td>Mother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/719765007\">719765007</a></td><td>Meia-irmã materna</td><td>Maternal half sister (person)</td></tr><tr><td><a href=\"http://snomed.info/id/719764006\">719764006</a></td><td>Meia-irmã paterna</td><td>Paternal half sister (person)</td></tr><tr><td><a href=\"http://snomed.info/id/719766008\">719766008</a></td><td>Meio-irmão materno</td><td>Maternal half brother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/719762005\">719762005</a></td><td>Meio-irmão paterno</td><td>Paternal half brother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/74128007\">74128007</a></td><td>Padrasto/madrasta</td><td>Stepparent (person)</td></tr><tr><td><a href=\"http://snomed.info/id/66839005\">66839005</a></td><td>Pai</td><td>Father (person)</td></tr><tr><td><a href=\"http://snomed.info/id/266943008\">266943008</a></td><td>Pai/mãe solteiro</td><td>Single parent (person)</td></tr><tr><td><a href=\"http://snomed.info/id/125679009\">125679009</a></td><td>Parente de sangue</td><td>Blood relative (person)</td></tr><tr><td><a href=\"http://snomed.info/id/125678001\">125678001</a></td><td>Parente de sangue de primeiro grau</td><td>First degree blood relative (person)</td></tr><tr><td><a href=\"http://snomed.info/id/699110007\">699110007</a></td><td>Parente de sangue de segundo grau</td><td>Second degree blood relative (person)</td></tr><tr><td><a href=\"http://snomed.info/id/105431001\">105431001</a></td><td>Pessoa adotada</td><td>Adopted person (person)</td></tr><tr><td><a href=\"http://snomed.info/id/2959006\">2959006</a></td><td>Prima</td><td>Female cousin (person)</td></tr><tr><td><a href=\"http://snomed.info/id/47801002\">47801002</a></td><td>Primo</td><td>Male cousin (person)</td></tr><tr><td><a href=\"http://snomed.info/id/4577005\">4577005</a></td><td>Primo em primeiro grau</td><td>First cousin (person)</td></tr><tr><td><a href=\"http://snomed.info/id/13443008\">13443008</a></td><td>Primo em segundo grau</td><td>Second cousin (person)</td></tr><tr><td><a href=\"http://snomed.info/id/736456008\">736456008</a></td><td>Primo materno em primeiro grau</td><td>Maternal first cousin (person)</td></tr><tr><td><a href=\"http://snomed.info/id/394862003\">394862003</a></td><td>Tia-avó</td><td>Great aunt (person)</td></tr><tr><td><a href=\"http://snomed.info/id/394861005\">394861005</a></td><td>Tio-avô</td><td>Great uncle (person)</td></tr><tr><td><a href=\"http://snomed.info/id/2368000\">2368000</a></td><td>Trisavó</td><td>Great great grandmother (person)</td></tr><tr><td><a href=\"http://snomed.info/id/80386000\">80386000</a></td><td>Trisavô</td><td>Great great grandfather (person)</td></tr><tr><td><a href=\"http://snomed.info/id/68021009\">68021009</a></td><td>Trisavô/trisavó</td><td>Great great grandparent (person)</td></tr><tr><td><a href=\"http://snomed.info/id/11393001\">11393001</a></td><td>Trisneto/trisneta</td><td>Great great grandchild (person)</td></tr><tr><td><a href=\"http://snomed.info/id/1258960001\">1258960001</a></td><td>Genro</td><td>Son-in-law (person)</td></tr><tr><td><a href=\"http://snomed.info/id/1258961002\">1258961002</a></td><td>Nora</td><td>Daughter-in-law (person)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpcbd-person-in-family-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.61" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPCBDPersonInFamilyVS"] ; # 
+  fhir:title [ fhir:v "CPCBD - Person in Family"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2022-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores PersonInFamily (CPCBD v1.1.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "25211005" ] ;
+         fhir:display [ fhir:v "Tia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Aunt (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "67822003" ] ;
+         fhir:display [ fhir:v "Filho/filha" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Child (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "393547004" ] ;
+         fhir:display [ fhir:v "Criança adotada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Adopted child (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "39062003" ] ;
+         fhir:display [ fhir:v "Criança de acolhimento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Foster child (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "55538000" ] ;
+         fhir:display [ fhir:v "Primo/prima" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cousin (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "83420006" ] ;
+         fhir:display [ fhir:v "Filha biológica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Natural daughter (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "393549001" ] ;
+         fhir:display [ fhir:v "Filha adoptiva" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Adopted daughter (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "66089001" ] ;
+         fhir:display [ fhir:v "Filha" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Daughter (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "31831004" ] ;
+         fhir:display [ fhir:v "Filha de acolhimento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Foster daughter (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "303071001" ] ;
+         fhir:display [ fhir:v "Membro da família" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Person in the family (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "9947008" ] ;
+         fhir:display [ fhir:v "Pai biológico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Natural father (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "5171000124108" ] ;
+         fhir:display [ fhir:v "Sogro" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Father-in-law (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "33969000" ] ;
+         fhir:display [ fhir:v "Bisavô" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Great grandparent (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "86372007" ] ;
+         fhir:display [ fhir:v "Neto/neta" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Grandchild (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "62296006" ] ;
+         fhir:display [ fhir:v "Avô biológico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Natural grandfather (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "65656005" ] ;
+         fhir:display [ fhir:v "Mãe biológica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Natural mother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "5181000124106" ] ;
+         fhir:display [ fhir:v "Sogra" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mother-in-law (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "75226009" ] ;
+         fhir:display [ fhir:v "Filho/filha biológico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Natural child (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "34581001" ] ;
+         fhir:display [ fhir:v "Sobrinha" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Niece (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "83559000" ] ;
+         fhir:display [ fhir:v "Sobrinho" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nephew (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "40683002" ] ;
+         fhir:display [ fhir:v "Pai/mãe" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Parent (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "5161000124101" ] ;
+         fhir:display [ fhir:v "Sogro/sogra" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Parent in-law (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "375005" ] ;
+         fhir:display [ fhir:v "Irmão/irmã" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sibling (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "113160008" ] ;
+         fhir:display [ fhir:v "Filho biológico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Natural son (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394560000" ] ;
+         fhir:display [ fhir:v "Filho adoptivo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Adopted son (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "65616008" ] ;
+         fhir:display [ fhir:v "Filho" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Son (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "12241003" ] ;
+         fhir:display [ fhir:v "Filho de acolhimento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Foster son (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "127848009" ] ;
+         fhir:display [ fhir:v "Cônjuge" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Spouse (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "86764008" ] ;
+         fhir:display [ fhir:v "Enteado/enteada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Stepchild (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "22573006" ] ;
+         fhir:display [ fhir:v "Enteada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Stepdaughter (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "8674003" ] ;
+         fhir:display [ fhir:v "Enteado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Stepson (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "38048003" ] ;
+         fhir:display [ fhir:v "Tio" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Uncle (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "127849001" ] ;
+         fhir:display [ fhir:v "Marido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Husband (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "2272004" ] ;
+         fhir:display [ fhir:v "Meia irmã" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Half-sister (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "45929001" ] ;
+         fhir:display [ fhir:v "Meio irmão" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Half-brother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "127850001" ] ;
+         fhir:display [ fhir:v "Mulher" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Wife (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "736454006" ] ;
+         fhir:display [ fhir:v "Tia materna" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Maternal aunt (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "736455007" ] ;
+         fhir:display [ fhir:v "Tia paterna" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Paternal aunt (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "719759007" ] ;
+         fhir:display [ fhir:v "Primo materno" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Maternal cousin (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "719760002" ] ;
+         fhir:display [ fhir:v "Primo paterno" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Paternal cousin (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "50261002" ] ;
+         fhir:display [ fhir:v "Bisavô" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Great grandfather (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "78652007" ] ;
+         fhir:display [ fhir:v "Bisavó" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Great grandmother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "44181008" ] ;
+         fhir:display [ fhir:v "Neta" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Granddaughter (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "70578009" ] ;
+         fhir:display [ fhir:v "Neto" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Grandson (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "34871008" ] ;
+         fhir:display [ fhir:v "Avô" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Grandfather (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394857004" ] ;
+         fhir:display [ fhir:v "Avô materno" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Maternal grandfather (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394856008" ] ;
+         fhir:display [ fhir:v "Avô paterno" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Paternal grandfather (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "113157001" ] ;
+         fhir:display [ fhir:v "Avó" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Grandmother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394859001" ] ;
+         fhir:display [ fhir:v "Avó materna" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Maternal grandmother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394858009" ] ;
+         fhir:display [ fhir:v "Avó paterna" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Paternal grandmother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "442031000124102" ] ;
+         fhir:display [ fhir:v "Tio materna" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Maternal uncle (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "442041000124107" ] ;
+         fhir:display [ fhir:v "Tio paterno" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Paternal uncle (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "41953004" ] ;
+         fhir:display [ fhir:v "Pai/mãe adoptivo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Adoptive parent (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "609005" ] ;
+         fhir:display [ fhir:v "Pai adoptivo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Adoptive father (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "21464003" ] ;
+         fhir:display [ fhir:v "Mãe adoptiva" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Adoptive mother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "8458002" ] ;
+         fhir:display [ fhir:v "Pai de acolhimento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Foster father (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30578000" ] ;
+         fhir:display [ fhir:v "Padrasto" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Stepfather (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "38265003" ] ;
+         fhir:display [ fhir:v "Mãe de acolhimento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Foster mother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "65412001" ] ;
+         fhir:display [ fhir:v "Madrasta" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Stepmother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "13646006" ] ;
+         fhir:display [ fhir:v "Pai/mãe biológico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Natural parent (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "90921004" ] ;
+         fhir:display [ fhir:v "Pai/mãe de acolhimento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Foster parent (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "70924004" ] ;
+         fhir:display [ fhir:v "Irmão" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Brother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "60614009" ] ;
+         fhir:display [ fhir:v "Irmão biológico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Natural brother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "81276006" ] ;
+         fhir:display [ fhir:v "Irmão gémeo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Twin brother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "81467001" ] ;
+         fhir:display [ fhir:v "Irmão gémeo não idêntico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Fraternal twin brother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "78194006" ] ;
+         fhir:display [ fhir:v "Irmão gémeo idêntico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Identical twin brother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "76087000" ] ;
+         fhir:display [ fhir:v "Meio irmão" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Stepbrother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "21093007" ] ;
+         fhir:display [ fhir:v "Irmão consaguíneo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Half-sibling (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "82101005" ] ;
+         fhir:display [ fhir:v "Irmão biológico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Natural sibling (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "73678001" ] ;
+         fhir:display [ fhir:v "Irmã biológica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Natural sister (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "19343003" ] ;
+         fhir:display [ fhir:v "Irmã gémea" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Twin sister (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "29644004" ] ;
+         fhir:display [ fhir:v "Irmã gémea não idêntica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Fraternal twin sister (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "50058005" ] ;
+         fhir:display [ fhir:v "Irmã gémea idêntica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Identical twin sister (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "313416000" ] ;
+         fhir:display [ fhir:v "Gémeo não idêntico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Fraternal twin (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "313415001" ] ;
+         fhir:display [ fhir:v "Gémeo idêntico" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Identical twin (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "27733009" ] ;
+         fhir:display [ fhir:v "Irmã" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sister (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "46363003" ] ;
+         fhir:display [ fhir:v "Meia irmã" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Stepsister (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "88510002" ] ;
+         fhir:display [ fhir:v "Meio irmão/irmã" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Stepsibling (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "31656007" ] ;
+         fhir:display [ fhir:v "Avó adotiva" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Adoptive grandmother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "85058002" ] ;
+         fhir:display [ fhir:v "Avô adotivo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Adoptive grandfather (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "17945006" ] ;
+         fhir:display [ fhir:v "Avó biológica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Natural grandmother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "38312007" ] ;
+         fhir:display [ fhir:v "Avó/avô" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Grandparent (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "22609000" ] ;
+         fhir:display [ fhir:v "Avô/avó adotivo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Adoptive grandparent (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "78272007" ] ;
+         fhir:display [ fhir:v "Avós biológicos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Natural grandparent (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "719769001" ] ;
+         fhir:display [ fhir:v "Bisavó materna" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Maternal great grandmother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "719771001" ] ;
+         fhir:display [ fhir:v "Bisavô materno" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Maternal great grandfather (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "719768009" ] ;
+         fhir:display [ fhir:v "Bisavó paterna" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Paternal great grandmother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "719770000" ] ;
+         fhir:display [ fhir:v "Bisavô paterno" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Paternal great grandfather (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394567002" ] ;
+         fhir:display [ fhir:v "Bisneta" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Great granddaughter (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394566006" ] ;
+         fhir:display [ fhir:v "Bisneto" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Great grandson (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "72012000" ] ;
+         fhir:display [ fhir:v "Bisneto/bisneta" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Great grandchild (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "34972000" ] ;
+         fhir:display [ fhir:v "Filha única" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Only daughter (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14469008" ] ;
+         fhir:display [ fhir:v "Filho/filha legal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Legal child (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "81173009" ] ;
+         fhir:display [ fhir:v "Filho único" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Only son (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "76022008" ] ;
+         fhir:display [ fhir:v "Irmã adotiva" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Adoptive sister (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "58293006" ] ;
+         fhir:display [ fhir:v "Irmã de acolhimento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Foster sister (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "17925003" ] ;
+         fhir:display [ fhir:v "Irmão adotivo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Adoptive brother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "29787005" ] ;
+         fhir:display [ fhir:v "Irmão de acolhimento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Foster brother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "11773006" ] ;
+         fhir:display [ fhir:v "Irmão legal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Legal brother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "79508001" ] ;
+         fhir:display [ fhir:v "Irmão/irmã adotivo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Adoptive sibling (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "18906004" ] ;
+         fhir:display [ fhir:v "Irmão/irmã de acolhimento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Foster sibling (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "11286003" ] ;
+         fhir:display [ fhir:v "Irmão/irmã gémeo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Twin sibling (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "72705000" ] ;
+         fhir:display [ fhir:v "Mãe" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "719765007" ] ;
+         fhir:display [ fhir:v "Meia-irmã materna" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Maternal half sister (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "719764006" ] ;
+         fhir:display [ fhir:v "Meia-irmã paterna" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Paternal half sister (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "719766008" ] ;
+         fhir:display [ fhir:v "Meio-irmão materno" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Maternal half brother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "719762005" ] ;
+         fhir:display [ fhir:v "Meio-irmão paterno" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Paternal half brother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "74128007" ] ;
+         fhir:display [ fhir:v "Padrasto/madrasta" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Stepparent (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "66839005" ] ;
+         fhir:display [ fhir:v "Pai" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Father (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "266943008" ] ;
+         fhir:display [ fhir:v "Pai/mãe solteiro" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Single parent (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "125679009" ] ;
+         fhir:display [ fhir:v "Parente de sangue" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Blood relative (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "125678001" ] ;
+         fhir:display [ fhir:v "Parente de sangue de primeiro grau" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "First degree blood relative (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "699110007" ] ;
+         fhir:display [ fhir:v "Parente de sangue de segundo grau" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Second degree blood relative (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "105431001" ] ;
+         fhir:display [ fhir:v "Pessoa adotada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Adopted person (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "2959006" ] ;
+         fhir:display [ fhir:v "Prima" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Female cousin (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "47801002" ] ;
+         fhir:display [ fhir:v "Primo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Male cousin (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "4577005" ] ;
+         fhir:display [ fhir:v "Primo em primeiro grau" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "First cousin (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "13443008" ] ;
+         fhir:display [ fhir:v "Primo em segundo grau" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Second cousin (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "736456008" ] ;
+         fhir:display [ fhir:v "Primo materno em primeiro grau" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Maternal first cousin (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394862003" ] ;
+         fhir:display [ fhir:v "Tia-avó" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Great aunt (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "394861005" ] ;
+         fhir:display [ fhir:v "Tio-avô" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Great uncle (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "2368000" ] ;
+         fhir:display [ fhir:v "Trisavó" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Great great grandmother (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "80386000" ] ;
+         fhir:display [ fhir:v "Trisavô" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Great great grandfather (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "68021009" ] ;
+         fhir:display [ fhir:v "Trisavô/trisavó" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Great great grandparent (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "11393001" ] ;
+         fhir:display [ fhir:v "Trisneto/trisneta" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Great great grandchild (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1258960001" ] ;
+         fhir:display [ fhir:v "Genro" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Son-in-law (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1258961002" ] ;
+         fhir:display [ fhir:v "Nora" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Daughter-in-law (person)" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

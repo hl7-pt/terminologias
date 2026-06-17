@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-flaccscale-observation-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-flaccscale-observation-vs</b></p><a name="cpe-flaccscale-observation-vs"> </a><a name="hccpe-flaccscale-observation-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="https://loinc.org/38216-8/">38216-8</a></td><td>Gravidade da dor Face FLACC</td><td>Face</td><td>Pain severity Face FLACC</td><td>Face</td></tr><tr><td><a href="https://loinc.org/38217-6/">38217-6</a></td><td>Gravidade da dor Pernas FLACC</td><td>Pernas</td><td>Pain severity Legs FLACC</td><td>Pernas</td></tr><tr><td><a href="https://loinc.org/38218-4/">38218-4</a></td><td>Gravidade da dor Atividade FLACC</td><td>Atividade</td><td>Pain severity Activity FLACC</td><td>Atividade</td></tr><tr><td><a href="https://loinc.org/38219-2/">38219-2</a></td><td>Gravidade da dor Choro FLACC</td><td>Choro</td><td>Pain severity Cry FLACC</td><td>Choro</td></tr><tr><td><a href="https://loinc.org/38220-0/">38220-0</a></td><td>Gravidade da dor Consolabilidade FLACC</td><td>Consolabilidade</td><td>Pain severity Consolability FLACC</td><td>Consolabilidade</td></tr><tr><td><a href="https://loinc.org/38215-0/">38215-0</a></td><td>Total de gravidade da dor [Pontuação] FLACC</td><td>Score total</td><td>Pain severity total [Score] FLACC</td><td>Score total</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-flaccscale-observation-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.130"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPEFLACCScaleObservationVS"/>
+  <title value="CPE - FLACC Scale Observation"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores FLACCScaleObservation (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="38216-8"/>
+        <display value="Gravidade da dor Face FLACC"/>
+        <designation>
+          <language value="en"/>
+          <value value="Pain severity Face FLACC"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Face"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38217-6"/>
+        <display value="Gravidade da dor Pernas FLACC"/>
+        <designation>
+          <language value="en"/>
+          <value value="Pain severity Legs FLACC"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Pernas"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38218-4"/>
+        <display value="Gravidade da dor Atividade FLACC"/>
+        <designation>
+          <language value="en"/>
+          <value value="Pain severity Activity FLACC"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Atividade"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38219-2"/>
+        <display value="Gravidade da dor Choro FLACC"/>
+        <designation>
+          <language value="en"/>
+          <value value="Pain severity Cry FLACC"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Choro"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38220-0"/>
+        <display value="Gravidade da dor Consolabilidade FLACC"/>
+        <designation>
+          <language value="en"/>
+          <value value="Pain severity Consolability FLACC"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Consolabilidade"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38215-0"/>
+        <display value="Total de gravidade da dor [Pontuação] FLACC"/>
+        <designation>
+          <language value="en"/>
+          <value value="Pain severity total [Score] FLACC"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Score total"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

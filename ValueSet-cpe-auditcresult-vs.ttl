@@ -1,0 +1,271 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-auditcresult-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-auditcresult-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-auditcresult-vs</b></p><a name=\"cpe-auditcresult-vs\"> </a><a name=\"hccpe-auditcresult-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/LA6270-8/\">LA6270-8</a></td><td>Nunca</td><td/><td>Never</td><td/></tr><tr><td><a href=\"https://loinc.org/LA18933-4/\">LA18933-4</a></td><td>Menos de uma vez por mês</td><td>Menos de 1 vez/mês</td><td>Less than monthly</td><td>Menos de 1 vez/mês</td></tr><tr><td><a href=\"https://loinc.org/LA18876-5/\">LA18876-5</a></td><td>Pelo menos uma vez por mês</td><td>Pelo menos 1 vez/mês</td><td>Monthly</td><td>Pelo menos 1 vez/mês</td></tr><tr><td><a href=\"https://loinc.org/LA18891-4/\">LA18891-4</a></td><td>Pelo menos uma vez por semana</td><td>pelo menos 1 vez/semana</td><td>Weekly</td><td>pelo menos 1 vez/semana</td></tr><tr><td><a href=\"https://loinc.org/LA18934-2/\">LA18934-2</a></td><td>Diariamente ou quase diariamente</td><td/><td>Daily or almost daily</td><td/></tr><tr><td><a href=\"https://loinc.org/LA18926-8/\">LA18926-8</a></td><td>Uma vez por mês ou menos</td><td>1 vez/mês ou menos</td><td>Monthly or less</td><td>1 vez/mês ou menos</td></tr><tr><td><a href=\"https://loinc.org/LA18927-6/\">LA18927-6</a></td><td>Duas a quatro vezes por mês</td><td>2 a 4 vezes/mês</td><td>2-4 times a month</td><td>2 a 4 vezes/mês</td></tr><tr><td><a href=\"https://loinc.org/LA18928-4/\">LA18928-4</a></td><td>Duas a três vezes por semanas</td><td>2 a 3 vezes/semana</td><td>2-3 times a week</td><td>2 a 3 vezes/semana</td></tr><tr><td><a href=\"https://loinc.org/LA18929-2/\">LA18929-2</a></td><td>Quatro ou mais vezes por semana</td><td>4 ou mais vezes/semana</td><td>4 or more times a week</td><td>4 ou mais vezes/semana</td></tr><tr><td><a href=\"https://loinc.org/LA15694-5/\">LA15694-5</a></td><td>1 ou 2</td><td>1 ou 2 por dia</td><td>1 or 2</td><td>1 ou 2 por dia</td></tr><tr><td><a href=\"https://loinc.org/LA15695-2/\">LA15695-2</a></td><td>3 ou 4</td><td>3 ou 4 por dia</td><td>3 or 4</td><td>3 ou 4 por dia</td></tr><tr><td><a href=\"https://loinc.org/LA18930-0/\">LA18930-0</a></td><td>5 ou 6</td><td>5 ou 6 por dia</td><td>5 or 6</td><td>5 ou 6 por dia</td></tr><tr><td><a href=\"https://loinc.org/LA18931-8/\">LA18931-8</a></td><td>De 7 a 9</td><td>De 7 a 9 por dia</td><td>7 to 9</td><td>De 7 a 9 por dia</td></tr><tr><td><a href=\"https://loinc.org/LA18932-6/\">LA18932-6</a></td><td>10 ou mais</td><td>10 ou mais por dia</td><td>10 or more</td><td>10 ou mais por dia</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-auditcresult-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.121" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPEAUDITCResultVS"] ; # 
+  fhir:title [ fhir:v "CPE - AUDIT-C Result"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores AUDITCResult (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA6270-8" ] ;
+         fhir:display [ fhir:v "Nunca" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Never" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA18933-4" ] ;
+         fhir:display [ fhir:v "Menos de uma vez por mês" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Less than monthly" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Menos de 1 vez/mês" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA18876-5" ] ;
+         fhir:display [ fhir:v "Pelo menos uma vez por mês" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Monthly" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Pelo menos 1 vez/mês" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA18891-4" ] ;
+         fhir:display [ fhir:v "Pelo menos uma vez por semana" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Weekly" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "pelo menos 1 vez/semana" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA18934-2" ] ;
+         fhir:display [ fhir:v "Diariamente ou quase diariamente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Daily or almost daily" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA18926-8" ] ;
+         fhir:display [ fhir:v "Uma vez por mês ou menos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Monthly or less" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "1 vez/mês ou menos" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA18927-6" ] ;
+         fhir:display [ fhir:v "Duas a quatro vezes por mês" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "2-4 times a month" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "2 a 4 vezes/mês" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA18928-4" ] ;
+         fhir:display [ fhir:v "Duas a três vezes por semanas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "2-3 times a week" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "2 a 3 vezes/semana" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA18929-2" ] ;
+         fhir:display [ fhir:v "Quatro ou mais vezes por semana" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "4 or more times a week" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "4 ou mais vezes/semana" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA15694-5" ] ;
+         fhir:display [ fhir:v "1 ou 2" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "1 or 2" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "1 ou 2 por dia" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA15695-2" ] ;
+         fhir:display [ fhir:v "3 ou 4" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "3 or 4" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "3 ou 4 por dia" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA18930-0" ] ;
+         fhir:display [ fhir:v "5 ou 6" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "5 or 6" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "5 ou 6 por dia" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA18931-8" ] ;
+         fhir:display [ fhir:v "De 7 a 9" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "7 to 9" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "De 7 a 9 por dia" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA18932-6" ] ;
+         fhir:display [ fhir:v "10 ou mais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "10 or more" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "10 ou mais por dia" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,272 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-fagerstrom-test-result-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-fagerstrom-test-result-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-fagerstrom-test-result-vs</b></p><a name=\"cpe-fagerstrom-test-result-vs\"> </a><a name=\"hccpe-fagerstrom-test-result-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/LA15918-8/\">LA15918-8</a></td><td>Fuma todos os dias</td><td/><td>Every-day smoker</td><td/></tr><tr><td><a href=\"https://loinc.org/LA15919-6/\">LA15919-6</a></td><td>Não fuma todos os dias</td><td/><td>Some-day smoker</td><td/></tr><tr><td><a href=\"https://loinc.org/LA15920-4/\">LA15920-4</a></td><td>Antigo fumador</td><td/><td>Former smoker</td><td/></tr><tr><td><a href=\"https://loinc.org/LA15792-7/\">LA15792-7</a></td><td>Até 5 minutos</td><td>Nos primeiros 5 minutos</td><td>Within 5 minutes</td><td>Nos primeiros 5 minutos</td></tr><tr><td><a href=\"https://loinc.org/LA15793-5/\">LA15793-5</a></td><td>De 6 a 30 minutos</td><td>Após 6 - 30 minutos</td><td>6-30 minutes</td><td>Após 6 - 30 minutos</td></tr><tr><td><a href=\"https://loinc.org/LA15794-3/\">LA15794-3</a></td><td>De 31 a 60 minutos</td><td>Após 31 - 60 minutos</td><td>31-60 minutes</td><td>Após 31 - 60 minutos</td></tr><tr><td><a href=\"https://loinc.org/LA15795-0/\">LA15795-0</a></td><td>Mais de 60 minutos</td><td>Após 60 minutos</td><td>After 60 minutes</td><td>Após 60 minutos</td></tr><tr><td><a href=\"https://loinc.org/LA15798-4/\">LA15798-4</a></td><td>Sim</td><td/><td>Yes</td><td/></tr><tr><td><a href=\"https://loinc.org/LA15799-2/\">LA15799-2</a></td><td>Não</td><td/><td>No</td><td/></tr><tr><td><a href=\"https://loinc.org/LA15796-8/\">LA15796-8</a></td><td>O primeiro da manhã</td><td/><td>The first one in the morning</td><td/></tr><tr><td><a href=\"https://loinc.org/LA15797-6/\">LA15797-6</a></td><td>Qualquer outro cigarro</td><td>Qualquer outro</td><td>All others</td><td>Qualquer outro</td></tr><tr><td><a href=\"https://loinc.org/LA15912-1/\">LA15912-1</a></td><td>10 ou menos</td><td/><td>10 or less</td><td/></tr><tr><td><a href=\"https://loinc.org/LA15913-9/\">LA15913-9</a></td><td>De 11 a 20</td><td>11 - 20</td><td>11-20</td><td>11 - 20</td></tr><tr><td><a href=\"https://loinc.org/LA15914-7/\">LA15914-7</a></td><td>De 21 a 30</td><td>21 - 30</td><td>21-30</td><td>21 - 30</td></tr><tr><td><a href=\"https://loinc.org/LA15915-4/\">LA15915-4</a></td><td>31 ou mais</td><td/><td>31 or more</td><td/></tr><tr><td><a href=\"https://loinc.org/LA33-6/\">LA33-6</a></td><td>Sim</td><td>Nas primeiras horas</td><td>Yes</td><td>Nas primeiras horas</td></tr><tr><td><a href=\"https://loinc.org/LA32-8/\">LA32-8</a></td><td>Não</td><td>No resto do dia</td><td>No</td><td>No resto do dia</td></tr><tr><td><a href=\"https://loinc.org/LA15775-2/\">LA15775-2</a></td><td>Não sabe/recusa responder</td><td/><td>Don't know/refused</td><td/></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-fagerstrom-test-result-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.127" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPEFagerstromTestResultVS"] ; # 
+  fhir:title [ fhir:v "CPE - Fagerstrom Test Result"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores FagerstromTestResult (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA15918-8" ] ;
+         fhir:display [ fhir:v "Fuma todos os dias" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Every-day smoker" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA15919-6" ] ;
+         fhir:display [ fhir:v "Não fuma todos os dias" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Some-day smoker" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA15920-4" ] ;
+         fhir:display [ fhir:v "Antigo fumador" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Former smoker" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA15792-7" ] ;
+         fhir:display [ fhir:v "Até 5 minutos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Within 5 minutes" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Nos primeiros 5 minutos" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA15793-5" ] ;
+         fhir:display [ fhir:v "De 6 a 30 minutos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "6-30 minutes" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Após 6 - 30 minutos" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA15794-3" ] ;
+         fhir:display [ fhir:v "De 31 a 60 minutos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "31-60 minutes" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Após 31 - 60 minutos" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA15795-0" ] ;
+         fhir:display [ fhir:v "Mais de 60 minutos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "After 60 minutes" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Após 60 minutos" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA15798-4" ] ;
+         fhir:display [ fhir:v "Sim" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Yes" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA15799-2" ] ;
+         fhir:display [ fhir:v "Não" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA15796-8" ] ;
+         fhir:display [ fhir:v "O primeiro da manhã" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "The first one in the morning" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA15797-6" ] ;
+         fhir:display [ fhir:v "Qualquer outro cigarro" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "All others" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Qualquer outro" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA15912-1" ] ;
+         fhir:display [ fhir:v "10 ou menos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "10 or less" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA15913-9" ] ;
+         fhir:display [ fhir:v "De 11 a 20" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "11-20" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "11 - 20" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA15914-7" ] ;
+         fhir:display [ fhir:v "De 21 a 30" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "21-30" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "21 - 30" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA15915-4" ] ;
+         fhir:display [ fhir:v "31 ou mais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "31 or more" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA33-6" ] ;
+         fhir:display [ fhir:v "Sim" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Yes" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Nas primeiras horas" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA32-8" ] ;
+         fhir:display [ fhir:v "Não" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "No resto do dia" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA15775-2" ] ;
+         fhir:display [ fhir:v "Não sabe/recusa responder" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Don't know/refused" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

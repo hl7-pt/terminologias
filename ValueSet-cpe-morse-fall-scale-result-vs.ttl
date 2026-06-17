@@ -1,0 +1,228 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-morse-fall-scale-result-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-morse-fall-scale-result-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-morse-fall-scale-result-vs</b></p><a name=\"cpe-morse-fall-scale-result-vs\"> </a><a name=\"hccpe-morse-fall-scale-result-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/LA32-8/\">LA32-8</a></td><td>Não</td><td/><td>No</td><td/></tr><tr><td><a href=\"https://loinc.org/LA33-6/\">LA33-6</a></td><td>Sim</td><td/><td>Yes</td><td/></tr><tr><td><a href=\"https://loinc.org/LA13030-4/\">LA13030-4</a></td><td>Repouso na cama/assistência de enfermagem</td><td>Nenhuma/ajuda de enfermeiro/acamado/cadeira de rodas</td><td>Bed rest/nurse assist</td><td>Nenhuma/ajuda de enfermeiro/acamado/cadeira de rodas</td></tr><tr><td><a href=\"https://loinc.org/LA13031-2/\">LA13031-2</a></td><td>Muletas/bengala/andarilho</td><td>Muletas/canadianas/bengala/andarilho</td><td>Crutches/cane/walker</td><td>Muletas/canadianas/bengala/andarilho</td></tr><tr><td><a href=\"https://loinc.org/LA13032-0/\">LA13032-0</a></td><td>Mobiliário</td><td>Apoia-se no mobiliário para andar</td><td>Furniture</td><td>Apoia-se no mobiliário para andar</td></tr><tr><td><a href=\"https://loinc.org/LA13033-8/\">LA13033-8</a></td><td>Normal/em repouso/imóvel</td><td>Normal/acamado/imóvel</td><td>Normal/bedrest/immobile</td><td>Normal/acamado/imóvel</td></tr><tr><td><a href=\"https://loinc.org/LA13034-6/\">LA13034-6</a></td><td>Fraco</td><td>Debilitado</td><td>Weak</td><td>Debilitado</td></tr><tr><td><a href=\"https://loinc.org/LA13035-3/\">LA13035-3</a></td><td>Deficiente</td><td>Dependente de ajuda</td><td>Impaired</td><td>Dependente de ajuda</td></tr><tr><td><a href=\"https://loinc.org/LA13036-1/\">LA13036-1</a></td><td>Orientado para a própria capacidade</td><td>Consciente das suas capacidades</td><td>Oriented to own ability</td><td>Consciente das suas capacidades</td></tr><tr><td><a href=\"https://loinc.org/LA13037-9/\">LA13037-9</a></td><td>Esquece as limitações</td><td>Esquece-se das suas limitações</td><td>Forgets limitations</td><td>Esquece-se das suas limitações</td></tr><tr><td><a href=\"https://loinc.org/LA13038-7/\">LA13038-7</a></td><td>Baixo risco (pontuação MFS 0 - 24)</td><td/><td>Low Risk (MFS Score 0 - 24)</td><td/></tr><tr><td><a href=\"https://loinc.org/LA13039-5/\">LA13039-5</a></td><td>Risco moderado (pontuação MFS 25 - 45)</td><td/><td>Moderate Risk (MFS Score 25 - 45)</td><td/></tr><tr><td><a href=\"https://loinc.org/LA13040-3/\">LA13040-3</a></td><td>Alto risco (pontuação MFS 50+)</td><td/><td>High Risk (MFS Score 50+)</td><td/></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-morse-fall-scale-result-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.138" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPEMorseFallScaleResultVS"] ; # 
+  fhir:title [ fhir:v "CPE - Morse Fall Scale Result"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores MorseFallScaleResult (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA32-8" ] ;
+         fhir:display [ fhir:v "Não" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA33-6" ] ;
+         fhir:display [ fhir:v "Sim" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Yes" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA13030-4" ] ;
+         fhir:display [ fhir:v "Repouso na cama/assistência de enfermagem" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bed rest/nurse assist" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Nenhuma/ajuda de enfermeiro/acamado/cadeira de rodas" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA13031-2" ] ;
+         fhir:display [ fhir:v "Muletas/bengala/andarilho" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Crutches/cane/walker" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Muletas/canadianas/bengala/andarilho" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA13032-0" ] ;
+         fhir:display [ fhir:v "Mobiliário" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Furniture" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apoia-se no mobiliário para andar" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA13033-8" ] ;
+         fhir:display [ fhir:v "Normal/em repouso/imóvel" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Normal/bedrest/immobile" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Normal/acamado/imóvel" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA13034-6" ] ;
+         fhir:display [ fhir:v "Fraco" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Weak" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Debilitado" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA13035-3" ] ;
+         fhir:display [ fhir:v "Deficiente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Impaired" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Dependente de ajuda" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA13036-1" ] ;
+         fhir:display [ fhir:v "Orientado para a própria capacidade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Oriented to own ability" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Consciente das suas capacidades" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA13037-9" ] ;
+         fhir:display [ fhir:v "Esquece as limitações" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Forgets limitations" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Esquece-se das suas limitações" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA13038-7" ] ;
+         fhir:display [ fhir:v "Baixo risco (pontuação MFS 0 - 24)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Low Risk (MFS Score 0 - 24)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA13039-5" ] ;
+         fhir:display [ fhir:v "Risco moderado (pontuação MFS 25 - 45)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Moderate Risk (MFS Score 25 - 45)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA13040-3" ] ;
+         fhir:display [ fhir:v "Alto risco (pontuação MFS 50+)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "High Risk (MFS Score 50+)" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

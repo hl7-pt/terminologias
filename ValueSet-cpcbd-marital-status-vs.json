@@ -1,0 +1,103 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpcbd-marital-status-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpcbd-marital-status-vs</b></p><a name=\"cpcbd-marital-status-vs\"> </a><a name=\"hccpcbd-marital-status-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"http://snomed.info/id/160504008\">160504008</a></td><td>Estado civil desconhecido</td><td>Marital state unknown (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/20295000\">20295000</a></td><td>Divorciado</td><td>Divorced (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/87915002\">87915002</a></td><td>Casado</td><td>Married (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/125681006\">125681006</a></td><td>Solteiro</td><td>Single person (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/33553000\">33553000</a></td><td>Viúvo</td><td>Widowed (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/14012001\">14012001</a></td><td>União de facto</td><td>Common law partnership (finding)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpcbd-marital-status-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.59"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPCBDMaritalStatusVS",
+  "title" : "CPCBD - Marital Status",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2022-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores MaritalStatus (CPCBD v1.1.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "160504008",
+        "display" : "Estado civil desconhecido",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Marital state unknown (finding)"
+        }]
+      },
+      {
+        "code" : "20295000",
+        "display" : "Divorciado",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Divorced (finding)"
+        }]
+      },
+      {
+        "code" : "87915002",
+        "display" : "Casado",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Married (finding)"
+        }]
+      },
+      {
+        "code" : "125681006",
+        "display" : "Solteiro",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Single person (finding)"
+        }]
+      },
+      {
+        "code" : "33553000",
+        "display" : "Viúvo",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Widowed (finding)"
+        }]
+      },
+      {
+        "code" : "14012001",
+        "display" : "União de facto",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Common law partnership (finding)"
+        }]
+      }]
+    }]
+  }
+}

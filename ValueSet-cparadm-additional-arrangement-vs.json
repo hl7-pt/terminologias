@@ -1,0 +1,159 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cparadm-additional-arrangement-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cparadm-additional-arrangement-vs</b></p><a name=\"cparadm-additional-arrangement-vs\"> </a><a name=\"hccparadm-additional-arrangement-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"http://snomed.info/id/58938008\">58938008</a></td><td>Cadeira de rodas</td><td>Wheelchair device (physical object)</td></tr><tr><td><a href=\"http://snomed.info/id/308005007\">308005007</a></td><td>Intérprete de língua</td><td>Language interpreter (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/89149003\">89149003</a></td><td>Maca</td><td>Stretcher, device (physical object)</td></tr><tr><td><a href=\"http://snomed.info/id/229772003\">229772003</a></td><td>Cama</td><td>Bed (physical object)</td></tr><tr><td><a href=\"http://snomed.info/id/707808001\">707808001</a></td><td>Oxigénio</td><td>Oxygen therapy support (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/40617009\">40617009</a></td><td>Ventilação</td><td>Artificial ventilation (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/40174006\">40174006</a></td><td>Isolado</td><td>Isolation procedure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/223366009\">223366009</a></td><td>Profissional de saúde</td><td>Healthcare professional (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1287116005\">1287116005</a></td><td>Acompanhante</td><td>Chaperone (person)</td></tr><tr><td><a href=\"http://snomed.info/id/182777000\">182777000</a></td><td>Monitorização do utente</td><td>Monitoring of patient (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/1299103002\">1299103002</a></td><td>Cadeira de rodas pediátrica</td><td>Pediatric wheelchair (physical object)</td></tr><tr><td><a href=\"http://snomed.info/id/1299104008\">1299104008</a></td><td>Cadeira de rodas de adulto</td><td>Adult wheelchair (physical object)</td></tr><tr><td><a href=\"http://snomed.info/id/281000314102\">281000314102</a></td><td>Kit de partos</td><td>Delivery kit (physical object)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-additional-arrangement-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.19"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPARADMAdditionalArrangementVS",
+  "title" : "CPARADM - Additional Arrangement",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores AdditionalArrangement (CPARADM v3.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "58938008",
+        "display" : "Cadeira de rodas",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Wheelchair device (physical object)"
+        }]
+      },
+      {
+        "code" : "308005007",
+        "display" : "Intérprete de língua",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Language interpreter (occupation)"
+        }]
+      },
+      {
+        "code" : "89149003",
+        "display" : "Maca",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Stretcher, device (physical object)"
+        }]
+      },
+      {
+        "code" : "229772003",
+        "display" : "Cama",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Bed (physical object)"
+        }]
+      },
+      {
+        "code" : "707808001",
+        "display" : "Oxigénio",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Oxygen therapy support (regime/therapy)"
+        }]
+      },
+      {
+        "code" : "40617009",
+        "display" : "Ventilação",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Artificial ventilation (regime/therapy)"
+        }]
+      },
+      {
+        "code" : "40174006",
+        "display" : "Isolado",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Isolation procedure (procedure)"
+        }]
+      },
+      {
+        "code" : "223366009",
+        "display" : "Profissional de saúde",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Healthcare professional (occupation)"
+        }]
+      },
+      {
+        "code" : "1287116005",
+        "display" : "Acompanhante",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Chaperone (person)"
+        }]
+      },
+      {
+        "code" : "182777000",
+        "display" : "Monitorização do utente",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Monitoring of patient (regime/therapy)"
+        }]
+      },
+      {
+        "code" : "1299103002",
+        "display" : "Cadeira de rodas pediátrica",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Pediatric wheelchair (physical object)"
+        }]
+      },
+      {
+        "code" : "1299104008",
+        "display" : "Cadeira de rodas de adulto",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Adult wheelchair (physical object)"
+        }]
+      },
+      {
+        "code" : "281000314102",
+        "display" : "Kit de partos",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Delivery kit (physical object)"
+        }]
+      }]
+    }]
+  }
+}

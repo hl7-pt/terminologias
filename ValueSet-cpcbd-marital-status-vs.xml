@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpcbd-marital-status-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpcbd-marital-status-vs</b></p><a name="cpcbd-marital-status-vs"> </a><a name="hccpcbd-marital-status-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="http://snomed.info/id/160504008">160504008</a></td><td>Estado civil desconhecido</td><td>Marital state unknown (finding)</td></tr><tr><td><a href="http://snomed.info/id/20295000">20295000</a></td><td>Divorciado</td><td>Divorced (finding)</td></tr><tr><td><a href="http://snomed.info/id/87915002">87915002</a></td><td>Casado</td><td>Married (finding)</td></tr><tr><td><a href="http://snomed.info/id/125681006">125681006</a></td><td>Solteiro</td><td>Single person (finding)</td></tr><tr><td><a href="http://snomed.info/id/33553000">33553000</a></td><td>Viúvo</td><td>Widowed (finding)</td></tr><tr><td><a href="http://snomed.info/id/14012001">14012001</a></td><td>União de facto</td><td>Common law partnership (finding)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpcbd-marital-status-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.59"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPCBDMaritalStatusVS"/>
+  <title value="CPCBD - Marital Status"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores MaritalStatus (CPCBD v1.1.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="160504008"/>
+        <display value="Estado civil desconhecido"/>
+        <designation>
+          <language value="en"/>
+          <value value="Marital state unknown (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="20295000"/>
+        <display value="Divorciado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Divorced (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="87915002"/>
+        <display value="Casado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Married (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="125681006"/>
+        <display value="Solteiro"/>
+        <designation>
+          <language value="en"/>
+          <value value="Single person (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33553000"/>
+        <display value="Viúvo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Widowed (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="14012001"/>
+        <display value="União de facto"/>
+        <designation>
+          <language value="en"/>
+          <value value="Common law partnership (finding)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

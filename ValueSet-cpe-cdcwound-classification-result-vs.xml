@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-cdcwound-classification-result-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-cdcwound-classification-result-vs</b></p><a name="cpe-cdcwound-classification-result-vs"> </a><a name="hccpe-cdcwound-classification-result-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/418780004">418780004</a></td><td>Centers for Disease Control and Prevention Classe I/Limpa</td><td>Limpa</td><td>Centers for Disease Control and Prevention Class I/Clean (finding)</td><td>Limpa</td></tr><tr><td><a href="http://snomed.info/id/418115006">418115006</a></td><td>Centers for Disease Control and Prevention Classe II/Limpa-contaminada</td><td>Limpa-contaminada</td><td>Centers for Disease Control and Prevention Class II/Clean-contaminated (finding)</td><td>Limpa-contaminada</td></tr><tr><td><a href="http://snomed.info/id/419877002">419877002</a></td><td>Centers for Disease Control and Prevention Classe III/Contaminada</td><td>Contaminada</td><td>Centers for Disease Control and Prevention Class III/Contaminated (finding)</td><td>Contaminada</td></tr><tr><td><a href="http://snomed.info/id/418422005">418422005</a></td><td>Centers for Disease Control and Prevention Classe IV/Suja-infectada</td><td>Suja-infectada</td><td>Centers for Disease Control and Prevention Class IV/Dirty-infected (finding)</td><td>Suja-infectada</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-cdcwound-classification-result-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.188"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPECDCWoundClassificationResultVS"/>
+  <title value="CPE - CDC Wound Classification Result"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores CDCWoundClassificationResult (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="418780004"/>
+        <display value="Centers for Disease Control and Prevention Classe I/Limpa"/>
+        <designation>
+          <language value="en"/>
+          <value value="Centers for Disease Control and Prevention Class I/Clean (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="CDC Classe I/Limpa"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Limpa"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="418115006"/>
+        <display value="Centers for Disease Control and Prevention Classe II/Limpa-contaminada"/>
+        <designation>
+          <language value="en"/>
+          <value value="Centers for Disease Control and Prevention Class II/Clean-contaminated (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="CDC Classe II/Limpa-contaminada"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Limpa-contaminada"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="419877002"/>
+        <display value="Centers for Disease Control and Prevention Classe III/Contaminada"/>
+        <designation>
+          <language value="en"/>
+          <value value="Centers for Disease Control and Prevention Class III/Contaminated (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="CDC Classe III/Contaminada"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Contaminada"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="418422005"/>
+        <display value="Centers for Disease Control and Prevention Classe IV/Suja-infectada"/>
+        <designation>
+          <language value="en"/>
+          <value value="Centers for Disease Control and Prevention Class IV/Dirty-infected (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="CDC Classe IV/Suja-infectada"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Suja-infectada"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

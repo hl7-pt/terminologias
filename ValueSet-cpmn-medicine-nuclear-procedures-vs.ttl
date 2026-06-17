@@ -1,0 +1,2504 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpmn-medicine-nuclear-procedures-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpmn-medicine-nuclear-procedures-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpmn-medicine-nuclear-procedures-vs</b></p><a name=\"cpmn-medicine-nuclear-procedures-vs\"> </a><a name=\"hccpmn-medicine-nuclear-procedures-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/85606007\">85606007</a></td><td>Ventriculografia cardíaca com radionuclídeo</td><td>Radionuclide cardiac ventriculography (procedure)</td><td>−</td><td>Radionuclide cardiac ventriculography (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/431942008\">431942008</a></td><td>Angiografia de 1ª passagem de radionuclídeos</td><td>Radionuclide cardiac first pass angiography (procedure)</td><td>−</td><td>Radionuclide cardiac first pass angiography (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/16545191000119100\">16545191000119100</a></td><td>Estudo de stress com radionuclídeo miocárdico de perfusão</td><td>Radionuclide myocardial perfusion stress study (procedure)</td><td>Cintigrafia de perfusão do miocárdio em esforço/stress farmacológico</td><td>Radionuclide myocardial perfusion stress study (procedure)</td><td>Cintigrafia de perfusão do miocárdio em esforço/stress farmacológico</td></tr><tr><td><a href=\"http://snomed.info/id/252432008\">252432008</a></td><td>Estudo de perfusão miocárdico com radionuclídeos</td><td>Radionuclide myocardial perfusion study (procedure)</td><td>Cintigrafia de perfusão do miocárdio em repouso</td><td>Radionuclide myocardial perfusion study (procedure)</td><td>Cintigrafia de perfusão do miocárdio em repouso</td></tr><tr><td><a href=\"http://snomed.info/id/433218007\">433218007</a></td><td>Imagem de radionuclídeo do coração com 123-I</td><td>Radionuclide imaging of heart using iobenguane (123-I) (procedure)</td><td>−</td><td>Radionuclide imaging of heart using iobenguane (123-I) (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/443561009\">443561009</a></td><td>Emissão de fotão único com tomografia computadorizada com 123-MIBG ao coração</td><td>Single photon emission using iodine 123 meta-iodobenzylguanidine computed tomography with computed tomography of heart (procedure)</td><td>Tomografia cardíaca com 123I-MIBG</td><td>Single photon emission using iodine 123 meta-iodobenzylguanidine computed tomography with computed tomography of heart (procedure)</td><td>Tomografia cardíaca com 123I-MIBG</td></tr><tr><td><a href=\"http://snomed.info/id/252433003\">252433003</a></td><td>Estudo cardíaco com Tálio 201</td><td>Cardiac thallium 201 study (procedure)</td><td>−</td><td>Cardiac thallium 201 study (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/19252005\">19252005</a></td><td>Estudo de isótopos para perda de sangue gastrointestinal</td><td>Isotope study for gastrointestinal blood loss (procedure)</td><td>−</td><td>Isotope study for gastrointestinal blood loss (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/418050001\">418050001</a></td><td>Procedimento de imagem da glândula salivar com radionuclídeo</td><td>Radionuclide salivary gland imaging procedure (procedure)</td><td>−</td><td>Radionuclide salivary gland imaging procedure (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/418234000\">418234000</a></td><td>Procedimento de imagem do fígado e baço com radionuclídeos</td><td>Radionuclide liver and spleen imaging procedure (procedure)</td><td>−</td><td>Radionuclide liver and spleen imaging procedure (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/765030005\">765030005</a></td><td>Imagem de radionuclídeo do fígado e/ou trato biliar com isótopo radioativo</td><td>Radionuclide imaging of liver and/or biliary tract using radioactive isotope (procedure)</td><td>−</td><td>Radionuclide imaging of liver and/or biliary tract using radioactive isotope (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/432095006\">432095006</a></td><td>Imagem de radionuclídeo da região hepatobiliar com estimulação da vesícula biliar</td><td>Radionuclide imaging of hepatobiliary region with gallbladder stimulation (procedure)</td><td>−</td><td>Radionuclide imaging of hepatobiliary region with gallbladder stimulation (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/764137001\">764137001</a></td><td>Imagem de radionuclídeo com eritrócitos marcados com tecnécio (99m-Tc)</td><td>Radionuclide imaging using technetium (99m-Tc) labeled erythrocytes (procedure)</td><td>−</td><td>Radionuclide imaging using technetium (99m-Tc) labeled erythrocytes (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/57417005\">57417005</a></td><td>Pesquisa de divertículo Meckel</td><td>Bowel imaging for Meckel's diverticulum (procedure)</td><td>−</td><td>Bowel imaging for Meckel's diverticulum (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/241328005\">241328005</a></td><td>Estudo de refluxo gastroesofágico com radionuclídeos</td><td>Radionuclide gastroesophageal reflux study (procedure)</td><td>−</td><td>Radionuclide gastroesophageal reflux study (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/241316002\">241316002</a></td><td>Estudo de esvaziamento gástrico com radionuclídeos</td><td>Radionuclide gastric emptying study (procedure)</td><td>−</td><td>Radionuclide gastric emptying study (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/66088009\">66088009</a></td><td>Estudo de perfusão pulmonar</td><td>Pulmonary perfusion study (procedure)</td><td>Cintigrafia de perfusão pulmonar</td><td>Pulmonary perfusion study (procedure)</td><td>Cintigrafia de perfusão pulmonar</td></tr><tr><td><a href=\"http://snomed.info/id/57113004\">57113004</a></td><td>Estudo de ventilação pulmonar</td><td>Pulmonary ventilation study (procedure)</td><td>Cintigrafia de ventilação pulmonar</td><td>Pulmonary ventilation study (procedure)</td><td>Cintigrafia de ventilação pulmonar</td></tr><tr><td><a href=\"http://snomed.info/id/443578000\">443578000</a></td><td>Imagem de radionuclídeos ao rim transplantado</td><td>Radionuclide imaging of transplanted kidney (procedure)</td><td>−</td><td>Radionuclide imaging of transplanted kidney (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/768968005\">768968005</a></td><td>Imagem de radionuclídeos ao rim com 99mTc-DTPA</td><td>Radionuclide imaging of kidney using technetium (99m-Tc) pentetic acid (procedure)</td><td>−</td><td>Radionuclide imaging of kidney using technetium (99m-Tc) pentetic acid (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/241364006\">241364006</a></td><td>Cistograma de micção indireta com radionuclídeos</td><td>Radionuclide indirect micturating cystogram (procedure)</td><td>Cistocintigrafia indireta (acresce ao Renograma)</td><td>Radionuclide indirect micturating cystogram (procedure)</td><td>Cistocintigrafia indireta (acresce ao Renograma)</td></tr><tr><td><a href=\"http://snomed.info/id/241362005\">241362005</a></td><td>Imagem de radionuclídeos ao rim com 99mTc-MAG3</td><td>Radionuclide imaging of kidney using technetium (99m-Tc) tiatide (procedure)</td><td>−</td><td>Radionuclide imaging of kidney using technetium (99m-Tc) tiatide (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/439396000\">439396000</a></td><td>Imagem de radionuclídeos do rim após administração de diurético</td><td>Radionuclide imaging of kidney after administration of diuretic (procedure)</td><td>−</td><td>Radionuclide imaging of kidney after administration of diuretic (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/241366008\">241366008</a></td><td>Cistograma de micção direta com radionuclídeos</td><td>Radionuclide direct micturating cystogram (procedure)</td><td>−</td><td>Radionuclide direct micturating cystogram (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/764416003\">764416003</a></td><td>Imagem de radionuclídeos ao rim com 99mTc-DMSA</td><td>Radionuclide imaging of kidney using technetium (99m-Tc) succimer (procedure)</td><td>−</td><td>Radionuclide imaging of kidney using technetium (99m-Tc) succimer (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/241370000\">241370000</a></td><td>Estudos renais sem imagem com radionuclídeos</td><td>Radionuclide non-imaging renal studies (procedure)</td><td>−</td><td>Radionuclide non-imaging renal studies (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/-\">-</a></td><td>-</td><td/><td>Intervenção farmacológica - prova de captopril</td><td/><td>Intervenção farmacológica - prova de captopril</td></tr><tr><td><a href=\"http://snomed.info/id/764674001\">764674001</a></td><td>Imagem de radionuclídeos com leucócitos marcados com radioisótopo</td><td>Radionuclide imaging using radioisotope labeled leukocytes (procedure)</td><td>−</td><td>Radionuclide imaging using radioisotope labeled leukocytes (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/765456006\">765456006</a></td><td>Imagem de radionuclídeos de corpo inteiro com gálio-67 para localização de inflamação</td><td>Radionuclide imaging of whole body using gallium-67 for localization of inflammation (procedure)</td><td>−</td><td>Radionuclide imaging of whole body using gallium-67 for localization of inflammation (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/372084007\">372084007</a></td><td>Imagem de radioisótopos da medula óssea</td><td>Radioisotope scan of bone marrow (procedure)</td><td>−</td><td>Radioisotope scan of bone marrow (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/70268007\">70268007</a></td><td>Estudo de plaquetas</td><td>Platelet survival study (procedure)</td><td>−</td><td>Platelet survival study (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/81937003\">81937003</a></td><td>Estudo de semivida dos eritrócitos</td><td>Red cell survival study (procedure)</td><td>−</td><td>Red cell survival study (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/268444004\">268444004</a></td><td>Medição da massa de glóbulos vermelhos</td><td>Radionuclide red cell mass measurement (procedure)</td><td>−</td><td>Radionuclide red cell mass measurement (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/763841006\">763841006</a></td><td>Imagem de radionuclídeo do corpo inteiro com iobenguane (131-IMIBG)</td><td>Radionuclide imaging of whole body using iobenguane (131-I) (procedure)</td><td>−</td><td>Radionuclide imaging of whole body using iobenguane (131-I) (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/763843009\">763843009</a></td><td>Imagem de radionuclídeo do corpo inteiro com iobenguane (123-I)</td><td>Radionuclide imaging of whole body using Iobenguane (123-I) (procedure)</td><td>−</td><td>Radionuclide imaging of whole body using Iobenguane (123-I) (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/385443001\">385443001</a></td><td>Imagem de radionuclídeo da tiróide</td><td>Radionuclide imaging of thyroid (procedure)</td><td>−</td><td>Radionuclide imaging of thyroid (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/763840007\">763840007</a></td><td>Imagem de radionuclídeo do corpo inteiro com iobenguane (131-I)</td><td>Radionuclide imaging of whole body using iodine (131-I) (procedure)</td><td>−</td><td>Radionuclide imaging of whole body using iodine (131-I) (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/241393006\">241393006</a></td><td>Estudo do córtex adrenal com radionuclídeos</td><td>Radionuclide adrenal cortex study (procedure)</td><td>−</td><td>Radionuclide adrenal cortex study (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/764277001\">764277001</a></td><td>Imagem de radionuclídeo usando análogo de somatostatina marcado com radioisótopo</td><td>Radionuclide imaging using radioisotope labeled somatostatin analog (procedure)</td><td>−</td><td>Radionuclide imaging using radioisotope labeled somatostatin analog (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/372080003\">372080003</a></td><td>Imagem com radioisótopo da paratiróide</td><td>Radioisotope scan of parathyroid (procedure)</td><td>−</td><td>Radioisotope scan of parathyroid (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/433213003\">433213003</a></td><td>Imagem de radionuclídeos de corpo inteiro com gálio</td><td>Radionuclide imaging of whole body using gallium (procedure)</td><td>−</td><td>Radionuclide imaging of whole body using gallium (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/447864009\">447864009</a></td><td>Imagem de radionuclídeos de corpo inteiro com tálio Tl^201^</td><td>Radionuclide whole body scan using thallium Tl^201^ (procedure)</td><td>−</td><td>Radionuclide whole body scan using thallium Tl^201^ (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/418432003\">418432003</a></td><td>Cintigrafia mamária</td><td>Scintimammography (procedure)</td><td>−</td><td>Scintimammography (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/169167001\">169167001</a></td><td>Linfocintigrafia</td><td>Radionuclide lymphogram (procedure)</td><td>Linfocintigrafia para avaliação de linfedema</td><td>Radionuclide lymphogram (procedure)</td><td>Linfocintigrafia para avaliação de linfedema</td></tr><tr><td><a href=\"http://snomed.info/id/433028008\">433028008</a></td><td>Linfocintigrafia para deteção de gânglio sentinela</td><td>Radionuclide sentinel lymph node study (procedure)</td><td>−</td><td>Radionuclide sentinel lymph node study (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/241305009\">241305009</a></td><td>Venocintigrafia</td><td>Radionuclide venogram (procedure)</td><td>−</td><td>Radionuclide venogram (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/6650009\">6650009</a></td><td>Estudo de fluxo lacrimal com radionuclídeos</td><td>Radionuclide lacrimal flow study (procedure)</td><td>−</td><td>Radionuclide lacrimal flow study (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/438593001\">438593001</a></td><td>Estudo de testículos com radionuclídeos</td><td>Radionuclide study of testis (procedure)</td><td>−</td><td>Radionuclide study of testis (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/241367004\">241367004</a></td><td>Histerossalpingografia com radionuclídeos</td><td>Radionuclide hysterosalpingography (procedure)</td><td>−</td><td>Radionuclide hysterosalpingography (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/431342002\">431342002</a></td><td>Cintigrafia toráx com 99mTc-depreotido</td><td>Radiolabeled technetium 99m depreotide scan of thorax (procedure)</td><td>−</td><td>Radiolabeled technetium 99m depreotide scan of thorax (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/418832007\">418832007</a></td><td>Estudo ósseo de corpo inteiro com radionuclídeos</td><td>Radionuclide whole body bone study (procedure)</td><td>Cintigrafia óssea corpo inteiro</td><td>Radionuclide whole body bone study (procedure)</td><td>Cintigrafia óssea corpo inteiro</td></tr><tr><td><a href=\"http://snomed.info/id/3998005\">3998005</a></td><td>Bone imaging of limited area</td><td>Bone imaging of limited area (procedure)</td><td>−</td><td>Bone imaging of limited area (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/241405008\">241405008</a></td><td>Estudo ósseo trifásico com radionuclídeos</td><td>Radionuclide three-phase bone study (procedure)</td><td>−</td><td>Radionuclide three-phase bone study (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/768972009\">768972009</a></td><td>Imagem de radionuclídeo ao cérebro com 99m-Tc</td><td>Radionuclide imaging of brain using technetium (99m-Tc) pentetic acid (procedure)</td><td>−</td><td>Radionuclide imaging of brain using technetium (99m-Tc) pentetic acid (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/429824008\">429824008</a></td><td>Tomografia computadorizada ao cérebro com tálio</td><td>Single photon emission computed tomography of brain using thallium (procedure)</td><td>−</td><td>Single photon emission computed tomography of brain using thallium (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/83262001\">83262001</a></td><td>Imagem do fluxo do líquido cefalorraquidiano</td><td>Cerebrospinal fluid flow imaging (procedure)</td><td>−</td><td>Cerebrospinal fluid flow imaging (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/430282003\">430282003</a></td><td>Imagem de radionuclídeo ao cérebro com 123-I</td><td>Radionuclide imaging of brain using ioflupane (123-I) (procedure)</td><td>−</td><td>Radionuclide imaging of brain using ioflupane (123-I) (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/16548951000119100\">16548951000119100</a></td><td>Tomografia computadorizada ao cérebro</td><td>Single photon emission computed tomography of brain (procedure)</td><td>−</td><td>Single photon emission computed tomography of brain (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/432156007\">432156007</a></td><td>Imagem de radionuclídeo de perfusão cerebral</td><td>Radionuclide imaging of brain perfusion (procedure)</td><td>Tomografia cerebral com 99mTc-ECD</td><td>Radionuclide imaging of brain perfusion (procedure)</td><td>Tomografia cerebral com 99mTc-ECD</td></tr><tr><td><a href=\"http://snomed.info/id/443271005\">443271005</a></td><td>PET - Tomografia de positrões - estudo de corpo inteiro com 18F-FDG</td><td/><td>−</td><td>Positron emission tomography with computed tomography using fluorodeoxyglucose (18-F)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/764665003\">764665003</a></td><td>PET - Tomografia de positrões - estudo cerebral com 18 F-FDG</td><td>Positron emission tomography with computed tomography of brain using fluorodeoxyglucose (18-F) (procedure)</td><td>−</td><td>Positron emission tomography with computed tomography of brain using fluorodeoxyglucose (18-F) (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/443534009\">443534009</a></td><td>PET - Tomografia de positrões - estudo cardíaco com 18 F-FDG</td><td>Positron emission tomography using fluorodeoxyglucose with computed tomography myocardial rest imaging (procedure)</td><td>−</td><td>Positron emission tomography using fluorodeoxyglucose with computed tomography myocardial rest imaging (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/443234008\">443234008</a></td><td>PET - Tomografia de positrões com 18F-Colina</td><td>Positron emission tomography with computed tomography fluorine 18 choline uptake study (procedure)</td><td>−</td><td>Positron emission tomography with computed tomography fluorine 18 choline uptake study (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/725931007\">725931007</a></td><td>PET- Tomografia de positrões com 18F-Fluoreto de Sódio</td><td>Positron emission tomography with computed tomography of whole body using sodium fluoride (18-F) (procedure)</td><td>−</td><td>Positron emission tomography with computed tomography of whole body using sodium fluoride (18-F) (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/764695006\">764695006</a></td><td>PET - Tomografia de positrões com 68 Ga-Péptidos</td><td>Positron emission tomography of whole body using gallium (68-Ga) dotatate (procedure)</td><td>−</td><td>Positron emission tomography of whole body using gallium (68-Ga) dotatate (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/723194000\">723194000</a></td><td>PET- Tomografia de positrões - estudo cerebral com 18F-Florbetabeno</td><td>Positron emission tomography with computed tomography of brain using florbetaben (18-F) (procedure)</td><td>−</td><td>Positron emission tomography with computed tomography of brain using florbetaben (18-F) (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/431200001\">431200001</a></td><td>Terapia com radionuclídeo iodo 131 na tiróide</td><td>Radionuclide iodine 131 therapy to thyroid (procedure)</td><td>−</td><td>Radionuclide iodine 131 therapy to thyroid (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/65381004\">65381004</a></td><td>Terapia intra-articular com radionuclídeos</td><td>Intra-articular radionuclide therapy (procedure)</td><td>−</td><td>Intra-articular radionuclide therapy (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/399180008\">399180008</a></td><td>Terapia com colóide intersticial</td><td>Interstitial radioactive colloid therapy (procedure)</td><td>−</td><td>Interstitial radioactive colloid therapy (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/433224001\">433224001</a></td><td>Terapia com radionuclídeo Rénio 186 hidroxietilideno difosfonato</td><td>Radionuclide rhenium 186 hydroxyethylidene diphosphonate therapy (procedure)</td><td>−</td><td>Radionuclide rhenium 186 hydroxyethylidene diphosphonate therapy (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/228699001\">228699001</a></td><td>Terapia de fósforo 32</td><td>Phosphorus 32 therapy (procedure)</td><td>−</td><td>Phosphorus 32 therapy (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/16554781000119103\">16554781000119103</a></td><td>Terapia com radionuclídeo intravenoso com Estrôncio 89</td><td>Intravenous radionuclide therapy using strontium 89 (procedure)</td><td>−</td><td>Intravenous radionuclide therapy using strontium 89 (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/427561000119104\">427561000119104</a></td><td>Terapia com radionuclídeo intravenoso com Samário 153</td><td>Intravenous radionuclide therapy using samarium Sm 153 lexidronam (procedure)</td><td>−</td><td>Intravenous radionuclide therapy using samarium Sm 153 lexidronam (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/228697004\">228697004</a></td><td>Terapia de ítrio 90</td><td>Yttrium 90 therapy (procedure)</td><td>−</td><td>Yttrium 90 therapy (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/438415006\">438415006</a></td><td>Radioembolização hepática transarterial com utilização de microesferas de ítrio-90</td><td>Trans-arterial hepatic radioembolization using yttrium-90 microspheres (procedure)</td><td>−</td><td>Trans-arterial hepatic radioembolization using yttrium-90 microspheres (procedure)</td><td>−</td></tr><tr><td><a href=\"http://snomed.info/id/16554931000119102\">16554931000119102</a></td><td>Terapia intravenosa com radionuclídeo 223Ra-Cloreto de Radio</td><td>Intravenous radionuclide therapy using radium 223 dichloride (procedure)</td><td>−</td><td>Intravenous radionuclide therapy using radium 223 dichloride (procedure)</td><td>−</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpmn-medicine-nuclear-procedures-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPMNMedicineNuclearProceduresVS"] ; # 
+  fhir:title [ fhir:v "CPMN - Medicine Nuclear Procedures"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2021-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores MedicineNuclearProcedures (CPMN v1.1)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "85606007" ] ;
+         fhir:display [ fhir:v "Ventriculografia cardíaca com radionuclídeo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide cardiac ventriculography" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide cardiac ventriculography (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Angiografia de radionuclídeos de equilíbrio" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "431942008" ] ;
+         fhir:display [ fhir:v "Angiografia de 1ª passagem de radionuclídeos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide cardiac first pass angiography" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide cardiac first pass angiography (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Angiografia de radionuclídeos de 1ª passagem" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "16545191000119100" ] ;
+         fhir:display [ fhir:v "Estudo de stress com radionuclídeo miocárdico de perfusão" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide myocardial perfusion stress study" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide myocardial perfusion stress study (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia miocárdica de perfusão em esforço/stress farmacológico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia de perfusão do miocárdio em esforço/stress farmacológico" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "252432008" ] ;
+         fhir:display [ fhir:v "Estudo de perfusão miocárdico com radionuclídeos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide myocardial perfusion study" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide myocardial perfusion study (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia miocárdica de perfusão em repouso" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia de perfusão do miocárdio em repouso" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "433218007" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeo do coração com 123-I" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of heart using iobenguane (123-I)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of heart using iobenguane (123-I) (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia cardíaca com 123I-MIBG" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443561009" ] ;
+         fhir:display [ fhir:v "Emissão de fotão único com tomografia computadorizada com 123-MIBG ao coração" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Single photon emission using iodine 123 meta-iodobenzylguanidine computed tomography with computed tomography of heart" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Single photon emission using iodine 123 meta-iodobenzylguanidine computed tomography with computed tomography of heart (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia cardíaca com 123I-MIBG, com estudo tomográfico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Tomografia cardíaca com 123I-MIBG" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "252433003" ] ;
+         fhir:display [ fhir:v "Estudo cardíaco com Tálio 201" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cardiac thallium 201 study" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Cardiac thallium 201 study (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia de perfusão do miocárdio com 201Tl-Cloreto de Tálio" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "19252005" ] ;
+         fhir:display [ fhir:v "Estudo de isótopos para perda de sangue gastrointestinal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Isotope study for gastrointestinal blood loss" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Isotope study for gastrointestinal blood loss (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Pesquisa de hemorragia digestiva" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "418050001" ] ;
+         fhir:display [ fhir:v "Procedimento de imagem da glândula salivar com radionuclídeo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide salivary gland imaging procedure" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide salivary gland imaging procedure (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia das glândulas salivares" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "418234000" ] ;
+         fhir:display [ fhir:v "Procedimento de imagem do fígado e baço com radionuclídeos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide liver and spleen imaging procedure" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide liver and spleen imaging procedure (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia hepato-esplénica" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "765030005" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeo do fígado e/ou trato biliar com isótopo radioativo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of liver and/or biliary tract using radioactive isotope" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of liver and/or biliary tract using radioactive isotope (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia hepatobiliar" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "432095006" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeo da região hepatobiliar com estimulação da vesícula biliar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of hepatobiliary region with gallbladder stimulation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of hepatobiliary region with gallbladder stimulation (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia hepatobiliar com estimulação vesicular" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "764137001" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeo com eritrócitos marcados com tecnécio (99m-Tc)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging using technetium (99m-Tc) labeled erythrocytes" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging using technetium (99m-Tc) labeled erythrocytes (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia hepática com glóbulos vermelhos marcados" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "57417005" ] ;
+         fhir:display [ fhir:v "Pesquisa de divertículo Meckel" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bowel imaging for Meckel's diverticulum" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Bowel imaging for Meckel's diverticulum (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "241328005" ] ;
+         fhir:display [ fhir:v "Estudo de refluxo gastroesofágico com radionuclídeos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide gastroesophageal reflux study" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide gastroesophageal reflux study (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Pesquisa do refluxo gastro-esofágico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "241316002" ] ;
+         fhir:display [ fhir:v "Estudo de esvaziamento gástrico com radionuclídeos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide gastric emptying study" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide gastric emptying study (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Estudo do esvaziamento gástrico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "66088009" ] ;
+         fhir:display [ fhir:v "Estudo de perfusão pulmonar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pulmonary perfusion study" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Pulmonary perfusion study (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia pulmonar de perfusão" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia de perfusão pulmonar" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "57113004" ] ;
+         fhir:display [ fhir:v "Estudo de ventilação pulmonar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pulmonary ventilation study" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Pulmonary ventilation study (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia pulmonar ventilação/inalação" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia de ventilação pulmonar" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443578000" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeos ao rim transplantado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of transplanted kidney" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of transplanted kidney (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Estudo da perfusão e função do rim transplantado" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "768968005" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeos ao rim com 99mTc-DTPA" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of kidney using technetium (99m-Tc) pentetic acid" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of kidney using technetium (99m-Tc) pentetic acid (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Renograma com 99mTc-DTPA" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "241364006" ] ;
+         fhir:display [ fhir:v "Cistograma de micção indireta com radionuclídeos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide indirect micturating cystogram" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide indirect micturating cystogram (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cistocintigrafia indireta" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cistocintigrafia indireta (acresce ao Renograma)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "241362005" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeos ao rim com 99mTc-MAG3" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of kidney using technetium (99m-Tc) tiatide" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of kidney using technetium (99m-Tc) tiatide (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Renograma com 99mTc-MAG3" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "439396000" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeos do rim após administração de diurético" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of kidney after administration of diuretic" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of kidney after administration of diuretic (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Intervenção farmacológica - prova diurética (acresce ao Renograma)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "241366008" ] ;
+         fhir:display [ fhir:v "Cistograma de micção direta com radionuclídeos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide direct micturating cystogram" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide direct micturating cystogram (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cistocintigrafia direta" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "764416003" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeos ao rim com 99mTc-DMSA" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of kidney using technetium (99m-Tc) succimer" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of kidney using technetium (99m-Tc) succimer (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia renal com 99mTc-DMSA" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "241370000" ] ;
+         fhir:display [ fhir:v "Estudos renais sem imagem com radionuclídeos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide non-imaging renal studies" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide non-imaging renal studies (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Quantificação da função renal \"in vitro\"" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "-" ] ;
+         fhir:display [ fhir:v "-" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Intervenção farmacológica - prova de captopril" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "764674001" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeos com leucócitos marcados com radioisótopo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging using radioisotope labeled leukocytes" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging using radioisotope labeled leukocytes (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia corporal com leucócitos marcados" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "765456006" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeos de corpo inteiro com gálio-67 para localização de inflamação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of whole body using gallium-67 for localization of inflammation" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of whole body using gallium-67 for localization of inflammation (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia corporal com 67Ga (5mCi)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "372084007" ] ;
+         fhir:display [ fhir:v "Imagem de radioisótopos da medula óssea" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radioisotope scan of bone marrow" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radioisotope scan of bone marrow (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia da medula óssea" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "70268007" ] ;
+         fhir:display [ fhir:v "Estudo de plaquetas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Platelet survival study" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Platelet survival study (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cinética de plaquetas" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "81937003" ] ;
+         fhir:display [ fhir:v "Estudo de semivida dos eritrócitos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Red cell survival study" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Red cell survival study (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Determinação da semivida dos eritrócitos" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "268444004" ] ;
+         fhir:display [ fhir:v "Medição da massa de glóbulos vermelhos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide red cell mass measurement" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide red cell mass measurement (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Determinação da massa eritrocitária" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "763841006" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeo do corpo inteiro com iobenguane (131-IMIBG)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of whole body using iobenguane (131-I)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of whole body using iobenguane (131-I) (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia corporal com 131IMIBG" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "763843009" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeo do corpo inteiro com iobenguane (123-I)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of whole body using Iobenguane (123-I)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of whole body using Iobenguane (123-I) (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia corporal com 123IMIBG" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "385443001" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeo da tiróide" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of thyroid" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of thyroid (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia da tiroideia" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "763840007" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeo do corpo inteiro com iobenguane (131-I)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of whole body using iodine (131-I)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of whole body using iodine (131-I) (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia corporal com 131I" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "241393006" ] ;
+         fhir:display [ fhir:v "Estudo do córtex adrenal com radionuclídeos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide adrenal cortex study" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide adrenal cortex study (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia do córtex supra-renal" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "764277001" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeo usando análogo de somatostatina marcado com radioisótopo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging using radioisotope labeled somatostatin analog" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging using radioisotope labeled somatostatin analog (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia de recetores da somatostatina" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "372080003" ] ;
+         fhir:display [ fhir:v "Imagem com radioisótopo da paratiróide" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radioisotope scan of parathyroid" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radioisotope scan of parathyroid (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia das paratiroideias" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "433213003" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeos de corpo inteiro com gálio" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of whole body using gallium" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of whole body using gallium (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia corporal com 67Ga (10mCi)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "447864009" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeos de corpo inteiro com tálio Tl^201^" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide whole body scan using thallium Tl^201^" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide whole body scan using thallium Tl^201^ (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia corporal com 201Tl" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "418432003" ] ;
+         fhir:display [ fhir:v "Cintigrafia mamária" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Scintimammography" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Scintimammography (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "169167001" ] ;
+         fhir:display [ fhir:v "Linfocintigrafia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide lymphogram" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide lymphogram (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Linfocintigrafia para avaliação de linfedema" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "433028008" ] ;
+         fhir:display [ fhir:v "Linfocintigrafia para deteção de gânglio sentinela" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide sentinel lymph node study" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide sentinel lymph node study (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "241305009" ] ;
+         fhir:display [ fhir:v "Venocintigrafia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide venogram" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide venogram (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "6650009" ] ;
+         fhir:display [ fhir:v "Estudo de fluxo lacrimal com radionuclídeos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide lacrimal flow study" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide lacrimal flow study (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Dacriocintigrafia" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "438593001" ] ;
+         fhir:display [ fhir:v "Estudo de testículos com radionuclídeos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide study of testis" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide study of testis (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia testicular" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "241367004" ] ;
+         fhir:display [ fhir:v "Histerossalpingografia com radionuclídeos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide hysterosalpingography" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide hysterosalpingography (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Histerossalpingocintigrafia" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "431342002" ] ;
+         fhir:display [ fhir:v "Cintigrafia toráx com 99mTc-depreotido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radiolabeled technetium 99m depreotide scan of thorax" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radiolabeled technetium 99m depreotide scan of thorax (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia pulmonar com 99mTc-depreotido" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "418832007" ] ;
+         fhir:display [ fhir:v "Estudo ósseo de corpo inteiro com radionuclídeos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide whole body bone study" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide whole body bone study (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia óssea corpo inteiro" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "3998005" ] ;
+         fhir:display [ fhir:v "Bone imaging of limited area" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Bone imaging of limited area (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia óssea parcelar" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "241405008" ] ;
+         fhir:display [ fhir:v "Estudo ósseo trifásico com radionuclídeos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide three-phase bone study" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide three-phase bone study (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cintigrafia óssea em 3 fases" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "768972009" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeo ao cérebro com 99m-Tc" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of brain using technetium (99m-Tc) pentetic acid" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of brain using technetium (99m-Tc) pentetic acid (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Tomografia cerebral com 99mTc-HMPAO" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "429824008" ] ;
+         fhir:display [ fhir:v "Tomografia computadorizada ao cérebro com tálio" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Single photon emission computed tomography of brain using thallium" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Single photon emission computed tomography of brain using thallium (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Tomografia cerebral com 201Tl" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "83262001" ] ;
+         fhir:display [ fhir:v "Imagem do fluxo do líquido cefalorraquidiano" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cerebrospinal fluid flow imaging" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Cerebrospinal fluid flow imaging (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cisternografia" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "430282003" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeo ao cérebro com 123-I" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of brain using ioflupane (123-I)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of brain using ioflupane (123-I) (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Tomografia cerebral com 123I-Ioflupano" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "16548951000119100" ] ;
+         fhir:display [ fhir:v "Tomografia computadorizada ao cérebro" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Single photon emission computed tomography of brain" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Single photon emission computed tomography of brain (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Tomografia cerebral com 123I-IBZM" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "432156007" ] ;
+         fhir:display [ fhir:v "Imagem de radionuclídeo de perfusão cerebral" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of brain perfusion" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide imaging of brain perfusion (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Tomografia cerebral com ECD" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Tomografia cerebral com 99mTc-ECD" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443271005" ] ;
+         fhir:display [ fhir:v "PET - Tomografia de positrões - estudo de corpo inteiro com 18F-FDG" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Positron emission tomography with computed tomography using fluorodeoxyglucose (18-F)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "764665003" ] ;
+         fhir:display [ fhir:v "PET - Tomografia de positrões - estudo cerebral com 18 F-FDG" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Positron emission tomography with computed tomography of brain using fluorodeoxyglucose (18-F)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Positron emission tomography with computed tomography of brain using fluorodeoxyglucose (18-F) (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443534009" ] ;
+         fhir:display [ fhir:v "PET - Tomografia de positrões - estudo cardíaco com 18 F-FDG" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Positron emission tomography using fluorodeoxyglucose with computed tomography myocardial rest imaging" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Positron emission tomography using fluorodeoxyglucose with computed tomography myocardial rest imaging (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443234008" ] ;
+         fhir:display [ fhir:v "PET - Tomografia de positrões com 18F-Colina" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Positron emission tomography with computed tomography fluorine 18 choline uptake study" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Positron emission tomography with computed tomography fluorine 18 choline uptake study (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "725931007" ] ;
+         fhir:display [ fhir:v "PET- Tomografia de positrões com 18F-Fluoreto de Sódio" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Positron emission tomography with computed tomography of whole body using sodium fluoride (18-F)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Positron emission tomography with computed tomography of whole body using sodium fluoride (18-F) (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "764695006" ] ;
+         fhir:display [ fhir:v "PET - Tomografia de positrões com 68 Ga-Péptidos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Positron emission tomography of whole body using gallium (68-Ga) dotatate" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Positron emission tomography of whole body using gallium (68-Ga) dotatate (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "723194000" ] ;
+         fhir:display [ fhir:v "PET- Tomografia de positrões - estudo cerebral com 18F-Florbetabeno" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Positron emission tomography with computed tomography of brain using florbetaben (18-F)" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Positron emission tomography with computed tomography of brain using florbetaben (18-F) (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "PET- Tomografia de positrões com 18F-Florbetabeno" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "431200001" ] ;
+         fhir:display [ fhir:v "Terapia com radionuclídeo iodo 131 na tiróide" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide iodine 131 therapy to thyroid" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide iodine 131 therapy to thyroid (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Terapêutica com Iodo-131 no hipertiroidismo (131I < 20 mCi)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "65381004" ] ;
+         fhir:display [ fhir:v "Terapia intra-articular com radionuclídeos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Intra-articular radionuclide therapy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Intra-articular radionuclide therapy (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Radio-sinoviortese com Ítrio 90" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "399180008" ] ;
+         fhir:display [ fhir:v "Terapia com colóide intersticial" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Interstitial radioactive colloid therapy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Interstitial radioactive colloid therapy (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Radio-sinoviortese com Érbio-169 (suspensão coloidal)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "433224001" ] ;
+         fhir:display [ fhir:v "Terapia com radionuclídeo Rénio 186 hidroxietilideno difosfonato" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Radionuclide rhenium 186 hydroxyethylidene diphosphonate therapy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Radionuclide rhenium 186 hydroxyethylidene diphosphonate therapy (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Radio-sinoviortese com Rénio-186 (suspensão coloidal)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "228699001" ] ;
+         fhir:display [ fhir:v "Terapia de fósforo 32" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Phosphorus 32 therapy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Phosphorus 32 therapy (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Terapêutica da policitémia vera com Fósforo-32" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "16554781000119103" ] ;
+         fhir:display [ fhir:v "Terapia com radionuclídeo intravenoso com Estrôncio 89" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Intravenous radionuclide therapy using strontium 89" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Intravenous radionuclide therapy using strontium 89 (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Terapêutica paliativa de metástases ósseas com Estrôncio-89" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "427561000119104" ] ;
+         fhir:display [ fhir:v "Terapia com radionuclídeo intravenoso com Samário 153" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Intravenous radionuclide therapy using samarium Sm 153 lexidronam" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Intravenous radionuclide therapy using samarium Sm 153 lexidronam (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Terapêutica paliativa de metástases ósseas com Samário-153" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "228697004" ] ;
+         fhir:display [ fhir:v "Terapia de ítrio 90" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Yttrium 90 therapy" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Yttrium 90 therapy (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Terapêutica com ibritumomab tiuxetan Ítrio-90" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "438415006" ] ;
+         fhir:display [ fhir:v "Radioembolização hepática transarterial com utilização de microesferas de ítrio-90" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Trans-arterial hepatic radioembolization using yttrium-90 microspheres" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Trans-arterial hepatic radioembolization using yttrium-90 microspheres (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Terapêutica com microsferas marcadas com Ítrio-90, acresce preço de radiologia de intervenção" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "16554931000119102" ] ;
+         fhir:display [ fhir:v "Terapia intravenosa com radionuclídeo 223Ra-Cloreto de Radio" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Intravenous radionuclide therapy using radium 223 dichloride" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Intravenous radionuclide therapy using radium 223 dichloride (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Terapêutica para metastases ósseas de carcinoma da próstata com 223Ra-Cloreto de Radio" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "−" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

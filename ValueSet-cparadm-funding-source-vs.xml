@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cparadm-funding-source-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cparadm-funding-source-vs</b></p><a name="cparadm-funding-source-vs"> </a><a name="hccparadm-funding-source-vs"> </a><ul><li>Include estes códigos, tal como definidos em <code>urn:oid:2.16.840.1.113883.4.642.3.293</code><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td>public</td><td>Público</td><td>Public</td></tr><tr><td>private</td><td>Privado</td><td>Private</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-funding-source-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.23"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPARADMFundingSourceVS"/>
+  <title value="CPARADM - Funding Source"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores FundingSource (CPARADM v3.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.840.1.113883.4.642.3.293"/>
+      <concept>
+        <code value="public"/>
+        <display value="Público"/>
+        <designation>
+          <language value="en"/>
+          <value value="Public"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="private"/>
+        <display value="Privado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Private"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-painadscale-observation-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-painadscale-observation-vs</b></p><a name="cpe-painadscale-observation-vs"> </a><a name="hccpe-painadscale-observation-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="https://loinc.org/103776-1/">103776-1</a></td><td>Respiração independente da vocalização</td><td/><td>Breathing independent of vocalization</td><td/></tr><tr><td><a href="https://loinc.org/103777-9/">103777-9</a></td><td>Vocalização negativa</td><td/><td>Negative vocalization</td><td/></tr><tr><td><a href="https://loinc.org/103778-7/">103778-7</a></td><td>Expressão facial</td><td/><td>Facial expression</td><td/></tr><tr><td><a href="https://loinc.org/103779-5/">103779-5</a></td><td>Linguagem corporal</td><td/><td>Body language</td><td/></tr><tr><td><a href="https://loinc.org/103775-3/">103775-3</a></td><td>Consolabilidade</td><td/><td>Consolability</td><td/></tr><tr><td><a href="https://loinc.org/103781-1/">103781-1</a></td><td>Pontuação total (de 0 a 10)</td><td>Score total (de 0 a 10)</td><td>Total Score (0 to 10)</td><td>Score total (de 0 a 10)</td></tr><tr><td><a href="https://loinc.org/103782-9/">103782-9</a></td><td>Avaliação PAINAD (Interpretação)</td><td>-</td><td>PAINAD assessment (Interpretation)</td><td>-</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-painadscale-observation-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.149"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPEPAINADScaleObservationVS"/>
+  <title value="CPE - PAINAD Scale Observation"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores PAINADScaleObservation (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="103776-1"/>
+        <display value="Respiração independente da vocalização"/>
+        <designation>
+          <language value="en"/>
+          <value value="Breathing independent of vocalization"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="103777-9"/>
+        <display value="Vocalização negativa"/>
+        <designation>
+          <language value="en"/>
+          <value value="Negative vocalization"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="103778-7"/>
+        <display value="Expressão facial"/>
+        <designation>
+          <language value="en"/>
+          <value value="Facial expression"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="103779-5"/>
+        <display value="Linguagem corporal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Body language"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="103775-3"/>
+        <display value="Consolabilidade"/>
+        <designation>
+          <language value="en"/>
+          <value value="Consolability"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="103781-1"/>
+        <display value="Pontuação total (de 0 a 10)"/>
+        <designation>
+          <language value="en"/>
+          <value value="Total Score (0 to 10)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Score total (de 0 a 10)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="103782-9"/>
+        <display value="Avaliação PAINAD (Interpretação)"/>
+        <designation>
+          <language value="en"/>
+          <value value="PAINAD assessment (Interpretation)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

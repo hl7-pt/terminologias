@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpe-pain-num-severity-observation-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-pain-num-severity-observation-vs</b></p><a name=\"cpe-pain-num-severity-observation-vs\"> </a><a name=\"hccpe-pain-num-severity-observation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/72514-3/\">72514-3</a></td><td>Severidade da dor, classificação numérica verbal</td><td>Pain severity - 0-10 verbal numeric rating [Score] - Reported</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-pain-num-severity-observation-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.151"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPEPainNumSeverityObservationVS",
+  "title" : "CPE - Pain Num Severity Observation",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores PainNumSeverityObservation (CPE v2.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "72514-3",
+        "display" : "Severidade da dor, classificação numérica verbal",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        }]
+      }]
+    }]
+  }
+}

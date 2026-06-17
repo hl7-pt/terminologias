@@ -1,0 +1,382 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-braden-scale-result-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-braden-scale-result-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-braden-scale-result-vs</b></p><a name=\"cpe-braden-scale-result-vs\"> </a><a name=\"hccpe-braden-scale-result-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/LA9603-7/\">LA9603-7</a></td><td>Completamente limitado</td><td>Completamente limitada</td><td>Completely limited</td><td>Completamente limitada</td></tr><tr><td><a href=\"https://loinc.org/LA9604-5/\">LA9604-5</a></td><td>Muito limitado</td><td>Muito limitada</td><td>Very limited</td><td>Muito limitada</td></tr><tr><td><a href=\"https://loinc.org/LA9605-2/\">LA9605-2</a></td><td>Ligeiramente limitado</td><td>Ligeiramente limitada</td><td>Slightly limited</td><td>Ligeiramente limitada</td></tr><tr><td><a href=\"https://loinc.org/LA9606-0/\">LA9606-0</a></td><td>Sem prejuízo</td><td>Nenhuma limitação</td><td>No impairment</td><td>Nenhuma limitação</td></tr><tr><td><a href=\"https://loinc.org/LA9607-8/\">LA9607-8</a></td><td>Constantemente húmido</td><td>Pele constantemente húmida</td><td>Constantly moist</td><td>Pele constantemente húmida</td></tr><tr><td><a href=\"https://loinc.org/LA9608-6/\">LA9608-6</a></td><td>Muito húmido</td><td>Pele muito húmida</td><td>Very moist</td><td>Pele muito húmida</td></tr><tr><td><a href=\"https://loinc.org/LA9609-4/\">LA9609-4</a></td><td>Ocasionalmente húmido</td><td>Pele ocasionalmente húmida</td><td>Occasionally moist</td><td>Pele ocasionalmente húmida</td></tr><tr><td><a href=\"https://loinc.org/LA9610-2/\">LA9610-2</a></td><td>Raramente húmido</td><td>Pele raramente húmida</td><td>Rarely moist</td><td>Pele raramente húmida</td></tr><tr><td><a href=\"https://loinc.org/LA6742-6/\">LA6742-6</a></td><td>Acamado</td><td/><td>Bedfast</td><td/></tr><tr><td><a href=\"https://loinc.org/LA9611-0/\">LA9611-0</a></td><td>Cadeira</td><td>Sentado</td><td>Chairfast</td><td>Sentado</td></tr><tr><td><a href=\"https://loinc.org/LA9612-8/\">LA9612-8</a></td><td>Caminha ocasionalmente</td><td>Anda ocasionalmente</td><td>Walks occasionally</td><td>Anda ocasionalmente</td></tr><tr><td><a href=\"https://loinc.org/LA9613-6/\">LA9613-6</a></td><td>Anda frequentemente</td><td/><td>Walks frequently</td><td/></tr><tr><td><a href=\"https://loinc.org/LA9614-4/\">LA9614-4</a></td><td>Completamente imóvel</td><td>Completamente imobilizado</td><td>Completely immobile</td><td>Completamente imobilizado</td></tr><tr><td><a href=\"https://loinc.org/LA120-8/\">LA120-8</a></td><td>Sem limitação</td><td>Nenhuma limitação</td><td>No limitation</td><td>Nenhuma limitação</td></tr><tr><td><a href=\"https://loinc.org/LA9615-1/\">LA9615-1</a></td><td>Muito pobre</td><td/><td>Very poor</td><td/></tr><tr><td><a href=\"https://loinc.org/LA9616-9/\">LA9616-9</a></td><td>Provavelmente inadequado</td><td>Provavelmente inadequada</td><td>Probably inadequate</td><td>Provavelmente inadequada</td></tr><tr><td><a href=\"https://loinc.org/LA8913-1/\">LA8913-1</a></td><td>Adequado</td><td>Adequada</td><td>Adequate</td><td>Adequada</td></tr><tr><td><a href=\"https://loinc.org/LA9206-9/\">LA9206-9</a></td><td>Excelente</td><td/><td>Excellent</td><td/></tr><tr><td><a href=\"https://loinc.org/LA9617-7/\">LA9617-7</a></td><td>Problema</td><td/><td>Problem</td><td/></tr><tr><td><a href=\"https://loinc.org/LA9618-5/\">LA9618-5</a></td><td>Problema potencial</td><td/><td>Potential problem</td><td/></tr><tr><td><a href=\"https://loinc.org/LA9619-3/\">LA9619-3</a></td><td>Nenhum problema aparente</td><td>Nenhum problema</td><td>No apparent problem</td><td>Nenhum problema</td></tr><tr><td><a href=\"https://loinc.org/LA14637-5/\">LA14637-5</a></td><td>Muito alto</td><td/><td>Very high</td><td/></tr><tr><td><a href=\"https://loinc.org/LA9193-9/\">LA9193-9</a></td><td>Alto</td><td/><td>High</td><td/></tr><tr><td><a href=\"https://loinc.org/LA6751-7/\">LA6751-7</a></td><td>Moderado</td><td/><td>Moderate</td><td/></tr><tr><td><a href=\"https://loinc.org/LA6752-5/\">LA6752-5</a></td><td>Leve</td><td/><td>Mild</td><td/></tr><tr><td><a href=\"https://loinc.org/LA19983-8/\">LA19983-8</a></td><td>Sem risco</td><td/><td>No risk</td><td/></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-braden-scale-result-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.125" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPEBradenScaleResultVS"] ; # 
+  fhir:title [ fhir:v "CPE - Braden Scale Result"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores BradenScaleResult (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA9603-7" ] ;
+         fhir:display [ fhir:v "Completamente limitado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Completely limited" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Completamente limitada" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9604-5" ] ;
+         fhir:display [ fhir:v "Muito limitado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Very limited" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Muito limitada" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9605-2" ] ;
+         fhir:display [ fhir:v "Ligeiramente limitado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Slightly limited" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Ligeiramente limitada" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9606-0" ] ;
+         fhir:display [ fhir:v "Sem prejuízo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No impairment" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Nenhuma limitação" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9607-8" ] ;
+         fhir:display [ fhir:v "Constantemente húmido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Constantly moist" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Pele constantemente húmida" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9608-6" ] ;
+         fhir:display [ fhir:v "Muito húmido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Very moist" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Pele muito húmida" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9609-4" ] ;
+         fhir:display [ fhir:v "Ocasionalmente húmido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Occasionally moist" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Pele ocasionalmente húmida" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9610-2" ] ;
+         fhir:display [ fhir:v "Raramente húmido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Rarely moist" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Pele raramente húmida" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA6742-6" ] ;
+         fhir:display [ fhir:v "Acamado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bedfast" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9611-0" ] ;
+         fhir:display [ fhir:v "Cadeira" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Chairfast" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Sentado" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9612-8" ] ;
+         fhir:display [ fhir:v "Caminha ocasionalmente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Walks occasionally" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Anda ocasionalmente" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9613-6" ] ;
+         fhir:display [ fhir:v "Anda frequentemente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Walks frequently" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9614-4" ] ;
+         fhir:display [ fhir:v "Completamente imóvel" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Completely immobile" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Completamente imobilizado" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA120-8" ] ;
+         fhir:display [ fhir:v "Sem limitação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No limitation" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Nenhuma limitação" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9615-1" ] ;
+         fhir:display [ fhir:v "Muito pobre" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Very poor" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9616-9" ] ;
+         fhir:display [ fhir:v "Provavelmente inadequado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Probably inadequate" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Provavelmente inadequada" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA8913-1" ] ;
+         fhir:display [ fhir:v "Adequado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Adequate" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Adequada" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9206-9" ] ;
+         fhir:display [ fhir:v "Excelente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Excellent" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9617-7" ] ;
+         fhir:display [ fhir:v "Problema" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Problem" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9618-5" ] ;
+         fhir:display [ fhir:v "Problema potencial" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Potential problem" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9619-3" ] ;
+         fhir:display [ fhir:v "Nenhum problema aparente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No apparent problem" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Nenhum problema" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA14637-5" ] ;
+         fhir:display [ fhir:v "Muito alto" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Very high" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9193-9" ] ;
+         fhir:display [ fhir:v "Alto" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "High" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA6751-7" ] ;
+         fhir:display [ fhir:v "Moderado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Moderate" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA6752-5" ] ;
+         fhir:display [ fhir:v "Leve" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mild" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA19983-8" ] ;
+         fhir:display [ fhir:v "Sem risco" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "No risk" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

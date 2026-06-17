@@ -1,0 +1,1444 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-scale-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-scale-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-scale-vs</b></p><a name=\"cpe-scale-vs\"> </a><a name=\"hccpe-scale-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/1290002002\">1290002002</a></td><td>Índice de CT precoce do programa de AVC de Alberta</td><td>ASPECTS</td><td>Alberta Stroke Program Early CT score (assessment scale)</td><td>ASPECTS</td></tr><tr><td><a href=\"http://snomed.info/id/273265007\">273265007</a></td><td>Teste de identificação de desordens devido ao uso de álcool</td><td>AUDIT</td><td>Alcohol use disorders identification test (assessment scale)</td><td>AUDIT</td></tr><tr><td><a href=\"http://snomed.info/id/449159002\">449159002</a></td><td>Escala alerta, voz, dor, sem resposta</td><td>AVPU</td><td>Alert voice pain unresponsive scale (assessment scale)</td><td>AVPU</td></tr><tr><td><a href=\"http://snomed.info/id/1287344004\">1287344004</a></td><td>Escala de Apgar</td><td>Índice de Apgar</td><td>Apgar score (assessment scale)</td><td>Índice de Apgar</td></tr><tr><td><a href=\"http://snomed.info/id/273302005\">273302005</a></td><td>Índice de Barthel</td><td/><td>Barthel index (assessment scale)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/425759007\">425759007</a></td><td>Escala de avaliação Braden Q</td><td>Escala de Braden Q</td><td>Braden Q assessment scale (assessment scale)</td><td>Escala de Braden Q</td></tr><tr><td><a href=\"http://snomed.info/id/781128005\">781128005</a></td><td>Escala de Braden</td><td/><td>Braden Scale (assessment scale)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/398210001\">398210001</a></td><td>Escala de Bromage</td><td/><td>Bromage Scale (assessment scale)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1287356003\">1287356003</a></td><td>Escala de acidente vascular cerebral pré-hospitalar de Cincinnati</td><td>Escala de Cincinnati</td><td>Cincinnati Prehospital Stroke Scale (assessment scale)</td><td>Escala de Cincinnati</td></tr><tr><td><a href=\"http://snomed.info/id/1287346002\">1287346002</a></td><td>Teste de Controlo da Rinite Alérgica e Asma</td><td>CARAT</td><td>Control of Allergic Rhinitis and Asthma Test (assessment scale)</td><td>CARAT</td></tr><tr><td><a href=\"http://snomed.info/id/1287726005\">1287726005</a></td><td>Escala DOLOPLUS-2</td><td/><td>DOLOPLUS-2 scale (assessment scale)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1290005000\">1290005000</a></td><td>Índice da escala de atividade de Duke</td><td>DASI</td><td>Duke Activity Scale Index (assessment scale)</td><td>DASI</td></tr><tr><td><a href=\"http://snomed.info/id/1284895003\">1284895003</a></td><td>Escala de dor e desconforto do recém-nascido</td><td>EDIN</td><td>Échelle de Douleur et d'Inconfort du Nouveau-né (assessment scale)</td><td>EDIN</td></tr><tr><td><a href=\"http://snomed.info/id/451021004\">451021004</a></td><td>Sistema de avaliação de sintomas de Edmonton</td><td>ESAS</td><td>Edmonton Symptom Assessment System (assessment scale)</td><td>ESAS</td></tr><tr><td><a href=\"http://snomed.info/id/1144751002\">1144751002</a></td><td>Questionário EuroQol de cinco dimensões e três níveis</td><td>EQ-5D-3L</td><td>EuroQol five dimension three level questionnaire (assessment scale)</td><td>EQ-5D-3L</td></tr><tr><td><a href=\"http://snomed.info/id/1284908006\">1284908006</a></td><td>Escala de faces revista</td><td/><td>Faces Pain Scale - Revised (assessment scale)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/273453005\">273453005</a></td><td>Teste de Fagerstrom para a dependência da nicotina</td><td>Teste de Fagerstrom</td><td>Fagerstrom test for nicotine dependence (assessment scale)</td><td>Teste de Fagerstrom</td></tr><tr><td><a href=\"http://snomed.info/id/451020003\">451020003</a></td><td>APGAR familiar</td><td>Adaptação, companheirismo, crescimento, afetividade e capacidade resolutiva</td><td>Family Adaptation, Partnership, Growth, Affection, Resolve (assessment scale)</td><td>Adaptação, companheirismo, crescimento, afetividade e capacidade resolutiva</td></tr><tr><td><a href=\"http://snomed.info/id/1287348001\">1287348001</a></td><td>Escala de Finnegan para o síndrome de abstinência neonatal</td><td>FNAST</td><td>Finnegan Neonatal Abstinence Scoring Tool (assessment scale)</td><td>FNAST</td></tr><tr><td><a href=\"http://snomed.info/id/443313003\">443313003</a></td><td>Escala finlandesa de risco de diabetes</td><td>Avaliação de risco de diabetes tipo 2</td><td>Finnish diabetes risk score (assessment scale)</td><td>Avaliação de risco de diabetes tipo 2</td></tr><tr><td><a href=\"http://snomed.info/id/713634000\">713634000</a></td><td>Índice de fragilidade</td><td>FRAIL</td><td>Frailty Index (assessment scale)</td><td>FRAIL</td></tr><tr><td><a href=\"http://snomed.info/id/273469003\">273469003</a></td><td>Medida de independência funcional</td><td>MIF</td><td>Functional independence measure (assessment scale)</td><td>MIF</td></tr><tr><td><a href=\"http://snomed.info/id/1290008003\">1290008003</a></td><td>Escala de Gijón de avaliação sócio-familiar</td><td>Escala de Gijón</td><td>Gijon's social-familial evaluation scale (assessment scale)</td><td>Escala de Gijón</td></tr><tr><td><a href=\"http://snomed.info/id/386554004\">386554004</a></td><td>Escala de coma de Glasgow</td><td/><td>Glasgow coma scale (assessment scale)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1287347006\">1287347006</a></td><td>Índice de Graffar</td><td>Escala de Graffar</td><td>Graffar index (assessment scale)</td><td>Escala de Graffar</td></tr><tr><td><a href=\"http://snomed.info/id/1289999007\">1289999007</a></td><td>Escala de deglutição de Gugging</td><td>GUSS</td><td>Gugging Swallowing Screen (assessment scale)</td><td>GUSS</td></tr><tr><td><a href=\"http://snomed.info/id/273524006\">273524006</a></td><td>Escala de ansiedade e depressão hospitalar</td><td>HADS</td><td>Hospital anxiety and depression scale (assessment scale)</td><td>HADS</td></tr><tr><td><a href=\"http://snomed.info/id/1287387001\">1287387001</a></td><td>Classificação de Killip</td><td/><td>Killip classification (assessment scale)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1304062007\">1304062007</a></td><td>Ferramenta de triagem para desnutrição</td><td>MST</td><td>Malnutrition Screening Tool (assessment scale)</td><td>MST</td></tr><tr><td><a href=\"http://snomed.info/id/1287377000\">1287377000</a></td><td>Mecanismo, Escala de coma de Glasgow, Idade, Pressão arterial</td><td>MGAP</td><td>Mechanism, Glasgow Coma Scale, Age, Pressure score (assessment scale)</td><td>MGAP</td></tr><tr><td><a href=\"http://snomed.info/id/273599009\">273599009</a></td><td>Escala de classificação muscular do Medical Research Council</td><td>Escala MRC</td><td>Medical Research Council motor power scale (assessment scale)</td><td>Escala MRC</td></tr><tr><td><a href=\"http://snomed.info/id/713262003\">713262003</a></td><td>Mini-Cog teste de rastreio cognitivo breve</td><td>Mini-Cog</td><td>Mini-Cog brief cognitive screening test (assessment scale)</td><td>Mini-Cog</td></tr><tr><td><a href=\"http://snomed.info/id/1287376009\">1287376009</a></td><td>Questionário Minnesota para portadores de insuficiência cardíaca</td><td>Questionário de Minnesota</td><td>Minnesota Living with Heart Failure Questionnaire (assessment scale)</td><td>Questionário de Minnesota</td></tr><tr><td><a href=\"http://snomed.info/id/765771006\">765771006</a></td><td>Escala de Ashworth modificada</td><td/><td>Modified Ashworth Scale (assessment scale)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/840352000\">840352000</a></td><td>Escala de Rankin modificada</td><td/><td>Modified Rankin Scale (assessment scale)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1290510006\">1290510006</a></td><td>Escala de Tardieu modificada</td><td/><td>Modified Tardieu Scale (assessment scale)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/426938003\">426938003</a></td><td>Escala de quedas de Morse</td><td>MFS</td><td>Morse falls risk assessment (assessment scale)</td><td>MFS</td></tr><tr><td><a href=\"http://snomed.info/id/1287358002\">1287358002</a></td><td>Score de alerta precoce</td><td>NEWS</td><td>National Early Warning Score (assessment scale)</td><td>NEWS</td></tr><tr><td><a href=\"http://snomed.info/id/450741005\">450741005</a></td><td>Escala de acidente vascular cerebral do National Institutes of Health</td><td>Escala de AVC do NIH</td><td>National Institutes of Health stroke scale (assessment scale)</td><td>Escala de AVC do NIH</td></tr><tr><td><a href=\"http://snomed.info/id/1287352001\">1287352001</a></td><td>Escala de confusão de Neelon e Champagne</td><td>Escala de confusão NEECHAM</td><td>Neelon and Champagne Confusion Scale (assessment scale)</td><td>Escala de confusão NEECHAM</td></tr><tr><td><a href=\"http://snomed.info/id/1284900004\">1284900004</a></td><td>Escala de avaliação de dor no recém-nascido</td><td>NIPS</td><td>Neonatal Infant Pain Scale (assessment scale)</td><td>NIPS</td></tr><tr><td><a href=\"http://snomed.info/id/1284903002\">1284903002</a></td><td>Escala neonatal de dor, agitação e sedação</td><td>NPASS</td><td>Neonatal Pain Assessment and Sedation Scale (assessment scale)</td><td>NPASS</td></tr><tr><td><a href=\"http://snomed.info/id/1287355004\">1287355004</a></td><td>Escala de avaliação do risco de lesão na pele do recém-nascido</td><td>NSRAS</td><td>Neonatal Skin Risk Assessment Scale (assessment scale)</td><td>NSRAS</td></tr><tr><td><a href=\"http://snomed.info/id/1284852002\">1284852002</a></td><td>Escala numérica de avaliação da dor</td><td/><td>Numeric Pain Rating Scale (assessment scale)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1287375008\">1287375008</a></td><td>Escala de rastreio de risco nutricional 2002</td><td>NRS 2002</td><td>Nutritional Risk Screening 2002 (assessment scale)</td><td>NRS 2002</td></tr><tr><td><a href=\"http://snomed.info/id/7121000122100\">7121000122100</a></td><td>Avaliação da dor na demência avançada</td><td>PAINAD</td><td>Pain Assessment in Advanced Dementia scale (assessment scale)</td><td>PAINAD</td></tr><tr><td><a href=\"http://snomed.info/id/1287374007\">1287374007</a></td><td>Score de risco do Registo Português de Síndromes Coronárias Agudas</td><td>ProACS</td><td>Portuguese Registry of Acute Coronary Syndromes risk score (assessment scale)</td><td>ProACS</td></tr><tr><td><a href=\"http://snomed.info/id/787454004\">787454004</a></td><td>Escala de recuperação após anestesia</td><td>Escala de Aldrete</td><td>Post Anesthetic Recovery score (assessment scale)</td><td>Escala de Aldrete</td></tr><tr><td><a href=\"http://snomed.info/id/1287838009\">1287838009</a></td><td>Perfil de dor de recém-nascidos prematuros</td><td>PIPP</td><td>Premature Infant Pain Profile (assessment scale)</td><td>PIPP</td></tr><tr><td><a href=\"http://snomed.info/id/281400004\">281400004</a></td><td>Escala de sedação de Ramsay</td><td/><td>Ramsay sedation scale (assessment scale)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1287359005\">1287359005</a></td><td>Escala de avaliação rápida de oclusão arterial</td><td>RACE</td><td>Rapid Arterial Occlusion Evaluation Scale (assessment scale)</td><td>RACE</td></tr><tr><td><a href=\"http://snomed.info/id/1284924007\">1284924007</a></td><td>Escala de expressão facial, movimento das pernas, atividade, choro e consolabilidade</td><td>FLACC-R</td><td>Revised Face, Legs, Activity, Cry, Consolability scale (assessment scale)</td><td>FLACC-R</td></tr><tr><td><a href=\"http://snomed.info/id/273885003\">273885003</a></td><td>Score de trauma revisado</td><td>RTS</td><td>Revised trauma score (assessment scale)</td><td>RTS</td></tr><tr><td><a href=\"http://snomed.info/id/1290285005\">1290285005</a></td><td>Escala de risco para transporte de doentes</td><td>RSTP</td><td>Risk Score for Transport Patients (assessment scale)</td><td>RSTP</td></tr><tr><td><a href=\"http://snomed.info/id/1303696008\">1303696008</a></td><td>Classificação de Robson</td><td>Sistema de classificação de dez grupos de Robson</td><td>Robson Ten Group Classification System (assessment scale)</td><td>Sistema de classificação de dez grupos de Robson</td></tr><tr><td><a href=\"http://snomed.info/id/304766007\">304766007</a></td><td>Escala de autoestima de Rosenberg</td><td>RSES</td><td>Rosenberg self-esteem scale (assessment scale)</td><td>RSES</td></tr><tr><td><a href=\"http://snomed.info/id/1287354000\">1287354000</a></td><td>Escala para rastreio de risco do estado nutricional e crescimento</td><td>STRONGKids</td><td>Screening Tool for Risk on Nutritional Status and Growth (assessment scale)</td><td>STRONGKids</td></tr><tr><td><a href=\"http://snomed.info/id/1287357007\">1287357007</a></td><td>Questionário sobre força, assistência à marcha, levantar-se da cadeira, subir escadas e quedas</td><td>SARC-F</td><td>Strength, Assistance walking, Rising from chair, Climbing stairs and Falls questionnaire (assessment scale)</td><td>SARC-F</td></tr><tr><td><a href=\"http://snomed.info/id/273904000\">273904000</a></td><td>Escala visual analógica da dor</td><td>EVA</td><td>Visual analog pain scale (assessment scale)</td><td>EVA</td></tr><tr><td><a href=\"http://snomed.info/id/718581005\">718581005</a></td><td>Escala de faces Wong-Baker</td><td>Wong-Baker FACES</td><td>Wong-Baker FACES pain assessment scale (assessment scale)</td><td>Wong-Baker FACES</td></tr><tr><td><a href=\"http://snomed.info/id/1348266008\">1348266008</a></td><td>Sistema de Relatório de Dados de Imagens da Mama</td><td>Sistema BI-RADS</td><td>Breast Imaging and Reporting and Data System (assessment scale)</td><td>Sistema BI-RADS</td></tr><tr><td><a href=\"http://snomed.info/id/350491000146107\">350491000146107</a></td><td>Sistema de Relatório de Dados de Imagens da Próstata</td><td>Sistema PI-RADS</td><td>Prostate Imaging-Reporting and Data System (assessment scale)</td><td>Sistema PI-RADS</td></tr><tr><td><a href=\"http://snomed.info/id/722818007\">722818007</a></td><td>Escala de Boston</td><td/><td>Boston bowel preparation scale (assessment scale)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/273270000\">273270000</a></td><td>Classificação do estado físico da ASA</td><td>Escala ASA</td><td>American Society of Anesthesiologists physical status classification (assessment scale)</td><td>Escala ASA</td></tr><tr><td><a href=\"http://snomed.info/id/445483007\">445483007</a></td><td>Questionário de Berlim para a apneia do sono</td><td>QB</td><td>Berlin questionnaire for sleep apnea (assessment scale)</td><td>QB</td></tr><tr><td><a href=\"http://snomed.info/id/443450003\">443450003</a></td><td>Teste de controlo da asma</td><td>ACT</td><td>Asthma control test (assessment scale)</td><td>ACT</td></tr><tr><td><a href=\"http://snomed.info/id/445074007\">445074007</a></td><td>Mini questionário de qualidade de vida na asma</td><td>Mini-AQLQ</td><td>Mini asthma quality of life questionnaire (assessment scale)</td><td>Mini-AQLQ</td></tr><tr><td><a href=\"http://snomed.info/id/448051009\">448051009</a></td><td>Índice de massa corporal, obstrução ao fluxo de ar, dispneia e capacidade de exercício</td><td>Índice BODE</td><td>Body mass, airflow obstruction, dyspnea and exercise capacity index (assessment scale)</td><td>Índice BODE</td></tr><tr><td><a href=\"http://snomed.info/id/57671000052108\">57671000052108</a></td><td>Teste de avaliação da doença pulmonar obstrutiva crónica</td><td>DPOC - CAT</td><td>Chronic Obstructive Pulmonary Disease Assessment Test scale (assessment scale)</td><td>DPOC - CAT</td></tr><tr><td><a href=\"http://snomed.info/id/870179002\">870179002</a></td><td>Escala de dispneia do Medical Research Council modificada</td><td>Escala de dispneia mMRC</td><td>modified Medical Research Council Dyspnea Scale (assessment scale)</td><td>Escala de dispneia mMRC</td></tr><tr><td><a href=\"http://snomed.info/id/708735004\">708735004</a></td><td>Escala de sonolência Epworth</td><td>ESE</td><td>Epworth Sleepiness Scale (assessment scale)</td><td>ESE</td></tr><tr><td><a href=\"http://snomed.info/id/73041000052103\">73041000052103</a></td><td>Questionário EuroQoL de cinco dimensões e cinco níveis</td><td>EQ-5D-5L</td><td>EuroQoL five dimension five level questionnaire (assessment scale)</td><td>EQ-5D-5L</td></tr><tr><td><a href=\"http://snomed.info/id/40141000234101\">40141000234101</a></td><td>Sistema de Dados e Relatórios de Imagens do Fígado</td><td>Sistema LI-RADS</td><td>Liver Imaging Reporting and Data System (assessment scale)</td><td>Sistema LI-RADS</td></tr><tr><td><a href=\"http://snomed.info/id/1367632001\">1367632001</a></td><td>Sistema Europeu de Dados e Relatórios de Imagens da Tiróide</td><td>EU-TIRADS</td><td>European Thyroid Imaging and Reporting Data System (assessment scale)</td><td>EU-TIRADS</td></tr><tr><td><a href=\"http://snomed.info/id/1367642004\">1367642004</a></td><td>Sistema de Dados e Relatórios de Imagens do Ovário-Anexo</td><td>O-RADS</td><td>Ovarian-Adnexal Reporting and Data System (assessment scale)</td><td>O-RADS</td></tr><tr><td><a href=\"http://snomed.info/id/1367648000\">1367648000</a></td><td>Índice de Gravidade da Insónia</td><td>ISI</td><td>Insomnia Severity Index (assessment scale)</td><td>ISI</td></tr><tr><td><a href=\"http://snomed.info/id/1367635004\">1367635004</a></td><td>Questionário STOP-Bang</td><td>STOP-Bang</td><td>STOP-Bang questionnaire (assessment scale)</td><td>STOP-Bang</td></tr><tr><td><a href=\"http://snomed.info/id/263487004\">263487004</a></td><td>Escala de Borg</td><td/><td>Borg scale (assessment scale)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1371335000\">1371335000</a></td><td>Escala de Depressão, Ansiedade e Stress 21</td><td>DASS21</td><td>Depression, Anxiety, and Stress Scale 21 (assessment scale)</td><td>DASS21</td></tr><tr><td><a href=\"http://snomed.info/id/1371329000\">1371329000</a></td><td>Avaliação Sistemática do Risco Coronário 2</td><td>SCORE2</td><td>Systematic Coronary Risk Evaluation 2 (assessment scale)</td><td>SCORE2</td></tr><tr><td><a href=\"http://snomed.info/id/1371642009\">1371642009</a></td><td>Classificação de feridas cirúrgicas do Centro para Controlo e Prevenção de Doenças</td><td>Classificação de feridas cirúrgicas do CDC</td><td>Centers for Disease Control and Prevention surgical wound classification (assessment scale)</td><td>Classificação de feridas cirúrgicas do CDC</td></tr><tr><td><a href=\"http://snomed.info/id/273546003\">273546003</a></td><td>Índice de desempenho de Karnofsky</td><td>KPS</td><td>Karnofsky performance status (assessment scale)</td><td>KPS</td></tr><tr><td><a href=\"http://snomed.info/id/273437007\">273437007</a></td><td>Índice de avaliação física do Eastern Cooperative Oncology Group</td><td>Índice de desempenho ECOG</td><td>Eastern Cooperative Oncology Group scale for physical assessment (assessment scale)</td><td>Índice de desempenho ECOG</td></tr><tr><td><a href=\"http://snomed.info/id/762713009\">762713009</a></td><td>Índice de comorbilidade de Charlson</td><td>CCI</td><td>Charlson Comorbidity Index (assessment scale)</td><td>CCI</td></tr><tr><td><a href=\"http://snomed.info/id/445414007\">445414007</a></td><td>Escala clínica de fragilidade</td><td>CFS</td><td>Canadian Study of Health and Aging clinical frailty scale (assessment scale)</td><td>CFS</td></tr><tr><td><a href=\"http://snomed.info/id/273833000\">273833000</a></td><td>Questionário respiratório do hospital St. George</td><td>SGRP</td><td>St George's hospital respiratory questionnaire (assessment scale)</td><td>SGRP</td></tr><tr><td><a href=\"http://snomed.info/id/444781002\">444781002</a></td><td>Teste levantar e ir</td><td/><td>Timed up and go mobility test (assessment scale)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/450736002\">450736002</a></td><td>Teste de sentar-levantar 30 segundos</td><td/><td>Thirty second chair stand test (assessment scale)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/273441006\">273441006</a></td><td>Escala depressão pós-parto de Edimburgo</td><td>EPDS</td><td>Edinburgh postnatal depression scale (assessment scale)</td><td>EPDS</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-scale-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.114" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPEScaleVS"] ; # 
+  fhir:title [ fhir:v "CPE - Scale"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores Scale (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "1290002002" ] ;
+         fhir:display [ fhir:v "Índice de CT precoce do programa de AVC de Alberta" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Alberta Stroke Program Early CT score (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "ASPECTS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "273265007" ] ;
+         fhir:display [ fhir:v "Teste de identificação de desordens devido ao uso de álcool" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Alcohol use disorders identification test (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "AUDIT" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "449159002" ] ;
+         fhir:display [ fhir:v "Escala alerta, voz, dor, sem resposta" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Alert voice pain unresponsive scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "AVDS" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "AVPU" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287344004" ] ;
+         fhir:display [ fhir:v "Escala de Apgar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Apgar score (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Índice de Apgar" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "273302005" ] ;
+         fhir:display [ fhir:v "Índice de Barthel" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Barthel index (assessment scale)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "425759007" ] ;
+         fhir:display [ fhir:v "Escala de avaliação Braden Q" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Braden Q assessment scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Escala de Braden Q" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "781128005" ] ;
+         fhir:display [ fhir:v "Escala de Braden" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Braden Scale (assessment scale)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "398210001" ] ;
+         fhir:display [ fhir:v "Escala de Bromage" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bromage Scale (assessment scale)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287356003" ] ;
+         fhir:display [ fhir:v "Escala de acidente vascular cerebral pré-hospitalar de Cincinnati" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cincinnati Prehospital Stroke Scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Escala de Cincinnati" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287346002" ] ;
+         fhir:display [ fhir:v "Teste de Controlo da Rinite Alérgica e Asma" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Control of Allergic Rhinitis and Asthma Test (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "CARAT" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287726005" ] ;
+         fhir:display [ fhir:v "Escala DOLOPLUS-2" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "DOLOPLUS-2 scale (assessment scale)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1290005000" ] ;
+         fhir:display [ fhir:v "Índice da escala de atividade de Duke" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Duke Activity Scale Index (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "DASI" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1284895003" ] ;
+         fhir:display [ fhir:v "Escala de dor e desconforto do recém-nascido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Échelle de Douleur et d'Inconfort du Nouveau-né (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "EDIN" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "451021004" ] ;
+         fhir:display [ fhir:v "Sistema de avaliação de sintomas de Edmonton" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Edmonton Symptom Assessment System (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "ESAS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1144751002" ] ;
+         fhir:display [ fhir:v "Questionário EuroQol de cinco dimensões e três níveis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "EuroQol five dimension three level questionnaire (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "EQ-5D-3L" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1284908006" ] ;
+         fhir:display [ fhir:v "Escala de faces revista" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Faces Pain Scale - Revised (assessment scale)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "273453005" ] ;
+         fhir:display [ fhir:v "Teste de Fagerstrom para a dependência da nicotina" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Fagerstrom test for nicotine dependence (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Teste de Fagerstrom" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "451020003" ] ;
+         fhir:display [ fhir:v "APGAR familiar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Family Adaptation, Partnership, Growth, Affection, Resolve (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Adaptação, companheirismo, crescimento, afetividade e capacidade resolutiva" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287348001" ] ;
+         fhir:display [ fhir:v "Escala de Finnegan para o síndrome de abstinência neonatal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Finnegan Neonatal Abstinence Scoring Tool (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Escala de Finnegan" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "FNAST" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443313003" ] ;
+         fhir:display [ fhir:v "Escala finlandesa de risco de diabetes" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Finnish diabetes risk score (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "FINDRISC" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Avaliação de risco de diabetes tipo 2" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "713634000" ] ;
+         fhir:display [ fhir:v "Índice de fragilidade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Frailty Index (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "FRAIL" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "273469003" ] ;
+         fhir:display [ fhir:v "Medida de independência funcional" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Functional independence measure (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "MIF" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1290008003" ] ;
+         fhir:display [ fhir:v "Escala de Gijón de avaliação sócio-familiar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gijon's social-familial evaluation scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Escala de Gijón" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "386554004" ] ;
+         fhir:display [ fhir:v "Escala de coma de Glasgow" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Glasgow coma scale (assessment scale)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287347006" ] ;
+         fhir:display [ fhir:v "Índice de Graffar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Graffar index (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Escala de Graffar" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1289999007" ] ;
+         fhir:display [ fhir:v "Escala de deglutição de Gugging" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gugging Swallowing Screen (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "GUSS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "273524006" ] ;
+         fhir:display [ fhir:v "Escala de ansiedade e depressão hospitalar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Hospital anxiety and depression scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "HADS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287387001" ] ;
+         fhir:display [ fhir:v "Classificação de Killip" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Killip classification (assessment scale)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1304062007" ] ;
+         fhir:display [ fhir:v "Ferramenta de triagem para desnutrição" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Malnutrition Screening Tool (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "MST" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287377000" ] ;
+         fhir:display [ fhir:v "Mecanismo, Escala de coma de Glasgow, Idade, Pressão arterial" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mechanism, Glasgow Coma Scale, Age, Pressure score (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "MGAP" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "273599009" ] ;
+         fhir:display [ fhir:v "Escala de classificação muscular do Medical Research Council" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Medical Research Council motor power scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Grade muscle power" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Escala MRC" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "713262003" ] ;
+         fhir:display [ fhir:v "Mini-Cog teste de rastreio cognitivo breve" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mini-Cog brief cognitive screening test (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Mini-Cog" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287376009" ] ;
+         fhir:display [ fhir:v "Questionário Minnesota para portadores de insuficiência cardíaca" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Minnesota Living with Heart Failure Questionnaire (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "MLHFQ" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Questionário de Minnesota" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "765771006" ] ;
+         fhir:display [ fhir:v "Escala de Ashworth modificada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Modified Ashworth Scale (assessment scale)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "840352000" ] ;
+         fhir:display [ fhir:v "Escala de Rankin modificada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Modified Rankin Scale (assessment scale)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1290510006" ] ;
+         fhir:display [ fhir:v "Escala de Tardieu modificada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Modified Tardieu Scale (assessment scale)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "426938003" ] ;
+         fhir:display [ fhir:v "Escala de quedas de Morse" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Morse falls risk assessment (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "MFS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287358002" ] ;
+         fhir:display [ fhir:v "Score de alerta precoce" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "National Early Warning Score (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "NEWS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "450741005" ] ;
+         fhir:display [ fhir:v "Escala de acidente vascular cerebral do National Institutes of Health" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "National Institutes of Health stroke scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Escala de AVC do NIH" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287352001" ] ;
+         fhir:display [ fhir:v "Escala de confusão de Neelon e Champagne" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Neelon and Champagne Confusion Scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Escala de confusão NEECHAM" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1284900004" ] ;
+         fhir:display [ fhir:v "Escala de avaliação de dor no recém-nascido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Neonatal Infant Pain Scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "NIPS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1284903002" ] ;
+         fhir:display [ fhir:v "Escala neonatal de dor, agitação e sedação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Neonatal Pain Assessment and Sedation Scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "NPASS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287355004" ] ;
+         fhir:display [ fhir:v "Escala de avaliação do risco de lesão na pele do recém-nascido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Neonatal Skin Risk Assessment Scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "NSRAS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1284852002" ] ;
+         fhir:display [ fhir:v "Escala numérica de avaliação da dor" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Numeric Pain Rating Scale (assessment scale)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287375008" ] ;
+         fhir:display [ fhir:v "Escala de rastreio de risco nutricional 2002" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nutritional Risk Screening 2002 (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "NRS 2002" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "7121000122100" ] ;
+         fhir:display [ fhir:v "Avaliação da dor na demência avançada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pain Assessment in Advanced Dementia scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "PAINAD" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287374007" ] ;
+         fhir:display [ fhir:v "Score de risco do Registo Português de Síndromes Coronárias Agudas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Portuguese Registry of Acute Coronary Syndromes risk score (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "ProACS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "787454004" ] ;
+         fhir:display [ fhir:v "Escala de recuperação após anestesia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Post Anesthetic Recovery score (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Escala de Aldrete" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287838009" ] ;
+         fhir:display [ fhir:v "Perfil de dor de recém-nascidos prematuros" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Premature Infant Pain Profile (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "PIPP" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "281400004" ] ;
+         fhir:display [ fhir:v "Escala de sedação de Ramsay" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Ramsay sedation scale (assessment scale)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287359005" ] ;
+         fhir:display [ fhir:v "Escala de avaliação rápida de oclusão arterial" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Rapid Arterial Occlusion Evaluation Scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "RACE" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1284924007" ] ;
+         fhir:display [ fhir:v "Escala de expressão facial, movimento das pernas, atividade, choro e consolabilidade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Revised Face, Legs, Activity, Cry, Consolability scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "FLACC-R" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "273885003" ] ;
+         fhir:display [ fhir:v "Score de trauma revisado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Revised trauma score (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "RTS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1290285005" ] ;
+         fhir:display [ fhir:v "Escala de risco para transporte de doentes" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Risk Score for Transport Patients (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "RSTP" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1303696008" ] ;
+         fhir:display [ fhir:v "Classificação de Robson" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Robson Ten Group Classification System (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Sistema de classificação de dez grupos de Robson" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "304766007" ] ;
+         fhir:display [ fhir:v "Escala de autoestima de Rosenberg" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Rosenberg self-esteem scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "RSES" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287354000" ] ;
+         fhir:display [ fhir:v "Escala para rastreio de risco do estado nutricional e crescimento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Screening Tool for Risk on Nutritional Status and Growth (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "STRONGKids" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287357007" ] ;
+         fhir:display [ fhir:v "Questionário sobre força, assistência à marcha, levantar-se da cadeira, subir escadas e quedas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Strength, Assistance walking, Rising from chair, Climbing stairs and Falls questionnaire (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "SARC-F" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "273904000" ] ;
+         fhir:display [ fhir:v "Escala visual analógica da dor" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Visual analog pain scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "EVA" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "718581005" ] ;
+         fhir:display [ fhir:v "Escala de faces Wong-Baker" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Wong-Baker FACES pain assessment scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Wong-Baker FACES" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1348266008" ] ;
+         fhir:display [ fhir:v "Sistema de Relatório de Dados de Imagens da Mama" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Breast Imaging and Reporting and Data System (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "BI-RADS" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Sistema BI-RADS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "350491000146107" ] ;
+         fhir:display [ fhir:v "Sistema de Relatório de Dados de Imagens da Próstata" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Prostate Imaging-Reporting and Data System (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "PI-RADS" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Sistema PI-RADS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "722818007" ] ;
+         fhir:display [ fhir:v "Escala de Boston" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Boston bowel preparation scale (assessment scale)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "273270000" ] ;
+         fhir:display [ fhir:v "Classificação do estado físico da ASA" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "American Society of Anesthesiologists physical status classification (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Classificação ASA" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Escala ASA" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "445483007" ] ;
+         fhir:display [ fhir:v "Questionário de Berlim para a apneia do sono" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Berlin questionnaire for sleep apnea (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Questionário de Berlim" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "QB" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "443450003" ] ;
+         fhir:display [ fhir:v "Teste de controlo da asma" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Asthma control test (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "ACT" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "445074007" ] ;
+         fhir:display [ fhir:v "Mini questionário de qualidade de vida na asma" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mini asthma quality of life questionnaire (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Mini-AQLQ" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "448051009" ] ;
+         fhir:display [ fhir:v "Índice de massa corporal, obstrução ao fluxo de ar, dispneia e capacidade de exercício" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Body mass, airflow obstruction, dyspnea and exercise capacity index (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Índice BODE" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "57671000052108" ] ;
+         fhir:display [ fhir:v "Teste de avaliação da doença pulmonar obstrutiva crónica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Chronic Obstructive Pulmonary Disease Assessment Test scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "DPOC - CAT" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "870179002" ] ;
+         fhir:display [ fhir:v "Escala de dispneia do Medical Research Council modificada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "modified Medical Research Council Dyspnea Scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Escala de dispneia mMRC" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "708735004" ] ;
+         fhir:display [ fhir:v "Escala de sonolência Epworth" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Epworth Sleepiness Scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "ESE" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "73041000052103" ] ;
+         fhir:display [ fhir:v "Questionário EuroQoL de cinco dimensões e cinco níveis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "EuroQoL five dimension five level questionnaire (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "EQ-5D-5L" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "40141000234101" ] ;
+         fhir:display [ fhir:v "Sistema de Dados e Relatórios de Imagens do Fígado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Liver Imaging Reporting and Data System (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "LI-RADS" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Sistema LI-RADS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1367632001" ] ;
+         fhir:display [ fhir:v "Sistema Europeu de Dados e Relatórios de Imagens da Tiróide" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "European Thyroid Imaging and Reporting Data System (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "EU-TIRADS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1367642004" ] ;
+         fhir:display [ fhir:v "Sistema de Dados e Relatórios de Imagens do Ovário-Anexo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Ovarian-Adnexal Reporting and Data System (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "O-RADS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1367648000" ] ;
+         fhir:display [ fhir:v "Índice de Gravidade da Insónia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Insomnia Severity Index (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "ISI" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1367635004" ] ;
+         fhir:display [ fhir:v "Questionário STOP-Bang" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "STOP-Bang questionnaire (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "STOP-Bang" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "263487004" ] ;
+         fhir:display [ fhir:v "Escala de Borg" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Borg scale (assessment scale)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1371335000" ] ;
+         fhir:display [ fhir:v "Escala de Depressão, Ansiedade e Stress 21" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Depression, Anxiety, and Stress Scale 21 (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "DASS21" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1371329000" ] ;
+         fhir:display [ fhir:v "Avaliação Sistemática do Risco Coronário 2" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Systematic Coronary Risk Evaluation 2 (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "SCORE2" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1371642009" ] ;
+         fhir:display [ fhir:v "Classificação de feridas cirúrgicas do Centro para Controlo e Prevenção de Doenças" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Centers for Disease Control and Prevention surgical wound classification (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Classificação de feridas cirúrgicas do CDC" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "273546003" ] ;
+         fhir:display [ fhir:v "Índice de desempenho de Karnofsky" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Karnofsky performance status (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Escala de Karnofsky" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "KPS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "273437007" ] ;
+         fhir:display [ fhir:v "Índice de avaliação física do Eastern Cooperative Oncology Group" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Eastern Cooperative Oncology Group scale for physical assessment (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Índice de desempenho ECOG" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "762713009" ] ;
+         fhir:display [ fhir:v "Índice de comorbilidade de Charlson" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Charlson Comorbidity Index (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "CCI" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "445414007" ] ;
+         fhir:display [ fhir:v "Escala clínica de fragilidade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Canadian Study of Health and Aging clinical frailty scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "CFS" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "273833000" ] ;
+         fhir:display [ fhir:v "Questionário respiratório do hospital St. George" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "St George's hospital respiratory questionnaire (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "SGRP" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "444781002" ] ;
+         fhir:display [ fhir:v "Teste levantar e ir" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Timed up and go mobility test (assessment scale)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "450736002" ] ;
+         fhir:display [ fhir:v "Teste de sentar-levantar 30 segundos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Thirty second chair stand test (assessment scale)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "273441006" ] ;
+         fhir:display [ fhir:v "Escala depressão pós-parto de Edimburgo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Edinburgh postnatal depression scale (assessment scale)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "EPDS" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

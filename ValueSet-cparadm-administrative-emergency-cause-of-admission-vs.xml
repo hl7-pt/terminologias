@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cparadm-administrative-emergency-cause-of-admission-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cparadm-administrative-emergency-cause-of-admission-vs</b></p><a name="cparadm-administrative-emergency-cause-of-admission-vs"> </a><a name="hccparadm-administrative-emergency-cause-of-admission-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/418019003">418019003</a></td><td>Acidente</td><td/><td>Accidental event (event)</td><td/></tr><tr><td><a href="http://snomed.info/id/52684005">52684005</a></td><td>Agressão</td><td/><td>Assault (event)</td><td/></tr><tr><td><a href="http://snomed.info/id/248982007">248982007</a></td><td>Gravidez, parto e puerpério</td><td/><td>Pregnancy, childbirth and puerperium finding (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/1149322001">1149322001</a></td><td>Intoxicação</td><td/><td>Intoxication (disorder)</td><td/></tr><tr><td><a href="http://snomed.info/id/417746004">417746004</a></td><td>Ferimento</td><td/><td>Traumatic injury (disorder)</td><td/></tr><tr><td><a href="http://snomed.info/id/63238001">63238001</a></td><td>Morto à chegada ao hospital</td><td>Entrou cadáver</td><td>Dead on arrival at hospital (finding)</td><td>Entrou cadáver</td></tr><tr><td><a href="http://snomed.info/id/64572001">64572001</a></td><td>Doença</td><td/><td>Disease (disorder)</td><td/></tr><tr><td><a href="http://snomed.info/id/1285088001">1285088001</a></td><td>Maus tratos</td><td/><td>Maltreatment (event)</td><td/></tr><tr><td><a href="http://snomed.info/id/20135006">20135006</a></td><td>Rastreio</td><td>Despiste</td><td>Screening procedure (procedure)</td><td>Despiste</td></tr><tr><td><a href="http://snomed.info/id/276853009">276853009</a></td><td>Lesão autoinfligida</td><td>Auto-lesão</td><td>Self inflicted injury (disorder)</td><td>Auto-lesão</td></tr><tr><td><a href="http://snomed.info/id/365523001">365523001</a></td><td>Problema social</td><td/><td>Legal, financial, employment and/or socioeconomic history finding (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/773760007">773760007</a></td><td>Situação traumática</td><td>Evento traumático</td><td>Traumatic event (event)</td><td>Evento traumático</td></tr><tr><td><a href="http://snomed.info/id/25179006">25179006</a></td><td>Doação de sangue</td><td/><td>Whole blood unit collection (procedure)</td><td/></tr><tr><td><a href="http://snomed.info/id/417005">417005</a></td><td>Hospital re-admission</td><td>Readmissão hospitalar</td><td>Hospital re-admission (procedure)</td><td>Readmissão hospitalar</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-administrative-emergency-cause-of-admission-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.30"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPARADMAdministrativeEmergencyCauseOfAdmissionVS"/>
+  <title value="CPARADM - Adm Emergency Cause Admission"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores AdministrativeEmergencyCauseOfAdmission (CPARADM v3.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="418019003"/>
+        <display value="Acidente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Accidental event (event)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="52684005"/>
+        <display value="Agressão"/>
+        <designation>
+          <language value="en"/>
+          <value value="Assault (event)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="248982007"/>
+        <display value="Gravidez, parto e puerpério"/>
+        <designation>
+          <language value="en"/>
+          <value value="Pregnancy, childbirth and puerperium finding (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1149322001"/>
+        <display value="Intoxicação"/>
+        <designation>
+          <language value="en"/>
+          <value value="Intoxication (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="417746004"/>
+        <display value="Ferimento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Traumatic injury (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="63238001"/>
+        <display value="Morto à chegada ao hospital"/>
+        <designation>
+          <language value="en"/>
+          <value value="Dead on arrival at hospital (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Entrou cadáver"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="64572001"/>
+        <display value="Doença"/>
+        <designation>
+          <language value="en"/>
+          <value value="Disease (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1285088001"/>
+        <display value="Maus tratos"/>
+        <designation>
+          <language value="en"/>
+          <value value="Maltreatment (event)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="20135006"/>
+        <display value="Rastreio"/>
+        <designation>
+          <language value="en"/>
+          <value value="Screening procedure (procedure)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Testagem"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Despiste"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="276853009"/>
+        <display value="Lesão autoinfligida"/>
+        <designation>
+          <language value="en"/>
+          <value value="Self inflicted injury (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Auto-lesão"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="365523001"/>
+        <display value="Problema social"/>
+        <designation>
+          <language value="en"/>
+          <value value="Legal, financial, employment and/or socioeconomic history finding (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="773760007"/>
+        <display value="Situação traumática"/>
+        <designation>
+          <language value="en"/>
+          <value value="Traumatic event (event)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Evento traumático"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="25179006"/>
+        <display value="Doação de sangue"/>
+        <designation>
+          <language value="en"/>
+          <value value="Whole blood unit collection (procedure)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="417005"/>
+        <display value="Hospital re-admission"/>
+        <designation>
+          <language value="en"/>
+          <value value="Hospital re-admission (procedure)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Readmissão hospitalar"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,120 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-nsrasobservation-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-nsrasobservation-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-nsrasobservation-vs</b></p><a name=\"cpe-nsrasobservation-vs\"> </a><a name=\"hccpe-nsrasobservation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/73789-0/\">73789-0</a></td><td>Condição física geral</td><td>General Physical Condition</td></tr><tr><td><a href=\"https://loinc.org/73788-2/\">73788-2</a></td><td>Estado mental</td><td>Mental Status</td></tr><tr><td><a href=\"https://loinc.org/73787-4/\">73787-4</a></td><td>Mobilidade</td><td>Mobility</td></tr><tr><td><a href=\"https://loinc.org/73786-6/\">73786-6</a></td><td>Atividade</td><td>Activity</td></tr><tr><td><a href=\"https://loinc.org/73785-8/\">73785-8</a></td><td>Nutrição</td><td>Nutrition</td></tr><tr><td><a href=\"https://loinc.org/73784-1/\">73784-1</a></td><td>Humidade</td><td>Moisture</td></tr><tr><td><a href=\"https://loinc.org/73783-3/\">73783-3</a></td><td>Total de risco de úlceras de pressão</td><td>Pressure Ulcer Risk Total</td></tr><tr><td><a href=\"https://loinc.org/73782-5/\">73782-5</a></td><td>Avaliação de risco de úlceras de pressão</td><td>Pressure Ulcer Risk Evaluation</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-nsrasobservation-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.147" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPENSRASObservationVS"] ; # 
+  fhir:title [ fhir:v "CPE - NSRAS Observation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores NSRASObservation (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "73789-0" ] ;
+         fhir:display [ fhir:v "Condição física geral" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "General Physical Condition" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "73788-2" ] ;
+         fhir:display [ fhir:v "Estado mental" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mental Status" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "73787-4" ] ;
+         fhir:display [ fhir:v "Mobilidade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mobility" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "73786-6" ] ;
+         fhir:display [ fhir:v "Atividade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Activity" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "73785-8" ] ;
+         fhir:display [ fhir:v "Nutrição" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Nutrition" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "73784-1" ] ;
+         fhir:display [ fhir:v "Humidade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Moisture" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "73783-3" ] ;
+         fhir:display [ fhir:v "Total de risco de úlceras de pressão" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pressure Ulcer Risk Total" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "73782-5" ] ;
+         fhir:display [ fhir:v "Avaliação de risco de úlceras de pressão" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pressure Ulcer Risk Evaluation" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

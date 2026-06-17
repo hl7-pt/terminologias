@@ -1,0 +1,217 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cparadm-administrative-emergency-cause-of-admission-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cparadm-administrative-emergency-cause-of-admission-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cparadm-administrative-emergency-cause-of-admission-vs</b></p><a name=\"cparadm-administrative-emergency-cause-of-admission-vs\"> </a><a name=\"hccparadm-administrative-emergency-cause-of-admission-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/418019003\">418019003</a></td><td>Acidente</td><td/><td>Accidental event (event)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/52684005\">52684005</a></td><td>Agressão</td><td/><td>Assault (event)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/248982007\">248982007</a></td><td>Gravidez, parto e puerpério</td><td/><td>Pregnancy, childbirth and puerperium finding (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1149322001\">1149322001</a></td><td>Intoxicação</td><td/><td>Intoxication (disorder)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/417746004\">417746004</a></td><td>Ferimento</td><td/><td>Traumatic injury (disorder)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/63238001\">63238001</a></td><td>Morto à chegada ao hospital</td><td>Entrou cadáver</td><td>Dead on arrival at hospital (finding)</td><td>Entrou cadáver</td></tr><tr><td><a href=\"http://snomed.info/id/64572001\">64572001</a></td><td>Doença</td><td/><td>Disease (disorder)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1285088001\">1285088001</a></td><td>Maus tratos</td><td/><td>Maltreatment (event)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/20135006\">20135006</a></td><td>Rastreio</td><td>Despiste</td><td>Screening procedure (procedure)</td><td>Despiste</td></tr><tr><td><a href=\"http://snomed.info/id/276853009\">276853009</a></td><td>Lesão autoinfligida</td><td>Auto-lesão</td><td>Self inflicted injury (disorder)</td><td>Auto-lesão</td></tr><tr><td><a href=\"http://snomed.info/id/365523001\">365523001</a></td><td>Problema social</td><td/><td>Legal, financial, employment and/or socioeconomic history finding (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/773760007\">773760007</a></td><td>Situação traumática</td><td>Evento traumático</td><td>Traumatic event (event)</td><td>Evento traumático</td></tr><tr><td><a href=\"http://snomed.info/id/25179006\">25179006</a></td><td>Doação de sangue</td><td/><td>Whole blood unit collection (procedure)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/417005\">417005</a></td><td>Hospital re-admission</td><td>Readmissão hospitalar</td><td>Hospital re-admission (procedure)</td><td>Readmissão hospitalar</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-administrative-emergency-cause-of-admission-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.30" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPARADMAdministrativeEmergencyCauseOfAdmissionVS"] ; # 
+  fhir:title [ fhir:v "CPARADM - Adm Emergency Cause Admission"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores AdministrativeEmergencyCauseOfAdmission (CPARADM v3.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "418019003" ] ;
+         fhir:display [ fhir:v "Acidente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Accidental event (event)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "52684005" ] ;
+         fhir:display [ fhir:v "Agressão" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Assault (event)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "248982007" ] ;
+         fhir:display [ fhir:v "Gravidez, parto e puerpério" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pregnancy, childbirth and puerperium finding (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1149322001" ] ;
+         fhir:display [ fhir:v "Intoxicação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Intoxication (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "417746004" ] ;
+         fhir:display [ fhir:v "Ferimento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Traumatic injury (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "63238001" ] ;
+         fhir:display [ fhir:v "Morto à chegada ao hospital" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Dead on arrival at hospital (finding)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Entrou cadáver" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "64572001" ] ;
+         fhir:display [ fhir:v "Doença" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Disease (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1285088001" ] ;
+         fhir:display [ fhir:v "Maus tratos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Maltreatment (event)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20135006" ] ;
+         fhir:display [ fhir:v "Rastreio" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Screening procedure (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Testagem" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Despiste" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "276853009" ] ;
+         fhir:display [ fhir:v "Lesão autoinfligida" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Self inflicted injury (disorder)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Auto-lesão" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "365523001" ] ;
+         fhir:display [ fhir:v "Problema social" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Legal, financial, employment and/or socioeconomic history finding (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "773760007" ] ;
+         fhir:display [ fhir:v "Situação traumática" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Traumatic event (event)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Evento traumático" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "25179006" ] ;
+         fhir:display [ fhir:v "Doação de sangue" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Whole blood unit collection (procedure)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "417005" ] ;
+         fhir:display [ fhir:v "Hospital re-admission" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Hospital re-admission (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Readmissão hospitalar" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-nipsscale-result-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-nipsscale-result-vs</b></p><a name="cpe-nipsscale-result-vs"> </a><a name="hccpe-nipsscale-result-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="https://loinc.org/LA32283-6/">LA32283-6</a></td><td>Relaxado</td><td>Relaxada</td><td>Relaxed</td><td>Relaxada</td></tr><tr><td><a href="https://loinc.org/LA32299-2/">LA32299-2</a></td><td>Careta</td><td/><td>Grimace</td><td/></tr><tr><td><a href="https://loinc.org/LA32300-8/">LA32300-8</a></td><td>Não chora</td><td>Ausente</td><td>No cry</td><td>Ausente</td></tr><tr><td><a href="https://loinc.org/LA32301-6/">LA32301-6</a></td><td>Choramingar</td><td>Choramingo</td><td>Whimper</td><td>Choramingo</td></tr><tr><td><a href="https://loinc.org/LA32302-4/">LA32302-4</a></td><td>Choro vigoroso</td><td/><td>Vigorous cry</td><td/></tr><tr><td><a href="https://loinc.org/LA32284-4/">LA32284-4</a></td><td>Mudança na respiração (por exemplo, inspiração, irregular, mais rápida que o normal, engasgos ou retenção da respiração)</td><td>Mudança na respiração</td><td>Change in breathing (e.g., indrawing, irregular, faster than usual, gagging, or breath holding)</td><td>Mudança na respiração</td></tr><tr><td><a href="https://loinc.org/LA32285-1/">LA32285-1</a></td><td>Contido</td><td>Relaxados/controlados</td><td>Restrained</td><td>Relaxados/controlados</td></tr><tr><td><a href="https://loinc.org/LA32286-9/">LA32286-9</a></td><td>Flexionado (tenso ou rígido)</td><td>Flexionados/estendidos</td><td>Flexed (tense or rigid)</td><td>Flexionados/estendidos</td></tr><tr><td><a href="https://loinc.org/LA32287-7/">LA32287-7</a></td><td>Estendido (tenso ou rígido)</td><td>Flexionados/estendidos</td><td>Extended (tense or rigid)</td><td>Flexionados/estendidos</td></tr><tr><td><a href="https://loinc.org/LA11864-8/">LA11864-8</a></td><td>Adormecido</td><td>Dorme/calmo</td><td>Sleeping</td><td>Dorme/calmo</td></tr><tr><td><a href="https://loinc.org/LA32297-6/">LA32297-6</a></td><td>Acordado (quieto)</td><td>Dorme/calmo</td><td>Awake (quiet)</td><td>Dorme/calmo</td></tr><tr><td><a href="https://loinc.org/LA32298-4/">LA32298-4</a></td><td>Agitado (alerta, inquieto e/ou agitado)</td><td>Agitado</td><td>Fussy (alert, restless, and/or thrashing)</td><td>Agitado</td></tr><tr><td><a href="https://loinc.org/LA131-5/">LA131-5</a></td><td>Sem dor</td><td/><td>No pain</td><td/></tr><tr><td><a href="https://loinc.org/LA15111-0/">LA15111-0</a></td><td>Dor suave</td><td/><td>Mild pain</td><td/></tr><tr><td><a href="https://loinc.org/LA135-6/">LA135-6</a></td><td>Dor moderada</td><td/><td>Moderate pain</td><td/></tr><tr><td><a href="https://loinc.org/LA15109-4/">LA15109-4</a></td><td>Dor forte</td><td/><td>Severe pain</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-nipsscale-result-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.142"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPENIPSScaleResultVS"/>
+  <title value="CPE - NIPS Scale Result"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores NIPSScaleResult (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA32283-6"/>
+        <display value="Relaxado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Relaxed"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Relaxada"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA32299-2"/>
+        <display value="Careta"/>
+        <designation>
+          <language value="en"/>
+          <value value="Grimace"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA32300-8"/>
+        <display value="Não chora"/>
+        <designation>
+          <language value="en"/>
+          <value value="No cry"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Ausente"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA32301-6"/>
+        <display value="Choramingar"/>
+        <designation>
+          <language value="en"/>
+          <value value="Whimper"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Choramingo"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA32302-4"/>
+        <display value="Choro vigoroso"/>
+        <designation>
+          <language value="en"/>
+          <value value="Vigorous cry"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA32284-4"/>
+        <display value="Mudança na respiração (por exemplo, inspiração, irregular, mais rápida que o normal, engasgos ou retenção da respiração)"/>
+        <designation>
+          <language value="en"/>
+          <value value="Change in breathing (e.g., indrawing, irregular, faster than usual, gagging, or breath holding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Mudança na respiração"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA32285-1"/>
+        <display value="Contido"/>
+        <designation>
+          <language value="en"/>
+          <value value="Restrained"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Relaxados/controlados"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA32286-9"/>
+        <display value="Flexionado (tenso ou rígido)"/>
+        <designation>
+          <language value="en"/>
+          <value value="Flexed (tense or rigid)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Flexionados/estendidos"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA32287-7"/>
+        <display value="Estendido (tenso ou rígido)"/>
+        <designation>
+          <language value="en"/>
+          <value value="Extended (tense or rigid)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Flexionados/estendidos"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA11864-8"/>
+        <display value="Adormecido"/>
+        <designation>
+          <language value="en"/>
+          <value value="Sleeping"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Dorme/calmo"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA32297-6"/>
+        <display value="Acordado (quieto)"/>
+        <designation>
+          <language value="en"/>
+          <value value="Awake (quiet)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Dorme/calmo"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA32298-4"/>
+        <display value="Agitado (alerta, inquieto e/ou agitado)"/>
+        <designation>
+          <language value="en"/>
+          <value value="Fussy (alert, restless, and/or thrashing)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Agitado"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA131-5"/>
+        <display value="Sem dor"/>
+        <designation>
+          <language value="en"/>
+          <value value="No pain"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15111-0"/>
+        <display value="Dor suave"/>
+        <designation>
+          <language value="en"/>
+          <value value="Mild pain"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA135-6"/>
+        <display value="Dor moderada"/>
+        <designation>
+          <language value="en"/>
+          <value value="Moderate pain"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA15109-4"/>
+        <display value="Dor forte"/>
+        <designation>
+          <language value="en"/>
+          <value value="Severe pain"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

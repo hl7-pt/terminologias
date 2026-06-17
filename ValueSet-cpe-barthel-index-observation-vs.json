@@ -1,0 +1,179 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpe-barthel-index-observation-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-barthel-index-observation-vs</b></p><a name=\"cpe-barthel-index-observation-vs\"> </a><a name=\"hccpe-barthel-index-observation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/83184-2/\">83184-2</a></td><td>Alimentação</td><td/><td>Feeding</td><td/></tr><tr><td><a href=\"https://loinc.org/83185-9/\">83185-9</a></td><td>Transferência</td><td>Transferência (cadeira/cama)</td><td>Transfer</td><td>Transferência (cadeira/cama)</td></tr><tr><td><a href=\"https://loinc.org/96767-9/\">96767-9</a></td><td>Higiene pessoal</td><td/><td>Grooming</td><td/></tr><tr><td><a href=\"https://loinc.org/83183-4/\">83183-4</a></td><td>Uso da casa de banho</td><td/><td>Toilet Use</td><td/></tr><tr><td><a href=\"https://loinc.org/83181-8/\">83181-8</a></td><td>Banho</td><td/><td>Bathing</td><td/></tr><tr><td><a href=\"https://loinc.org/83186-7/\">83186-7</a></td><td>Mobilidade</td><td/><td>Mobility</td><td/></tr><tr><td><a href=\"https://loinc.org/96758-8/\">96758-8</a></td><td>Escadas</td><td/><td>Stairs</td><td/></tr><tr><td><a href=\"https://loinc.org/83182-6/\">83182-6</a></td><td>Vestir-se</td><td/><td>Dressing</td><td/></tr><tr><td><a href=\"https://loinc.org/96759-6/\">96759-6</a></td><td>Intestinos</td><td>Intestino</td><td>Bowels</td><td>Intestino</td></tr><tr><td><a href=\"https://loinc.org/96760-4/\">96760-4</a></td><td>Bexiga</td><td>Sistema urinário</td><td>Bladder</td><td>Sistema urinário</td></tr><tr><td><a href=\"https://loinc.org/96761-2/\">96761-2</a></td><td>Score total do índice de Barthel</td><td>Pontuação total do índice de Barthel</td><td>Total score Barthel Index</td><td>Pontuação total do índice de Barthel</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-barthel-index-observation-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.122"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPEBarthelIndexObservationVS",
+  "title" : "CPE - Barthel Index Observation",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores BarthelIndexObservation (CPE v2.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "83184-2",
+        "display" : "Alimentação",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Feeding"
+        }]
+      },
+      {
+        "code" : "83185-9",
+        "display" : "Transferência",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Transfer"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Transferência (cadeira/cama)"
+        }]
+      },
+      {
+        "code" : "96767-9",
+        "display" : "Higiene pessoal",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Grooming"
+        }]
+      },
+      {
+        "code" : "83183-4",
+        "display" : "Uso da casa de banho",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Toilet Use"
+        }]
+      },
+      {
+        "code" : "83181-8",
+        "display" : "Banho",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Bathing"
+        }]
+      },
+      {
+        "code" : "83186-7",
+        "display" : "Mobilidade",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Mobility"
+        }]
+      },
+      {
+        "code" : "96758-8",
+        "display" : "Escadas",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Stairs"
+        }]
+      },
+      {
+        "code" : "83182-6",
+        "display" : "Vestir-se",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Dressing"
+        }]
+      },
+      {
+        "code" : "96759-6",
+        "display" : "Intestinos",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Bowels"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Intestino"
+        }]
+      },
+      {
+        "code" : "96760-4",
+        "display" : "Bexiga",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Bladder"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Sistema urinário"
+        }]
+      },
+      {
+        "code" : "96761-2",
+        "display" : "Score total do índice de Barthel",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Total score Barthel Index"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Pontuação total do índice de Barthel"
+        }]
+      }]
+    }]
+  }
+}

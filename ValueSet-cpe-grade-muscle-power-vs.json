@@ -1,0 +1,103 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpe-grade-muscle-power-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-grade-muscle-power-vs</b></p><a name=\"cpe-grade-muscle-power-vs\"> </a><a name=\"hccpe-grade-muscle-power-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"http://snomed.info/id/249949001\">249949001</a></td><td>Sem contração muscular ativa</td><td>No active muscle contraction (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/249950001\">249950001</a></td><td>Apenas contração muscular visível</td><td>Visible muscle contraction only (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/249953004\">249953004</a></td><td>Movimento com gravidade eliminada</td><td>Movement with gravity eliminated (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/249954005\">249954005</a></td><td>Movimento contra a gravidade</td><td>Movement against gravity (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/298284000\">298284000</a></td><td>Movimento muscular contra resistência incompleta</td><td>Muscle movement against resistance incomplete (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/249955006\">249955006</a></td><td>Movimento contra resistência</td><td>Movement against resistance (finding)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-grade-muscle-power-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.134"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPEGradeMusclePowerVS",
+  "title" : "CPE - Grade Muscle Power",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores GradeMusclePower (CPE v2.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "249949001",
+        "display" : "Sem contração muscular ativa",
+        "designation" : [{
+          "language" : "en",
+          "value" : "No active muscle contraction (finding)"
+        }]
+      },
+      {
+        "code" : "249950001",
+        "display" : "Apenas contração muscular visível",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Visible muscle contraction only (finding)"
+        }]
+      },
+      {
+        "code" : "249953004",
+        "display" : "Movimento com gravidade eliminada",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Movement with gravity eliminated (finding)"
+        }]
+      },
+      {
+        "code" : "249954005",
+        "display" : "Movimento contra a gravidade",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Movement against gravity (finding)"
+        }]
+      },
+      {
+        "code" : "298284000",
+        "display" : "Movimento muscular contra resistência incompleta",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Muscle movement against resistance incomplete (finding)"
+        }]
+      },
+      {
+        "code" : "249955006",
+        "display" : "Movimento contra resistência",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Movement against resistance (finding)"
+        }]
+      }]
+    }]
+  }
+}

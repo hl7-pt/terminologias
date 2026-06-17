@@ -1,0 +1,157 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpe-ramsay-scale-result-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-ramsay-scale-result-vs</b></p><a name=\"cpe-ramsay-scale-result-vs\"> </a><a name=\"hccpe-ramsay-scale-result-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/LA34208-1/\">LA34208-1</a></td><td>Desperto; agitado ou inquieto ou ambos</td><td>Ansioso e agitado</td><td>Awake; agitated or restless or both</td><td>Ansioso e agitado</td></tr><tr><td><a href=\"https://loinc.org/LA34209-9/\">LA34209-9</a></td><td>Desperto; cooperativo, orientado e tranquilo</td><td>Cooperante, orientado e tranquilo</td><td>Awake; cooperative, oriented, and tranquil</td><td>Cooperante, orientado e tranquilo</td></tr><tr><td><a href=\"https://loinc.org/LA34210-7/\">LA34210-7</a></td><td>Desperto, mas responde apenas a comandos</td><td>Obedece a ordens mas sonolento</td><td>Awake but responds to commands only</td><td>Obedece a ordens mas sonolento</td></tr><tr><td><a href=\"https://loinc.org/LA34211-5/\">LA34211-5</a></td><td>Adormecido; resposta rápida a um leve toque glabelar ou a um estímulo auditivo alto</td><td>Adormecido, resposta viva a estímulos dolorosos leves</td><td>Asleep; brisk response to light glabellar tap or loud auditory stimulus</td><td>Adormecido, resposta viva a estímulos dolorosos leves</td></tr><tr><td><a href=\"https://loinc.org/LA34212-3/\">LA34212-3</a></td><td>Adormecido; resposta lenta a um leve toque glabelar ou estímulo auditivo alto</td><td>Adormecido, não responde a ordens, resposta lenta a estímulos</td><td>Asleep; sluggish response to light glabellar tap or loud auditory stimulus</td><td>Adormecido, não responde a ordens, resposta lenta a estímulos</td></tr><tr><td><a href=\"https://loinc.org/LA34213-1/\">LA34213-1</a></td><td>Adormecido; sem resposta a toque glabelar ou estímulo auditivo alto</td><td>Adormecido, sem resposta a ordens e estímulos</td><td>Asleep; no response to glabellar tap or loud auditory stimulus</td><td>Adormecido, sem resposta a ordens e estímulos</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-ramsay-scale-result-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.154"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPERamsayScaleResultVS",
+  "title" : "CPE - Ramsay Scale Result",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores RamsayScaleResult (CPE v2.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA34208-1",
+        "display" : "Desperto; agitado ou inquieto ou ambos",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Awake; agitated or restless or both"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Ansioso e agitado"
+        }]
+      },
+      {
+        "code" : "LA34209-9",
+        "display" : "Desperto; cooperativo, orientado e tranquilo",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Awake; cooperative, oriented, and tranquil"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Cooperante, orientado e tranquilo"
+        }]
+      },
+      {
+        "code" : "LA34210-7",
+        "display" : "Desperto, mas responde apenas a comandos",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Awake but responds to commands only"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Obedece a ordens mas sonolento"
+        }]
+      },
+      {
+        "code" : "LA34211-5",
+        "display" : "Adormecido; resposta rápida a um leve toque glabelar ou a um estímulo auditivo alto",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Asleep; brisk response to light glabellar tap or loud auditory stimulus"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Adormecido, resposta viva a estímulos dolorosos leves"
+        }]
+      },
+      {
+        "code" : "LA34212-3",
+        "display" : "Adormecido; resposta lenta a um leve toque glabelar ou estímulo auditivo alto",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Asleep; sluggish response to light glabellar tap or loud auditory stimulus"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Adormecido, não responde a ordens, resposta lenta a estímulos"
+        }]
+      },
+      {
+        "code" : "LA34213-1",
+        "display" : "Adormecido; sem resposta a toque glabelar ou estímulo auditivo alto",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Asleep; no response to glabellar tap or loud auditory stimulus"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Adormecido, sem resposta a ordens e estímulos"
+        }]
+      }]
+    }]
+  }
+}

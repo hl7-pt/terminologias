@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cparadm-cancellation-reason-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cparadm-cancellation-reason-vs</b></p><a name="cparadm-cancellation-reason-vs"> </a><a name="hccparadm-cancellation-reason-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/1363369008">1363369008</a></td><td>Falta de vaga</td><td>Falta de cama no internamento</td><td>Inpatient bed not available (finding)</td><td>Falta de cama no internamento</td></tr><tr><td><a href="http://snomed.info/id/268910001">268910001</a></td><td>Utente melhorado</td><td>A condição do utente melhorou</td><td>Patient's condition improved (finding)</td><td>A condição do utente melhorou</td></tr><tr><td><a href="http://snomed.info/id/271299001">271299001</a></td><td>Utente piorado</td><td>A condição do utente piorou</td><td>Patient's condition worsened (finding)</td><td>A condição do utente piorou</td></tr><tr><td><a href="http://snomed.info/id/18632008">18632008</a></td><td>Determinação do estado do utente, falecido</td><td>Utente falecido</td><td>Patient status determination, deceased (finding)</td><td>Utente falecido</td></tr><tr><td><a href="http://snomed.info/id/723510000">723510000</a></td><td>Inserido por erro</td><td>Engano</td><td>Entered in error (qualifier value)</td><td>Engano</td></tr><tr><td><a href="http://snomed.info/id/736523005">736523005</a></td><td>Risco acrescido de complicações da anestesia</td><td>Risco anestésico</td><td>At increased risk of complication of anesthesia (finding)</td><td>Risco anestésico</td></tr><tr><td><a href="http://snomed.info/id/443938003">443938003</a></td><td>Procedimento já realizado</td><td/><td>Procedure carried out on subject (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/15635006">15635006</a></td><td>A pedido do utente</td><td/><td>Requested by patient (contextual qualifier) (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/397807004">397807004</a></td><td>Equipamento não disponível</td><td>Equipamento indisponível</td><td>Equipment not available (finding)</td><td>Equipamento indisponível</td></tr><tr><td><a href="http://snomed.info/id/21541000119102">21541000119102</a></td><td>Abandono</td><td>Utente saiu sem ser visto</td><td>Patient left without being seen (finding)</td><td>Utente saiu sem ser visto</td></tr><tr><td><a href="http://snomed.info/id/281331007">281331007</a></td><td>Falta informacão clínica</td><td/><td>Insufficient clinical detail given (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/405366000">405366000</a></td><td>Sem vaga no recobro</td><td>Falta de cama no recobro</td><td>Recovery room bed not available (finding)</td><td>Falta de cama no recobro</td></tr><tr><td><a href="http://snomed.info/id/440565004">440565004</a></td><td>Não cumpriu jejum</td><td>Jejum inadequado</td><td>Not fasting (situation)</td><td>Jejum inadequado</td></tr><tr><td><a href="http://snomed.info/id/183965009">183965009</a></td><td>Sem indicação cirúrgica</td><td/><td>Surgery not indicated (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/308540004">308540004</a></td><td>Estadia em internamento</td><td>Utente internado</td><td>Inpatient stay (finding)</td><td>Utente internado</td></tr><tr><td><a href="http://snomed.info/id/275935009">275935009</a></td><td>Cirurgia contra indicada</td><td/><td>Surgery contraindicated (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/738778005">738778005</a></td><td>Complicação intra-operatória</td><td/><td>Intraoperative complication (disorder)</td><td/></tr><tr><td><a href="http://snomed.info/id/185328004">185328004</a></td><td>Atraso do utente</td><td/><td>Patient too late (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/58000006">58000006</a></td><td>Alta do utente</td><td>Alta</td><td>Patient discharge (procedure)</td><td>Alta</td></tr><tr><td><a href="http://snomed.info/id/951000314100">951000314100</a></td><td>Utente fora da área de abrangência</td><td/><td>Patient from outside hospital referral area (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/737038009">737038009</a></td><td>Utente recusa tratamento</td><td/><td>Declined consent for treatment (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/182992009">182992009</a></td><td>Tratamento completo</td><td/><td>Treatment completed (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/397933008">397933008</a></td><td>Equipamento avariado</td><td>Avaria no equipamento</td><td>Equipment error/failure (finding)</td><td>Avaria no equipamento</td></tr><tr><td><a href="http://snomed.info/id/405681002">405681002</a></td><td>Processo do utente não disponível</td><td>Processo do utente indisponível</td><td>Patient medical record not available (finding)</td><td>Processo do utente indisponível</td></tr><tr><td><a href="http://snomed.info/id/420066004">420066004</a></td><td>Transporte atrasado</td><td/><td>Transport delay (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/419024006">419024006</a></td><td>Transporte não disponível</td><td>Transporte indisponível</td><td>Transport unavailable (finding)</td><td>Transporte indisponível</td></tr><tr><td><a href="http://snomed.info/id/1285125003">1285125003</a></td><td>Erro na identificação do utente</td><td/><td>Patient identification error (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/408408004">408408004</a></td><td>Referenciação incorreta</td><td/><td>Inappropriate referral (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/394908001">394908001</a></td><td>Procedimento interrompido</td><td/><td>Procedure stopped (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/428929009">428929009</a></td><td>Acompanhante não disponível</td><td>Acompanhante ausente</td><td>Chaperone not available (finding)</td><td>Acompanhante ausente</td></tr><tr><td><a href="http://snomed.info/id/1303248003">1303248003</a></td><td>Sem condições para o procedimento</td><td>Não adequado para procedimento</td><td>Not suitable for procedure (finding)</td><td>Não adequado para procedimento</td></tr><tr><td><a href="http://snomed.info/id/103321005">103321005</a></td><td>Decisão clínica</td><td>A pedido do médico</td><td>Request by physician (contextual qualifier) (qualifier value)</td><td>A pedido do médico</td></tr><tr><td><a href="http://snomed.info/id/266756008">266756008</a></td><td>Cuidados médicos não disponíveis</td><td>Tratamento não disponível</td><td>Medical care unavailable (situation)</td><td>Tratamento não disponível</td></tr><tr><td><a href="http://snomed.info/id/418667009">418667009</a></td><td>Problemas de agendamento</td><td/><td>Procedure scheduling issues (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/19712007">19712007</a></td><td>Utente transferido para outra entidade de saúde</td><td/><td>Patient transfer, to another health care facility (procedure)</td><td/></tr><tr><td><a href="http://snomed.info/id/445528004">445528004</a></td><td>Alteração de tratamento</td><td/><td>Treatment changed (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/1581000314100">1581000314100</a></td><td>Alteração de agendamento</td><td>Reagendamento</td><td>Appointment rescheduling (procedure)</td><td>Reagendamento</td></tr><tr><td><a href="http://snomed.info/id/1531000314101">1531000314101</a></td><td>Utente incontactável</td><td/><td>Patient unreachable (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/1341000314102">1341000314102</a></td><td>Regresso do utente ao estabelecimento de saúde de proveniência</td><td>Regresso ao hospital de origem</td><td>Patient returning to healthcare facility of provenance (finding)</td><td>Regresso ao hospital de origem</td></tr><tr><td><a href="http://snomed.info/id/1461000314105">1461000314105</a></td><td>Especialidade médica não existente na entidade de saúde</td><td/><td>Medical specialty does not exist in heathcare facility (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/1741000314101">1741000314101</a></td><td>Consulta já realizada</td><td/><td>Consultation carried out on subject (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/1751000314104">1751000314104</a></td><td>Produto de sangue não disponível</td><td>Produto de sangue indisponível</td><td>Blood product unit unavailable (finding)</td><td>Produto de sangue indisponível</td></tr><tr><td><a href="http://snomed.info/id/1761000314102">1761000314102</a></td><td>Não elegível para tratamento</td><td/><td>Not elegible for treatment (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/1771000314105">1771000314105</a></td><td>Diagnóstico não confirmado</td><td/><td>Diagnosis not confirmed (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/1781000314108">1781000314108</a></td><td>Falta de tempo cirúrgico</td><td/><td>Lack of surgical time (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/1791000314106">1791000314106</a></td><td>Falta de tempo anestésico</td><td/><td>Lack of anaesthetic time (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/2321000314101">2321000314101</a></td><td>Sem condições anestésicas</td><td/><td>Not suitable for anesthesia (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/1811000314105">1811000314105</a></td><td>Alterações de agenda</td><td/><td>Schedule alterations (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/1821000314101">1821000314101</a></td><td>Profissional de saúde não disponível</td><td>Profissional de saúde indisponível</td><td>Healthcare professional not available (finding)</td><td>Profissional de saúde indisponível</td></tr><tr><td><a href="http://snomed.info/id/1831000314103">1831000314103</a></td><td>Notificação inadequada</td><td/><td>Inadequate notification (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/1841000314109">1841000314109</a></td><td>Pedido de mudança de profissional de saúde</td><td/><td>Request to change healthcare professional (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/1851000314106">1851000314106</a></td><td>Agendamento cancelado pelos cuidados de saúde primários</td><td>Agendamento cancelado pelos CSP</td><td>Appointment cancelled by primary care unit (finding)</td><td>Agendamento cancelado pelos CSP</td></tr><tr><td><a href="http://snomed.info/id/1861000314108">1861000314108</a></td><td>Referenciação cancelada pelos cuidados de saúde primários</td><td>Referenciação cancelada pelos CSP</td><td>Referral cancelled by primary care unit (finding)</td><td>Referenciação cancelada pelos CSP</td></tr><tr><td><a href="http://snomed.info/id/1871000314100">1871000314100</a></td><td>Aguarda resultados</td><td/><td>Awaiting results (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/1881000314102">1881000314102</a></td><td>Profissional de saúde recusa utente</td><td/><td>Healthcare professional declined patient examination (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/1891000314104">1891000314104</a></td><td>Faltas consecutivas do utente</td><td/><td>Patient repeated no-show (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/1901000314100">1901000314100</a></td><td>Falta justificada do utente</td><td/><td>Patient did not attend with justification (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/1911000314102">1911000314102</a></td><td>Sala não disponível</td><td/><td>Room unavailable (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/1921000314106">1921000314106</a></td><td>Falta injustificada do utente</td><td/><td>Patient did not attend without justification (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/4525004">4525004</a></td><td>Utente atendido no serviço de urgência</td><td>Utente atendido no SU</td><td>Emergency department patient visit (procedure)</td><td>Utente atendido no SU</td></tr><tr><td><a href="http://snomed.info/id/2311000314105">2311000314105</a></td><td>Agendamento cancelado pelo utente</td><td/><td>Appointment canceled by patient (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/306104004">306104004</a></td><td>Referenciação para serviço de urgência</td><td>Referenciado para SU</td><td>Referral to accident and emergency service (procedure)</td><td>Referenciado para SU</td></tr><tr><td><a href="http://snomed.info/id/418661005">418661005</a></td><td>Procedimento reagendado</td><td/><td>Procedure rescheduled (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/1541000314107">1541000314107</a></td><td>Ausência de tentativa de agendamento dentro do prazo esperado</td><td/><td>Failed attempt to schedule within expected time (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/1521000314104">1521000314104</a></td><td>Foram esgotadas as tentativas de agendamento por parte do utente</td><td/><td>Scheduling attempts have been exhausted by patient (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/2111000314107">2111000314107</a></td><td>Ativação de plano de contingência</td><td/><td>Activation of contingency plan (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/1511000314108">1511000314108</a></td><td>Foram esgotadas as tentativas de agendamento por parte da entidade</td><td/><td>Scheduling attempts have been exhausted by healthcare organization (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/2131000314100">2131000314100</a></td><td>Utente necessita de acompanhamento a longo prazo</td><td/><td>Requires long-term follow-up care (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/2241000314101">2241000314101</a></td><td>Agendamento cancelado pelo profissional de saúde</td><td/><td>Appointment canceled by healthcare professional (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/2251000314104">2251000314104</a></td><td>Não elegível para consulta</td><td/><td>Not elegible for consultation (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/2261000314102">2261000314102</a></td><td>Utente recusa consulta</td><td/><td>Declined consent for consultation (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/2271000314105">2271000314105</a></td><td>Dados administrativos incompletos</td><td/><td>Insufficient administrative detail given (finding)</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-cancellation-reason-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.169"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPARADMCancellationReasonVS"/>
+  <title value="CPARADM - Cancellation Reason"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores CancellationReason (CPARADM v3.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="1363369008"/>
+        <display value="Falta de vaga"/>
+        <designation>
+          <language value="en"/>
+          <value value="Inpatient bed not available (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Falta de cama no internamento"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="268910001"/>
+        <display value="Utente melhorado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient's condition improved (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Utente melhorou"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="A condição do utente melhorou"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="271299001"/>
+        <display value="Utente piorado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient's condition worsened (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Utente piorou"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="A condição do utente piorou"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="18632008"/>
+        <display value="Determinação do estado do utente, falecido"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient status determination, deceased (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Utente falecido"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="723510000"/>
+        <display value="Inserido por erro"/>
+        <designation>
+          <language value="en"/>
+          <value value="Entered in error (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Engano"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="736523005"/>
+        <display value="Risco acrescido de complicações da anestesia"/>
+        <designation>
+          <language value="en"/>
+          <value value="At increased risk of complication of anesthesia (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Risco anestésico"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="443938003"/>
+        <display value="Procedimento já realizado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Procedure carried out on subject (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="15635006"/>
+        <display value="A pedido do utente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Requested by patient (contextual qualifier) (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="397807004"/>
+        <display value="Equipamento não disponível"/>
+        <designation>
+          <language value="en"/>
+          <value value="Equipment not available (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Equipamento indisponível"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="21541000119102"/>
+        <display value="Abandono"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient left without being seen (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Utente saiu sem ser visto"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="281331007"/>
+        <display value="Falta informacão clínica"/>
+        <designation>
+          <language value="en"/>
+          <value value="Insufficient clinical detail given (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="405366000"/>
+        <display value="Sem vaga no recobro"/>
+        <designation>
+          <language value="en"/>
+          <value value="Recovery room bed not available (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Falta de cama no recobro"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="440565004"/>
+        <display value="Não cumpriu jejum"/>
+        <designation>
+          <language value="en"/>
+          <value value="Not fasting (situation)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Jejum inadequado"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="183965009"/>
+        <display value="Sem indicação cirúrgica"/>
+        <designation>
+          <language value="en"/>
+          <value value="Surgery not indicated (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="308540004"/>
+        <display value="Estadia em internamento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Inpatient stay (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Utente internado"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="275935009"/>
+        <display value="Cirurgia contra indicada"/>
+        <designation>
+          <language value="en"/>
+          <value value="Surgery contraindicated (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="738778005"/>
+        <display value="Complicação intra-operatória"/>
+        <designation>
+          <language value="en"/>
+          <value value="Intraoperative complication (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="185328004"/>
+        <display value="Atraso do utente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient too late (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="58000006"/>
+        <display value="Alta do utente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient discharge (procedure)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Alta"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="951000314100"/>
+        <display value="Utente fora da área de abrangência"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient from outside hospital referral area (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="737038009"/>
+        <display value="Utente recusa tratamento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Declined consent for treatment (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="182992009"/>
+        <display value="Tratamento completo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Treatment completed (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="397933008"/>
+        <display value="Equipamento avariado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Equipment error/failure (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Avaria no equipamento"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="405681002"/>
+        <display value="Processo do utente não disponível"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient medical record not available (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Processo do utente indisponível"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="420066004"/>
+        <display value="Transporte atrasado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Transport delay (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="419024006"/>
+        <display value="Transporte não disponível"/>
+        <designation>
+          <language value="en"/>
+          <value value="Transport unavailable (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Transporte indisponível"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1285125003"/>
+        <display value="Erro na identificação do utente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient identification error (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="408408004"/>
+        <display value="Referenciação incorreta"/>
+        <designation>
+          <language value="en"/>
+          <value value="Inappropriate referral (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="394908001"/>
+        <display value="Procedimento interrompido"/>
+        <designation>
+          <language value="en"/>
+          <value value="Procedure stopped (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="428929009"/>
+        <display value="Acompanhante não disponível"/>
+        <designation>
+          <language value="en"/>
+          <value value="Chaperone not available (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Sem acompanhante"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Acompanhante ausente"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1303248003"/>
+        <display value="Sem condições para o procedimento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Not suitable for procedure (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Não adequado para procedimento"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="103321005"/>
+        <display value="Decisão clínica"/>
+        <designation>
+          <language value="en"/>
+          <value value="Request by physician (contextual qualifier) (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="A pedido do médico"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="266756008"/>
+        <display value="Cuidados médicos não disponíveis"/>
+        <designation>
+          <language value="en"/>
+          <value value="Medical care unavailable (situation)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Tratamento não disponível"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="418667009"/>
+        <display value="Problemas de agendamento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Procedure scheduling issues (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="19712007"/>
+        <display value="Utente transferido para outra entidade de saúde"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient transfer, to another health care facility (procedure)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="445528004"/>
+        <display value="Alteração de tratamento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Treatment changed (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1581000314100"/>
+        <display value="Alteração de agendamento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Appointment rescheduling (procedure)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Reagendamento"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1531000314101"/>
+        <display value="Utente incontactável"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient unreachable (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1341000314102"/>
+        <display value="Regresso do utente ao estabelecimento de saúde de proveniência"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient returning to healthcare facility of provenance (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Regresso ao hospital de origem"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1461000314105"/>
+        <display value="Especialidade médica não existente na entidade de saúde"/>
+        <designation>
+          <language value="en"/>
+          <value value="Medical specialty does not exist in heathcare facility (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1741000314101"/>
+        <display value="Consulta já realizada"/>
+        <designation>
+          <language value="en"/>
+          <value value="Consultation carried out on subject (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1751000314104"/>
+        <display value="Produto de sangue não disponível"/>
+        <designation>
+          <language value="en"/>
+          <value value="Blood product unit unavailable (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Produto de sangue indisponível"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1761000314102"/>
+        <display value="Não elegível para tratamento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Not elegible for treatment (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1771000314105"/>
+        <display value="Diagnóstico não confirmado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Diagnosis not confirmed (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1781000314108"/>
+        <display value="Falta de tempo cirúrgico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Lack of surgical time (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1791000314106"/>
+        <display value="Falta de tempo anestésico"/>
+        <designation>
+          <language value="en"/>
+          <value value="Lack of anaesthetic time (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2321000314101"/>
+        <display value="Sem condições anestésicas"/>
+        <designation>
+          <language value="en"/>
+          <value value="Not suitable for anesthesia (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1811000314105"/>
+        <display value="Alterações de agenda"/>
+        <designation>
+          <language value="en"/>
+          <value value="Schedule alterations (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1821000314101"/>
+        <display value="Profissional de saúde não disponível"/>
+        <designation>
+          <language value="en"/>
+          <value value="Healthcare professional not available (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Profissional de saúde indisponível"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1831000314103"/>
+        <display value="Notificação inadequada"/>
+        <designation>
+          <language value="en"/>
+          <value value="Inadequate notification (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1841000314109"/>
+        <display value="Pedido de mudança de profissional de saúde"/>
+        <designation>
+          <language value="en"/>
+          <value value="Request to change healthcare professional (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1851000314106"/>
+        <display value="Agendamento cancelado pelos cuidados de saúde primários"/>
+        <designation>
+          <language value="en"/>
+          <value value="Appointment cancelled by primary care unit (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Agendamento cancelado pelos CSP"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1861000314108"/>
+        <display value="Referenciação cancelada pelos cuidados de saúde primários"/>
+        <designation>
+          <language value="en"/>
+          <value value="Referral cancelled by primary care unit (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Referenciação cancelada pelos CSP"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1871000314100"/>
+        <display value="Aguarda resultados"/>
+        <designation>
+          <language value="en"/>
+          <value value="Awaiting results (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1881000314102"/>
+        <display value="Profissional de saúde recusa utente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Healthcare professional declined patient examination (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1891000314104"/>
+        <display value="Faltas consecutivas do utente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient repeated no-show (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1901000314100"/>
+        <display value="Falta justificada do utente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient did not attend with justification (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1911000314102"/>
+        <display value="Sala não disponível"/>
+        <designation>
+          <language value="en"/>
+          <value value="Room unavailable (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1921000314106"/>
+        <display value="Falta injustificada do utente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient did not attend without justification (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="4525004"/>
+        <display value="Utente atendido no serviço de urgência"/>
+        <designation>
+          <language value="en"/>
+          <value value="Emergency department patient visit (procedure)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Utente atendido no SU"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2311000314105"/>
+        <display value="Agendamento cancelado pelo utente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Appointment canceled by patient (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="306104004"/>
+        <display value="Referenciação para serviço de urgência"/>
+        <designation>
+          <language value="en"/>
+          <value value="Referral to accident and emergency service (procedure)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Referenciado para SU"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="418661005"/>
+        <display value="Procedimento reagendado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Procedure rescheduled (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1541000314107"/>
+        <display value="Ausência de tentativa de agendamento dentro do prazo esperado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Failed attempt to schedule within expected time (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1521000314104"/>
+        <display value="Foram esgotadas as tentativas de agendamento por parte do utente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Scheduling attempts have been exhausted by patient (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2111000314107"/>
+        <display value="Ativação de plano de contingência"/>
+        <designation>
+          <language value="en"/>
+          <value value="Activation of contingency plan (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1511000314108"/>
+        <display value="Foram esgotadas as tentativas de agendamento por parte da entidade"/>
+        <designation>
+          <language value="en"/>
+          <value value="Scheduling attempts have been exhausted by healthcare organization (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2131000314100"/>
+        <display value="Utente necessita de acompanhamento a longo prazo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Requires long-term follow-up care (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2241000314101"/>
+        <display value="Agendamento cancelado pelo profissional de saúde"/>
+        <designation>
+          <language value="en"/>
+          <value value="Appointment canceled by healthcare professional (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2251000314104"/>
+        <display value="Não elegível para consulta"/>
+        <designation>
+          <language value="en"/>
+          <value value="Not elegible for consultation (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2261000314102"/>
+        <display value="Utente recusa consulta"/>
+        <designation>
+          <language value="en"/>
+          <value value="Declined consent for consultation (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2271000314105"/>
+        <display value="Dados administrativos incompletos"/>
+        <designation>
+          <language value="en"/>
+          <value value="Insufficient administrative detail given (finding)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,173 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpe-morse-fall-scale-observation-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-morse-fall-scale-observation-vs</b></p><a name=\"cpe-morse-fall-scale-observation-vs\"> </a><a name=\"hccpe-morse-fall-scale-observation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/59454-9/\">59454-9</a></td><td>História de queda; imediato ou dentro de 3 meses [Morse Fall Scale]</td><td>Historial de quedas; neste internamento urgência/ ou nos últimos três meses</td><td>History of falling; immediate or within 3 months [Morse Fall Scale]</td><td>Historial de quedas; neste internamento urgência/ ou nos últimos três meses</td></tr><tr><td><a href=\"https://loinc.org/59455-6/\">59455-6</a></td><td>O diagnóstico secundário está presente</td><td>Diagnóstico(s) secundário(s)</td><td>Secondary diagnosis is present</td><td>Diagnóstico(s) secundário(s)</td></tr><tr><td><a href=\"https://loinc.org/59456-4/\">59456-4</a></td><td>Auxiliar ambulatorial [Escala de queda de Morse]</td><td>Ajuda para caminhar</td><td>Ambulatory aid [Morse Fall Scale]</td><td>Ajuda para caminhar</td></tr><tr><td><a href=\"https://loinc.org/59457-2/\">59457-2</a></td><td>Bloqueio IV/Heparina</td><td>Terapia intravenosa</td><td>IV/Heparin Lock</td><td>Terapia intravenosa</td></tr><tr><td><a href=\"https://loinc.org/59458-0/\">59458-0</a></td><td>Marcha [escala de queda de Morse]</td><td>Postura no andar e na transferência</td><td>Gait [Morse Fall Scale]</td><td>Postura no andar e na transferência</td></tr><tr><td><a href=\"https://loinc.org/59459-8/\">59459-8</a></td><td>Estado mental [escala de queda de Morse]</td><td>Estado mental</td><td>Mental status [Morse Fall Scale]</td><td>Estado mental</td></tr><tr><td><a href=\"https://loinc.org/59460-6/\">59460-6</a></td><td>Total de risco de queda [Escala de queda de Morse]</td><td/><td>Fall risk total [Morse Fall Scale]</td><td/></tr><tr><td><a href=\"https://loinc.org/59461-4/\">59461-4</a></td><td>Nível de risco de queda [Escala de queda de Morse]</td><td/><td>Fall risk level [Morse Fall Scale]</td><td/></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-morse-fall-scale-observation-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.137"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPEMorseFallScaleObservationVS",
+  "title" : "CPE - Morse Fall Scale Observation",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores MorseFallScaleObservation (CPE v2.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "59454-9",
+        "display" : "História de queda; imediato ou dentro de 3 meses [Morse Fall Scale]",
+        "designation" : [{
+          "language" : "en",
+          "value" : "History of falling; immediate or within 3 months [Morse Fall Scale]"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Historial de quedas; neste internamento urgência/ ou nos últimos três meses"
+        }]
+      },
+      {
+        "code" : "59455-6",
+        "display" : "O diagnóstico secundário está presente",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Secondary diagnosis is present"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Diagnóstico(s) secundário(s)"
+        }]
+      },
+      {
+        "code" : "59456-4",
+        "display" : "Auxiliar ambulatorial [Escala de queda de Morse]",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Ambulatory aid [Morse Fall Scale]"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Ajuda para caminhar"
+        }]
+      },
+      {
+        "code" : "59457-2",
+        "display" : "Bloqueio IV/Heparina",
+        "designation" : [{
+          "language" : "en",
+          "value" : "IV/Heparin Lock"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Terapia intravenosa"
+        }]
+      },
+      {
+        "code" : "59458-0",
+        "display" : "Marcha [escala de queda de Morse]",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Gait [Morse Fall Scale]"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Postura no andar e na transferência"
+        }]
+      },
+      {
+        "code" : "59459-8",
+        "display" : "Estado mental [escala de queda de Morse]",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Mental status [Morse Fall Scale]"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estado mental"
+        }]
+      },
+      {
+        "code" : "59460-6",
+        "display" : "Total de risco de queda [Escala de queda de Morse]",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Fall risk total [Morse Fall Scale]"
+        }]
+      },
+      {
+        "code" : "59461-4",
+        "display" : "Nível de risco de queda [Escala de queda de Morse]",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Fall risk level [Morse Fall Scale]"
+        }]
+      }]
+    }]
+  }
+}

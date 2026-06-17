@@ -1,0 +1,896 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>CPARADM - Cancellation Reason - TTL Representation - HL7 PT FHIR Implementation Guide: Terminologias v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.26"}
+    h3,h4,h5,h6{--heading-prefix:"6.26"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Terminologias</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="spec.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CPARADM - Cancellation Reason</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Terminologias, publicado por HL7 Portugal. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 1.0.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/hl7-pt/terminologias/tree/master'>https://github.com/hl7-pt/terminologias/tree/master</a> e muda regularmente. Veja o <a href='http://hl7.pt/fhir/history.html'>Diretório de versões publicadas</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/hl7-pt/terminologias/commit/987016b692d9e8d3c724739e2350b4e3cdb93844"><code>987016b6</code></a>.</span></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-cparadm-cancellation-reason-vs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-cparadm-cancellation-reason-vs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-cparadm-cancellation-reason-vs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: CPARADM - Cancellation Reason - TTL Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2025-11-01
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-cparadm-cancellation-reason-vs.ttl" no-download="true">Raw ttl</a> | <a href="ValueSet-cparadm-cancellation-reason-vs.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:ValueSet ;
+  <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R5/resource.html#XValueSet.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;cparadm-cancellation-reason-vs&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/domainresource.html#XValueSet.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R5/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narrativa gerada: ValueSet cparadm-cancellation-reason-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cparadm-cancellation-reason-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccparadm-cancellation-reason-vs\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include estes códigos, tal como definidos em &lt;a href=\&quot;http://www.snomed.org/\&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; versão Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Synonym&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (English, en)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Portuguese (pt)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1363369008\&quot;&gt;1363369008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Falta de vaga&lt;/td&gt;&lt;td&gt;Falta de cama no internamento&lt;/td&gt;&lt;td&gt;Inpatient bed not available (finding)&lt;/td&gt;&lt;td&gt;Falta de cama no internamento&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/268910001\&quot;&gt;268910001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Utente melhorado&lt;/td&gt;&lt;td&gt;A condição do utente melhorou&lt;/td&gt;&lt;td&gt;Patient's condition improved (finding)&lt;/td&gt;&lt;td&gt;A condição do utente melhorou&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/271299001\&quot;&gt;271299001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Utente piorado&lt;/td&gt;&lt;td&gt;A condição do utente piorou&lt;/td&gt;&lt;td&gt;Patient's condition worsened (finding)&lt;/td&gt;&lt;td&gt;A condição do utente piorou&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/18632008\&quot;&gt;18632008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Determinação do estado do utente, falecido&lt;/td&gt;&lt;td&gt;Utente falecido&lt;/td&gt;&lt;td&gt;Patient status determination, deceased (finding)&lt;/td&gt;&lt;td&gt;Utente falecido&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/723510000\&quot;&gt;723510000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inserido por erro&lt;/td&gt;&lt;td&gt;Engano&lt;/td&gt;&lt;td&gt;Entered in error (qualifier value)&lt;/td&gt;&lt;td&gt;Engano&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/736523005\&quot;&gt;736523005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Risco acrescido de complicações da anestesia&lt;/td&gt;&lt;td&gt;Risco anestésico&lt;/td&gt;&lt;td&gt;At increased risk of complication of anesthesia (finding)&lt;/td&gt;&lt;td&gt;Risco anestésico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/443938003\&quot;&gt;443938003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Procedimento já realizado&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Procedure carried out on subject (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/15635006\&quot;&gt;15635006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;A pedido do utente&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Requested by patient (contextual qualifier) (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/397807004\&quot;&gt;397807004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Equipamento não disponível&lt;/td&gt;&lt;td&gt;Equipamento indisponível&lt;/td&gt;&lt;td&gt;Equipment not available (finding)&lt;/td&gt;&lt;td&gt;Equipamento indisponível&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/21541000119102\&quot;&gt;21541000119102&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Abandono&lt;/td&gt;&lt;td&gt;Utente saiu sem ser visto&lt;/td&gt;&lt;td&gt;Patient left without being seen (finding)&lt;/td&gt;&lt;td&gt;Utente saiu sem ser visto&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/281331007\&quot;&gt;281331007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Falta informacão clínica&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Insufficient clinical detail given (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/405366000\&quot;&gt;405366000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sem vaga no recobro&lt;/td&gt;&lt;td&gt;Falta de cama no recobro&lt;/td&gt;&lt;td&gt;Recovery room bed not available (finding)&lt;/td&gt;&lt;td&gt;Falta de cama no recobro&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/440565004\&quot;&gt;440565004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Não cumpriu jejum&lt;/td&gt;&lt;td&gt;Jejum inadequado&lt;/td&gt;&lt;td&gt;Not fasting (situation)&lt;/td&gt;&lt;td&gt;Jejum inadequado&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/183965009\&quot;&gt;183965009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sem indicação cirúrgica&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Surgery not indicated (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/308540004\&quot;&gt;308540004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Estadia em internamento&lt;/td&gt;&lt;td&gt;Utente internado&lt;/td&gt;&lt;td&gt;Inpatient stay (finding)&lt;/td&gt;&lt;td&gt;Utente internado&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/275935009\&quot;&gt;275935009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cirurgia contra indicada&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Surgery contraindicated (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/738778005\&quot;&gt;738778005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Complicação intra-operatória&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Intraoperative complication (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/185328004\&quot;&gt;185328004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Atraso do utente&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Patient too late (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/58000006\&quot;&gt;58000006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alta do utente&lt;/td&gt;&lt;td&gt;Alta&lt;/td&gt;&lt;td&gt;Patient discharge (procedure)&lt;/td&gt;&lt;td&gt;Alta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/951000314100\&quot;&gt;951000314100&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Utente fora da área de abrangência&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Patient from outside hospital referral area (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/737038009\&quot;&gt;737038009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Utente recusa tratamento&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Declined consent for treatment (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/182992009\&quot;&gt;182992009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tratamento completo&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Treatment completed (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/397933008\&quot;&gt;397933008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Equipamento avariado&lt;/td&gt;&lt;td&gt;Avaria no equipamento&lt;/td&gt;&lt;td&gt;Equipment error/failure (finding)&lt;/td&gt;&lt;td&gt;Avaria no equipamento&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/405681002\&quot;&gt;405681002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Processo do utente não disponível&lt;/td&gt;&lt;td&gt;Processo do utente indisponível&lt;/td&gt;&lt;td&gt;Patient medical record not available (finding)&lt;/td&gt;&lt;td&gt;Processo do utente indisponível&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/420066004\&quot;&gt;420066004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transporte atrasado&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Transport delay (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/419024006\&quot;&gt;419024006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transporte não disponível&lt;/td&gt;&lt;td&gt;Transporte indisponível&lt;/td&gt;&lt;td&gt;Transport unavailable (finding)&lt;/td&gt;&lt;td&gt;Transporte indisponível&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1285125003\&quot;&gt;1285125003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Erro na identificação do utente&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Patient identification error (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/408408004\&quot;&gt;408408004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Referenciação incorreta&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Inappropriate referral (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/394908001\&quot;&gt;394908001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Procedimento interrompido&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Procedure stopped (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/428929009\&quot;&gt;428929009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acompanhante não disponível&lt;/td&gt;&lt;td&gt;Acompanhante ausente&lt;/td&gt;&lt;td&gt;Chaperone not available (finding)&lt;/td&gt;&lt;td&gt;Acompanhante ausente&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1303248003\&quot;&gt;1303248003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sem condições para o procedimento&lt;/td&gt;&lt;td&gt;Não adequado para procedimento&lt;/td&gt;&lt;td&gt;Not suitable for procedure (finding)&lt;/td&gt;&lt;td&gt;Não adequado para procedimento&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/103321005\&quot;&gt;103321005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Decisão clínica&lt;/td&gt;&lt;td&gt;A pedido do médico&lt;/td&gt;&lt;td&gt;Request by physician (contextual qualifier) (qualifier value)&lt;/td&gt;&lt;td&gt;A pedido do médico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/266756008\&quot;&gt;266756008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cuidados médicos não disponíveis&lt;/td&gt;&lt;td&gt;Tratamento não disponível&lt;/td&gt;&lt;td&gt;Medical care unavailable (situation)&lt;/td&gt;&lt;td&gt;Tratamento não disponível&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/418667009\&quot;&gt;418667009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Problemas de agendamento&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Procedure scheduling issues (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/19712007\&quot;&gt;19712007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Utente transferido para outra entidade de saúde&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Patient transfer, to another health care facility (procedure)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/445528004\&quot;&gt;445528004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alteração de tratamento&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Treatment changed (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1581000314100\&quot;&gt;1581000314100&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alteração de agendamento&lt;/td&gt;&lt;td&gt;Reagendamento&lt;/td&gt;&lt;td&gt;Appointment rescheduling (procedure)&lt;/td&gt;&lt;td&gt;Reagendamento&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1531000314101\&quot;&gt;1531000314101&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Utente incontactável&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Patient unreachable (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1341000314102\&quot;&gt;1341000314102&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Regresso do utente ao estabelecimento de saúde de proveniência&lt;/td&gt;&lt;td&gt;Regresso ao hospital de origem&lt;/td&gt;&lt;td&gt;Patient returning to healthcare facility of provenance (finding)&lt;/td&gt;&lt;td&gt;Regresso ao hospital de origem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1461000314105\&quot;&gt;1461000314105&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Especialidade médica não existente na entidade de saúde&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Medical specialty does not exist in heathcare facility (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1741000314101\&quot;&gt;1741000314101&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Consulta já realizada&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Consultation carried out on subject (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1751000314104\&quot;&gt;1751000314104&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Produto de sangue não disponível&lt;/td&gt;&lt;td&gt;Produto de sangue indisponível&lt;/td&gt;&lt;td&gt;Blood product unit unavailable (finding)&lt;/td&gt;&lt;td&gt;Produto de sangue indisponível&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1761000314102\&quot;&gt;1761000314102&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Não elegível para tratamento&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Not elegible for treatment (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1771000314105\&quot;&gt;1771000314105&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diagnóstico não confirmado&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Diagnosis not confirmed (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1781000314108\&quot;&gt;1781000314108&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Falta de tempo cirúrgico&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Lack of surgical time (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1791000314106\&quot;&gt;1791000314106&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Falta de tempo anestésico&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Lack of anaesthetic time (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/2321000314101\&quot;&gt;2321000314101&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sem condições anestésicas&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Not suitable for anesthesia (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1811000314105\&quot;&gt;1811000314105&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alterações de agenda&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Schedule alterations (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1821000314101\&quot;&gt;1821000314101&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Profissional de saúde não disponível&lt;/td&gt;&lt;td&gt;Profissional de saúde indisponível&lt;/td&gt;&lt;td&gt;Healthcare professional not available (finding)&lt;/td&gt;&lt;td&gt;Profissional de saúde indisponível&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1831000314103\&quot;&gt;1831000314103&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Notificação inadequada&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Inadequate notification (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1841000314109\&quot;&gt;1841000314109&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pedido de mudança de profissional de saúde&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Request to change healthcare professional (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1851000314106\&quot;&gt;1851000314106&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Agendamento cancelado pelos cuidados de saúde primários&lt;/td&gt;&lt;td&gt;Agendamento cancelado pelos CSP&lt;/td&gt;&lt;td&gt;Appointment cancelled by primary care unit (finding)&lt;/td&gt;&lt;td&gt;Agendamento cancelado pelos CSP&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1861000314108\&quot;&gt;1861000314108&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Referenciação cancelada pelos cuidados de saúde primários&lt;/td&gt;&lt;td&gt;Referenciação cancelada pelos CSP&lt;/td&gt;&lt;td&gt;Referral cancelled by primary care unit (finding)&lt;/td&gt;&lt;td&gt;Referenciação cancelada pelos CSP&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1871000314100\&quot;&gt;1871000314100&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aguarda resultados&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Awaiting results (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1881000314102\&quot;&gt;1881000314102&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Profissional de saúde recusa utente&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Healthcare professional declined patient examination (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1891000314104\&quot;&gt;1891000314104&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Faltas consecutivas do utente&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Patient repeated no-show (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1901000314100\&quot;&gt;1901000314100&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Falta justificada do utente&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Patient did not attend with justification (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1911000314102\&quot;&gt;1911000314102&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sala não disponível&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Room unavailable (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1921000314106\&quot;&gt;1921000314106&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Falta injustificada do utente&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Patient did not attend without justification (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/4525004\&quot;&gt;4525004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Utente atendido no serviço de urgência&lt;/td&gt;&lt;td&gt;Utente atendido no SU&lt;/td&gt;&lt;td&gt;Emergency department patient visit (procedure)&lt;/td&gt;&lt;td&gt;Utente atendido no SU&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/2311000314105\&quot;&gt;2311000314105&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Agendamento cancelado pelo utente&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Appointment canceled by patient (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/306104004\&quot;&gt;306104004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Referenciação para serviço de urgência&lt;/td&gt;&lt;td&gt;Referenciado para SU&lt;/td&gt;&lt;td&gt;Referral to accident and emergency service (procedure)&lt;/td&gt;&lt;td&gt;Referenciado para SU&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/418661005\&quot;&gt;418661005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Procedimento reagendado&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Procedure rescheduled (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1541000314107\&quot;&gt;1541000314107&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ausência de tentativa de agendamento dentro do prazo esperado&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Failed attempt to schedule within expected time (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1521000314104\&quot;&gt;1521000314104&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Foram esgotadas as tentativas de agendamento por parte do utente&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Scheduling attempts have been exhausted by patient (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/2111000314107\&quot;&gt;2111000314107&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ativação de plano de contingência&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Activation of contingency plan (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1511000314108\&quot;&gt;1511000314108&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Foram esgotadas as tentativas de agendamento por parte da entidade&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Scheduling attempts have been exhausted by healthcare organization (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/2131000314100\&quot;&gt;2131000314100&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Utente necessita de acompanhamento a longo prazo&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Requires long-term follow-up care (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/2241000314101\&quot;&gt;2241000314101&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Agendamento cancelado pelo profissional de saúde&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Appointment canceled by healthcare professional (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/2251000314104\&quot;&gt;2251000314104&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Não elegível para consulta&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Not elegible for consultation (situation)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/2261000314102\&quot;&gt;2261000314102&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Utente recusa consulta&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Declined consent for consultation (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/2271000314105\&quot;&gt;2271000314105&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dados administrativos incompletos&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Insufficient administrative detail given (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-cancellation-reason-vs&quot;^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:ietf:rfc:3986&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;urn:oid:2.16.620.1.101.10.4.6.169&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1.0.0&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;CPARADMCancellationReasonVS&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;CPARADM - Cancellation Reason&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2025-11-01&quot;^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;HL7 Portugal&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;HL7 Portugal&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;http://hl7.pt&quot; ]     ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;info@hl7.pt&quot; ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;HL7 Portugal&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;geral@hl7.pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;work&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Conjunto de valores CancellationReason (CPARADM v3.0.0).&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.jurisdiction">fhir:jurisdiction</a> ( [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:iso:std:iso:3166&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;PT&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Portugal&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.author">fhir:author</a> ( [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Centro de Terminologias Clínicas&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose">fhir:compose</a> [
+    ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include">fhir:include</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+      ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">fhir:concept</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1363369008&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Falta de vaga&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Inpatient bed not available (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Falta de cama no internamento&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;268910001&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Utente melhorado&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient's condition improved (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Utente melhorou&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;A condição do utente melhorou&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;271299001&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Utente piorado&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient's condition worsened (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Utente piorou&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;A condição do utente piorou&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;18632008&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Determinação do estado do utente, falecido&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient status determination, deceased (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Utente falecido&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;723510000&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Inserido por erro&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Entered in error (qualifier value)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Engano&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;736523005&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Risco acrescido de complicações da anestesia&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;At increased risk of complication of anesthesia (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Risco anestésico&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;443938003&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Procedimento já realizado&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Procedure carried out on subject (situation)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;15635006&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;A pedido do utente&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Requested by patient (contextual qualifier) (qualifier value)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;397807004&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Equipamento não disponível&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Equipment not available (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Equipamento indisponível&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;21541000119102&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Abandono&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient left without being seen (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Utente saiu sem ser visto&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;281331007&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Falta informacão clínica&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Insufficient clinical detail given (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;405366000&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sem vaga no recobro&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Recovery room bed not available (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Falta de cama no recobro&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;440565004&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Não cumpriu jejum&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Not fasting (situation)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Jejum inadequado&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;183965009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sem indicação cirúrgica&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Surgery not indicated (situation)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;308540004&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Estadia em internamento&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Inpatient stay (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Utente internado&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;275935009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Cirurgia contra indicada&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Surgery contraindicated (situation)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;738778005&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Complicação intra-operatória&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Intraoperative complication (disorder)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;185328004&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Atraso do utente&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient too late (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;58000006&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Alta do utente&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient discharge (procedure)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Alta&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;951000314100&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Utente fora da área de abrangência&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient from outside hospital referral area (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;737038009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Utente recusa tratamento&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Declined consent for treatment (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;182992009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tratamento completo&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Treatment completed (situation)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;397933008&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Equipamento avariado&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Equipment error/failure (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Avaria no equipamento&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;405681002&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Processo do utente não disponível&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient medical record not available (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Processo do utente indisponível&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;420066004&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Transporte atrasado&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Transport delay (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;419024006&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Transporte não disponível&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Transport unavailable (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Transporte indisponível&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1285125003&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Erro na identificação do utente&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient identification error (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;408408004&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Referenciação incorreta&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Inappropriate referral (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;394908001&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Procedimento interrompido&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Procedure stopped (situation)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;428929009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Acompanhante não disponível&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Chaperone not available (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sem acompanhante&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Acompanhante ausente&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1303248003&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sem condições para o procedimento&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Not suitable for procedure (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Não adequado para procedimento&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;103321005&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Decisão clínica&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Request by physician (contextual qualifier) (qualifier value)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;A pedido do médico&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;266756008&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Cuidados médicos não disponíveis&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Medical care unavailable (situation)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tratamento não disponível&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;418667009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Problemas de agendamento&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Procedure scheduling issues (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;19712007&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Utente transferido para outra entidade de saúde&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient transfer, to another health care facility (procedure)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;445528004&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Alteração de tratamento&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Treatment changed (situation)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1581000314100&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Alteração de agendamento&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Appointment rescheduling (procedure)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Reagendamento&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1531000314101&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Utente incontactável&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient unreachable (situation)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1341000314102&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Regresso do utente ao estabelecimento de saúde de proveniência&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient returning to healthcare facility of provenance (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Regresso ao hospital de origem&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1461000314105&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Especialidade médica não existente na entidade de saúde&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Medical specialty does not exist in heathcare facility (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1741000314101&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Consulta já realizada&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Consultation carried out on subject (situation)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1751000314104&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Produto de sangue não disponível&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Blood product unit unavailable (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Produto de sangue indisponível&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1761000314102&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Não elegível para tratamento&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Not elegible for treatment (situation)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1771000314105&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Diagnóstico não confirmado&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Diagnosis not confirmed (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1781000314108&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Falta de tempo cirúrgico&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Lack of surgical time (situation)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1791000314106&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Falta de tempo anestésico&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Lack of anaesthetic time (situation)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;2321000314101&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sem condições anestésicas&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Not suitable for anesthesia (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1811000314105&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Alterações de agenda&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Schedule alterations (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1821000314101&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Profissional de saúde não disponível&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Healthcare professional not available (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Profissional de saúde indisponível&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1831000314103&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Notificação inadequada&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Inadequate notification (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1841000314109&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Pedido de mudança de profissional de saúde&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Request to change healthcare professional (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1851000314106&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Agendamento cancelado pelos cuidados de saúde primários&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Appointment cancelled by primary care unit (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Agendamento cancelado pelos CSP&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1861000314108&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Referenciação cancelada pelos cuidados de saúde primários&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Referral cancelled by primary care unit (finding)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Referenciação cancelada pelos CSP&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1871000314100&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Aguarda resultados&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Awaiting results (situation)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1881000314102&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Profissional de saúde recusa utente&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Healthcare professional declined patient examination (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1891000314104&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Faltas consecutivas do utente&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient repeated no-show (qualifier value)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1901000314100&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Falta justificada do utente&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient did not attend with justification (qualifier value)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1911000314102&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sala não disponível&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Room unavailable (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1921000314106&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Falta injustificada do utente&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient did not attend without justification (qualifier value)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;4525004&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Utente atendido no serviço de urgência&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Emergency department patient visit (procedure)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Utente atendido no SU&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;2311000314105&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Agendamento cancelado pelo utente&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Appointment canceled by patient (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;306104004&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Referenciação para serviço de urgência&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Referral to accident and emergency service (procedure)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Referenciado para SU&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;418661005&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Procedimento reagendado&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Procedure rescheduled (situation)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1541000314107&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Ausência de tentativa de agendamento dentro do prazo esperado&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Failed attempt to schedule within expected time (situation)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1521000314104&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Foram esgotadas as tentativas de agendamento por parte do utente&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Scheduling attempts have been exhausted by patient (situation)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;2111000314107&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Ativação de plano de contingência&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Activation of contingency plan (situation)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;1511000314108&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Foram esgotadas as tentativas de agendamento por parte da entidade&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Scheduling attempts have been exhausted by healthcare organization (situation)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;2131000314100&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Utente necessita de acompanhamento a longo prazo&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Requires long-term follow-up care (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;2241000314101&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Agendamento cancelado pelo profissional de saúde&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Appointment canceled by healthcare professional (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;2251000314104&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Não elegível para consulta&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Not elegible for consultation (situation)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;2261000314102&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Utente recusa consulta&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Declined consent for consultation (finding)&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;2271000314105&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Dados administrativos incompletos&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Insufficient administrative detail given (finding)&quot; ]         ] )       ] )     ] )
+  ] . # 
+
+</pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Jun 17, 2026 10:02+0000">2026-06-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

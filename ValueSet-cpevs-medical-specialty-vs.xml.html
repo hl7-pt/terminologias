@@ -1,0 +1,857 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>CPEVS - Medical Specialty - XML Representation - HL7 PT FHIR Implementation Guide: Terminologias v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.122"}
+    h3,h4,h5,h6{--heading-prefix:"6.122"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Terminologias</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="spec.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CPEVS - Medical Specialty</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Terminologias, publicado por HL7 Portugal. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 1.0.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/hl7-pt/terminologias/tree/master'>https://github.com/hl7-pt/terminologias/tree/master</a> e muda regularmente. Veja o <a href='http://hl7.pt/fhir/history.html'>Diretório de versões publicadas</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/hl7-pt/terminologias/commit/987016b692d9e8d3c724739e2350b4e3cdb93844"><code>987016b6</code></a>.</span></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-cpevs-medical-specialty-vs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-cpevs-medical-specialty-vs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-cpevs-medical-specialty-vs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: CPEVS - Medical Specialty - XML Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2025-12-01
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-cpevs-medical-specialty-vs.xml" no-download="true">Raw xml</a> | <a href="ValueSet-cpevs-medical-specialty-vs.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet">ValueSet</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/resource.html#XValueSet.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;cpevs-medical-specialty-vs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/domainresource.html#XValueSet.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Narrativa gerada: ValueSet cpevs-medical-specialty-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;cpevs-medical-specialty-vs&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hccpevs-medical-specialty-vs&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include estes códigos, tal como definidos em &lt;a href=&quot;http://www.snomed.org/&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt;&lt;span title=&quot;Version is not explicitly stated. No matching Code System found&quot;&gt; versão Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Synonym&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (English, en)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Portuguese (pt)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/1255732006&quot;&gt;1255732006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anatomia patológica&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Anatomic pathology (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394577000&quot;&gt;394577000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anestesiologia&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Anesthetics (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/408463005&quot;&gt;408463005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Angiologia e cirurgia vascular&lt;/td&gt;&lt;td&gt;Cirurgia vascular&lt;/td&gt;&lt;td&gt;Vascular surgery (qualifier value)&lt;/td&gt;&lt;td&gt;Cirurgia vascular&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394579002&quot;&gt;394579002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiologia&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Cardiology (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/408459003&quot;&gt;408459003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiologia pediátrica&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Pediatric cardiology (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/408466002&quot;&gt;408466002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cirurgia cardíaca&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Cardiac surgery (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394603008&quot;&gt;394603008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cirurgia cardiotorácica&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Cardiothoracic surgery (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394609007&quot;&gt;394609007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cirurgia geral&lt;/td&gt;&lt;td/&gt;&lt;td&gt;General surgery (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/408457001&quot;&gt;408457001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cirurgia maxilo-facial&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Maxillofacial surgery (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394539006&quot;&gt;394539006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cirurgia pediátrica&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Pediatric surgery (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394611003&quot;&gt;394611003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cirurgia plástica reconstrutiva e estética&lt;/td&gt;&lt;td&gt;Cirurgia plástica&lt;/td&gt;&lt;td&gt;Plastic surgery - specialty (qualifier value)&lt;/td&gt;&lt;td&gt;Cirurgia plástica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/408456005&quot;&gt;408456005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cirurgia torácica&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Thoracic surgery (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394582007&quot;&gt;394582007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dermato-venereologia&lt;/td&gt;&lt;td&gt;Dermatologia&lt;/td&gt;&lt;td&gt;Dermatology (qualifier value)&lt;/td&gt;&lt;td&gt;Dermatologia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394807007&quot;&gt;394807007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Doenças infecciosas&lt;/td&gt;&lt;td&gt;Infecciologia&lt;/td&gt;&lt;td&gt;Infectious disease specialty (qualifier value)&lt;/td&gt;&lt;td&gt;Infecciologia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394583002&quot;&gt;394583002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Endocrinologia e nutrição&lt;/td&gt;&lt;td&gt;Endocrinologia&lt;/td&gt;&lt;td&gt;Endocrinology (qualifier value)&lt;/td&gt;&lt;td&gt;Endocrinologia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/1259957004&quot;&gt;1259957004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Estomatologia&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Oral medicine (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394600006&quot;&gt;394600006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Farmacologia clínica&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Clinical pharmacology (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394584008&quot;&gt;394584008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gastrenterologia&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Gastroenterology (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394580004&quot;&gt;394580004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Genética médica&lt;/td&gt;&lt;td&gt;Genética clínica&lt;/td&gt;&lt;td&gt;Clinical genetics (qualifier value)&lt;/td&gt;&lt;td&gt;Genética clínica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394585009&quot;&gt;394585009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ginecologia e obstetrícia&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Obstetrics and gynecology (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394803006&quot;&gt;394803006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hematologia clínica&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Clinical hematology (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394805004&quot;&gt;394805004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Imunoalergologia&lt;/td&gt;&lt;td&gt;Imunologia/alergia clínica&lt;/td&gt;&lt;td&gt;Clinical immunology and/or allergy (qualifier value)&lt;/td&gt;&lt;td&gt;Imunologia/alergia clínica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/1259944007&quot;&gt;1259944007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Imunohemoterapia&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Immunohemotherapy (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/1251536003&quot;&gt;1251536003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medicina desportiva&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Sport medicine (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394821009&quot;&gt;394821009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medicina do trabalho&lt;/td&gt;&lt;td&gt;Medicina ocupacional&lt;/td&gt;&lt;td&gt;Occupational medicine (qualifier value)&lt;/td&gt;&lt;td&gt;Medicina ocupacional&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394602003&quot;&gt;394602003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medicina física e reabilitação&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Rehabilitation specialty (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/419772000&quot;&gt;419772000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medicina geral e familiar&lt;/td&gt;&lt;td&gt;Medicina familiar&lt;/td&gt;&lt;td&gt;Family practice (qualifier value)&lt;/td&gt;&lt;td&gt;Medicina familiar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/408478003&quot;&gt;408478003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medicina intensiva&lt;/td&gt;&lt;td&gt;Medicina cuidados críticos&lt;/td&gt;&lt;td&gt;Critical care medicine (qualifier value)&lt;/td&gt;&lt;td&gt;Medicina cuidados críticos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/419192003&quot;&gt;419192003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medicina interna&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Internal medicine (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/722204007&quot;&gt;722204007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medicina legal&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Legal medicine (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394649004&quot;&gt;394649004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medicina nuclear&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Nuclear medicine - specialty (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/408448007&quot;&gt;408448007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medicina tropical&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Tropical medicine (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394589003&quot;&gt;394589003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nefrologia&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Nephrology (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394610002&quot;&gt;394610002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neurocirurgia&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Neurosurgery (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394591006&quot;&gt;394591006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neurologia&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Neurology (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/1251547005&quot;&gt;1251547005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neurorradiologia&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Neuroradiology (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394594003&quot;&gt;394594003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oftalmologia&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Ophthalmology (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394593009&quot;&gt;394593009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oncologia médica&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Medical oncology (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394801008&quot;&gt;394801008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ortopedia&lt;/td&gt;&lt;td&gt;Ortopedia e trauma&lt;/td&gt;&lt;td&gt;Trauma and orthopedics (qualifier value)&lt;/td&gt;&lt;td&gt;Ortopedia e trauma&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/418960008&quot;&gt;418960008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Otorrinolaringologia&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Otolaryngology (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/1255736009&quot;&gt;1255736009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patologia clínica&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Clinical pathology (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394537008&quot;&gt;394537008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pediatria&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Pediatric specialty (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/418112009&quot;&gt;418112009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pneumologia&lt;/td&gt;&lt;td&gt;Medicina pulmonar&lt;/td&gt;&lt;td&gt;Pulmonary medicine (qualifier value)&lt;/td&gt;&lt;td&gt;Medicina pulmonar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394587001&quot;&gt;394587001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psiquiatria&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Psychiatry (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394588006&quot;&gt;394588006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psiquiatria da infância e da adolescência&lt;/td&gt;&lt;td&gt;Psiquiatria da criança e adolescência&lt;/td&gt;&lt;td&gt;Child and adolescent psychiatry (qualifier value)&lt;/td&gt;&lt;td&gt;Psiquiatria da criança e adolescência&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394914008&quot;&gt;394914008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Radiologia&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Radiology - specialty (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/419815003&quot;&gt;419815003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Radioncologia&lt;/td&gt;&lt;td&gt;Radioterapia&lt;/td&gt;&lt;td&gt;Radiation oncology (qualifier value)&lt;/td&gt;&lt;td&gt;Radioterapia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394810000&quot;&gt;394810000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Reumatologia&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Rheumatology (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/408440000&quot;&gt;408440000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Saúde pública&lt;/td&gt;&lt;td&gt;Medicina de saúde pública&lt;/td&gt;&lt;td&gt;Public health medicine (qualifier value)&lt;/td&gt;&lt;td&gt;Medicina de saúde pública&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/394612005&quot;&gt;394612005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urologia&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Urology (qualifier value)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R5/domainresource.html#XValueSet.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.url">url</a>
+       <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;https://hl7.pt/fhir/Terminologias/ValueSet/cpevs-medical-specialty-vs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;urn:ietf:rfc:3986&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;urn:oid:2.16.620.1.101.10.4.6.161&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.identifier">identifier</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.version">version</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;1.0.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;CPEVSMedicalSpecialtyVS&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;CPEVS - Medical Specialty&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.experimental">experimental</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2025-12-01&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;HL7 Portugal&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;HL7 Portugal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;http://hl7.pt&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;info@hl7.pt&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.contact">contact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;HL7 Portugal&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;geral@hl7.pt&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.use">use</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;work&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">telecom</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.contact">contact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.description">description</a> <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Conjunto de valores MedicalSpecialty (CPEVS v2.1.0).&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.jurisdiction">jurisdiction</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:3166&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;PT&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Portugal&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.jurisdiction">jurisdiction</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.author">author</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Centro de Terminologias Clínicas&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.author">author</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose">compose</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include">include</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;1255732006&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Anatomia patológica&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Anatomic pathology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394577000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Anestesiologia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Anesthetics (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;408463005&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Angiologia e cirurgia vascular&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Vascular surgery (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;900000000000013009&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Synonym&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cirurgia vascular&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394579002&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cardiologia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cardiology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;408459003&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cardiologia pediátrica&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pediatric cardiology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;408466002&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cirurgia cardíaca&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cardiac surgery (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394603008&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cirurgia cardiotorácica&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cardiothoracic surgery (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394609007&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cirurgia geral&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;General surgery (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;408457001&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cirurgia maxilo-facial&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Maxillofacial surgery (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394539006&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cirurgia pediátrica&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pediatric surgery (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394611003&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cirurgia plástica reconstrutiva e estética&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Plastic surgery - specialty (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;900000000000013009&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Synonym&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cirurgia plástica&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;408456005&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cirurgia torácica&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Thoracic surgery (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394582007&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dermato-venereologia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dermatology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;900000000000013009&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Synonym&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dermatologia&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394807007&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Doenças infecciosas&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Infectious disease specialty (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;900000000000013009&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Synonym&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Infecciologia&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394583002&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Endocrinologia e nutrição&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Endocrinology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;900000000000013009&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Synonym&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Endocrinologia&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;1259957004&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Estomatologia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Oral medicine (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394600006&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Farmacologia clínica&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Clinical pharmacology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394584008&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Gastrenterologia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Gastroenterology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394580004&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Genética médica&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Clinical genetics (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;900000000000013009&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Synonym&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Genética clínica&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394585009&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Ginecologia e obstetrícia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Obstetrics and gynecology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394803006&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Hematologia clínica&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Clinical hematology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394805004&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Imunoalergologia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Clinical immunology and/or allergy (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;900000000000013009&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Synonym&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Imunologia/alergia clínica&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;1259944007&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Imunohemoterapia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Immunohemotherapy (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;1251536003&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Medicina desportiva&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Sport medicine (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394821009&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Medicina do trabalho&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Occupational medicine (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;900000000000013009&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Synonym&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Medicina ocupacional&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394602003&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Medicina física e reabilitação&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Rehabilitation specialty (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;419772000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Medicina geral e familiar&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Family practice (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;900000000000013009&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Synonym&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Medicina familiar&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;408478003&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Medicina intensiva&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Critical care medicine (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;900000000000013009&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Synonym&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Medicina cuidados críticos&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;419192003&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Medicina interna&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Internal medicine (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;722204007&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Medicina legal&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Legal medicine (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394649004&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Medicina nuclear&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Nuclear medicine - specialty (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;408448007&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Medicina tropical&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Tropical medicine (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394589003&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Nefrologia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Nephrology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394610002&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Neurocirurgia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Neurosurgery (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394591006&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Neurologia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Neurology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;1251547005&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Neurorradiologia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Neuroradiology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394594003&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Oftalmologia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Ophthalmology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394593009&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Oncologia médica&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Medical oncology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394801008&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Ortopedia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Trauma and orthopedics (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;900000000000013009&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Synonym&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Ortopedia e trauma&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;418960008&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Otorrinolaringologia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Otolaryngology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;1255736009&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Patologia clínica&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Clinical pathology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394537008&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pediatria&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pediatric specialty (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;418112009&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pneumologia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pulmonary medicine (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;900000000000013009&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Synonym&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Medicina pulmonar&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394587001&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Psiquiatria&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Psychiatry (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394588006&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Psiquiatria da infância e da adolescência&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Child and adolescent psychiatry (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;900000000000013009&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Synonym&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Psiquiatria da criança e adolescência&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394914008&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Radiologia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Radiology - specialty (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;419815003&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Radioncologia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Radiation oncology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;900000000000013009&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Synonym&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Radioterapia&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394810000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Reumatologia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Rheumatology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;408440000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Saúde pública&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Public health medicine (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;900000000000013009&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Synonym&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">use</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Medicina de saúde pública&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;394612005&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Urologia&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Urology (qualifier value)&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">designation</a>&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">concept</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include">include</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose">compose</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet">ValueSet</a>&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Jun 17, 2026 10:02+0000">2026-06-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

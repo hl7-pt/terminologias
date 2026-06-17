@@ -1,0 +1,155 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cparadm-additional-arrangement-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cparadm-additional-arrangement-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cparadm-additional-arrangement-vs</b></p><a name=\"cparadm-additional-arrangement-vs\"> </a><a name=\"hccparadm-additional-arrangement-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"http://snomed.info/id/58938008\">58938008</a></td><td>Cadeira de rodas</td><td>Wheelchair device (physical object)</td></tr><tr><td><a href=\"http://snomed.info/id/308005007\">308005007</a></td><td>Intérprete de língua</td><td>Language interpreter (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/89149003\">89149003</a></td><td>Maca</td><td>Stretcher, device (physical object)</td></tr><tr><td><a href=\"http://snomed.info/id/229772003\">229772003</a></td><td>Cama</td><td>Bed (physical object)</td></tr><tr><td><a href=\"http://snomed.info/id/707808001\">707808001</a></td><td>Oxigénio</td><td>Oxygen therapy support (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/40617009\">40617009</a></td><td>Ventilação</td><td>Artificial ventilation (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/40174006\">40174006</a></td><td>Isolado</td><td>Isolation procedure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/223366009\">223366009</a></td><td>Profissional de saúde</td><td>Healthcare professional (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1287116005\">1287116005</a></td><td>Acompanhante</td><td>Chaperone (person)</td></tr><tr><td><a href=\"http://snomed.info/id/182777000\">182777000</a></td><td>Monitorização do utente</td><td>Monitoring of patient (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/1299103002\">1299103002</a></td><td>Cadeira de rodas pediátrica</td><td>Pediatric wheelchair (physical object)</td></tr><tr><td><a href=\"http://snomed.info/id/1299104008\">1299104008</a></td><td>Cadeira de rodas de adulto</td><td>Adult wheelchair (physical object)</td></tr><tr><td><a href=\"http://snomed.info/id/281000314102\">281000314102</a></td><td>Kit de partos</td><td>Delivery kit (physical object)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-additional-arrangement-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.19" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPARADMAdditionalArrangementVS"] ; # 
+  fhir:title [ fhir:v "CPARADM - Additional Arrangement"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores AdditionalArrangement (CPARADM v3.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "58938008" ] ;
+         fhir:display [ fhir:v "Cadeira de rodas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Wheelchair device (physical object)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "308005007" ] ;
+         fhir:display [ fhir:v "Intérprete de língua" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Language interpreter (occupation)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "89149003" ] ;
+         fhir:display [ fhir:v "Maca" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Stretcher, device (physical object)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "229772003" ] ;
+         fhir:display [ fhir:v "Cama" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Bed (physical object)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "707808001" ] ;
+         fhir:display [ fhir:v "Oxigénio" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Oxygen therapy support (regime/therapy)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "40617009" ] ;
+         fhir:display [ fhir:v "Ventilação" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Artificial ventilation (regime/therapy)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "40174006" ] ;
+         fhir:display [ fhir:v "Isolado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Isolation procedure (procedure)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "223366009" ] ;
+         fhir:display [ fhir:v "Profissional de saúde" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Healthcare professional (occupation)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1287116005" ] ;
+         fhir:display [ fhir:v "Acompanhante" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Chaperone (person)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "182777000" ] ;
+         fhir:display [ fhir:v "Monitorização do utente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Monitoring of patient (regime/therapy)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1299103002" ] ;
+         fhir:display [ fhir:v "Cadeira de rodas pediátrica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pediatric wheelchair (physical object)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1299104008" ] ;
+         fhir:display [ fhir:v "Cadeira de rodas de adulto" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Adult wheelchair (physical object)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "281000314102" ] ;
+         fhir:display [ fhir:v "Kit de partos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Delivery kit (physical object)" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

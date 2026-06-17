@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpn-status-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpn-status-vs</b></p><a name="cpn-status-vs"> </a><a name="hccpn-status-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/55561003">55561003</a></td><td>Ativo</td><td>Active (qualifier value)</td><td>-</td><td>Active (qualifier value)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/410546004">410546004</a></td><td>Descontinuado</td><td>Discontinued (qualifier value)</td><td>-</td><td>Discontinued (qualifier value)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/7147002">7147002</a></td><td>Novo</td><td>New (qualifier value)</td><td>-</td><td>New (qualifier value)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/723506003">723506003</a></td><td>Resolvido</td><td>Resolved (qualifier value)</td><td>-</td><td>Resolved (qualifier value)</td><td>-</td></tr><tr><td><a href="http://snomed.info/id/103330002">103330002</a></td><td>Sem diagnóstico</td><td>No diagnosis (contextual qualifier) (qualifier value)</td><td>-</td><td>No diagnosis (contextual qualifier) (qualifier value)</td><td>-</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpn-status-vs"/>
+  <version value="1.0.0"/>
+  <name value="CPNStatusVS"/>
+  <title value="CPN - Status"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2021-10-24"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores Status (CPN v3.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="55561003"/>
+        <display value="Ativo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Active"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Active (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="410546004"/>
+        <display value="Descontinuado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Discontinued"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Discontinued (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="7147002"/>
+        <display value="Novo"/>
+        <designation>
+          <language value="en"/>
+          <value value="New"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="New (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="723506003"/>
+        <display value="Resolvido"/>
+        <designation>
+          <language value="en"/>
+          <value value="Resolved"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Resolved (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="103330002"/>
+        <display value="Sem diagnóstico"/>
+        <designation>
+          <language value="en"/>
+          <value value="No diagnosis"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="No diagnosis (contextual qualifier) (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="-"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

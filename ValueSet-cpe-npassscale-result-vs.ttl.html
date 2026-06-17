@@ -1,0 +1,616 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>CPE - NPASS Scale Result - TTL Representation - HL7 PT FHIR Implementation Guide: Terminologias v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.100"}
+    h3,h4,h5,h6{--heading-prefix:"6.100"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Terminologias</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="spec.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CPE - NPASS Scale Result</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Terminologias, publicado por HL7 Portugal. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 1.0.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/hl7-pt/terminologias/tree/master'>https://github.com/hl7-pt/terminologias/tree/master</a> e muda regularmente. Veja o <a href='http://hl7.pt/fhir/history.html'>Diretório de versões publicadas</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/hl7-pt/terminologias/commit/987016b692d9e8d3c724739e2350b4e3cdb93844"><code>987016b6</code></a>.</span></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-cpe-npassscale-result-vs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-cpe-npassscale-result-vs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-cpe-npassscale-result-vs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: CPE - NPASS Scale Result - TTL Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2024-11-01
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-cpe-npassscale-result-vs.ttl" no-download="true">Raw ttl</a> | <a href="ValueSet-cpe-npassscale-result-vs.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:ValueSet ;
+  <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R5/resource.html#XValueSet.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;cpe-npassscale-result-vs&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/domainresource.html#XValueSet.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R5/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narrativa gerada: ValueSet cpe-npassscale-result-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;cpe-npassscale-result-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccpe-npassscale-result-vs\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include estes códigos, tal como definidos em &lt;a href=\&quot;http://loinc.org\&quot;&gt;&lt;code&gt;http://loinc.org&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; versão Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Synonym&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (English, en)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Portuguese (pt)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31093-0/\&quot;&gt;LA31093-0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sem sinais de sedação&lt;/td&gt;&lt;td&gt;Choro adequado; não está irritável&lt;/td&gt;&lt;td&gt;No sedation signs&lt;/td&gt;&lt;td&gt;Choro adequado; não está irritável&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31094-8/\&quot;&gt;LA31094-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Geme ou chora minimamente com estímulos dolorosos&lt;/td&gt;&lt;td&gt;Geme ou chora pouco com estímulos dolorosos&lt;/td&gt;&lt;td&gt;Moans or cries minimally with painful stimuli&lt;/td&gt;&lt;td&gt;Geme ou chora pouco com estímulos dolorosos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31095-5/\&quot;&gt;LA31095-5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sem choro com estímulos dolorosos&lt;/td&gt;&lt;td&gt;Não há choro com estímulos dolorosos&lt;/td&gt;&lt;td&gt;No cry with painful stimuli&lt;/td&gt;&lt;td&gt;Não há choro com estímulos dolorosos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31096-3/\&quot;&gt;LA31096-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Desperta minimamente a estímulos. Pouco movimento espontâneo&lt;/td&gt;&lt;td&gt;Reação mínima aos estímulos; ligeiro movimento espontâneo&lt;/td&gt;&lt;td&gt;Arouses minimally to stimuli. Little spontaneous movement&lt;/td&gt;&lt;td&gt;Reação mínima aos estímulos; ligeiro movimento espontâneo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31097-1/\&quot;&gt;LA31097-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nenhuma excitação a qualquer estímulo. Nenhum movimento espontâneo&lt;/td&gt;&lt;td&gt;Não há reacção a qualquer estímulo; não há movimento espontâneo&lt;/td&gt;&lt;td&gt;No arousal to any stimuli. No spontaneous movement&lt;/td&gt;&lt;td&gt;Não há reacção a qualquer estímulo; não há movimento espontâneo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31098-9/\&quot;&gt;LA31098-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Expressão mínima com estímulos&lt;/td&gt;&lt;td&gt;Expressão mínima com os estímulos&lt;/td&gt;&lt;td&gt;Minimal expression with stimuli&lt;/td&gt;&lt;td&gt;Expressão mínima com os estímulos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31099-7/\&quot;&gt;LA31099-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;A boca é frouxa. Nenhuma expressão&lt;/td&gt;&lt;td&gt;A boca está relaxada; sem expressão&lt;/td&gt;&lt;td&gt;Mouth is lax. No expression&lt;/td&gt;&lt;td&gt;A boca está relaxada; sem expressão&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31100-3/\&quot;&gt;LA31100-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Reflexo de preensão fraco. Diminuição do tónus muscular&lt;/td&gt;&lt;td&gt;Reflexo de agarrar fraco; diminuição tónus muscular&lt;/td&gt;&lt;td&gt;Weak grasp reflex. Decreased muscle tone&lt;/td&gt;&lt;td&gt;Reflexo de agarrar fraco; diminuição tónus muscular&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31101-1/\&quot;&gt;LA31101-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sem reflexo de preensão. Tónus flácido&lt;/td&gt;&lt;td&gt;Não há reflexo de agarrar; tónus flácido&lt;/td&gt;&lt;td&gt;No grasp reflex. Flaccid tone&lt;/td&gt;&lt;td&gt;Não há reflexo de agarrar; tónus flácido&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31102-9/\&quot;&gt;LA31102-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Variabilidade &amp;lt;10% da linha de base com estímulos&lt;/td&gt;&lt;td&gt;&amp;lt; 10% variação dos valores iniciais dos estímulos&lt;/td&gt;&lt;td&gt;&amp;lt;10% variability from baseline with stimuli&lt;/td&gt;&lt;td&gt;&amp;lt; 10% variação dos valores iniciais dos estímulos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31103-7/\&quot;&gt;LA31103-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nenhuma variabilidade com estímulos. Hipoventilação ou apneia&lt;/td&gt;&lt;td&gt;Não há variação com a estimulação; hipoventilação ou apneia&lt;/td&gt;&lt;td&gt;No variability with stimuli. Hypoventilation or apnea&lt;/td&gt;&lt;td&gt;Não há variação com a estimulação; hipoventilação ou apneia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31239-9/\&quot;&gt;LA31239-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ligeiro: Pontuação de -1 a -3&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Light: Score of -1 to -2&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31240-7/\&quot;&gt;LA31240-7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Moderado: Pontuação de -4 a -6&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Moderate: Score of -4 to -5&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31241-5/\&quot;&gt;LA31241-5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Profundo: Pontuação de -7 a -10&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Deep: Score of -7 to -9&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31082-3/\&quot;&gt;LA31082-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sem sinais de dor&lt;/td&gt;&lt;td/&gt;&lt;td&gt;No pain signs&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31083-1/\&quot;&gt;LA31083-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irritável ou chorando em intervalos, consolável&lt;/td&gt;&lt;td&gt;Irritável ou chora a intervalos; consolável&lt;/td&gt;&lt;td&gt;Irritable or crying at intervals, consolable&lt;/td&gt;&lt;td&gt;Irritável ou chora a intervalos; consolável&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31084-9/\&quot;&gt;LA31084-9&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Choro agudo ou silencioso-contínuo; Inconsolável&lt;/td&gt;&lt;td/&gt;&lt;td&gt;High-pitched or silent-continuous cry; Inconsolable&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31085-6/\&quot;&gt;LA31085-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inquieto, contorce-se; Desperta frequentemente&lt;/td&gt;&lt;td&gt;Irrequieto, contorce-se; acorda frequentemente&lt;/td&gt;&lt;td&gt;Restless, squirming; Awakens frequently&lt;/td&gt;&lt;td&gt;Irrequieto, contorce-se; acorda frequentemente&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31086-4/\&quot;&gt;LA31086-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arquear, chutar; Constantemente acordado ou desperta minimamente/nenhum movimento (não sedado)&lt;/td&gt;&lt;td&gt;Arqueia-se, dá pontapés; constantemete acordado ou reage minimamente/não há movimento&lt;/td&gt;&lt;td&gt;Arching, kicking; Constantly awake or arouses minimally/no movement (not sedated)&lt;/td&gt;&lt;td&gt;Arqueia-se, dá pontapés; constantemete acordado ou reage minimamente/não há movimento&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31087-2/\&quot;&gt;LA31087-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Qualquer expressão de dor intermitente&lt;/td&gt;&lt;td&gt;Qualquer expressão de dor é intermitente&lt;/td&gt;&lt;td&gt;Any pain expression intermittent&lt;/td&gt;&lt;td&gt;Qualquer expressão de dor é intermitente&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31088-0/\&quot;&gt;LA31088-0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Qualquer expressão de dor contínua&lt;/td&gt;&lt;td&gt;Qualquer expressão de dor é contínua&lt;/td&gt;&lt;td&gt;Any pain expression continual&lt;/td&gt;&lt;td&gt;Qualquer expressão de dor é contínua&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31089-8/\&quot;&gt;LA31089-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dedos dos pés, punhos ou dedos cerrados intermitentes; o corpo não está tenso&lt;/td&gt;&lt;td&gt;Fecha mãos e encolhe pés ou estica os dedos de forma intermitente (&amp;lt;30seg); corpo não tenso.&lt;/td&gt;&lt;td&gt;Intermittent clenched toes, fists, or finger splay; Body is not tense&lt;/td&gt;&lt;td&gt;Fecha mãos e encolhe pés ou estica os dedos de forma intermitente (&amp;lt;30seg); corpo não tenso.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31090-6/\&quot;&gt;LA31090-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dedos, punhos ou dedos dos pés cerrados contínuos; corpo está tenso&lt;/td&gt;&lt;td&gt;Fecha mãos e encolhe os pés ou estica dedos continuamente (&amp;gt;/=30seg); corpo tenso&lt;/td&gt;&lt;td&gt;Continual clenched toes, fists, or finger splay; Body is tense&lt;/td&gt;&lt;td&gt;Fecha mãos e encolhe os pés ou estica dedos continuamente (&amp;gt;/=30seg); corpo tenso&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31091-4/\&quot;&gt;LA31091-4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aumentou 10-20% desde a linha de base. SpO2 76-85% com estimulação - aumento rápido&lt;/td&gt;&lt;td&gt;Aumento sup. a 10-20% val. iniciais; satO2 a 76-85% com estimulação - aumenta rapidamente(&amp;lt;/=2seg).&lt;/td&gt;&lt;td&gt;Increased 10-20% from baseline. SpO2 76-85% with stimulation--quick increase&lt;/td&gt;&lt;td&gt;Aumento sup. a 10-20% val. iniciais; satO2 a 76-85% com estimulação - aumenta rapidamente(&amp;lt;/=2seg).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31092-2/\&quot;&gt;LA31092-2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aumento &amp;gt; 20% da linha de base. SpO2 &amp;gt; ou igual a 75% com estimulação - aumento lento. Fora de sincronia/ventilação de combate&lt;/td&gt;&lt;td&gt;Aumento sup. a 20% val. iniciais; satO2&amp;lt;/=75% c/ estim. - aum. lentamente(&amp;gt;2seg); não sinc. c/ vent.&lt;/td&gt;&lt;td&gt;Increased &amp;gt;20% from baseline. SpO2 &amp;gt; or equal to 75% with stimulation--slow increase. Out of synch/fighting vent&lt;/td&gt;&lt;td&gt;Aumento sup. a 20% val. iniciais; satO2&amp;lt;/=75% c/ estim. - aum. lentamente(&amp;gt;2seg); não sinc. c/ vent.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA32-8/\&quot;&gt;LA32-8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Não&lt;/td&gt;&lt;td/&gt;&lt;td&gt;No&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA33-6/\&quot;&gt;LA33-6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sim&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Yes&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31236-5/\&quot;&gt;LA31236-5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leve: Pontuação de +1 a +3&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Mild: Score of +1 to +2&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31237-3/\&quot;&gt;LA31237-3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Moderado: Pontuação de +4 a +6&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Moderate: Score of +4 to +5&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;https://loinc.org/LA31238-1/\&quot;&gt;LA31238-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Grave: Pontuação de +7 a +10 (ou +11 para prematuro)&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Severe: Score of +7 to +10 (or +11 for premature infant)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;https://hl7.pt/fhir/Terminologias/ValueSet/cpe-npassscale-result-vs&quot;^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:ietf:rfc:3986&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;urn:oid:2.16.620.1.101.10.4.6.144&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1.0.0&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;CPENPASSScaleResultVS&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;CPE - NPASS Scale Result&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2024-11-01&quot;^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;HL7 Portugal&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;HL7 Portugal&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;http://hl7.pt&quot; ]     ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;info@hl7.pt&quot; ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;HL7 Portugal&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;geral@hl7.pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;work&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Conjunto de valores NPASSScaleResult (CPE v2.0.0).&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.jurisdiction">fhir:jurisdiction</a> ( [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:iso:std:iso:3166&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;PT&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Portugal&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.author">fhir:author</a> ( [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Centro de Terminologias Clínicas&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose">fhir:compose</a> [
+    ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include">fhir:include</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+      ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept">fhir:concept</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31093-0&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sem sinais de sedação&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;No sedation signs&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Choro adequado; não está irritável&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31094-8&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Geme ou chora minimamente com estímulos dolorosos&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Moans or cries minimally with painful stimuli&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Geme ou chora pouco com estímulos dolorosos&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31095-5&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sem choro com estímulos dolorosos&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;No cry with painful stimuli&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Não há choro com estímulos dolorosos&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31096-3&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Desperta minimamente a estímulos. Pouco movimento espontâneo&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Arouses minimally to stimuli. Little spontaneous movement&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Reação mínima aos estímulos; ligeiro movimento espontâneo&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31097-1&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Nenhuma excitação a qualquer estímulo. Nenhum movimento espontâneo&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;No arousal to any stimuli. No spontaneous movement&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Não há reacção a qualquer estímulo; não há movimento espontâneo&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31098-9&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Expressão mínima com estímulos&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Minimal expression with stimuli&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Expressão mínima com os estímulos&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31099-7&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;A boca é frouxa. Nenhuma expressão&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Mouth is lax. No expression&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;A boca está relaxada; sem expressão&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31100-3&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Reflexo de preensão fraco. Diminuição do tónus muscular&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Weak grasp reflex. Decreased muscle tone&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Reflexo de agarrar fraco; diminuição tónus muscular&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31101-1&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sem reflexo de preensão. Tónus flácido&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;No grasp reflex. Flaccid tone&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Não há reflexo de agarrar; tónus flácido&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31102-9&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Variabilidade &lt;10% da linha de base com estímulos&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;&lt;10% variability from baseline with stimuli&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;&lt; 10% variação dos valores iniciais dos estímulos&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31103-7&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Nenhuma variabilidade com estímulos. Hipoventilação ou apneia&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;No variability with stimuli. Hypoventilation or apnea&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Não há variação com a estimulação; hipoventilação ou apneia&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31239-9&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Ligeiro: Pontuação de -1 a -3&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Light: Score of -1 to -2&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31240-7&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Moderado: Pontuação de -4 a -6&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Moderate: Score of -4 to -5&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31241-5&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Profundo: Pontuação de -7 a -10&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Deep: Score of -7 to -9&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31082-3&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sem sinais de dor&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;No pain signs&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31083-1&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Irritável ou chorando em intervalos, consolável&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Irritable or crying at intervals, consolable&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Irritável ou chora a intervalos; consolável&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31084-9&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Choro agudo ou silencioso-contínuo; Inconsolável&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;High-pitched or silent-continuous cry; Inconsolable&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31085-6&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Inquieto, contorce-se; Desperta frequentemente&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Restless, squirming; Awakens frequently&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Irrequieto, contorce-se; acorda frequentemente&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31086-4&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Arquear, chutar; Constantemente acordado ou desperta minimamente/nenhum movimento (não sedado)&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Arching, kicking; Constantly awake or arouses minimally/no movement (not sedated)&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Arqueia-se, dá pontapés; constantemete acordado ou reage minimamente/não há movimento&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31087-2&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Qualquer expressão de dor intermitente&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Any pain expression intermittent&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Qualquer expressão de dor é intermitente&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31088-0&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Qualquer expressão de dor contínua&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Any pain expression continual&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Qualquer expressão de dor é contínua&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31089-8&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Dedos dos pés, punhos ou dedos cerrados intermitentes; o corpo não está tenso&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Intermittent clenched toes, fists, or finger splay; Body is not tense&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Fecha mãos e encolhe pés ou estica os dedos de forma intermitente (&lt;30seg); corpo não tenso.&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31090-6&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Dedos, punhos ou dedos dos pés cerrados contínuos; corpo está tenso&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Continual clenched toes, fists, or finger splay; Body is tense&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Fecha mãos e encolhe os pés ou estica dedos continuamente (&gt;/=30seg); corpo tenso&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31091-4&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Aumentou 10-20% desde a linha de base. SpO2 76-85% com estimulação - aumento rápido&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Increased 10-20% from baseline. SpO2 76-85% with stimulation--quick increase&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Aumento sup. a 10-20% val. iniciais; satO2 a 76-85% com estimulação - aumenta rapidamente(&lt;/=2seg).&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31092-2&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Aumento &gt; 20% da linha de base. SpO2 &gt; ou igual a 75% com estimulação - aumento lento. Fora de sincronia/ventilação de combate&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Increased &gt;20% from baseline. SpO2 &gt; or equal to 75% with stimulation--slow increase. Out of synch/fighting vent&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.use">fhir:use</a> [
+a sct:900000000000013009 ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;900000000000013009&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Synonym&quot; ]           ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Aumento sup. a 20% val. iniciais; satO2&lt;/=75% c/ estim. - aum. lentamente(&gt;2seg); não sinc. c/ vent.&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA32-8&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Não&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;No&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA33-6&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sim&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Yes&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31236-5&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Leve: Pontuação de +1 a +3&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Mild: Score of +1 to +2&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31237-3&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Moderado: Pontuação de +4 a +6&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Moderate: Score of +4 to +5&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;LA31238-1&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Grave: Pontuação de +7 a +10 (ou +11 para prematuro)&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#XValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Severe: Score of +7 to +10 (or +11 for premature infant)&quot; ]         ] )       ] )     ] )
+  ] . # 
+
+</pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Jun 17, 2026 10:02+0000">2026-06-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

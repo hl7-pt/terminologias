@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpal-susceptibility-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpal-susceptibility-vs</b></p><a name="cpal-susceptibility-vs"> </a><a name="hccpal-susceptibility-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/1255965005">1255965005</a></td><td>Sensível com aumento de exposição</td><td>Susceptible with increased exposure (qualifier value)</td><td>I</td><td>Susceptible with increased exposure (qualifier value)</td><td>I</td></tr><tr><td><a href="http://snomed.info/id/30714006">30714006</a></td><td>Resistente</td><td>Resistant (qualifier value)</td><td>R</td><td>Resistant (qualifier value)</td><td>R</td></tr><tr><td><a href="http://snomed.info/id/131196009">131196009</a></td><td>Suscetível</td><td>Susceptible (qualifier value)</td><td>S</td><td>Susceptible (qualifier value)</td><td>S</td></tr><tr><td><a href="http://snomed.info/id/11896004">11896004</a></td><td>Intermédio</td><td>Intermediate (qualifier value)</td><td>I</td><td>Intermediate (qualifier value)</td><td>I</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpal-susceptibility-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.18"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPALSusceptibilityVS"/>
+  <title value="CPAL - Susceptibility"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-10-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores Susceptibility (CPAL v7.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="1255965005"/>
+        <display value="Sensível com aumento de exposição"/>
+        <designation>
+          <language value="en"/>
+          <value value="Susceptible with increased exposure"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Susceptible with increased exposure (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="I"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="30714006"/>
+        <display value="Resistente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Resistant"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Resistant (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="R"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="131196009"/>
+        <display value="Suscetível"/>
+        <designation>
+          <language value="en"/>
+          <value value="Susceptible"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Susceptible (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="S"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="11896004"/>
+        <display value="Intermédio"/>
+        <designation>
+          <language value="en"/>
+          <value value="Intermediate"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000003001"/>
+            <display value="Fully specified name"/>
+          </use>
+          <value value="Intermediate (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="I"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

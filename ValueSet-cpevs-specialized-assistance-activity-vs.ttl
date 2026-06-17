@@ -1,0 +1,313 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpevs-specialized-assistance-activity-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpevs-specialized-assistance-activity-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpevs-specialized-assistance-activity-vs</b></p><a name=\"cpevs-specialized-assistance-activity-vs\"> </a><a name=\"hccpevs-specialized-assistance-activity-vs\"> </a><p>Este conjunto de valores inclui códigos baseados nas seguintes regras:</p><ul><li>Incluir estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/440654001\">440654001</a></td><td>Internamento</td><td/><td>Inpatient environment (environment)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1256098007\">1256098007</a></td><td>Hospitalização domiciliária</td><td/><td>Home hospitalization (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/25761000087103\">25761000087103</a></td><td>Cuidados paliativos - internamento</td><td>Cuidados paliativos</td><td>Inpatient palliative care environment (environment)</td><td>Cuidados paliativos</td></tr><tr><td><a href=\"http://snomed.info/id/309904001\">309904001</a></td><td>Unidade de cuidados intensivos</td><td>Cuidados intensivos</td><td>Intensive care unit (environment)</td><td>Cuidados intensivos</td></tr><tr><td><a href=\"http://snomed.info/id/32074000\">32074000</a></td><td>Hospital de cuidados de longa duração</td><td>Hospital de cuidados de longo termo</td><td>Long term care hospital (environment)</td><td>Hospital de cuidados de longo termo</td></tr><tr><td><a href=\"http://snomed.info/id/274409007\">274409007</a></td><td>Unidade de cuidados especiais</td><td>Cuidados especiais</td><td>Special care unit (environment)</td><td>Cuidados especiais</td></tr><tr><td><a href=\"http://snomed.info/id/419590001\">419590001</a></td><td>Unidade de cuidados intermédios</td><td>Unidade de cuidados progressivos</td><td>Stepdown unit (environment)</td><td>Unidade de cuidados progressivos</td></tr><tr><td><a href=\"http://snomed.info/id/225746001\">225746001</a></td><td>Enfermaria</td><td>Internamento</td><td>Ward (environment)</td><td>Internamento</td></tr><tr><td><a href=\"http://snomed.info/id/440655000\">440655000</a></td><td>Ambulatório</td><td/><td>Outpatient environment (environment)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/225728007\">225728007</a></td><td>Departamento de emergência e acidentes</td><td>Urgência</td><td>Accident and Emergency department (environment)</td><td>Urgência</td></tr><tr><td><a href=\"http://snomed.info/id/405607001\">405607001</a></td><td>Cirurgia de ambulatório</td><td/><td>Ambulatory surgery center (environment)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/274516006\">274516006</a></td><td>Hospital de dia</td><td/><td>Day hospital (environment)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/113173007\">113173007</a></td><td>Domicílio</td><td>Serviço domiciliário</td><td>Domiciliary (environment)</td><td>Serviço domiciliário</td></tr><tr><td><a href=\"http://snomed.info/id/224885007\">224885007</a></td><td>Consulta hospitalar</td><td>Consulta externa</td><td>Hospital consulting room (environment)</td><td>Consulta externa</td></tr><tr><td><a href=\"http://snomed.info/id/225738002\">225738002</a></td><td>Bloco operatório</td><td>Bloco</td><td>Operating room (environment)</td><td>Bloco</td></tr><tr><td><a href=\"http://snomed.info/id/25881000087103\">25881000087103</a></td><td>Habitação de suporte</td><td>Lar de utentes</td><td>Supportive housing (environment)</td><td>Lar de utentes</td></tr></table></li><li>Incluir estes códigos, tal como definidos em <code>urn:oid:-</code><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td>2101000314109</td><td>Meios complementares de diagnóstico e/ou terapêutica</td><td>MCDT</td><td>Complementary diagnostic and/or therapeutic procedure (procedure)</td><td>MCDT</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpevs-specialized-assistance-activity-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.71" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPEVSSpecializedAssistanceActivityVS"] ; # 
+  fhir:title [ fhir:v "CPEVS - Specialized Assistance Activity"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores SpecializedAssistanceActivity (CPEVS v2.1.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "440654001" ] ;
+         fhir:display [ fhir:v "Internamento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Inpatient environment (environment)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1256098007" ] ;
+         fhir:display [ fhir:v "Hospitalização domiciliária" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Home hospitalization (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "25761000087103" ] ;
+         fhir:display [ fhir:v "Cuidados paliativos - internamento" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Inpatient palliative care environment (environment)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cuidados paliativos" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "309904001" ] ;
+         fhir:display [ fhir:v "Unidade de cuidados intensivos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Intensive care unit (environment)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "UCI" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cuidados intensivos" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "32074000" ] ;
+         fhir:display [ fhir:v "Hospital de cuidados de longa duração" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Long term care hospital (environment)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Hospital de cuidados continuados integrados" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Hospital de cuidados de longo termo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "274409007" ] ;
+         fhir:display [ fhir:v "Unidade de cuidados especiais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Special care unit (environment)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cuidados especiais" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "419590001" ] ;
+         fhir:display [ fhir:v "Unidade de cuidados intermédios" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Stepdown unit (environment)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Unidade de cuidados progressivos" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "225746001" ] ;
+         fhir:display [ fhir:v "Enfermaria" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Ward (environment)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Internamento" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "440655000" ] ;
+         fhir:display [ fhir:v "Ambulatório" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Outpatient environment (environment)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "225728007" ] ;
+         fhir:display [ fhir:v "Departamento de emergência e acidentes" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Accident and Emergency department (environment)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Urgência" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "405607001" ] ;
+         fhir:display [ fhir:v "Cirurgia de ambulatório" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Ambulatory surgery center (environment)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "274516006" ] ;
+         fhir:display [ fhir:v "Hospital de dia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Day hospital (environment)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "113173007" ] ;
+         fhir:display [ fhir:v "Domicílio" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Domiciliary (environment)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Serviço domiciliário" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "224885007" ] ;
+         fhir:display [ fhir:v "Consulta hospitalar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Hospital consulting room (environment)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Consulta externa" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "225738002" ] ;
+         fhir:display [ fhir:v "Bloco operatório" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Operating room (environment)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Bloco" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "25881000087103" ] ;
+         fhir:display [ fhir:v "Habitação de suporte" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Supportive housing (environment)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Lar de utentes" ]
+         ] )
+       ] )
+     ] [
+       fhir:system [ fhir:v "urn:oid:-"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "2101000314109" ] ;
+         fhir:display [ fhir:v "Meios complementares de diagnóstico e/ou terapêutica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Complementary diagnostic and/or therapeutic procedure (procedure)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "MCDT" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,119 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpe-nsrasobservation-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-nsrasobservation-vs</b></p><a name=\"cpe-nsrasobservation-vs\"> </a><a name=\"hccpe-nsrasobservation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/73789-0/\">73789-0</a></td><td>Condição física geral</td><td>General Physical Condition</td></tr><tr><td><a href=\"https://loinc.org/73788-2/\">73788-2</a></td><td>Estado mental</td><td>Mental Status</td></tr><tr><td><a href=\"https://loinc.org/73787-4/\">73787-4</a></td><td>Mobilidade</td><td>Mobility</td></tr><tr><td><a href=\"https://loinc.org/73786-6/\">73786-6</a></td><td>Atividade</td><td>Activity</td></tr><tr><td><a href=\"https://loinc.org/73785-8/\">73785-8</a></td><td>Nutrição</td><td>Nutrition</td></tr><tr><td><a href=\"https://loinc.org/73784-1/\">73784-1</a></td><td>Humidade</td><td>Moisture</td></tr><tr><td><a href=\"https://loinc.org/73783-3/\">73783-3</a></td><td>Total de risco de úlceras de pressão</td><td>Pressure Ulcer Risk Total</td></tr><tr><td><a href=\"https://loinc.org/73782-5/\">73782-5</a></td><td>Avaliação de risco de úlceras de pressão</td><td>Pressure Ulcer Risk Evaluation</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-nsrasobservation-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.147"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPENSRASObservationVS",
+  "title" : "CPE - NSRAS Observation",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores NSRASObservation (CPE v2.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "73789-0",
+        "display" : "Condição física geral",
+        "designation" : [{
+          "language" : "en",
+          "value" : "General Physical Condition"
+        }]
+      },
+      {
+        "code" : "73788-2",
+        "display" : "Estado mental",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Mental Status"
+        }]
+      },
+      {
+        "code" : "73787-4",
+        "display" : "Mobilidade",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Mobility"
+        }]
+      },
+      {
+        "code" : "73786-6",
+        "display" : "Atividade",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Activity"
+        }]
+      },
+      {
+        "code" : "73785-8",
+        "display" : "Nutrição",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Nutrition"
+        }]
+      },
+      {
+        "code" : "73784-1",
+        "display" : "Humidade",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Moisture"
+        }]
+      },
+      {
+        "code" : "73783-3",
+        "display" : "Total de risco de úlceras de pressão",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Pressure Ulcer Risk Total"
+        }]
+      },
+      {
+        "code" : "73782-5",
+        "display" : "Avaliação de risco de úlceras de pressão",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Pressure Ulcer Risk Evaluation"
+        }]
+      }]
+    }]
+  }
+}

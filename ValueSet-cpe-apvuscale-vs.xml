@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-apvuscale-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-apvuscale-vs</b></p><a name="cpe-apvuscale-vs"> </a><a name="hccpe-apvuscale-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="http://snomed.info/id/248234008">248234008</a></td><td>Alerta</td><td>Mentally alert (finding)</td></tr><tr><td><a href="http://snomed.info/id/300202002">300202002</a></td><td>Responde a estímulos verbais</td><td>Responds to voice (finding)</td></tr><tr><td><a href="http://snomed.info/id/450847001">450847001</a></td><td>Responde a estímulos dolorosos</td><td>Responds to pain (finding)</td></tr><tr><td><a href="http://snomed.info/id/422768004">422768004</a></td><td>Sem resposta</td><td>Unresponsive (finding)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-apvuscale-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.117"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPEAPVUScaleVS"/>
+  <title value="CPE - AVPU Scale"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores APVUScale (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="248234008"/>
+        <display value="Alerta"/>
+        <designation>
+          <language value="en"/>
+          <value value="Mentally alert (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="300202002"/>
+        <display value="Responde a estímulos verbais"/>
+        <designation>
+          <language value="en"/>
+          <value value="Responds to voice (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="450847001"/>
+        <display value="Responde a estímulos dolorosos"/>
+        <designation>
+          <language value="en"/>
+          <value value="Responds to pain (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="422768004"/>
+        <display value="Sem resposta"/>
+        <designation>
+          <language value="en"/>
+          <value value="Unresponsive (finding)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

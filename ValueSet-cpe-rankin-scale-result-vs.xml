@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-rankin-scale-result-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-rankin-scale-result-vs</b></p><a name="cpe-rankin-scale-result-vs"> </a><a name="hccpe-rankin-scale-result-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="https://loinc.org/LA6111-4/">LA6111-4</a></td><td>Sem sintomas</td><td>Ausência de sintomas</td><td>No symptoms.</td><td>Ausência de sintomas</td></tr><tr><td><a href="https://loinc.org/LA6112-2/">LA6112-2</a></td><td>Nenhuma incapacidade significativa. Capaz de realizar todas as atividades habituais, apesar de alguns sintomas</td><td>Sintomas não incapacitantes (capaz de realizar todas as tarefas habituais)</td><td>No significant disability. Able to carry out all usual activities, despite some symptoms.</td><td>Sintomas não incapacitantes (capaz de realizar todas as tarefas habituais)</td></tr><tr><td><a href="https://loinc.org/LA6113-0/">LA6113-0</a></td><td>Incapacidade leve. Capaz de cuidar de seus próprios assuntos sem ajuda, mas incapaz de realizar todas as atividades anteriores</td><td>Incapacidade ligeira (incapaz de realizar algumas tarefas que realizava, mas independente nas AVDs)</td><td>Slight disability. Able to look after own affairs without assistance, but unable to carry out all previous activities.</td><td>Incapacidade ligeira (incapaz de realizar algumas tarefas que realizava, mas independente nas AVDs)</td></tr><tr><td><a href="https://loinc.org/LA6114-8/">LA6114-8</a></td><td>Incapacidade moderada. Requer alguma ajuda, mas é capaz de andar sem ajuda</td><td>Incapacidade moderada (sintomas que restringem estilo de vida e/ou impedem independência nas AVDs)</td><td>Moderate disability. Requires some help, but able to walk unassisted.</td><td>Incapacidade moderada (sintomas que restringem estilo de vida e/ou impedem independência nas AVDs)</td></tr><tr><td><a href="https://loinc.org/LA6115-5/">LA6115-5</a></td><td>Incapacidade moderadamente grave. Incapaz de atender às próprias necessidades corporais sem ajuda e incapaz de andar sem ajuda</td><td>Incapacidade moderadamente grave (sintomas que tornam o doente dependente, mas não em todas as AVDs)</td><td>Moderately severe disability. Unable to attend to own bodily needs without assistance, and unable to walk unassisted.</td><td>Incapacidade moderadamente grave (sintomas que tornam o doente dependente, mas não em todas as AVDs)</td></tr><tr><td><a href="https://loinc.org/LA10137-0/">LA10137-0</a></td><td>Incapacidade severa. Requer cuidado e atenção constante da enfermagem, acamado, incontinente</td><td>Incapacidade grave (totalmente dependente, requerendo cuidados de terceiros)</td><td>Severe disability. Requires constant nursing care and attention, bedridden, incontinent.</td><td>Incapacidade grave (totalmente dependente, requerendo cuidados de terceiros)</td></tr><tr><td><a href="https://loinc.org/LA10138-8/">LA10138-8</a></td><td>Óbito</td><td>Morte</td><td>Dead.</td><td>Morte</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-rankin-scale-result-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.155"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPERankinScaleResultVS"/>
+  <title value="CPE - Rankin Scale Result"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores RankinScaleResult (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA6111-4"/>
+        <display value="Sem sintomas"/>
+        <designation>
+          <language value="en"/>
+          <value value="No symptoms."/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Ausência de sintomas"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA6112-2"/>
+        <display value="Nenhuma incapacidade significativa. Capaz de realizar todas as atividades habituais, apesar de alguns sintomas"/>
+        <designation>
+          <language value="en"/>
+          <value value="No significant disability. Able to carry out all usual activities, despite some symptoms."/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Sintomas não incapacitantes (capaz de realizar todas as tarefas habituais)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA6113-0"/>
+        <display value="Incapacidade leve. Capaz de cuidar de seus próprios assuntos sem ajuda, mas incapaz de realizar todas as atividades anteriores"/>
+        <designation>
+          <language value="en"/>
+          <value value="Slight disability. Able to look after own affairs without assistance, but unable to carry out all previous activities."/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Incapacidade ligeira (incapaz de realizar algumas tarefas que realizava, mas independente nas AVDs)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA6114-8"/>
+        <display value="Incapacidade moderada. Requer alguma ajuda, mas é capaz de andar sem ajuda"/>
+        <designation>
+          <language value="en"/>
+          <value value="Moderate disability. Requires some help, but able to walk unassisted."/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Incapacidade moderada (sintomas que restringem estilo de vida e/ou impedem independência nas AVDs)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA6115-5"/>
+        <display value="Incapacidade moderadamente grave. Incapaz de atender às próprias necessidades corporais sem ajuda e incapaz de andar sem ajuda"/>
+        <designation>
+          <language value="en"/>
+          <value value="Moderately severe disability. Unable to attend to own bodily needs without assistance, and unable to walk unassisted."/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Incapacidade moderadamente grave (sintomas que tornam o doente dependente, mas não em todas as AVDs)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA10137-0"/>
+        <display value="Incapacidade severa. Requer cuidado e atenção constante da enfermagem, acamado, incontinente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Severe disability. Requires constant nursing care and attention, bedridden, incontinent."/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Incapacidade grave (totalmente dependente, requerendo cuidados de terceiros)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA10138-8"/>
+        <display value="Óbito"/>
+        <designation>
+          <language value="en"/>
+          <value value="Dead."/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Morte"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

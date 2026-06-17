@@ -1,0 +1,175 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-morse-fall-scale-observation-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-morse-fall-scale-observation-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-morse-fall-scale-observation-vs</b></p><a name=\"cpe-morse-fall-scale-observation-vs\"> </a><a name=\"hccpe-morse-fall-scale-observation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/59454-9/\">59454-9</a></td><td>História de queda; imediato ou dentro de 3 meses [Morse Fall Scale]</td><td>Historial de quedas; neste internamento urgência/ ou nos últimos três meses</td><td>History of falling; immediate or within 3 months [Morse Fall Scale]</td><td>Historial de quedas; neste internamento urgência/ ou nos últimos três meses</td></tr><tr><td><a href=\"https://loinc.org/59455-6/\">59455-6</a></td><td>O diagnóstico secundário está presente</td><td>Diagnóstico(s) secundário(s)</td><td>Secondary diagnosis is present</td><td>Diagnóstico(s) secundário(s)</td></tr><tr><td><a href=\"https://loinc.org/59456-4/\">59456-4</a></td><td>Auxiliar ambulatorial [Escala de queda de Morse]</td><td>Ajuda para caminhar</td><td>Ambulatory aid [Morse Fall Scale]</td><td>Ajuda para caminhar</td></tr><tr><td><a href=\"https://loinc.org/59457-2/\">59457-2</a></td><td>Bloqueio IV/Heparina</td><td>Terapia intravenosa</td><td>IV/Heparin Lock</td><td>Terapia intravenosa</td></tr><tr><td><a href=\"https://loinc.org/59458-0/\">59458-0</a></td><td>Marcha [escala de queda de Morse]</td><td>Postura no andar e na transferência</td><td>Gait [Morse Fall Scale]</td><td>Postura no andar e na transferência</td></tr><tr><td><a href=\"https://loinc.org/59459-8/\">59459-8</a></td><td>Estado mental [escala de queda de Morse]</td><td>Estado mental</td><td>Mental status [Morse Fall Scale]</td><td>Estado mental</td></tr><tr><td><a href=\"https://loinc.org/59460-6/\">59460-6</a></td><td>Total de risco de queda [Escala de queda de Morse]</td><td/><td>Fall risk total [Morse Fall Scale]</td><td/></tr><tr><td><a href=\"https://loinc.org/59461-4/\">59461-4</a></td><td>Nível de risco de queda [Escala de queda de Morse]</td><td/><td>Fall risk level [Morse Fall Scale]</td><td/></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-morse-fall-scale-observation-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.137" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPEMorseFallScaleObservationVS"] ; # 
+  fhir:title [ fhir:v "CPE - Morse Fall Scale Observation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores MorseFallScaleObservation (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "59454-9" ] ;
+         fhir:display [ fhir:v "História de queda; imediato ou dentro de 3 meses [Morse Fall Scale]" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "History of falling; immediate or within 3 months [Morse Fall Scale]" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Historial de quedas; neste internamento urgência/ ou nos últimos três meses" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "59455-6" ] ;
+         fhir:display [ fhir:v "O diagnóstico secundário está presente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Secondary diagnosis is present" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Diagnóstico(s) secundário(s)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "59456-4" ] ;
+         fhir:display [ fhir:v "Auxiliar ambulatorial [Escala de queda de Morse]" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Ambulatory aid [Morse Fall Scale]" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Ajuda para caminhar" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "59457-2" ] ;
+         fhir:display [ fhir:v "Bloqueio IV/Heparina" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "IV/Heparin Lock" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Terapia intravenosa" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "59458-0" ] ;
+         fhir:display [ fhir:v "Marcha [escala de queda de Morse]" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Gait [Morse Fall Scale]" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Postura no andar e na transferência" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "59459-8" ] ;
+         fhir:display [ fhir:v "Estado mental [escala de queda de Morse]" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Mental status [Morse Fall Scale]" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Estado mental" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "59460-6" ] ;
+         fhir:display [ fhir:v "Total de risco de queda [Escala de queda de Morse]" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Fall risk total [Morse Fall Scale]" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "59461-4" ] ;
+         fhir:display [ fhir:v "Nível de risco de queda [Escala de queda de Morse]" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Fall risk level [Morse Fall Scale]" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

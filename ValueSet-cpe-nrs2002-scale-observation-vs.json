@@ -1,0 +1,135 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpe-nrs2002-scale-observation-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-nrs2002-scale-observation-vs</b></p><a name=\"cpe-nrs2002-scale-observation-vs\"> </a><a name=\"hccpe-nrs2002-scale-observation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/98968-1/\">98968-1</a></td><td>Triagem inicial NRS_2002</td><td>Initial screening NRS_2002</td></tr><tr><td><a href=\"https://loinc.org/97057-4/\">97057-4</a></td><td>IMC é &lt;20.5?</td><td>Is BMI &lt;20.5?</td></tr><tr><td><a href=\"https://loinc.org/98969-9/\">98969-9</a></td><td>O paciente perdeu peso nos últimos 3 meses?</td><td>Has the patient lost weight within the last 3 months?</td></tr><tr><td><a href=\"https://loinc.org/98970-7/\">98970-7</a></td><td>O paciente teve uma redução na sua ingestão alimentar na última semana?</td><td>Has the patient had a reduced dietary intake in the last week?</td></tr><tr><td><a href=\"https://loinc.org/98971-5/\">98971-5</a></td><td>O paciente está gravemente doente? (por exemplo, em terapia intensiva)</td><td>Is the patient severely ill? (e.g. in intensive therapy)</td></tr><tr><td><a href=\"https://loinc.org/98972-3/\">98972-3</a></td><td>Triagem final NRS_2002</td><td>Final screening NRS_2002</td></tr><tr><td><a href=\"https://loinc.org/98973-1/\">98973-1</a></td><td>Deterioração do estado nutricional</td><td>Impaired nutritional status</td></tr><tr><td><a href=\"https://loinc.org/90775-8/\">90775-8</a></td><td>Gravidade da doença</td><td>Severity of disease</td></tr><tr><td><a href=\"https://loinc.org/98974-9/\">98974-9</a></td><td>Pontuação total NRS_2002</td><td>Total score NRS_2002</td></tr><tr><td><a href=\"https://loinc.org/99310-5/\">99310-5</a></td><td>Pontuação total ajustada à idade</td><td>Total score age adjusted</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-nrs2002-scale-observation-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.145"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPENRS2002ScaleObservationVS",
+  "title" : "CPE - NRS 2002 Scale Observation",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores NRS2002ScaleObservation (CPE v2.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "98968-1",
+        "display" : "Triagem inicial NRS_2002",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Initial screening NRS_2002"
+        }]
+      },
+      {
+        "code" : "97057-4",
+        "display" : "IMC é <20.5?",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Is BMI <20.5?"
+        }]
+      },
+      {
+        "code" : "98969-9",
+        "display" : "O paciente perdeu peso nos últimos 3 meses?",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Has the patient lost weight within the last 3 months?"
+        }]
+      },
+      {
+        "code" : "98970-7",
+        "display" : "O paciente teve uma redução na sua ingestão alimentar na última semana?",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Has the patient had a reduced dietary intake in the last week?"
+        }]
+      },
+      {
+        "code" : "98971-5",
+        "display" : "O paciente está gravemente doente? (por exemplo, em terapia intensiva)",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Is the patient severely ill? (e.g. in intensive therapy)"
+        }]
+      },
+      {
+        "code" : "98972-3",
+        "display" : "Triagem final NRS_2002",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Final screening NRS_2002"
+        }]
+      },
+      {
+        "code" : "98973-1",
+        "display" : "Deterioração do estado nutricional",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Impaired nutritional status"
+        }]
+      },
+      {
+        "code" : "90775-8",
+        "display" : "Gravidade da doença",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Severity of disease"
+        }]
+      },
+      {
+        "code" : "98974-9",
+        "display" : "Pontuação total NRS_2002",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Total score NRS_2002"
+        }]
+      },
+      {
+        "code" : "99310-5",
+        "display" : "Pontuação total ajustada à idade",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Total score age adjusted"
+        }]
+      }]
+    }]
+  }
+}

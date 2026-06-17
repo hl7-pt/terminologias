@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-minnesota-lhfqresult-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-minnesota-lhfqresult-vs</b></p><a name="cpe-minnesota-lhfqresult-vs"> </a><a name="hccpe-minnesota-lhfqresult-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href="https://loinc.org/LA6111-4/">LA6111-4</a></td><td/></tr><tr><td><a href="https://loinc.org/LA6112-2/">LA6112-2</a></td><td>1</td></tr><tr><td><a href="https://loinc.org/LA6113-0/">LA6113-0</a></td><td>2</td></tr><tr><td><a href="https://loinc.org/LA6114-8/">LA6114-8</a></td><td>3</td></tr><tr><td><a href="https://loinc.org/LA6115-5/">LA6115-5</a></td><td>4</td></tr><tr><td><a href="https://loinc.org/LA10137-0/">LA10137-0</a></td><td>5</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-minnesota-lhfqresult-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.136"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPEMinnesotaLHFQResultVS"/>
+  <title value="CPE - Minnesota LHFQ Result"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores MinnesotaLHFQResult (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA6111-4"/>
+      </concept>
+      <concept>
+        <code value="LA6112-2"/>
+        <display value="1"/>
+      </concept>
+      <concept>
+        <code value="LA6113-0"/>
+        <display value="2"/>
+      </concept>
+      <concept>
+        <code value="LA6114-8"/>
+        <display value="3"/>
+      </concept>
+      <concept>
+        <code value="LA6115-5"/>
+        <display value="4"/>
+      </concept>
+      <concept>
+        <code value="LA10137-0"/>
+        <display value="5"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

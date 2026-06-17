@@ -1,0 +1,141 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-karnofsky-performance-result-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-karnofsky-performance-result-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-karnofsky-performance-result-vs</b></p><a name=\"cpe-karnofsky-performance-result-vs\"> </a><a name=\"hccpe-karnofsky-performance-result-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/LA29175-9/\">LA29175-9</a></td><td>Normal; sem queixas; sem evidência de doença</td><td>Normal; no complaints; no evidence of disease</td></tr><tr><td><a href=\"https://loinc.org/LA29176-7/\">LA29176-7</a></td><td>Capaz de realizar atividades normais; poucos sinais ou sintomas de doença</td><td>Able to carry on normal activity; minor signs or symptoms of disease</td></tr><tr><td><a href=\"https://loinc.org/LA29177-5/\">LA29177-5</a></td><td>Capaz de realizar atividades normais com algum esforço; alguns sinais ou sintomas de doença</td><td>Normal activity with effort; some signs or symptoms of disease</td></tr><tr><td><a href=\"https://loinc.org/LA29178-3/\">LA29178-3</a></td><td>Capaz de cuidar de si mesmo; incapaz de realizar atividades normais ou trabalho ativo</td><td>Cares for self; unable to carry on normal activity or do active work</td></tr><tr><td><a href=\"https://loinc.org/LA29179-1/\">LA29179-1</a></td><td>Requer assistência ocasional, mas é capaz de cuidar da maioria das suas necessidades</td><td>Requires occasional assistance but is able to care for most needs</td></tr><tr><td><a href=\"https://loinc.org/LA29180-9/\">LA29180-9</a></td><td>Requer assistência considerável e cuidados médicos frequentes</td><td>Requires considerable assistance and frequent medical care</td></tr><tr><td><a href=\"https://loinc.org/LA29181-7/\">LA29181-7</a></td><td>Incapaz de cuidar de si mesmo; requer cuidado especial e assistência</td><td>Disabled; requires special care and assistance</td></tr><tr><td><a href=\"https://loinc.org/LA29182-5/\">LA29182-5</a></td><td>Gravemente incapacitado; hospitalização indicada, mas a morte não é iminente</td><td>Severely disabled; hospitalization is indicated, although death not imminent</td></tr><tr><td><a href=\"https://loinc.org/LA29183-3/\">LA29183-3</a></td><td>Muito doente; necessita de hospitalização e tratamento de suporte ativo</td><td>Very sick; hospitalization necessary; active supportive treatment necessary</td></tr><tr><td><a href=\"https://loinc.org/LA29184-1/\">LA29184-1</a></td><td>Moribundo; com progressão rápida de processos letais</td><td>Moribund; fatal processes progressing rapidly</td></tr><tr><td><a href=\"https://loinc.org/LA9627-6/\">LA9627-6</a></td><td>Morte</td><td>Dead</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-karnofsky-performance-result-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.190" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPEKarnofskyPerformanceResultVS"] ; # 
+  fhir:title [ fhir:v "CPE - Karnofsky Performance Result"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores KarnofskyPerformanceResult (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA29175-9" ] ;
+         fhir:display [ fhir:v "Normal; sem queixas; sem evidência de doença" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Normal; no complaints; no evidence of disease" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA29176-7" ] ;
+         fhir:display [ fhir:v "Capaz de realizar atividades normais; poucos sinais ou sintomas de doença" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Able to carry on normal activity; minor signs or symptoms of disease" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA29177-5" ] ;
+         fhir:display [ fhir:v "Capaz de realizar atividades normais com algum esforço; alguns sinais ou sintomas de doença" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Normal activity with effort; some signs or symptoms of disease" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA29178-3" ] ;
+         fhir:display [ fhir:v "Capaz de cuidar de si mesmo; incapaz de realizar atividades normais ou trabalho ativo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Cares for self; unable to carry on normal activity or do active work" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA29179-1" ] ;
+         fhir:display [ fhir:v "Requer assistência ocasional, mas é capaz de cuidar da maioria das suas necessidades" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Requires occasional assistance but is able to care for most needs" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA29180-9" ] ;
+         fhir:display [ fhir:v "Requer assistência considerável e cuidados médicos frequentes" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Requires considerable assistance and frequent medical care" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA29181-7" ] ;
+         fhir:display [ fhir:v "Incapaz de cuidar de si mesmo; requer cuidado especial e assistência" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Disabled; requires special care and assistance" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA29182-5" ] ;
+         fhir:display [ fhir:v "Gravemente incapacitado; hospitalização indicada, mas a morte não é iminente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Severely disabled; hospitalization is indicated, although death not imminent" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA29183-3" ] ;
+         fhir:display [ fhir:v "Muito doente; necessita de hospitalização e tratamento de suporte ativo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Very sick; hospitalization necessary; active supportive treatment necessary" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA29184-1" ] ;
+         fhir:display [ fhir:v "Moribundo; com progressão rápida de processos letais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Moribund; fatal processes progressing rapidly" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA9627-6" ] ;
+         fhir:display [ fhir:v "Morte" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Dead" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

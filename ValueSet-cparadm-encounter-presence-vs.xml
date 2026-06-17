@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cparadm-encounter-presence-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cparadm-encounter-presence-vs</b></p><a name="cparadm-encounter-presence-vs"> </a><a name="hccparadm-encounter-presence-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/1258986006">1258986006</a></td><td>Episódio cara a cara</td><td>Presencial</td><td>Face-to-face encounter (procedure)</td><td>Presencial</td></tr><tr><td><a href="http://snomed.info/id/185316007">185316007</a></td><td>Episódio indireto</td><td>Episódio não presencial</td><td>Indirect encounter (procedure)</td><td>Episódio não presencial</td></tr><tr><td><a href="http://snomed.info/id/1041000314104">1041000314104</a></td><td>Episódio sem presença do utente</td><td>Sem presença do utente</td><td>Encounter without patient present (procedure)</td><td>Sem presença do utente</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-encounter-presence-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.22"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPARADMEncounterPresenceVS"/>
+  <title value="CPARADM - Encounter Presence"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores EncounterPresence (CPARADM v3.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="1258986006"/>
+        <display value="Episódio cara a cara"/>
+        <designation>
+          <language value="en"/>
+          <value value="Face-to-face encounter (procedure)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Cara a cara"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Frente a frente"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Presencial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="185316007"/>
+        <display value="Episódio indireto"/>
+        <designation>
+          <language value="en"/>
+          <value value="Indirect encounter (procedure)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Não presencial"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Episódio não presencial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1041000314104"/>
+        <display value="Episódio sem presença do utente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Encounter without patient present (procedure)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Sem presença do utente"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

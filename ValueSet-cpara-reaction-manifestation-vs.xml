@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpara-reaction-manifestation-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpara-reaction-manifestation-vs</b></p><a name="cpara-reaction-manifestation-vs"> </a><a name="hccpara-reaction-manifestation-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/95361005">95361005</a></td><td>Mucosite</td><td>Inflamação das mucosas</td><td>Inflammatory disease of mucous membrane (disorder)</td><td>Inflamação das mucosas</td></tr><tr><td><a href="http://snomed.info/id/39579001">39579001</a></td><td>Anafilaxia</td><td>Reação anafilática</td><td>Anaphylaxis (disorder)</td><td>Reação anafilática</td></tr><tr><td><a href="http://snomed.info/id/41291007">41291007</a></td><td>Angioedema</td><td>Doença de Quincke</td><td>Angioedema (disorder)</td><td>Doença de Quincke</td></tr><tr><td><a href="http://snomed.info/id/43116000">43116000</a></td><td>Eczema</td><td/><td>Eczema (disorder)</td><td/></tr><tr><td><a href="http://snomed.info/id/24079001">24079001</a></td><td>Dermatite atópica</td><td>Dermatite alérgica</td><td>Atopic dermatitis (disorder)</td><td>Dermatite alérgica</td></tr><tr><td><a href="http://snomed.info/id/4386001">4386001</a></td><td>Broncospasmo</td><td>Pieira</td><td>Bronchospasm (finding)</td><td>Pieira</td></tr><tr><td><a href="http://snomed.info/id/267036007">267036007</a></td><td>Dispneia</td><td>Dificuldade respiratória</td><td>Dyspnea (finding)</td><td>Dificuldade respiratória</td></tr><tr><td><a href="http://snomed.info/id/195967001">195967001</a></td><td>Asma</td><td>Hiperatividade brônquica</td><td>Asthma (disorder)</td><td>Hiperatividade brônquica</td></tr><tr><td><a href="http://snomed.info/id/51599000">51599000</a></td><td>Edema da laringe</td><td>Edema da glote</td><td>Edema of larynx (disorder)</td><td>Edema da glote</td></tr><tr><td><a href="http://snomed.info/id/40275004">40275004</a></td><td>Dermatite de contacto</td><td>Eczema de contacto</td><td>Contact dermatitis (disorder)</td><td>Eczema de contacto</td></tr><tr><td><a href="http://snomed.info/id/418290006">418290006</a></td><td>Prurido</td><td/><td>Itching (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/247472004">247472004</a></td><td>Erupção urticariforme</td><td>Rash urticariforme</td><td>Wheal (finding)</td><td>Rash urticariforme</td></tr><tr><td><a href="http://snomed.info/id/1985008">1985008</a></td><td>Vómitos</td><td>Emese</td><td>Vomitus (substance)</td><td>Emese</td></tr><tr><td><a href="http://snomed.info/id/62315008">62315008</a></td><td>Diarreia</td><td>Fezes diarreicas</td><td>Diarrhea (finding)</td><td>Fezes diarreicas</td></tr><tr><td><a href="http://snomed.info/id/9826008">9826008</a></td><td>Conjuntivite</td><td>Inflamação da conjuntiva</td><td>Conjunctivitis (disorder)</td><td>Inflamação da conjuntiva</td></tr><tr><td><a href="http://snomed.info/id/70076002">70076002</a></td><td>Rinite</td><td>Inflamação da mucosa nasal</td><td>Rhinitis (disorder)</td><td>Inflamação da mucosa nasal</td></tr><tr><td><a href="http://snomed.info/id/3723001">3723001</a></td><td>Artrite</td><td>Inflamação nas articulações</td><td>Arthritis (disorder)</td><td>Inflamação nas articulações</td></tr><tr><td><a href="http://snomed.info/id/271759003">271759003</a></td><td>Exantema bolhoso</td><td>Bolhas</td><td>Bullous eruption (disorder)</td><td>Bolhas</td></tr><tr><td><a href="http://snomed.info/id/410430005">410430005</a></td><td>Paragem cardiorrespiratória</td><td>Paragem respiratória</td><td>Cardiorespiratory arrest (disorder)</td><td>Paragem respiratória</td></tr><tr><td><a href="http://snomed.info/id/49727002">49727002</a></td><td>Tosse</td><td>Tosse irritativa</td><td>Cough (finding)</td><td>Tosse irritativa</td></tr><tr><td><a href="http://snomed.info/id/702809001">702809001</a></td><td>Síndrome de DRESS</td><td/><td>Drug reaction with eosinophilia and systemic symptoms (disorder)</td><td/></tr><tr><td><a href="http://snomed.info/id/36715001">36715001</a></td><td>Eritema multiforme</td><td/><td>Erythema multiforme (disorder)</td><td/></tr><tr><td><a href="http://snomed.info/id/768962006">768962006</a></td><td>Síndrome de Lyell</td><td>Necrólise epidérmica tóxica</td><td>Lyell syndrome (disorder)</td><td>Necrólise epidérmica tóxica</td></tr><tr><td><a href="http://snomed.info/id/247471006">247471006</a></td><td>Exantema maculopapular</td><td>Rash maculopapular</td><td>Maculopapular eruption (disorder)</td><td>Rash maculopapular</td></tr><tr><td><a href="http://snomed.info/id/52845002">52845002</a></td><td>Nefrite</td><td/><td>Nephritis (disorder)</td><td/></tr><tr><td><a href="http://snomed.info/id/111209006">111209006</a></td><td>Dermatite fotossensível</td><td>Fotossensibilidade alérgica</td><td>Photoallergic dermatitis (disorder)</td><td>Fotossensibilidade alérgica</td></tr><tr><td><a href="http://snomed.info/id/73442001">73442001</a></td><td>Síndrome de Stevens- Johnson</td><td>Eritema multiforme major</td><td>Stevens-Johnson syndrome (disorder)</td><td>Eritema multiforme major</td></tr><tr><td><a href="http://snomed.info/id/31996006">31996006</a></td><td>Vasculite</td><td>Angeíte</td><td>Vasculitis (disorder)</td><td>Angeíte</td></tr><tr><td><a href="http://snomed.info/id/271594007">271594007</a></td><td>Síncope</td><td>Desmaio</td><td>Syncope (finding)</td><td>Desmaio</td></tr><tr><td><a href="http://snomed.info/id/698247007">698247007</a></td><td>Arritmia cardíaca</td><td>Alterações do ritmo cardíaco</td><td>Cardiac arrhythmia (disorder)</td><td>Alterações do ritmo cardíaco</td></tr><tr><td><a href="http://snomed.info/id/162290004">162290004</a></td><td>Olho seco</td><td/><td>Dry eyes (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/418363000">418363000</a></td><td>Prurido cutâneo</td><td/><td>Itching of skin (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/422587007">422587007</a></td><td>Náusea</td><td>Náuseas</td><td>Nausea (finding)</td><td>Náuseas</td></tr><tr><td><a href="http://snomed.info/id/359610006">359610006</a></td><td>Hiperémia ocular</td><td>Olho vermelho</td><td>Ocular hyperemia (disorder)</td><td>Olho vermelho</td></tr><tr><td><a href="http://snomed.info/id/781682005">781682005</a></td><td>Hiperémia ocular</td><td>Olho vermelho</td><td>Hyperemia of eye (finding)</td><td>Olho vermelho</td></tr><tr><td><a href="http://snomed.info/id/271757001">271757001</a></td><td>Exantema papular</td><td>Rash papular</td><td>Papular eruption (disorder)</td><td>Rash papular</td></tr><tr><td><a href="http://snomed.info/id/91175000">91175000</a></td><td>Convulsões</td><td/><td>Seizure (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/76067001">76067001</a></td><td>Crise esternutatória</td><td>Espirros</td><td>Sneezing (finding)</td><td>Espirros</td></tr><tr><td><a href="http://snomed.info/id/23924001">23924001</a></td><td>Opressão torácica</td><td>Dor torácica</td><td>Tight chest (finding)</td><td>Dor torácica</td></tr><tr><td><a href="http://snomed.info/id/126485001">126485001</a></td><td>Urticária</td><td/><td>Urticaria (disorder)</td><td/></tr><tr><td><a href="http://snomed.info/id/422400008">422400008</a></td><td>Vómitos</td><td>Emese</td><td>Vomiting (disorder)</td><td>Emese</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpara-reaction-manifestation-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.90"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPARAReactionManifestationVS"/>
+  <title value="CPARA - Reaction Manifestation"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-12-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores ReactionManifestation (CPARA v5.1.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="95361005"/>
+        <display value="Mucosite"/>
+        <designation>
+          <language value="en"/>
+          <value value="Inflammatory disease of mucous membrane (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Inflamação das mucosas"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="39579001"/>
+        <display value="Anafilaxia"/>
+        <designation>
+          <language value="en"/>
+          <value value="Anaphylaxis (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Reação anafilática"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41291007"/>
+        <display value="Angioedema"/>
+        <designation>
+          <language value="en"/>
+          <value value="Angioedema (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Edema angioneurótico"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Doença de Quincke"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="43116000"/>
+        <display value="Eczema"/>
+        <designation>
+          <language value="en"/>
+          <value value="Eczema (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="24079001"/>
+        <display value="Dermatite atópica"/>
+        <designation>
+          <language value="en"/>
+          <value value="Atopic dermatitis (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Dermatite alérgica"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="4386001"/>
+        <display value="Broncospasmo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Bronchospasm (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Pieira"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="267036007"/>
+        <display value="Dispneia"/>
+        <designation>
+          <language value="en"/>
+          <value value="Dyspnea (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Dificuldade respiratória"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="195967001"/>
+        <display value="Asma"/>
+        <designation>
+          <language value="en"/>
+          <value value="Asthma (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Hiperatividade brônquica"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="51599000"/>
+        <display value="Edema da laringe"/>
+        <designation>
+          <language value="en"/>
+          <value value="Edema of larynx (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Edema da glote"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="40275004"/>
+        <display value="Dermatite de contacto"/>
+        <designation>
+          <language value="en"/>
+          <value value="Contact dermatitis (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Eczema de contacto"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="418290006"/>
+        <display value="Prurido"/>
+        <designation>
+          <language value="en"/>
+          <value value="Itching (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="247472004"/>
+        <display value="Erupção urticariforme"/>
+        <designation>
+          <language value="en"/>
+          <value value="Wheal (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Rash urticariforme"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1985008"/>
+        <display value="Vómitos"/>
+        <designation>
+          <language value="en"/>
+          <value value="Vomitus (substance)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Emese"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="62315008"/>
+        <display value="Diarreia"/>
+        <designation>
+          <language value="en"/>
+          <value value="Diarrhea (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Fezes diarreicas"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9826008"/>
+        <display value="Conjuntivite"/>
+        <designation>
+          <language value="en"/>
+          <value value="Conjunctivitis (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Inflamação da conjuntiva"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="70076002"/>
+        <display value="Rinite"/>
+        <designation>
+          <language value="en"/>
+          <value value="Rhinitis (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Congestão nasal"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Inflamação da mucosa nasal"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="3723001"/>
+        <display value="Artrite"/>
+        <designation>
+          <language value="en"/>
+          <value value="Arthritis (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Dores nas articulações"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Inflamação nas articulações"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="271759003"/>
+        <display value="Exantema bolhoso"/>
+        <designation>
+          <language value="en"/>
+          <value value="Bullous eruption (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Bolhas"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="410430005"/>
+        <display value="Paragem cardiorrespiratória"/>
+        <designation>
+          <language value="en"/>
+          <value value="Cardiorespiratory arrest (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Paragem respiratória"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="49727002"/>
+        <display value="Tosse"/>
+        <designation>
+          <language value="en"/>
+          <value value="Cough (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Tosse irritativa"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="702809001"/>
+        <display value="Síndrome de DRESS"/>
+        <designation>
+          <language value="en"/>
+          <value value="Drug reaction with eosinophilia and systemic symptoms (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="36715001"/>
+        <display value="Eritema multiforme"/>
+        <designation>
+          <language value="en"/>
+          <value value="Erythema multiforme (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="768962006"/>
+        <display value="Síndrome de Lyell"/>
+        <designation>
+          <language value="en"/>
+          <value value="Lyell syndrome (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Necrólise epidérmica tóxica"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="247471006"/>
+        <display value="Exantema maculopapular"/>
+        <designation>
+          <language value="en"/>
+          <value value="Maculopapular eruption (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Rash maculopapular"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="52845002"/>
+        <display value="Nefrite"/>
+        <designation>
+          <language value="en"/>
+          <value value="Nephritis (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="111209006"/>
+        <display value="Dermatite fotossensível"/>
+        <designation>
+          <language value="en"/>
+          <value value="Photoallergic dermatitis (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Fotossensibilidade alérgica"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="73442001"/>
+        <display value="Síndrome de Stevens- Johnson"/>
+        <designation>
+          <language value="en"/>
+          <value value="Stevens-Johnson syndrome (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Eritema multiforme major"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="31996006"/>
+        <display value="Vasculite"/>
+        <designation>
+          <language value="en"/>
+          <value value="Vasculitis (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Angeíte"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="271594007"/>
+        <display value="Síncope"/>
+        <designation>
+          <language value="en"/>
+          <value value="Syncope (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Desmaio"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="698247007"/>
+        <display value="Arritmia cardíaca"/>
+        <designation>
+          <language value="en"/>
+          <value value="Cardiac arrhythmia (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Alterações do ritmo cardíaco"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="162290004"/>
+        <display value="Olho seco"/>
+        <designation>
+          <language value="en"/>
+          <value value="Dry eyes (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="418363000"/>
+        <display value="Prurido cutâneo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Itching of skin (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="422587007"/>
+        <display value="Náusea"/>
+        <designation>
+          <language value="en"/>
+          <value value="Nausea (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Enjoo"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Náuseas"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="359610006"/>
+        <display value="Hiperémia ocular"/>
+        <designation>
+          <language value="en"/>
+          <value value="Ocular hyperemia (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Olho vermelho"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="781682005"/>
+        <display value="Hiperémia ocular"/>
+        <designation>
+          <language value="en"/>
+          <value value="Hyperemia of eye (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Olho vermelho"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="271757001"/>
+        <display value="Exantema papular"/>
+        <designation>
+          <language value="en"/>
+          <value value="Papular eruption (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Rash papular"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="91175000"/>
+        <display value="Convulsões"/>
+        <designation>
+          <language value="en"/>
+          <value value="Seizure (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="76067001"/>
+        <display value="Crise esternutatória"/>
+        <designation>
+          <language value="en"/>
+          <value value="Sneezing (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Espirros"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="23924001"/>
+        <display value="Opressão torácica"/>
+        <designation>
+          <language value="en"/>
+          <value value="Tight chest (finding)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Dor torácica"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="126485001"/>
+        <display value="Urticária"/>
+        <designation>
+          <language value="en"/>
+          <value value="Urticaria (disorder)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="422400008"/>
+        <display value="Vómitos"/>
+        <designation>
+          <language value="en"/>
+          <value value="Vomiting (disorder)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Emese"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

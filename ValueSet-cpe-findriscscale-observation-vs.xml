@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-findriscscale-observation-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-findriscscale-observation-vs</b></p><a name="cpe-findriscscale-observation-vs"> </a><a name="hccpe-findriscscale-observation-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="https://loinc.org/88860-2/">88860-2</a></td><td>Idade</td><td/><td>Age</td><td/></tr><tr><td><a href="https://loinc.org/97057-4/">97057-4</a></td><td>Índice de Massa Corporal</td><td/><td>Body mass index</td><td/></tr><tr><td><a href="https://loinc.org/97058-2/">97058-2</a></td><td>Circunferência da cintura medida abaixo das costelas (geralmente ao nível do umbigo)</td><td>Medida da cintura (ao nível do umbigo)</td><td>Waist circumference measured below the ribs (usually at the level of the navel)</td><td>Medida da cintura (ao nível do umbigo)</td></tr><tr><td><a href="https://loinc.org/97059-0/">97059-0</a></td><td>Costuma praticar diariamente pelo menos 30 minutos de atividade física no trabalho e/ou nos tempos livres (incluindo a atividade diária normal)?</td><td>Pratica, diariamente, atividade física, pelo menos durante 30 minutos, no trabalho ou durante o tempo livre (incluindo as atividades da vida diária)?</td><td>Do you usually have daily at least 30 min of physical activity at work and/or during leisure time (including normal daily activity)?</td><td>Pratica, diariamente, atividade física, pelo menos durante 30 minutos, no trabalho ou durante o tempo livre (incluindo as atividades da vida diária)?</td></tr><tr><td><a href="https://loinc.org/97060-8/">97060-8</a></td><td>Com que frequência come legumes, fruta ou bagas?</td><td>Com que regularidade come vegetais e/ou fruta?</td><td>How often do you eat vegetables, fruit, or berries</td><td>Com que regularidade come vegetais e/ou fruta?</td></tr><tr><td><a href="https://loinc.org/58298-1/">58298-1</a></td><td>Já tomou medicação anti-hipertensiva regularmente?</td><td>Toma regularmente alguns medicamentos para a Hipertensão Arterial?</td><td>Have you ever taken anti-hypertensive medication regularly?</td><td>Toma regularmente alguns medicamentos para a Hipertensão Arterial?</td></tr><tr><td><a href="https://loinc.org/97062-4/">97062-4</a></td><td>Alguma vez lhe foi detectado um nível elevado de glucose no sangue (por exemplo, num exame de saúde, durante uma doença, durante a gravidez)?</td><td>Alguma vez teve açucar elevado no sangue (por exemplo: num exame de saúde, durante um período de doença ou durante a gravidez)?</td><td>Have you ever been found to have high blood glucose (e.g. in a health examination, during an illness, during pregnancy)?</td><td>Alguma vez teve açucar elevado no sangue (por exemplo: num exame de saúde, durante um período de doença ou durante a gravidez)?</td></tr><tr><td><a href="https://loinc.org/97063-2/">97063-2</a></td><td>Tem algum membro da família próximo ou outros familiares a quem foi diagnosticado diabetes (Tipo 1 ou Tipo 2)?</td><td/><td>Have any of the members of your immediate family or other relatives been diagnosed with diabetes (type 1 or type 2)?</td><td/></tr><tr><td><a href="https://loinc.org/97064-0/">97064-0</a></td><td>Pontuação de risco total FINDRISC</td><td>Pontuação</td><td>Total risk score FINDRISC</td><td>Pontuação</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-findriscscale-observation-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.128"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPEFINDRISCScaleObservationVS"/>
+  <title value="CPE - FINDRISC Scale Observation"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores FINDRISCScaleObservation (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="88860-2"/>
+        <display value="Idade"/>
+        <designation>
+          <language value="en"/>
+          <value value="Age"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="97057-4"/>
+        <display value="Índice de Massa Corporal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Body mass index"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="97058-2"/>
+        <display value="Circunferência da cintura medida abaixo das costelas (geralmente ao nível do umbigo)"/>
+        <designation>
+          <language value="en"/>
+          <value value="Waist circumference measured below the ribs (usually at the level of the navel)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Medida da cintura (ao nível do umbigo)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="97059-0"/>
+        <display value="Costuma praticar diariamente pelo menos 30 minutos de atividade física no trabalho e/ou nos tempos livres (incluindo a atividade diária normal)?"/>
+        <designation>
+          <language value="en"/>
+          <value value="Do you usually have daily at least 30 min of physical activity at work and/or during leisure time (including normal daily activity)?"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Pratica, diariamente, atividade física, pelo menos durante 30 minutos, no trabalho ou durante o tempo livre (incluindo as atividades da vida diária)?"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="97060-8"/>
+        <display value="Com que frequência come legumes, fruta ou bagas?"/>
+        <designation>
+          <language value="en"/>
+          <value value="How often do you eat vegetables, fruit, or berries"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Com que regularidade come vegetais e/ou fruta?"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="58298-1"/>
+        <display value="Já tomou medicação anti-hipertensiva regularmente?"/>
+        <designation>
+          <language value="en"/>
+          <value value="Have you ever taken anti-hypertensive medication regularly?"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Toma regularmente alguns medicamentos para a Hipertensão Arterial?"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="97062-4"/>
+        <display value="Alguma vez lhe foi detectado um nível elevado de glucose no sangue (por exemplo, num exame de saúde, durante uma doença, durante a gravidez)?"/>
+        <designation>
+          <language value="en"/>
+          <value value="Have you ever been found to have high blood glucose (e.g. in a health examination, during an illness, during pregnancy)?"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Alguma vez teve açucar elevado no sangue (por exemplo: num exame de saúde, durante um período de doença ou durante a gravidez)?"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="97063-2"/>
+        <display value="Tem algum membro da família próximo ou outros familiares a quem foi diagnosticado diabetes (Tipo 1 ou Tipo 2)?"/>
+        <designation>
+          <language value="en"/>
+          <value value="Have any of the members of your immediate family or other relatives been diagnosed with diabetes (type 1 or type 2)?"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="97064-0"/>
+        <display value="Pontuação de risco total FINDRISC"/>
+        <designation>
+          <language value="en"/>
+          <value value="Total risk score FINDRISC"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Pontuação"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

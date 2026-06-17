@@ -1,0 +1,225 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpe-rosenberg-scale-observation-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-rosenberg-scale-observation-vs</b></p><a name=\"cpe-rosenberg-scale-observation-vs\"> </a><a name=\"hccpe-rosenberg-scale-observation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/66843-4/\">66843-4</a></td><td>Sinto que sou uma pessoa digna de apreço, pelo menos tanto quanto os outros</td><td>Sinto que sou uma pessoa de valor</td><td>I feel that I'm a person of worth, at least on an equal plane with others.</td><td>Sinto que sou uma pessoa de valor</td></tr><tr><td><a href=\"https://loinc.org/66844-2/\">66844-2</a></td><td>Sinto que tenho qualidades positivas</td><td>Sinto que tenho algumas boas qualidades</td><td>I feel that I have a number of good qualities.</td><td>Sinto que tenho algumas boas qualidades</td></tr><tr><td><a href=\"https://loinc.org/66845-9/\">66845-9</a></td><td>Geralmente, sou levado a pensar que sou um fracassado/a</td><td>De um modo geral sinto-me um fracassado</td><td>All in all, I am inclined to feel that I am a failure.</td><td>De um modo geral sinto-me um fracassado</td></tr><tr><td><a href=\"https://loinc.org/66846-7/\">66846-7</a></td><td>Eu sou capaz de fazer as coisas tão bem quanto a maioria das pessoas</td><td>Sou capaz de fazer coisas tão bem como a maioria das outras pessoas</td><td>I am able to do things as well as most other people.</td><td>Sou capaz de fazer coisas tão bem como a maioria das outras pessoas</td></tr><tr><td><a href=\"https://loinc.org/66847-5/\">66847-5</a></td><td>Sinto que eu não tenho muito do que me orgulhar</td><td>Sinto que não tenho motivos para me orgulhar de mim próprio</td><td>I feel I do not have much to be proud of.</td><td>Sinto que não tenho motivos para me orgulhar de mim próprio</td></tr><tr><td><a href=\"https://loinc.org/66848-3/\">66848-3</a></td><td>Tenho uma atitude positiva em relação a mim mesmo/a</td><td>Tenho uma boa opinião de mim próprio</td><td>I take a positive attitude toward myself.</td><td>Tenho uma boa opinião de mim próprio</td></tr><tr><td><a href=\"https://loinc.org/66849-1/\">66849-1</a></td><td>No geral, estou satisfeito/a comigo mesmo/a</td><td>No geral, estou satisfeito comigo próprio</td><td>On the whole, I am satisfied with myself.</td><td>No geral, estou satisfeito comigo próprio</td></tr><tr><td><a href=\"https://loinc.org/66850-9/\">66850-9</a></td><td>Gostaria de ter mais respeito por mim mesmo/a</td><td>Gostaria de ter mais respeito por mim próprio</td><td>I wish I could have more respect for myself.</td><td>Gostaria de ter mais respeito por mim próprio</td></tr><tr><td><a href=\"https://loinc.org/66851-7/\">66851-7</a></td><td>Às vezes sinto-me inútil</td><td>Por vezes sinto que sou um inútil</td><td>I certainly feel useless at times.</td><td>Por vezes sinto que sou um inútil</td></tr><tr><td><a href=\"https://loinc.org/66852-5/\">66852-5</a></td><td>Às vezes eu penso que não sirvo para nada</td><td>Por vezes penso que não presto</td><td>At times I think I am no good at all.</td><td>Por vezes penso que não presto</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-rosenberg-scale-observation-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.156"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPERosenbergScaleObservationVS",
+  "title" : "CPE - Rosenberg Scale Observation",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores RosenbergScaleObservation (CPE v2.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "66843-4",
+        "display" : "Sinto que sou uma pessoa digna de apreço, pelo menos tanto quanto os outros",
+        "designation" : [{
+          "language" : "en",
+          "value" : "I feel that I'm a person of worth, at least on an equal plane with others."
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Sinto que sou uma pessoa de valor"
+        }]
+      },
+      {
+        "code" : "66844-2",
+        "display" : "Sinto que tenho qualidades positivas",
+        "designation" : [{
+          "language" : "en",
+          "value" : "I feel that I have a number of good qualities."
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Sinto que tenho algumas boas qualidades"
+        }]
+      },
+      {
+        "code" : "66845-9",
+        "display" : "Geralmente, sou levado a pensar que sou um fracassado/a",
+        "designation" : [{
+          "language" : "en",
+          "value" : "All in all, I am inclined to feel that I am a failure."
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "De um modo geral sinto-me um fracassado"
+        }]
+      },
+      {
+        "code" : "66846-7",
+        "display" : "Eu sou capaz de fazer as coisas tão bem quanto a maioria das pessoas",
+        "designation" : [{
+          "language" : "en",
+          "value" : "I am able to do things as well as most other people."
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Sou capaz de fazer coisas tão bem como a maioria das outras pessoas"
+        }]
+      },
+      {
+        "code" : "66847-5",
+        "display" : "Sinto que eu não tenho muito do que me orgulhar",
+        "designation" : [{
+          "language" : "en",
+          "value" : "I feel I do not have much to be proud of."
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Sinto que não tenho motivos para me orgulhar de mim próprio"
+        }]
+      },
+      {
+        "code" : "66848-3",
+        "display" : "Tenho uma atitude positiva em relação a mim mesmo/a",
+        "designation" : [{
+          "language" : "en",
+          "value" : "I take a positive attitude toward myself."
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Tenho uma boa opinião de mim próprio"
+        }]
+      },
+      {
+        "code" : "66849-1",
+        "display" : "No geral, estou satisfeito/a comigo mesmo/a",
+        "designation" : [{
+          "language" : "en",
+          "value" : "On the whole, I am satisfied with myself."
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "No geral, estou satisfeito comigo próprio"
+        }]
+      },
+      {
+        "code" : "66850-9",
+        "display" : "Gostaria de ter mais respeito por mim mesmo/a",
+        "designation" : [{
+          "language" : "en",
+          "value" : "I wish I could have more respect for myself."
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Gostaria de ter mais respeito por mim próprio"
+        }]
+      },
+      {
+        "code" : "66851-7",
+        "display" : "Às vezes sinto-me inútil",
+        "designation" : [{
+          "language" : "en",
+          "value" : "I certainly feel useless at times."
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Por vezes sinto que sou um inútil"
+        }]
+      },
+      {
+        "code" : "66852-5",
+        "display" : "Às vezes eu penso que não sirvo para nada",
+        "designation" : [{
+          "language" : "en",
+          "value" : "At times I think I am no good at all."
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Por vezes penso que não presto"
+        }]
+      }]
+    }]
+  }
+}

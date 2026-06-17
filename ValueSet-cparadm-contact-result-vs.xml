@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cparadm-contact-result-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cparadm-contact-result-vs</b></p><a name="cparadm-contact-result-vs"> </a><a name="hccparadm-contact-result-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/1531000314101">1531000314101</a></td><td>Utente incontactável</td><td/><td>Patient unreachable (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/385645004">385645004</a></td><td>Aceite</td><td/><td>Accepted (qualifier value)</td><td/></tr><tr><td><a href="http://snomed.info/id/247755007">247755007</a></td><td>Desistência</td><td/><td>Withdrawn (finding)</td><td/></tr><tr><td><a href="http://snomed.info/id/443390004">443390004</a></td><td>Recusado</td><td>Rejeitado</td><td>Declined (qualifier value)</td><td>Rejeitado</td></tr><tr><td><a href="http://snomed.info/id/419733004">419733004</a></td><td>Utente notificado</td><td/><td>Patient notified (situation)</td><td/></tr><tr><td><a href="http://snomed.info/id/1661000314107">1661000314107</a></td><td>Enviado</td><td>Enviou</td><td>Send (qualifier value)</td><td>Enviou</td></tr><tr><td><a href="http://snomed.info/id/1671000314104">1671000314104</a></td><td>Não enviado</td><td>Não enviou</td><td>Did not send (qualifier value)</td><td>Não enviou</td></tr><tr><td><a href="http://snomed.info/id/1681000314101">1681000314101</a></td><td>Atualizado</td><td>Atualizou</td><td>Updated (qualifier value)</td><td>Atualizou</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-contact-result-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.172"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPARADMContactResultVS"/>
+  <title value="CPARADM - Contact Result"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores ContactResult (CPARADM v3.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="1531000314101"/>
+        <display value="Utente incontactável"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient unreachable (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="385645004"/>
+        <display value="Aceite"/>
+        <designation>
+          <language value="en"/>
+          <value value="Accepted (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="247755007"/>
+        <display value="Desistência"/>
+        <designation>
+          <language value="en"/>
+          <value value="Withdrawn (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="443390004"/>
+        <display value="Recusado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Declined (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Rejeitado"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="419733004"/>
+        <display value="Utente notificado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient notified (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1661000314107"/>
+        <display value="Enviado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Send (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Enviou"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1671000314104"/>
+        <display value="Não enviado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Did not send (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Não enviou"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1681000314101"/>
+        <display value="Atualizado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Updated (qualifier value)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Atualizou"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

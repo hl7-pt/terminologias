@@ -1,0 +1,355 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpe-apgar-score-result-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-apgar-score-result-vs</b></p><a name=\"cpe-apgar-score-result-vs\"> </a><a name=\"hccpe-apgar-score-result-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/LA6722-8/\">LA6722-8</a></td><td>Cianose ou palidez</td><td>Cianótico/pálido</td><td>The baby's whole body is completely bluish-gray or pale</td><td>Cianótico/pálido</td></tr><tr><td><a href=\"https://loinc.org/LA6723-6/\">LA6723-6</a></td><td>Cianose nas extremidades</td><td>Cianose de extremidades</td><td>Good color in body with bluish hands or feet</td><td>Cianose de extremidades</td></tr><tr><td><a href=\"https://loinc.org/LA6724-4/\">LA6724-4</a></td><td>Sem cianose</td><td>Rosado</td><td>Good color all over</td><td>Rosado</td></tr><tr><td><a href=\"https://loinc.org/LA6716-0/\">LA6716-0</a></td><td>Sem pulso</td><td>Ausente</td><td>No heart rate</td><td>Ausente</td></tr><tr><td><a href=\"https://loinc.org/LA6717-8/\">LA6717-8</a></td><td>Menos de 100 batimentos por minuto</td><td>&lt; 100 batimentos por minuto</td><td>Fewer than 100 beats per minute</td><td>&lt; 100 batimentos por minuto</td></tr><tr><td><a href=\"https://loinc.org/LA6718-6/\">LA6718-6</a></td><td>Pelo menos 100 batimentos por minuto</td><td>&gt; 100 min</td><td>At least 100 beats per minute</td><td>&gt; 100 min</td></tr><tr><td><a href=\"https://loinc.org/LA6719-4/\">LA6719-4</a></td><td>Sem resposta à sucção</td><td>Nenhuma resposta à sucção</td><td>No response to airways being suctioned</td><td>Nenhuma resposta à sucção</td></tr><tr><td><a href=\"https://loinc.org/LA6720-2/\">LA6720-2</a></td><td>Careta durante a sucção</td><td>Algum movimento</td><td>Grimace during suctioning</td><td>Algum movimento</td></tr><tr><td><a href=\"https://loinc.org/LA6721-0/\">LA6721-0</a></td><td>Chorro vigoroso, tosse ou espirro durante a sucção</td><td>Espirros/choro</td><td>Grimace and pulling away, cough, or sneeze during suctioning</td><td>Espirros/choro</td></tr><tr><td><a href=\"https://loinc.org/LA6713-7/\">LA6713-7</a></td><td>Frágil; nenhum movimento</td><td>Nenhuma ou pouca atividade</td><td>Limp; no movement</td><td>Nenhuma ou pouca atividade</td></tr><tr><td><a href=\"https://loinc.org/LA6714-5/\">LA6714-5</a></td><td>Alguma flexão de braços e pernas</td><td>Alguns movimentos nas extremidades</td><td>Some flexion of arms and legs</td><td>Alguns movimentos nas extremidades</td></tr><tr><td><a href=\"https://loinc.org/LA6715-2/\">LA6715-2</a></td><td>Movimento ativo</td><td>Muita atividade</td><td>Active motion</td><td>Muita atividade</td></tr><tr><td><a href=\"https://loinc.org/LA6725-1/\">LA6725-1</a></td><td>Não respira</td><td>Ausente</td><td>Not breathing</td><td>Ausente</td></tr><tr><td><a href=\"https://loinc.org/LA6726-9/\">LA6726-9</a></td><td>Choro fraco; pode parecer choramingo, respiração lenta ou irregular</td><td>Fraca, irregular</td><td>Weak cry; may sound like whimpering, slow or irregular breathing</td><td>Fraca, irregular</td></tr><tr><td><a href=\"https://loinc.org/LA6727-7/\">LA6727-7</a></td><td>Choro vigoroso; respiração lenta ou irregular</td><td>Forte/choro</td><td>Good, strong cry; normal rate and effort of breathing</td><td>Forte/choro</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-apgar-score-result-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.116"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPEApgarScoreResultVS",
+  "title" : "CPE - Apgar Score Result",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores ApgarScoreResult (CPE v2.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA6722-8",
+        "display" : "Cianose ou palidez",
+        "designation" : [{
+          "language" : "en",
+          "value" : "The baby's whole body is completely bluish-gray or pale"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Cianótico/pálido"
+        }]
+      },
+      {
+        "code" : "LA6723-6",
+        "display" : "Cianose nas extremidades",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Good color in body with bluish hands or feet"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Cianose de extremidades"
+        }]
+      },
+      {
+        "code" : "LA6724-4",
+        "display" : "Sem cianose",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Good color all over"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Rosado"
+        }]
+      },
+      {
+        "code" : "LA6716-0",
+        "display" : "Sem pulso",
+        "designation" : [{
+          "language" : "en",
+          "value" : "No heart rate"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Ausente"
+        }]
+      },
+      {
+        "code" : "LA6717-8",
+        "display" : "Menos de 100 batimentos por minuto",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Fewer than 100 beats per minute"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "< 100 min"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "< 100 batimentos por minuto"
+        }]
+      },
+      {
+        "code" : "LA6718-6",
+        "display" : "Pelo menos 100 batimentos por minuto",
+        "designation" : [{
+          "language" : "en",
+          "value" : "At least 100 beats per minute"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "> 100 min"
+        }]
+      },
+      {
+        "code" : "LA6719-4",
+        "display" : "Sem resposta à sucção",
+        "designation" : [{
+          "language" : "en",
+          "value" : "No response to airways being suctioned"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Ausente"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Nenhuma resposta à sucção"
+        }]
+      },
+      {
+        "code" : "LA6720-2",
+        "display" : "Careta durante a sucção",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Grimace during suctioning"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Algum movimento"
+        }]
+      },
+      {
+        "code" : "LA6721-0",
+        "display" : "Chorro vigoroso, tosse ou espirro durante a sucção",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Grimace and pulling away, cough, or sneeze during suctioning"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Espirros/choro"
+        }]
+      },
+      {
+        "code" : "LA6713-7",
+        "display" : "Frágil; nenhum movimento",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Limp; no movement"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Flácido"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Nenhuma ou pouca atividade"
+        }]
+      },
+      {
+        "code" : "LA6714-5",
+        "display" : "Alguma flexão de braços e pernas",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Some flexion of arms and legs"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Flexão de pernas e braços"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Alguns movimentos nas extremidades"
+        }]
+      },
+      {
+        "code" : "LA6715-2",
+        "display" : "Movimento ativo",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Active motion"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Movimento ativo/boa flexão"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Muita atividade"
+        }]
+      },
+      {
+        "code" : "LA6725-1",
+        "display" : "Não respira",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Not breathing"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Ausente"
+        }]
+      },
+      {
+        "code" : "LA6726-9",
+        "display" : "Choro fraco; pode parecer choramingo, respiração lenta ou irregular",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Weak cry; may sound like whimpering, slow or irregular breathing"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Fraca, irregular"
+        }]
+      },
+      {
+        "code" : "LA6727-7",
+        "display" : "Choro vigoroso; respiração lenta ou irregular",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Good, strong cry; normal rate and effort of breathing"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Forte/choro"
+        }]
+      }]
+    }]
+  }
+}

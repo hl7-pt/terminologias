@@ -1,0 +1,215 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cparadm-patient-transfer-reason-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cparadm-patient-transfer-reason-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cparadm-patient-transfer-reason-vs</b></p><a name=\"cparadm-patient-transfer-reason-vs\"> </a><a name=\"hccparadm-patient-transfer-reason-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/1451000314108\">1451000314108</a></td><td>Especialidade médica não disponível</td><td/><td>Medical specialty not available (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1461000314105\">1461000314105</a></td><td>Especialidade médica não existente na entidade de saúde</td><td/><td>Medical specialty does not exist in heathcare facility (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/266756008\">266756008</a></td><td>Cuidados médicos não disponíveis</td><td>Tratamento não disponível</td><td>Medical care unavailable (situation)</td><td>Tratamento não disponível</td></tr><tr><td><a href=\"http://snomed.info/id/1471000314102\">1471000314102</a></td><td>Tratamento inexistente na entidade de saúde</td><td/><td>Treatment does not exist in healthcare facility (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/397807004\">397807004</a></td><td>Equipamento não disponível</td><td>Equipamento indisponível</td><td>Equipment not available (finding)</td><td>Equipamento indisponível</td></tr><tr><td><a href=\"http://snomed.info/id/1721000314109\">1721000314109</a></td><td>Equipamento não existente na entidade de saúde</td><td>Equipamento inexistente</td><td>Equipment does not exist in healthcare facility (finding)</td><td>Equipamento inexistente</td></tr><tr><td><a href=\"http://snomed.info/id/1341000314102\">1341000314102</a></td><td>Regresso do utente ao estabelecimento de saúde de proveniência</td><td>Regresso ao hospital de origem</td><td>Patient returning to healthcare facility of provenance (finding)</td><td>Regresso ao hospital de origem</td></tr><tr><td><a href=\"http://snomed.info/id/103321005\">103321005</a></td><td>Decisão clínica</td><td>A pedido do médico</td><td>Request by physician (contextual qualifier) (qualifier value)</td><td>A pedido do médico</td></tr><tr><td><a href=\"http://snomed.info/id/1363369008\">1363369008</a></td><td>Falta de vaga</td><td/><td>Inpatient bed not available (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/921000314105\">921000314105</a></td><td>Necessidade de cuidados diferenciados</td><td/><td>Need for differentiated care assistance (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/951000314100\">951000314100</a></td><td>Utente fora da área de abrangência</td><td/><td>Patient from outside hospital referral area (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1121000314108\">1121000314108</a></td><td>Falta de vaga para recém-nascido</td><td/><td>Newborn infant bed not available (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1131000314106\">1131000314106</a></td><td>Falta de vaga para grávida</td><td/><td>Pregnant inpatient bed not available (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1081000314106\">1081000314106</a></td><td>Necessidade de cuidados diferenciados devido a razões clínicas maternas</td><td/><td>Need for differentiated care assistance due to maternal clinical reasons (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1091000314109\">1091000314109</a></td><td>Necessidade de cuidados diferenciados devido a razões clínicas fetais</td><td/><td>Need for differentiated care assistance due to fetal clinical reasons (finding)</td><td/></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-patient-transfer-reason-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.175" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPARADMPatientTransferReasonVS"] ; # 
+  fhir:title [ fhir:v "CPARADM - Patient Transfer Reason"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores PatientTransferReason (CPARADM v3.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "1451000314108" ] ;
+         fhir:display [ fhir:v "Especialidade médica não disponível" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Medical specialty not available (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1461000314105" ] ;
+         fhir:display [ fhir:v "Especialidade médica não existente na entidade de saúde" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Medical specialty does not exist in heathcare facility (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "266756008" ] ;
+         fhir:display [ fhir:v "Cuidados médicos não disponíveis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Medical care unavailable (situation)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Tratamento não disponível" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1471000314102" ] ;
+         fhir:display [ fhir:v "Tratamento inexistente na entidade de saúde" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Treatment does not exist in healthcare facility (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "397807004" ] ;
+         fhir:display [ fhir:v "Equipamento não disponível" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Equipment not available (finding)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Equipamento indisponível" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1721000314109" ] ;
+         fhir:display [ fhir:v "Equipamento não existente na entidade de saúde" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Equipment does not exist in healthcare facility (finding)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Equipamento inexistente" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1341000314102" ] ;
+         fhir:display [ fhir:v "Regresso do utente ao estabelecimento de saúde de proveniência" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Patient returning to healthcare facility of provenance (finding)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Regresso ao hospital de origem" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "103321005" ] ;
+         fhir:display [ fhir:v "Decisão clínica" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Request by physician (contextual qualifier) (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "A pedido do médico" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1363369008" ] ;
+         fhir:display [ fhir:v "Falta de vaga" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Inpatient bed not available (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "921000314105" ] ;
+         fhir:display [ fhir:v "Necessidade de cuidados diferenciados" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Need for differentiated care assistance (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "951000314100" ] ;
+         fhir:display [ fhir:v "Utente fora da área de abrangência" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Patient from outside hospital referral area (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1121000314108" ] ;
+         fhir:display [ fhir:v "Falta de vaga para recém-nascido" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Newborn infant bed not available (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1131000314106" ] ;
+         fhir:display [ fhir:v "Falta de vaga para grávida" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Pregnant inpatient bed not available (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1081000314106" ] ;
+         fhir:display [ fhir:v "Necessidade de cuidados diferenciados devido a razões clínicas maternas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Need for differentiated care assistance due to maternal clinical reasons (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1091000314109" ] ;
+         fhir:display [ fhir:v "Necessidade de cuidados diferenciados devido a razões clínicas fetais" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Need for differentiated care assistance due to fetal clinical reasons (finding)" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,104 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/CodeSystem/cparadm-cefrlevels-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cparadm-cefrlevels-cs"] ; # 
+  fhir:language [ fhir:v "pt"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xml:lang=\"pt\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem cparadm-cefrlevels-cs</b></p><a name=\"cparadm-cefrlevels-cs\"> </a><a name=\"hccparadm-cefrlevels-cs\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt</p></div><p>Este case-sensitive sistema de código <code>https://hl7.pt/fhir/CodeSystem/cparadm-cefrlevels-cs</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>English (English, en)</b></td></tr><tr><td style=\"white-space:nowrap\">A1<a name=\"cparadm-cefrlevels-cs-A1\"> </a></td><td>Iniciante</td><td>É capaz de compreender e utilizar expressões familiares e correntes assim como enunciados simples que visam satisfazer necessidades imediatas. É capaz de apresentar-se ou apresentar alguém e colocar questões ao seu interlocutor sobre assuntos como, por exemplo, o local onde vive, as suas relações, o que lhe pertence, etc. É capaz de responder ao mesmo tipo de questões. É capaz de comunicar de forma simples desde que o seu interlocutor fale clara e pausadamente e se mostre colaborante.</td><td>Basic User</td></tr><tr><td style=\"white-space:nowrap\">A2<a name=\"cparadm-cefrlevels-cs-A2\"> </a></td><td>Elementar</td><td>É capaz de compreender frases isoladas e expressões de uso frequente relacionadas com assuntos de prioridade imediata (por exemplo, informações pessoais e familiares simples, compras, meio envolvente, trabalho). É capaz de comunicar em situações correntes que apenas exijam trocas de informações simples e directas sobre assuntos e actividades habituais. É capaz de descrever com meios simples a sua formação, o seu meio envolvente e referir assuntos que correspondam a necessidades imediatas.</td><td>Basic User</td></tr><tr><td style=\"white-space:nowrap\">B1<a name=\"cparadm-cefrlevels-cs-B1\"> </a></td><td>Intermédio</td><td>É capaz de compreender os pontos essenciais quando a linguagem padrão utilizada é clara, tratando-se de aspectos familiares em contextos de: trabalho, escola, tempos livres, etc. É capaz de participar na maior parte das situações que podem ocorrer em viagem, numa região onde a língua alvo é falada. É capaz de organizar um discurso simples e coerente sobre assuntos familiares, em diferentes domínios de interesse. É capaz de relatar acontecimentos, experiências ou um sonho, expressar um desejo ou uma ambição e justificar, de forma breve, as razões de um projecto ou de uma ideia.</td><td>Independent User</td></tr><tr><td style=\"white-space:nowrap\">B2<a name=\"cparadm-cefrlevels-cs-B2\"> </a></td><td>Independente</td><td>É capaz de compreender o conteúdo essencial de assuntos concretos ou abstractos num texto complexo, incluindo uma discussão técnica na sua especialidade. É capaz de comunicar com uma grande espontaneidade que permita uma conversa com um falante nativo, não se detectando tensão em nenhum dos falantes. É capaz de exprimir-se de forma clara e pormenorizada sobre uma vasta gama de assuntos, emitir uma opinião sobre uma questão actual e discutir sobre as vantagens e as desvantagens de diferentes argumentos.</td><td>Independent User</td></tr><tr><td style=\"white-space:nowrap\">C1<a name=\"cparadm-cefrlevels-cs-C1\"> </a></td><td>Avançado</td><td>É capaz de compreender uma vasta gama de textos longos e complexos, assim como detectar significações implícitas. É capaz de exprimir-se de forma espontânea e fluente sem, aparentemente, ter de procurar as palavras. É capaz de utilizar a língua de maneira eficaz e flexível na sua vida social, profissional ou académica. É capaz de exprimir-se sobre assuntos complexos, de forma clara e bem estruturada, e de mostrar domínio dos meios de organização, de articulação e de coesão do discurso.</td><td>Proficient User</td></tr><tr><td style=\"white-space:nowrap\">C2<a name=\"cparadm-cefrlevels-cs-C2\"> </a></td><td>Proficiente</td><td>É capaz de compreender sem esforço praticamente tudo o que lê ou ouve. É capaz de reconstituir factos e argumentos de fontes diversas, escritas e orais, resumindo-as de forma coerente. É capaz de se exprimir de forma espontânea, fluente e precisa e de distinguir pequenas diferenças de sentido relacionadas com assuntos complexos.</td><td>Proficient User</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/CodeSystem/cparadm-cefrlevels-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPARADMCEFRLevelsCS"] ; # 
+  fhir:title [ fhir:v "CPARADM - CEFR Level"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2022-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de codificação local CEFRLevels (CPARADM v3.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "A1" ] ;
+     fhir:display [ fhir:v "Iniciante" ] ;
+     fhir:definition [ fhir:v "É capaz de compreender e utilizar expressões familiares e correntes assim como enunciados simples que visam satisfazer necessidades imediatas. É capaz de apresentar-se ou apresentar alguém e colocar questões ao seu interlocutor sobre assuntos como, por exemplo, o local onde vive, as suas relações, o que lhe pertence, etc. É capaz de responder ao mesmo tipo de questões. É capaz de comunicar de forma simples desde que o seu interlocutor fale clara e pausadamente e se mostre colaborante." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Basic User" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "A2" ] ;
+     fhir:display [ fhir:v "Elementar" ] ;
+     fhir:definition [ fhir:v "É capaz de compreender frases isoladas e expressões de uso frequente relacionadas com assuntos de prioridade imediata (por exemplo, informações pessoais e familiares simples, compras, meio envolvente, trabalho). É capaz de comunicar em situações correntes que apenas exijam trocas de informações simples e directas sobre assuntos e actividades habituais. É capaz de descrever com meios simples a sua formação, o seu meio envolvente e referir assuntos que correspondam a necessidades imediatas." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Basic User" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "B1" ] ;
+     fhir:display [ fhir:v "Intermédio" ] ;
+     fhir:definition [ fhir:v "É capaz de compreender os pontos essenciais quando a linguagem padrão utilizada é clara, tratando-se de aspectos familiares em contextos de: trabalho, escola, tempos livres, etc. É capaz de participar na maior parte das situações que podem ocorrer em viagem, numa região onde a língua alvo é falada. É capaz de organizar um discurso simples e coerente sobre assuntos familiares, em diferentes domínios de interesse. É capaz de relatar acontecimentos, experiências ou um sonho, expressar um desejo ou uma ambição e justificar, de forma breve, as razões de um projecto ou de uma ideia." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Independent User" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "B2" ] ;
+     fhir:display [ fhir:v "Independente" ] ;
+     fhir:definition [ fhir:v "É capaz de compreender o conteúdo essencial de assuntos concretos ou abstractos num texto complexo, incluindo uma discussão técnica na sua especialidade. É capaz de comunicar com uma grande espontaneidade que permita uma conversa com um falante nativo, não se detectando tensão em nenhum dos falantes. É capaz de exprimir-se de forma clara e pormenorizada sobre uma vasta gama de assuntos, emitir uma opinião sobre uma questão actual e discutir sobre as vantagens e as desvantagens de diferentes argumentos." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Independent User" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "C1" ] ;
+     fhir:display [ fhir:v "Avançado" ] ;
+     fhir:definition [ fhir:v "É capaz de compreender uma vasta gama de textos longos e complexos, assim como detectar significações implícitas. É capaz de exprimir-se de forma espontânea e fluente sem, aparentemente, ter de procurar as palavras. É capaz de utilizar a língua de maneira eficaz e flexível na sua vida social, profissional ou académica. É capaz de exprimir-se sobre assuntos complexos, de forma clara e bem estruturada, e de mostrar domínio dos meios de organização, de articulação e de coesão do discurso." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Proficient User" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "C2" ] ;
+     fhir:display [ fhir:v "Proficiente" ] ;
+     fhir:definition [ fhir:v "É capaz de compreender sem esforço praticamente tudo o que lê ou ouve. É capaz de reconstituir factos e argumentos de fontes diversas, escritas e orais, resumindo-as de forma coerente. É capaz de se exprimir de forma espontânea, fluente e precisa e de distinguir pequenas diferenças de sentido relacionadas com assuntos complexos." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Proficient User" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

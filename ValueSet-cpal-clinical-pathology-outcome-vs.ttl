@@ -1,0 +1,1006 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpal-clinical-pathology-outcome-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpal-clinical-pathology-outcome-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpal-clinical-pathology-outcome-vs</b></p><a name=\"cpal-clinical-pathology-outcome-vs\"> </a><a name=\"hccpal-clinical-pathology-outcome-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/83185005\">83185005</a></td><td>Sensível</td><td>Sensitive (qualifier value)</td><td>S</td><td>Sensitive (qualifier value)</td><td>S</td></tr><tr><td><a href=\"http://snomed.info/id/11896004\">11896004</a></td><td>Intermédio</td><td>Intermediate (qualifier value)</td><td>I</td><td>Intermediate (qualifier value)</td><td>I</td></tr><tr><td><a href=\"http://snomed.info/id/30714006\">30714006</a></td><td>Resistente</td><td>Resistant (qualifier value)</td><td>R</td><td>Resistant (qualifier value)</td><td>R</td></tr><tr><td><a href=\"http://snomed.info/id/2667000\">2667000</a></td><td>Ausente</td><td>Absent (qualifier value)</td><td>Ausência</td><td>Absent (qualifier value)</td><td>Ausência</td></tr><tr><td><a href=\"http://snomed.info/id/52101004\">52101004</a></td><td>Presente</td><td>Present (qualifier value)</td><td>Presença</td><td>Present (qualifier value)</td><td>Presença</td></tr><tr><td><a href=\"http://snomed.info/id/260385009\">260385009</a></td><td>Negativo</td><td>Negative (qualifier value)</td><td>Negativa</td><td>Negative (qualifier value)</td><td>Negativa</td></tr><tr><td><a href=\"http://snomed.info/id/10828004\">10828004</a></td><td>Positivo</td><td>Positive (qualifier value)</td><td>Positiva</td><td>Positive (qualifier value)</td><td>Positiva</td></tr><tr><td><a href=\"http://snomed.info/id/442779003\">442779003</a></td><td>Borderline baixo</td><td>Borderline low (qualifier value)</td><td>Borderline limite inferior</td><td>Borderline low (qualifier value)</td><td>Borderline limite inferior</td></tr><tr><td><a href=\"http://snomed.info/id/442777001\">442777001</a></td><td>Borderline alto</td><td>Borderline high (qualifier value)</td><td>Borderline limite superior</td><td>Borderline high (qualifier value)</td><td>Borderline limite superior</td></tr><tr><td><a href=\"http://snomed.info/id/371932001\">371932001</a></td><td>Borderline normal</td><td>Borderline normal (qualifier value)</td><td>Borderline no limite da normalidade</td><td>Borderline normal (qualifier value)</td><td>Borderline no limite da normalidade</td></tr><tr><td><a href=\"http://snomed.info/id/260373001\">260373001</a></td><td>Detetado</td><td>Detected (qualifier value)</td><td>Detetada</td><td>Detected (qualifier value)</td><td>Detetada</td></tr><tr><td><a href=\"http://snomed.info/id/260415000\">260415000</a></td><td>Não detetado</td><td>Not detected (qualifier value)</td><td>Não detetada</td><td>Not detected (qualifier value)</td><td>Não detetada</td></tr><tr><td><a href=\"http://snomed.info/id/11214006\">11214006</a></td><td>Reativo</td><td>Reactive (qualifier value)</td><td>Reativa</td><td>Reactive (qualifier value)</td><td>Reativa</td></tr><tr><td><a href=\"http://snomed.info/id/131194007\">131194007</a></td><td>Não reativo</td><td>Non-Reactive (qualifier value)</td><td>Não reativa</td><td>Non-Reactive (qualifier value)</td><td>Não reativa</td></tr><tr><td><a href=\"http://snomed.info/id/82334004\">82334004</a></td><td>Indeterminado</td><td>Indeterminate (qualifier value)</td><td>Indeterminante</td><td>Indeterminate (qualifier value)</td><td>Indeterminante</td></tr><tr><td><a href=\"http://snomed.info/id/419984006\">419984006</a></td><td>Inconclusivo</td><td>Inconclusive (qualifier value)</td><td>Inconclusiva</td><td>Inconclusive (qualifier value)</td><td>Inconclusiva</td></tr><tr><td><a href=\"http://snomed.info/id/42425007\">42425007</a></td><td>Equívoco</td><td>Equivocal (qualifier value)</td><td/><td>Equivocal (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/260405006\">260405006</a></td><td>Vestígio</td><td>Trace (qualifier value)</td><td>Vestígios</td><td>Trace (qualifier value)</td><td>Vestígios</td></tr><tr><td><a href=\"http://snomed.info/id/264605009\">264605009</a></td><td>+5</td><td>Integer +5 (qualifier value)</td><td/><td>Integer +5 (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/260308009\">260308009</a></td><td>+4</td><td>Integer +4 (qualifier value)</td><td/><td>Integer +4 (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/260307004\">260307004</a></td><td>+3</td><td>Integer +3 (qualifier value)</td><td/><td>Integer +3 (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/260306008\">260306008</a></td><td>+2</td><td>Integer +2 (qualifier value)</td><td/><td>Integer +2 (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/260305007\">260305007</a></td><td>+1</td><td>Integer +1 (qualifier value)</td><td/><td>Integer +1 (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1255965005\">1255965005</a></td><td>Sensível com aumento de exposição</td><td>Susceptible with increased exposure (qualifier value)</td><td>I</td><td>Susceptible with increased exposure (qualifier value)</td><td>I</td></tr><tr><td><a href=\"http://snomed.info/id/75540009\">75540009</a></td><td>Alto</td><td>High (qualifier value)</td><td>Alta</td><td>High (qualifier value)</td><td>Alta</td></tr><tr><td><a href=\"http://snomed.info/id/62482003\">62482003</a></td><td>Baixo</td><td>Low (qualifier value)</td><td>Baixa</td><td>Low (qualifier value)</td><td>Baixa</td></tr><tr><td><a href=\"http://snomed.info/id/27768009\">27768009</a></td><td>Alguma(s)</td><td>Some (qualifier value)</td><td>Algum(s)</td><td>Some (qualifier value)</td><td>Algum(s)</td></tr><tr><td><a href=\"http://snomed.info/id/260396001\">260396001</a></td><td>Numerosas</td><td>Numerous (qualifier value)</td><td>Abundantes</td><td>Numerous (qualifier value)</td><td>Abundantes</td></tr><tr><td><a href=\"http://snomed.info/id/89292003\">89292003</a></td><td>Rara(s)</td><td>Rare (qualifier value)</td><td>Raro(s)</td><td>Rare (qualifier value)</td><td>Raro(s)</td></tr><tr><td><a href=\"http://snomed.info/id/260350009\">260350009</a></td><td>++++</td><td>Present ++++ out of ++++ (qualifier value)</td><td>4+</td><td>Present ++++ out of ++++ (qualifier value)</td><td>4+</td></tr><tr><td><a href=\"http://snomed.info/id/260349009\">260349009</a></td><td>+++</td><td>Present +++ out of ++++ (qualifier value)</td><td>3+</td><td>Present +++ out of ++++ (qualifier value)</td><td>3+</td></tr><tr><td><a href=\"http://snomed.info/id/260348001\">260348001</a></td><td>++</td><td>Present ++ out of ++++ (qualifier value)</td><td>2+</td><td>Present ++ out of ++++ (qualifier value)</td><td>2+</td></tr><tr><td><a href=\"http://snomed.info/id/260347006\">260347006</a></td><td>+</td><td>Present + out of ++++ (qualifier value)</td><td>1+</td><td>Present + out of ++++ (qualifier value)</td><td>1+</td></tr><tr><td><a href=\"http://snomed.info/id/1286842004\">1286842004</a></td><td>RAST Class 1</td><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 1 (qualifier value)</td><td/><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 1 (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1286841006\">1286841006</a></td><td>RAST Class 6</td><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 6 (qualifier value)</td><td/><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 6 (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1286840007\">1286840007</a></td><td>RAST Class 5</td><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 5 (qualifier value)</td><td/><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 5 (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1286838002\">1286838002</a></td><td>RAST Class 4</td><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 4 (qualifier value)</td><td/><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 4 (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1286837007\">1286837007</a></td><td>RAST Class 2</td><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 2 (qualifier value)</td><td/><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 2 (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1286836003\">1286836003</a></td><td>RAST Class 0</td><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 0 (qualifier value)</td><td/><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 0 (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1285482005\">1285482005</a></td><td>RAST Class 3</td><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 3 (qualifier value)</td><td/><td>In vitro allergen specific immunoglobulin E antibody immunoassay class 3 (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1290623009\">1290623009</a></td><td>Positivo forte</td><td>Strong positive (qualifier value)</td><td/><td>Strong positive (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/260408008\">260408008</a></td><td>Positivo fraco</td><td>Weakly positive (qualifier value)</td><td/><td>Weakly positive (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/17621005\">17621005</a></td><td>Normal</td><td>Normal (qualifier value)</td><td/><td>Normal (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/261028005\">261028005</a></td><td>Muitas</td><td>Several (qualifier value)</td><td>Muitos</td><td>Several (qualifier value)</td><td>Muitos</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-clinical-pathology-outcome-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.8" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPALClinicalPathologyOutcomeVS"] ; # 
+  fhir:title [ fhir:v "CPAL - Clinical Pathology Outcome"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2023-10-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores ClinicalPathologyOutcome (CPAL v7.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "83185005" ] ;
+         fhir:display [ fhir:v "Sensível" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Sensitive" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Sensitive (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "S" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "11896004" ] ;
+         fhir:display [ fhir:v "Intermédio" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Intermediate" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Intermediate (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "I" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30714006" ] ;
+         fhir:display [ fhir:v "Resistente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Resistant" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Resistant (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "R" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "2667000" ] ;
+         fhir:display [ fhir:v "Ausente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Absent" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Absent (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Ausência" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "52101004" ] ;
+         fhir:display [ fhir:v "Presente" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Present" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Present (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Presença" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "260385009" ] ;
+         fhir:display [ fhir:v "Negativo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Negative" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Negative (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Negativa" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "10828004" ] ;
+         fhir:display [ fhir:v "Positivo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Positive" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Positive (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Positiva" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "442779003" ] ;
+         fhir:display [ fhir:v "Borderline baixo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Borderline low" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Borderline low (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Borderline limite inferior" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "442777001" ] ;
+         fhir:display [ fhir:v "Borderline alto" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Borderline high" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Borderline high (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Borderline limite superior" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "371932001" ] ;
+         fhir:display [ fhir:v "Borderline normal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Borderline normal (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Borderline no limite da normalidade" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "260373001" ] ;
+         fhir:display [ fhir:v "Detetado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Detected" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Detected (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Detetável" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Detetada" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "260415000" ] ;
+         fhir:display [ fhir:v "Não detetado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Not detected" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Not detected (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Não detetável" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Não detetada" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "11214006" ] ;
+         fhir:display [ fhir:v "Reativo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Reactive" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Reactive (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Reativa" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "131194007" ] ;
+         fhir:display [ fhir:v "Não reativo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Non-Reactive" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Non-Reactive (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Não reativa" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "82334004" ] ;
+         fhir:display [ fhir:v "Indeterminado" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Indeterminate" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Indeterminate (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Indeterminante" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "419984006" ] ;
+         fhir:display [ fhir:v "Inconclusivo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Inconclusive" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Inconclusive (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Inconclusiva" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "42425007" ] ;
+         fhir:display [ fhir:v "Equívoco" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Equivocal" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Equivocal (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "260405006" ] ;
+         fhir:display [ fhir:v "Vestígio" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Trace" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Trace (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Vestígios" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "264605009" ] ;
+         fhir:display [ fhir:v "+5" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Integer +5 (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "260308009" ] ;
+         fhir:display [ fhir:v "+4" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Integer +4 (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "260307004" ] ;
+         fhir:display [ fhir:v "+3" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Integer +3 (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "260306008" ] ;
+         fhir:display [ fhir:v "+2" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Integer +2 (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "260305007" ] ;
+         fhir:display [ fhir:v "+1" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Integer +1 (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1255965005" ] ;
+         fhir:display [ fhir:v "Sensível com aumento de exposição" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Susceptible with increased exposure" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Susceptible with increased exposure (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "I" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "75540009" ] ;
+         fhir:display [ fhir:v "Alto" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "High" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "High (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Alta" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "62482003" ] ;
+         fhir:display [ fhir:v "Baixo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Low" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Low (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Baixa" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "27768009" ] ;
+         fhir:display [ fhir:v "Alguma(s)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Some" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Some (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Algum(s)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "260396001" ] ;
+         fhir:display [ fhir:v "Numerosas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Numerous" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Numerous (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Abundantes" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "89292003" ] ;
+         fhir:display [ fhir:v "Rara(s)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Rare" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Rare (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Raro(s)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "260350009" ] ;
+         fhir:display [ fhir:v "++++" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Present ++++ out of ++++ (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "4+" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "260349009" ] ;
+         fhir:display [ fhir:v "+++" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Present +++ out of ++++ (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "3+" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "260348001" ] ;
+         fhir:display [ fhir:v "++" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Present ++ out of ++++ (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "2+" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "260347006" ] ;
+         fhir:display [ fhir:v "+" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Present + out of ++++ (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "1+" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1286842004" ] ;
+         fhir:display [ fhir:v "RAST Class 1" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "In vitro allergen specific immunoglobulin E antibody immunoassay class 1" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "In vitro allergen specific immunoglobulin E antibody immunoassay class 1 (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1286841006" ] ;
+         fhir:display [ fhir:v "RAST Class 6" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "In vitro allergen specific immunoglobulin E antibody immunoassay class 6" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "In vitro allergen specific immunoglobulin E antibody immunoassay class 6 (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1286840007" ] ;
+         fhir:display [ fhir:v "RAST Class 5" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "In vitro allergen specific immunoglobulin E antibody immunoassay class 5" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "In vitro allergen specific immunoglobulin E antibody immunoassay class 5 (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1286838002" ] ;
+         fhir:display [ fhir:v "RAST Class 4" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "In vitro allergen specific immunoglobulin E antibody immunoassay class 4" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "In vitro allergen specific immunoglobulin E antibody immunoassay class 4 (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1286837007" ] ;
+         fhir:display [ fhir:v "RAST Class 2" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "In vitro allergen specific immunoglobulin E antibody immunoassay class 2" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "In vitro allergen specific immunoglobulin E antibody immunoassay class 2 (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1286836003" ] ;
+         fhir:display [ fhir:v "RAST Class 0" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "In vitro allergen specific immunoglobulin E antibody immunoassay class 0" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "In vitro allergen specific immunoglobulin E antibody immunoassay class 0 (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1285482005" ] ;
+         fhir:display [ fhir:v "RAST Class 3" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "In vitro allergen specific immunoglobulin E antibody immunoassay class 3" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "In vitro allergen specific immunoglobulin E antibody immunoassay class 3 (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1290623009" ] ;
+         fhir:display [ fhir:v "Positivo forte" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Strong positive" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Strong positive (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "260408008" ] ;
+         fhir:display [ fhir:v "Positivo fraco" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Weakly positive" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Weakly positive (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "17621005" ] ;
+         fhir:display [ fhir:v "Normal" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Normal (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "261028005" ] ;
+         fhir:display [ fhir:v "Muitas" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Several" ]
+         ] [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:use [
+             a sct:900000000000003001 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000003001" ] ;
+             fhir:display [ fhir:v "Fully specified name" ]
+           ] ;
+           fhir:value [ fhir:v "Several (qualifier value)" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Muitos" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

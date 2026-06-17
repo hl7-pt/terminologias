@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cparadm-cefrlevels-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cparadm-cefrlevels-vs</b></p><a name="cparadm-cefrlevels-vs"> </a><a name="hccparadm-cefrlevels-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="CodeSystem-cparadm-cefrlevels-cs.html"><code>https://hl7.pt/fhir/CodeSystem/cparadm-cefrlevels-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> versão &#x1F4E6;1.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="CodeSystem-cparadm-cefrlevels-cs.html#cparadm-cefrlevels-cs-A1">A1</a></td><td>Iniciante</td><td>É capaz de compreender e utilizar expressões familiares e correntes assim como enunciados simples que visam satisfazer necessidades imediatas. É capaz de apresentar-se ou apresentar alguém e colocar questões ao seu interlocutor sobre assuntos como, por exemplo, o local onde vive, as suas relações, o que lhe pertence, etc. É capaz de responder ao mesmo tipo de questões. É capaz de comunicar de forma simples desde que o seu interlocutor fale clara e pausadamente e se mostre colaborante.</td><td>Basic User</td></tr><tr><td><a href="CodeSystem-cparadm-cefrlevels-cs.html#cparadm-cefrlevels-cs-A2">A2</a></td><td>Elementar</td><td>É capaz de compreender frases isoladas e expressões de uso frequente relacionadas com assuntos de prioridade imediata (por exemplo, informações pessoais e familiares simples, compras, meio envolvente, trabalho). É capaz de comunicar em situações correntes que apenas exijam trocas de informações simples e directas sobre assuntos e actividades habituais. É capaz de descrever com meios simples a sua formação, o seu meio envolvente e referir assuntos que correspondam a necessidades imediatas.</td><td>Basic User</td></tr><tr><td><a href="CodeSystem-cparadm-cefrlevels-cs.html#cparadm-cefrlevels-cs-B1">B1</a></td><td>Intermédio</td><td>É capaz de compreender os pontos essenciais quando a linguagem padrão utilizada é clara, tratando-se de aspectos familiares em contextos de: trabalho, escola, tempos livres, etc. É capaz de participar na maior parte das situações que podem ocorrer em viagem, numa região onde a língua alvo é falada. É capaz de organizar um discurso simples e coerente sobre assuntos familiares, em diferentes domínios de interesse. É capaz de relatar acontecimentos, experiências ou um sonho, expressar um desejo ou uma ambição e justificar, de forma breve, as razões de um projecto ou de uma ideia.</td><td>Independent User</td></tr><tr><td><a href="CodeSystem-cparadm-cefrlevels-cs.html#cparadm-cefrlevels-cs-B2">B2</a></td><td>Independente</td><td>É capaz de compreender o conteúdo essencial de assuntos concretos ou abstractos num texto complexo, incluindo uma discussão técnica na sua especialidade. É capaz de comunicar com uma grande espontaneidade que permita uma conversa com um falante nativo, não se detectando tensão em nenhum dos falantes. É capaz de exprimir-se de forma clara e pormenorizada sobre uma vasta gama de assuntos, emitir uma opinião sobre uma questão actual e discutir sobre as vantagens e as desvantagens de diferentes argumentos.</td><td>Independent User</td></tr><tr><td><a href="CodeSystem-cparadm-cefrlevels-cs.html#cparadm-cefrlevels-cs-C1">C1</a></td><td>Avançado</td><td>É capaz de compreender uma vasta gama de textos longos e complexos, assim como detectar significações implícitas. É capaz de exprimir-se de forma espontânea e fluente sem, aparentemente, ter de procurar as palavras. É capaz de utilizar a língua de maneira eficaz e flexível na sua vida social, profissional ou académica. É capaz de exprimir-se sobre assuntos complexos, de forma clara e bem estruturada, e de mostrar domínio dos meios de organização, de articulação e de coesão do discurso.</td><td>Proficient User</td></tr><tr><td><a href="CodeSystem-cparadm-cefrlevels-cs.html#cparadm-cefrlevels-cs-C2">C2</a></td><td>Proficiente</td><td>É capaz de compreender sem esforço praticamente tudo o que lê ou ouve. É capaz de reconstituir factos e argumentos de fontes diversas, escritas e orais, resumindo-as de forma coerente. É capaz de se exprimir de forma espontânea, fluente e precisa e de distinguir pequenas diferenças de sentido relacionadas com assuntos complexos.</td><td>Proficient User</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-cefrlevels-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.20"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPARADMCEFRLevelsVS"/>
+  <title value="CPARADM - CEFR Level"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores CEFRLevels (CPARADM v3.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="https://hl7.pt/fhir/CodeSystem/cparadm-cefrlevels-cs"/>
+      <concept>
+        <code value="A1"/>
+        <display value="Iniciante"/>
+        <designation>
+          <language value="en"/>
+          <value value="Basic User"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="A2"/>
+        <display value="Elementar"/>
+        <designation>
+          <language value="en"/>
+          <value value="Basic User"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B1"/>
+        <display value="Intermédio"/>
+        <designation>
+          <language value="en"/>
+          <value value="Independent User"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B2"/>
+        <display value="Independente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Independent User"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="C1"/>
+        <display value="Avançado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Proficient User"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="C2"/>
+        <display value="Proficiente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Proficient User"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

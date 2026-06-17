@@ -1,0 +1,2896 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.terminology> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hl7.fhir.pt.terminology"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ImplementationGuide hl7.fhir.pt.terminology</b></p><a name=\"hl7.fhir.pt.terminology\"> </a><a name=\"hchl7.fhir.pt.terminology\"> </a><h2>TerminologyPT</h2><p>O URL oficial para este guia de implementação é: </p><pre>http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.terminology</pre><div><p>Example IG exercises many of the fields in a SUSHI configuration.</p>\n</div></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.terminology"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "TerminologyPT"] ; # 
+  fhir:title [ fhir:v "HL7 PT FHIR Implementation Guide: Terminologias"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-11-27"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Example IG exercises many of the fields in a SUSHI configuration."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "hl7.fhir.pt.terminology"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+       ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
+     fhir:version [ fhir:v "7.2.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+       ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r5" ] ;
+     fhir:version [ fhir:v "5.3.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "hl7.fhir.uv.tools.r5#1.1.2"
+       ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpal-ab0-group-phenotype-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpal-ab0-group-phenotype-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPAL - AB0 Group Phenotype" ] ;
+       fhir:description [ fhir:v "Conjunto de valores AB0GroupPhenotype (CPAL v7.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpal-antimicrobial-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpal-antimicrobial-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPAL - Antimicrobial" ] ;
+       fhir:description [ fhir:v "Conjunto de valores Antimicrobial (CPAL v7.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpal-antimicrobial-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpal-antimicrobial-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPAL - Antimicrobial Type" ] ;
+       fhir:description [ fhir:v "Conjunto de valores AntimicrobialType (CPAL v7.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpal-appearanceof-specimen-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpal-appearanceof-specimen-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPAL - Appearance of Specimen" ] ;
+       fhir:description [ fhir:v "Conjunto de valores AppearanceofSpecimen (CPAL v7.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpal-blood-group-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpal-blood-group-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPAL - Blood Group" ] ;
+       fhir:description [ fhir:v "Conjunto de valores BloodGroup (CPAL v7.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpal-cast-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpal-cast-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPAL - Cast" ] ;
+       fhir:description [ fhir:v "Conjunto de valores Cast (CPAL v7.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpal-cell-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpal-cell-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPAL - Cell" ] ;
+       fhir:description [ fhir:v "Conjunto de valores Cell (CPAL v7.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpal-clinical-pathology-method-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpal-clinical-pathology-method-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPAL - Clinical Pathology Method" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ClinicalPathologyMethod (CPAL v7.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpal-clinical-pathology-outcome-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpal-clinical-pathology-outcome-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPAL - Clinical Pathology Outcome" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ClinicalPathologyOutcome (CPAL v7.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpal-clinical-pathology-procedure-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpal-clinical-pathology-procedure-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPAL - Clinical Pathology Procedure" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ClinicalPathologyProcedure (CPAL v7.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpal-colorof-specimen-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpal-colorof-specimen-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPAL - Color of Specimen" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ColorofSpecimen (CPAL v7.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpal-consistency-feces-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpal-consistency-feces-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPAL - Consistency of Feces" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ConsistencyFeces (CPAL v7.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpal-crystal-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpal-crystal-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPAL - Crystal" ] ;
+       fhir:description [ fhir:v "Conjunto de valores Crystal (CPAL v7.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpal-laboratory-study-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpal-laboratory-study-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPAL - Laboratory Study Type" ] ;
+       fhir:description [ fhir:v "Conjunto de valores LaboratoryStudyType (CPAL v7.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpal-microorganism-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpal-microorganism-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPAL - Microorganism" ] ;
+       fhir:description [ fhir:v "Conjunto de valores Microorganism (CPAL v7.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpal-rhesus-factor-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpal-rhesus-factor-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPAL - Rhesus Factor" ] ;
+       fhir:description [ fhir:v "Conjunto de valores RhesusFactor (CPAL v7.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpal-specimen-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpal-specimen-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPAL - Specimen" ] ;
+       fhir:description [ fhir:v "Conjunto de valores Specimen (CPAL v7.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpal-susceptibility-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpal-susceptibility-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPAL - Susceptibility" ] ;
+       fhir:description [ fhir:v "Conjunto de valores Susceptibility (CPAL v7.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpara-absent-or-unknown-allergy-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpara-absent-or-unknown-allergy-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARA - AbsentOrUnknownAllergy" ] ;
+       fhir:description [ fhir:v "Conjunto de valores AbsentOrUnknownAllergy (CPARA v5.1.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpara-allergen-no-drug-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpara-allergen-no-drug-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARA - Allergen No Drug" ] ;
+       fhir:description [ fhir:v "Conjunto de valores AllergenNoDrug (CPARA v5.1.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpara-allergy-intolerance-category-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpara-allergy-intolerance-category-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARA - Allergy Intolerance Category" ] ;
+       fhir:description [ fhir:v "Conjunto de valores AllergyIntoleranceCategory (CPARA v5.1.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpara-allergy-intolerance-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpara-allergy-intolerance-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARA - Allergy Intolerance Type" ] ;
+       fhir:description [ fhir:v "Conjunto de valores AllergyIntoleranceType (CPARA v5.1.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpara-reaction-manifestation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpara-reaction-manifestation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARA - Reaction Manifestation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ReactionManifestation (CPARA v5.1.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-additional-arrangement-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-additional-arrangement-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Additional Arrangement" ] ;
+       fhir:description [ fhir:v "Conjunto de valores AdditionalArrangement (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-administrative-emergency-cause-of-admission-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-administrative-emergency-cause-of-admission-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Adm Emergency Cause Admission" ] ;
+       fhir:description [ fhir:v "Conjunto de valores AdministrativeEmergencyCauseOfAdmission (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-cancellation-reason-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-cancellation-reason-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Cancellation Reason" ] ;
+       fhir:description [ fhir:v "Conjunto de valores CancellationReason (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-cause-of-admission-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-cause-of-admission-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Cause of Admission" ] ;
+       fhir:description [ fhir:v "Conjunto de valores CauseOfAdmission (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/cparadm-cefrlevels-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/cparadm-cefrlevels-cs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - CEFR Level" ] ;
+       fhir:description [ fhir:v "Sistema de codificação local CEFRLevels (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-cefrlevels-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-cefrlevels-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - CEFR Level" ] ;
+       fhir:description [ fhir:v "Conjunto de valores CEFRLevels (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-clinical-outcome-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-clinical-outcome-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Clinical Outcome" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ClinicalOutcome (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-communication-mode-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-communication-mode-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Communication Mode" ] ;
+       fhir:description [ fhir:v "Conjunto de valores CommunicationMode (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-communication-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-communication-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Communication Type" ] ;
+       fhir:description [ fhir:v "Conjunto de valores CommunicationType (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-contact-reason-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-contact-reason-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Contact Reason" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ContactReason (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-contact-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-contact-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Contact Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ContactResult (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-destination-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-destination-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Destination" ] ;
+       fhir:description [ fhir:v "Conjunto de valores Destination (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-discharge-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-discharge-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Discharge Type" ] ;
+       fhir:description [ fhir:v "Conjunto de valores DischargeType (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-document-format-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-document-format-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Document Format" ] ;
+       fhir:description [ fhir:v "Conjunto de valores DocumentFormat (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-education-or-schooling-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-education-or-schooling-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Education Or Schooling" ] ;
+       fhir:description [ fhir:v "Conjunto de valores EducationOrSchooling (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-encounter-communication-method-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-encounter-communication-method-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Encounter Communication Method" ] ;
+       fhir:description [ fhir:v "Conjunto de valores EncounterCommunicationMethod (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-encounter-presence-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-encounter-presence-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Encounter Presence" ] ;
+       fhir:description [ fhir:v "Conjunto de valores EncounterPresence (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-funding-source-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-funding-source-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Funding Source" ] ;
+       fhir:description [ fhir:v "Conjunto de valores FundingSource (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-internal-external-patient-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-internal-external-patient-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Internal External Patient" ] ;
+       fhir:description [ fhir:v "Conjunto de valores InternalExternalPatient (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-location-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-location-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Location Type" ] ;
+       fhir:description [ fhir:v "Conjunto de valores LocationType (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-operational-location-status-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-operational-location-status-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Operational Location Status" ] ;
+       fhir:description [ fhir:v "Conjunto de valores OperationalLocationStatus (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-organization-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-organization-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Organization Type" ] ;
+       fhir:description [ fhir:v "Conjunto de valores OrganizationType (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-patient-encounter-status-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-patient-encounter-status-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Patient Encounter Status" ] ;
+       fhir:description [ fhir:v "Conjunto de valores PatientEncounterStatus (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-patient-transfer-reason-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-patient-transfer-reason-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Patient Transfer Reason" ] ;
+       fhir:description [ fhir:v "Conjunto de valores PatientTransferReason (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-priority-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-priority-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Priority" ] ;
+       fhir:description [ fhir:v "Conjunto de valores Priority (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-provenance-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-provenance-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Provenance" ] ;
+       fhir:description [ fhir:v "Conjunto de valores Provenance (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-reason-not-elegible-for-schedule-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-reason-not-elegible-for-schedule-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Reason Not Elegible ForSchedule" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ReasonNotElegibleForSchedule (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-surgery-waiting-list-suspension-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-surgery-waiting-list-suspension-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Surgery Waiting List Suspension" ] ;
+       fhir:description [ fhir:v "Conjunto de valores SurgeryWaitingListSuspension (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cparadm-type-of-planning-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cparadm-type-of-planning-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPARADM - Type of Planning" ] ;
+       fhir:description [ fhir:v "Conjunto de valores TypeOfPlanning (CPARADM v3.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpcbd-marital-status-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpcbd-marital-status-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPCBD - Marital Status" ] ;
+       fhir:description [ fhir:v "Conjunto de valores MaritalStatus (CPCBD v1.1.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpcbd-person-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpcbd-person-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPCBD - Person" ] ;
+       fhir:description [ fhir:v "Conjunto de valores Person (CPCBD v1.1.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpcbd-person-in-family-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpcbd-person-in-family-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPCBD - Person in Family" ] ;
+       fhir:description [ fhir:v "Conjunto de valores PersonInFamily (CPCBD v1.1.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpcbd-sex-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpcbd-sex-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPCBD - Sex-Gender" ] ;
+       fhir:description [ fhir:v "Conjunto de valores Sex (CPCBD v1.1.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-actobservation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-actobservation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - ACT Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ACTObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-actresult-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-actresult-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - ACT Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ACTResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-apgar-score-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-apgar-score-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Apgar Score Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ApgarScoreObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-apgar-score-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-apgar-score-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Apgar Score Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ApgarScoreResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-asascale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-asascale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - ASA Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ASAScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-auditobservation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-auditobservation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - AUDIT Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores AUDITObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-auditresult-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-auditresult-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - AUDIT Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores AUDITResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-auditcobservation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-auditcobservation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - AUDIT-C Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores AUDITCObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-auditcresult-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-auditcresult-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - AUDIT-C Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores AUDITCResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-apvuscale-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-apvuscale-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - AVPU Scale" ] ;
+       fhir:description [ fhir:v "Conjunto de valores APVUScale (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-barthel-index-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-barthel-index-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Barthel Index Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores BarthelIndexObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-barthel-index-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-barthel-index-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Barthel Index Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores BarthelIndexResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-berlin-questionnaire-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-berlin-questionnaire-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Berlin Questionnaire Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores BerlinQuestionnaireResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-berlin-questionnaire-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-berlin-questionnaire-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Berlin QuestionnaireObservation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores BerlinQuestionnaireObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-biradsscale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-biradsscale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - BI-RADS Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores BIRADSScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-borg-scale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-borg-scale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Borg Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores BorgScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-boston-scale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-boston-scale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Boston Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores BostonScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-braden-scale-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-braden-scale-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Braden Scale Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores BradenScaleObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-braden-scale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-braden-scale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Braden Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores BradenScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-bromage-scale-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-bromage-scale-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Bromage Scale Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores BromageScaleObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-bromage-scale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-bromage-scale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Bromage Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores BromageScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-cdcwound-classification-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-cdcwound-classification-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - CDC Wound Classification Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores CDCWoundClassificationResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-ecogperformance-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-ecogperformance-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - ECOG Performance Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ECOGPerformanceResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-fagerstrom-test-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-fagerstrom-test-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Fagerstrom Test Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores FagerstromTestObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-fagerstrom-test-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-fagerstrom-test-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Fagerstrom Test Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores FagerstromTestResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-findriscscale-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-findriscscale-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - FINDRISC Scale Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores FINDRISCScaleObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-findriscscale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-findriscscale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - FINDRISC Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores FINDRISCScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-flaccscale-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-flaccscale-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - FLACC Scale Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores FLACCScaleObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-flaccscale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-flaccscale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - FLACC Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores FLACCScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-glasgow-coma-scale-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-glasgow-coma-scale-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Glasgow Coma Scale Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores GlasgowComaScaleObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-glasgow-coma-scale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-glasgow-coma-scale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Glasgow Coma Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores GlasgowComaScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-grade-muscle-power-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-grade-muscle-power-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Grade Muscle Power" ] ;
+       fhir:description [ fhir:v "Conjunto de valores GradeMusclePower (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-karnofsky-performance-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-karnofsky-performance-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Karnofsky Performance Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores KarnofskyPerformanceResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-killip-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-killip-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Killip Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores KillipObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-killip-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-killip-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Killip Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores KillipResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-minnesota-lhfqobservation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-minnesota-lhfqobservation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Minnesota LHFQ Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores MinnesotaLHFQObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-minnesota-lhfqresult-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-minnesota-lhfqresult-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Minnesota LHFQ Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores MinnesotaLHFQResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-morse-fall-scale-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-morse-fall-scale-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Morse Fall Scale Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores MorseFallScaleObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-morse-fall-scale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-morse-fall-scale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Morse Fall Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores MorseFallScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-nihstroke-scale-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-nihstroke-scale-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - NIH Stroke Scale Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores NIHStrokeScaleObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-nihstroke-scale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-nihstroke-scale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - NIH Stroke Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores NIHStrokeScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-nipsscale-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-nipsscale-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - NIPS Scale Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores NIPSScaleObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-nipsscale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-nipsscale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - NIPS Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores NIPSScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-npassscale-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-npassscale-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - NPASS Scale Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores NPASSScaleObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-npassscale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-npassscale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - NPASS Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores NPASSScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-nrs2002-scale-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-nrs2002-scale-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - NRS 2002 Scale Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores NRS2002ScaleObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-nrs2002-scale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-nrs2002-scale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - NRS 2002 Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores NRS2002ScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-nsrasobservation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-nsrasobservation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - NSRAS Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores NSRASObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-nsrasresults-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-nsrasresults-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - NSRAS Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores NSRASResults (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-pain-num-severity-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-pain-num-severity-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Pain Num Severity Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores PainNumSeverityObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-pain-num-severity-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-pain-num-severity-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Pain Num Severity Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores PainNumSeverityResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-painadscale-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-painadscale-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - PAINAD Scale Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores PAINADScaleObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-painadscale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-painadscale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - PAINAD Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores PAINADScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-ptmodification-manchester-triage-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-ptmodification-manchester-triage-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - PT Mod Manchester Triage" ] ;
+       fhir:description [ fhir:v "Conjunto de valores PTModificationManchesterTriage (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-ramsay-scale-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-ramsay-scale-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Ramsay Scale Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores RamsayScaleObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-ramsay-scale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-ramsay-scale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Ramsay Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores RamsayScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-rankin-scale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-rankin-scale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Rankin Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores RankinScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-robson-classification-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-robson-classification-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Robson Classification Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores RobsonClassificationResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-rosenberg-scale-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-rosenberg-scale-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Rosenberg Scale Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores RosenbergScaleObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-rosenberg-scale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-rosenberg-scale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Rosenberg Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores RosenbergScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-scale-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-scale-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Scale" ] ;
+       fhir:description [ fhir:v "Conjunto de valores Scale (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-tardieu-scale-observation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-tardieu-scale-observation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Tardieu Scale Observation" ] ;
+       fhir:description [ fhir:v "Conjunto de valores TardieuScaleObservation (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-tardieu-scale-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-tardieu-scale-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Tardieu Scale Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores TardieuScaleResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-triage-system-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-triage-system-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Triage System" ] ;
+       fhir:description [ fhir:v "Conjunto de valores TriageSystem (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpe-wong-baker-facesresult-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpe-wong-baker-facesresult-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPE - Wong-Baker FACES Result" ] ;
+       fhir:description [ fhir:v "Conjunto de valores WongBakerFACESResult (CPE v2.0.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpevs-medical-physics-specialty-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpevs-medical-physics-specialty-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPEVS - Medical Physics Specialty" ] ;
+       fhir:description [ fhir:v "Conjunto de valores MedicalPhysicsSpecialty (CPEVS v2.1.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpevs-medical-specialty-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpevs-medical-specialty-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPEVS - Medical Specialty" ] ;
+       fhir:description [ fhir:v "Conjunto de valores MedicalSpecialty (CPEVS v2.1.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpevs-primary-care-assistance-activity-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpevs-primary-care-assistance-activity-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPEVS - Primary Care AssistanceActivity" ] ;
+       fhir:description [ fhir:v "Conjunto de valores PrimaryCareAssistanceActivity (CPEVS v2.1.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpevs-service-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpevs-service-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPEVS - Service Type" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ServiceType (CPEVS v2.1.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpevs-specialized-assistance-activity-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpevs-specialized-assistance-activity-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPEVS - Specialized Assistance Activity" ] ;
+       fhir:description [ fhir:v "Conjunto de valores SpecializedAssistanceActivity (CPEVS v2.1.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpgo-gynecology-procedures-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpgo-gynecology-procedures-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPGO - Gynecology Procedures" ] ;
+       fhir:description [ fhir:v "Conjunto de valores GynecologyProcedures (CPGO v1.1)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpgo-obstetrics-procedures-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpgo-obstetrics-procedures-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPGO - Obstetrics Procedures" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ObstetricsProcedures (CPGO v1.1)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpmn-medicine-nuclear-procedures-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpmn-medicine-nuclear-procedures-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPMN - Medicine Nuclear Procedures" ] ;
+       fhir:description [ fhir:v "Conjunto de valores MedicineNuclearProcedures (CPMN v1.1)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpn-disorder-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpn-disorder-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPN - Disorder" ] ;
+       fhir:description [ fhir:v "Conjunto de valores Disorder (CPN v3.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpn-finding-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpn-finding-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPN - Finding" ] ;
+       fhir:description [ fhir:v "Conjunto de valores Finding (CPN v3.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpn-procedure-therapeutic-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpn-procedure-therapeutic-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPN - Procedure&Therapeutic" ] ;
+       fhir:description [ fhir:v "Conjunto de valores ProcedureTherapeutic (CPN v3.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpn-product-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpn-product-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPN - Product" ] ;
+       fhir:description [ fhir:v "Conjunto de valores Product (CPN v3.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ValueSet/cpn-status-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cpn-status-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CPN - Status" ] ;
+       fhir:description [ fhir:v "Conjunto de valores Status (CPN v3.0)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/especialidades-enfermagem-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/especialidades-enfermagem-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Especialidades Enfermagem" ] ;
+       fhir:description [ fhir:v "Especialidades enfermagem existentes em Portugal" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/especialidades-farmaceuticas-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/especialidades-farmaceuticas-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Especialidades Farmacêuticas" ] ;
+       fhir:description [ fhir:v "Especialidades farmacêuticas existentes em Portugal" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/especialidades-medicas-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/especialidades-medicas-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Especialidades Médicas" ] ;
+       fhir:description [ fhir:v "Especialidades médicas existentes em Portugal" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ConceptMap/ctc-unit-edqm> ;
+         fhir:reference [ fhir:v "ConceptMap/ctc-unit-edqm" ]
+       ] ;
+       fhir:name [ fhir:v "Mapeamento de códigos CTC para unidades de apresentação para EDQM" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ConceptMap/esp-enfer-snomed> ;
+         fhir:reference [ fhir:v "ConceptMap/esp-enfer-snomed" ]
+       ] ;
+       fhir:name [ fhir:v "Mapeamento de códigos de especialidade de enfermagem para códigos SNOMEDCT" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ConceptMap/esp-farm-snomed> ;
+         fhir:reference [ fhir:v "ConceptMap/esp-farm-snomed" ]
+       ] ;
+       fhir:name [ fhir:v "Mapeamento de códigos de especialidades farmacêuticas para códigos SNOMEDCT" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ConceptMap/mcdts-a-analises-sns-conv> ;
+         fhir:reference [ fhir:v "ConceptMap/mcdts-a-analises-sns-conv" ]
+       ] ;
+       fhir:name [ fhir:v "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área A - Análises Clínicas" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ConceptMap/mcdts-b-anatomia-sns-conv> ;
+         fhir:reference [ fhir:v "ConceptMap/mcdts-b-anatomia-sns-conv" ]
+       ] ;
+       fhir:name [ fhir:v "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área B - Anatomia Patológica" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ConceptMap/mcdts-c-cardiologia-sns-conv> ;
+         fhir:reference [ fhir:v "ConceptMap/mcdts-c-cardiologia-sns-conv" ]
+       ] ;
+       fhir:name [ fhir:v "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área C - Cardiologia" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ConceptMap/mcdts-d-m-nuclear-sns-conv> ;
+         fhir:reference [ fhir:v "ConceptMap/mcdts-d-m-nuclear-sns-conv" ]
+       ] ;
+       fhir:name [ fhir:v "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área D - Medicina Nuclear" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ConceptMap/mcdts-e-eeg-sns-conv> ;
+         fhir:reference [ fhir:v "ConceptMap/mcdts-e-eeg-sns-conv" ]
+       ] ;
+       fhir:name [ fhir:v "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área E - Electroencefalografia" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ConceptMap/mcdts-f-gastrenterologia-sns-conv> ;
+         fhir:reference [ fhir:v "ConceptMap/mcdts-f-gastrenterologia-sns-conv" ]
+       ] ;
+       fhir:name [ fhir:v "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área F - Endoscopia Gastrenterológica" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ConceptMap/mcdts-g-mfr-sns-conv> ;
+         fhir:reference [ fhir:v "ConceptMap/mcdts-g-mfr-sns-conv" ]
+       ] ;
+       fhir:name [ fhir:v "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área G - Medicina Fisica E De Reabilitação" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ConceptMap/mcdts-h-orl-sns-conv> ;
+         fhir:reference [ fhir:v "ConceptMap/mcdts-h-orl-sns-conv" ]
+       ] ;
+       fhir:name [ fhir:v "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área H - Otorrinolaringologia" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ConceptMap/mcdts-i-pneumologia-imunoalergologia-sns-conv> ;
+         fhir:reference [ fhir:v "ConceptMap/mcdts-i-pneumologia-imunoalergologia-sns-conv" ]
+       ] ;
+       fhir:name [ fhir:v "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área I - Tabela De Pneumologia E Tabela De Imunoalergologia" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ConceptMap/mcdts-j-urologia-sns-conv> ;
+         fhir:reference [ fhir:v "ConceptMap/mcdts-j-urologia-sns-conv" ]
+       ] ;
+       fhir:name [ fhir:v "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área J - Urologia" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ConceptMap/mcdts-l-neurofisiologia-sns-conv> ;
+         fhir:reference [ fhir:v "ConceptMap/mcdts-l-neurofisiologia-sns-conv" ]
+       ] ;
+       fhir:name [ fhir:v "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área L - Neurofisiologia" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/ConceptMap/mcdts-m-radiologia-sns-conv> ;
+         fhir:reference [ fhir:v "ConceptMap/mcdts-m-radiologia-sns-conv" ]
+       ] ;
+       fhir:name [ fhir:v "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área M - Tabela De Radiologia" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/mcdts-a-analises-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mcdts-a-analises-cs" ]
+       ] ;
+       fhir:name [ fhir:v "MCDTS Tabela Da Área A - Análises Clínicas" ] ;
+       fhir:description [ fhir:v "Tabela Da Área A - Análises Clínicas" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/mcdts-b-anatomia-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mcdts-b-anatomia-cs" ]
+       ] ;
+       fhir:name [ fhir:v "MCDTS Tabela Da Área B - Anatomia Patológica" ] ;
+       fhir:description [ fhir:v "Tabela Da Área B - Anatomia Patológica" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/mcdts-c-cardiologia-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mcdts-c-cardiologia-cs" ]
+       ] ;
+       fhir:name [ fhir:v "MCDTS Tabela Da Área C - Cardiologia" ] ;
+       fhir:description [ fhir:v "Tabela Da Área C - Cardiologia" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/mcdts-d-m-nuclear-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mcdts-d-m-nuclear-cs" ]
+       ] ;
+       fhir:name [ fhir:v "MCDTS Tabela Da Área D - Medicina Nuclear" ] ;
+       fhir:description [ fhir:v "Tabela Da Área D - Medicina Nuclear" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/mcdts-e-eeg-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mcdts-e-eeg-cs" ]
+       ] ;
+       fhir:name [ fhir:v "MCDTS Tabela Da Área E - Electroencefalografia" ] ;
+       fhir:description [ fhir:v "Tabela Da Área E - Electroencefalografia" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/mcdts-f-gastrenterologia-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mcdts-f-gastrenterologia-cs" ]
+       ] ;
+       fhir:name [ fhir:v "MCDTS Tabela Da Área F - Endoscopia Gastrenterológica" ] ;
+       fhir:description [ fhir:v "Tabela Da Área F - Endoscopia Gastrenterológica" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/mcdts-g-mfr-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mcdts-g-mfr-cs" ]
+       ] ;
+       fhir:name [ fhir:v "MCDTS Tabela Da Área G - Medicina Fisica E De Reabilitação" ] ;
+       fhir:description [ fhir:v "Tabela Da Área G - Medicina Fisica E De Reabilitação" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/mcdts-h-orl-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mcdts-h-orl-cs" ]
+       ] ;
+       fhir:name [ fhir:v "MCDTS Tabela Da Área H - Otorrinolaringologia" ] ;
+       fhir:description [ fhir:v "Tabela Da Área H - Otorrinolaringologia" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/mcdts-i-pneumologia-imunoalergologia-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mcdts-i-pneumologia-imunoalergologia-cs" ]
+       ] ;
+       fhir:name [ fhir:v "MCDTS Tabela Da Área I - Tabela De Pneumologia E Tabela De Imunoalergologia" ] ;
+       fhir:description [ fhir:v "Tabela Da Área I - Tabela De Pneumologia E Tabela De Imunoalergologia" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/mcdts-j-urologia-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mcdts-j-urologia-cs" ]
+       ] ;
+       fhir:name [ fhir:v "MCDTS Tabela Da Área J - Urologia" ] ;
+       fhir:description [ fhir:v "Tabela Da Área J - Urologia" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/mcdts-l-neurofisiologia-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mcdts-l-neurofisiologia-cs" ]
+       ] ;
+       fhir:name [ fhir:v "MCDTS Tabela Da Área L - Neurofisiologia" ] ;
+       fhir:description [ fhir:v "Tabela Da Área L - Neurofisiologia" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/mcdts-m-radiologia-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mcdts-m-radiologia-cs" ]
+       ] ;
+       fhir:name [ fhir:v "MCDTS Tabela Da Área M - Tabela De Radiologia " ] ;
+       fhir:description [ fhir:v "Tabela Da Área M - Tabela De Radiologia" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/orphanet-rare-disease-classification> ;
+         fhir:reference [ fhir:v "CodeSystem/orphanet-rare-disease-classification" ]
+       ] ;
+       fhir:name [ fhir:v "Orphanet Rare Disease Classification" ] ;
+       fhir:description [ fhir:v "Orphanet classification of rare diseases. Contains all entities from the 34\nOrphanet classification trees, with hierarchical parent-child relationships.\nSource: Orphadata CC BY 4.0 (https://www.orphadata.com)\nCodes are Orphanet ORPHA numbers (e.g., ORPHA:98050)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/subsistemas-saude-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/subsistemas-saude-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Subsistemas de saúde" ] ;
+       fhir:description [ fhir:v "Subsistemas de saúde existentes em Portugal" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/cparm-units-presentation-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/cparm-units-presentation-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Unidades de apresentação" ] ;
+       fhir:description [ fhir:v "Unidades de apresentação de medicamentos" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.pt/fhir/CodeSystem/cparm-routes> ;
+         fhir:reference [ fhir:v "CodeSystem/cparm-routes" ]
+       ] ;
+       fhir:name [ fhir:v "Vias de Administração" ] ;
+       fhir:description [ fhir:v "Vias de Administração de medicamentos" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] ) ;
+     fhir:page [
+       fhir:source [
+         a fhir:url ;
+         fhir:v "toc.html"^^xsd:anyURI
+       ] ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "index.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Home Page" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "background.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "background.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Background" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "spec.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "spec.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Specification" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "downloads.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Downloads" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] [
+         fhir:source [
+           a fhir:url ;
+           fhir:v "changes.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "changes.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "IG Change History" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "copyrightyear" ]
+       ] ;
+       fhir:value [ fhir:v "2024+" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "releaselabel" ]
+       ] ;
+       fhir:value [ fhir:v "STU1" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "produce-jekyll-data" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "autoload-resources" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "template/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "input/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-qa" ]
+       ] ;
+       fhir:value [ fhir:v "temp/qa" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-temp" ]
+       ] ;
+       fhir:value [ fhir:v "temp/pages" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-output" ]
+       ] ;
+       fhir:value [ fhir:v "output" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-tx-cache" ]
+       ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-suppressed-warnings" ]
+       ] ;
+       fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-history" ]
+       ] ;
+       fhir:value [ fhir:v "http://hl7.pt/fhir/history.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-html" ]
+       ] ;
+       fhir:value [ fhir:v "template-page.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-md" ]
+       ] ;
+       fhir:value [ fhir:v "template-page-md.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-contact" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-context" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-copyright" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-jurisdiction" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-license" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-publisher" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-version" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-wg" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active-tables" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "fmm-definition" ]
+       ] ;
+       fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propagate-status" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludelogbinaryformat" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "tabbed-snapshots" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

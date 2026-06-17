@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpcbd-person-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpcbd-person-vs</b></p><a name="cpcbd-person-vs"> </a><a name="hccpcbd-person-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="http://snomed.info/id/113163005">113163005</a></td><td>Amigo</td><td>Friend (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/427568008">427568008</a></td><td>Vizinho</td><td>Neighbor (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/133932002">133932002</a></td><td>Cuidador</td><td>Caregiver (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/58626002">58626002</a></td><td>Representante Legal</td><td>Legal guardian (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/446654005">446654005</a></td><td>Refugiado</td><td>Refugee (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/224619008">224619008</a></td><td>Migrante</td><td>Migrant (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/79756005">79756005</a></td><td>Namorado</td><td>Boyfriend (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/84390006">84390006</a></td><td>Namorada</td><td>Girlfriend (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/113161007">113161007</a></td><td>Noiva</td><td>Female fiance (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/17219007">17219007</a></td><td>Noivo</td><td>Male fiance (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/133936004">133936004</a></td><td>Adulto</td><td>Adult (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/410599005">410599005</a></td><td>Menor</td><td>Minor (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/105436006">105436006</a></td><td>Idoso</td><td>Elderly person (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/133937008">133937008</a></td><td>Adolescente</td><td>Adolescent (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/360863008">360863008</a></td><td>Mendigo</td><td>Beggar (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/116154003">116154003</a></td><td>Utente</td><td>Patient (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/257500003">257500003</a></td><td>Passageiro</td><td>Passenger (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/160772005">160772005</a></td><td>Voluntário</td><td>Voluntary worker (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/70862002">70862002</a></td><td>Pessoa de contacto</td><td>Contact person (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/105456007">105456007</a></td><td>Dador vivo</td><td>Live donor (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/105457003">105457003</a></td><td>Dador cadáver</td><td>Cadaver donor (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/105470007">105470007</a></td><td>Dador de sangue</td><td>Blood donor (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/105471006">105471006</a></td><td>Dador de medula óssea</td><td>Bone marrow donor (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/441463002">441463002</a></td><td>Dador de esperma</td><td>Spermatozoa donor (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/224528001">224528001</a></td><td>Funcionário</td><td>Employee (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/394571004">394571004</a></td><td>Empregador</td><td>Employer (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/1187334000">1187334000</a></td><td>Contacto de emergência</td><td>Emergency contact (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/414043009">414043009</a></td><td>Companheiro/a</td><td>Domestic partner (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/262043009">262043009</a></td><td>Parceiro de relacionamento</td><td>Partner in relationship (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/429577009">429577009</a></td><td>Advogado do utente</td><td>Patient advocate (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/276035002">276035002</a></td><td>Ajudante de voluntariado</td><td>Voluntary helper (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/276037005">276037005</a></td><td>Ajudante voluntário</td><td>Volunteer helper (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/105458008">105458008</a></td><td>Candidato a dador</td><td>Candidate donor (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/394921008">394921008</a></td><td>Coabitante</td><td>Cohabitee (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/133931009">133931009</a></td><td>Criança</td><td>Infant (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/373929005">373929005</a></td><td>Criança órfã</td><td>Orphan child (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/407542009">407542009</a></td><td>Cuidador informal</td><td>Informal caregiver (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/407543004">407543004</a></td><td>Cuidador principal</td><td>Primary caregiver (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/430882007">430882007</a></td><td>Dador de ovócitos humanos</td><td>Human oocyte donor (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/105461009">105461009</a></td><td>Dador de órgãos</td><td>Organ donor (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/713352007">713352007</a></td><td>Dador de pele</td><td>Skin donor (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/713184006">713184006</a></td><td>Dador de produtos sanguíneos</td><td>Blood product donor (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/105468003">105468003</a></td><td>Dador de tecido</td><td>Tissue donor (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/105469006">105469006</a></td><td>Dador de tecido ósseo</td><td>Bone tissue donor (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/105460005">105460005</a></td><td>Dador rejeitado</td><td>Rejected donor (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/133933007">133933007</a></td><td>Recém-nascido</td><td>Newborn (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/390790000">390790000</a></td><td>Requerente de asilo</td><td>Asylum seeker (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/268557009">268557009</a></td><td>Desportista</td><td>Sportsman (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/430792005">430792005</a></td><td>Dador de células-tronco</td><td>Stem cell donor (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/450768005">450768005</a></td><td>Estudante internacional</td><td>International student (occupation)</td><td/></tr><tr><td><a href="http://snomed.info/id/125677006">125677006</a></td><td>Familiar</td><td>Relative (person)</td><td>Parente</td></tr><tr><td><a href="http://snomed.info/id/394619001">394619001</a></td><td>Representante</td><td>Guardian (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/161158003">161158003</a></td><td>Imigrante</td><td>Immigrant (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/373864002">373864002</a></td><td>Utente em ambulatório</td><td>Outpatient (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/416800000">416800000</a></td><td>Utente internado</td><td>Inpatient (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/1287116005">1287116005</a></td><td>Acompanhante</td><td>Chaperone (person)</td><td/></tr><tr><td><a href="http://snomed.info/id/1340167007">1340167007</a></td><td>Tutelado</td><td>Ward (person)</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpcbd-person-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.60"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPCBDPersonVS"/>
+  <title value="CPCBD - Person"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-12-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores Person (CPCBD v1.1.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="113163005"/>
+        <display value="Amigo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Friend (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="427568008"/>
+        <display value="Vizinho"/>
+        <designation>
+          <language value="en"/>
+          <value value="Neighbor (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="133932002"/>
+        <display value="Cuidador"/>
+        <designation>
+          <language value="en"/>
+          <value value="Caregiver (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="58626002"/>
+        <display value="Representante Legal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Legal guardian (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="446654005"/>
+        <display value="Refugiado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Refugee (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="224619008"/>
+        <display value="Migrante"/>
+        <designation>
+          <language value="en"/>
+          <value value="Migrant (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="79756005"/>
+        <display value="Namorado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Boyfriend (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="84390006"/>
+        <display value="Namorada"/>
+        <designation>
+          <language value="en"/>
+          <value value="Girlfriend (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="113161007"/>
+        <display value="Noiva"/>
+        <designation>
+          <language value="en"/>
+          <value value="Female fiance (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="17219007"/>
+        <display value="Noivo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Male fiance (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="133936004"/>
+        <display value="Adulto"/>
+        <designation>
+          <language value="en"/>
+          <value value="Adult (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="410599005"/>
+        <display value="Menor"/>
+        <designation>
+          <language value="en"/>
+          <value value="Minor (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="105436006"/>
+        <display value="Idoso"/>
+        <designation>
+          <language value="en"/>
+          <value value="Elderly person (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="133937008"/>
+        <display value="Adolescente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Adolescent (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="360863008"/>
+        <display value="Mendigo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Beggar (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="116154003"/>
+        <display value="Utente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="257500003"/>
+        <display value="Passageiro"/>
+        <designation>
+          <language value="en"/>
+          <value value="Passenger (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="160772005"/>
+        <display value="Voluntário"/>
+        <designation>
+          <language value="en"/>
+          <value value="Voluntary worker (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="70862002"/>
+        <display value="Pessoa de contacto"/>
+        <designation>
+          <language value="en"/>
+          <value value="Contact person (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="105456007"/>
+        <display value="Dador vivo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Live donor (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="105457003"/>
+        <display value="Dador cadáver"/>
+        <designation>
+          <language value="en"/>
+          <value value="Cadaver donor (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="105470007"/>
+        <display value="Dador de sangue"/>
+        <designation>
+          <language value="en"/>
+          <value value="Blood donor (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="105471006"/>
+        <display value="Dador de medula óssea"/>
+        <designation>
+          <language value="en"/>
+          <value value="Bone marrow donor (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="441463002"/>
+        <display value="Dador de esperma"/>
+        <designation>
+          <language value="en"/>
+          <value value="Spermatozoa donor (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="224528001"/>
+        <display value="Funcionário"/>
+        <designation>
+          <language value="en"/>
+          <value value="Employee (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="394571004"/>
+        <display value="Empregador"/>
+        <designation>
+          <language value="en"/>
+          <value value="Employer (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1187334000"/>
+        <display value="Contacto de emergência"/>
+        <designation>
+          <language value="en"/>
+          <value value="Emergency contact (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="414043009"/>
+        <display value="Companheiro/a"/>
+        <designation>
+          <language value="en"/>
+          <value value="Domestic partner (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="262043009"/>
+        <display value="Parceiro de relacionamento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Partner in relationship (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="429577009"/>
+        <display value="Advogado do utente"/>
+        <designation>
+          <language value="en"/>
+          <value value="Patient advocate (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="276035002"/>
+        <display value="Ajudante de voluntariado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Voluntary helper (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="276037005"/>
+        <display value="Ajudante voluntário"/>
+        <designation>
+          <language value="en"/>
+          <value value="Volunteer helper (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="105458008"/>
+        <display value="Candidato a dador"/>
+        <designation>
+          <language value="en"/>
+          <value value="Candidate donor (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="394921008"/>
+        <display value="Coabitante"/>
+        <designation>
+          <language value="en"/>
+          <value value="Cohabitee (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="133931009"/>
+        <display value="Criança"/>
+        <designation>
+          <language value="en"/>
+          <value value="Infant (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="373929005"/>
+        <display value="Criança órfã"/>
+        <designation>
+          <language value="en"/>
+          <value value="Orphan child (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="407542009"/>
+        <display value="Cuidador informal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Informal caregiver (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="407543004"/>
+        <display value="Cuidador principal"/>
+        <designation>
+          <language value="en"/>
+          <value value="Primary caregiver (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="430882007"/>
+        <display value="Dador de ovócitos humanos"/>
+        <designation>
+          <language value="en"/>
+          <value value="Human oocyte donor (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="105461009"/>
+        <display value="Dador de órgãos"/>
+        <designation>
+          <language value="en"/>
+          <value value="Organ donor (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="713352007"/>
+        <display value="Dador de pele"/>
+        <designation>
+          <language value="en"/>
+          <value value="Skin donor (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="713184006"/>
+        <display value="Dador de produtos sanguíneos"/>
+        <designation>
+          <language value="en"/>
+          <value value="Blood product donor (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="105468003"/>
+        <display value="Dador de tecido"/>
+        <designation>
+          <language value="en"/>
+          <value value="Tissue donor (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="105469006"/>
+        <display value="Dador de tecido ósseo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Bone tissue donor (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="105460005"/>
+        <display value="Dador rejeitado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Rejected donor (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="133933007"/>
+        <display value="Recém-nascido"/>
+        <designation>
+          <language value="en"/>
+          <value value="Newborn (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="390790000"/>
+        <display value="Requerente de asilo"/>
+        <designation>
+          <language value="en"/>
+          <value value="Asylum seeker (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="268557009"/>
+        <display value="Desportista"/>
+        <designation>
+          <language value="en"/>
+          <value value="Sportsman (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="430792005"/>
+        <display value="Dador de células-tronco"/>
+        <designation>
+          <language value="en"/>
+          <value value="Stem cell donor (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="450768005"/>
+        <display value="Estudante internacional"/>
+        <designation>
+          <language value="en"/>
+          <value value="International student (occupation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="125677006"/>
+        <display value="Familiar"/>
+        <designation>
+          <language value="en"/>
+          <value value="Relative (person)"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Parente"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="394619001"/>
+        <display value="Representante"/>
+        <designation>
+          <language value="en"/>
+          <value value="Guardian (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="161158003"/>
+        <display value="Imigrante"/>
+        <designation>
+          <language value="en"/>
+          <value value="Immigrant (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="373864002"/>
+        <display value="Utente em ambulatório"/>
+        <designation>
+          <language value="en"/>
+          <value value="Outpatient (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="416800000"/>
+        <display value="Utente internado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Inpatient (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1287116005"/>
+        <display value="Acompanhante"/>
+        <designation>
+          <language value="en"/>
+          <value value="Chaperone (person)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1340167007"/>
+        <display value="Tutelado"/>
+        <designation>
+          <language value="en"/>
+          <value value="Ward (person)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Specification - HL7 PT FHIR Implementation Guide: Terminologias v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Terminologias</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="spec.html">Specification</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Specification</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Terminologias, publicado por HL7 Portugal. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 1.0.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/hl7-pt/terminologias/tree/master'>https://github.com/hl7-pt/terminologias/tree/master</a> e muda regularmente. Veja o <a href='http://hl7.pt/fhir/history.html'>Diretório de versões publicadas</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/hl7-pt/terminologias/commit/987016b692d9e8d3c724739e2350b4e3cdb93844"><code>987016b6</code></a>.</span></p><!--EndReleaseHeader-->
+  <h2>Specification</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h1 id="terminologias-em-fhir">Terminologias em FHIR</h1>
+
+<h2 id="introdução">Introdução</h2>
+
+<p>As terminologias são um dos pilares do FHIR. Permitem garantir que sistemas diferentes utilizam os mesmos códigos para representar conceitos clínicos, administrativos ou organizacionais.
+Exemplos:</p>
+
+<p>| Conceito | Código | Sistema |
+|———–|———-|———-|
+| Masculino | male | AdministrativeGender |
+| Diabetes Mellitus | 44054006 | SNOMED CT |
+| Hemoglobina | 718-7 | LOINC |
+| Portugal | PRT | ISO 3166 |
+Sem terminologias normalizadas, cada sistema poderia utilizar valores diferentes:</p>
+
+<p>```text
+Masculino
+M
+Male
+Homem
+1</p>
+
+<p>O objetivo das terminologias é garantir interoperabilidade sem ambiguidades.</p>
+
+<p>Conceitos fundamentais</p>
+
+<p>Existem quatro recursos principais relacionados com terminologias:</p>
+
+<p>Recurso Função
+CodeSystem Define códigos
+ValueSet Seleciona códigos permitidos
+ConceptMap Mapeia códigos entre sistemas
+NamingSystem Descreve identificadores externos</p>
+
+<p>Na prática, os mais utilizados são:</p>
+
+<ul>
+  <li>CodeSystem</li>
+  <li>ValueSet</li>
+</ul>
+
+<p>⸻</p>
+
+<p>CodeSystem</p>
+
+<p>Um CodeSystem define um conjunto de conceitos e respetivos códigos.</p>
+
+<p>Exemplo:</p>
+
+<p>{
+  "resourceType": "CodeSystem",
+  "url": "https://hl7.pt/fhir/CodeSystem/color",
+  "version": "1.0.0",
+  "status": "active",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "red",
+      "display": "Red"
+    },
+    {
+      "code": "blue",
+      "display": "Blue"
+    }
+  ]
+}</p>
+
+<p>Neste exemplo:</p>
+
+<p>Código Display
+red Red
+blue Blue</p>
+
+<p>O CodeSystem é o “dicionário”.</p>
+
+<p>⸻</p>
+
+<p>ValueSet</p>
+
+<p>Um ValueSet define quais os códigos permitidos.</p>
+
+<p>Pode incluir:</p>
+
+<ul>
+  <li>todos os códigos de um CodeSystem</li>
+  <li>apenas alguns códigos</li>
+  <li>códigos de vários CodeSystems</li>
+</ul>
+
+<p>Exemplo:</p>
+
+<p>{
+  "resourceType": "ValueSet",
+  "url": "https://hl7.pt/fhir/ValueSet/warm-colors",
+  "version": "1.0.0",
+  "compose": {
+    "include": [
+      {
+        "system": "https://hl7.pt/fhir/CodeSystem/color",
+        "concept": [
+          {
+            "code": "red"
+          }
+        ]
+      }
+    ]
+  }
+}</p>
+
+<p>Resultado:</p>
+
+<p>red</p>
+
+<p>O ValueSet é uma seleção de códigos.</p>
+
+<p>⸻</p>
+
+<p>Relação entre CodeSystem e ValueSet</p>
+
+<p>CodeSystem
+ ├── red
+ ├── blue
+ ├── green
+ └── yellow
+ValueSet A
+ ├── red
+ └── yellow
+ValueSet B
+ ├── blue
+ └── green</p>
+
+<p>Um CodeSystem pode originar vários ValueSets.</p>
+
+<p>⸻</p>
+
+<p>Canonical URLs</p>
+
+<p>Todos os artefactos terminológicos devem possuir URLs estáveis.</p>
+
+<p>Exemplo:</p>
+
+<p>https://hl7.pt/fhir/CodeSystem/color
+https://hl7.pt/fhir/ValueSet/warm-colors</p>
+
+<p>Estas URLs:</p>
+
+<ul>
+  <li>não devem mudar</li>
+  <li>não devem incluir a versão</li>
+  <li>funcionam como identificadores globais</li>
+</ul>
+
+<p>⸻</p>
+
+<p>Versões</p>
+
+<p>A versão é independente do URL.</p>
+
+<p>Correto:</p>
+
+<p>URL:
+https://hl7.pt/fhir/CodeSystem/color
+Versão:
+1.0.0
+2.0.0
+3.0.0</p>
+
+<p>Errado:</p>
+
+<p>https://hl7.pt/fhir/CodeSystem/color-v1
+https://hl7.pt/fhir/CodeSystem/color-v2</p>
+
+<p>Exemplo:</p>
+
+<p>{
+  "url": "https://hl7.pt/fhir/CodeSystem/color",
+  "version": "2.0.0"
+}</p>
+
+<p>⸻</p>
+
+<p>Referenciar versões</p>
+
+<p>Sem versão:</p>
+
+<p>https://hl7.pt/fhir/CodeSystem/color</p>
+
+<p>Com versão:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>https://hl7.pt/fhir/CodeSystem/color</td>
+      <td>2.0.0</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>O caracter</td>
+      <td>indica a versão.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>⸻</p>
+
+<p>Binding de ValueSets em Profiles</p>
+
+<p>Um dos usos mais frequentes é restringir os valores permitidos num elemento.</p>
+
+<p>Exemplo:</p>
+
+<p>Profile: MyPatient
+Parent: Patient</p>
+<ul>
+  <li>gender from AdministrativeGenderVS (required)</li>
+</ul>
+
+<p>Ou utilizando o canonical:</p>
+
+<ul>
+  <li>gender from "http://hl7.org/fhir/ValueSet/administrative-gender" (required)</li>
+</ul>
+
+<p>⸻</p>
+
+<p>Tipos de Binding</p>
+
+<p>Required</p>
+
+<p>Só podem ser usados códigos do ValueSet.</p>
+
+<ul>
+  <li>gender from AdministrativeGenderVS (required)</li>
+</ul>
+
+<p>⸻</p>
+
+<p>Extensible</p>
+
+<p>Devem ser usados códigos do ValueSet sempre que possível.</p>
+
+<ul>
+  <li>code from MyValueSet (extensible)</li>
+</ul>
+
+<p>⸻</p>
+
+<p>Preferred</p>
+
+<p>Recomendado mas não obrigatório.</p>
+
+<ul>
+  <li>code from MyValueSet (preferred)</li>
+</ul>
+
+<p>⸻</p>
+
+<p>Example</p>
+
+<p>Apenas exemplo.</p>
+
+<ul>
+  <li>code from MyValueSet (example)</li>
+</ul>
+
+<p>⸻</p>
+
+<p>Como funciona a validação terminológica</p>
+
+<p>Quando um recurso é validado:</p>
+
+<p>{
+  "gender": "male"
+}</p>
+
+<p>O validador verifica:</p>
+
+<ol>
+  <li>Existe um binding?</li>
+  <li>O código pertence ao ValueSet?</li>
+  <li>O sistema está correto?</li>
+  <li>A versão está correta?</li>
+</ol>
+
+<p>Se tudo estiver correto:</p>
+
+<p>Validation successful</p>
+
+<p>Caso contrário:</p>
+
+<p>Code not found in ValueSet</p>
+
+<p>⸻</p>
+
+<p>Servidor Terminológico</p>
+
+<p>Um servidor terminológico disponibiliza operações para:</p>
+
+<ul>
+  <li>expandir ValueSets</li>
+  <li>validar códigos</li>
+  <li>pesquisar conceitos</li>
+  <li>obter propriedades</li>
+</ul>
+
+<p>Exemplos:</p>
+
+<ul>
+  <li>tx.fhir.org</li>
+  <li>tx.hl7.pt</li>
+  <li>Ontoserver</li>
+  <li>Snowstorm</li>
+</ul>
+
+<p>⸻</p>
+
+<p>tx.hl7.pt (FHIRSmith)</p>
+
+<p>O servidor terminológico da HL7 Portugal disponibiliza funcionalidades FHIR Terminology.</p>
+
+<p>Canonical base:</p>
+
+<p>https://tx.hl7.pt/fhir</p>
+
+<p>⸻</p>
+
+<p>Operação $expand</p>
+
+<p>Expande um ValueSet.</p>
+
+<p>Pedido:</p>
+
+<p>GET
+[base]/ValueSet/$expand?url=https://hl7.pt/fhir/ValueSet/warm-colors</p>
+
+<p>Exemplo:</p>
+
+<p>GET
+https://tx.hl7.pt/fhir/ValueSet/$expand?url=https://hl7.pt/fhir/ValueSet/warm-colors</p>
+
+<p>Resposta:</p>
+
+<p>{
+  "expansion": {
+    "contains": [
+      {
+        "code": "red",
+        "display": "Red"
+      }
+    ]
+  }
+}</p>
+
+<p>⸻</p>
+
+<p>Operação $validate-code</p>
+
+<p>Verifica se um código pertence a um ValueSet.</p>
+
+<p>Pedido:</p>
+
+<p>GET
+[base]/ValueSet/$validate-code
+  ?url=https://hl7.pt/fhir/ValueSet/warm-colors
+  &amp;code=red</p>
+
+<p>Resposta:</p>
+
+<p>{
+  "result": true
+}</p>
+
+<p>⸻</p>
+
+<p>Operação $lookup</p>
+
+<p>Obtém informação sobre um conceito.</p>
+
+<p>Pedido:</p>
+
+<p>GET
+[base]/CodeSystem/$lookup
+  ?system=https://hl7.pt/fhir/CodeSystem/color
+  &amp;code=red</p>
+
+<p>Resposta:</p>
+
+<p>{
+  "display": "Red"
+}</p>
+
+<p>⸻</p>
+
+<p>Operação $validate</p>
+
+<p>Valida um recurso completo.</p>
+
+<p>Exemplo:</p>
+
+<p>POST
+[base]/Bundle/$validate</p>
+
+<p>ou</p>
+
+<p>POST
+[base]/Patient/$validate</p>
+
+<p>O servidor valida:</p>
+
+<ul>
+  <li>estrutura FHIR</li>
+  <li>profiles</li>
+  <li>cardinalidades</li>
+  <li>bindings terminológicos</li>
+  <li>ValueSets</li>
+  <li>CodeSystems</li>
+</ul>
+
+<p>⸻</p>
+
+<p>Utilização com o FHIR Validator</p>
+
+<p>O validador oficial pode utilizar servidores terminológicos externos.</p>
+
+<p>Exemplo:</p>
+
+<p>java -jar validator.jar <br />
+  patient.json <br />
+  -tx https://tx.hl7.pt/fhir</p>
+
+<p>O parâmetro:</p>
+
+<p>-tx</p>
+
+<p>indica o servidor terminológico.</p>
+
+<p>⸻</p>
+
+<p>Fluxo típico</p>
+
+<p>Excel
+   ↓
+CodeSystem
+   ↓
+ValueSet
+   ↓
+Profile Binding
+   ↓
+FHIR Validator
+   ↓
+tx.hl7.pt</p>
+
+<p>⸻</p>
+
+<p>Boas práticas</p>
+
+<ol>
+  <li>URLs estáveis</li>
+</ol>
+
+<p>https://hl7.pt/fhir/CodeSystem/my-codes</p>
+
+<p>Não alterar.</p>
+
+<ol>
+  <li>Versionar apenas com version</li>
+</ol>
+
+<p>url = constante
+version = variável</p>
+
+<ol>
+  <li>Publicar sempre CodeSystem e ValueSet</li>
+</ol>
+
+<p>Mesmo quando o ValueSet inclui todos os códigos.</p>
+
+<ol>
+  <li>Utilizar bindings Required sempre que possível</li>
+</ol>
+
+<p>(required)</p>
+
+<p>Melhora a interoperabilidade.</p>
+
+<ol>
+  <li>Manter versões anteriores acessíveis</li>
+</ol>
+
+<p>CodeSystem
+ ├── 1.0.0
+ ├── 2.0.0
+ └── 3.0.0</p>
+
+<p>Permite reproduzir implementações antigas.</p>
+
+<ol>
+  <li>Utilizar o tx.hl7.pt para testes</li>
+</ol>
+
+<p>Antes de publicar:</p>
+
+<ul>
+  <li>$expand</li>
+  <li>$validate-code</li>
+  <li>$lookup</li>
+  <li>$validate</li>
+</ul>
+
+<p>para confirmar o comportamento esperado.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.terminology#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Jun 17, 2026 10:02+0000">2026-06-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

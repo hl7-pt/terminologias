@@ -1,0 +1,248 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-auditobservation-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-auditobservation-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-auditobservation-vs</b></p><a name=\"cpe-auditobservation-vs\"> </a><a name=\"hccpe-auditobservation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/46098-0/\">46098-0</a></td><td>Sexo</td><td/><td>Please select your gender</td><td/></tr><tr><td><a href=\"https://loinc.org/68518-0/\">68518-0</a></td><td>Com que frequência consome bebidas que contêm álcool?</td><td>Com que frequência consome bebidas que contêm álcool</td><td>How often do you have a drink containing alcohol?</td><td>Com que frequência consome bebidas que contêm álcool</td></tr><tr><td><a href=\"https://loinc.org/68519-8/\">68519-8</a></td><td>Quando bebe, quantas bebidas contendo álcool consome num dia normal?</td><td>Quando bebe, quantas bebidas contendo álcool consome num dia normal</td><td>How many standard drinks containing alcohol do you have on a typical day when drinking?</td><td>Quando bebe, quantas bebidas contendo álcool consome num dia normal</td></tr><tr><td><a href=\"https://loinc.org/68520-6/\">68520-6</a></td><td>Com que frequência consome seis bebidas ou mais numa única ocasião?</td><td>Com que frequência consome seis bebidas ou mais numa única ocasião</td><td>How often do you have six or more drinks on one occasion?</td><td>Com que frequência consome seis bebidas ou mais numa única ocasião</td></tr><tr><td><a href=\"https://loinc.org/97734-8/\">97734-8</a></td><td>Nos últimos 12 meses, com que frequência se apercebeu de que não conseguia parar de beber depois de começar?</td><td>(Últimos 12 meses) com que frequência se apercebeu que não conseguia parar de beber</td><td>During the past year, how often have you found that you were not able to stop drinking once you had started?</td><td>(Últimos 12 meses) com que frequência se apercebeu que não conseguia parar de beber</td></tr><tr><td><a href=\"https://loinc.org/97735-5/\">97735-5</a></td><td>Nos últimos 12 meses, com que frequência não conseguiu cumprir as tarefas que habitualmente lhe exigem por ter bebido?</td><td>(Últimos 12 meses) com que frequência não conseguiu cumprir tarefas por ter bebido</td><td>During the past year, how often have you failed to do what was normally expected of you because of drinking?</td><td>(Últimos 12 meses) com que frequência não conseguiu cumprir tarefas por ter bebido</td></tr><tr><td><a href=\"https://loinc.org/97736-3/\">97736-3</a></td><td>Nos últimos 12 meses, com que frequência precisou beber logo de manhã para “curar” uma ressaca?</td><td>(Últimos 12 meses) com que frequência precisou de beber logo de manhã para curar uma \"ressaca\"</td><td>During the past year, how often have you needed a drink in the morning to get yourself going after a heavy drinking session?</td><td>(Últimos 12 meses) com que frequência precisou de beber logo de manhã para curar uma \"ressaca\"</td></tr><tr><td><a href=\"https://loinc.org/97737-1/\">97737-1</a></td><td>Nos últimos 12 meses, com que frequência teve sentimentos de culpa ou de remorsos por ter bebido?</td><td>(Últimos 12 meses) com que frequência teve sentimentos de culpa ou remorsos por ter bebido</td><td>During the past year, how often have you had a feeling of guilt or remorse after drinking?</td><td>(Últimos 12 meses) com que frequência teve sentimentos de culpa ou remorsos por ter bebido</td></tr><tr><td><a href=\"https://loinc.org/97738-9/\">97738-9</a></td><td>Nos últimos 12 meses, com que frequência não se lembrou do que aconteceu na noite anterior por causa de ter bebido?</td><td>(Últimos 12 meses) com que frequência não se lembrou o que aconteceu (noite anterior) por ter bebido</td><td>During the past year, how often have you been unable to remember what happened the night before because you had been drinking?</td><td>(Últimos 12 meses) com que frequência não se lembrou o que aconteceu (noite anterior) por ter bebido</td></tr><tr><td><a href=\"https://loinc.org/97739-7/\">97739-7</a></td><td>Já alguma vez ficou ferido ou ficou alguém ferido por ter bebido?</td><td>Já alguma vez ficou ferido ou feriu alguém por ter bebido</td><td>Have you or someone else been injured as a result of your drinking?</td><td>Já alguma vez ficou ferido ou feriu alguém por ter bebido</td></tr><tr><td><a href=\"https://loinc.org/97740-5/\">97740-5</a></td><td>Já alguma vez um familiar, amigo, médico ou profissional de saúde manifestou preocupação pelo seu consumo de álcool ou sugeriu que deixasse de beber?</td><td>Já alguma vez alguém manisfestou preocupação pelo seu consumo e sugeriu que deixasse de beber</td><td>Has a relative or friend, doctor or other health worker been concerned about your drinking or suggested you cut down?</td><td>Já alguma vez alguém manisfestou preocupação pelo seu consumo e sugeriu que deixasse de beber</td></tr><tr><td><a href=\"https://loinc.org/75624-7/\">75624-7</a></td><td>Pontuação total [AUDIT]</td><td>Score total [AUDIT]</td><td>Total score [AUDIT]</td><td>Score total [AUDIT]</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-auditobservation-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.118" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPEAUDITObservationVS"] ; # 
+  fhir:title [ fhir:v "CPE - AUDIT Observation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores AUDITObservation (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "46098-0" ] ;
+         fhir:display [ fhir:v "Sexo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Please select your gender" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "68518-0" ] ;
+         fhir:display [ fhir:v "Com que frequência consome bebidas que contêm álcool?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "How often do you have a drink containing alcohol?" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Com que frequência consome bebidas que contêm álcool" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "68519-8" ] ;
+         fhir:display [ fhir:v "Quando bebe, quantas bebidas contendo álcool consome num dia normal?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "How many standard drinks containing alcohol do you have on a typical day when drinking?" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Quando bebe, quantas bebidas contendo álcool consome num dia normal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "68520-6" ] ;
+         fhir:display [ fhir:v "Com que frequência consome seis bebidas ou mais numa única ocasião?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "How often do you have six or more drinks on one occasion?" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Com que frequência consome seis bebidas ou mais numa única ocasião" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "97734-8" ] ;
+         fhir:display [ fhir:v "Nos últimos 12 meses, com que frequência se apercebeu de que não conseguia parar de beber depois de começar?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "During the past year, how often have you found that you were not able to stop drinking once you had started?" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "(Últimos 12 meses) com que frequência se apercebeu que não conseguia parar de beber" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "97735-5" ] ;
+         fhir:display [ fhir:v "Nos últimos 12 meses, com que frequência não conseguiu cumprir as tarefas que habitualmente lhe exigem por ter bebido?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "During the past year, how often have you failed to do what was normally expected of you because of drinking?" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "(Últimos 12 meses) com que frequência não conseguiu cumprir tarefas por ter bebido" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "97736-3" ] ;
+         fhir:display [ fhir:v "Nos últimos 12 meses, com que frequência precisou beber logo de manhã para “curar” uma ressaca?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "During the past year, how often have you needed a drink in the morning to get yourself going after a heavy drinking session?" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "(Últimos 12 meses) com que frequência precisou de beber logo de manhã para curar uma \"ressaca\"" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "97737-1" ] ;
+         fhir:display [ fhir:v "Nos últimos 12 meses, com que frequência teve sentimentos de culpa ou de remorsos por ter bebido?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "During the past year, how often have you had a feeling of guilt or remorse after drinking?" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "(Últimos 12 meses) com que frequência teve sentimentos de culpa ou remorsos por ter bebido" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "97738-9" ] ;
+         fhir:display [ fhir:v "Nos últimos 12 meses, com que frequência não se lembrou do que aconteceu na noite anterior por causa de ter bebido?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "During the past year, how often have you been unable to remember what happened the night before because you had been drinking?" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "(Últimos 12 meses) com que frequência não se lembrou o que aconteceu (noite anterior) por ter bebido" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "97739-7" ] ;
+         fhir:display [ fhir:v "Já alguma vez ficou ferido ou ficou alguém ferido por ter bebido?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Have you or someone else been injured as a result of your drinking?" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Já alguma vez ficou ferido ou feriu alguém por ter bebido" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "97740-5" ] ;
+         fhir:display [ fhir:v "Já alguma vez um familiar, amigo, médico ou profissional de saúde manifestou preocupação pelo seu consumo de álcool ou sugeriu que deixasse de beber?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Has a relative or friend, doctor or other health worker been concerned about your drinking or suggested you cut down?" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Já alguma vez alguém manisfestou preocupação pelo seu consumo e sugeriu que deixasse de beber" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "75624-7" ] ;
+         fhir:display [ fhir:v "Pontuação total [AUDIT]" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Total score [AUDIT]" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Score total [AUDIT]" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

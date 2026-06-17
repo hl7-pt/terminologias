@@ -1,0 +1,315 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpe-auditresult-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-auditresult-vs</b></p><a name=\"cpe-auditresult-vs\"> </a><a name=\"hccpe-auditresult-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/LA2-8/\">LA2-8</a></td><td>Masculino</td><td/><td>Male</td><td/></tr><tr><td><a href=\"https://loinc.org/LA3-6/\">LA3-6</a></td><td>Feminino</td><td/><td>Female</td><td/></tr><tr><td><a href=\"https://loinc.org/LA6270-8/\">LA6270-8</a></td><td>Nunca</td><td/><td>Never</td><td/></tr><tr><td><a href=\"https://loinc.org/LA18926-8/\">LA18926-8</a></td><td>Uma vez por mês ou menos</td><td>1 vez/mês ou menos</td><td>Monthly or less</td><td>1 vez/mês ou menos</td></tr><tr><td><a href=\"https://loinc.org/LA18927-6/\">LA18927-6</a></td><td>Duas a quatro vezes por mês</td><td>2 a 4 vezes/mês</td><td>2-4 times a month</td><td>2 a 4 vezes/mês</td></tr><tr><td><a href=\"https://loinc.org/LA18928-4/\">LA18928-4</a></td><td>Duas a três vezes por semanas</td><td>2 a 3 vezes/semana</td><td>2-3 times a week</td><td>2 a 3 vezes/semana</td></tr><tr><td><a href=\"https://loinc.org/LA18929-2/\">LA18929-2</a></td><td>Quatro ou mais vezes por semana</td><td>4 ou mais vezes/semana</td><td>4 or more times a week</td><td>4 ou mais vezes/semana</td></tr><tr><td><a href=\"https://loinc.org/LA15694-5/\">LA15694-5</a></td><td>1 ou 2</td><td>1 ou 2 por dia</td><td>1 or 2</td><td>1 ou 2 por dia</td></tr><tr><td><a href=\"https://loinc.org/LA15695-2/\">LA15695-2</a></td><td>3 ou 4</td><td>3 ou 4 por dia</td><td>3 or 4</td><td>3 ou 4 por dia</td></tr><tr><td><a href=\"https://loinc.org/LA18930-0/\">LA18930-0</a></td><td>5 ou 6</td><td>5 ou 6 por dia</td><td>5 or 6</td><td>5 ou 6 por dia</td></tr><tr><td><a href=\"https://loinc.org/LA18931-8/\">LA18931-8</a></td><td>De 7 a 9</td><td>De 7 a 9 por dia</td><td>7 to 9</td><td>De 7 a 9 por dia</td></tr><tr><td><a href=\"https://loinc.org/LA18932-6/\">LA18932-6</a></td><td>10 ou mais</td><td>10 ou mais por dia</td><td>10 or more</td><td>10 ou mais por dia</td></tr><tr><td><a href=\"https://loinc.org/LA18933-4/\">LA18933-4</a></td><td>Menos de uma vez por mês</td><td>Menos de 1 vez/mês</td><td>Less than monthly</td><td>Menos de 1 vez/mês</td></tr><tr><td><a href=\"https://loinc.org/LA18876-5/\">LA18876-5</a></td><td>Pelo menos uma vez por mês</td><td>Pelo menos 1 vez/mês</td><td>Monthly</td><td>Pelo menos 1 vez/mês</td></tr><tr><td><a href=\"https://loinc.org/LA18891-4/\">LA18891-4</a></td><td>Pelo menos uma vez por semana</td><td>pelo menos 1 vez/semana</td><td>Weekly</td><td>pelo menos 1 vez/semana</td></tr><tr><td><a href=\"https://loinc.org/LA18934-2/\">LA18934-2</a></td><td>Diariamente ou quase diariamente</td><td/><td>Daily or almost daily</td><td/></tr><tr><td><a href=\"https://loinc.org/LA32-8/\">LA32-8</a></td><td>Não</td><td/><td>No</td><td/></tr><tr><td><a href=\"https://loinc.org/LA32279-4/\">LA32279-4</a></td><td>Sim, mas não nos últimos 12 meses</td><td/><td>Yes, but not in the last year</td><td/></tr><tr><td><a href=\"https://loinc.org/LA32280-2/\">LA32280-2</a></td><td>Sim, aconteceu nos últimos 12 meses</td><td/><td>Yes, during the last year</td><td/></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-auditresult-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.119"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPEAUDITResultVS",
+  "title" : "CPE - AUDIT Result",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores AUDITResult (CPE v2.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA2-8",
+        "display" : "Masculino",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Male"
+        }]
+      },
+      {
+        "code" : "LA3-6",
+        "display" : "Feminino",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Female"
+        }]
+      },
+      {
+        "code" : "LA6270-8",
+        "display" : "Nunca",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Never"
+        }]
+      },
+      {
+        "code" : "LA18926-8",
+        "display" : "Uma vez por mês ou menos",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Monthly or less"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "1 vez/mês ou menos"
+        }]
+      },
+      {
+        "code" : "LA18927-6",
+        "display" : "Duas a quatro vezes por mês",
+        "designation" : [{
+          "language" : "en",
+          "value" : "2-4 times a month"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "2 a 4 vezes/mês"
+        }]
+      },
+      {
+        "code" : "LA18928-4",
+        "display" : "Duas a três vezes por semanas",
+        "designation" : [{
+          "language" : "en",
+          "value" : "2-3 times a week"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "2 a 3 vezes/semana"
+        }]
+      },
+      {
+        "code" : "LA18929-2",
+        "display" : "Quatro ou mais vezes por semana",
+        "designation" : [{
+          "language" : "en",
+          "value" : "4 or more times a week"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "4 ou mais vezes/semana"
+        }]
+      },
+      {
+        "code" : "LA15694-5",
+        "display" : "1 ou 2",
+        "designation" : [{
+          "language" : "en",
+          "value" : "1 or 2"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "1 ou 2 por dia"
+        }]
+      },
+      {
+        "code" : "LA15695-2",
+        "display" : "3 ou 4",
+        "designation" : [{
+          "language" : "en",
+          "value" : "3 or 4"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "3 ou 4 por dia"
+        }]
+      },
+      {
+        "code" : "LA18930-0",
+        "display" : "5 ou 6",
+        "designation" : [{
+          "language" : "en",
+          "value" : "5 or 6"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "5 ou 6 por dia"
+        }]
+      },
+      {
+        "code" : "LA18931-8",
+        "display" : "De 7 a 9",
+        "designation" : [{
+          "language" : "en",
+          "value" : "7 to 9"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "De 7 a 9 por dia"
+        }]
+      },
+      {
+        "code" : "LA18932-6",
+        "display" : "10 ou mais",
+        "designation" : [{
+          "language" : "en",
+          "value" : "10 or more"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "10 ou mais por dia"
+        }]
+      },
+      {
+        "code" : "LA18933-4",
+        "display" : "Menos de uma vez por mês",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Less than monthly"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Menos de 1 vez/mês"
+        }]
+      },
+      {
+        "code" : "LA18876-5",
+        "display" : "Pelo menos uma vez por mês",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Monthly"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Pelo menos 1 vez/mês"
+        }]
+      },
+      {
+        "code" : "LA18891-4",
+        "display" : "Pelo menos uma vez por semana",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Weekly"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "pelo menos 1 vez/semana"
+        }]
+      },
+      {
+        "code" : "LA18934-2",
+        "display" : "Diariamente ou quase diariamente",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Daily or almost daily"
+        }]
+      },
+      {
+        "code" : "LA32-8",
+        "display" : "Não",
+        "designation" : [{
+          "language" : "en",
+          "value" : "No"
+        }]
+      },
+      {
+        "code" : "LA32279-4",
+        "display" : "Sim, mas não nos últimos 12 meses",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Yes, but not in the last year"
+        }]
+      },
+      {
+        "code" : "LA32280-2",
+        "display" : "Sim, aconteceu nos últimos 12 meses",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Yes, during the last year"
+        }]
+      }]
+    }]
+  }
+}

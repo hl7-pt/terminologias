@@ -1,0 +1,155 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cparadm-contact-result-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cparadm-contact-result-vs</b></p><a name=\"cparadm-contact-result-vs\"> </a><a name=\"hccparadm-contact-result-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/1531000314101\">1531000314101</a></td><td>Utente incontactável</td><td/><td>Patient unreachable (situation)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/385645004\">385645004</a></td><td>Aceite</td><td/><td>Accepted (qualifier value)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/247755007\">247755007</a></td><td>Desistência</td><td/><td>Withdrawn (finding)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/443390004\">443390004</a></td><td>Recusado</td><td>Rejeitado</td><td>Declined (qualifier value)</td><td>Rejeitado</td></tr><tr><td><a href=\"http://snomed.info/id/419733004\">419733004</a></td><td>Utente notificado</td><td/><td>Patient notified (situation)</td><td/></tr><tr><td><a href=\"http://snomed.info/id/1661000314107\">1661000314107</a></td><td>Enviado</td><td>Enviou</td><td>Send (qualifier value)</td><td>Enviou</td></tr><tr><td><a href=\"http://snomed.info/id/1671000314104\">1671000314104</a></td><td>Não enviado</td><td>Não enviou</td><td>Did not send (qualifier value)</td><td>Não enviou</td></tr><tr><td><a href=\"http://snomed.info/id/1681000314101\">1681000314101</a></td><td>Atualizado</td><td>Atualizou</td><td>Updated (qualifier value)</td><td>Atualizou</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-contact-result-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.172"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPARADMContactResultVS",
+  "title" : "CPARADM - Contact Result",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores ContactResult (CPARADM v3.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "1531000314101",
+        "display" : "Utente incontactável",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Patient unreachable (situation)"
+        }]
+      },
+      {
+        "code" : "385645004",
+        "display" : "Aceite",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Accepted (qualifier value)"
+        }]
+      },
+      {
+        "code" : "247755007",
+        "display" : "Desistência",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Withdrawn (finding)"
+        }]
+      },
+      {
+        "code" : "443390004",
+        "display" : "Recusado",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Declined (qualifier value)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Rejeitado"
+        }]
+      },
+      {
+        "code" : "419733004",
+        "display" : "Utente notificado",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Patient notified (situation)"
+        }]
+      },
+      {
+        "code" : "1661000314107",
+        "display" : "Enviado",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Send (qualifier value)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Enviou"
+        }]
+      },
+      {
+        "code" : "1671000314104",
+        "display" : "Não enviado",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Did not send (qualifier value)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Não enviou"
+        }]
+      },
+      {
+        "code" : "1681000314101",
+        "display" : "Atualizado",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Updated (qualifier value)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Atualizou"
+        }]
+      }]
+    }]
+  }
+}

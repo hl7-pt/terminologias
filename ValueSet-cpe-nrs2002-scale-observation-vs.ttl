@@ -1,0 +1,134 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-nrs2002-scale-observation-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-nrs2002-scale-observation-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-nrs2002-scale-observation-vs</b></p><a name=\"cpe-nrs2002-scale-observation-vs\"> </a><a name=\"hccpe-nrs2002-scale-observation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/98968-1/\">98968-1</a></td><td>Triagem inicial NRS_2002</td><td>Initial screening NRS_2002</td></tr><tr><td><a href=\"https://loinc.org/97057-4/\">97057-4</a></td><td>IMC é &lt;20.5?</td><td>Is BMI &lt;20.5?</td></tr><tr><td><a href=\"https://loinc.org/98969-9/\">98969-9</a></td><td>O paciente perdeu peso nos últimos 3 meses?</td><td>Has the patient lost weight within the last 3 months?</td></tr><tr><td><a href=\"https://loinc.org/98970-7/\">98970-7</a></td><td>O paciente teve uma redução na sua ingestão alimentar na última semana?</td><td>Has the patient had a reduced dietary intake in the last week?</td></tr><tr><td><a href=\"https://loinc.org/98971-5/\">98971-5</a></td><td>O paciente está gravemente doente? (por exemplo, em terapia intensiva)</td><td>Is the patient severely ill? (e.g. in intensive therapy)</td></tr><tr><td><a href=\"https://loinc.org/98972-3/\">98972-3</a></td><td>Triagem final NRS_2002</td><td>Final screening NRS_2002</td></tr><tr><td><a href=\"https://loinc.org/98973-1/\">98973-1</a></td><td>Deterioração do estado nutricional</td><td>Impaired nutritional status</td></tr><tr><td><a href=\"https://loinc.org/90775-8/\">90775-8</a></td><td>Gravidade da doença</td><td>Severity of disease</td></tr><tr><td><a href=\"https://loinc.org/98974-9/\">98974-9</a></td><td>Pontuação total NRS_2002</td><td>Total score NRS_2002</td></tr><tr><td><a href=\"https://loinc.org/99310-5/\">99310-5</a></td><td>Pontuação total ajustada à idade</td><td>Total score age adjusted</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-nrs2002-scale-observation-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.145" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPENRS2002ScaleObservationVS"] ; # 
+  fhir:title [ fhir:v "CPE - NRS 2002 Scale Observation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores NRS2002ScaleObservation (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "98968-1" ] ;
+         fhir:display [ fhir:v "Triagem inicial NRS_2002" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Initial screening NRS_2002" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "97057-4" ] ;
+         fhir:display [ fhir:v "IMC é <20.5?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Is BMI <20.5?" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "98969-9" ] ;
+         fhir:display [ fhir:v "O paciente perdeu peso nos últimos 3 meses?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Has the patient lost weight within the last 3 months?" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "98970-7" ] ;
+         fhir:display [ fhir:v "O paciente teve uma redução na sua ingestão alimentar na última semana?" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Has the patient had a reduced dietary intake in the last week?" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "98971-5" ] ;
+         fhir:display [ fhir:v "O paciente está gravemente doente? (por exemplo, em terapia intensiva)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Is the patient severely ill? (e.g. in intensive therapy)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "98972-3" ] ;
+         fhir:display [ fhir:v "Triagem final NRS_2002" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Final screening NRS_2002" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "98973-1" ] ;
+         fhir:display [ fhir:v "Deterioração do estado nutricional" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Impaired nutritional status" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "90775-8" ] ;
+         fhir:display [ fhir:v "Gravidade da doença" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Severity of disease" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "98974-9" ] ;
+         fhir:display [ fhir:v "Pontuação total NRS_2002" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Total score NRS_2002" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "99310-5" ] ;
+         fhir:display [ fhir:v "Pontuação total ajustada à idade" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Total score age adjusted" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,146 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpe-nipsscale-observation-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-nipsscale-observation-vs</b></p><a name=\"cpe-nipsscale-observation-vs\"> </a><a name=\"hccpe-nipsscale-observation-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"https://loinc.org/95624-3/\">95624-3</a></td><td>Expressão facial</td><td/><td>Facial expression</td><td/></tr><tr><td><a href=\"https://loinc.org/95622-7/\">95622-7</a></td><td>Chorar</td><td>Choro</td><td>Cry</td><td>Choro</td></tr><tr><td><a href=\"https://loinc.org/98009-4/\">98009-4</a></td><td>Padrões de respiração</td><td>Respiração</td><td>Breathing patterns</td><td>Respiração</td></tr><tr><td><a href=\"https://loinc.org/98010-2/\">98010-2</a></td><td>Braços</td><td/><td>Arms</td><td/></tr><tr><td><a href=\"https://loinc.org/98011-0/\">98011-0</a></td><td>Pernas</td><td/><td>Legs</td><td/></tr><tr><td><a href=\"https://loinc.org/95623-5/\">95623-5</a></td><td>Estado de excitação</td><td>Estado de vigília</td><td>State of arousal</td><td>Estado de vigília</td></tr><tr><td><a href=\"https://loinc.org/98012-8/\">98012-8</a></td><td>Pontuação total NIPS</td><td/><td>Total score NIPS</td><td/></tr><tr><td><a href=\"https://loinc.org/98013-6/\">98013-6</a></td><td>Interpretação da escala de dor infantil neonatal</td><td/><td>Neonatal infant pain scale interpretation</td><td/></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-nipsscale-observation-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.141"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPENIPSScaleObservationVS",
+  "title" : "CPE - NIPS Scale Observation",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores NIPSScaleObservation (CPE v2.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "95624-3",
+        "display" : "Expressão facial",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Facial expression"
+        }]
+      },
+      {
+        "code" : "95622-7",
+        "display" : "Chorar",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Cry"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Choro"
+        }]
+      },
+      {
+        "code" : "98009-4",
+        "display" : "Padrões de respiração",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Breathing patterns"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Respiração"
+        }]
+      },
+      {
+        "code" : "98010-2",
+        "display" : "Braços",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Arms"
+        }]
+      },
+      {
+        "code" : "98011-0",
+        "display" : "Pernas",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Legs"
+        }]
+      },
+      {
+        "code" : "95623-5",
+        "display" : "Estado de excitação",
+        "designation" : [{
+          "language" : "en",
+          "value" : "State of arousal"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Estado de vigília"
+        }]
+      },
+      {
+        "code" : "98012-8",
+        "display" : "Pontuação total NIPS",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Total score NIPS"
+        }]
+      },
+      {
+        "code" : "98013-6",
+        "display" : "Interpretação da escala de dor infantil neonatal",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Neonatal infant pain scale interpretation"
+        }]
+      }]
+    }]
+  }
+}

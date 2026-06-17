@@ -1,0 +1,225 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.pt/fhir/ValueSet/cpe-actresult-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cpe-actresult-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-actresult-vs</b></p><a name=\"cpe-actresult-vs\"> </a><a name=\"hccpe-actresult-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/LA6154-4/\">LA6154-4</a></td><td>Sempre</td><td>All of the time</td></tr><tr><td><a href=\"https://loinc.org/LA14734-0/\">LA14734-0</a></td><td>A maior parte do tempo</td><td>Most of the time</td></tr><tr><td><a href=\"https://loinc.org/LA14733-2/\">LA14733-2</a></td><td>Algum tempo</td><td>Some of the time</td></tr><tr><td><a href=\"https://loinc.org/LA14732-4/\">LA14732-4</a></td><td>Pouco tempo</td><td>A little of the time</td></tr><tr><td><a href=\"https://loinc.org/LA6297-1/\">LA6297-1</a></td><td>Nunca</td><td>None of the time</td></tr><tr><td><a href=\"https://loinc.org/LA15267-0/\">LA15267-0</a></td><td>Mais de uma vez por dia</td><td>More than once a day</td></tr><tr><td><a href=\"https://loinc.org/LA13897-6/\">LA13897-6</a></td><td>Uma vez por dia</td><td>Once a day</td></tr><tr><td><a href=\"https://loinc.org/LA26456-6/\">LA26456-6</a></td><td>3 a 6 vezes por semana</td><td>3 to 6 times a week</td></tr><tr><td><a href=\"https://loinc.org/LA26457-4/\">LA26457-4</a></td><td>Uma ou duas vezes por semana</td><td>Once or twice a week</td></tr><tr><td><a href=\"https://loinc.org/LA6568-5/\">LA6568-5</a></td><td>Nunca</td><td>Not at all</td></tr><tr><td><a href=\"https://loinc.org/LA26458-2/\">LA26458-2</a></td><td>4 ou mais noites por semana</td><td>4 or more nights a week</td></tr><tr><td><a href=\"https://loinc.org/LA26459-0/\">LA26459-0</a></td><td>2 ou 3 noites por semana</td><td>2 to 3 nights a week</td></tr><tr><td><a href=\"https://loinc.org/LA26461-6/\">LA26461-6</a></td><td>Uma vez por semana</td><td>Once a week</td></tr><tr><td><a href=\"https://loinc.org/LA26460-8/\">LA26460-8</a></td><td>Uma ou duas vezes</td><td>Once or twice</td></tr><tr><td><a href=\"https://loinc.org/LA13850-5/\">LA13850-5</a></td><td>3 ou mais vezes por dia</td><td>3 or more times per day</td></tr><tr><td><a href=\"https://loinc.org/LA26462-4/\">LA26462-4</a></td><td>1 ou 2 vezes por dia</td><td>1 or 2 times per day</td></tr><tr><td><a href=\"https://loinc.org/LA26463-2/\">LA26463-2</a></td><td>2 ou 3 vezes por semana</td><td>2 or 3 times per week</td></tr><tr><td><a href=\"https://loinc.org/LA13898-4/\">LA13898-4</a></td><td>Uma vez por semana ou menos</td><td>Once a week or less</td></tr><tr><td><a href=\"https://loinc.org/LA26465-7/\">LA26465-7</a></td><td>Não controlada</td><td>Not at all controlled</td></tr><tr><td><a href=\"https://loinc.org/LA26466-5/\">LA26466-5</a></td><td>Mal controlada</td><td>Poorly controlled</td></tr><tr><td><a href=\"https://loinc.org/LA26467-3/\">LA26467-3</a></td><td>Mais ou menos controlada</td><td>Somewhat controlled</td></tr><tr><td><a href=\"https://loinc.org/LA26468-1/\">LA26468-1</a></td><td>Bem controlada</td><td>Well controlled</td></tr><tr><td><a href=\"https://loinc.org/LA26469-9/\">LA26469-9</a></td><td>Completamente controlada</td><td>Completely controlled</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-actresult-vs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.620.1.101.10.4.6.179" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "CPEACTResultVS"] ; # 
+  fhir:title [ fhir:v "CPE - ACT Result"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-11-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Portugal"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.pt" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.pt" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "HL7 Portugal" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "geral@hl7.pt" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Conjunto de valores ACTResult (CPE v2.0.0)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PT" ] ;
+       fhir:display [ fhir:v "Portugal" ]
+     ] )
+  ] ) ; # 
+  fhir:author ( [
+     fhir:name [ fhir:v "Centro de Terminologias Clínicas" ]
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA6154-4" ] ;
+         fhir:display [ fhir:v "Sempre" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "All of the time" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA14734-0" ] ;
+         fhir:display [ fhir:v "A maior parte do tempo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Most of the time" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA14733-2" ] ;
+         fhir:display [ fhir:v "Algum tempo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Some of the time" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA14732-4" ] ;
+         fhir:display [ fhir:v "Pouco tempo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "A little of the time" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA6297-1" ] ;
+         fhir:display [ fhir:v "Nunca" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "None of the time" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA15267-0" ] ;
+         fhir:display [ fhir:v "Mais de uma vez por dia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "More than once a day" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA13897-6" ] ;
+         fhir:display [ fhir:v "Uma vez por dia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Once a day" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA26456-6" ] ;
+         fhir:display [ fhir:v "3 a 6 vezes por semana" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "3 to 6 times a week" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA26457-4" ] ;
+         fhir:display [ fhir:v "Uma ou duas vezes por semana" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Once or twice a week" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA6568-5" ] ;
+         fhir:display [ fhir:v "Nunca" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Not at all" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA26458-2" ] ;
+         fhir:display [ fhir:v "4 ou mais noites por semana" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "4 or more nights a week" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA26459-0" ] ;
+         fhir:display [ fhir:v "2 ou 3 noites por semana" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "2 to 3 nights a week" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA26461-6" ] ;
+         fhir:display [ fhir:v "Uma vez por semana" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Once a week" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA26460-8" ] ;
+         fhir:display [ fhir:v "Uma ou duas vezes" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Once or twice" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA13850-5" ] ;
+         fhir:display [ fhir:v "3 ou mais vezes por dia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "3 or more times per day" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA26462-4" ] ;
+         fhir:display [ fhir:v "1 ou 2 vezes por dia" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "1 or 2 times per day" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA26463-2" ] ;
+         fhir:display [ fhir:v "2 ou 3 vezes por semana" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "2 or 3 times per week" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA13898-4" ] ;
+         fhir:display [ fhir:v "Uma vez por semana ou menos" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Once a week or less" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA26465-7" ] ;
+         fhir:display [ fhir:v "Não controlada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Not at all controlled" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA26466-5" ] ;
+         fhir:display [ fhir:v "Mal controlada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Poorly controlled" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA26467-3" ] ;
+         fhir:display [ fhir:v "Mais ou menos controlada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Somewhat controlled" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA26468-1" ] ;
+         fhir:display [ fhir:v "Bem controlada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Well controlled" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "LA26469-9" ] ;
+         fhir:display [ fhir:v "Completamente controlada" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en" ] ;
+           fhir:value [ fhir:v "Completely controlled" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

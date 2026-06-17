@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpe-braden-scale-observation-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cpe-braden-scale-observation-vs</b></p><a name="cpe-braden-scale-observation-vs"> </a><a name="hccpe-braden-scale-observation-vs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href="https://loinc.org/38222-6/">38222-6</a></td><td>Percepção sensorial Escala de Braden</td><td>Percepção sensorial</td><td>Sensory perception Braden scale</td><td>Percepção sensorial</td></tr><tr><td><a href="https://loinc.org/38229-1/">38229-1</a></td><td>Escala de Braden de exposição à humidade</td><td>Humidade</td><td>Moisture exposure Braden scale</td><td>Humidade</td></tr><tr><td><a href="https://loinc.org/38223-4/">38223-4</a></td><td>Escala de atividade física de Braden</td><td>Atividade</td><td>Physical activity Braden scale</td><td>Atividade</td></tr><tr><td><a href="https://loinc.org/38224-2/">38224-2</a></td><td>Escala de Braden de mobilidade física</td><td>Mobilidade</td><td>Physical mobility Braden scale</td><td>Mobilidade</td></tr><tr><td><a href="https://loinc.org/38225-9/">38225-9</a></td><td>Padrão de ingestão nutricional Escala de Braden</td><td>Nutrição</td><td>Nutrition intake pattern Braden scale</td><td>Nutrição</td></tr><tr><td><a href="https://loinc.org/38226-7/">38226-7</a></td><td>Escala de Braden de fricção e forças de deslizamento</td><td>Fricção e forças de deslizamento</td><td>Friction and shear Braden scale</td><td>Fricção e forças de deslizamento</td></tr><tr><td><a href="https://loinc.org/38227-5/">38227-5</a></td><td>Pontuação total da escala de Braden</td><td/><td>Braden scale total score</td><td/></tr><tr><td><a href="https://loinc.org/81636-3/">81636-3</a></td><td>Nível de risco de lesão por pressão Escala de Braden</td><td/><td>Pressure injury risk level Braden scale</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cpe-braden-scale-observation-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.124"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPEBradenScaleObservationVS"/>
+  <title value="CPE - Braden Scale Observation"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores BradenScaleObservation (CPE v2.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="38222-6"/>
+        <display value="Percepção sensorial Escala de Braden"/>
+        <designation>
+          <language value="en"/>
+          <value value="Sensory perception Braden scale"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Percepção sensorial"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38229-1"/>
+        <display value="Escala de Braden de exposição à humidade"/>
+        <designation>
+          <language value="en"/>
+          <value value="Moisture exposure Braden scale"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Humidade"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38223-4"/>
+        <display value="Escala de atividade física de Braden"/>
+        <designation>
+          <language value="en"/>
+          <value value="Physical activity Braden scale"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Atividade"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38224-2"/>
+        <display value="Escala de Braden de mobilidade física"/>
+        <designation>
+          <language value="en"/>
+          <value value="Physical mobility Braden scale"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Mobilidade"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38225-9"/>
+        <display value="Padrão de ingestão nutricional Escala de Braden"/>
+        <designation>
+          <language value="en"/>
+          <value value="Nutrition intake pattern Braden scale"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Nutrição"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38226-7"/>
+        <display value="Escala de Braden de fricção e forças de deslizamento"/>
+        <designation>
+          <language value="en"/>
+          <value value="Friction and shear Braden scale"/>
+        </designation>
+        <designation>
+          <language value="pt"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Fricção e forças de deslizamento"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38227-5"/>
+        <display value="Pontuação total da escala de Braden"/>
+        <designation>
+          <language value="en"/>
+          <value value="Braden scale total score"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="81636-3"/>
+        <display value="Nível de risco de lesão por pressão Escala de Braden"/>
+        <designation>
+          <language value="en"/>
+          <value value="Pressure injury risk level Braden scale"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

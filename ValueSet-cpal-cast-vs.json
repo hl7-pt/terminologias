@@ -1,0 +1,344 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpal-cast-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpal-cast-vs</b></p><a name=\"cpal-cast-vs\"> </a><a name=\"hccpal-cast-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Fully specified name</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"http://snomed.info/id/250445004\">250445004</a></td><td>Cilindros celulares</td><td>Cellular casts (finding)</td><td>Cellular casts (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/167338002\">167338002</a></td><td>Microscopia de urina: cilindros hialinos</td><td>Urine microscopy: hyaline casts (finding)</td><td>Urine microscopy: hyaline casts (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/167337007\">167337007</a></td><td>Microscopia de urina: cilindros epiteliais</td><td>Urine microscopy: epithelial casts (finding)</td><td>Urine microscopy: epithelial casts (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/167336003\">167336003</a></td><td>Microscopia de urina: sem cilindros</td><td>Urine microscopy: no casts (finding)</td><td>Urine microscopy: no casts (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/102845008\">102845008</a></td><td>Cilindro ceroso largo</td><td>Urinary cast, broad waxy (finding)</td><td>Urinary cast, broad waxy (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/102844007\">102844007</a></td><td>Cilindro largo</td><td>Urinary cast, broad (finding)</td><td>Urinary cast, broad (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/102843001\">102843001</a></td><td>Cilindro granuloso</td><td>Urinary cast, granular (finding)</td><td>Urinary cast, granular (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/102841004\">102841004</a></td><td>Cilindro gorduroso</td><td>Urinary cast, fatty (finding)</td><td>Urinary cast, fatty (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/102840003\">102840003</a></td><td>Cilindro hemático</td><td>Urinary cast, erythrocyte (finding)</td><td>Urinary cast, erythrocyte (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/102838008\">102838008</a></td><td>Cilindro leucocitário</td><td>Urinary cast, leukocyte (finding)</td><td>Urinary cast, leukocyte (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/102837003\">102837003</a></td><td>Cilindro ceroso</td><td>Urinary cast, waxy (finding)</td><td>Urinary cast, waxy (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/5277004\">5277004</a></td><td>Cilindros urinários</td><td>Urinary casts (finding)</td><td>Urinary casts (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/726569002\">726569002</a></td><td>Cilindro finamente granuloso</td><td>Fine granular cast (morphologic abnormality)</td><td>Fine granular cast (morphologic abnormality)</td></tr><tr><td><a href=\"http://snomed.info/id/726568005\">726568005</a></td><td>Cilindro grosseiramente granuloso</td><td>Coarse granular cast (morphologic abnormality)</td><td>Coarse granular cast (morphologic abnormality)</td></tr><tr><td><a href=\"http://snomed.info/id/724374007\">724374007</a></td><td>Cilindro bacteriano</td><td>Bacterial cast (morphologic abnormality)</td><td>Bacterial cast (morphologic abnormality)</td></tr><tr><td><a href=\"http://snomed.info/id/724183008\">724183008</a></td><td>Cilindro de bilirrubina</td><td>Bilirubin cast (morphologic abnormality)</td><td>Bilirubin cast (morphologic abnormality)</td></tr><tr><td><a href=\"http://snomed.info/id/6780007\">6780007</a></td><td>Cilindro hemoglobínico</td><td>Hemoglobin cast (morphologic abnormality)</td><td>Hemoglobin cast (morphologic abnormality)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpal-cast-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.4"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPALCastVS",
+  "title" : "CPAL - Cast",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2022-08-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores Cast (CPAL v7.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "250445004",
+        "display" : "Cilindros celulares",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Cellular casts"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Cellular casts (finding)"
+        }]
+      },
+      {
+        "code" : "167338002",
+        "display" : "Microscopia de urina: cilindros hialinos",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Urine microscopy: hyaline casts"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Urine microscopy: hyaline casts (finding)"
+        }]
+      },
+      {
+        "code" : "167337007",
+        "display" : "Microscopia de urina: cilindros epiteliais",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Urine microscopy: epithelial casts"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Urine microscopy: epithelial casts (finding)"
+        }]
+      },
+      {
+        "code" : "167336003",
+        "display" : "Microscopia de urina: sem cilindros",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Urine microscopy: no casts"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Urine microscopy: no casts (finding)"
+        }]
+      },
+      {
+        "code" : "102845008",
+        "display" : "Cilindro ceroso largo",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Urinary cast, broad waxy"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Urinary cast, broad waxy (finding)"
+        }]
+      },
+      {
+        "code" : "102844007",
+        "display" : "Cilindro largo",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Urinary cast, broad"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Urinary cast, broad (finding)"
+        }]
+      },
+      {
+        "code" : "102843001",
+        "display" : "Cilindro granuloso",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Urinary cast, granular"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Urinary cast, granular (finding)"
+        }]
+      },
+      {
+        "code" : "102841004",
+        "display" : "Cilindro gorduroso",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Urinary cast, fatty"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Urinary cast, fatty (finding)"
+        }]
+      },
+      {
+        "code" : "102840003",
+        "display" : "Cilindro hemático",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Urinary cast, erythrocyte"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Urinary cast, erythrocyte (finding)"
+        }]
+      },
+      {
+        "code" : "102838008",
+        "display" : "Cilindro leucocitário",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Urinary cast, leucocyte"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Urinary cast, leukocyte (finding)"
+        }]
+      },
+      {
+        "code" : "102837003",
+        "display" : "Cilindro ceroso",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Urinary cast, waxy"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Urinary cast, waxy (finding)"
+        }]
+      },
+      {
+        "code" : "5277004",
+        "display" : "Cilindros urinários",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Urinary casts"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Urinary casts (finding)"
+        }]
+      },
+      {
+        "code" : "726569002",
+        "display" : "Cilindro finamente granuloso",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Fine granular cast"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Fine granular cast (morphologic abnormality)"
+        }]
+      },
+      {
+        "code" : "726568005",
+        "display" : "Cilindro grosseiramente granuloso",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Coarse granular cast"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Coarse granular cast (morphologic abnormality)"
+        }]
+      },
+      {
+        "code" : "724374007",
+        "display" : "Cilindro bacteriano",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Bacterial cast"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Bacterial cast (morphologic abnormality)"
+        }]
+      },
+      {
+        "code" : "724183008",
+        "display" : "Cilindro de bilirrubina",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Bilirubin cast"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Bilirubin cast (morphologic abnormality)"
+        }]
+      },
+      {
+        "code" : "6780007",
+        "display" : "Cilindro hemoglobínico",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Haemoglobin cast"
+        },
+        {
+          "language" : "en",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000003001",
+            "display" : "Fully specified name"
+          },
+          "value" : "Hemoglobin cast (morphologic abnormality)"
+        }]
+      }]
+    }]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpe-asascale-result-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-asascale-result-vs</b></p><a name=\"cpe-asascale-result-vs\"> </a><a name=\"hccpe-asascale-result-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Synonym</b></td><td><b>English (English, en)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td><a href=\"http://snomed.info/id/413495001\">413495001</a></td><td>Estado físico ASA classe 1</td><td>ASA I</td><td>American Society of Anesthesiologists physical status class 1 (finding)</td><td>ASA I</td></tr><tr><td><a href=\"http://snomed.info/id/413496000\">413496000</a></td><td>Estado físico ASA classe 2</td><td>ASA II</td><td>American Society of Anesthesiologists physical status class 2 (finding)</td><td>ASA II</td></tr><tr><td><a href=\"http://snomed.info/id/413497009\">413497009</a></td><td>Estado físico ASA classe 3</td><td>ASA III</td><td>American Society of Anesthesiologists physical status class 3 (finding)</td><td>ASA III</td></tr><tr><td><a href=\"http://snomed.info/id/413498004\">413498004</a></td><td>Estado físico ASA classe 4</td><td>ASA IV</td><td>American Society of Anesthesiologists physical status class 4 (finding)</td><td>ASA IV</td></tr><tr><td><a href=\"http://snomed.info/id/413499007\">413499007</a></td><td>Estado físico ASA classe 5</td><td>ASA V</td><td>American Society of Anesthesiologists physical status class 5 (finding)</td><td>ASA V</td></tr><tr><td><a href=\"http://snomed.info/id/413500003\">413500003</a></td><td>Estado físico ASA classe 6</td><td>ASA VI</td><td>American Society of Anesthesiologists physical status class 6 (finding)</td><td>ASA VI</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-asascale-result-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.180"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPEASAScaleResultVS",
+  "title" : "CPE - ASA Scale Result",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores ASAScaleResult (CPE v2.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "413495001",
+        "display" : "Estado físico ASA classe 1",
+        "designation" : [{
+          "language" : "en",
+          "value" : "American Society of Anesthesiologists physical status class 1 (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "ASA I"
+        }]
+      },
+      {
+        "code" : "413496000",
+        "display" : "Estado físico ASA classe 2",
+        "designation" : [{
+          "language" : "en",
+          "value" : "American Society of Anesthesiologists physical status class 2 (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "ASA II"
+        }]
+      },
+      {
+        "code" : "413497009",
+        "display" : "Estado físico ASA classe 3",
+        "designation" : [{
+          "language" : "en",
+          "value" : "American Society of Anesthesiologists physical status class 3 (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "ASA III"
+        }]
+      },
+      {
+        "code" : "413498004",
+        "display" : "Estado físico ASA classe 4",
+        "designation" : [{
+          "language" : "en",
+          "value" : "American Society of Anesthesiologists physical status class 4 (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "ASA IV"
+        }]
+      },
+      {
+        "code" : "413499007",
+        "display" : "Estado físico ASA classe 5",
+        "designation" : [{
+          "language" : "en",
+          "value" : "American Society of Anesthesiologists physical status class 5 (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "ASA V"
+        }]
+      },
+      {
+        "code" : "413500003",
+        "display" : "Estado físico ASA classe 6",
+        "designation" : [{
+          "language" : "en",
+          "value" : "American Society of Anesthesiologists physical status class 6 (finding)"
+        },
+        {
+          "language" : "pt",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "ASA VI"
+        }]
+      }]
+    }]
+  }
+}

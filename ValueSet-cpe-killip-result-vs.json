@@ -1,0 +1,87 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cpe-killip-result-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet cpe-killip-result-vs</b></p><a name=\"cpe-killip-result-vs\"> </a><a name=\"hccpe-killip-result-vs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/LA34758-5/\">LA34758-5</a></td><td>Classe I: Sem sinais de insuficiência cardíaca</td><td>Class I: No signs of heart failure</td></tr><tr><td><a href=\"https://loinc.org/LA34759-3/\">LA34759-3</a></td><td>Classe II: Rales basais, S3 e pressão venosa jugular elevada</td><td>Class II: Basal rales , S3, and elevated jugular venous pressure</td></tr><tr><td><a href=\"https://loinc.org/LA34760-1/\">LA34760-1</a></td><td>Classe III: Edema pulmonar agudo</td><td>Class III: Acute pulmonary edema</td></tr><tr><td><a href=\"https://loinc.org/LA34761-9/\">LA34761-9</a></td><td>Classe IV: Choque cardiogénico ou hipotensão (PAS &lt; 90mmHg) e evidência de vasoconstrição periférica</td><td>Class IV: cardiogenic shock or hypotension (SBP &lt; 90mmHg) and evidence of peripheral vasoconstriction</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.pt/fhir/Terminologias/ValueSet/cpe-killip-result-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.620.1.101.10.4.6.192"
+  }],
+  "version" : "1.0.0",
+  "name" : "CPEKillipResultVS",
+  "title" : "CPE - Killip Result",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-01",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Conjunto de valores KillipResult (CPE v2.0.0).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "PT",
+      "display" : "Portugal"
+    }]
+  }],
+  "author" : [{
+    "name" : "Centro de Terminologias Clínicas"
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA34758-5",
+        "display" : "Classe I: Sem sinais de insuficiência cardíaca",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Class I: No signs of heart failure"
+        }]
+      },
+      {
+        "code" : "LA34759-3",
+        "display" : "Classe II: Rales basais, S3 e pressão venosa jugular elevada",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Class II: Basal rales , S3, and elevated jugular venous pressure"
+        }]
+      },
+      {
+        "code" : "LA34760-1",
+        "display" : "Classe III: Edema pulmonar agudo",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Class III: Acute pulmonary edema"
+        }]
+      },
+      {
+        "code" : "LA34761-9",
+        "display" : "Classe IV: Choque cardiogénico ou hipotensão (PAS < 90mmHg) e evidência de vasoconstrição periférica",
+        "designation" : [{
+          "language" : "en",
+          "value" : "Class IV: cardiogenic shock or hypotension (SBP < 90mmHg) and evidence of peripheral vasoconstriction"
+        }]
+      }]
+    }]
+  }
+}

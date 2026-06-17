@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cparadm-communication-mode-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet cparadm-communication-mode-vs</b></p><a name="cparadm-communication-mode-vs"> </a><a name="hccparadm-communication-mode-vs"> </a><p>Este conjunto de valores inclui códigos baseados nas seguintes regras:</p><ul><li>Incluir estes códigos, tal como definidos em <code>urn:oid:2.16.840.1.113883.1.11.16543</code><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td>FACE</td><td>Cara a cara</td><td>face-to-face</td></tr><tr><td>PHONE</td><td>Telefone</td><td>telephone</td></tr><tr><td>VIDEOCONF</td><td>Videoconferência</td><td>videoconferencing</td></tr><tr><td>FAXWRIT</td><td>Fax</td><td>telefax</td></tr><tr><td>MAILWRIT</td><td>Carta</td><td>mail</td></tr><tr><td>EMAILWRIT</td><td>email</td><td/></tr><tr><td>SMSWRIT</td><td>SMS</td><td>SMS message</td></tr></table></li><li>Incluir estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="http://snomed.info/id/1691000314103">1691000314103</a></td><td>Carta registada</td><td>Registered mail (record artifact)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.pt/fhir/Terminologias/ValueSet/cparadm-communication-mode-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.620.1.101.10.4.6.170"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="CPARADMCommunicationModeVS"/>
+  <title value="CPARADM - Communication Mode"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-11-01"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de valores CommunicationMode (CPARADM v3.0.0)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="PT"/>
+      <display value="Portugal"/>
+    </coding>
+  </jurisdiction>
+  <author>
+    <name value="Centro de Terminologias Clínicas"/>
+  </author>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.840.1.113883.1.11.16543"/>
+      <concept>
+        <code value="FACE"/>
+        <display value="Cara a cara"/>
+        <designation>
+          <language value="en"/>
+          <value value="face-to-face"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="PHONE"/>
+        <display value="Telefone"/>
+        <designation>
+          <language value="en"/>
+          <value value="telephone"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="VIDEOCONF"/>
+        <display value="Videoconferência"/>
+        <designation>
+          <language value="en"/>
+          <value value="videoconferencing"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="FAXWRIT"/>
+        <display value="Fax"/>
+        <designation>
+          <language value="en"/>
+          <value value="telefax"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="MAILWRIT"/>
+        <display value="Carta"/>
+        <designation>
+          <language value="en"/>
+          <value value="mail"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="EMAILWRIT"/>
+        <display value="email"/>
+      </concept>
+      <concept>
+        <code value="SMSWRIT"/>
+        <display value="SMS"/>
+        <designation>
+          <language value="en"/>
+          <value value="SMS message"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="1691000314103"/>
+        <display value="Carta registada"/>
+        <designation>
+          <language value="en"/>
+          <value value="Registered mail (record artifact)"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
