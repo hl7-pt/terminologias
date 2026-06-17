@@ -8,6 +8,8 @@ Description: "Tabela de causas de admissão (SONHO), com equivalentes SNOMED CT 
 * ^status = #active
 * ^content = #complete
 * ^language = #pt
+* ^experimental = false
+* ^caseSensitive = true
 
 // Propriedade para carregar o mapeamento
 * ^property[+].code = #snomed

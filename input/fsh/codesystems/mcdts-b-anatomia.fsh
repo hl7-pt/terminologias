@@ -6,7 +6,8 @@ Description: "Tabela Da Área B - Anatomia Patológica"
 
 * ^version = "5.9.2024"
 * ^author.name = "ACSS"
-
+* ^experimental = false
+* ^caseSensitive = true
 
 * ^property[+].code = #preco
 * ^property[=].description = "Preço do MCDT"

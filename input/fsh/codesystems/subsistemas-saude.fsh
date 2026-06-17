@@ -7,6 +7,8 @@ Description: "Subsistemas de saúde existentes em Portugal"
 
 * ^version = "1.0.0"
 * ^author.name = "Estado Português"
+* ^experimental = false
+* ^caseSensitive = true
 
 * #ADSE
     "ADSE"

@@ -7,7 +7,8 @@ Description: "Especialidades médicas existentes em Portugal"
 
 * ^version = "1.0.0"
 * ^author.name = "Ordem dos médicos"
-
+* ^experimental = false
+* ^caseSensitive = true
 * #1
     "Anatomia Patológica"
     "Anatomia Patológica"

@@ -5,7 +5,7 @@ Usage: #definition
 
 * version = "5.9.2024"
 * name = "MCDTS-d-m-nuclear-SNS-CONV"
-* title = "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área D - Medicina Nuclear "
+* title = "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área D - Medicina Nuclear"
 
 * status = #draft
 * experimental = true

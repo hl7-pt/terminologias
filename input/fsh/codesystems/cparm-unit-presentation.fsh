@@ -6,7 +6,8 @@ Description: "Unidades de apresentação de medicamentos"
 
 * ^version = "1.0.0"
 * ^author.name = "Centro de Terminologias Clínicas"
-
+* ^experimental = false
+* ^caseSensitive = true
 
 
 * #15001000

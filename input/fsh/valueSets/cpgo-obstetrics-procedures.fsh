@@ -3,7 +3,7 @@ Instance: cpgo-obstetrics-procedures-vs
 InstanceOf: ValueSet
 Usage: #definition
 
-* url = "https://hl7.pt/fhir/ValueSet/cpgo-obstetrics-procedures-vs"
+// * url  = "https://hl7.pt/fhir/ValueSet/cpgo-obstetrics-procedures-vs"
 * name = "CPGOObstetricsProceduresVS"
 * title = "CPGO - Obstetrics Procedures"
 * description = "Conjunto de valores ObstetricsProcedures (CPGO v1.1)."
@@ -11,8 +11,9 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2020-09-01"
-* publisher = "Centro de Terminologias Clínicas"
-* contact[0].name = "Centro de Terminologias Clínicas"
+* publisher = "HL7 Portugal"
+* author[0].name = "Centro de Terminologias Clínicas"
+
 
 * compose.include[0].system = "http://snomed.info/sct"
 * compose.include[0].concept[0].code = #66456009

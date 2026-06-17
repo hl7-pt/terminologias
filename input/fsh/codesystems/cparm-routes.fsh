@@ -7,7 +7,8 @@ Description: "Vias de Administração de medicamentos"
 
 * ^version = "1.0.0"
 * ^author.name = "Centro de Terminologias Clínicas"
-
+* ^experimental = false
+* ^caseSensitive = true
 
 * #20001000
     "Uso auricular"

@@ -3,7 +3,7 @@ Instance: cpara-allergy-intolerance-category-vs
 InstanceOf: ValueSet
 Usage: #definition
 
-* url = "https://hl7.pt/fhir/ValueSet/cpara-allergy-intolerance-category-vs"
+// * url  = "https://hl7.pt/fhir/ValueSet/cpara-allergy-intolerance-category-vs"
 * name = "CPARAAllergyIntoleranceCategoryVS"
 * title = "CPARA - Allergy Intolerance Category"
 * description = "Conjunto de valores AllergyIntoleranceCategory (CPARA v5.1.0)."
@@ -11,8 +11,9 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2024-11-01"
-* publisher = "Centro de Terminologias Clínicas"
-* contact[0].name = "Centro de Terminologias Clínicas"
+* publisher = "HL7 Portugal"
+* author[0].name = "Centro de Terminologias Clínicas"
+
 * identifier[0].system = "urn:ietf:rfc:3986"
 * identifier[0].value = "urn:oid:2.16.620.1.101.10.4.6.88"
 

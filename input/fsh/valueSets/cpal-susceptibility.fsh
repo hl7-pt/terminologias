@@ -3,7 +3,7 @@ Instance: cpal-susceptibility-vs
 InstanceOf: ValueSet
 Usage: #definition
 
-* url = "https://hl7.pt/fhir/ValueSet/cpal-susceptibility-vs"
+// * url  = "https://hl7.pt/fhir/ValueSet/cpal-susceptibility-vs"
 * name = "CPALSusceptibilityVS"
 * title = "CPAL - Susceptibility"
 * description = "Conjunto de valores Susceptibility (CPAL v7.0)."
@@ -11,8 +11,9 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2023-10-01"
-* publisher = "Centro de Terminologias Clínicas"
-* contact[0].name = "Centro de Terminologias Clínicas"
+* publisher = "HL7 Portugal"
+* author[0].name = "Centro de Terminologias Clínicas"
+
 * identifier[0].system = "urn:ietf:rfc:3986"
 * identifier[0].value = "urn:oid:2.16.620.1.101.10.4.6.18"
 

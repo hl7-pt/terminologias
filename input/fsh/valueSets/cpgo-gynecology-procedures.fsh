@@ -3,7 +3,7 @@ Instance: cpgo-gynecology-procedures-vs
 InstanceOf: ValueSet
 Usage: #definition
 
-* url = "https://hl7.pt/fhir/ValueSet/cpgo-gynecology-procedures-vs"
+// * url  = "https://hl7.pt/fhir/ValueSet/cpgo-gynecology-procedures-vs"
 * name = "CPGOGynecologyProceduresVS"
 * title = "CPGO - Gynecology Procedures"
 * description = "Conjunto de valores GynecologyProcedures (CPGO v1.1)."
@@ -11,8 +11,9 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2021-11-01"
-* publisher = "Centro de Terminologias Clínicas"
-* contact[0].name = "Centro de Terminologias Clínicas"
+* publisher = "HL7 Portugal"
+* author[0].name = "Centro de Terminologias Clínicas"
+
 
 * compose.include[0].system = "http://snomed.info/sct"
 * compose.include[0].concept[0].code = #180732009

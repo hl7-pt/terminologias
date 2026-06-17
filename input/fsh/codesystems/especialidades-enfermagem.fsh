@@ -8,7 +8,8 @@ Description: "Especialidades enfermagem existentes em Portugal"
 
 * ^version = "1.0.0"
 * ^author.name = "Ordem dos Enfermeiros"
-
+* ^experimental = false
+* ^caseSensitive = true
 * #1
     "Comunitária"
     "Comunitária"

@@ -7,7 +7,8 @@ Description: "Especialidades farmacêuticas existentes em Portugal"
 
 * ^version = "1.0.0"
 * ^author.name = "Ordem dos Farmacêuticos"
-
+* ^experimental = false
+* ^caseSensitive = true
 * #1
     "Análises Clínicas"
     "Análises Clínicas"

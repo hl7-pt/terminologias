@@ -3,7 +3,7 @@ Instance: cpn-status-vs
 InstanceOf: ValueSet
 Usage: #definition
 
-* url = "https://hl7.pt/fhir/ValueSet/cpn-status-vs"
+// * url  = "https://hl7.pt/fhir/ValueSet/cpn-status-vs"
 * name = "CPNStatusVS"
 * title = "CPN - Status"
 * description = "Conjunto de valores Status (CPN v3.0)."
@@ -11,8 +11,9 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2021-10-24"
-* publisher = "Centro de Terminologias Clínicas"
-* contact[0].name = "Centro de Terminologias Clínicas"
+* publisher = "HL7 Portugal"
+* author[0].name = "Centro de Terminologias Clínicas"
+
 
 * compose.include[0].system = "http://snomed.info/sct"
 * compose.include[0].concept[0].code = #55561003

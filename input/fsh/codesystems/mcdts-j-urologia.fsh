@@ -6,7 +6,8 @@ Description: "Tabela Da Área J - Urologia"
 
 * ^version = "5.9.2024"
 * ^author.name = "ACSS"
-
+* ^experimental = false
+* ^caseSensitive = true
 
 * ^property[+].code = #preco
 * ^property[=].description = "Preço do MCDT"

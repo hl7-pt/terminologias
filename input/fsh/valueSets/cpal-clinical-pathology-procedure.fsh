@@ -3,7 +3,7 @@ Instance: cpal-clinical-pathology-procedure-vs
 InstanceOf: ValueSet
 Usage: #definition
 
-* url = "https://hl7.pt/fhir/ValueSet/cpal-clinical-pathology-procedure-vs"
+// * url  = "https://hl7.pt/fhir/ValueSet/cpal-clinical-pathology-procedure-vs"
 * name = "CPALClinicalPathologyProcedureVS"
 * title = "CPAL - Clinical Pathology Procedure"
 * description = "Conjunto de valores ClinicalPathologyProcedure (CPAL v7.0)."
@@ -11,12 +11,13 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2023-10-11"
-* publisher = "Centro de Terminologias Clínicas"
-* contact[0].name = "Centro de Terminologias Clínicas"
+* publisher = "HL7 Portugal"
+* author[0].name = "Centro de Terminologias Clínicas"
+
 * identifier[0].system = "urn:ietf:rfc:3986"
 * identifier[0].value = "urn:oid:2.16.620.1.101.10.4.6.6"
 
-* compose.include[0].system = "https://hl7.pt/fhir/CodeSystem/cpal-clinical-pathology-procedure-cs"
+* compose.include[0].system = "http://loinc.org"
 * compose.include[0].concept[0].code = #22671-2
 * compose.include[0].concept[0].display = "Ácido fitânico"
 * compose.include[0].concept[0].designation[0].language = #en

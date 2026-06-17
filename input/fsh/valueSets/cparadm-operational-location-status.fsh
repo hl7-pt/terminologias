@@ -3,7 +3,7 @@ Instance: cparadm-operational-location-status-vs
 InstanceOf: ValueSet
 Usage: #definition
 
-* url = "https://hl7.pt/fhir/ValueSet/cparadm-operational-location-status-vs"
+// * url  = "https://hl7.pt/fhir/ValueSet/cparadm-operational-location-status-vs"
 * name = "CPARADMOperationalLocationStatusVS"
 * title = "CPARADM - Operational Location Status"
 * description = "Conjunto de valores OperationalLocationStatus (CPARADM v3.0.0)."
@@ -13,7 +13,8 @@ Usage: #definition
 * date = "2023-05-01"
 * publisher = "HL7 Portugal"
 * author.name = "Centro de Terminologias Clínicas"
-* contact[0].name = "Centro de Terminologias Clínicas"
+* author[0].name = "Centro de Terminologias Clínicas"
+
 * identifier[0].system = "urn:ietf:rfc:3986"
 * identifier[0].value = "urn:oid:2.16.620.1.101.10.4.6.26"
 

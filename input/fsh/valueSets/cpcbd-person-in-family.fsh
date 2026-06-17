@@ -3,7 +3,7 @@ Instance: cpcbd-person-in-family-vs
 InstanceOf: ValueSet
 Usage: #definition
 
-* url = "https://hl7.pt/fhir/ValueSet/cpcbd-person-in-family-vs"
+// * url  = "https://hl7.pt/fhir/ValueSet/cpcbd-person-in-family-vs"
 * name = "CPCBDPersonInFamilyVS"
 * title = "CPCBD - Person in Family"
 * description = "Conjunto de valores PersonInFamily (CPCBD v1.1.0)."
@@ -11,8 +11,9 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2022-11-01"
-* publisher = "Centro de Terminologias Clínicas"
-* contact[0].name = "Centro de Terminologias Clínicas"
+* publisher = "HL7 Portugal"
+* author[0].name = "Centro de Terminologias Clínicas"
+
 * identifier[0].system = "urn:ietf:rfc:3986"
 * identifier[0].value = "urn:oid:2.16.620.1.101.10.4.6.61"
 

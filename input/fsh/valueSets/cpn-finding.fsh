@@ -3,7 +3,7 @@ Instance: cpn-finding-vs
 InstanceOf: ValueSet
 Usage: #definition
 
-* url = "https://hl7.pt/fhir/ValueSet/cpn-finding-vs"
+// * url  = "https://hl7.pt/fhir/ValueSet/cpn-finding-vs"
 * name = "CPNFindingVS"
 * title = "CPN - Finding"
 * description = "Conjunto de valores Finding (CPN v3.0)."
@@ -11,8 +11,9 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2022-01-01"
-* publisher = "Centro de Terminologias Clínicas"
-* contact[0].name = "Centro de Terminologias Clínicas"
+* publisher = "HL7 Portugal"
+* author[0].name = "Centro de Terminologias Clínicas"
+
 
 * compose.include[0].system = "http://snomed.info/sct"
 * compose.include[0].concept[0].code = #36355001

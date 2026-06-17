@@ -3,7 +3,7 @@ Instance: cpevs-specialized-assistance-activity-vs
 InstanceOf: ValueSet
 Usage: #definition
 
-* url = "https://hl7.pt/fhir/ValueSet/cpevs-specialized-assistance-activity-vs"
+// * url  = "https://hl7.pt/fhir/ValueSet/cpevs-specialized-assistance-activity-vs"
 * name = "CPEVSSpecializedAssistanceActivityVS"
 * title = "CPEVS - Specialized Assistance Activity"
 * description = "Conjunto de valores SpecializedAssistanceActivity (CPEVS v2.1.0)."
@@ -11,8 +11,9 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2025-12-01"
-* publisher = "Centro de Terminologias Clínicas"
-* contact[0].name = "Centro de Terminologias Clínicas"
+* publisher = "HL7 Portugal"
+* author[0].name = "Centro de Terminologias Clínicas"
+
 * identifier[0].system = "urn:ietf:rfc:3986"
 * identifier[0].value = "urn:oid:2.16.620.1.101.10.4.6.71"
 

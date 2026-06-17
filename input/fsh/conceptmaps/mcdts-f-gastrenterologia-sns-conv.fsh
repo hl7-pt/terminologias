@@ -5,7 +5,7 @@ Usage: #definition
 
 * version = "5.9.2024"
 * name = "MCDTS-f-gastrenterologia-SNS-CONV"
-* title = "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área F - Endoscopia Gastrenterológica "
+* title = "Mapeamento de códigos SNS para códigos convencionados para Tabela Da Área F - Endoscopia Gastrenterológica"
 
 * status = #draft
 * experimental = true
